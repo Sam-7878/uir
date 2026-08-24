@@ -1,0 +1,25 @@
+{
+  "candidate_sha256": "83bf44e2331b969b72bd913b6c390308cdec6c394c7e986876758950fa2fd469",
+  "case_count": 1200,
+  "reviewers": [
+    "R1",
+    "R2"
+  ],
+  "allowed_values": [
+    "1",
+    "0",
+    "NA"
+  ],
+  "fields": [
+    "source_text_valid",
+    "language_valid",
+    "intent_valid",
+    "target_valid",
+    "conditions_valid",
+    "policy_valid",
+    "outcome_valid",
+    "claims_valid"
+  ],
+  "review_status": "not_started",
+  "judgments_prefilled": false
+}

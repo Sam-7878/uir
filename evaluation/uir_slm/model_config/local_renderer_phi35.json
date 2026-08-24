@@ -1,0 +1,11 @@
+{
+  "python_executable": "../.venv/bin/python",
+  "bridge_script": "evaluation/uir_slm/ollama_bridge.py",
+  "model": "phi3.5:latest",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "top_k": 1,
+  "max_new_tokens": 192,
+  "repetition_penalty": 1.05,
+  "seed": 20260807
+}

@@ -1,0 +1,56 @@
+{
+  "total": 1200,
+  "by_category": {
+    "parallel_semantic": 400,
+    "template_unseen": 200,
+    "entity_unseen": 150,
+    "lexical_unseen": 150,
+    "structural_unseen": 100,
+    "ambiguous_incomplete": 50,
+    "policy_conflict": 50,
+    "adversarial": 50,
+    "numeric_provenance": 50
+  },
+  "field_counts": {
+    "source_text_valid": {
+      "1": 1200,
+      "0": 0,
+      "NA": 0
+    },
+    "language_valid": {
+      "1": 1200,
+      "0": 0,
+      "NA": 0
+    },
+    "intent_valid": {
+      "1": 1200,
+      "0": 0,
+      "NA": 0
+    },
+    "target_valid": {
+      "1": 1200,
+      "0": 0,
+      "NA": 0
+    },
+    "conditions_valid": {
+      "1": 1200,
+      "0": 0,
+      "NA": 0
+    },
+    "policy_valid": {
+      "1": 1200,
+      "0": 0,
+      "NA": 0
+    },
+    "outcome_valid": {
+      "1": 1200,
+      "0": 0,
+      "NA": 0
+    },
+    "claims_valid": {
+      "1": 1050,
+      "0": 0,
+      "NA": 150
+    }
+  }
+}

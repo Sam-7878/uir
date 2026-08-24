@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["judgments"],
+  "additionalProperties": false,
+  "properties": {
+    "judgments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "case_id",
+          "source_text_valid",
+          "language_valid",
+          "intent_valid",
+          "target_valid",
+          "conditions_valid",
+          "policy_valid",
+          "outcome_valid",
+          "claims_valid",
+          "reconstructed",
+          "reasoning_summary"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "case_id": {"type": "string"},
+          "source_text_valid": {"enum": ["1", "0", "NA"]},
+          "language_valid": {"enum": ["1", "0", "NA"]},
+          "intent_valid": {"enum": ["1", "0", "NA"]},
+          "target_valid": {"enum": ["1", "0", "NA"]},
+          "conditions_valid": {"enum": ["1", "0", "NA"]},
+          "policy_valid": {"enum": ["1", "0", "NA"]},
+          "outcome_valid": {"enum": ["1", "0", "NA"]},
+          "claims_valid": {"enum": ["1", "0", "NA"]},
+          "reconstructed": {
+            "type": "object",
+            "required": ["intent", "target", "conditions", "policy_decision", "expected_outcome", "required_claims"],
+            "additionalProperties": true,
+            "properties": {
+              "intent": {},
+              "target": {},
+              "conditions": {},
+              "policy_decision": {},
+              "expected_outcome": {},
+              "required_claims": {}
+            }
+          },
+          "reasoning_summary": {"type": "string", "minLength": 1, "maxLength": 400}
+        }
+      }
+    }
+  }
+}

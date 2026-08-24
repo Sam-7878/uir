@@ -1,0 +1,14 @@
+{
+  "dataset_version": "2.0-candidate",
+  "review_status_at_change": "not_started_0_of_1200",
+  "source_candidate_sha256": "556f6875328bd5e3942e193461047bf4b5e8a78c0a6072e481725de16685f7b0",
+  "new_candidate_sha256": "83bf44e2331b969b72bd913b6c390308cdec6c394c7e986876758950fa2fd469",
+  "case_count_before": 1200,
+  "case_count_after": 1200,
+  "cases_deleted": 0,
+  "parser_modified": false,
+  "reasons": [
+    "add explicit KO/EN pair_id and identical ground truth for 400 parallel cases",
+    "make policy-conflict source text express the expected policy conflict before human review"
+  ]
+}

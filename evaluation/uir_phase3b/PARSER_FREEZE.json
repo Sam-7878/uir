@@ -1,0 +1,13 @@
+{
+  "status": "frozen_before_human_review",
+  "parser_implementation_commit": "309e694",
+  "parser_source_sha256": "bee778f3e3767fdcd64d0926f27c680143d217ea1d6febcabd08aac96de321d7",
+  "human_review_started": false,
+  "phase3_candidate_sha256": "556f6875328bd5e3942e193461047bf4b5e8a78c0a6072e481725de16685f7b0",
+  "scope": [
+    "crates/poa-uir/src/frontend/*.rs",
+    "crates/poa-uir/src/resolution.rs",
+    "crates/poa-uir/src/output_contract.rs"
+  ],
+  "note": "Phase-3B may change evaluation instrumentation but not these parser/semantic/output-contract sources after review begins."
+}

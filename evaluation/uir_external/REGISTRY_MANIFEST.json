@@ -1,0 +1,116 @@
+{
+  "documentation": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+  "entity_count": 18,
+  "record_count": 138,
+  "sha256": "0259422adbe060dda15cd151d018cf19c43d358e3e36cf444034eb71c31e4046",
+  "snapshot_date": "2026-08-07",
+  "source": "U.S. SEC XBRL Companyfacts API",
+  "sources": [
+    {
+      "bytes": 795660,
+      "sha256": "091a782b9832de53664c33282b536497b46bd7724a116fc425ceb4c6540a3e13",
+      "url": "https://www.sec.gov/files/company_tickers.json"
+    },
+    {
+      "bytes": 4039082,
+      "sha256": "93edcffe24f55d08284ff1736e41aa1a8e743ab6e4a6eea52cb8e9392b0ae6be",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json"
+    },
+    {
+      "bytes": 3789099,
+      "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+    },
+    {
+      "bytes": 3163789,
+      "sha256": "979c75696954e42c634836a54399506d5d548cbfaa37824932e5bca6c6d2ab6c",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json"
+    },
+    {
+      "bytes": 4881196,
+      "sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json"
+    },
+    {
+      "bytes": 4477763,
+      "sha256": "e6aadb0da7384597dbd78f74d1379ffb7fd0829a4d2e797b6d7e442b5e1da0d7",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json"
+    },
+    {
+      "bytes": 2297600,
+      "sha256": "b6399ff9bc3e4047dfe955ad7866ca51208a9f617457e7b917cbfc2effcbc916",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json"
+    },
+    {
+      "bytes": 2700046,
+      "sha256": "ded9a9be1ed9c81cf94a4c1828a076438df6d43045a84f40ef392140ff638ccd",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json"
+    },
+    {
+      "bytes": 3641344,
+      "sha256": "d0c2b9288d027a6d735039a6fe874a348b65a7fdbc6c133130666c777c885204",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json"
+    },
+    {
+      "bytes": 2752705,
+      "sha256": "ac3cae2572660c2e9e3a6a7f43384f65298109fca74b2c74c2d76d66b6e86e91",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json"
+    },
+    {
+      "bytes": 3726043,
+      "sha256": "8f3d9abe26f7f7842a070f4b639dbd39296144349270eeb0df5659e7510e9cec",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json"
+    },
+    {
+      "bytes": 3564517,
+      "sha256": "df3caf7c5667296569fc3074ce2ff13629c9a555184a06c5ea9925b43e63971d",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001403161.json"
+    },
+    {
+      "bytes": 1837771,
+      "sha256": "28be6fd0f5608350ec396ae5d5097e45da95f4f29ad3fbd19aac328a15cce3d4",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000937966.json"
+    },
+    {
+      "bytes": 4168526,
+      "sha256": "7141c0c988fa1d30f779687b4c78ab561e19aa5990a58ad86a66467d0a783980",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000200406.json"
+    },
+    {
+      "bytes": 4310461,
+      "sha256": "0f36c9aa3daa52bf1c4f70510349f35df6ea8e602aac79bc23480354cf29d9b7",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000050863.json"
+    },
+    {
+      "bytes": 6063886,
+      "sha256": "7d45a349ddedf38636c5b2924026bf187c2f9749dbc2aae4b082b54f06d17d61",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000858877.json"
+    },
+    {
+      "bytes": 3109380,
+      "sha256": "1fa00a2de3a0434fb2ebba8b1678cc379b16dc435a4f3e5c696efb7f9029698a",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001551152.json"
+    },
+    {
+      "bytes": 3617189,
+      "sha256": "71a4fd99c86f27c3aa27b8f05b3a9705c16f0060b425395bb1a367ce239b7d1f",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000909832.json"
+    },
+    {
+      "bytes": 4498598,
+      "sha256": "c62fe3d98dd9a1b6452c40a16c48e92015875d615758b6f67d9a91d553f12cd6",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000006951.json"
+    },
+    {
+      "bytes": 892995,
+      "sha256": "43ea9d55a02a0ae39292ea6c3a18cceb5604217a5af1358f36e357d7497fa076",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001781193.json"
+    },
+    {
+      "bytes": 4810683,
+      "sha256": "c09b160603412cb45acf1bb9bf3732e531dedfb548afa0e275fd8aefd7ab397e",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093410.json"
+    }
+  ],
+  "version": "registry-v1"
+}

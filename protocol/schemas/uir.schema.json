@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.hete.io/uir/v1.json",
+  "title": "HETE Universal Intermediate Representation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "metadata", "semantics", "policy_constraints", "execution_contract", "output_contract"],
+  "properties": {
+    "version": {"const": "1.0"},
+    "metadata": {
+      "type": "object", "additionalProperties": false,
+      "required": ["uir_version", "request_id", "source_language", "source_hash", "compiler_version", "domain", "created_at"],
+      "properties": {
+        "uir_version": {"const": "1.0"}, "request_id": {"type": "string", "minLength": 1},
+        "source_language": {"enum": ["ko", "en"]}, "source_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "compiler_version": {"type": "string", "minLength": 1}, "domain": {"type": "string", "minLength": 1},
+        "created_at": {"type": "string", "minLength": 1}
+      }
+    },
+    "semantics": {
+      "type": "object", "additionalProperties": false,
+      "required": ["intent", "target", "action", "parameters", "conditions", "temporal_scope"],
+      "properties": {
+        "intent": {"enum": ["SUMMARIZE", "EXTRACT", "ANALYZE", "COMPARE", "CAUSE_TRACE", "VERIFY"]},
+        "target": {"type": "object", "additionalProperties": false, "required": ["entity_type", "entity_id"], "properties": {"entity_type": {"type": "string", "minLength": 1}, "entity_id": {"type": "string", "minLength": 1}}},
+        "action": {"type": "string", "minLength": 1}, "parameters": {"type": "object", "additionalProperties": {"type": "string"}},
+        "conditions": {"type": "array", "items": {"$ref": "#/$defs/condition"}}, "temporal_scope": {"type": ["string", "null"]}
+      }
+    },
+    "policy_constraints": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "level", "condition", "enforcement", "source"], "properties": {"id": {"type": "string"}, "level": {"enum": ["L0_SYSTEM", "L1_DOMAIN", "L2_ENTERPRISE", "L3_PREFERENCE"]}, "condition": {"$ref": "#/$defs/condition"}, "enforcement": {"enum": ["BLOCK_EXECUTION", "REJECT", "GRACEFUL_DEGRADATION", "QUARANTINE", "BYPASS"]}, "source": {"type": "string"}}}},
+    "execution_contract": {"type": "object", "additionalProperties": false, "required": ["required_capabilities", "required_resources", "allowed_operations", "provenance_requirements", "failure_behavior", "execution_mode"], "properties": {"required_capabilities": {"type": "array", "items": {"type": "string"}}, "required_resources": {"type": "array", "items": {"type": "string"}}, "allowed_operations": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "provenance_requirements": {"type": "array", "items": {"type": "string"}}, "failure_behavior": {"enum": ["REJECT", "DEGRADE", "QUARANTINE", "ABORT"]}, "execution_mode": {"enum": ["VERIFIED_ONLY", "DRY_RUN", "STANDARD"]}}},
+    "output_contract": {"type": "object", "additionalProperties": false, "required": ["format", "allowed_claim_types", "provenance_required", "numeric_exactness", "allow_external_inference", "unsupported_claim_behavior"], "properties": {"format": {"enum": ["STRUCTURED_JSON", "GROUNDED_NATURAL_LANGUAGE"]}, "allowed_claim_types": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "provenance_required": {"type": "boolean"}, "numeric_exactness": {"type": "boolean"}, "allow_external_inference": {"type": "boolean"}, "unsupported_claim_behavior": {"enum": ["REJECT", "REMOVE", "FLAG", "FILTER_AND_RENDER"]}}}
+  },
+  "$defs": {"condition": {"type": "object", "required": ["operator"], "properties": {"operator": {"enum": ["EQ", "GT", "LT", "NOT", "AND", "OR", "EXCEPT"]}}, "additionalProperties": true}}
+}

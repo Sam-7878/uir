@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.hete.io/uir/v2.json",
+  "title": "HETE Universal Intermediate Representation v2 - Zero-Trust Security Specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "uir_version",
+    "metadata",
+    "intent",
+    "security_context",
+    "evidence",
+    "resource_budget",
+    "policy_constraints",
+    "expected_output"
+  ],
+  "properties": {
+    "uir_version": {
+      "type": "string",
+      "enum": ["2.0"]
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request_id",
+        "source_lang",
+        "domain",
+        "target_id",
+        "source_hash",
+        "created_at"
+      ],
+      "properties": {
+        "request_id": { "type": "string", "minLength": 1 },
+        "source_lang": { "type": "string", "enum": ["KO", "EN"] },
+        "domain": { "type": "string", "minLength": 1 },
+        "target_id": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "source_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+        "created_at": { "type": "string", "minLength": 1 }
+      }
+    },
+    "intent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "arguments"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "SUMMARIZE",
+            "CAUSE_TRACE",
+            "LOOKUP",
+            "ANALYZE",
+            "COMPARE",
+            "VERIFY",
+            "EXTRACT",
+            "TRANSFER",
+            "EXECUTE_TOOL",
+            "AUDIT"
+          ]
+        },
+        "arguments": {
+          "type": "object",
+          "additionalProperties": {
+            "type": ["string", "number", "boolean", "null", "array", "object"]
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/condition" }
+        },
+        "temporal_scope": { "type": ["string", "null"] }
+      }
+    },
+    "security_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "principal",
+        "trust_level",
+        "input_taint",
+        "data_classification",
+        "allowed_capabilities",
+        "denied_capabilities",
+        "requires_human_approval"
+      ],
+      "properties": {
+        "principal": { "type": "string", "minLength": 1 },
+        "trust_level": {
+          "type": "string",
+          "enum": ["UNTRUSTED", "AUTHENTICATED", "PRIVILEGED", "SYSTEM"]
+        },
+        "input_taint": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["USER", "RAG", "TOOL", "MEMORY", "SYSTEM"]
+          }
+        },
+        "data_classification": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["PUBLIC", "INTERNAL", "CONFIDENTIAL", "SECRET"]
+          }
+        },
+        "allowed_capabilities": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "denied_capabilities": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "requires_human_approval": { "type": "boolean" },
+        "approval_token": { "type": ["string", "null"] }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "source_type",
+          "trust",
+          "sha256",
+          "verified",
+          "instruction_bearing"
+        ],
+        "properties": {
+          "source_id": { "type": "string", "minLength": 1 },
+          "source_type": {
+            "type": "string",
+            "enum": ["API", "SIGNED_DOC", "RAG", "TOOL", "DATABASE", "USER_SUPPLIED"]
+          },
+          "trust": {
+            "type": "string",
+            "enum": ["TRUSTED", "UNTRUSTED", "QUARANTINED"]
+          },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "verified": { "type": "boolean" },
+          "instruction_bearing": { "type": "boolean" },
+          "retrieved_at": { "type": "string" },
+          "signer": { "type": ["string", "null"] },
+          "content_payload": { "type": "string" }
+        }
+      }
+    },
+    "resource_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "max_input_tokens",
+        "max_output_tokens",
+        "max_retrievals",
+        "max_tool_calls",
+        "timeout_ms"
+      ],
+      "properties": {
+        "max_input_tokens": { "type": "integer", "minimum": 1, "maximum": 32768 },
+        "max_output_tokens": { "type": "integer", "minimum": 1, "maximum": 8192 },
+        "max_retrievals": { "type": "integer", "minimum": 0, "maximum": 50 },
+        "max_tool_calls": { "type": "integer", "minimum": 0, "maximum": 20 },
+        "timeout_ms": { "type": "integer", "minimum": 100, "maximum": 60000 },
+        "max_depth": { "type": "integer", "minimum": 1, "maximum": 10 }
+      }
+    },
+    "policy_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "level", "condition", "enforcement", "source"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "level": {
+            "type": "string",
+            "enum": ["L0_SYSTEM", "L1_DOMAIN", "L2_ENTERPRISE", "L3_PREFERENCE"]
+          },
+          "condition": { "$ref": "#/$defs/condition" },
+          "enforcement": {
+            "type": "string",
+            "enum": [
+              "BLOCK_EXECUTION",
+              "REJECT",
+              "GRACEFUL_DEGRADATION",
+              "QUARANTINE",
+              "REQUIRE_APPROVAL",
+              "BYPASS"
+            ]
+          },
+          "source": { "type": "string" }
+        }
+      }
+    },
+    "expected_output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_id", "citations_required"],
+      "properties": {
+        "schema_id": { "type": "string", "minLength": 1 },
+        "citations_required": { "type": "boolean" },
+        "numeric_exactness": { "type": "boolean" },
+        "allow_external_inference": { "type": "boolean" },
+        "unsupported_claim_behavior": {
+          "type": "string",
+          "enum": ["REJECT", "REMOVE", "FLAG", "FILTER_AND_RENDER"]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "condition": {
+      "type": "object",
+      "required": ["operator"],
+      "properties": {
+        "operator": {
+          "type": "string",
+          "enum": ["EQ", "NE", "GT", "LT", "GTE", "LTE", "IN", "NOT_IN", "NOT", "AND", "OR", "EXCEPT", "MATCHES", "CONTAINS"]
+        },
+        "left": { "type": ["string", "number", "boolean", "null", "object", "array"] },
+        "right": { "type": ["string", "number", "boolean", "null", "object", "array"] },
+        "operands": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/condition" }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

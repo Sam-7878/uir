@@ -1,0 +1,21 @@
+{
+  "protocol": "actual_model_reconstruction_first_v1",
+  "case_count": 1200,
+  "reviewers": {
+    "AI-R1": "AntiGravity Sonnet 4.6",
+    "AI-R2": "AntiGravity Gemini 3.6 Flash",
+    "AI-R3": "AntiGravity Opus 4.6"
+  },
+  "prompt_template_sha256": "1660e3f70d9c11b0b415a7adb3c4bcc01dd1b8c9576af19c8881335336198310",
+  "temperature": 0,
+  "contexts_isolated": true,
+  "forbidden_inputs": [
+    "parser output",
+    "B0-B6 outcome",
+    "other reviewer judgments",
+    "agreement statistics",
+    "target performance"
+  ],
+  "candidate_sha256": "9bb8a5d423b53bae14b2c699cba6b1338f0115345f94c6b4a9f93af2400d4a3c",
+  "note": "Packets contain no model judgments. Each named AntiGravity engine must generate its own output in an isolated session."
+}

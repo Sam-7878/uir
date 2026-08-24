@@ -1,0 +1,23 @@
+[package]
+name = "poa-uir"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+hex.workspace = true
+poa-core = { path = "../../../hete_sandbox/crates/poa-core" }
+poa-protocol = { path = "../../../hete_sandbox/crates/poa-protocol" }
+regex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+jsonschema.workspace = true
+
+[[bin]]
+name = "uir-eval"
+path = "src/bin/uir_eval.rs"

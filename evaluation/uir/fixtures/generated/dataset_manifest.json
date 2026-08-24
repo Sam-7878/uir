@@ -1,0 +1,19 @@
+{
+  "categories": {
+    "adversarial": 140,
+    "ambiguous": 100,
+    "invalid_entity": 200,
+    "output_contract": 100,
+    "parallel": 600,
+    "paraphrase": 200,
+    "policy_violation": 200,
+    "valid": 300
+  },
+  "languages": {
+    "en": 920,
+    "ko": 920
+  },
+  "rows": 1840,
+  "seed": 20260807,
+  "sha256": "098ac5396290f6c8a04f748c980f2e4883f9a1e659019fbf8b06ecb3c277d7b0"
+}

@@ -1,0 +1,25 @@
+{
+  "backend": "ollama",
+  "endpoint": "http://127.0.0.1:11434",
+  "model": "phi3.5:latest",
+  "deterministic": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "max_new_tokens": 384,
+    "repetition_penalty": 1.05,
+    "do_sample": false,
+    "seed": 20260807
+  },
+  "stochastic": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "max_new_tokens": 384,
+    "repetition_penalty": 1.05,
+    "do_sample": true,
+    "seeds": [20260807, 20260808, 20260809, 20260810, 20260811]
+  },
+  "keep_alive": "30m",
+  "timeout_seconds": 120
+}
