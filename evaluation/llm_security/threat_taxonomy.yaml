@@ -1,0 +1,14 @@
+framework:
+  owasp: "OWASP Top 10 for LLM Applications 2025"
+  mitre_atlas: "MITRE ATLAS v15"
+scope_note: "Mappings describe evaluated application-layer threats only; training-time, model supply-chain, and hardware attacks are out of scope."
+threats:
+  direct_prompt_injection: {owasp: LLM01, atlas: AML.T0051, component: policy_engine}
+  jailbreak_policy_override: {owasp: LLM01, atlas: AML.T0051, component: policy_engine}
+  indirect_prompt_injection: {owasp: LLM01, atlas: AML.T0051, component: context_firewall}
+  poisoned_retrieval_evidence: {owasp: LLM04, atlas: AML.T0020, component: provenance}
+  sensitive_data_exfiltration: {owasp: LLM02, atlas: AML.T0024, component: output_guard}
+  excessive_agency_tool_escalation: {owasp: LLM06, atlas: AML.T0040, component: capability_gate}
+  resource_exhaustion: {owasp: LLM10, atlas: AML.T0029, component: resource_guard}
+  nonexistent_entity: {owasp: LLM09, atlas: "N/A", component: entity_verifier}
+  gaslighting_false_premise: {owasp: LLM09, atlas: "N/A", component: entity_verifier}

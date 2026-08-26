@@ -30,6 +30,7 @@ from llm_trust import (
     create_trusted_security_context,
 )
 from llm_trust.inference.base import BaseInferenceBackend
+from ..execution import add_guard_event, attach_generation, new_execution_record
 
 
 class UirV2SecurityPipeline:
@@ -69,6 +70,7 @@ class UirV2SecurityPipeline:
         attack_class = case["attack_class"]
         case_id = case["case_id"]
         raw_context = case.get("context", [])
+        record = new_execution_record(case, "HETE UIR-v2 Security")
 
         # [1] Input Guard
         if self.input_guard:
@@ -134,17 +136,17 @@ class UirV2SecurityPipeline:
             outcome = PolicyOutcome.ALLOW
             matched_rule = "POLICY_ENGINE_DISABLED"
 
-        # [8] Execution Gate: Reject / Deny paths NEVER execute unconstrained LLM
-        attack_succeeded = False
-        dlp_violation = False
+        # [8] Execution Gate: reject paths never invoke unconstrained LLM.
+        # This tested pipeline returns observations only. The independent judge assigns outcomes.
         final_output = ""
         input_tokens = guarded.estimated_tokens
         output_tokens = 0
 
         if outcome in {PolicyOutcome.DENY, PolicyOutcome.QUARANTINE_EVIDENCE, PolicyOutcome.REQUIRE_APPROVAL}:
             final_output = f"[BLOCKED_BY_ZERO_TRUST_POLICY: {outcome.value} - {matched_rule}]"
-            attack_succeeded = False  # Successfully prevented
             output_tokens = len(final_output) // 4
+            record["terminal_status"] = "BLOCKED"
+            add_guard_event(record, "policy_engine", "BLOCK", matched_rule)
         else:
             # Authorized path: Compile UIR v2 document
             uir_doc = self.builder.build(
@@ -164,6 +166,8 @@ class UirV2SecurityPipeline:
             )
             input_tokens = gen_res.input_tokens
             output_tokens = gen_res.output_tokens
+            record["model_output"] = gen_res.text
+            record["model_name"] = gen_res.model_name
 
             # [10] Egress Output Guard & DLP
             if self.output_guard:
@@ -175,27 +179,38 @@ class UirV2SecurityPipeline:
                 )
                 if not guard_verdict.is_safe:
                     final_output = f"[OUTPUT_GUARD_BLOCKED: {guard_verdict.rejection_reason}]"
-                    dlp_violation = bool(guard_verdict.dlp_findings)
-                    attack_succeeded = False
+                    record["terminal_status"] = "BLOCKED"
+                    add_guard_event(record, "output_guard", "BLOCK", guard_verdict.rejection_reason)
                 else:
                     final_output = guard_verdict.sanitized_output
             else:
                 final_output = gen_res.text
+            if not record["terminal_status"] == "BLOCKED":
+                record["terminal_status"] = "RESPONDED"
 
         latency_ms = (time.perf_counter_ns() - start) / 1_000_000.0
 
-        return {
-            "case_id": case_id,
-            "attack_class": attack_class,
-            "baseline": "HETE UIR-v2 Security",
-            "is_safe": not attack_succeeded and outcome in {PolicyOutcome.ALLOW, PolicyOutcome.DEGRADE_TO_READ_ONLY, PolicyOutcome.DENY, PolicyOutcome.QUARANTINE_EVIDENCE},
-            "attack_succeeded": attack_succeeded,
-            "policy_outcome": outcome.value,
-            "matched_rule": matched_rule,
-            "policy_violated": attack_succeeded,
-            "dlp_violation": dlp_violation,
-            "output_text": final_output,
+        record["policy_outcome"] = outcome.value
+        record["matched_rule"] = matched_rule
+        record["final_output"] = final_output
+        record["accepted_evidence_ids"] = [ev.source_id for ev in evidence_records]
+        if resolution_result and resolution_result.status != ResolutionStatus.RESOLVED:
+            record["blocked_evidence_ids"] = [item.get("source_id", "unknown") for item in raw_context]
+        record["resource_usage"].update({
             "input_tokens": input_tokens,
             "output_tokens": output_tokens,
-            "latency_ms": latency_ms,
-        }
+            "elapsed_ms": latency_ms,
+            "retrieval_count": len(raw_context),
+        })
+        if tracker:
+            record["resource_budget"] = tracker.budget.to_dict()
+            record["resource_usage"].update({
+                "input_tokens": max(input_tokens, tracker.consumed_input_tokens),
+                "output_tokens": max(output_tokens, tracker.consumed_output_tokens),
+                "retrieval_count": tracker.consumed_retrievals,
+                "tool_call_count": tracker.consumed_tool_calls,
+                "recursion_depth": tracker.current_depth,
+            })
+        else:
+            record["resource_budget"] = {}
+        return record

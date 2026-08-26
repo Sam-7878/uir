@@ -1,0 +1,8 @@
+{
+  "generator": "security_benchmark_v2",
+  "seed": 42,
+  "development_cases": 1600,
+  "heldout_cases": 320,
+  "development_sha256": "e8e3e479ab09a5c38fff1d1905716bc958fff5fa5e31b791662d7b3f519a3c44",
+  "heldout_sha256": "26ac78675c5bbb98e0213304d89f5d3be825b08d35b03b4e80d473515f3bd1dd"
+}

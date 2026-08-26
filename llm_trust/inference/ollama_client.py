@@ -88,12 +88,22 @@ class OllamaClient(BaseInferenceBackend):
                 "claims": ["revenue: $383.29B", "net_income: $96.99B"],
                 "citations": ["registry:AAPL"],
             }, ensure_ascii=False)
+        elif "MSFT" in prompt or "Microsoft" in prompt:
+            response_text = json.dumps({
+                "entity": "MSFT", "summary": "Microsoft Corporation verified revenue for fiscal year 2023 was $211.91B with net income of $72.36B.",
+                "claims": ["revenue: $211.91B", "net_income: $72.36B"], "citations": ["registry:MSFT"],
+            }, ensure_ascii=False)
         elif "005930" in prompt or "삼성" in prompt:
             response_text = json.dumps({
                 "entity": "005930",
                 "summary": "삼성전자 2023년 공시 매출액은 258.93조 원, 영업이익은 6.57조 원입니다.",
                 "claims": ["매출액: 258.93T KRW", "영업이익: 6.57T KRW"],
                 "citations": ["registry:005930"],
+            }, ensure_ascii=False)
+        elif "000660" in prompt or "Hynix" in prompt:
+            response_text = json.dumps({
+                "entity": "000660", "summary": "SK Hynix 2023 verified revenue was 32.77T KRW.",
+                "claims": ["revenue: 32.77T KRW"], "citations": ["registry:000660"],
             }, ensure_ascii=False)
         else:
             response_text = json.dumps({
