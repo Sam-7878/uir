@@ -55,7 +55,7 @@ def main() -> int:
         "dataset_dev_path": str(DEFAULT_DEV), "dataset_dev_sha256": sha256(DEFAULT_DEV),
         "dataset_heldout_path": str(DEFAULT_HELDOUT), "dataset_heldout_sha256": sha256(DEFAULT_HELDOUT),
         "model": "microsoft/Phi-3.5-mini-instruct", "model_revision": snapshot.name, "model_path": str(snapshot),
-        "quantization": "bitsandbytes NF4 double-quant", "attention": "eager", "use_cache": True,
+        "quantization": "bitsandbytes NF4 double-quant", "attention": "torch-sdpa", "use_cache": True,
         "decoding": {"do_sample": False, "temperature": 0.0, "top_p": None, "max_input_tokens": 2048, "max_new_tokens": 128},
         "runs": 3, "seed_base": 20260826,
         "runtime": {

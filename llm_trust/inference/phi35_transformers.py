@@ -49,7 +49,10 @@ class Phi35TransformersBackend(BaseInferenceBackend):
                     bnb_4bit_compute_dtype=torch.float16,
                 ),
             })
-        load_options["attn_implementation"] = "eager"
+        # Native Phi3 on PyTorch 2.5 supports scaled-dot-product attention,
+        # avoiding the quadratic eager-attention materialization that otherwise
+        # makes the frozen resource-exhaustion cases impractical on an 8 GiB GPU.
+        load_options["attn_implementation"] = "sdpa"
         self._model = AutoModelForCausalLM.from_pretrained(self.model_path, **load_options)
         self._model.config.use_cache = True
         self._model.eval()
