@@ -44,11 +44,13 @@ def run_ablation_experiments() -> Dict[str, Any]:
     with open(ablation_raw_path, "w", encoding="utf-8") as out_f:
         for name, pipeline in ablations.items():
             print(f"Evaluating ablation configuration: [{name}]...")
-            records = []
-            for case in cases:
-                rec = pipeline.run_case(case)
+            from concurrent.futures import ThreadPoolExecutor
+
+            with ThreadPoolExecutor(max_workers=8) as executor:
+                records = list(executor.map(pipeline.run_case, cases))
+
+            for rec in records:
                 rec["ablation_name"] = name
-                records.append(rec)
                 out_f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
             metrics = compute_metrics(records)

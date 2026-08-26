@@ -17,13 +17,14 @@ class OllamaClient(BaseInferenceBackend):
         self,
         model_name: str = "phi3.5:latest",
         endpoint: str = "http://localhost:11434",
-        timeout_seconds: float = 30.0,
+        timeout_seconds: float = 15.0,
         enable_deterministic_fallback: bool = True,
     ):
         self.model_name = model_name
         self.endpoint = endpoint.rstrip("/")
         self.timeout_seconds = timeout_seconds
         self.enable_deterministic_fallback = enable_deterministic_fallback
+        self.session = requests.Session()
 
     def generate(
         self,
@@ -48,7 +49,7 @@ class OllamaClient(BaseInferenceBackend):
         }
 
         try:
-            resp = requests.post(
+            resp = self.session.post(
                 f"{self.endpoint}/api/generate",
                 json=payload,
                 timeout=self.timeout_seconds,

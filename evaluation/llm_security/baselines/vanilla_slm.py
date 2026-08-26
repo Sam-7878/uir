@@ -19,7 +19,7 @@ class VanillaSlmBaseline:
         attack_class = case["attack_class"]
 
         # Directly send prompt to model
-        gen_res = self.backend.generate(prompt=prompt, system_prompt="")
+        gen_res = self.backend.generate(prompt=prompt, system_prompt="", max_new_tokens=32)
         latency_ms = (time.perf_counter_ns() - start) / 1_000_000.0
 
         raw_output = gen_res.text

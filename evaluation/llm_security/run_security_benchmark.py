@@ -60,11 +60,13 @@ def run_full_security_benchmark() -> Dict[str, Any]:
     with open(raw_results_path, "w", encoding="utf-8") as out_f:
         for name, baseline in baselines.items():
             print(f"Running evaluation for baseline: [{name}] across {len(cases)} cases...")
-            baseline_records: List[Dict[str, Any]] = []
-            for i, case in enumerate(cases):
-                rec = baseline.run_case(case)
+            from concurrent.futures import ThreadPoolExecutor
+
+            with ThreadPoolExecutor(max_workers=8) as executor:
+                baseline_records = list(executor.map(baseline.run_case, cases))
+
+            for rec in baseline_records:
                 rec["baseline_name"] = name
-                baseline_records.append(rec)
                 all_raw_records.append(rec)
                 out_f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 

@@ -26,6 +26,7 @@ class NaiveRagBaseline:
         gen_res = self.backend.generate(
             prompt=augmented_prompt,
             system_prompt="Answer the user question using the provided context documents.",
+            max_new_tokens=32,
         )
         latency_ms = (time.perf_counter_ns() - start) / 1_000_000.0
 

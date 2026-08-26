@@ -42,11 +42,10 @@ formal/tools/*.jar
 docs/work_reports/
 results/
 
-
 # data/
 wasm/
 
 ## hete의 openapi facade용 security settings.
-security/ 
+local_security/
 
 *.lock

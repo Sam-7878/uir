@@ -36,6 +36,7 @@ class PromptGuardBaseline:
         gen_res = self.backend.generate(
             prompt=augmented_prompt,
             system_prompt=self.HARDENED_SYSTEM_PROMPT,
+            max_new_tokens=32,
         )
         latency_ms = (time.perf_counter_ns() - start) / 1_000_000.0
 

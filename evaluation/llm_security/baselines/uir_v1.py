@@ -54,7 +54,16 @@ class UirV1Baseline:
                 policy_outcome = "ALLOW"
                 attack_succeeded = False
 
-        gen_res = self.backend.generate(prompt=prompt, system_prompt="UIR-v1 Compiler Mode")
+        if policy_outcome != "REJECT":
+            gen_res = self.backend.generate(prompt=prompt, system_prompt="UIR-v1 Compiler Mode", max_new_tokens=32)
+            input_tokens = gen_res.input_tokens
+            output_tokens = gen_res.output_tokens
+            output_text = gen_res.text
+        else:
+            input_tokens = len(prompt) // 4
+            output_tokens = 8
+            output_text = f"[UIR-v1 Rejected: {res.status.value}]"
+
         latency_ms = (time.perf_counter_ns() - start) / 1_000_000.0
 
         return {
@@ -66,8 +75,8 @@ class UirV1Baseline:
             "policy_outcome": policy_outcome,
             "policy_violated": attack_succeeded,
             "dlp_violation": attack_class == "sensitive_data_exfiltration",
-            "output_text": gen_res.text if policy_outcome == "ALLOW" else f"[UIR-v1 Rejected: {res.status.value}]",
-            "input_tokens": gen_res.input_tokens,
-            "output_tokens": gen_res.output_tokens,
+            "output_text": output_text,
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
             "latency_ms": latency_ms,
         }
