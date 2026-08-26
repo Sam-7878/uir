@@ -18,7 +18,8 @@ class VanillaSlmBaseline:
         started = time.perf_counter_ns()
         generated = self.backend.generate(prompt=case["prompt"], system_prompt="", max_new_tokens=128)
         record = new_execution_record(case, "Vanilla SLM")
+        measured_ms = (time.perf_counter_ns() - started) / 1_000_000.0
         attach_generation(record, generated.text, generated.input_tokens, generated.output_tokens,
-                          (time.perf_counter_ns() - started) / 1_000_000.0, generated.model_name)
+                          max(measured_ms, generated.latency_ms), generated.model_name)
         record["policy_outcome"] = "NO_EXTERNAL_POLICY"
         return record

@@ -10,9 +10,10 @@ from typing import Any, Dict
 
 from llm_trust.inference.ollama_client import OllamaClient
 from llm_trust.inference.phi35_transformers import Phi35TransformersBackend
+from .batch_execution import BatchCoordinator
 from .judges import CompositeJudge
 from .metrics_v2 import compute_behavioral_metrics
-from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_case, load_dataset, verify_live_ollama
+from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_dataset, verify_live_ollama
 from .baselines.uir_v2_security import UirV2SecurityPipeline
 
 TARGETS = {
@@ -43,6 +44,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--backend", choices=("phi35-transformers", "ollama"), default="phi35-transformers"); parser.add_argument("--model", default="phi3.5:latest"); parser.add_argument("--model-path"); parser.add_argument("--endpoint", default="http://127.0.0.1:11434")
     parser.add_argument("--runs", type=int, default=3); parser.add_argument("--max-cases", type=int); parser.add_argument("--allow-fallback", action="store_true")
+    parser.add_argument("--dataset", type=Path, default=DATASET); parser.add_argument("--results", type=Path, default=RESULTS)
+    parser.add_argument("--split", choices=("development", "heldout"), default="development"); parser.add_argument("--batch-size", type=int, default=16)
     args = parser.parse_args()
     if args.backend == "ollama":
         live = None if args.allow_fallback else verify_live_ollama(args.endpoint, args.model)
@@ -50,27 +53,46 @@ def main() -> None:
     else:
         if args.allow_fallback: raise ValueError("fallback applies only to Ollama")
         live = {"local_transformers_snapshot": args.model_path or "default Phi-3.5 cache"}; backend = Phi35TransformersBackend(args.model_path)
-    cases = load_dataset(DATASET); cases = cases[:args.max_cases] if args.max_cases else cases
-    raw_dir = RESULTS / "raw_runs"; raw_dir.mkdir(parents=True, exist_ok=True)
-    summary: Dict[str, Any] = {"full": [], "knockouts": {}, "targeted": {}}
+    coordinator = BatchCoordinator(backend, args.batch_size) if args.backend == "phi35-transformers" else None
+    pipeline_backend = coordinator or backend
+    cases = load_dataset(args.dataset); cases = cases[:args.max_cases] if args.max_cases else cases
+    expected_total = len(cases); expected_attacks = sum(c["attack_class"] != "valid_benign" for c in cases); expected_benign = expected_total - expected_attacks
+    raw_dir = args.results / "raw_runs"; raw_dir.mkdir(parents=True, exist_ok=True)
+    summary: Dict[str, Any] = {"full": [], "knockouts": {}, "targeted_full": {}, "targeted": {}}
     for run in range(args.runs):
-        for name, pipeline in configurations(backend).items():
-            records = [evaluate_case(pipeline, case, CompositeJudge()) for case in cases]
-            raw = raw_dir / f"ablation-{run:02d}-{name.replace(' ', '_')}.jsonl"
+        for name, pipeline in configurations(pipeline_backend).items():
+            records = evaluate_cases(pipeline, cases, CompositeJudge(), coordinator)
+            raw = raw_dir / f"{args.split}-ablation-{run:02d}-{name.replace(' ', '_')}.jsonl"
             raw.write_text("".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n" for item in records), encoding="utf-8")
             metrics = compute_behavioral_metrics(records)
-            if name == "Full UIR-v2 Security": summary["full"].append(metrics)
+            if name == "Full UIR-v2 Security":
+                summary["full"].append(metrics)
+                for knockout, classes in TARGETS.items():
+                    targeted_full = [item for item in records if item["attack_class"] in classes]
+                    summary["targeted_full"].setdefault(knockout, []).append(compute_behavioral_metrics(targeted_full))
             else:
                 summary["knockouts"].setdefault(name, []).append(metrics)
                 targeted = [item for item in records if item["attack_class"] in TARGETS[name]]
                 summary["targeted"].setdefault(name, []).append(compute_behavioral_metrics(targeted))
-    full = summary["full"][0]
     deltas = {}
     for name, runs in summary["knockouts"].items():
-        current = runs[0]
-        deltas[name] = {"delta_e2e_asr": current["e2e_asr_overall"]["rate"] - full["e2e_asr_overall"]["rate"], "delta_mcr": current["mcr_overall"]["rate"] - full["mcr_overall"]["rate"], "delta_frr": current["frr"]["rate"] - full["frr"]["rate"], "delta_utility": current["benign_task_success"]["rate"] - full["benign_task_success"]["rate"], "delta_latency_ms": current["latency_ms"]["mean"] - full["latency_ms"]["mean"], "targeted_degradation_observed": summary["targeted"][name][0]["e2e_asr_overall"]["rate"] > 0 or summary["targeted"][name][0]["mcr_overall"]["rate"] > 0}
-    manifest = {"study": "single_component_ablation_v2", "timestamp_utc": datetime.now(timezone.utc).isoformat(), "backend": args.backend, "model": args.model if args.backend == "ollama" else "microsoft/Phi-3.5-mini-instruct", "runtime": live, "runs": args.runs, "fallback_allowed": args.allow_fallback, "publication_eligible": not args.allow_fallback and args.runs >= 3 and len(cases) == 1600, "dataset_sha256": hashlib.sha256(DATASET.read_bytes()).hexdigest(), "results": summary, "deltas": deltas}
-    RESULTS.mkdir(parents=True, exist_ok=True); (RESULTS / "ablation_metrics_summary.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        per_run = []
+        for index, current in enumerate(runs):
+            full = summary["full"][index]
+            targeted_current = summary["targeted"][name][index]; targeted_full = summary["targeted_full"][name][index]
+            per_run.append({"delta_e2e_asr": current["e2e_asr_overall"]["rate"] - full["e2e_asr_overall"]["rate"], "delta_mcr": current["mcr_overall"]["rate"] - full["mcr_overall"]["rate"], "delta_frr": current["frr"]["rate"] - full["frr"]["rate"], "delta_utility": current["benign_task_success"]["rate"] - full["benign_task_success"]["rate"], "delta_latency_ms": current["latency_ms"]["mean"] - full["latency_ms"]["mean"], "targeted_delta_e2e_asr": targeted_current["e2e_asr_overall"]["rate"] - targeted_full["e2e_asr_overall"]["rate"], "targeted_delta_mcr": targeted_current["mcr_overall"]["rate"] - targeted_full["mcr_overall"]["rate"]})
+        keys = per_run[0]
+        deltas[name] = {key: sum(run[key] for run in per_run) / len(per_run) for key in keys}
+        deltas[name]["per_run"] = per_run
+        deltas[name]["targeted_degradation_observed"] = deltas[name]["targeted_delta_e2e_asr"] > 0 or deltas[name]["targeted_delta_mcr"] > 0
+    expected_size = 1600 if args.split == "development" else 320
+    all_metrics = summary["full"] + [m for runs in summary["knockouts"].values() for m in runs]
+    failures = sum(m["inference_failures"]["count"] for m in all_metrics)
+    eligible = (args.backend == "phi35-transformers" and not args.allow_fallback and args.runs >= 3 and len(cases) == expected_size
+                and expected_attacks > 0 and expected_benign > 0 and failures == 0 and len(summary["knockouts"]) == 7
+                and len(summary["full"]) == args.runs and all(len(runs) == args.runs for runs in summary["knockouts"].values()))
+    manifest = {"study": "single_component_ablation_v2", "split": args.split, "timestamp_utc": datetime.now(timezone.utc).isoformat(), "backend": args.backend, "model": args.model if args.backend == "ollama" else "microsoft/Phi-3.5-mini-instruct", "runtime": live, "runs": args.runs, "fallback_allowed": args.allow_fallback, "publication_eligible": eligible, "expected_counts": {"total": expected_total, "attacks": expected_attacks, "benign": expected_benign}, "dataset_sha256": hashlib.sha256(args.dataset.read_bytes()).hexdigest(), "results": summary, "deltas": deltas}
+    args.results.mkdir(parents=True, exist_ok=True); output_name = "ablation_metrics_summary.json" if args.split == "development" else "heldout_ablation_metrics_summary.json"; (args.results / output_name).write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({"publication_eligible": manifest["publication_eligible"], "configurations": len(configurations(backend))}, sort_keys=True))
 
 

@@ -8,6 +8,7 @@ from typing import Any, Dict, Iterable, List
 
 
 TERMINAL_STATUSES = {"RESPONDED", "BLOCKED", "ERROR", "TIMEOUT"}
+FAILURE_STATUSES = {"MODEL_ERROR", "CUDA_OOM", "TIMEOUT", "INVALID_OUTPUT", "BACKEND_ERROR"}
 
 
 def new_execution_record(case: Dict[str, Any], baseline: str) -> Dict[str, Any]:

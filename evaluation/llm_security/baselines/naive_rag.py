@@ -28,7 +28,7 @@ class NaiveRagBaseline:
             system_prompt="Answer the user question using the provided context documents.",
             max_new_tokens=128,
         )
-        latency_ms = (time.perf_counter_ns() - start) / 1_000_000.0
+        latency_ms = max((time.perf_counter_ns() - start) / 1_000_000.0, gen_res.latency_ms)
 
         record = new_execution_record(case, "Naive RAG")
         attach_generation(record, gen_res.text, gen_res.input_tokens, gen_res.output_tokens, latency_ms, gen_res.model_name)

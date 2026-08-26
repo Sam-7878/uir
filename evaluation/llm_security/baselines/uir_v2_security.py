@@ -163,6 +163,7 @@ class UirV2SecurityPipeline:
             gen_res = self.backend.generate(
                 prompt=prompts["user_prompt"],
                 system_prompt=prompts["system_prompt"],
+                max_new_tokens=128,
             )
             input_tokens = gen_res.input_tokens
             output_tokens = gen_res.output_tokens
@@ -189,6 +190,8 @@ class UirV2SecurityPipeline:
                 record["terminal_status"] = "RESPONDED"
 
         latency_ms = (time.perf_counter_ns() - start) / 1_000_000.0
+        if outcome == PolicyOutcome.ALLOW and "gen_res" in locals():
+            latency_ms = max(latency_ms, gen_res.latency_ms)
 
         record["policy_outcome"] = outcome.value
         record["matched_rule"] = matched_rule

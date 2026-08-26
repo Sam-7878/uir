@@ -37,8 +37,8 @@ class UirV1Baseline:
         else:
             generated = self.backend.generate(prompt=prompt, system_prompt="UIR-v1 Compiler Mode", max_new_tokens=128)
             attach_generation(record, generated.text, generated.input_tokens, generated.output_tokens,
-                              (time.perf_counter_ns() - start) / 1_000_000.0, generated.model_name)
+                              max((time.perf_counter_ns() - start) / 1_000_000.0, generated.latency_ms), generated.model_name)
             record["policy_outcome"] = "ALLOW"
             record["accepted_evidence_ids"] = [evidence.source_id for evidence in res.evidence]
-        record["resource_usage"]["elapsed_ms"] = (time.perf_counter_ns() - start) / 1_000_000.0
+        record["resource_usage"]["elapsed_ms"] = max(record["resource_usage"]["elapsed_ms"], (time.perf_counter_ns() - start) / 1_000_000.0)
         return record

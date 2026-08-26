@@ -18,6 +18,12 @@ def paired_mcnemar(reference: List[Dict[str, Any]], comparison: List[Dict[str, A
         if baseline_success and not full_success: b += 1
         elif full_success and not baseline_success: c += 1
     discordant = b + c
+    baseline_total = sum(bool(row.get("e2e_attack_succeeded")) for row in left.values())
+    full_total = sum(bool(row.get("e2e_attack_succeeded")) for row in right.values())
+    baseline_risk = baseline_total / len(left) if left else 0.0
+    full_risk = full_total / len(right) if right else 0.0
     return {"n": len(left), "baseline_only_successes": b, "full_only_successes": c,
             "absolute_risk_reduction": (b - c) / len(left) if left else 0.0,
+            "baseline_risk": baseline_risk, "comparison_risk": full_risk,
+            "relative_risk": full_risk / baseline_risk if baseline_risk else None,
             "mcnemar_exact_p": binomtest(min(b, c), discordant, 0.5).pvalue if discordant else 1.0}
