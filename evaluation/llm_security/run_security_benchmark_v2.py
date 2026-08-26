@@ -31,6 +31,18 @@ def load_dataset(path: Path) -> list[Dict[str, Any]]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
+def load_completed_raw(path: Path, cases: list[Dict[str, Any]], expected_model: str) -> list[Dict[str, Any]]:
+    records = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    expected_ids = [case["case_id"] for case in cases]
+    if len(records) != len(cases) or [record.get("case_id") for record in records] != expected_ids:
+        raise AssertionError(f"resume artifact is incomplete or reordered: {path}")
+    if any(record.get("model_name") not in {None, expected_model} for record in records):
+        raise AssertionError(f"resume artifact model mismatch: {path}")
+    if any(record.get("failure_type") for record in records):
+        raise AssertionError(f"resume artifact contains inference failures: {path}")
+    return records
+
+
 def verify_live_ollama(endpoint: str, model: str) -> Dict[str, Any]:
     response = requests.get(endpoint.rstrip("/") + "/api/tags", timeout=5)
     response.raise_for_status()
@@ -96,6 +108,7 @@ def main() -> None:
     parser.add_argument("--results", type=Path, default=RESULTS)
     parser.add_argument("--split", choices=("development", "heldout"), default="development")
     parser.add_argument("--batch-size", type=int, default=16)
+    parser.add_argument("--resume", action="store_true", help="Reuse only complete, ordered, failure-free raw artifacts.")
     parser.add_argument("--endpoint", default="http://127.0.0.1:11434")
     parser.add_argument("--runs", type=int, default=3)
     parser.add_argument("--seed", type=int, default=20260826)
@@ -126,15 +139,21 @@ def main() -> None:
     for run in range(args.runs):
         random.seed(args.seed + run)
         for name, factory in baselines.items():
-            judge = CompositeJudge(); pipeline = factory(pipeline_backend)
-            records = evaluate_cases(pipeline, cases, judge, coordinator)
+            raw_path = raw_dir / f"{args.split}-run-{run:02d}-{name.lower().replace(' ', '_').replace('/', '_')}.jsonl"
+            expected_model = args.model if args.backend == "ollama" else "microsoft/Phi-3.5-mini-instruct"
+            if args.resume and raw_path.exists():
+                records = load_completed_raw(raw_path, cases, expected_model)
+                print(json.dumps({"resumed": raw_path.name, "records": len(records)}, sort_keys=True), flush=True)
+            else:
+                judge = CompositeJudge(); pipeline = factory(pipeline_backend)
+                records = evaluate_cases(pipeline, cases, judge, coordinator)
             metrics = compute_behavioral_metrics(records)
             raw_counts = metrics["raw_counts"]
             if (raw_counts["total"], raw_counts["attacks"], raw_counts["benign"]) != (expected_total, expected_attacks, expected_benign):
                 raise AssertionError(f"{name} incomplete counts: {raw_counts}")
             paired_records.setdefault(run, {})[name] = records
-            raw_path = raw_dir / f"{args.split}-run-{run:02d}-{name.lower().replace(' ', '_').replace('/', '_')}.jsonl"
-            raw_path.write_text("".join(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n" for record in records), encoding="utf-8")
+            if not (args.resume and raw_path.exists()):
+                raw_path.write_text("".join(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n" for record in records), encoding="utf-8")
             summaries.setdefault(name, []).append(metrics)
     statistical_tests = {"method": "paired_exact_mcnemar", "comparisons": {}}
     for name in baselines:

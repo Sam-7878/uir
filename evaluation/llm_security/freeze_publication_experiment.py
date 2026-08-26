@@ -34,7 +34,7 @@ def sha256(path: Path) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(); parser.add_argument("--output", type=Path, required=True); parser.add_argument("--allow-dirty", action="store_true")
+    parser = argparse.ArgumentParser(); parser.add_argument("--output", type=Path, required=True); parser.add_argument("--allow-dirty", action="store_true"); parser.add_argument("--compatible-prior-commit", action="append", default=[])
     args = parser.parse_args()
     status = command("git", "status", "--porcelain")
     if status and not args.allow_dirty:
@@ -52,6 +52,7 @@ def main() -> int:
     manifest = {
         "schema_version": "uir-publication-manifest-v2", "frozen_at_utc": datetime.now(timezone.utc).isoformat(),
         "git_commit": command("git", "rev-parse", "HEAD"), "git_status": status,
+        "compatible_prior_execution_commits": args.compatible_prior_commit,
         "dataset_dev_path": str(DEFAULT_DEV), "dataset_dev_sha256": sha256(DEFAULT_DEV),
         "dataset_heldout_path": str(DEFAULT_HELDOUT), "dataset_heldout_sha256": sha256(DEFAULT_HELDOUT),
         "model": "microsoft/Phi-3.5-mini-instruct", "model_revision": snapshot.name, "model_path": str(snapshot),
@@ -64,6 +65,7 @@ def main() -> int:
             "os": platform.platform(), "kernel": platform.release(), "wsl": Path("/proc/version").read_text(encoding="utf-8").strip(),
         },
         "failure_policy": {"tolerance": 0.0, "categories": ["MODEL_ERROR", "CUDA_OOM", "TIMEOUT", "INVALID_OUTPUT", "BACKEND_ERROR"]},
+        "resume_policy": "Only complete, case-ordered, failure-free raw artifacts from the identical frozen model/dataset/semantics may be reused.",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
