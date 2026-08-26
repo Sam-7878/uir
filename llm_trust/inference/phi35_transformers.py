@@ -14,12 +14,15 @@ DEFAULT_MODEL_PATH = Path("/home/sam/.cache/huggingface/hub/models--microsoft--P
 class Phi35TransformersBackend(BaseInferenceBackend):
     """Loads only already-cached model files; it never downloads a model at runtime."""
 
-    def __init__(self, model_path: Optional[str] = None):
+    def __init__(self, model_path: Optional[str] = None, max_input_tokens: int = 2048,
+                 max_batch_token_volume: int = 8192):
         root = Path(model_path) if model_path else DEFAULT_MODEL_PATH
         snapshots = sorted(root.iterdir()) if root.name == "snapshots" and root.exists() else [root]
         if not snapshots or not snapshots[-1].exists():
             raise FileNotFoundError(f"Phi-3.5 local snapshot not found: {root}")
         self.model_path = snapshots[-1]
+        self.max_input_tokens = int(max_input_tokens)
+        self.max_batch_token_volume = int(max_batch_token_volume)
         self._model = None
         self._tokenizer = None
 
@@ -87,8 +90,10 @@ class Phi35TransformersBackend(BaseInferenceBackend):
             rendered.append(self._tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True))
         original_padding_side = self._tokenizer.padding_side
         self._tokenizer.padding_side = "left"
-        inputs = self._tokenizer(rendered, return_tensors="pt", padding=True)
+        inputs = self._tokenizer(rendered, return_tensors="pt", padding=True, truncation=True, max_length=self.max_input_tokens)
         self._tokenizer.padding_side = original_padding_side
+        if len(batch) > 1 and int(inputs["input_ids"].shape[1]) * len(batch) > self.max_batch_token_volume:
+            raise RuntimeError("preemptive out of memory avoidance: split oversized token-volume batch")
         device = next(self._model.parameters()).device
         inputs = {name: value.to(device) for name, value in inputs.items()}
         generation_options = {
@@ -114,6 +119,6 @@ class Phi35TransformersBackend(BaseInferenceBackend):
             results.append(GenerationResult(
                 text=text, input_tokens=int(input_length), output_tokens=int(generated.shape[0]),
                 latency_ms=elapsed_ms, model_name="microsoft/Phi-3.5-mini-instruct",
-                raw_response={"local_snapshot": str(self.model_path), "quantization": "bitsandbytes-nf4", "batch_size": len(batch)},
+                raw_response={"local_snapshot": str(self.model_path), "quantization": "bitsandbytes-nf4", "batch_size": len(batch), "max_input_tokens": self.max_input_tokens},
             ))
         return results

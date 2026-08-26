@@ -7,9 +7,13 @@ On Ubuntu 24.04 with the repository-root virtual environment, the locally cached
 quantization and returned `READY` for a deterministic four-token probe.
 
 The cached Phi remote-code revision is incompatible with the current
-`transformers` `DynamicCache` API.  The benchmark backend therefore uses eager
-attention and cache-free greedy decoding.  This is a compatibility adjustment,
-not a fallback model and not a change to the evaluated Phi checkpoint.
+`transformers` `DynamicCache` API. The publication runner therefore uses the
+current Transformers native Phi3 implementation with eager attention and KV
+cache against the exact same local checkpoint. A uniform 2,048-token model
+input ceiling prevents infrastructure OOM on resource-exhaustion prompts; the
+actual tokens sent and latency remain observable benchmark metrics. These are
+runtime compatibility/resource settings, not a fallback model or checkpoint
+change.
 
 ## Required publication run
 
