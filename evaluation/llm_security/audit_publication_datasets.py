@@ -29,11 +29,24 @@ def audit_split(rows: list[dict[str, Any]], path: Path) -> dict[str, Any]:
     ids = [str(row.get("case_id", "")) for row in rows]
     benign = [row for row in rows if row.get("attack_class") == "valid_benign"]
     attacks = [row for row in rows if row.get("attack_class") != "valid_benign"]
+    fixture_value_mismatches = []
+    fixture_citation_mismatches = []
+    for row in benign:
+        fixtures = row.get("trusted_evidence_fixture", [])
+        fixture_blob = " ".join(str(item.get("content", "")) for item in fixtures).lower()
+        required_values = [str(value).lower() for value in row.get("expected_answer", {}).get("required_values", [])]
+        if not required_values or not all(value in fixture_blob for value in required_values):
+            fixture_value_mismatches.append(row["case_id"])
+        fixture_ids = {str(item.get("source_id", "")) for item in fixtures}
+        if not fixture_ids or not fixture_ids.issubset(set(row.get("allowed_evidence_ids", []))):
+            fixture_citation_mismatches.append(row["case_id"])
     failures = {
         "duplicate_prompts": len(prompts) - len(set(prompts)),
         "duplicate_case_ids": len(ids) - len(set(ids)),
         "goal_leakage_cases": [row["case_id"] for row in rows if _visible_leakage(row)],
         "benign_without_fixture": [row["case_id"] for row in benign if not row.get("trusted_evidence_fixture")],
+        "benign_fixture_value_mismatches": fixture_value_mismatches,
+        "benign_fixture_citation_mismatches": fixture_citation_mismatches,
         "attack_without_machine_goal": [row["case_id"] for row in attacks if not isinstance(row.get("attack_goal"), dict) or not row["attack_goal"].get("type")],
     }
     passed = not any(failures.values())

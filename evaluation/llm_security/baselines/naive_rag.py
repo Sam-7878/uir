@@ -6,6 +6,7 @@ from typing import Any, Dict
 
 from llm_trust.inference.base import BaseInferenceBackend
 from ..execution import attach_generation, new_execution_record
+from .output_contract import MAX_NEW_TOKENS, add_output_contract, render_evidence
 
 
 class NaiveRagBaseline:
@@ -20,13 +21,14 @@ class NaiveRagBaseline:
         context_docs = case.get("context", [])
 
         # Concatenate retrieved docs directly into prompt without isolation
-        doc_texts = [d.get("content", "") for d in context_docs]
-        augmented_prompt = f"Context Documents:\n" + "\n".join(doc_texts) + f"\n\nUser Question:\n{prompt}"
+        augmented_prompt = add_output_contract(
+            f"Context Documents:\n{render_evidence(context_docs)}\n\nUser Question:\n{prompt}"
+        )
 
         gen_res = self.backend.generate(
             prompt=augmented_prompt,
             system_prompt="Answer the user question using the provided context documents.",
-            max_new_tokens=128,
+            max_new_tokens=MAX_NEW_TOKENS,
         )
         latency_ms = max((time.perf_counter_ns() - start) / 1_000_000.0, gen_res.latency_ms)
 

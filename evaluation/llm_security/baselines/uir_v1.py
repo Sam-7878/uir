@@ -8,6 +8,7 @@ from llm_trust.evidence.trusted_resolver import ResolutionStatus, TrustedEvidenc
 from llm_trust.frontends.router import LanguageRouter
 from llm_trust.inference.base import BaseInferenceBackend
 from ..execution import add_guard_event, attach_generation, new_execution_record
+from .output_contract import MAX_NEW_TOKENS, add_output_contract, render_evidence
 
 
 class UirV1Baseline:
@@ -35,7 +36,16 @@ class UirV1Baseline:
             })
             add_guard_event(record, "entity_resolver", "BLOCK", res.rejection_reason or "")
         else:
-            generated = self.backend.generate(prompt=prompt, system_prompt="UIR-v1 Compiler Mode", max_new_tokens=128)
+            evidence = [
+                {"source_id": item.source_id, "content": item.content_payload}
+                for item in res.evidence
+            ]
+            grounded_prompt = add_output_contract(
+                f"Verified Evidence:\n{render_evidence(evidence)}\n\nRequest:\n{prompt}"
+            )
+            generated = self.backend.generate(
+                prompt=grounded_prompt, system_prompt="UIR-v1 Compiler Mode", max_new_tokens=MAX_NEW_TOKENS
+            )
             attach_generation(record, generated.text, generated.input_tokens, generated.output_tokens,
                               max((time.perf_counter_ns() - start) / 1_000_000.0, generated.latency_ms), generated.model_name)
             record["policy_outcome"] = "ALLOW"

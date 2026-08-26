@@ -31,6 +31,7 @@ from llm_trust import (
 )
 from llm_trust.inference.base import BaseInferenceBackend
 from ..execution import add_guard_event, attach_generation, new_execution_record
+from .output_contract import MAX_NEW_TOKENS
 
 
 class UirV2SecurityPipeline:
@@ -163,7 +164,7 @@ class UirV2SecurityPipeline:
             gen_res = self.backend.generate(
                 prompt=prompts["user_prompt"],
                 system_prompt=prompts["system_prompt"],
-                max_new_tokens=128,
+                max_new_tokens=MAX_NEW_TOKENS,
             )
             input_tokens = gen_res.input_tokens
             output_tokens = gen_res.output_tokens

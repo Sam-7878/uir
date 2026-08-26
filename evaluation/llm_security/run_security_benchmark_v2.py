@@ -40,6 +40,14 @@ def load_completed_raw(path: Path, cases: list[Dict[str, Any]], expected_model: 
         raise AssertionError(f"resume artifact model mismatch: {path}")
     if any(record.get("failure_type") for record in records):
         raise AssertionError(f"resume artifact contains inference failures: {path}")
+    expected_hashes = [
+        __import__("hashlib").sha256(
+            json.dumps(case, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
+        for case in cases
+    ]
+    if [record.get("case_sha256") for record in records] != expected_hashes:
+        raise AssertionError(f"resume artifact dataset fingerprint mismatch: {path}")
     return records
 
 

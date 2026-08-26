@@ -102,6 +102,18 @@ def test_indirect_prompt_injection_is_quarantined_by_firewall():
     assert verdict.quarantined_evidence[0].source_id == "rag_doc_99"
 
 
+def test_firewall_renders_exact_source_id_separately_from_integrity_metadata():
+    firewall = ContextFirewall()
+    evidence = EvidenceRecord(
+        source_id="registry:005930", source_type=SourceType.DATABASE,
+        trust=EvidenceTrust.TRUSTED, sha256="abcd" * 16, verified=True,
+        instruction_bearing=False, content_payload="verified fact",
+    )
+    rendered = firewall.enforce([evidence]).sanitized_context
+    assert "SOURCE_ID=registry:005930\n" in rendered
+    assert "SOURCE_ID=registry:005930," not in rendered
+
+
 def test_nonexistent_entity_fails_closed():
     """INVARIANT: Fictitious entities are rejected before entering LLM inference."""
     resolver = TrustedEvidenceResolver()

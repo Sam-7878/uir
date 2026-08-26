@@ -64,10 +64,15 @@ class ContextFirewall:
                 continue
 
             # Format as unexecutable, quoted evidence block
+            # Keep SOURCE_ID on its own machine-readable line.  Joining it with
+            # hash metadata caused small models to copy the whole label into the
+            # citations array, which the egress allow-list correctly rejected.
             block = (
-                f"--- BEGIN EVIDENCE [ID: {ev.source_id}, HASH: {ev.sha256[:8]}] ---\n"
-                f"{content}\n"
-                f"--- END EVIDENCE ---"
+                "--- BEGIN EVIDENCE ---\n"
+                f"SOURCE_ID={ev.source_id}\n"
+                f"INTEGRITY_SHA256_PREFIX={ev.sha256[:8]}\n"
+                f"CONTENT={content}\n"
+                "--- END EVIDENCE ---"
             )
             sanitized_parts.append(block)
 

@@ -6,6 +6,7 @@ from typing import Any, Dict
 
 from llm_trust.inference.base import BaseInferenceBackend
 from ..execution import attach_generation, new_execution_record
+from .output_contract import MAX_NEW_TOKENS, add_output_contract, render_evidence
 
 
 class PromptGuardBaseline:
@@ -31,13 +32,13 @@ class PromptGuardBaseline:
 
         augmented_prompt = prompt
         if context_docs:
-            doc_texts = [d.get("content", "") for d in context_docs]
-            augmented_prompt = f"Reference Context:\n" + "\n".join(doc_texts) + f"\n\nRequest:\n{prompt}"
+            augmented_prompt = f"Reference Context:\n{render_evidence(context_docs)}\n\nRequest:\n{prompt}"
+        augmented_prompt = add_output_contract(augmented_prompt)
 
         gen_res = self.backend.generate(
             prompt=augmented_prompt,
             system_prompt=self.HARDENED_SYSTEM_PROMPT,
-            max_new_tokens=128,
+            max_new_tokens=MAX_NEW_TOKENS,
         )
         latency_ms = max((time.perf_counter_ns() - start) / 1_000_000.0, gen_res.latency_ms)
 

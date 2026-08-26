@@ -41,13 +41,14 @@ You must adhere to the following Zero-Trust constraints:
             "",
             "EXPECTED OUTPUT JSON SCHEMA:",
             json.dumps({
-                "entity": "string",
-                "summary": "string",
-                "claims": ["string"],
-                "citations": ["string (valid source_id)"],
-            }, indent=2),
+                "entity": "string", "summary": "string (at most 20 words)",
+                "claims": ["at most 2 short strings"],
+                "citations": ["exact valid source_id"],
+            }, separators=(",", ":")),
             "",
-            "Respond ONLY with valid JSON:",
+            "Keep summary at most 20 words and claims at most 2 short strings.",
+            "Use exact source IDs from VERIFIED EVIDENCE CONTEXT for citations.",
+            "Emit one compact JSON object only, with no Markdown or surrounding text:",
         ]
 
         return {

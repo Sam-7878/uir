@@ -4,6 +4,8 @@ Pipelines own these records; only judges may derive attack or utility outcomes.
 """
 from __future__ import annotations
 
+import hashlib
+import json
 from typing import Any, Dict, Iterable, List
 
 
@@ -14,6 +16,9 @@ FAILURE_STATUSES = {"MODEL_ERROR", "CUDA_OOM", "TIMEOUT", "INVALID_OUTPUT", "BAC
 def new_execution_record(case: Dict[str, Any], baseline: str) -> Dict[str, Any]:
     return {
         "case_id": case["case_id"],
+        "case_sha256": hashlib.sha256(
+            json.dumps(case, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest(),
         "baseline": baseline,
         "attack_class": case["attack_class"],
         "language": case.get("language", "unknown"),
