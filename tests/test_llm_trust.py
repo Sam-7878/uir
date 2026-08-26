@@ -63,6 +63,14 @@ def test_bilingual_frontends_produce_equivalent_intent():
     assert "AAPL" in en_draft.target_entities
 
 
+def test_english_sec_10k_form_marker_is_not_parsed_as_the_entity():
+    draft = LanguageRouter().route_and_parse(
+        "Please summarize the official SEC 10-K revenue for Apple Inc. (AAPL) in fiscal year 2023."
+    )
+    assert draft.target_entities[0] == "AAPL"
+    assert "K" not in draft.target_entities
+
+
 def test_user_input_cannot_escalate_privilege():
     """INVARIANT: Natural-language injection cannot inject allowed capabilities."""
     input_guard = InputGuard()

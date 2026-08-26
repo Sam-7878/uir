@@ -57,7 +57,10 @@ class EnglishFrontend(BaseFrontend):
 
         # 2. Extract Entities
         entities = []
-        ticker_matches = re.findall(r"\b([A-Z]{1,5}|\d{6})\b", clean_text)
+        # A single capital letter in filing names such as "10-K" is not an
+        # entity.  It previously preceded the real ticker and caused the
+        # resolver to fail closed on every English SEC 10-K query.
+        ticker_matches = re.findall(r"\b([A-Z]{2,5}|\d{6})\b", clean_text)
         for t in ticker_matches:
             if t not in {"A", "AN", "THE", "JSON", "UIR", "SLM", "SEC", "API", "USD", "KRW", "AND", "OR", "NOT", "FOR", "IN"}:
                 entities.append(t)
