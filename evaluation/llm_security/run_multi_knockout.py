@@ -12,7 +12,7 @@ from .batch_execution import BatchCoordinator
 from .baselines.uir_v2_security import UirV2SecurityPipeline
 from .judges import CompositeJudge
 from .metrics_v2 import compute_behavioral_metrics
-from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_dataset, verify_live_ollama
+from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_completed_raw, load_dataset, verify_live_ollama
 
 PAIRS = {
     "-context_firewall -output_guard": {"enable_context_firewall": False, "enable_output_guard": False},
@@ -25,6 +25,7 @@ PAIRS = {
 def main() -> None:
     parser = argparse.ArgumentParser(); parser.add_argument("--backend", choices=("phi35-transformers", "ollama"), default="phi35-transformers"); parser.add_argument("--model", default="phi3.5:latest"); parser.add_argument("--model-path"); parser.add_argument("--endpoint", default="http://127.0.0.1:11434"); parser.add_argument("--runs", type=int, default=3); parser.add_argument("--max-cases", type=int); parser.add_argument("--allow-fallback", action="store_true")
     parser.add_argument("--dataset", type=Path, default=DATASET); parser.add_argument("--results", type=Path, default=RESULTS); parser.add_argument("--split", choices=("development", "heldout"), default="development"); parser.add_argument("--batch-size", type=int, default=16)
+    parser.add_argument("--resume", action="store_true", help="Reuse only complete, ordered, failure-free, case-fingerprinted raw artifacts.")
     args = parser.parse_args()
     if args.backend == "ollama":
         live = None if args.allow_fallback else verify_live_ollama(args.endpoint, args.model); backend = OllamaClient(model_name=args.model, endpoint=args.endpoint, enable_deterministic_fallback=args.allow_fallback, timeout_seconds=60)
@@ -38,10 +39,16 @@ def main() -> None:
     study = {}
     for name, config in PAIRS.items():
         study[name] = []
-        for _ in range(args.runs):
+        for run in range(args.runs):
             pipeline = UirV2SecurityPipeline(pipeline_backend, **config)
-            records = evaluate_cases(pipeline, cases, CompositeJudge(), coordinator)
-            (raw_dir / f"{args.split}-multi-{name.replace(' ', '_')}-run-{len(study[name]):02d}.jsonl").write_text("".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in records), encoding="utf-8")
+            raw = raw_dir / f"{args.split}-multi-{name.replace(' ', '_')}-run-{run:02d}.jsonl"
+            expected_model = args.model if args.backend == "ollama" else "microsoft/Phi-3.5-mini-instruct"
+            if args.resume and raw.exists():
+                records = load_completed_raw(raw, cases, expected_model)
+                print(json.dumps({"resumed": raw.name, "records": len(records)}, sort_keys=True), flush=True)
+            else:
+                records = evaluate_cases(pipeline, cases, CompositeJudge(), coordinator)
+                raw.write_text("".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in records), encoding="utf-8")
             study[name].append(compute_behavioral_metrics(records))
     expected_size = 1600 if args.split == "development" else 320
     failures = sum(m["inference_failures"]["count"] for runs in study.values() for m in runs)

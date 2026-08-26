@@ -13,7 +13,7 @@ from llm_trust.inference.phi35_transformers import Phi35TransformersBackend
 from .batch_execution import BatchCoordinator
 from .judges import CompositeJudge
 from .metrics_v2 import compute_behavioral_metrics
-from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_dataset, verify_live_ollama
+from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_completed_raw, load_dataset, verify_live_ollama
 from .baselines.uir_v2_security import UirV2SecurityPipeline
 
 TARGETS = {
@@ -46,6 +46,7 @@ def main() -> None:
     parser.add_argument("--runs", type=int, default=3); parser.add_argument("--max-cases", type=int); parser.add_argument("--allow-fallback", action="store_true")
     parser.add_argument("--dataset", type=Path, default=DATASET); parser.add_argument("--results", type=Path, default=RESULTS)
     parser.add_argument("--split", choices=("development", "heldout"), default="development"); parser.add_argument("--batch-size", type=int, default=16)
+    parser.add_argument("--resume", action="store_true", help="Reuse only complete, ordered, failure-free, case-fingerprinted raw artifacts.")
     args = parser.parse_args()
     if args.backend == "ollama":
         live = None if args.allow_fallback else verify_live_ollama(args.endpoint, args.model)
@@ -61,9 +62,14 @@ def main() -> None:
     summary: Dict[str, Any] = {"full": [], "knockouts": {}, "targeted_full": {}, "targeted": {}}
     for run in range(args.runs):
         for name, pipeline in configurations(pipeline_backend).items():
-            records = evaluate_cases(pipeline, cases, CompositeJudge(), coordinator)
             raw = raw_dir / f"{args.split}-ablation-{run:02d}-{name.replace(' ', '_')}.jsonl"
-            raw.write_text("".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n" for item in records), encoding="utf-8")
+            expected_model = args.model if args.backend == "ollama" else "microsoft/Phi-3.5-mini-instruct"
+            if args.resume and raw.exists():
+                records = load_completed_raw(raw, cases, expected_model)
+                print(json.dumps({"resumed": raw.name, "records": len(records)}, sort_keys=True), flush=True)
+            else:
+                records = evaluate_cases(pipeline, cases, CompositeJudge(), coordinator)
+                raw.write_text("".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n" for item in records), encoding="utf-8")
             metrics = compute_behavioral_metrics(records)
             if name == "Full UIR-v2 Security":
                 summary["full"].append(metrics)
