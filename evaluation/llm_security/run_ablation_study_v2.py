@@ -13,7 +13,7 @@ from llm_trust.inference.phi35_transformers import Phi35TransformersBackend
 from .batch_execution import BatchCoordinator
 from .judges import CompositeJudge
 from .metrics_v2 import compute_behavioral_metrics
-from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_completed_raw, load_dataset, verify_live_ollama
+from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_completed_raw, load_dataset, reevaluate_records, verify_live_ollama
 from .baselines.uir_v2_security import UirV2SecurityPipeline
 
 TARGETS = {
@@ -66,10 +66,11 @@ def main() -> None:
             expected_model = args.model if args.backend == "ollama" else "microsoft/Phi-3.5-mini-instruct"
             if args.resume and raw.exists():
                 records = load_completed_raw(raw, cases, expected_model)
+                records = reevaluate_records(cases, records, CompositeJudge())
                 print(json.dumps({"resumed": raw.name, "records": len(records)}, sort_keys=True), flush=True)
             else:
                 records = evaluate_cases(pipeline, cases, CompositeJudge(), coordinator)
-                raw.write_text("".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n" for item in records), encoding="utf-8")
+            raw.write_text("".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n" for item in records), encoding="utf-8")
             metrics = compute_behavioral_metrics(records)
             if name == "Full UIR-v2 Security":
                 summary["full"].append(metrics)

@@ -12,7 +12,7 @@ from .batch_execution import BatchCoordinator
 from .baselines.uir_v2_security import UirV2SecurityPipeline
 from .judges import CompositeJudge
 from .metrics_v2 import compute_behavioral_metrics
-from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_completed_raw, load_dataset, verify_live_ollama
+from .run_security_benchmark_v2 import DATASET, RESULTS, evaluate_cases, load_completed_raw, load_dataset, reevaluate_records, verify_live_ollama
 
 PAIRS = {
     "-context_firewall -output_guard": {"enable_context_firewall": False, "enable_output_guard": False},
@@ -45,10 +45,11 @@ def main() -> None:
             expected_model = args.model if args.backend == "ollama" else "microsoft/Phi-3.5-mini-instruct"
             if args.resume and raw.exists():
                 records = load_completed_raw(raw, cases, expected_model)
+                records = reevaluate_records(cases, records, CompositeJudge())
                 print(json.dumps({"resumed": raw.name, "records": len(records)}, sort_keys=True), flush=True)
             else:
                 records = evaluate_cases(pipeline, cases, CompositeJudge(), coordinator)
-                raw.write_text("".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in records), encoding="utf-8")
+            raw.write_text("".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in records), encoding="utf-8")
             study[name].append(compute_behavioral_metrics(records))
     expected_size = 1600 if args.split == "development" else 320
     failures = sum(m["inference_failures"]["count"] for runs in study.values() for m in runs)

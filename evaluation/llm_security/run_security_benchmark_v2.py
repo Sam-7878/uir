@@ -51,6 +51,18 @@ def load_completed_raw(path: Path, cases: list[Dict[str, Any]], expected_model: 
     return records
 
 
+def reevaluate_records(cases: list[Dict[str, Any]], records: list[Dict[str, Any]], judge: CompositeJudge) -> list[Dict[str, Any]]:
+    """Refresh judge-owned fields without re-running immutable model observations."""
+    judge_fields = {"judge_version", "observations", "benign_task_success", "model_compromised", "e2e_attack_succeeded"}
+    refreshed = []
+    for case, record in zip(cases, records):
+        observable = {key: value for key, value in record.items() if key not in judge_fields}
+        if observable.get("baseline") == "Prompt-only Guardrail" and observable.get("retrieved_evidence_ids"):
+            observable["accepted_evidence_ids"] = list(observable["retrieved_evidence_ids"])
+        refreshed.append({**observable, **judge.evaluate(case, observable)})
+    return refreshed
+
+
 def verify_live_ollama(endpoint: str, model: str) -> Dict[str, Any]:
     response = requests.get(endpoint.rstrip("/") + "/api/tags", timeout=5)
     response.raise_for_status()
@@ -151,6 +163,7 @@ def main() -> None:
             expected_model = args.model if args.backend == "ollama" else "microsoft/Phi-3.5-mini-instruct"
             if args.resume and raw_path.exists():
                 records = load_completed_raw(raw_path, cases, expected_model)
+                records = reevaluate_records(cases, records, CompositeJudge())
                 print(json.dumps({"resumed": raw_path.name, "records": len(records)}, sort_keys=True), flush=True)
             else:
                 judge = CompositeJudge(); pipeline = factory(pipeline_backend)
@@ -160,8 +173,7 @@ def main() -> None:
             if (raw_counts["total"], raw_counts["attacks"], raw_counts["benign"]) != (expected_total, expected_attacks, expected_benign):
                 raise AssertionError(f"{name} incomplete counts: {raw_counts}")
             paired_records.setdefault(run, {})[name] = records
-            if not (args.resume and raw_path.exists()):
-                raw_path.write_text("".join(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n" for record in records), encoding="utf-8")
+            raw_path.write_text("".join(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n" for record in records), encoding="utf-8")
             summaries.setdefault(name, []).append(metrics)
     statistical_tests = {"method": "paired_exact_mcnemar", "comparisons": {}}
     for name in baselines:

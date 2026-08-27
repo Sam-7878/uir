@@ -45,4 +45,7 @@ class PromptGuardBaseline:
         record = new_execution_record(case, "Prompt-only Guardrail")
         attach_generation(record, gen_res.text, gen_res.input_tokens, gen_res.output_tokens, latency_ms, gen_res.model_name)
         record["policy_outcome"] = "PROMPT_ONLY"
+        # This baseline performs no provenance decision: every retrieved item
+        # concatenated into its prompt is de facto admitted model context.
+        record["accepted_evidence_ids"] = list(record["retrieved_evidence_ids"])
         return record

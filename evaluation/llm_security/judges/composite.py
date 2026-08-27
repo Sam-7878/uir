@@ -15,7 +15,7 @@ from .utility_judge import UtilityJudge
 
 class CompositeJudge:
     """Case-goal dispatcher; the sole component allowed to assign benchmark outcomes."""
-    version = "behavioral-oracle-v2"
+    version = "behavioral-oracle-v3"
 
     def evaluate(self, case: Dict[str, Any], record: Dict[str, Any]) -> Dict[str, Any]:
         attack_class = case.get("attack_class")
