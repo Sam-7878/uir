@@ -23,7 +23,9 @@ metadata_block        = "{" , ws ,
                         quote , "created_at" , quote , ws , ":" , ws , iso8601_timestamp , ws ,
                         "}" ;
 
-language_code         = quote , ( "ko" | "en" | "ja" | "zh" ) , quote ;
+(* Normative language support: ko and en. Extension codes (ja, zh) reserved for future phases. *)
+language_code         = quote , ( "ko" | "en" ) , quote ;
+reserved_lang_code    = quote , ( "ja" | "zh" ) , quote ; (* Non-normative future extensions *)
 sha256_hash           = quote , 64 * hex_digit , quote ;
 domain_identifier     = quote , ( "enterprise_finance" | "corporate_governance" | "regulatory_compliance" ) , quote ;
 

@@ -156,9 +156,21 @@ Governs downstream execution behavior:
 
 ---
 
+## 2.6 Explicit Architectural Assumptions
+
+The formal safety and invariance properties of UIR are conditional upon the following explicit system assumptions:
+
+- **Assumption A1 (Authoritative Registry Integrity):** The enterprise registry $\mathcal{K}_{\text{auth}}$ is trusted, authenticated, and protected against unauthorized modification.
+- **Assumption A2 (Trusted Policy Store Integrity):** The security policy hierarchy $\mathcal{P} = \{L0, L1, L2, L3\}$ is loaded from a trusted store and cannot be altered or elevated by user prompt tokens.
+- **Assumption A3 (Correct Fact-ID Binding):** Slot bindings in $\mathcal{U}$ reference valid identifiers present in the verified fact set $\mathcal{V}_{\text{facts}}$.
+- **Assumption A4 (Output Guard Non-Bypassability):** Autoregressive SLM generation is strictly mediated; no raw generation bypasses the deterministic output guard and claim filter.
+- **Assumption A5 (Deterministic Renderer Conformance):** The response renderer uses only claims admitted by the verified projection, performing template substitution rather than unconstrained open-domain token generation.
+
+---
+
 ## 3. Formal System Invariants
 
-The UIR execution environment guarantees the following invariants:
+Under assumptions A1–A5, the UIR execution environment guarantees the following invariants:
 
 ### INV-1: Fail-Closed Execution
 $$\forall \mathcal{U}, \quad \text{EvalPolicy}(\mathcal{U}) \in \{\text{Reject}, \text{Quarantine}\} \implies \text{InvokeExecutor}(\mathcal{U}) = \bot \land \text{InvokeRenderer}(\mathcal{U}) = \bot$$
@@ -166,7 +178,7 @@ If a request violates any policy rule at levels L0–L2 or fails entity verifica
 
 ### INV-2: Verified-Claim Acceptance
 $$\forall c \in \text{AcceptedClaims}(\mathcal{R}), \quad \exists v \in \mathcal{V}_{\text{facts}} \quad \text{s.t.} \quad \text{ResolvesTo}(c, v) \lor \text{PermittedTransformation}(c, v)$$
-No factual claim $c$ within the final output $\mathcal{R}$ is accepted unless it directly binds to an immutable, authoritative verified fact $v$ retrieved from the ground-truth registry or produced via an approved deterministic calculation.
+Under A1–A5, no factual claim $c$ within the final output $\mathcal{R}$ is accepted unless it directly binds to an immutable, authoritative verified fact $v$ retrieved from the ground-truth registry or produced via an approved deterministic calculation.
 
 ### INV-3: Numeric Binding Invariance
 $$\forall c \in \text{AcceptedNumericClaims}(\mathcal{R}), \quad \text{Value}(c) = \text{Value}(\text{SourceFact}(c)) \land \text{Unit}(c) = \text{Unit}(\text{SourceFact}(c))$$
@@ -177,5 +189,6 @@ $$\text{Digest}(\mathcal{U}) = \text{SHA256}(\text{Canonicalize}(\mathcal{U} \se
 The cryptographic digest of a UIR document depends solely on its canonical semantic fields, parameters, conditions, and policies. Transient metadata (e.g., timestamps, non-semantic tracing tags) do not alter the semantic digest.
 
 ### INV-5: Cross-Language Canonicalization Equivalence
-$$\forall Q_{\text{ko}}, Q_{\text{en}} \in \text{ParallelRequests}, \quad \text{Digest}(\text{Transpile}_{\text{ko}}(Q_{\text{ko}})) = \text{Digest}(\text{Transpile}_{\text{en}}(Q_{\text{en}}))$$
-Semantically identical queries in Korean and English map to identical canonical UIR ASTs under defined controlled-language templates, ensuring cross-lingual policy consistency.
+$$\forall Q_{\text{ko}}, Q_{\text{en}} \in \text{ParallelRequests}_{\text{controlled}}, \quad \text{Digest}(\text{Transpile}_{\text{ko}}(Q_{\text{ko}})) = \text{Digest}(\text{Transpile}_{\text{en}}(Q_{\text{en}}))$$
+For requests within the supported Korean (KO) and English (EN) controlled-language grammar and declared parallel semantics, parallel inputs map to identical canonical UIR ASTs, ensuring cross-lingual policy consistency. Open-domain or unmodelled language pairs are explicitly excluded from this guarantee.
+
