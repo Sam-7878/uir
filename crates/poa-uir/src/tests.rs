@@ -297,3 +297,96 @@ fn typed_lexicon_generalizes_surface_forms_without_entity_instances() {
     assert_eq!(en.semantics.parameters["metric"], "assets");
     assert_eq!(semantic_digest(&en).unwrap(), semantic_digest(&ko).unwrap());
 }
+
+#[test]
+fn test_formal_invariant_inv1_fail_closed() {
+    let resolution = resolve_input(
+        "INVALID_ENTITY_QUERY_NO_FACT",
+        &CompileOptions::default(),
+    );
+    assert_eq!(resolution.status, SemanticResolutionStatus::NeedsClarification);
+    assert!(resolution.uir.is_none());
+    let renderer = MockRenderer::default();
+    assert_eq!(renderer.invocation_count(), 0);
+}
+
+#[test]
+fn test_formal_invariant_inv4_semantic_digest_invariance() {
+    let (uir1, _) = pair();
+    let mut uir2 = uir1.clone();
+    uir2.metadata.request_id = "different-request-id-999".to_string();
+    uir2.metadata.created_at = "2099-12-31T23:59:59Z".to_string();
+    assert_eq!(
+        semantic_digest(&uir1).unwrap(),
+        semantic_digest(&uir2).unwrap(),
+        "INV-4: Semantic digest must be invariant to excluded metadata modifications"
+    );
+}
+
+#[test]
+fn test_formal_invariant_inv5_cross_lingual_canonicalization() {
+    let (ko, en) = pair();
+    assert_eq!(
+        semantic_digest(&ko).unwrap(),
+        semantic_digest(&en).unwrap(),
+        "INV-5: Equivalent KO and EN inputs must produce identical semantic digest"
+    );
+}
+
+#[test]
+fn test_condition_typed_operators_and_eval() {
+    use std::collections::HashMap;
+
+    let cond = Condition::And {
+        exprs: vec![
+            Condition::Ge {
+                lhs: "year".into(),
+                rhs: ScalarValue::Integer(2020),
+            },
+            Condition::Ne {
+                lhs: "status".into(),
+                rhs: ScalarValue::String("REVOKED".into()),
+            },
+            Condition::Except {
+                rule: Box::new(Condition::Eq {
+                    lhs: "authorized".into(),
+                    rhs: ScalarValue::Boolean(true),
+                }),
+                exception: Box::new(Condition::Eq {
+                    lhs: "quarantine_flag".into(),
+                    rhs: ScalarValue::Boolean(true),
+                }),
+            },
+        ],
+    };
+
+    assert!(cond.is_well_formed());
+
+    let mut types = HashMap::new();
+    types.insert("year".into(), ScalarType::Integer);
+    types.insert("status".into(), ScalarType::String);
+    types.insert("authorized".into(), ScalarType::Boolean);
+    types.insert("quarantine_flag".into(), ScalarType::Boolean);
+
+    assert!(cond.type_check(&types).is_ok());
+
+    let mut env = HashMap::new();
+    env.insert("year".into(), ScalarValue::Integer(2023));
+    env.insert("status".into(), ScalarValue::String("ACTIVE".into()));
+    env.insert("authorized".into(), ScalarValue::Boolean(true));
+    env.insert("quarantine_flag".into(), ScalarValue::Boolean(false));
+
+    assert_eq!(cond.eval(&env).unwrap(), true);
+
+    // If quarantine flag is true, EXCEPT makes it false
+    env.insert("quarantine_flag".into(), ScalarValue::Boolean(true));
+    assert_eq!(cond.eval(&env).unwrap(), false);
+
+    // Type mismatch error
+    let invalid_cond = Condition::Gt {
+        lhs: "status".into(),
+        rhs: ScalarValue::String("INVALID".into()),
+    };
+    assert!(invalid_cond.type_check(&types).is_err());
+}
+

@@ -13,7 +13,7 @@ pub mod validator;
 
 pub use canonical::{canonicalize_uir, semantic_digest, uir_digest};
 pub use compiler::{CompileOptions, compile_input};
-pub use condition::{Condition, ScalarValue};
+pub use condition::{Condition, ScalarType, ScalarValue};
 pub use equivalence::{ComparisonMode, equivalent};
 pub use error::{UirCompileError, UirError};
 pub use evidence::*;

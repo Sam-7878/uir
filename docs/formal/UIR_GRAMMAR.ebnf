@@ -1,0 +1,116 @@
+(* ========================================================================= *)
+(* Universal Intermediate Representation (UIR) EBNF Grammar                  *)
+(* Specification Version: 4.0.0                                              *)
+(* Target: Policy-Constrained Multilingual Small Language Model Agents        *)
+(* ========================================================================= *)
+
+uir_document          = "{" , ws ,
+                        quote , "uir_version" , quote , ws , ":" , ws , string_literal , ws , "," ,
+                        quote , "metadata" , quote , ws , ":" , ws , metadata_block , ws , "," ,
+                        quote , "semantics" , quote , ws , ":" , ws , semantics_block , ws , "," ,
+                        quote , "conditions" , quote , ws , ":" , ws , condition_expr , ws , "," ,
+                        quote , "policy" , quote , ws , ":" , ws , policy_block , ws , "," ,
+                        quote , "execution_contract" , quote , ws , ":" , ws , execution_contract_block , ws ,
+                        "}" ;
+
+(* --- Metadata Block --- *)
+metadata_block        = "{" , ws ,
+                        quote , "request_id" , quote , ws , ":" , ws , string_literal , ws , "," ,
+                        quote , "source_language" , quote , ws , ":" , ws , language_code , ws , "," ,
+                        quote , "source_hash" , quote , ws , ":" , ws , sha256_hash , ws , "," ,
+                        quote , "compiler_version" , quote , ws , ":" , ws , string_literal , ws , "," ,
+                        quote , "domain" , quote , ws , ":" , ws , domain_identifier , ws , "," ,
+                        quote , "created_at" , quote , ws , ":" , ws , iso8601_timestamp , ws ,
+                        "}" ;
+
+language_code         = quote , ( "ko" | "en" | "ja" | "zh" ) , quote ;
+sha256_hash           = quote , 64 * hex_digit , quote ;
+domain_identifier     = quote , ( "enterprise_finance" | "corporate_governance" | "regulatory_compliance" ) , quote ;
+
+(* --- Semantics Block --- *)
+semantics_block       = "{" , ws ,
+                        quote , "intent" , quote , ws , ":" , ws , intent_type , ws , "," ,
+                        quote , "target" , quote , ws , ":" , ws , target_block , ws , "," ,
+                        quote , "parameters" , quote , ws , ":" , ws , parameter_map , ws ,
+                        "}" ;
+
+intent_type           = quote , ( "SUMMARIZE" | "EXTRACT" | "ANALYZE" | "COMPARE" | "CAUSE_TRACE" | "VERIFY" ) , quote ;
+
+target_block          = "{" , ws ,
+                        quote , "entity_type" , quote , ws , ":" , ws , string_literal , ws , "," ,
+                        quote , "entity_id" , quote , ws , ":" , ws , entity_identifier , ws ,
+                        "}" ;
+
+entity_identifier     = quote , ( "QV" | "SEC" | "CORP" ) , 4 * digit , quote ;
+parameter_map         = "{" , ws , [ parameter_entry , { ws , "," , ws , parameter_entry } ] , ws , "}" ;
+parameter_entry       = quote , identifier , quote , ws , ":" , ws , json_value ;
+
+(* --- Typed Condition AST --- *)
+condition_expr        = relational_condition
+                      | logical_condition
+                      | modal_condition ;
+
+relational_condition  = "{" , ws ,
+                        quote , "operator" , quote , ws , ":" , ws , relational_op , ws , "," ,
+                        quote , "lhs" , quote , ws , ":" , ws , string_literal , ws , "," ,
+                        quote , "rhs" , quote , ws , ":" , ws , scalar_value , ws ,
+                        "}" ;
+
+relational_op         = quote , ( "EQ" | "NE" | "GT" | "GE" | "LT" | "LE" ) , quote ;
+
+logical_condition     = unary_logical | nary_logical ;
+
+unary_logical         = "{" , ws ,
+                        quote , "operator" , quote , ws , ":" , ws , quote , "NOT" , quote , ws , "," ,
+                        quote , "expr" , quote , ws , ":" , ws , condition_expr , ws ,
+                        "}" ;
+
+nary_logical          = "{" , ws ,
+                        quote , "operator" , quote , ws , ":" , ws , ( quote , "AND" , quote | quote , "OR" , quote ) , ws , "," ,
+                        quote , "exprs" , quote , ws , ":" , ws , "[" , ws , condition_expr , { ws , "," , ws , condition_expr } , ws , "]" , ws ,
+                        "}" ;
+
+modal_condition       = "{" , ws ,
+                        quote , "operator" , quote , ws , ":" , ws , quote , "EXCEPT" , quote , ws , "," ,
+                        quote , "rule" , quote , ws , ":" , ws , condition_expr , ws , "," ,
+                        quote , "exception" , quote , ws , ":" , ws , condition_expr , ws ,
+                        "}" ;
+
+scalar_value          = string_literal | number_literal | boolean_literal ;
+
+(* --- Policy Block --- *)
+policy_block          = "{" , ws ,
+                        quote , "level" , quote , ws , ":" , ws , policy_level , ws , "," ,
+                        quote , "enforcement" , quote , ws , ":" , ws , enforcement_action , ws , "," ,
+                        quote , "rules" , quote , ws , ":" , ws , "[" , ws , rule_id , { ws , "," , ws , rule_id } , ws , "]" , ws ,
+                        "}" ;
+
+policy_level          = quote , ( "L0_SYSTEM" | "L1_DOMAIN" | "L2_ENTERPRISE" | "L3_PREFERENCE" ) , quote ;
+enforcement_action    = quote , ( "BLOCK_EXECUTION" | "REJECT" | "GRACEFUL_DEGRADATION" | "QUARANTINE" | "BYPASS" ) , quote ;
+rule_id               = quote , ( "RULE_AUTH_ENTITY_MANDATORY" | "RULE_IMMUTABLE_PROVENANCE_REQUIRED" | "RULE_FINANCIAL_DISCLOSURE_LOCK" | identifier ) , quote ;
+
+(* --- Execution Contract Block --- *)
+execution_contract_block = "{" , ws ,
+                           quote , "mode" , quote , ws , ":" , ws , execution_mode , ws , "," ,
+                           quote , "failure_behavior" , quote , ws , ":" , ws , failure_behavior , ws , "," ,
+                           quote , "output_format" , quote , ws , ":" , ws , output_format , ws , "," ,
+                           quote , "unsupported_claim_behavior" , quote , ws , ":" , ws , unsupported_behavior , ws ,
+                           "}" ;
+
+execution_mode        = quote , ( "VERIFIED_ONLY" | "DRY_RUN" | "STANDARD" ) , quote ;
+failure_behavior      = quote , ( "REJECT" | "DEGRADE" | "QUARANTINE" | "ABORT" ) , quote ;
+output_format         = quote , ( "STRUCTURED_JSON" | "GROUNDED_NATURAL_LANGUAGE" ) , quote ;
+unsupported_behavior  = quote , ( "REJECT" | "REMOVE" | "FLAG" | "FILTER_AND_RENDER" ) , quote ;
+
+(* --- Primitives --- *)
+json_value            = string_literal | number_literal | boolean_literal | "null" ;
+string_literal        = quote , { char - quote } , quote ;
+number_literal        = [ "-" ] , digit , { digit } , [ "." , digit , { digit } ] ;
+boolean_literal       = "true" | "false" ;
+quote                 = '"' ;
+ws                    = { " " | "\t" | "\n" | "\r" } ;
+identifier            = ( letter | "_" ) , { letter | digit | "_" } ;
+digit                 = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+hex_digit             = digit | "a" | "b" | "c" | "d" | "e" | "f" | "A" | "B" | "C" | "D" | "E" | "F" ;
+letter                = "a" ... "z" | "A" ... "Z" ;
+iso8601_timestamp     = quote , 4 * digit , "-" , 2 * digit , "-" , 2 * digit , "T" , 2 * digit , ":" , 2 * digit , ":" , 2 * digit , "Z" , quote ;
