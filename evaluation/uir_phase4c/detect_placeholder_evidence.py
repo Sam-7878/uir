@@ -19,7 +19,7 @@ PLACEHOLDERS = (
 )
 
 
-def inspect_records(records: list[dict[str, Any]], require_metrics: bool = False) -> list[dict[str, Any]]:
+def inspect_records(records: list[dict[str, Any]], require_metrics: bool = False, check_diversity: bool = True) -> list[dict[str, Any]]:
     findings: list[dict[str, Any]] = []
     for record in records:
         cid, pipeline = record.get("case_id"), record.get("pipeline")
@@ -36,9 +36,11 @@ def inspect_records(records: list[dict[str, Any]], require_metrics: bool = False
             if not request or request.get("model_produced") is not True: findings.append({"case_id": cid, "pipeline": pipeline, "type": "model_tool_request_missing"})
         if require_metrics and "metrics" not in record: findings.append({"case_id": cid, "pipeline": pipeline, "type": "score_missing"})
     invoked = [record for record in records if record.get("model_invoked")]
-    for pipeline in ("C0_DIRECT_SLM", "C1_NAIVE_RAG", "C3_JSON_SCHEMA_STRUCTURED"):
-        hashes = {record["generation"]["raw_response_sha256"] for record in invoked if record["pipeline"] == pipeline}
-        if len(hashes) <= 1: findings.append({"pipeline": pipeline, "type": "implausibly_identical_responses", "unique": len(hashes)})
+    if check_diversity:
+        for pipeline in ("C0_DIRECT_SLM", "C1_NAIVE_RAG", "C3_JSON_SCHEMA_STRUCTURED"):
+            relevant = [record for record in invoked if record["pipeline"] == pipeline]
+            hashes = {record["generation"]["raw_response_sha256"] for record in relevant}
+            if relevant and len(hashes) <= 1: findings.append({"pipeline": pipeline, "type": "implausibly_identical_responses", "unique": len(hashes)})
     for pipeline in PIPELINES:
         latencies = [round(record["timing"]["end_to_end_ms"], 6) for record in records if record["pipeline"] == pipeline]
         if len(latencies) >= 100 and len(set(latencies)) <= 5: findings.append({"pipeline": pipeline, "type": "deterministic_latency_grid", "unique": len(set(latencies))})
@@ -53,8 +55,11 @@ def inspect_external() -> list[dict[str, Any]]:
             if not path.exists(): findings.append({"type": "external_prediction_missing", "file": str(path)}); continue
             for record in read_jsonl(path):
                 if not record.get("source_original_id") or not record.get("source_row_hash") or not record.get("source_file_sha256"): findings.append({"case_id": record.get("case_id"), "pipeline": short, "type": "official_source_mapping_missing"})
-                findings.extend(inspect_records([record]))
+                findings.extend(inspect_records([record], check_diversity=False))
                 if "score" not in record: findings.append({"case_id": record.get("case_id"), "pipeline": short, "type": "external_score_missing"})
+            records = read_jsonl(path)
+            if short == "C1" and len({row["generation"]["raw_response_sha256"] for row in records}) <= 1:
+                findings.append({"pipeline": short, "file": str(path), "type": "implausibly_identical_responses"})
     return findings
 
 
@@ -77,4 +82,3 @@ def main() -> None:
 
 
 if __name__ == "__main__": main()
-

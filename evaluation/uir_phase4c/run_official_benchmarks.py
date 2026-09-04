@@ -173,7 +173,7 @@ def main() -> None:
     started = datetime.now(timezone.utc).isoformat()
     if args.benchmark in {"finqa", "all"}: run_finqa(generator, args.force)
     if args.benchmark in {"halueval", "all"}: run_halueval(generator, args.force)
-    manifest = {"phase": "UIR-4C", "campaign": "official_benchmarks", "started_at_utc": started, "completed_at_utc": datetime.now(timezone.utc).isoformat(), "model": MODEL_ID, "hf_revision": MODEL_REVISION, "seed": SEED, "runtime": runtime, "benchmark": args.benchmark, "input_hashes": {"finqa": sha256_file(FROZEN_DIR / "finqa_runtime_200.jsonl"), "halueval": sha256_file(FROZEN_DIR / "halueval_qa_runtime_200.jsonl")}}
+    manifest = {"phase": "UIR-4C", "campaign": "official_benchmarks", "started_at_utc": started, "completed_at_utc": datetime.now(timezone.utc).isoformat(), "model": MODEL_ID, "hf_revision": MODEL_REVISION, "seed": SEED, "generation": {"requested_batch_size": args.batch_size, "do_sample": False, "max_new_tokens": MAX_NEW_TOKENS, "temperature": 0.0}, "runtime": runtime, "benchmark": args.benchmark, "input_hashes": {"finqa": sha256_file(FROZEN_DIR / "finqa_runtime_200.jsonl"), "halueval": sha256_file(FROZEN_DIR / "halueval_qa_runtime_200.jsonl")}}
     write_json(RESULTS_DIR / "official_inference_manifest.json", manifest)
     print(json.dumps({"status": "OFFICIAL_ACTUAL_GENERATION_COMPLETE", "benchmark": args.benchmark}, sort_keys=True))
 

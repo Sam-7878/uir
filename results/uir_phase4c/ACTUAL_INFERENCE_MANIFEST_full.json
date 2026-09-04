@@ -1,0 +1,54 @@
+{
+  "completed_at_utc": "2026-09-04T18:16:30.914200+00:00",
+  "dataset": "evaluation/uir_phase4c/frozen_inputs/strong_runtime_600.jsonl",
+  "dataset_sha256": "42a43665bd9bece7de535289223b2fd79241357d620a03984dbdc6d691b8dde9",
+  "generation": {
+    "batch_size": 8,
+    "do_sample": false,
+    "max_new_tokens": 128,
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "git": {
+    "commit": "82ae6054503befc8ff2fd142b93f7735273514e6",
+    "status_at_start": ""
+  },
+  "hf_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "phase": "UIR-4C",
+  "pipelines": [
+    "C0_DIRECT_SLM",
+    "C1_NAIVE_RAG",
+    "C2_RAG_EXISTENCE_CHECK",
+    "C3_JSON_SCHEMA_STRUCTURED",
+    "C4_TOOL_CALLING_AGENT",
+    "C5_GUARDRAIL_STYLE",
+    "C6_CORRECTIVE_RETRIEVAL",
+    "C7_GRAPH_STRUCTURED_RAG",
+    "C8_FINAL_UIR_B6"
+  ],
+  "platform": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.13",
+  "raw_capture_hashes": {
+    "C0_DIRECT_SLM": "54e607a95b65c403d54390d82f50ee5e4689d1c661289d8760fba7c5e3e23a83",
+    "C1_NAIVE_RAG": "834fc6a98edf6988f893a1d5b10940b81ad8b800b537dd9b894041dd0710164a",
+    "C2_RAG_EXISTENCE_CHECK": "0684ed7bf781679d893171fc48538b5246783f3733177bbfe73f00f027815f3a",
+    "C3_JSON_SCHEMA_STRUCTURED": "79394367978fc00ec8a346e418ed7cabe039dc1575ac637b8bf9a0230195c18f",
+    "C4_TOOL_CALLING_AGENT": "0e032fdfe58236805b2ccc3c301d98dafdd40f20e6a6f13c5a3874fe35f516df",
+    "C5_GUARDRAIL_STYLE": "a6248d9b508ce65c5d04e872734aec526cd5cfa7253ec7bc97c0b394742e646c",
+    "C6_CORRECTIVE_RETRIEVAL": "aedbf3ad999196f779fbb8598895e2a302a68c0d0ca4e2ecc8993612c9da280f",
+    "C7_GRAPH_STRUCTURED_RAG": "de576a30c167322410991cd2ce0c6db7ded630ea16ee485c87009fe8cf8f856d",
+    "C8_FINAL_UIR_B6": "bbcc213f9c09502bb775a2ee1dd4ad2fab9a6fb79eb1f0d25127cd2d23d0fa68"
+  },
+  "runtime": {
+    "cuda_version": "12.1",
+    "device": "cuda",
+    "hf_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+    "model_load_ms": 147164.521336,
+    "snapshot_path": "/home/sam/.cache/huggingface/hub/models--microsoft--Phi-3.5-mini-instruct/snapshots/2fe192450127e6a83f7441aef6e3ca586c338b77",
+    "torch_version": "2.5.1+cu121"
+  },
+  "shared_cases": 600,
+  "stage": "full",
+  "started_at_utc": "2026-09-04T17:14:31.316438+00:00"
+}

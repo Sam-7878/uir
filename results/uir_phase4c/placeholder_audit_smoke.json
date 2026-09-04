@@ -1,0 +1,9 @@
+{
+  "findings": [],
+  "findings_by_type": {},
+  "include_external": false,
+  "placeholder_evidence_count": 0,
+  "records_checked": 900,
+  "stage": "smoke",
+  "status": "PASS"
+}

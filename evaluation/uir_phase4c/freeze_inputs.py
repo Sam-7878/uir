@@ -21,6 +21,7 @@ from evaluation.uir_phase4c.common import (
 FINQA_COMMIT = "0f16e2867befa6840783e58be38c9efb9229d742"
 HALUEVAL_COMMIT = "b7253db3cdaa0ab2c382f92b26b390109174f77e"
 FINQA_SOURCE = SOURCE_DIR / "FinQA/test.json"
+FINQA_EVALUATOR = SOURCE_DIR / "FinQA/evaluate.py"
 HALUEVAL_SOURCE = SOURCE_DIR / "HaluEval/qa_data.json"
 
 
@@ -177,7 +178,7 @@ def freeze_halueval() -> list[dict[str, Any]]:
 
 
 def main() -> None:
-    for required in (FINQA_SOURCE, HALUEVAL_SOURCE):
+    for required in (FINQA_SOURCE, FINQA_EVALUATOR, HALUEVAL_SOURCE):
         if not required.exists():
             raise FileNotFoundError(f"official frozen source missing: {required}")
     internal = freeze_internal()
@@ -186,7 +187,7 @@ def main() -> None:
     provenance = {
         "created_at_utc": datetime.now(timezone.utc).isoformat(), "selection_seed": SEED,
         "sources": {
-            "FinQA": {"repository_url": "https://github.com/czyssrs/FinQA", "git_commit": FINQA_COMMIT, "file": str(FINQA_SOURCE.relative_to(ROOT)), "file_sha256": sha256_file(FINQA_SOURCE), "license": "Apache-2.0", "selected_rows": len(finqa_mapping)},
+            "FinQA": {"repository_url": "https://github.com/czyssrs/FinQA", "git_commit": FINQA_COMMIT, "file": str(FINQA_SOURCE.relative_to(ROOT)), "file_sha256": sha256_file(FINQA_SOURCE), "evaluator_file": str(FINQA_EVALUATOR.relative_to(ROOT)), "evaluator_sha256": sha256_file(FINQA_EVALUATOR), "license": "Apache-2.0", "selected_rows": len(finqa_mapping)},
             "HaluEval-QA": {"repository_url": "https://github.com/RUCAIBox/HaluEval", "git_commit": HALUEVAL_COMMIT, "file": str(HALUEVAL_SOURCE.relative_to(ROOT)), "file_sha256": sha256_file(HALUEVAL_SOURCE), "license": "MIT", "selected_rows": len(halueval_mapping)},
         },
         "internal_campaign": internal,

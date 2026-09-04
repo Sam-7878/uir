@@ -1,0 +1,28 @@
+{
+  "benchmark": "all",
+  "campaign": "official_benchmarks",
+  "completed_at_utc": "2026-09-04T19:12:24.814679+00:00",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 128,
+    "requested_batch_size": 16,
+    "temperature": 0.0
+  },
+  "hf_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "input_hashes": {
+    "finqa": "23b771a7910bae772ab4e7e5089ca71102e0dd53e98e015f28ab389974e6a646",
+    "halueval": "82e5a4875a19bcee1b08b7c55126b1d0ba7d38a6ad2d1c467c7bcb6e3d6806c0"
+  },
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "phase": "UIR-4C",
+  "runtime": {
+    "cuda_version": "12.1",
+    "device": "cuda",
+    "hf_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+    "model_load_ms": 56848.054073,
+    "snapshot_path": "/home/sam/.cache/huggingface/hub/models--microsoft--Phi-3.5-mini-instruct/snapshots/2fe192450127e6a83f7441aef6e3ca586c338b77",
+    "torch_version": "2.5.1+cu121"
+  },
+  "seed": 42,
+  "started_at_utc": "2026-09-04T18:18:03.766028+00:00"
+}
