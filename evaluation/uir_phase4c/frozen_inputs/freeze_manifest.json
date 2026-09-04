@@ -1,0 +1,2451 @@
+{
+  "created_at_utc": "2026-09-04T12:11:25.895110+00:00",
+  "internal_campaign": {
+    "full_plan": {
+      "adversarial": 50,
+      "condition_heavy": 100,
+      "invalid_entity": 50,
+      "numeric_provenance": 100,
+      "policy_violation": 50,
+      "valid_benign": 250
+    },
+    "full_runtime_sha256": "42a43665bd9bece7de535289223b2fd79241357d620a03984dbdc6d691b8dde9",
+    "full_scoring_sha256": "6b02a79be241cbe5c4637d6721560e13f97e1606951c371022d55ba77ff43d58",
+    "seed": 42,
+    "smoke_plan": {
+      "adversarial": 10,
+      "condition_heavy": 15,
+      "invalid_entity": 10,
+      "numeric_provenance": 15,
+      "policy_violation": 10,
+      "valid_benign": 40
+    },
+    "smoke_runtime_sha256": "35a0a7bb9421cb314283dda4570c8d9a67967032386bbf31137f1ae93ebfa4ce",
+    "smoke_scoring_sha256": "547875736873fa56bac974baeda1e956423e264b35aaa4df793be2b47e2c5ec6"
+  },
+  "mappings": {
+    "FinQA": [
+      {
+        "case_id": "FINQA-OFFICIAL-0001",
+        "source_index": 1,
+        "source_original_id": "INTC/2015/page_41.pdf-4",
+        "source_row_hash": "afc8cb103cef9f2feaac59b34b0723cdd9e7d0d37948a8d4b6fa6d8728c28ad5"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0006",
+        "source_index": 6,
+        "source_original_id": "AES/2010/page_227.pdf-3",
+        "source_row_hash": "2efbf1a965ea19844316a35c98fe7dcc7c1722860a559b948b788ec52ec1e3a8"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0013",
+        "source_index": 13,
+        "source_original_id": "JKHY/2019/page_18.pdf-3",
+        "source_row_hash": "14f1c706141848917bd0a0fc47a3f0c7c29beabe2874b2ee5b877bfea6862b8e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0014",
+        "source_index": 14,
+        "source_original_id": "AWK/2014/page_121.pdf-2",
+        "source_row_hash": "267774623c60aecb7b50027beb33707e73081fcc6c2d643b176ca20e0bc5f22a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0023",
+        "source_index": 23,
+        "source_original_id": "MAR/2018/page_43.pdf-2",
+        "source_row_hash": "da06d4594179e4718179dca3d562937ed7724bdaf33d63886e4a6c1f874b608e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0030",
+        "source_index": 30,
+        "source_original_id": "UNP/2015/page_56.pdf-1",
+        "source_row_hash": "a8c8030ddaa15c6d44c1b520917493b2027df58d119b9398f619ff93b3d68256"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0039",
+        "source_index": 39,
+        "source_original_id": "MKTX/2004/page_99.pdf-3",
+        "source_row_hash": "2f29477439d9b7ce9c69248670b32739699dacda0ff81c6ab889a0b4607d929b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0043",
+        "source_index": 43,
+        "source_original_id": "ZBH/2008/page_57.pdf-2",
+        "source_row_hash": "2ffbdea69889e9b812a3889b61b4d7e0f6a1ddabbe47d29e77c42ebd197e2818"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0051",
+        "source_index": 51,
+        "source_original_id": "ETFC/2011/page_144.pdf-2",
+        "source_row_hash": "f32a89f10b3b593b5ecb360d4a1fa9ce2116d81889fa1a2ee4cdfae708a393ef"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0054",
+        "source_index": 54,
+        "source_original_id": "ETR/2004/page_239.pdf-3",
+        "source_row_hash": "5bfaf83a2e6f528e64178c8ce27f9dc63f59241d87d72e4bba249638cf7422f4"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0061",
+        "source_index": 61,
+        "source_original_id": "HIG/2004/page_140.pdf-1",
+        "source_row_hash": "39fea270c7e802436e9f5940b3ca17edc18aee0f9e6ecebf4daf2fdab3682413"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0064",
+        "source_index": 64,
+        "source_original_id": "ETR/2013/page_21.pdf-2",
+        "source_row_hash": "82e02751440996f2653793fb545d883f014fcbef7883175fe8d7ba324a9e61ce"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0065",
+        "source_index": 65,
+        "source_original_id": "ABMD/2005/page_29.pdf-2",
+        "source_row_hash": "66c31d9c0fb94165fee93ff3e87066cb4129db5d8b9825c70e6e19035386e5ca"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0088",
+        "source_index": 88,
+        "source_original_id": "STT/2009/page_127.pdf-2",
+        "source_row_hash": "ac20a2dae46ca51402dfd33882707991750e6b810d95bcec7897f39dfe9e7396"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0093",
+        "source_index": 93,
+        "source_original_id": "CDNS/2018/page_66.pdf-4",
+        "source_row_hash": "d3dc7d9b72ab4500f762dc3b6749cb88325b77fa94b59ca8df6dc1f36ce67157"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0096",
+        "source_index": 96,
+        "source_original_id": "L/2009/page_84.pdf-4",
+        "source_row_hash": "83d07968a9d6198a2135efe48b38b95d78cea87e777e38dc2cb57b38f9246229"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0103",
+        "source_index": 103,
+        "source_original_id": "GPN/2010/page_89.pdf-4",
+        "source_row_hash": "f5daef635359a2ff624349f7992dbc747f1124860e0661f5c2c402233ac1981f"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0110",
+        "source_index": 110,
+        "source_original_id": "AMT/2016/page_49.pdf-3",
+        "source_row_hash": "cb402e20d650b1b190749d0e3205823d44f36b1f3b65deeaa7e1b85333677fb0"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0114",
+        "source_index": 114,
+        "source_original_id": "MRO/2013/page_19.pdf-3",
+        "source_row_hash": "4ea754c6086793ba1c169fd6c42e52338562c818f2cf3f307d02504c10137f85"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0118",
+        "source_index": 118,
+        "source_original_id": "MKTX/2012/page_42.pdf-1",
+        "source_row_hash": "01b90bc0b2f32f7bb380741c7eb9119d6e0f286fd7cbf3d9e754b7d66bcb4891"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0120",
+        "source_index": 120,
+        "source_original_id": "AWK/2014/page_121.pdf-1",
+        "source_row_hash": "d433602d6fe761d472ca48cb93b2b5de7274531267991960eb3fccec6a502dec"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0124",
+        "source_index": 124,
+        "source_original_id": "CME/2017/page_40.pdf-2",
+        "source_row_hash": "7f31c8921783181eb88d3f71eecf93697313c4165d02f83cc3b0f7d1b93daa9a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0130",
+        "source_index": 130,
+        "source_original_id": "DISCA/2011/page_49.pdf-1",
+        "source_row_hash": "bdffc6b46874ebfda121232f357943de7e55de56af6c86b37f7c45485c96c026"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0131",
+        "source_index": 131,
+        "source_original_id": "ZBH/2007/page_67.pdf-2",
+        "source_row_hash": "012e2dfa2e93b841f1cbc74a4c9ba9d9dee27eefb9581cc9fc5e0ea8d19678c1"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0135",
+        "source_index": 135,
+        "source_original_id": "IP/2006/page_75.pdf-2",
+        "source_row_hash": "982beda7ec3cb3960a6525561312e4f502605eb921de460763f1fa4010da570b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0138",
+        "source_index": 138,
+        "source_original_id": "AON/2007/page_171.pdf-1",
+        "source_row_hash": "2483fc2b2391fc9b83ce11a26135bef197c05e9313b00bdb59b3f2fd98c9b012"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0141",
+        "source_index": 141,
+        "source_original_id": "JPM/2018/page_90.pdf-5",
+        "source_row_hash": "6cfdf344daa45ae6d094add568ceccb1943035a049b937910846d0d8708118f4"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0142",
+        "source_index": 142,
+        "source_original_id": "AMT/2014/page_160.pdf-4",
+        "source_row_hash": "102249535ed366596486f44623a6557dfcf044c12d3ac7fb50be7380f2c9add1"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0145",
+        "source_index": 145,
+        "source_original_id": "IP/2006/page_31.pdf-2",
+        "source_row_hash": "9a0576bbf00fc126df345ceeea020a04de02e90ed48f7b233a0ba0230249f1a9"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0146",
+        "source_index": 146,
+        "source_original_id": "HST/2018/page_135.pdf-1",
+        "source_row_hash": "87b60cd4ee435b48cb70225956b85a61a4ab9df737192739862fd61eb2980408"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0154",
+        "source_index": 154,
+        "source_original_id": "UPS/2007/page_98.pdf-1",
+        "source_row_hash": "216968bea2541bc8afc9924d69331b28c5d996cca634ddd4e1a1f1939b101fbe"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0161",
+        "source_index": 161,
+        "source_original_id": "DG/2007/page_67.pdf-1",
+        "source_row_hash": "e60eae1f22c6a52c9b1142a309e42942c28fff2a6f7f43481b7ddcebb053e8fc"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0163",
+        "source_index": 163,
+        "source_original_id": "AES/2001/page_33.pdf-2",
+        "source_row_hash": "722bbf7d55250d6c81c3ef64c2e7540fc37152fc1d1199e4e6fe45237b49dc3f"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0175",
+        "source_index": 175,
+        "source_original_id": "LMT/2012/page_73.pdf-3",
+        "source_row_hash": "ceace18a4a2bf757d30afd43569533fd7fca302d122ec6aa8bab4fc3bb81e953"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0178",
+        "source_index": 178,
+        "source_original_id": "MRO/2003/page_45.pdf-2",
+        "source_row_hash": "cb40e0cc2a07de3006bc9d7e8bb351a521fc115aa6aea5f20f66b256c52b7121"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0186",
+        "source_index": 186,
+        "source_original_id": "V/2014/page_126.pdf-2",
+        "source_row_hash": "c129cc31823ec36d8a6397983f9e11ea07f9b94fa98285c3fa56e5ea7e59fc9a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0189",
+        "source_index": 189,
+        "source_original_id": "LMT/2016/page_49.pdf-4",
+        "source_row_hash": "7270e78330e616ee1bae1c7ea536db73045b6453467e14a1c4d6da1dec1cb83c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0191",
+        "source_index": 191,
+        "source_original_id": "HWM/2018/page_96.pdf-2",
+        "source_row_hash": "7db224208186d2ce08f00dab117b49190723e04e5d74dff2cf1b5a52d635d4ea"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0193",
+        "source_index": 193,
+        "source_original_id": "AES/2001/page_33.pdf-1",
+        "source_row_hash": "9c58015561f9a1cb1b77385fbabec3d989664ff4008222c65028f5ece262c47b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0198",
+        "source_index": 198,
+        "source_original_id": "RSG/2018/page_94.pdf-2",
+        "source_row_hash": "b668bda3960aad8de777fabb8967dd7f0ec64d07d4438097ce0d319805aa6970"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0200",
+        "source_index": 200,
+        "source_original_id": "LMT/2014/page_91.pdf-2",
+        "source_row_hash": "8550867fa941b8f340d8b99edbdc5b6b1c619758948b5875fdbc55cd6f6d24f2"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0201",
+        "source_index": 201,
+        "source_original_id": "FBHS/2017/page_22.pdf-1",
+        "source_row_hash": "2077aed4e1d8c9f33e4a0f98937d8f4785e071ba418cbc9027379a4f174fa3db"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0206",
+        "source_index": 206,
+        "source_original_id": "AAL/2016/page_8.pdf-3",
+        "source_row_hash": "a5aadf3e802ffb0ddd5925bab7c15230b1f934feac9c337d2b64b2b96280ad80"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0209",
+        "source_index": 209,
+        "source_original_id": "C/2008/page_44.pdf-2",
+        "source_row_hash": "b4dd2f825c3de5dabcdab7cd8238df87414a032f9f77e64f4ebd8085162e784d"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0217",
+        "source_index": 217,
+        "source_original_id": "DRE/2002/page_15.pdf-3",
+        "source_row_hash": "ccc025bf3922b969e584e51795beb49c475ef191c36da9094c2c817873c9c0aa"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0223",
+        "source_index": 223,
+        "source_original_id": "UPS/2007/page_98.pdf-2",
+        "source_row_hash": "bd493e0e5ba19e29358955ef464256516053df459403b998b0b5b16e3caed855"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0224",
+        "source_index": 224,
+        "source_original_id": "GPN/2008/page_78.pdf-4",
+        "source_row_hash": "29e909b5e0c35391a11589f41fbf0b0550d78459f51fd9e0f9dd587b58e1ef35"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0228",
+        "source_index": 228,
+        "source_original_id": "ABC/2005/page_49.pdf-4",
+        "source_row_hash": "9af1eddebf8d60bdbd40198bf197833bf1da8ad929b88cff8bf5a5717365ef4b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0229",
+        "source_index": 229,
+        "source_original_id": "TFX/2017/page_78.pdf-1",
+        "source_row_hash": "54c283add8b78055bb88769880d0160f5878936d9213b9894729421acdda2d20"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0234",
+        "source_index": 234,
+        "source_original_id": "SNA/2012/page_110.pdf-3",
+        "source_row_hash": "e32930fd054651bddcb6fe6cad8dae3ef2d5327fba465e219e3590f7d879ebd6"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0247",
+        "source_index": 247,
+        "source_original_id": "RCL/2016/page_6.pdf-1",
+        "source_row_hash": "4c077b542fd902279d2c54cec0821d08fcd78c40c2f522d837e0b51380c2a357"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0255",
+        "source_index": 255,
+        "source_original_id": "INTC/2015/page_41.pdf-2",
+        "source_row_hash": "4dff0a85ca7f439b1d0f4fdbce0d75b2b34e80afb7eb1c0f251286ef8e0a06b0"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0257",
+        "source_index": 257,
+        "source_original_id": "JPM/2014/page_70.pdf-2",
+        "source_row_hash": "c3e1d220c70f649215b4ff9778a16dffdf51b84ba18ccb20c376d1f00401e0d6"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0262",
+        "source_index": 262,
+        "source_original_id": "ETR/2016/page_150.pdf-1",
+        "source_row_hash": "b264ac58ed49c950c33a610958e5f2c4982e9c5543013b3755a39d5d7698d41a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0270",
+        "source_index": 270,
+        "source_original_id": "ETR/2015/page_17.pdf-4",
+        "source_row_hash": "520907176f1b0b4589c02c38e612a8ea24a5b44fa7b4e8f657dd42b68df98642"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0283",
+        "source_index": 283,
+        "source_original_id": "KHC/2018/page_132.pdf-3",
+        "source_row_hash": "5a7ae95504fe2267eda54ed6b91501fb5f0a8fd152f587ecb30c35838916b553"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0285",
+        "source_index": 285,
+        "source_original_id": "AMT/2014/page_160.pdf-1",
+        "source_row_hash": "bbfffaab9ae8911b79b63f9d798ff23b468585f4f30041908fe7638f9285fb2c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0287",
+        "source_index": 287,
+        "source_original_id": "MKTX/2004/page_99.pdf-4",
+        "source_row_hash": "9396c187c5e6eaeb9b5428ae0ba387943f594b5d4f0c8567d789a963876a3a62"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0292",
+        "source_index": 292,
+        "source_original_id": "GS/2013/page_72.pdf-2",
+        "source_row_hash": "106e15a961aa5f2c83ee0fbb04b4cfdb96ff1b56f0bfbc394955c5159eb2f4e0"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0313",
+        "source_index": 313,
+        "source_original_id": "HWM/2015/page_173.pdf-1",
+        "source_row_hash": "43430a41931def4b10c41c6396137d2fe80b7ee97b5e87a738a1f1aed75a24a4"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0318",
+        "source_index": 318,
+        "source_original_id": "GS/2013/page_126.pdf-2",
+        "source_row_hash": "229b63347ce789864a783ca61cd906c0b01803b621431998dbb7c62a39b0e033"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0323",
+        "source_index": 323,
+        "source_original_id": "MRK/2013/page_125.pdf-4",
+        "source_row_hash": "805db9e5e14e2005393e946eb2cf6bb0e23572a2f060977610a91b8805d20979"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0326",
+        "source_index": 326,
+        "source_original_id": "MMM/2007/page_84.pdf-1",
+        "source_row_hash": "1c1ca56eec017d868b781eca50761c9c07fdd4b2ae758a75ca8ebd8977a0aeaf"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0327",
+        "source_index": 327,
+        "source_original_id": "MAS/2017/page_27.pdf-4",
+        "source_row_hash": "afe92f238542ea98d2dbbb5a6e9423f10ffa98101248d2625d629bc492852fcd"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0330",
+        "source_index": 330,
+        "source_original_id": "AMT/2008/page_107.pdf-4",
+        "source_row_hash": "9985704e08c4577690ad90da0b95ac42f0e87bc76296bce5ee7c34f664e10c39"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0333",
+        "source_index": 333,
+        "source_original_id": "TMUS/2017/page_29.pdf-2",
+        "source_row_hash": "6a1dd1254375ebe7079e91d4bbb57d17e5dd75733bf0d934cf04efd0a2a3a56d"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0334",
+        "source_index": 334,
+        "source_original_id": "UPS/2016/page_114.pdf-2",
+        "source_row_hash": "2694af6e9816079af70e1f9265c7e8f0dcab51ff5951c7c4010d9ed265ddf0c6"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0338",
+        "source_index": 338,
+        "source_original_id": "SNA/2013/page_84.pdf-1",
+        "source_row_hash": "e377bc6060cb1c997ebad462958ce477251c4a4e64f05ecac107dd1d0553cedc"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0350",
+        "source_index": 350,
+        "source_original_id": "GPN/2010/page_89.pdf-2",
+        "source_row_hash": "b581555920d52a93c1b8b833d960a756802172aa85ae7ebbf4b7af31b725de74"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0365",
+        "source_index": 365,
+        "source_original_id": "ETR/2004/page_212.pdf-1",
+        "source_row_hash": "d5609c6845c7468ac8b819dc5cfe80d28c280ed75a7ea5fe684c4d053f4132ff"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0375",
+        "source_index": 375,
+        "source_original_id": "CDNS/2015/page_30.pdf-3",
+        "source_row_hash": "e486ae5c76eec52ad1104614d79bc2ffb7b38d474e2acdc2866a0e557a4abb34"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0389",
+        "source_index": 389,
+        "source_original_id": "GPN/2013/page_92.pdf-2",
+        "source_row_hash": "b139fb3a95b2f660f6786cde611abfe35b4a7cf65bd4c4fe9659b2713e006107"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0392",
+        "source_index": 392,
+        "source_original_id": "HWM/2018/page_96.pdf-1",
+        "source_row_hash": "93faa0497ccfd7d85d3237e11dc89183839b566400f53b159808f644c1e2636c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0393",
+        "source_index": 393,
+        "source_original_id": "CE/2009/page_65.pdf-2",
+        "source_row_hash": "b53c4b6823b968b8ef7c50f24a3dbf6eb0a6c1a7e9182964c60efd1e788f2805"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0407",
+        "source_index": 407,
+        "source_original_id": "ILMN/2008/page_86.pdf-4",
+        "source_row_hash": "057781c0d7016e14011754fc9a835d1308ae0d60a5f60f52056ebd921772590c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0411",
+        "source_index": 411,
+        "source_original_id": "AON/2007/page_188.pdf-1",
+        "source_row_hash": "3d645adbbe51b9c9b81ec627d40c047e576bc55bed0c71227a76843acc1fb12b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0429",
+        "source_index": 429,
+        "source_original_id": "AMT/2006/page_104.pdf-3",
+        "source_row_hash": "69b08072a1ba55cb97d056ba1958f2e6c572f6e598c8a63f0e9b8c0ca71b45ed"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0432",
+        "source_index": 432,
+        "source_original_id": "NCLH/2018/page_64.pdf-2",
+        "source_row_hash": "2a9f348e25b79679c679b5f48d5ca318ddfe03d6eaa920e3a9c3e43cf3a6e57d"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0433",
+        "source_index": 433,
+        "source_original_id": "STT/2006/page_95.pdf-1",
+        "source_row_hash": "9730e526c3df890f57eac4717f049b29818e01603f9814c81f86fb11bd565291"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0435",
+        "source_index": 435,
+        "source_original_id": "MAS/2017/page_27.pdf-3",
+        "source_row_hash": "2994b939416c4935dca2910f4ea8326b4caab7d2434e9075ca6a53279e3f0a9e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0438",
+        "source_index": 438,
+        "source_original_id": "GPN/2013/page_87.pdf-2",
+        "source_row_hash": "a94ecbc4d69fd7cd007fb93becc47215b47106f2dff4d9e7617b7d9cbce47997"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0440",
+        "source_index": 440,
+        "source_original_id": "HUM/2009/page_105.pdf-1",
+        "source_row_hash": "b1f93c91be12c40715bb07421ee699bc50fc697748a38650d92ec7993100af60"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0447",
+        "source_index": 447,
+        "source_original_id": "MRO/2004/page_125.pdf-2",
+        "source_row_hash": "689d5573f10b320beb5992ed97b46307c18f76174023ca712a1f6df6ddb5f55e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0449",
+        "source_index": 449,
+        "source_original_id": "AWK/2013/page_122.pdf-1",
+        "source_row_hash": "e76a2ec3d3aec73df746e3774148454f7600a3252837c44b215b2a0ba8f4246e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0451",
+        "source_index": 451,
+        "source_original_id": "AAL/2013/page_172.pdf-1",
+        "source_row_hash": "8a75dc29f7b1d85b1dfff37ef7aebe2aabef03de7bf35efbc8aa1a8046759811"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0457",
+        "source_index": 457,
+        "source_original_id": "AAL/2016/page_8.pdf-1",
+        "source_row_hash": "bb8b4340a5d73838b537726a88883e74fc0f2bce884f746786e6a1b4361bac0e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0460",
+        "source_index": 460,
+        "source_original_id": "UNP/2011/page_33.pdf-1",
+        "source_row_hash": "ee40fdcefc6f504e8f3ff09693c403ceb11983b45e5c763e89b726d7640da4d0"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0466",
+        "source_index": 466,
+        "source_original_id": "SNA/2007/page_69.pdf-1",
+        "source_row_hash": "9dd4ff055c0bc83ae3d97f7028a06f2eb2f87d3a4b52593b8f60cac0e92a78ef"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0468",
+        "source_index": 468,
+        "source_original_id": "ETR/2011/page_17.pdf-2",
+        "source_row_hash": "82d123b65b54979079892c06ddcfd8ea0d82687406c98c344c93a58a8aa9961a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0469",
+        "source_index": 469,
+        "source_original_id": "CDNS/2015/page_30.pdf-4",
+        "source_row_hash": "2a4f3ea0703a79fcb8016f63a329dbe8ba542deea35fe1536ad604d1e7be9590"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0471",
+        "source_index": 471,
+        "source_original_id": "MO/2014/page_39.pdf-1",
+        "source_row_hash": "8b62765b56e49fd197b7cc4916baeea82b12da5a49dca9f8316c7f09986b85fb"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0476",
+        "source_index": 476,
+        "source_original_id": "IP/2009/page_45.pdf-1",
+        "source_row_hash": "7462a1b1ef6f7fe7b836f846bce4425bc96b7597a09b16c99cbf8fff48603392"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0487",
+        "source_index": 487,
+        "source_original_id": "AMT/2007/page_29.pdf-1",
+        "source_row_hash": "df31aade00214f3292f928bc15916feca0558c492cf71febb1ffc55e1c33e354"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0490",
+        "source_index": 490,
+        "source_original_id": "MRK/2013/page_3.pdf-1",
+        "source_row_hash": "9b651478ad1ac028b7c38eae32ceeb502860d0598669f47d8986e9d480bba74d"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0493",
+        "source_index": 493,
+        "source_original_id": "CB/2008/page_229.pdf-2",
+        "source_row_hash": "d4d867e8207a3a0ce062134250cff3b60aaa2900adaf5e339392f7a20f3f723c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0497",
+        "source_index": 497,
+        "source_original_id": "GPN/2008/page_78.pdf-3",
+        "source_row_hash": "c2c065cdea3b55104e569c6100819c7bd4ab7a4a81d027297d2ef133e1057aae"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0501",
+        "source_index": 501,
+        "source_original_id": "MRO/2013/page_19.pdf-4",
+        "source_row_hash": "5b495ca7ada17e7a387b92004a21e81a3af67407905f251e26267ec7641b37a6"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0505",
+        "source_index": 505,
+        "source_original_id": "UPS/2010/page_52.pdf-3",
+        "source_row_hash": "991c9ef66c4f366aa605110b6248fa3ac54fe3975894f09017e5f0b0d360e3e8"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0507",
+        "source_index": 507,
+        "source_original_id": "AAPL/2006/page_100.pdf-1",
+        "source_row_hash": "fa8e687f56edf6c5d932f9cdc8ad824ebdd847782662a8f805439af895fd4f27"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0509",
+        "source_index": 509,
+        "source_original_id": "APD/2016/page_40.pdf-1",
+        "source_row_hash": "3d1ef18f57133ad1ef09e0b7d45a5f3aeac357d8cb75c88d7d3797295d3c69fd"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0511",
+        "source_index": 511,
+        "source_original_id": "ABMD/2012/page_41.pdf-1",
+        "source_row_hash": "ae2a4a379998bc0a587f34589fc2504a83a9a0bc78f93bf747baa0994f687fbd"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0514",
+        "source_index": 514,
+        "source_original_id": "V/2008/page_180.pdf-3",
+        "source_row_hash": "757e6e7fe6ae579040c3c66c67c1589c69f93a38d7264b49b1ff3d0f2583dfef"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0538",
+        "source_index": 538,
+        "source_original_id": "GS/2013/page_220.pdf-4",
+        "source_row_hash": "9c76c2cad8d2414b85ca10a7849775df9b57e959de6612ec8e46c455b6957965"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0539",
+        "source_index": 539,
+        "source_original_id": "DVN/2018/page_35.pdf-3",
+        "source_row_hash": "b23f3ce4660d0828c54926022b45c54f3296df63d727d73e590238de895452e1"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0541",
+        "source_index": 541,
+        "source_original_id": "TMUS/2017/page_29.pdf-4",
+        "source_row_hash": "2bc7703184178db60cb20c8e03f317ac74dc8577feb43c5a0400df042ce2ff82"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0542",
+        "source_index": 542,
+        "source_original_id": "D/2002/page_87.pdf-2",
+        "source_row_hash": "96e72579bb4424de15229075e82610ab549603d0a827b4fc6640d7df8b71783a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0546",
+        "source_index": 546,
+        "source_original_id": "GS/2012/page_121.pdf-1",
+        "source_row_hash": "5eecdef97000a5555473e3cccec7a474ca4d5134aabf7aa2225bb2db4869548e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0548",
+        "source_index": 548,
+        "source_original_id": "AAL/2013/page_18.pdf-3",
+        "source_row_hash": "f9a50013a2fb80c61aeeaf2da439316770fc0d9461ffbadb194b4f511e1efc0a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0552",
+        "source_index": 552,
+        "source_original_id": "MRK/2013/page_125.pdf-3",
+        "source_row_hash": "4def909931c7cb67d37a3767edba99bc1b85dd7604ee040d1d3ba4a195878e10"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0563",
+        "source_index": 563,
+        "source_original_id": "DISH/2010/page_117.pdf-1",
+        "source_row_hash": "e9d9bea1e1187e9ecd4bb380368541ef1594d04303fa6cf4b6d8ab85c16f5eb3"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0569",
+        "source_index": 569,
+        "source_original_id": "CME/2010/page_123.pdf-3",
+        "source_row_hash": "ed02a7824cddaec0bf21bd15f1701ff1e24c077cd1a9ee2db694d8490763669f"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0570",
+        "source_index": 570,
+        "source_original_id": "UA/2011/page_69.pdf-2",
+        "source_row_hash": "22b2f104886eabdbbf8694b17976cfcfe7abed5afe186bf9210990dc8d1f9960"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0592",
+        "source_index": 592,
+        "source_original_id": "GS/2017/page_179.pdf-2",
+        "source_row_hash": "6ddd63322f2d93b7dbdd2da9cd7fdd31412c33024c5c027ab9ab64c42d1d8316"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0600",
+        "source_index": 600,
+        "source_original_id": "FIS/2012/page_48.pdf-2",
+        "source_row_hash": "dee3e52aec7bbc0912a974347590967e92254ddedcaf866b43fc4712f9ddd73a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0601",
+        "source_index": 601,
+        "source_original_id": "DG/2005/page_44.pdf-3",
+        "source_row_hash": "0aecb34c838a6766e34e36fa21b0b8c0bffda128c18e01e7a638af5bc00181ae"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0611",
+        "source_index": 611,
+        "source_original_id": "AAL/2014/page_15.pdf-2",
+        "source_row_hash": "b68fbb7408f301e8f5b6277dfead11a9d05f3e43eafee983ec3030e8808db3c8"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0629",
+        "source_index": 629,
+        "source_original_id": "PPG/2012/page_29.pdf-1",
+        "source_row_hash": "5b5918657b9e40633239bc30ebf2dceb2afb32bd30ed00cb908f9d9077179150"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0638",
+        "source_index": 638,
+        "source_original_id": "ILMN/2008/page_86.pdf-1",
+        "source_row_hash": "13c9f2c6671538488ebaca7ef6bfb9bfd70a27e69343061e8ab37d1086322189"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0644",
+        "source_index": 644,
+        "source_original_id": "L/2009/page_84.pdf-2",
+        "source_row_hash": "7b76d61f8c8e4e05a1bfd78e1ff61a3c862f6460d95c238e8e34533c01a7f7f6"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0646",
+        "source_index": 646,
+        "source_original_id": "IPG/2006/page_77.pdf-1",
+        "source_row_hash": "ef9c5e56b88ebce7eddfd0b7ebd2b845c5cab310520c87dc3036ba7932503c80"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0663",
+        "source_index": 663,
+        "source_original_id": "UPS/2016/page_114.pdf-1",
+        "source_row_hash": "3e256bc6050e0acca99fdd284f795080e42740553b53febbbd220d22cadd7077"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0664",
+        "source_index": 664,
+        "source_original_id": "AMT/2003/page_27.pdf-1",
+        "source_row_hash": "75e9f2053b1f8acfeeb48c9821dbdec81ec577b59c519e8b583a611076fd3e54"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0676",
+        "source_index": 676,
+        "source_original_id": "CB/2008/page_229.pdf-3",
+        "source_row_hash": "4f97a6fb232104af88211ba8c94fca39a84e4cfb18575c3e48de572c79a5dfa6"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0689",
+        "source_index": 689,
+        "source_original_id": "AWK/2012/page_117.pdf-3",
+        "source_row_hash": "2e6e9cadd0a179b28a2be0afc25f43b953c41d1008212f8f6e3839ccde916617"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0692",
+        "source_index": 692,
+        "source_original_id": "DRE/2008/page_46.pdf-4",
+        "source_row_hash": "97964a05a879acc39a591b310dad0c1ff0a784ff114230230986fc469e1b520e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0694",
+        "source_index": 694,
+        "source_original_id": "BLK/2014/page_120.pdf-1",
+        "source_row_hash": "3d1d0892b595e62f5f5b155f43d30b1025896b5da657da605cc698b9035eb866"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0696",
+        "source_index": 696,
+        "source_original_id": "C/2018/page_175.pdf-1",
+        "source_row_hash": "d9f0922f0af00a670b28b09c3ea030bccbb36e8ed6166cd887a3152ce7ea88d4"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0704",
+        "source_index": 704,
+        "source_original_id": "AAL/2013/page_172.pdf-3",
+        "source_row_hash": "530f84c4e26b3247c03e9e28269ce0cd8c5a1a937d8e59ce7ec0750953dc5893"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0725",
+        "source_index": 725,
+        "source_original_id": "MSI/2012/page_87.pdf-3",
+        "source_row_hash": "85927da0efadc46a8e0ea494ace648f2647204c4960baabf2d40a55b2f7b58d3"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0727",
+        "source_index": 727,
+        "source_original_id": "FIS/2016/page_9.pdf-2",
+        "source_row_hash": "fd590f0f087602124ac96fa45ffbb915a0471b4008b4cb0680fdaa58af97202a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0735",
+        "source_index": 735,
+        "source_original_id": "AMT/2014/page_149.pdf-2",
+        "source_row_hash": "21f1678e5b73c2643283a8fcfcbe7fb3c44cb3dab5d8d7619ac093654763e7a6"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0740",
+        "source_index": 740,
+        "source_original_id": "GIS/2018/page_110.pdf-1",
+        "source_row_hash": "87e0b943cf7bac4cbdd329b21313194a5be623633f901deb328de54c11f3908a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0741",
+        "source_index": 741,
+        "source_original_id": "UNP/2006/page_15.pdf-1",
+        "source_row_hash": "25f8b0276e0f8332762a42356f610e568a675abac339c74d3907e271c8b51b30"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0743",
+        "source_index": 743,
+        "source_original_id": "ANSS/2012/page_93.pdf-1",
+        "source_row_hash": "90902cf46b63887913b347a6a2ddc208a8d8b4815743b7dd2e6a92151723b320"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0747",
+        "source_index": 747,
+        "source_original_id": "GIS/2017/page_31.pdf-4",
+        "source_row_hash": "134ec22ff680c490280e97854ec933933447de1b598b58a4d3920c22c6f03eda"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0758",
+        "source_index": 758,
+        "source_original_id": "RSG/2012/page_93.pdf-1",
+        "source_row_hash": "abef4cdf0d08d4b2b1d7805e05e016ee98699c8d633166766b2c0b21edb7d08b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0764",
+        "source_index": 764,
+        "source_original_id": "PNC/2012/page_174.pdf-2",
+        "source_row_hash": "325127f54379c52d249b9376d018eedd6a193532dc8b74335c9d8d4e992a9571"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0765",
+        "source_index": 765,
+        "source_original_id": "MAS/2012/page_26.pdf-2",
+        "source_row_hash": "f8a5c50c64a0876addaeff2a697b62c2344e103a08206db0e4b263a11d565d8b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0775",
+        "source_index": 775,
+        "source_original_id": "MO/2014/page_62.pdf-1",
+        "source_row_hash": "8f61f84b69d029d22f9eb9d4c70cbe9521a2b731d09f85e28ad78f757d790ef6"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0777",
+        "source_index": 777,
+        "source_original_id": "MRO/2017/page_96.pdf-4",
+        "source_row_hash": "5e56d104a4e9972e5d47e5968a89f61422bab56ae587fa35b693d4a7d88d1ef1"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0778",
+        "source_index": 778,
+        "source_original_id": "JPM/2018/page_90.pdf-2",
+        "source_row_hash": "e0d102a02e04f7f4c05e15c214947ad9f4a35461693853bb3e4665f9af26aaf2"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0781",
+        "source_index": 781,
+        "source_original_id": "AAL/2013/page_18.pdf-1",
+        "source_row_hash": "b6830308d7526efd02436c729c9303c69427e09fd386bbf2e05562f216212090"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0788",
+        "source_index": 788,
+        "source_original_id": "DISH/2010/page_117.pdf-2",
+        "source_row_hash": "410322c0a724c9557db9bc15227d528fb556c7bbdbd5c0393994c140d0baa368"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0810",
+        "source_index": 810,
+        "source_original_id": "PKG/2005/page_74.pdf-4",
+        "source_row_hash": "c11e97557933fd87d5cf0b8529953a46f9c5c79ff18dd1453c4485737ff49402"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0817",
+        "source_index": 817,
+        "source_original_id": "ETFC/2018/page_153.pdf-2",
+        "source_row_hash": "b8783788c9eb0d8718f9e5bb19ffc6559e3bdc328fdc7ca8b486678bc41ddae0"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0821",
+        "source_index": 821,
+        "source_original_id": "ALLE/2015/page_24.pdf-2",
+        "source_row_hash": "8bfae5321663e3782787496a93725acb2331a077c465c45c6d4bf77e7fbac856"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0824",
+        "source_index": 824,
+        "source_original_id": "GS/2012/page_189.pdf-1",
+        "source_row_hash": "97ced6b6d5b14c1cde0f8ab7bae713047f5389dcebac7788a47ac8320c37e9b0"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0833",
+        "source_index": 833,
+        "source_original_id": "FIS/2016/page_31.pdf-4",
+        "source_row_hash": "77d2bde583f401f86ed1ffc3cac6e098d491149f646a89c3cc6ba35c1efe5b66"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0841",
+        "source_index": 841,
+        "source_original_id": "GS/2014/page_165.pdf-4",
+        "source_row_hash": "6232e72389e28e5cbae1d47d1016c8e7a121e90c612acfc43569416957464c08"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0859",
+        "source_index": 859,
+        "source_original_id": "GPN/2010/page_87.pdf-2",
+        "source_row_hash": "81de2395f1e558ef7777a1f6528b21a664f56722a08d733d501686587d476d54"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0864",
+        "source_index": 864,
+        "source_original_id": "GS/2014/page_51.pdf-1",
+        "source_row_hash": "ca5edbe146fa6cf80408967ebaae427b3e7a3ec58b5581519bd4d8dc85d65eab"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0865",
+        "source_index": 865,
+        "source_original_id": "ETR/2015/page_17.pdf-3",
+        "source_row_hash": "6dcd997c97c17a48d49e8133d51f3419b4b64852f81e647e4ae33d3dbe515613"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0866",
+        "source_index": 866,
+        "source_original_id": "MS/2013/page_139.pdf-1",
+        "source_row_hash": "c25e1dd6cfa4205814c1f713a46de87e9e957a783f637f58edcf78d5eeaa96bc"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0867",
+        "source_index": 867,
+        "source_original_id": "UPS/2010/page_52.pdf-1",
+        "source_row_hash": "fb5373bdf22747134744952023277e0e2b53362256687b207a15366623697b4c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0877",
+        "source_index": 877,
+        "source_original_id": "HII/2015/page_121.pdf-3",
+        "source_row_hash": "c67b7037a981e376e94b2359f404ca1b6d1fc308e904e5ab3325bd334123c662"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0882",
+        "source_index": 882,
+        "source_original_id": "JPM/2009/page_175.pdf-3",
+        "source_row_hash": "b8d292b35f9340af4edc9c867b89503198735a388d637515ba4006ddac71ae15"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0890",
+        "source_index": 890,
+        "source_original_id": "RSG/2018/page_135.pdf-2",
+        "source_row_hash": "db98ebc02ae25e3fdf6fed2ddee63d75fac0c328cc2bce1750eb8d053ccadcf3"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0897",
+        "source_index": 897,
+        "source_original_id": "ABMD/2012/page_79.pdf-2",
+        "source_row_hash": "0fda4bcc284d2d9542b6bf5fbf794b925456c3500d95f31e436d70e758a258f4"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0907",
+        "source_index": 907,
+        "source_original_id": "BLL/2006/page_67.pdf-3",
+        "source_row_hash": "1d13b09bc5f587e5b770d326cac99d5016e251602fd3adada1d4a507f0dd91a2"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0918",
+        "source_index": 918,
+        "source_original_id": "ZBH/2009/page_58.pdf-3",
+        "source_row_hash": "6fa414ebf5a3cfa7aa941f6642328e46f342f2e47e9d0489adbe5508ece58cd5"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0919",
+        "source_index": 919,
+        "source_original_id": "MRO/2013/page_39.pdf-3",
+        "source_row_hash": "4f0edc18b8d4b492aa843b17c5de3fd0d2048a19dc0930ae9b9a028801cb5ea8"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0924",
+        "source_index": 924,
+        "source_original_id": "JPM/2018/page_90.pdf-4",
+        "source_row_hash": "263abe9f9ac225e9940b4eb2fb9aa0f4fd6e22a711911c5ad26d633ab3dc9243"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0928",
+        "source_index": 928,
+        "source_original_id": "DXC/2018/page_56.pdf-2",
+        "source_row_hash": "5d4b7154b19c77c1db299b60d59ed5375384dc37900b3f9067179d2d8b58d879"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0929",
+        "source_index": 929,
+        "source_original_id": "FIS/2016/page_45.pdf-1",
+        "source_row_hash": "26dcc188bc8fe8b0639650c5416b7822b020a1fc91bade7fe6b220c9bcab99e4"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0939",
+        "source_index": 939,
+        "source_original_id": "MSI/2008/page_69.pdf-1",
+        "source_row_hash": "8ef14754a9c5961807d2dcae991ef3f203e4a60e21a0d07fe93dfd07a219438c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0940",
+        "source_index": 940,
+        "source_original_id": "GS/2013/page_85.pdf-2",
+        "source_row_hash": "76339f9d597e7da400f759fb5d1ebc89796f6ff01d3cbf9aa84fc8b411c47006"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0946",
+        "source_index": 946,
+        "source_original_id": "HUM/2017/page_118.pdf-4",
+        "source_row_hash": "83f7c1506906f45cb5a71084da2b56994d397190601599c9a74e78d87e0e7b18"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0947",
+        "source_index": 947,
+        "source_original_id": "WRK/2018/page_107.pdf-1",
+        "source_row_hash": "0d0185aa35b8a0d40dd2667a295eae2f5a3361becc03c6a08a017254e469a03d"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0956",
+        "source_index": 956,
+        "source_original_id": "IP/2009/page_45.pdf-2",
+        "source_row_hash": "75e1cf8c546198aa777235e0846e8e071a21c74b1382917fccd224ca4d862d65"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0958",
+        "source_index": 958,
+        "source_original_id": "HOLX/2008/page_143.pdf-1",
+        "source_row_hash": "63dd09f2cfa68730ad5838945deeffe8b95d8d4f24204ee366d48970da2deca2"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0968",
+        "source_index": 968,
+        "source_original_id": "UNP/2011/page_24.pdf-1",
+        "source_row_hash": "7678806de22106dc0250d1e17f89c54b16305c6946a92d6b8d3743f35693b4c7"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0973",
+        "source_index": 973,
+        "source_original_id": "ILMN/2008/page_82.pdf-2",
+        "source_row_hash": "d9834209256332c34106c2723beceb2947ed05dbda6e69ec1d8e2e0d27eecda9"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0994",
+        "source_index": 994,
+        "source_original_id": "RSG/2010/page_57.pdf-1",
+        "source_row_hash": "5135f7bfd84839856a51e4224a81abaa93b9ff9693c2123691252f9265bf8b0f"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-0995",
+        "source_index": 995,
+        "source_original_id": "K/2006/page_52.pdf-3",
+        "source_row_hash": "7561f7bb1f87f03bcf40187e22cc0bf8c20495a3dded631e37116c8b4f6f4de8"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1000",
+        "source_index": 1000,
+        "source_original_id": "SNA/2013/page_34.pdf-2",
+        "source_row_hash": "3db2f31f1f2a6db7b955175c75a9e74b1e8ee9868f0b12003dd3789a185308b9"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1010",
+        "source_index": 1010,
+        "source_original_id": "AMT/2006/page_113.pdf-3",
+        "source_row_hash": "1d10dc3a0ea90841f7a507f92917a72e3a2cbbff0416b4ff24a56fd1cc736976"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1022",
+        "source_index": 1022,
+        "source_original_id": "JKHY/2017/page_26.pdf-2",
+        "source_row_hash": "33da1b743b792d7dd41b28ab09675b1538445fd9e724358969e10248b859113e"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1025",
+        "source_index": 1025,
+        "source_original_id": "ETR/2016/page_150.pdf-2",
+        "source_row_hash": "cd06f10b104db7de2b934a55facfeb3efcdc2a1f3ba0c0e7a879499ccec48d26"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1034",
+        "source_index": 1034,
+        "source_original_id": "GS/2012/page_121.pdf-2",
+        "source_row_hash": "8ac0cd85bb69826be1c5c197e1de29a0eed69b8f694b1790f67bbc1845ff01d8"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1039",
+        "source_index": 1039,
+        "source_original_id": "K/2006/page_52.pdf-1",
+        "source_row_hash": "0f1f37c1c944d7da0a5db1b7d38c2facb2657f54dd5ee04704a740c67e1e339b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1043",
+        "source_index": 1043,
+        "source_original_id": "JKHY/2019/page_18.pdf-2",
+        "source_row_hash": "714eb2aa0a9e457bcddd2189d6159e723aa83f7c1a9c02c9f3b29f9754af50bb"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1052",
+        "source_index": 1052,
+        "source_original_id": "ABMD/2012/page_79.pdf-3",
+        "source_row_hash": "9a0c2f8cac20e905a105390065bfa8d4ded53e37470dc619fd38f3d12a9d838c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1059",
+        "source_index": 1059,
+        "source_original_id": "ADI/2010/page_80.pdf-3",
+        "source_row_hash": "594804417e893b2b4210e10e081f407e7a82541eda1a3d1d62984f954efaeef4"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1080",
+        "source_index": 1080,
+        "source_original_id": "BLK/2015/page_124.pdf-3",
+        "source_row_hash": "64d0c68a2f6c1f81512d8c5dcb2b3b5eba84da034b6ff9ff388593a3ff269361"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1083",
+        "source_index": 1083,
+        "source_original_id": "ABMD/2005/page_29.pdf-4",
+        "source_row_hash": "0ca7407a1c91d16b2591a99e2999e927d2c868eb2b3c7e54d93119bf1cac6d1c"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1086",
+        "source_index": 1086,
+        "source_original_id": "PPG/2006/page_42.pdf-4",
+        "source_row_hash": "baf4c6d32951fd6890ffd9ed0ec34c69eeb46aea491dac2cbe656aeea4a04ae1"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1090",
+        "source_index": 1090,
+        "source_original_id": "IP/2006/page_31.pdf-3",
+        "source_row_hash": "f41a89229590120944f514da1b535d90f0d103e43f0d12fd5f18937709fc5ecb"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1093",
+        "source_index": 1093,
+        "source_original_id": "TFX/2015/page_89.pdf-3",
+        "source_row_hash": "65e658454b0a51198e86e5c8948627ce765841cd2373ec0e8b3412aab62a189f"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1098",
+        "source_index": 1098,
+        "source_original_id": "ABMD/2012/page_41.pdf-3",
+        "source_row_hash": "31ce7076fd2279c3cbd4ffeb0a9eb0e3a4171db4de4f4f99e05989e23dfb90a1"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1099",
+        "source_index": 1099,
+        "source_original_id": "UNP/2015/page_56.pdf-4",
+        "source_row_hash": "7a34caf3c1c30539ae35d5992eb1f97684e204de64804a9872722d107a907b7d"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1103",
+        "source_index": 1103,
+        "source_original_id": "BLK/2012/page_145.pdf-1",
+        "source_row_hash": "cf9f555c131a5719ea6af69e46de1021d0deb695fcd4fcde4405e3eaa9eb20dd"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1104",
+        "source_index": 1104,
+        "source_original_id": "PPG/2012/page_29.pdf-3",
+        "source_row_hash": "4ba0620b26aa93f54fe7018c2ef9930b369bd6e2991b2c928f6d4bcfff5f70d9"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1107",
+        "source_index": 1107,
+        "source_original_id": "UNP/2010/page_21.pdf-3",
+        "source_row_hash": "fb428121db2579f1cea122d2a94c2dd1f5508fc19e046c3ab762b7b2582e2c60"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1116",
+        "source_index": 1116,
+        "source_original_id": "LKQ/2016/page_87.pdf-3",
+        "source_row_hash": "0200555c40b98db07f3a8dcbc7908db1211f25f4d7643ac3574389db4a31ffa0"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1125",
+        "source_index": 1125,
+        "source_original_id": "LKQ/2016/page_87.pdf-4",
+        "source_row_hash": "a3adc14510c6004909b7768878c2bb93cdb04040c13342ec841f8188ccd9ef8a"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1127",
+        "source_index": 1127,
+        "source_original_id": "NCLH/2018/page_97.pdf-3",
+        "source_row_hash": "c99010d70bc0d702586f53bc309bf2df778213dae0760066e8d81ec02ab40ab2"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1130",
+        "source_index": 1130,
+        "source_original_id": "CMCSA/2015/page_112.pdf-3",
+        "source_row_hash": "3beec5c4920317286e9fc618e99403e4266a582ed45400fc783ed2596d971284"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1133",
+        "source_index": 1133,
+        "source_original_id": "BLK/2012/page_145.pdf-3",
+        "source_row_hash": "83d078a183e379e3b022d089142d1b7272d8999e6b581567103e0f6d625aa94b"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1134",
+        "source_index": 1134,
+        "source_original_id": "MO/2014/page_62.pdf-4",
+        "source_row_hash": "827ff99cc39b22ded512cc67784c965aaa79e574d44103e87ef5f09c51f43b52"
+      },
+      {
+        "case_id": "FINQA-OFFICIAL-1140",
+        "source_index": 1140,
+        "source_original_id": "CMCSA/2015/page_112.pdf-4",
+        "source_row_hash": "667dd98bb92df550b8c14218d8d5d97dc2e9a319a3f3ed4aab2415611777c260"
+      }
+    ],
+    "HaluEval-QA": [
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00009",
+        "source_index": 9,
+        "source_original_id": "qa_data.json:9",
+        "source_row_hash": "96de25b25e4a2b5440fa3a020de83ab3b0d4beab22c9085f25af9844af4f5385"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00053",
+        "source_index": 53,
+        "source_original_id": "qa_data.json:53",
+        "source_row_hash": "122b73889f4aacf93ddb4f525e8129d6ca00339a9791d1ea8aa310214b206e5f"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00106",
+        "source_index": 106,
+        "source_original_id": "qa_data.json:106",
+        "source_row_hash": "c9e044b95dc2f61adb2ec46aed0d35fb66d50a5fc8fee906b9f3aa79beb1d0bd"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00117",
+        "source_index": 117,
+        "source_original_id": "qa_data.json:117",
+        "source_row_hash": "201efe0d0464e1d67c124a709fb8873f6f12e95e43c18540f59558fe15778195"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00188",
+        "source_index": 188,
+        "source_original_id": "qa_data.json:188",
+        "source_row_hash": "d89544d50d736c9a4039c1c479d6269e2b88e2467cc479e3c9755caa8120a6b0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00319",
+        "source_index": 319,
+        "source_original_id": "qa_data.json:319",
+        "source_row_hash": "179de50367badb8c4b1b97c41655e54a4b1165949d46a0301cb1b1ef184fe24c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00344",
+        "source_index": 344,
+        "source_original_id": "qa_data.json:344",
+        "source_row_hash": "4751e97ea68ee3eecb9ab8a6e09352a9fc4288b4cd772b329b1e8b2df870e511"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00409",
+        "source_index": 409,
+        "source_original_id": "qa_data.json:409",
+        "source_row_hash": "7bf2e79401a6ce9e1917dee4e277848a2251c0beb6ee92e3a482f6c34a78ac9d"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00434",
+        "source_index": 434,
+        "source_original_id": "qa_data.json:434",
+        "source_row_hash": "0e709b34dafc0f78f6f354feac45627c80a1979cbfb5e89b4e0b0ad08710638b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00488",
+        "source_index": 488,
+        "source_original_id": "qa_data.json:488",
+        "source_row_hash": "bc47a5eb10ad8dd726d4f7c8c7dcd1b2617a21bae6b18fc99e1e2aed336cf911"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00520",
+        "source_index": 520,
+        "source_original_id": "qa_data.json:520",
+        "source_row_hash": "7c5fa89f592f9429ebda8f1596629aff86f7325748bbc9330ad4967467e505f6"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00525",
+        "source_index": 525,
+        "source_original_id": "qa_data.json:525",
+        "source_row_hash": "2d31adcb2b25c569c00b82087838683afc439c036f8f789e02a18c8118d7d031"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00711",
+        "source_index": 711,
+        "source_original_id": "qa_data.json:711",
+        "source_row_hash": "4004bc22135a036d4564b98bc457a04b9779bed5aedd67f532c037252abaa1c0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00750",
+        "source_index": 750,
+        "source_original_id": "qa_data.json:750",
+        "source_row_hash": "7f333ad2244629652930bb9bea3cabfef45ab3ce6e93e1751b17753a13d2c219"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00771",
+        "source_index": 771,
+        "source_original_id": "qa_data.json:771",
+        "source_row_hash": "89fc7ab737718c8e9a924a60a1fbf018d50f44a533f3d70c971560b1dd700075"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00916",
+        "source_index": 916,
+        "source_original_id": "qa_data.json:916",
+        "source_row_hash": "793beb8fda2cce34c1cca4700f2e9a6d7df7ffd0947a50085a114dcfe17bb07b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00949",
+        "source_index": 949,
+        "source_original_id": "qa_data.json:949",
+        "source_row_hash": "54d74460c7070f01836e6929811da4a5b2f1daee39731a28ac8b88a7d6f263e4"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-00964",
+        "source_index": 964,
+        "source_original_id": "qa_data.json:964",
+        "source_row_hash": "bcd334a2295fa4fb6c23f14f13b9316130db3033e2ecd53d4ef80dae024f8bf2"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01040",
+        "source_index": 1040,
+        "source_original_id": "qa_data.json:1040",
+        "source_row_hash": "6cc3da5141f0d2fad33a39fdb49c33ffa219ad8e01a2e0d6a9bc2c3b815467b5"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01049",
+        "source_index": 1049,
+        "source_original_id": "qa_data.json:1049",
+        "source_row_hash": "de8cde362e366a7409427f3772f8cb5a1c6da8867619bffa63b0d0f425fa48e0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01084",
+        "source_index": 1084,
+        "source_original_id": "qa_data.json:1084",
+        "source_row_hash": "663f3b79877fe1a25438aae8e2813b3f9c246296fdd25c0e519bf2c89ffa328e"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01133",
+        "source_index": 1133,
+        "source_original_id": "qa_data.json:1133",
+        "source_row_hash": "6a30a51efee616c08f9105e105a920bb31270e02e3f4ef6c1b58c60018b464f6"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01139",
+        "source_index": 1139,
+        "source_original_id": "qa_data.json:1139",
+        "source_row_hash": "881dc46e5e1a0c2baf5e8a5f705e772e880f0ce90f852d70845cb09c28d9964b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01163",
+        "source_index": 1163,
+        "source_original_id": "qa_data.json:1163",
+        "source_row_hash": "ee909224638af48dcaa071cd4b39e60e6c6f727a63011af27d60fda36c06ff33"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01169",
+        "source_index": 1169,
+        "source_original_id": "qa_data.json:1169",
+        "source_row_hash": "4e7c488aa7138442715541742c430d7ffc5da0faa647d95b60878c914b530178"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01290",
+        "source_index": 1290,
+        "source_original_id": "qa_data.json:1290",
+        "source_row_hash": "7d3c690a6f64d553a4ce7f3607a85550cae9f38ca46527776a46c1aa6c5198f1"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01291",
+        "source_index": 1291,
+        "source_original_id": "qa_data.json:1291",
+        "source_row_hash": "d31aa63e48fa6e84be35dabda21d931b75d59a0f3fa15e52754785acad88e3ad"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01307",
+        "source_index": 1307,
+        "source_original_id": "qa_data.json:1307",
+        "source_row_hash": "722ec09d2c77209297b9b50d52c000057735590e41f9e50884d7b8d9670caf8c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01403",
+        "source_index": 1403,
+        "source_original_id": "qa_data.json:1403",
+        "source_row_hash": "9c71deb47cdb3f49fdfe072ee0d540df5ee7dd7efdc2df892fae8915461b825b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01424",
+        "source_index": 1424,
+        "source_original_id": "qa_data.json:1424",
+        "source_row_hash": "a0a00651566e3661c65e43d3ee9ea6615015159d9b4db170ab9125e2490d20dd"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01489",
+        "source_index": 1489,
+        "source_original_id": "qa_data.json:1489",
+        "source_row_hash": "a6fd0712ff29dabaa484328a24fd41acca01bf372d7b971ed23deb856e901ef9"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01519",
+        "source_index": 1519,
+        "source_original_id": "qa_data.json:1519",
+        "source_row_hash": "6532c41978cdbf84d910f7c9d87422e45ee6836da2e7af3cdd1bfa92fb3e3065"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01535",
+        "source_index": 1535,
+        "source_original_id": "qa_data.json:1535",
+        "source_row_hash": "560e176d384b69b25cbd6b367239e6a758b679b2eb58d1f3a84f6c234bec96f0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01584",
+        "source_index": 1584,
+        "source_original_id": "qa_data.json:1584",
+        "source_row_hash": "ed0cec2e113f825c797bab93d38039b5448c39ea70b20f74d84aefc0282c9150"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01654",
+        "source_index": 1654,
+        "source_original_id": "qa_data.json:1654",
+        "source_row_hash": "190704a1ad84ae0ec36193e45cb5e5a40a7f2e5215c8a875a82c546919ef661b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01674",
+        "source_index": 1674,
+        "source_original_id": "qa_data.json:1674",
+        "source_row_hash": "4b69a85ba40f99a3af657d82a1a99be6cbdc0181c5abbda67df4ceb3d9973b9a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01679",
+        "source_index": 1679,
+        "source_original_id": "qa_data.json:1679",
+        "source_row_hash": "638bfb43a86c24002b29cf2f66c0bf579e3f0fdcb4cec5c4630d4214338d3e26"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01743",
+        "source_index": 1743,
+        "source_original_id": "qa_data.json:1743",
+        "source_row_hash": "22bb34c6bf16ebca75b723e84b79ef58785f7c42bbee39bc427d817a20f6d2ab"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01796",
+        "source_index": 1796,
+        "source_original_id": "qa_data.json:1796",
+        "source_row_hash": "3041a2c1650fcda6f492569be961d28c3300624f18a2fe108ea034010966fe7a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01824",
+        "source_index": 1824,
+        "source_original_id": "qa_data.json:1824",
+        "source_row_hash": "911e8eb24e7e218b58895e679a490322ff28d289cd8d7d73135f514d329ff21f"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01827",
+        "source_index": 1827,
+        "source_original_id": "qa_data.json:1827",
+        "source_row_hash": "c94f63b111a19a1c4e34aecf00f473464b777d667d69a582e8151fdca4655566"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01832",
+        "source_index": 1832,
+        "source_original_id": "qa_data.json:1832",
+        "source_row_hash": "73474cffcafe8cffa38c60b7270eb2587e2a4b7ba6eaaac64fc0133b5891ca71"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01876",
+        "source_index": 1876,
+        "source_original_id": "qa_data.json:1876",
+        "source_row_hash": "d6836a3f09f93a2bc8b26bcafcdd8ad3834e3e0efc20709e6cf75e75db033045"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-01982",
+        "source_index": 1982,
+        "source_original_id": "qa_data.json:1982",
+        "source_row_hash": "5d2e3a23d3cbdac50911e2db2f88a69923cae1fbe07a12d40e0bb17cb31d9a55"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02045",
+        "source_index": 2045,
+        "source_original_id": "qa_data.json:2045",
+        "source_row_hash": "7ff99ba92ff6696090a9dd6fbdfdd167c48ac0158410b26a43c3b2e5fc013dfa"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02060",
+        "source_index": 2060,
+        "source_original_id": "qa_data.json:2060",
+        "source_row_hash": "cc5f07e2d54a5723b65fa8718ebed22f86f758b1e272467a68528cf73a684224"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02103",
+        "source_index": 2103,
+        "source_original_id": "qa_data.json:2103",
+        "source_row_hash": "892c6aca0610834577aca8974007b5c796a22e885afcc50f17df26c1c365e388"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02266",
+        "source_index": 2266,
+        "source_original_id": "qa_data.json:2266",
+        "source_row_hash": "d5392cd983127e3102e26a71ed582f88db988697fbd41ab0e0b57ce87299dd32"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02286",
+        "source_index": 2286,
+        "source_original_id": "qa_data.json:2286",
+        "source_row_hash": "c2eb119173d34baab50e20a19c6f303e9835f526190dee39fd246034fcc21fa2"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02287",
+        "source_index": 2287,
+        "source_original_id": "qa_data.json:2287",
+        "source_row_hash": "b2ce8fe6ddc5da86e10f83928bbae83a0fdaab33fdeee48241dd30d58a939771"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02340",
+        "source_index": 2340,
+        "source_original_id": "qa_data.json:2340",
+        "source_row_hash": "54227a62ea5bcc0a01b9680c14ef482bb602d9d7f0718ccb97d6e26f79f69acd"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02504",
+        "source_index": 2504,
+        "source_original_id": "qa_data.json:2504",
+        "source_row_hash": "9136f71232d76c2d78d6eafa977d924d3212bac4cb0fb7debb67d2a1eff2a696"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02547",
+        "source_index": 2547,
+        "source_original_id": "qa_data.json:2547",
+        "source_row_hash": "343fdbefd4ad17156b7a412911424d2d4f3820aca5ef3fdeeed9a53f10c1d354"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02591",
+        "source_index": 2591,
+        "source_original_id": "qa_data.json:2591",
+        "source_row_hash": "a5c019ffec6e02fbf9f54e6895dd57449e523b39188f51db27981d996481b023"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02615",
+        "source_index": 2615,
+        "source_original_id": "qa_data.json:2615",
+        "source_row_hash": "200ffefe8f7fcd5eab98096b927b8d7eab69337513bef4adff624f7da4899ed7"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02621",
+        "source_index": 2621,
+        "source_original_id": "qa_data.json:2621",
+        "source_row_hash": "d87b442e2d290a8bd47fdc4babe11246d2d84c6aa3634479ea59e0438277f484"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02646",
+        "source_index": 2646,
+        "source_original_id": "qa_data.json:2646",
+        "source_row_hash": "34ff95c48263bbe3861e3ee57bf7454d5b8c00603ad15c10e2e7727100243379"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02664",
+        "source_index": 2664,
+        "source_original_id": "qa_data.json:2664",
+        "source_row_hash": "13d8fc85aee9b79eba20342d8d0f61158ec1a751eea61ea49e8081f859fad5cc"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02677",
+        "source_index": 2677,
+        "source_original_id": "qa_data.json:2677",
+        "source_row_hash": "6c2a061ac851d64a8fd970440f0c755ca7d5ac99258b321d39046764b0d68905"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02705",
+        "source_index": 2705,
+        "source_original_id": "qa_data.json:2705",
+        "source_row_hash": "10f1fef7525fefda5a5017b06c68c1f5729c42113afe85bafc8de916150ae28a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02803",
+        "source_index": 2803,
+        "source_original_id": "qa_data.json:2803",
+        "source_row_hash": "9fd856943024653a837f6846bf8a58d3981e38908806997037c87b11528658b6"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-02927",
+        "source_index": 2927,
+        "source_original_id": "qa_data.json:2927",
+        "source_row_hash": "8fb3799a4d8dae2932f3a5efcdf1b62a248609b05f0394ebe79af8185805ab98"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03150",
+        "source_index": 3150,
+        "source_original_id": "qa_data.json:3150",
+        "source_row_hash": "d0435584c9e97e9619c235bf983d880d521a3c823ed91c1da5de4c8421ae9f33"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03257",
+        "source_index": 3257,
+        "source_original_id": "qa_data.json:3257",
+        "source_row_hash": "e17016211d7fabd6b8d4add9007419ab63c0a3dcc5aaac12ffd566c7a343cc22"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03258",
+        "source_index": 3258,
+        "source_original_id": "qa_data.json:3258",
+        "source_row_hash": "2063d9f5c886eca2664687a31a3d2ea655631cc5999eb3a62cfe33c8d2658a87"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03295",
+        "source_index": 3295,
+        "source_original_id": "qa_data.json:3295",
+        "source_row_hash": "025aefbf5afde8e1c6ad65f9ae06e5d18ca084ee4815ee0f1305aa3e6221d610"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03432",
+        "source_index": 3432,
+        "source_original_id": "qa_data.json:3432",
+        "source_row_hash": "4e7f26dfb12613a49eb162f8f8f2c0773b44245126c95a6f8755e38dcfff5e24"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03456",
+        "source_index": 3456,
+        "source_original_id": "qa_data.json:3456",
+        "source_row_hash": "1bd841bbaf8ca449e8a81800561b51748da23adce56daf7db9991120ae2846a2"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03470",
+        "source_index": 3470,
+        "source_original_id": "qa_data.json:3470",
+        "source_row_hash": "32f9e026601669c2796fc8aab44c0aa76568179358cce8a1e16cc1a71c484d4c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03483",
+        "source_index": 3483,
+        "source_original_id": "qa_data.json:3483",
+        "source_row_hash": "c962a3d1947639bef1c8ce3f6ac35104f9542b297e263b017623a5b0a5f3dca2"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03527",
+        "source_index": 3527,
+        "source_original_id": "qa_data.json:3527",
+        "source_row_hash": "697fa222743a7f086765096635d19946e95f9de1f28b8f240407e1c3fb4bdd32"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03582",
+        "source_index": 3582,
+        "source_original_id": "qa_data.json:3582",
+        "source_row_hash": "0aef67e2419ae0204db763eb075e1f886e7cef85a745efcaca91f17d991a15e5"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03593",
+        "source_index": 3593,
+        "source_original_id": "qa_data.json:3593",
+        "source_row_hash": "e31ebfd6335575f65a872135a4f4eeb614d0752416e315f5f314fe86fab683ce"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03598",
+        "source_index": 3598,
+        "source_original_id": "qa_data.json:3598",
+        "source_row_hash": "eecfc18cba1aeabd796134b3a31f9a7f2c03c15a707e98b6456ea957a3aae83c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03608",
+        "source_index": 3608,
+        "source_original_id": "qa_data.json:3608",
+        "source_row_hash": "d139dc1dde0c9ee0a4424d10b5e5c0e7e141aff3b01aeac633793ee5bee7e7c0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03611",
+        "source_index": 3611,
+        "source_original_id": "qa_data.json:3611",
+        "source_row_hash": "e36ffb960589a6b01b927b9c958c2bfe8020701e798bcae999c9dc602eabd589"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03657",
+        "source_index": 3657,
+        "source_original_id": "qa_data.json:3657",
+        "source_row_hash": "2cc45eb292c2245612460f4fb67a24d63e6701df8de302da03fe11d4bbc7fdec"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03681",
+        "source_index": 3681,
+        "source_original_id": "qa_data.json:3681",
+        "source_row_hash": "3a93acc74061a1c7712800f1258f7891aa40713eb65d5d3188e94b84b2e9928d"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03733",
+        "source_index": 3733,
+        "source_original_id": "qa_data.json:3733",
+        "source_row_hash": "8d09cbb7642d1b5380bcb4fb3f11faf243a0b7e7cbc369a2e8a8df8119ace063"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03750",
+        "source_index": 3750,
+        "source_original_id": "qa_data.json:3750",
+        "source_row_hash": "ae7019fc6689af9039562092a4a23d2bbdbc4c963c67d660344e55f95ff37484"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03752",
+        "source_index": 3752,
+        "source_original_id": "qa_data.json:3752",
+        "source_row_hash": "b2943bcfd547cb2905110022169ccad9dc087ee047f6e6a50829be149c337dd9"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03770",
+        "source_index": 3770,
+        "source_original_id": "qa_data.json:3770",
+        "source_row_hash": "eec7e68867552a4e925a1917a41107784582025b4f781c6828ace6877c8130b0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03811",
+        "source_index": 3811,
+        "source_original_id": "qa_data.json:3811",
+        "source_row_hash": "7d6dcbb44af978aaf40637570076d3e15966c292f7b33978d99695f51f926cec"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03814",
+        "source_index": 3814,
+        "source_original_id": "qa_data.json:3814",
+        "source_row_hash": "be45b76eb5b8584af2a5fd05b6c4ad271a5f93ed4785d599555f93c9ebe12c1a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03923",
+        "source_index": 3923,
+        "source_original_id": "qa_data.json:3923",
+        "source_row_hash": "09cd027c39aa984f0fdefa9e5f374d5f95cff2e146c67c359b88e343de679fdb"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-03946",
+        "source_index": 3946,
+        "source_original_id": "qa_data.json:3946",
+        "source_row_hash": "f061e1e37e2a72afa4a615ea66a3b57f9a00380c52d6b909d4211492169a6ca0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04010",
+        "source_index": 4010,
+        "source_original_id": "qa_data.json:4010",
+        "source_row_hash": "357ad1e8d318690f72a8051116f0682a23edfe50ea9e547e4fb295a9d271a588"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04012",
+        "source_index": 4012,
+        "source_original_id": "qa_data.json:4012",
+        "source_row_hash": "66e2a74d0c096b867d26dbd3e30cb023edb3e41eeacaf5d8157d55b814e74a13"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04040",
+        "source_index": 4040,
+        "source_original_id": "qa_data.json:4040",
+        "source_row_hash": "56b5df60b276d4b39b04962ff01ec15caf4e0be27f2cb1bcdcbd791ca86d30ab"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04061",
+        "source_index": 4061,
+        "source_original_id": "qa_data.json:4061",
+        "source_row_hash": "8aff2e7832c7921c281a1e5d93dafd86aff5dec5497d8c323cc8d80d05067098"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04119",
+        "source_index": 4119,
+        "source_original_id": "qa_data.json:4119",
+        "source_row_hash": "679e3ba14e53e914be81da09282bde8ddfe712ebd52b8ccf8936201edf73df0c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04304",
+        "source_index": 4304,
+        "source_original_id": "qa_data.json:4304",
+        "source_row_hash": "49bc8d696c001452271111a9170874553748f75396c534bd88766f5d547686e3"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04315",
+        "source_index": 4315,
+        "source_original_id": "qa_data.json:4315",
+        "source_row_hash": "b3246000860396e727f85be7001cbaa9d168cc1f7691e6a2f0a113b00fe134e4"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04333",
+        "source_index": 4333,
+        "source_original_id": "qa_data.json:4333",
+        "source_row_hash": "3993540e115f78edbc6a870a06ddb7a3608afaa63a4f5b02ea3bf6af2ac13121"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04339",
+        "source_index": 4339,
+        "source_original_id": "qa_data.json:4339",
+        "source_row_hash": "d6256263b1c5e5a4ac65e84129fce91fb102264ef67118e1a0ebd78a59eb8c2a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04342",
+        "source_index": 4342,
+        "source_original_id": "qa_data.json:4342",
+        "source_row_hash": "dfc0c0bd8f469c145008b04cfa9d9935b2a1b602403951ed105368aeef79d9c9"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04371",
+        "source_index": 4371,
+        "source_original_id": "qa_data.json:4371",
+        "source_row_hash": "1f818cbf55ef4ec99dac087f6493ec58aac1a7f604cdcd2964eb0d98e6bf4456"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04374",
+        "source_index": 4374,
+        "source_original_id": "qa_data.json:4374",
+        "source_row_hash": "2fe9a14ddb610f0c045d99ffcac7218be519da14e730a607327fee050c9819f9"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04386",
+        "source_index": 4386,
+        "source_original_id": "qa_data.json:4386",
+        "source_row_hash": "17a9ee21e1e088604cee12fba157ff14af5fef554394aee5308440679f42569b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04422",
+        "source_index": 4422,
+        "source_original_id": "qa_data.json:4422",
+        "source_row_hash": "6578c7a0fa5b1c62b49d7c7aaefb603c9515177f2f30d06547bfeb8d3ffbd3bb"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04506",
+        "source_index": 4506,
+        "source_original_id": "qa_data.json:4506",
+        "source_row_hash": "2fb1f73b9e1d95be8de780c4d71e94b995ee7e15ef044e86cebf9262014cf6d8"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04552",
+        "source_index": 4552,
+        "source_original_id": "qa_data.json:4552",
+        "source_row_hash": "777be0470ec6d3bb6d3f3c8d8644e2e7eb93274e695092dc923ed804d5d5e087"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04554",
+        "source_index": 4554,
+        "source_original_id": "qa_data.json:4554",
+        "source_row_hash": "e843992b275f86a8bbf472e3ea4da3e5b9d4787269ac8cf33638b343b1836701"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04557",
+        "source_index": 4557,
+        "source_original_id": "qa_data.json:4557",
+        "source_row_hash": "e18670d345e52c17835338fa3ec31a1db4dc8775c8fcb6fc68edc5aa0db47b2a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04741",
+        "source_index": 4741,
+        "source_original_id": "qa_data.json:4741",
+        "source_row_hash": "f117eb46b55c996af4ac7c0bb7133133cc1066f5011ca00c0a55be9b81737c40"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04803",
+        "source_index": 4803,
+        "source_original_id": "qa_data.json:4803",
+        "source_row_hash": "72cf54c56a9b0fb7d69600de90827ca83e93a7bbde0003f72664a1de47fe948d"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04808",
+        "source_index": 4808,
+        "source_original_id": "qa_data.json:4808",
+        "source_row_hash": "86a729010a933346e838ab7adcd5a0163a35d9139fb2c28f532dd73beb17db84"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-04889",
+        "source_index": 4889,
+        "source_original_id": "qa_data.json:4889",
+        "source_row_hash": "63493d0093069df3f42f5242b83b8b91d6139f91a0ee5ae1215f4a5dfdde2951"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05038",
+        "source_index": 5038,
+        "source_original_id": "qa_data.json:5038",
+        "source_row_hash": "d544bc6fdf599279db16e4a089f184f5d06d2dd483404836e5e95c7fd4352b94"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05107",
+        "source_index": 5107,
+        "source_original_id": "qa_data.json:5107",
+        "source_row_hash": "0b296ab6e5ad002dd55a29747a765ab11553c852b4df2cdb451649f43a9d2448"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05155",
+        "source_index": 5155,
+        "source_original_id": "qa_data.json:5155",
+        "source_row_hash": "db3e15777c22601e5b8e56a61a96582debdbe0269149d2a6a6ceae81aaf0f42c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05168",
+        "source_index": 5168,
+        "source_original_id": "qa_data.json:5168",
+        "source_row_hash": "77585adc2e4d719454bf014322ceac558ad73031e2562ad669fd2577d6977a56"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05310",
+        "source_index": 5310,
+        "source_original_id": "qa_data.json:5310",
+        "source_row_hash": "9ebb862bcdaf44af9b7e6d05c6410fb686be16dab0e1b796d73a3b3c34c8227c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05313",
+        "source_index": 5313,
+        "source_original_id": "qa_data.json:5313",
+        "source_row_hash": "2e5843cac100a281baf0a71aac219c93a3e5e371335e7f693fb969ab753b9e48"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05514",
+        "source_index": 5514,
+        "source_original_id": "qa_data.json:5514",
+        "source_row_hash": "be0b4b216fa3f567c7bc78312a66929951e6b18a6a7cffab4bc7a523c96883a1"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05539",
+        "source_index": 5539,
+        "source_original_id": "qa_data.json:5539",
+        "source_row_hash": "b4abd08655fb0c01aae1307aa72099b410d9bde3363cc79bd567dc3754913128"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05573",
+        "source_index": 5573,
+        "source_original_id": "qa_data.json:5573",
+        "source_row_hash": "df95127024c2db52b799de9b8d9a43106e079d689660ef1445df5ef9d1ae0351"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05574",
+        "source_index": 5574,
+        "source_original_id": "qa_data.json:5574",
+        "source_row_hash": "c045df75cf95473743b5c3fd20c62907ec9ab1bd88afaaa38de0aa35224d0724"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05635",
+        "source_index": 5635,
+        "source_original_id": "qa_data.json:5635",
+        "source_row_hash": "7bd91e974b4c0182fcd06c45d153c892b4325c3c2cc607d664480ad6047dd159"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05820",
+        "source_index": 5820,
+        "source_original_id": "qa_data.json:5820",
+        "source_row_hash": "ee0820e56389fb47fe514f8fe31246a92412b3e68bf4b7f4afa8549aa1ff054a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05881",
+        "source_index": 5881,
+        "source_original_id": "qa_data.json:5881",
+        "source_row_hash": "a3ce94168c787287f1d2f872c64f5c1545c1544ccb55c09beb83425282e49cc6"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05925",
+        "source_index": 5925,
+        "source_original_id": "qa_data.json:5925",
+        "source_row_hash": "99c55e1dda97811f1a887ab98fecbbdb5604cd144a113ba466b29abb9c1c0918"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05930",
+        "source_index": 5930,
+        "source_original_id": "qa_data.json:5930",
+        "source_row_hash": "470e8637c1836d9f1c3f45703672efd2065b0c096381db7f264f0cc516d95e11"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05947",
+        "source_index": 5947,
+        "source_original_id": "qa_data.json:5947",
+        "source_row_hash": "bda5904d5165b17b5f9ee8dd1b5f9d7e0ee980ffc935f446e8f13107c0e0d7e2"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-05977",
+        "source_index": 5977,
+        "source_original_id": "qa_data.json:5977",
+        "source_row_hash": "cbb6b2fa8c901556d8c183f352b900838ea5b2dd7a4e512ab70790d84ed7d24a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06065",
+        "source_index": 6065,
+        "source_original_id": "qa_data.json:6065",
+        "source_row_hash": "c2b8227646e6eb3fc9e6d7d85d4f8d041e410fdcf30aef0ca980ab833e8d1fd5"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06118",
+        "source_index": 6118,
+        "source_original_id": "qa_data.json:6118",
+        "source_row_hash": "81585dfdecc371d4021be359df8a6b1062bdc1c99405a74209626903c660c040"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06126",
+        "source_index": 6126,
+        "source_original_id": "qa_data.json:6126",
+        "source_row_hash": "dfc7de945fd101a9d3dba5df1299a814d5e2715137f882013ad0c1c03ee817d4"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06201",
+        "source_index": 6201,
+        "source_original_id": "qa_data.json:6201",
+        "source_row_hash": "ecd7b0846f85e4de675f1d0e6f5864b7be6de391fccd4a31c8e24808ef6a1b0a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06216",
+        "source_index": 6216,
+        "source_original_id": "qa_data.json:6216",
+        "source_row_hash": "f3da84cb7c39854e98ee1a5bb5806c192d2eebcf6ed5e319cc19bbfc664c46f0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06224",
+        "source_index": 6224,
+        "source_original_id": "qa_data.json:6224",
+        "source_row_hash": "b6a60dc057798b353141f289918c3bb81f83390bfe9740367b9632628c0d4bc8"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06227",
+        "source_index": 6227,
+        "source_original_id": "qa_data.json:6227",
+        "source_row_hash": "ffe4b19d34cd378df2e2f781e102e6b7ef2325c092f2969184fa2d7b9756215b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06252",
+        "source_index": 6252,
+        "source_original_id": "qa_data.json:6252",
+        "source_row_hash": "fe7b3228c67c79a3206089c527869e77415b6322ebd58bd61a4063b2da58f207"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06304",
+        "source_index": 6304,
+        "source_original_id": "qa_data.json:6304",
+        "source_row_hash": "ab2387dadc646bd1b9e911fec8bdc32e921f4a6d3ab17c1871da977755ad5b67"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06482",
+        "source_index": 6482,
+        "source_original_id": "qa_data.json:6482",
+        "source_row_hash": "8d7b0c25cf3d3169d3f963dad795e7deb2d7b7c7c47ca937aa49e0fd711ef8dc"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06537",
+        "source_index": 6537,
+        "source_original_id": "qa_data.json:6537",
+        "source_row_hash": "570566ba06bb76a8d20d3222173cfa7f59022187518a1c23337842ed7f60234d"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06543",
+        "source_index": 6543,
+        "source_original_id": "qa_data.json:6543",
+        "source_row_hash": "3ad8ecba7136d086e0141c095c88dbaf3a5ca2c1dc53e59fb7e0efd8a90cd3ec"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06572",
+        "source_index": 6572,
+        "source_original_id": "qa_data.json:6572",
+        "source_row_hash": "fd7e68828dbda6f960846f231ec4fef7dcc1867209ab8c43be13317432a0fa52"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06873",
+        "source_index": 6873,
+        "source_original_id": "qa_data.json:6873",
+        "source_row_hash": "cfe0948e8bc016b6f8acdb68d6182c856dd131faad30ede9b0c58c63e2299331"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06912",
+        "source_index": 6912,
+        "source_original_id": "qa_data.json:6912",
+        "source_row_hash": "dd44e9c48911bacf20683932699a200b9b13f80c81a3440c35cec0615c049cb2"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06916",
+        "source_index": 6916,
+        "source_original_id": "qa_data.json:6916",
+        "source_row_hash": "d02f92b1dc8608d90be234dc1b4f463e12a0b126ff8f4a2701c74721e96ed51b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06924",
+        "source_index": 6924,
+        "source_original_id": "qa_data.json:6924",
+        "source_row_hash": "26b1f32f83a34cc8f04fe346841c937868de287a209ee4fa31db5059c6e69f7b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-06932",
+        "source_index": 6932,
+        "source_original_id": "qa_data.json:6932",
+        "source_row_hash": "3ecfe3d5e065a11cd0731a6a52bbe23c3f263e480e63738d274a1cd20834af9a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07019",
+        "source_index": 7019,
+        "source_original_id": "qa_data.json:7019",
+        "source_row_hash": "01ca12f462d40aa59acdc163e0a5d51269589dec4d17b2ca4ae3df1cec88818b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07123",
+        "source_index": 7123,
+        "source_original_id": "qa_data.json:7123",
+        "source_row_hash": "dc243dd3372e576d6ba960491a1473ae3951d2e64f44358b5c5d8fd9b9fa4349"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07177",
+        "source_index": 7177,
+        "source_original_id": "qa_data.json:7177",
+        "source_row_hash": "20c1067c5958a0e9b4f5404085f3c6755fad6214566ad562edef59e0865c50a7"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07359",
+        "source_index": 7359,
+        "source_original_id": "qa_data.json:7359",
+        "source_row_hash": "b1931e750b8d5c2bdcf54d0deddb10ad52ee12bcc078be4af22c674427f5395e"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07397",
+        "source_index": 7397,
+        "source_original_id": "qa_data.json:7397",
+        "source_row_hash": "e054e275e61387de11ad6a3c836fdb1b11e8d65d81f0e44d74b6e8d3dc569bbd"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07428",
+        "source_index": 7428,
+        "source_original_id": "qa_data.json:7428",
+        "source_row_hash": "8e519ea3e740b602d648153e3eade261653cbe75c4ab2b39f45e8b014f5c4c92"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07433",
+        "source_index": 7433,
+        "source_original_id": "qa_data.json:7433",
+        "source_row_hash": "3bf99c4e2017cc5d143d451bea6b119f1be81a30aefc3d8b1b38390ea7ad1599"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07517",
+        "source_index": 7517,
+        "source_original_id": "qa_data.json:7517",
+        "source_row_hash": "064bc4ce7370acddbaf792cd2e639baac214650889835beeac95b2369f9e4599"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07527",
+        "source_index": 7527,
+        "source_original_id": "qa_data.json:7527",
+        "source_row_hash": "d476bca2a6e108b8956471334e2d7a7e24dfc23a8f1b5597856ee51827867d56"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07573",
+        "source_index": 7573,
+        "source_original_id": "qa_data.json:7573",
+        "source_row_hash": "3bc4e21c1be1009cfb7ce777041f53744e8d9137f0396f70101f2ba920ad7521"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07668",
+        "source_index": 7668,
+        "source_original_id": "qa_data.json:7668",
+        "source_row_hash": "207ddb986b428e41c763c77b75198e225a0801fec8da9a191d3ed87a3a72a85e"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07787",
+        "source_index": 7787,
+        "source_original_id": "qa_data.json:7787",
+        "source_row_hash": "af54f4c56758fa012309ecaf25e839da9b7046dd33c26494e6905de4ecc69052"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-07962",
+        "source_index": 7962,
+        "source_original_id": "qa_data.json:7962",
+        "source_row_hash": "84a9dd13e0c2678e2e003a85813c118e3c520686aaea654231198380792b62a1"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08005",
+        "source_index": 8005,
+        "source_original_id": "qa_data.json:8005",
+        "source_row_hash": "288df51a2b2ec49ec4806df085cc54e660d7ae4fe85000e81674d481220a6814"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08085",
+        "source_index": 8085,
+        "source_original_id": "qa_data.json:8085",
+        "source_row_hash": "80969299ddf5d0ddb0bc3d51f1ef5b9742419b15316df82fe54947966fe02e0f"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08179",
+        "source_index": 8179,
+        "source_original_id": "qa_data.json:8179",
+        "source_row_hash": "050573c1532cabd9c52fea141e28b369915bd9dd33993d2915e53f0f527c7fa3"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08201",
+        "source_index": 8201,
+        "source_original_id": "qa_data.json:8201",
+        "source_row_hash": "2f1febc570d71e5e96b714d75ae7a7ce170112012cad30fdbccf829ff9b66619"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08279",
+        "source_index": 8279,
+        "source_original_id": "qa_data.json:8279",
+        "source_row_hash": "b6451caa6f281bad2312a9c39c4b655f055b206cb0146308736b836a015fba0a"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08317",
+        "source_index": 8317,
+        "source_original_id": "qa_data.json:8317",
+        "source_row_hash": "e3485c3db3637a5e8c3e19c70680d09a54bb5e86f98618f869e087886b607928"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08348",
+        "source_index": 8348,
+        "source_original_id": "qa_data.json:8348",
+        "source_row_hash": "ce2e1e43d84675daa71a6372f7bcfd29088ece7ac2d668e85a71302683285180"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08479",
+        "source_index": 8479,
+        "source_original_id": "qa_data.json:8479",
+        "source_row_hash": "b785e3b352ae851966732a46332108bc6cb5c3225ab5623480aacfcbe803f3cc"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08645",
+        "source_index": 8645,
+        "source_original_id": "qa_data.json:8645",
+        "source_row_hash": "dd47b85cd2cc10e703d4636a7bedcea690bc8e7eab2b334242aff56692c686c8"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08669",
+        "source_index": 8669,
+        "source_original_id": "qa_data.json:8669",
+        "source_row_hash": "dee7b235a7427ce1ebbe86f3291fd2223cc7201589aceb910ba05d4cc46664dc"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08689",
+        "source_index": 8689,
+        "source_original_id": "qa_data.json:8689",
+        "source_row_hash": "afcd8d44e3cae7dbfca91f50a7a593e36d562b49adcc75a17804b68ab5820b31"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08727",
+        "source_index": 8727,
+        "source_original_id": "qa_data.json:8727",
+        "source_row_hash": "2bcde5953e76b88066d10092b4c7dd0c48124d102be8cc55570e713ed171984c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08751",
+        "source_index": 8751,
+        "source_original_id": "qa_data.json:8751",
+        "source_row_hash": "19c125c92fb36cfdcef61fba34a3549e89c3d56ab08343e1f20c15b21bf29f0e"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08785",
+        "source_index": 8785,
+        "source_original_id": "qa_data.json:8785",
+        "source_row_hash": "d2af899b002cde13a87132437e8a7e350c7e5c65b629264937c74af079ade221"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08797",
+        "source_index": 8797,
+        "source_original_id": "qa_data.json:8797",
+        "source_row_hash": "33a54fd8cba1f97455b841bb79ff68e3bbab7b00b1af0789b8e25ce7da80d452"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08830",
+        "source_index": 8830,
+        "source_original_id": "qa_data.json:8830",
+        "source_row_hash": "224b3cb4b3bb402f189fc0a3f3815e6ed9bf554c8464c51d655cb62c8310b52e"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08835",
+        "source_index": 8835,
+        "source_original_id": "qa_data.json:8835",
+        "source_row_hash": "175a5ff70e87fc1b1a4eaa18653ec8ab73c82afb3e6a0a65822943c7bc5c2dd9"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08837",
+        "source_index": 8837,
+        "source_original_id": "qa_data.json:8837",
+        "source_row_hash": "3d1a995af3dec0ca65d34455a2ccdc2aacacbc7e4b91823e9fdd4b132671759b"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08928",
+        "source_index": 8928,
+        "source_original_id": "qa_data.json:8928",
+        "source_row_hash": "a287b196d4ffa98a016fd2de13bdb8760b857868dcc1ead0162c219c4197c4b0"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-08935",
+        "source_index": 8935,
+        "source_original_id": "qa_data.json:8935",
+        "source_row_hash": "0d223d8f085b3a44c2ca404cc3b35434673fb82baf0e175725057aa7d56d8240"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09007",
+        "source_index": 9007,
+        "source_original_id": "qa_data.json:9007",
+        "source_row_hash": "112e540fa028e2a6048476dfab2e8a17d4e840cb51b8b27d3d46c78e7e7ea887"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09044",
+        "source_index": 9044,
+        "source_original_id": "qa_data.json:9044",
+        "source_row_hash": "207c8bf67d9dbd5f342312a3399e73dfc7a1184c3dbada2eff4fd639c54a9fc9"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09064",
+        "source_index": 9064,
+        "source_original_id": "qa_data.json:9064",
+        "source_row_hash": "5c6e9555ec55f56fac88cdfc71e15c15d8bbc8efa573655e33be945e0f4eea17"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09075",
+        "source_index": 9075,
+        "source_original_id": "qa_data.json:9075",
+        "source_row_hash": "09ceae7860f4dc56743942f45c747a076e5c80dfae6711404d552b9943b2b806"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09125",
+        "source_index": 9125,
+        "source_original_id": "qa_data.json:9125",
+        "source_row_hash": "53f50ed4cfeff8c91c292e286a6b19d0cf62fea73f003d842cc9393177a7b5de"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09195",
+        "source_index": 9195,
+        "source_original_id": "qa_data.json:9195",
+        "source_row_hash": "dc7fe90aff795b5a26fed859c053b294ee069bb173481b921a9be6069deab1e5"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09197",
+        "source_index": 9197,
+        "source_original_id": "qa_data.json:9197",
+        "source_row_hash": "17c237decb9c5812e255c400a6f5f587c77aa4d4127c35d760481e97b272ed6f"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09292",
+        "source_index": 9292,
+        "source_original_id": "qa_data.json:9292",
+        "source_row_hash": "1670d827c67c9d93072006835ca0ab827b4ae1a4e3518538df550c4c45319ca5"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09295",
+        "source_index": 9295,
+        "source_original_id": "qa_data.json:9295",
+        "source_row_hash": "53cfa16511270b90ee635c9ef88bbbe5b7f7f7dcdfca5291b82895f5f2ae6f69"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09459",
+        "source_index": 9459,
+        "source_original_id": "qa_data.json:9459",
+        "source_row_hash": "af9ca74f93719c9abcf424ed1c3f2206dc37af449d3f2409def75d792cf2a04e"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09560",
+        "source_index": 9560,
+        "source_original_id": "qa_data.json:9560",
+        "source_row_hash": "cc00ba98e88e7f1167354cecfdfe6bf8f2845e4b176184176149217d1fc0c339"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09577",
+        "source_index": 9577,
+        "source_original_id": "qa_data.json:9577",
+        "source_row_hash": "ba4e3b045112262ad77f892ba4fc118c263f3bbac6e1d45218f7c85ad3126830"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09638",
+        "source_index": 9638,
+        "source_original_id": "qa_data.json:9638",
+        "source_row_hash": "d7a84b7c0f8cf77e745724d2d93b086742c4178d7b78dfd86a1c847190d28065"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09641",
+        "source_index": 9641,
+        "source_original_id": "qa_data.json:9641",
+        "source_row_hash": "60b6da9739c9dd509fc7e96a448037104c0a6302614632d17c1267cf4bbb5d7c"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09654",
+        "source_index": 9654,
+        "source_original_id": "qa_data.json:9654",
+        "source_row_hash": "56c21eac0db0ed003214da39b26d765effeba5881e38e35bdaa0f325aca41f31"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09674",
+        "source_index": 9674,
+        "source_original_id": "qa_data.json:9674",
+        "source_row_hash": "c330473643d935227e29ab0522d7405bde2437434f0a36aa8712d15d8d5ab0bb"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09763",
+        "source_index": 9763,
+        "source_original_id": "qa_data.json:9763",
+        "source_row_hash": "25c1b3a29248d916f75ab0563f0010fe52cdbf6797ea5cdc648bdf29048ecf66"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09771",
+        "source_index": 9771,
+        "source_original_id": "qa_data.json:9771",
+        "source_row_hash": "061cd614084db7beff4899d9199eb1266f72e5df91940c6308c31a9d39c96f5f"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09813",
+        "source_index": 9813,
+        "source_original_id": "qa_data.json:9813",
+        "source_row_hash": "83d5e2e78ead771a7bb0f1cfff52d78a6ff24f91d9af74de6983c06ce48d3c88"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09863",
+        "source_index": 9863,
+        "source_original_id": "qa_data.json:9863",
+        "source_row_hash": "7501159a756ca4f2ee253dc852998e3a1c905b3231f51f6b624625e49af542ce"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09891",
+        "source_index": 9891,
+        "source_original_id": "qa_data.json:9891",
+        "source_row_hash": "d0ec2b9ed5d56c6b5fefd97bd9bfd77449e0b29d03bc65db3c31d421e1bebfac"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09938",
+        "source_index": 9938,
+        "source_original_id": "qa_data.json:9938",
+        "source_row_hash": "12fb677593f510177337a00531e20f666e6b7aa642c45bc0cc43bdcdc23f1ccb"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09977",
+        "source_index": 9977,
+        "source_original_id": "qa_data.json:9977",
+        "source_row_hash": "b5d77b07d6cc503ec228d098961ae99373fea76f098accafcc7cb72c6137d2c8"
+      },
+      {
+        "case_id": "HALUEVAL-QA-OFFICIAL-09980",
+        "source_index": 9980,
+        "source_original_id": "qa_data.json:9980",
+        "source_row_hash": "f9fa3fe7697ce98ccae84a18ecff283c0af8ab9554dc2c26e858b62754894ea0"
+      }
+    ]
+  },
+  "selection_seed": 42,
+  "sources": {
+    "FinQA": {
+      "file": "evaluation/uir_phase4c/official_sources/FinQA/test.json",
+      "file_sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+      "git_commit": "0f16e2867befa6840783e58be38c9efb9229d742",
+      "license": "Apache-2.0",
+      "repository_url": "https://github.com/czyssrs/FinQA",
+      "selected_rows": 200
+    },
+    "HaluEval-QA": {
+      "file": "evaluation/uir_phase4c/official_sources/HaluEval/qa_data.json",
+      "file_sha256": "89ed139ec5e3a3169a0b30e45569ac1283846f76f27f7bb5e908ee6deed57e88",
+      "git_commit": "b7253db3cdaa0ab2c382f92b26b390109174f77e",
+      "license": "MIT",
+      "repository_url": "https://github.com/RUCAIBox/HaluEval",
+      "selected_rows": 200
+    }
+  }
+}
