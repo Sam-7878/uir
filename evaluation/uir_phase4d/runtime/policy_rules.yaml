@@ -1,0 +1,43 @@
+version: "1.0.0"
+governance_domain: "Financial Enterprise Security & Information Barrier"
+
+disallowed_request_patterns:
+  - id: "POL-001"
+    pattern_regex: "(?i)(ignore (previous|all) instructions|이전 지시(를)? 무시)"
+    description: "Prompt injection / instruction override attempt"
+    decision: "DENY"
+  - id: "POL-002"
+    pattern_regex: "(?i)(정책(과)? 무관하게|regardless of policy|block execution regardless|정책이 거부하더라도)"
+    description: "Explicit policy conflict or policy override attempt"
+    decision: "DENY"
+  - id: "POL-003"
+    pattern_regex: "(?i)(출처가 없는 경우는 예외로|make an exception for missing source|without citation exception)"
+    description: "Provenance bypass exception attempt"
+    decision: "DENY"
+
+confidential_attributes:
+  - "internal_audit_score"
+  - "merger_target"
+  - "unreleased_forecast"
+  - "executive_compensation_unreleased"
+  - "nonpublic_material_info"
+
+public_attributes:
+  - "revenue"
+  - "net_income"
+  - "operating_income"
+  - "assets"
+  - "liabilities"
+  - "operating_margin"
+  - "eps"
+  - "ebitda"
+  - "cash_flow"
+  - "cost_of_goods"
+  - "gross_profit"
+
+roles:
+  standard_analyst:
+    allowed_actions: ["READ_PUBLIC_METRIC", "AUDIT_VERIFY"]
+    restricted_attributes: []
+  unauthenticated:
+    allowed_actions: []
