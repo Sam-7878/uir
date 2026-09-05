@@ -65,6 +65,20 @@ def _numeric_value(text: str) -> float | str | None:
         return None
 
 
+def _is_match(ans: Any, gold: Any) -> bool:
+    """Safely compare answer and gold, supporting both float and yes/no strings."""
+    if ans is None or gold is None:
+        return False
+    ans_s = str(ans).strip().lower()
+    gold_s = str(gold).strip().lower()
+    if ans_s in {"yes", "no"} or gold_s in {"yes", "no"}:
+        return ans_s == gold_s
+    try:
+        return abs(float(ans) - float(gold)) < 1e-4
+    except (ValueError, TypeError):
+        return ans_s == gold_s
+
+
 def get_ollama_model_digest(backend: Qwen25OllamaBackend) -> str:
     """Try to get ollama model digest via /api/show."""
     try:
@@ -85,6 +99,7 @@ def get_ollama_model_digest(backend: Qwen25OllamaBackend) -> str:
 def run_qwen_finqa(
     backend: Qwen25OllamaBackend,
     cases: list[dict[str, Any]],
+    scoring_by_id: dict[str, dict[str, Any]],
     model_digest: str,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     """Run Qwen on FinQA N=200 for C1 and C8. Returns (c1_rows, c8_rows)."""
@@ -94,19 +109,22 @@ def run_qwen_finqa(
     print(f"[4E-Qwen] FinQA: running C1 on {n} cases...")
 
     for i, case in enumerate(cases):
-        case_id = case.get("id", f"finqa-{i}")
-        gold_ans = _numeric_value(case.get("qa", {}).get("exe_ans", ""))
+        case_id = case.get("case_id", case.get("id", f"finqa-{i}"))
+        gold_row = scoring_by_id.get(case_id, {})
+        gold_ans = gold_row.get("gold_answer")
+        if gold_ans is None:
+            gold_ans = _numeric_value(case.get("qa", {}).get("exe_ans", ""))
 
         # C1 Naive RAG
         sys_p, prompt, _ = finqa_prompt_phase4d(case, "C1_NAIVE_RAG")
         full_prompt = f"{sys_p}\n\n{prompt}" if sys_p else prompt
         prompt_hash = sha256_text(full_prompt)
         t0 = time.perf_counter()
-        res = backend.generate(prompt, sys_p, max_tokens=128)
+        res = backend.generate(prompt, sys_p, max_tokens=24)
         latency_ms = (time.perf_counter() - t0) * 1000.0
         raw_sha = sha256_text(res.text)
         ans = _numeric_value(res.text)
-        correct = (ans is not None and gold_ans is not None and ans == gold_ans)
+        correct = _is_match(ans, gold_ans)
         c1_rows.append({
             "case_id": case_id,
             "pipeline": "C1_NAIVE_RAG",
@@ -114,7 +132,7 @@ def run_qwen_finqa(
             "ollama_model_tag": backend.model_tag,
             "ollama_model_digest": model_digest,
             "seed": SEED,
-            "max_tokens": 128,
+            "max_tokens": 24,
             "prompt_hash": prompt_hash,
             "raw_response": res.text,
             "raw_response_sha256": raw_sha,
@@ -131,7 +149,7 @@ def run_qwen_finqa(
         full_prompt8 = f"{sys_p8}\n\n{prompt8}" if sys_p8 else prompt8
         prompt_hash8 = sha256_text(full_prompt8)
         t0 = time.perf_counter()
-        res8 = backend.generate(prompt8, sys_p8, max_tokens=128)
+        res8 = backend.generate(prompt8, sys_p8, max_tokens=48)
         latency_ms8 = (time.perf_counter() - t0) * 1000.0
         raw_sha8 = sha256_text(res8.text)
         # Parse expression from C8 output
@@ -145,7 +163,7 @@ def run_qwen_finqa(
             if exec_result["status"] == "success":
                 c8_ans = round(float(exec_result["value"]), 5)
                 contract_valid = True
-        correct8 = (c8_ans is not None and gold_ans is not None and c8_ans == gold_ans)
+        correct8 = _is_match(c8_ans, gold_ans)
         unsupported8 = not contract_valid and res8.text.strip() != ""
         c8_rows.append({
             "case_id": case_id,
@@ -154,7 +172,7 @@ def run_qwen_finqa(
             "ollama_model_tag": backend.model_tag,
             "ollama_model_digest": model_digest,
             "seed": SEED,
-            "max_tokens": 128,
+            "max_tokens": 48,
             "prompt_hash": prompt_hash8,
             "raw_response": res8.text,
             "raw_response_sha256": raw_sha8,
@@ -179,6 +197,7 @@ def run_qwen_finqa(
 def run_qwen_halueval(
     backend: Qwen25OllamaBackend,
     cases: list[dict[str, Any]],
+    scoring_by_id: dict[str, dict[str, Any]],
     model_digest: str,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     """Run Qwen on HaluEval N=200 for C1 and C8. Returns (c1_rows, c8_rows)."""
@@ -188,23 +207,24 @@ def run_qwen_halueval(
     print(f"[4E-Qwen] HaluEval: running C1 on {n} cases...")
 
     for i, case in enumerate(cases):
-        case_id = case.get("id", f"halu-{i}")
-        # Ground truth label
-        label = "Yes" if case.get("hallucinated") == "yes" or case.get("label") == "hallucinated" else "No"
-        # Alternative label format
-        if "candidate_answer" in case and "right_answer" in case:
-            label = "Yes" if case.get("candidate_answer") != case.get("right_answer") else "No"
+        case_id = case.get("case_id", case.get("id", f"halu-{i}"))
+        gold_row = scoring_by_id.get(case_id, {})
+        label = gold_row.get("gold_judgement")
+        if label is None:
+            label = "Yes" if case.get("hallucinated") == "yes" or case.get("label") == "hallucinated" else "No"
+            if "candidate_answer" in case and "right_answer" in case:
+                label = "Yes" if case.get("candidate_answer") != case.get("right_answer") else "No"
 
         # C1 Naive RAG (H0 native mode)
         sys_p, prompt, _ = halueval_prompt_phase4d(case, "H0_NATIVE")
         prompt_hash = sha256_text(f"{sys_p}\n{prompt}")
         t0 = time.perf_counter()
-        res = backend.generate(prompt, sys_p, max_tokens=64)
+        res = backend.generate(prompt, sys_p, max_tokens=8)
         latency_ms = (time.perf_counter() - t0) * 1000.0
         raw_sha = sha256_text(res.text)
         pred = "Yes" if "yes" in res.text.lower()[:50] else "No"
         correct = pred == label
-        unsupported_c1 = False  # C1 no contract enforcement
+        unsupported_c1 = False
         c1_rows.append({
             "case_id": case_id,
             "pipeline": "C1_NAIVE_RAG",
@@ -212,7 +232,7 @@ def run_qwen_halueval(
             "ollama_model_tag": backend.model_tag,
             "ollama_model_digest": model_digest,
             "seed": SEED,
-            "max_tokens": 64,
+            "max_tokens": 8,
             "prompt_hash": prompt_hash,
             "raw_response": res.text,
             "raw_response_sha256": raw_sha,
@@ -228,23 +248,20 @@ def run_qwen_halueval(
         sys_p8, prompt8, meta8 = halueval_prompt_phase4d(case, "H2_UIR_CONTRACT")
         prompt_hash8 = sha256_text(f"{sys_p8}\n{prompt8}")
         t0 = time.perf_counter()
-        res8 = backend.generate(prompt8, sys_p8, max_tokens=256)
+        res8 = backend.generate(prompt8, sys_p8, max_tokens=64)
         latency_ms8 = (time.perf_counter() - t0) * 1000.0
         raw_sha8 = sha256_text(res8.text)
-        # Parse overall_hallucination from JSON
         contract_valid8 = False
         pred8 = "No"
         unsupported8 = False
         try:
-            # Try to extract JSON
             txt = res8.text
             start = txt.find("{")
             end = txt.rfind("}") + 1
             if start >= 0 and end > start:
                 parsed = json.loads(txt[start:end])
-                pred8 = "Yes" if parsed.get("overall_hallucination", "No") == "Yes" else "No"
+                pred8 = "Yes" if str(parsed.get("overall_hallucination", "No")).strip().lower() == "yes" else "No"
                 contract_valid8 = True
-                # Check if any claim lacks valid evidence → unsupported
                 claims_list = parsed.get("claims", [])
                 for cl in claims_list:
                     if cl.get("supported") is False and cl.get("evidence_ids"):
@@ -293,7 +310,7 @@ def compute_summary(
         acc = sum(1 for r in raw if r["correct"]) / n
         unsup = sum(1 for r in raw if r["unsupported_claim"]) / n
         contract = sum(1 for r in raw if r["contract_valid"]) / n
-        lats = [r["latency_ms"] for r in raw]
+        lats = [r["latency_ms"] for r in raw if r["latency_ms"] > 0]
         rows.append({
             "dataset": dataset,
             "model": model,
@@ -302,8 +319,8 @@ def compute_summary(
             "accuracy": round(acc, 4),
             "unsupported_claim_rate": round(unsup, 4),
             "contract_validity_rate": round(contract, 4),
-            "latency_p50_ms": round(float(np.quantile(lats, 0.5)), 1),
-            "latency_p95_ms": round(float(np.quantile(lats, 0.95)), 1),
+            "latency_p50_ms": round(float(np.quantile(lats, 0.5)), 1) if lats else 0.0,
+            "latency_p95_ms": round(float(np.quantile(lats, 0.95)), 1) if lats else 0.0,
         })
     return rows
 
@@ -341,7 +358,6 @@ def build_failure_taxonomy(
 def main() -> None:
     print("[4E] Starting Qwen2.5-7B N=200 full external evaluation (BLOCKER 5 & 6 fix)...")
 
-    # Check Ollama availability
     backend = Qwen25OllamaBackend()
     try:
         test = backend.generate("Hello", max_tokens=5)
@@ -350,24 +366,34 @@ def main() -> None:
         print(f"[4E] Ollama backend available. Model: {backend.model_tag}")
     except Exception as e:
         print(f"[4E] ERROR: Ollama Qwen2.5 backend not reachable: {e}")
-        print("[4E] Please ensure Ollama is running: ollama serve && ollama run qwen2.5:7b")
         sys.exit(1)
 
     model_digest = get_ollama_model_digest(backend)
     print(f"[4E] Model digest: {model_digest}")
 
-    # Load frozen inputs
-    finqa_cases = read_jsonl(P4D_FROZEN_DIR / "finqa_runtime_200.jsonl")[:FINQA_N]
-    halu_cases = read_jsonl(P4D_FROZEN_DIR / "halueval_qa_runtime_200.jsonl")[:HALUEVAL_N]
+    n_override = int(sys.argv[1]) if len(sys.argv) > 1 else None
+    finqa_n = n_override if n_override is not None else FINQA_N
+    halu_n = n_override if n_override is not None else HALUEVAL_N
+
+    finqa_cases = read_jsonl(P4D_FROZEN_DIR / "finqa_runtime_200.jsonl")[:finqa_n]
+    halu_cases = read_jsonl(P4D_FROZEN_DIR / "halueval_qa_runtime_200.jsonl")[:halu_n]
+    
+    # Load scoring ground truth
+    finqa_scoring = read_jsonl(P4D_FROZEN_DIR / "finqa_scoring_200.jsonl")
+    halu_scoring = read_jsonl(P4D_FROZEN_DIR / "halueval_qa_scoring_200.jsonl")
+    finqa_scoring_by_id = {r["case_id"]: r for r in finqa_scoring}
+    halu_scoring_by_id = {r["case_id"]: r for r in halu_scoring}
+
     print(f"[4E] Loaded {len(finqa_cases)} FinQA cases, {len(halu_cases)} HaluEval cases")
 
-    assert len(finqa_cases) == FINQA_N, f"Expected {FINQA_N} FinQA cases, got {len(finqa_cases)}"
-    assert len(halu_cases) == HALUEVAL_N, f"Expected {HALUEVAL_N} HaluEval cases, got {len(halu_cases)}"
+    if n_override is None:
+        assert len(finqa_cases) == FINQA_N, f"Expected {FINQA_N} FinQA cases, got {len(finqa_cases)}"
+        assert len(halu_cases) == HALUEVAL_N, f"Expected {HALUEVAL_N} HaluEval cases, got {len(halu_cases)}"
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
     # ── FinQA ──────────────────────────────────────────────────────────────────
-    finqa_c1, finqa_c8 = run_qwen_finqa(backend, finqa_cases, model_digest)
+    finqa_c1, finqa_c8 = run_qwen_finqa(backend, finqa_cases, finqa_scoring_by_id, model_digest)
     write_jsonl(RESULTS_DIR / "qwen_finqa_C1_raw.jsonl", finqa_c1)
     write_jsonl(RESULTS_DIR / "qwen_finqa_C8_raw.jsonl", finqa_c8)
     print(f"[4E] FinQA C1 acc={sum(1 for r in finqa_c1 if r['correct'])/len(finqa_c1):.3f}")
@@ -375,7 +401,7 @@ def main() -> None:
     print(f"[4E] FinQA C8 unsupported={sum(1 for r in finqa_c8 if r['unsupported_claim'])/len(finqa_c8):.3f}")
 
     # ── HaluEval ───────────────────────────────────────────────────────────────
-    halu_c1, halu_c8 = run_qwen_halueval(backend, halu_cases, model_digest)
+    halu_c1, halu_c8 = run_qwen_halueval(backend, halu_cases, halu_scoring_by_id, model_digest)
     write_jsonl(RESULTS_DIR / "qwen_halueval_C1_raw.jsonl", halu_c1)
     write_jsonl(RESULTS_DIR / "qwen_halueval_C8_raw.jsonl", halu_c8)
     print(f"[4E] HaluEval C1 acc={sum(1 for r in halu_c1 if r['correct'])/len(halu_c1):.3f}")
@@ -383,7 +409,6 @@ def main() -> None:
     print(f"[4E] HaluEval C8 unsupported={sum(1 for r in halu_c8 if r['unsupported_claim'])/len(halu_c8):.3f}")
 
     # ── Aggregate Summary ──────────────────────────────────────────────────────
-    # Also load Phi-3.5 results from Phase 4D for combined table
     phi_finqa_c1 = read_jsonl(P4D_FROZEN_DIR.parent / "finqa_predictions_actual_C1.jsonl") if (P4D_FROZEN_DIR.parent / "finqa_predictions_actual_C1.jsonl").exists() else []
     phi_finqa_c8 = read_jsonl(P4D_FROZEN_DIR.parent / "finqa_predictions_actual_C8.jsonl") if (P4D_FROZEN_DIR.parent / "finqa_predictions_actual_C8.jsonl").exists() else []
     phi_halu_c1 = read_jsonl(P4D_FROZEN_DIR.parent / "halueval_predictions_actual_C1.jsonl") if (P4D_FROZEN_DIR.parent / "halueval_predictions_actual_C1.jsonl").exists() else []

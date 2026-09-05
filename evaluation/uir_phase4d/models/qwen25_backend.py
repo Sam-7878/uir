@@ -47,6 +47,7 @@ class Qwen25OllamaBackend:
                 "temperature": 0.0,
                 "seed": SEED,
                 "num_predict": max_tokens,
+                "num_thread": 16,
             },
         }
         data_bytes = json.dumps(payload).encode("utf-8")
