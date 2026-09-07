@@ -1,0 +1,38 @@
+{
+  "environments": {
+    "enterprise_fin_prod": {
+      "environment_id": "enterprise_fin_prod",
+      "isolation_level": "STRICT_CONTAINMENT",
+      "allowed_egress_sinks": ["client_ui_response", "audit_log"],
+      "blocked_egress_sinks": ["external_webhook", "unverified_file_share"],
+      "default_resource_budget": {
+        "max_input_tokens": 4096,
+        "max_output_tokens": 512,
+        "max_tool_invocations": 3,
+        "max_retrieval_records": 5,
+        "max_elapsed_ms": 30000.0
+      },
+      "enforce_provenance": true,
+      "enforce_firewall": true,
+      "enforce_policy_engine": true,
+      "enforce_output_guard": true
+    },
+    "enterprise_fin_ablation_no_firewall": {
+      "environment_id": "enterprise_fin_ablation_no_firewall",
+      "isolation_level": "MODERATE",
+      "allowed_egress_sinks": ["client_ui_response", "audit_log"],
+      "blocked_egress_sinks": ["external_webhook"],
+      "default_resource_budget": {
+        "max_input_tokens": 4096,
+        "max_output_tokens": 512,
+        "max_tool_invocations": 3,
+        "max_retrieval_records": 5,
+        "max_elapsed_ms": 30000.0
+      },
+      "enforce_provenance": true,
+      "enforce_firewall": false,
+      "enforce_policy_engine": true,
+      "enforce_output_guard": true
+    }
+  }
+}

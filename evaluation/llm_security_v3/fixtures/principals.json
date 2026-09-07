@@ -1,0 +1,89 @@
+{
+  "principals": {
+    "finance_analyst_authenticated": {
+      "principal_id": "finance_analyst_authenticated",
+      "display_name": "Senior Financial Analyst",
+      "trust_level": "AUTHENTICATED",
+      "roles": ["analyst", "viewer"],
+      "allowed_capabilities": [
+        "read:financial_records",
+        "read:market_data",
+        "compute:financial_metrics",
+        "generate:summary_report"
+      ],
+      "forbidden_capabilities": [
+        "execute:arbitrary_code",
+        "mutate:system_policy",
+        "export:raw_customer_pii",
+        "admin:override_security"
+      ],
+      "data_clearance": "CONFIDENTIAL"
+    },
+    "finance_viewer_authenticated": {
+      "principal_id": "finance_viewer_authenticated",
+      "display_name": "Financial Viewer",
+      "trust_level": "AUTHENTICATED",
+      "roles": ["viewer"],
+      "allowed_capabilities": [
+        "read:financial_records",
+        "generate:summary_report"
+      ],
+      "forbidden_capabilities": [
+        "compute:financial_metrics",
+        "execute:arbitrary_code",
+        "mutate:system_policy",
+        "export:raw_customer_pii"
+      ],
+      "data_clearance": "INTERNAL"
+    },
+    "tool_user_limited": {
+      "principal_id": "tool_user_limited",
+      "display_name": "Limited Tool User",
+      "trust_level": "AUTHENTICATED",
+      "roles": ["operator"],
+      "allowed_capabilities": [
+        "tool:calculator",
+        "tool:ticker_lookup"
+      ],
+      "forbidden_capabilities": [
+        "tool:shell_exec",
+        "tool:file_write",
+        "tool:network_egress"
+      ],
+      "data_clearance": "INTERNAL"
+    },
+    "tool_user_privileged": {
+      "principal_id": "tool_user_privileged",
+      "display_name": "Privileged Tool Operator",
+      "trust_level": "PRIVILEGED",
+      "roles": ["admin_operator"],
+      "allowed_capabilities": [
+        "tool:calculator",
+        "tool:ticker_lookup",
+        "tool:db_read",
+        "tool:audit_log_write"
+      ],
+      "forbidden_capabilities": [
+        "tool:shell_exec",
+        "mutate:system_policy"
+      ],
+      "data_clearance": "RESTRICTED"
+    },
+    "anonymous_public_user": {
+      "principal_id": "anonymous_public_user",
+      "display_name": "Unauthenticated Public User",
+      "trust_level": "UNTRUSTED",
+      "roles": ["guest"],
+      "allowed_capabilities": [
+        "read:public_faq"
+      ],
+      "forbidden_capabilities": [
+        "read:financial_records",
+        "compute:financial_metrics",
+        "tool:calculator",
+        "execute:arbitrary_code"
+      ],
+      "data_clearance": "PUBLIC"
+    }
+  }
+}

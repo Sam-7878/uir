@@ -1,0 +1,81 @@
+(* ========================================================================= *)
+(* HETE Zero-Trust Security Policy Domain Specific Language (DSL) EBNF Grammar *)
+(* Version: 3.0.0                                                           *)
+(* ========================================================================= *)
+
+PolicyFile         ::= { PolicyRule } ;
+
+PolicyRule         ::= "rule" RuleIdentifier "{" 
+                         "description" ":" StringLiteral ";"
+                         "target"      ":" TargetClause ";"
+                         "condition"   ":" Expression ";"
+                         "decision"    ":" Outcome ";"
+                       "}" ;
+
+RuleIdentifier     ::= Identifier ;
+
+TargetClause       ::= "principal" ":" PrincipalPattern 
+                       "," "action" ":" ActionPattern 
+                       "," "resource" ":" ResourcePattern ;
+
+Outcome            ::= "ALLOW"
+                     | "DENY"
+                     | "REQUIRE_APPROVAL"
+                     | "READ_ONLY"
+                     | "QUARANTINE" ;
+
+Expression         ::= OrExpression ;
+
+OrExpression       ::= AndExpression { "OR" AndExpression } ;
+
+AndExpression      ::= NotExpression { "AND" NotExpression } ;
+
+NotExpression      ::= [ "NOT" ] ComparisonExpression ;
+
+ComparisonExpression ::= PrimaryExpression [ Operator PrimaryExpression ] ;
+
+PrimaryExpression  ::= SecurityAttribute
+                     | Constant
+                     | "(" Expression ")"
+                     | FunctionCall ;
+
+Operator           ::= "==" | "!=" | "IN" | "NOT_IN" | "SUBSET_OF" | "REQUIRES" ;
+
+SecurityAttribute  ::= "principal.id"
+                     | "principal.trust_level"
+                     | "principal.roles"
+                     | "principal.clearance"
+                     | "action.name"
+                     | "action.type"
+                     | "resource.id"
+                     | "resource.classification"
+                     | "evidence.trust_tier"
+                     | "evidence.verified"
+                     | "evidence.instruction_bearing"
+                     | "session.capabilities"
+                     | "output.sink"
+                     | "output.contains_pii" ;
+
+TrustLevelConstant ::= "ANONYMOUS" | "UNTRUSTED" | "AUTHENTICATED" | "PRIVILEGED" | "SYSTEM" ;
+
+DataClassification ::= "PUBLIC" | "INTERNAL" | "CONFIDENTIAL" | "RESTRICTED" ;
+
+ProvenanceTier     ::= "VERIFIED_MANIFEST" | "VERIFIED_SOURCE" | "UNVERIFIED" | "QUARANTINED" | "INTEGRITY_FAILURE" ;
+
+FunctionCall       ::= Identifier "(" [ ExpressionList ] ")" ;
+
+ExpressionList     ::= Expression { "," Expression } ;
+
+PrincipalPattern   ::= Identifier | StringLiteral | "*" ;
+ActionPattern      ::= Identifier | StringLiteral | "*" ;
+ResourcePattern    ::= Identifier | StringLiteral | "*" ;
+
+Constant           ::= StringLiteral | NumberLiteral | BooleanLiteral | ListLiteral ;
+ListLiteral        ::= "[" [ Constant { "," Constant } ] "]" ;
+BooleanLiteral     ::= "TRUE" | "FALSE" ;
+StringLiteral      ::= '"' { Character } '"' ;
+NumberLiteral      ::= [ "-" ] Digit { Digit } [ "." Digit { Digit } ] ;
+Identifier         ::= ( Letter | "_" ) { Letter | Digit | "_" | ":" } ;
+Letter             ::= "A".."Z" | "a".."z" ;
+Digit              ::= "0".."9" ;
+Character          ::= ? Any valid Unicode character except newline or quote ? ;

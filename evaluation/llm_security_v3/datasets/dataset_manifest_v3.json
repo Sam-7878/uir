@@ -1,0 +1,25 @@
+{
+  "version": "v3.0.0",
+  "seed": 20260908,
+  "dev": {
+    "runtime_path": "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3/datasets/custom_dev_v3.jsonl",
+    "runtime_sha256": "0d107abbdff29a3f64b35279c91b7f54d674a3adb612bfddeda54c7c7394d1d8",
+    "oracle_path": "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3/datasets/oracle_dev_v3.jsonl",
+    "oracle_sha256": "028631c2f649831c36c8e049325f4433dd399b54252d82c62c25bf768f2a9bbe",
+    "count": 1400
+  },
+  "validation": {
+    "runtime_path": "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3/datasets/custom_validation_v3.jsonl",
+    "runtime_sha256": "22f7de49851a4fb3c04892b4d97b6f3e3e3245e1d95bbebc30cda31a35f47acf",
+    "oracle_path": "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3/datasets/oracle_validation_v3.jsonl",
+    "oracle_sha256": "430282ed40a47bb05454468cfdcbc9b580a50fea7660afa9a8b376940bc69324",
+    "count": 350
+  },
+  "heldout": {
+    "runtime_path": "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3/datasets/custom_heldout_v3.jsonl",
+    "runtime_sha256": "d1de4eb9216118b3c8bb22385c12ef9a64eb083a5a86c5673b0f55e272c51b8f",
+    "oracle_path": "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3/datasets/oracle_heldout_v3.jsonl",
+    "oracle_sha256": "3aee4db0f385d8e40670f32ebf4f5a3a44c9af2dde3032cb9c221cf776de4b05",
+    "count": 850
+  }
+}
