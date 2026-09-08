@@ -27,6 +27,8 @@ class BaseInferenceBackend(ABC):
         system_prompt: str = "",
         max_new_tokens: int = 512,
         temperature: float = 0.0,
+        top_p: float = 1.0,
+        seed: Optional[int] = None,
         stop_sequences: Optional[list[str]] = None,
     ) -> GenerationResult:
         """Executes text generation."""

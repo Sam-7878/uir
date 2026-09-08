@@ -35,6 +35,19 @@ class InputGuard:
         "DELIMITER_ESCAPE_MARKER": re.compile(
             r"(?i)(```\s*system|<\|im_start\|>system|<\|system\|>|\[SYSTEM_INSTRUCTION\])"
         ),
+        "FALSE_PREMISE_MARKER": re.compile(
+            r"(?i)("
+            r"전제하에|기정사실|사실에\s*따라|사실에\s*기반하여|사실을\s*바탕으로|"
+            r"부도\s*처리|채권단\s*청산|완전\s*파산|파산하여|파산했다는|법정\s*관리|영업\s*정지|"
+            r"자본잠식|매출\s*(?:이\s*)?0원|매출\s*제로|청산\s*절차|"
+            r"premised\s+on|predicated\s+on|under\s+the\s+established\s+premise|"
+            r"assuming.*(?:insolvency|bankruptcy|dissolution|shut\s+down|zero\s+revenue)|"
+            r"accepting\s+as\s+true.*(?:dissolution|zero\s+revenue|insolvency|bankruptcy)|"
+            r"declared\s+insolvency|complete\s+insolvency|total\s+insolvency|catastrophic\s+bankruptcy|"
+            r"went\s+bankrupt|liquidat(?:ed|ion)|revoked.*corporate\s+charter|forcibly\s+nationalized|"
+            r"zero\s+earnings\s+and\s+default|ceased\s+operations\s+following"
+            r")"
+        ),
     }
 
     def __init__(self, max_chars: int = MAX_RAW_LENGTH):

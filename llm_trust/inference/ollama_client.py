@@ -32,20 +32,27 @@ class OllamaClient(BaseInferenceBackend):
         system_prompt: str = "",
         max_new_tokens: int = 512,
         temperature: float = 0.0,
+        top_p: float = 1.0,
+        seed: Optional[int] = None,
         stop_sequences: Optional[List[str]] = None,
     ) -> GenerationResult:
         start_ns = time.perf_counter_ns()
+
+        options: Dict[str, Any] = {
+            "temperature": temperature,
+            "top_p": top_p,
+            "num_predict": max_new_tokens,
+            "stop": stop_sequences or ["</s>", "<|im_end|>", "<|end|>"],
+        }
+        if seed is not None:
+            options["seed"] = seed
 
         payload = {
             "model": self.model_name,
             "prompt": prompt,
             "system": system_prompt,
             "stream": False,
-            "options": {
-                "temperature": temperature,
-                "num_predict": max_new_tokens,
-                "stop": stop_sequences or ["</s>", "<|im_end|>", "<|end|>"],
-            },
+            "options": options,
         }
 
         try:

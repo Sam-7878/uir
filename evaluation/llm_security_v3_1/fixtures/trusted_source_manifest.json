@@ -1,0 +1,148 @@
+{
+  "trusted_sources": [
+    {
+      "authority": "sec.gov",
+      "resource_id": "reports/AAPL/2023",
+      "content_sha256": "a69af0844b755d38da9a3c4dcb580e5ab1cd35c9f99d46f38f6f83ebfbef511c",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "a93e097cd4f7f3550caec0eb29a30733fd3d8a5bbf15f816133a417bafa5b7c9",
+      "entity": "AAPL"
+    },
+    {
+      "authority": "sec.gov",
+      "resource_id": "reports/MSFT/2023",
+      "content_sha256": "044f408d72e9a68a51dbfde766bcac99d76e1dfc5dd6f1cc6080782a8085cfd3",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "ca2982c10002ee5c8afa0a7ddd632ddf901ef9c92dda52cdfb9eaf8936fb8e39",
+      "entity": "MSFT"
+    },
+    {
+      "authority": "sec.gov",
+      "resource_id": "reports/NVDA/2023",
+      "content_sha256": "4aa68f1bc96b9938009904ac585f828a01aad9a33714f83020d7e4bd70b75abb",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "54dfd1b37d2024e2fb991281cf1d2a73a7c136c550217303ffd1e6010980cbf2",
+      "entity": "NVDA"
+    },
+    {
+      "authority": "sec.gov",
+      "resource_id": "reports/GOOGL/2023",
+      "content_sha256": "35452d6917cfb561388f8a47eb764abfdfc75c95bd5d595cd1da04e20fdd511c",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "34f3cfa4244f4b11ef0cd3552c7a991af467125191dc812aa72bcaa9f6805c76",
+      "entity": "GOOGL"
+    },
+    {
+      "authority": "sec.gov",
+      "resource_id": "reports/AMZN/2023",
+      "content_sha256": "4ef081a2f120cd7fcdfa5ed0e78d4ba8f5626705d62437de489941bdafef2677",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "7f532d8216293bd5e1b782f01b62a3f36328c995d85eb3e4d8ec34d30c725afb",
+      "entity": "AMZN"
+    },
+    {
+      "authority": "dart.fss.or.kr",
+      "resource_id": "reports/005930/2023",
+      "content_sha256": "13f755de6d0e3d1edeb416993d8d4f2d1e66c10ebedc315665f4daf9dfce27e5",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "06e38a20b686f0afea07a9215def2c29b00bc283bbdf6ee0d528c7f9913013bb",
+      "entity": "005930"
+    },
+    {
+      "authority": "dart.fss.or.kr",
+      "resource_id": "reports/000660/2023",
+      "content_sha256": "11cd9a7f7458f70581a79f7ca34690f2bebcc527b8fc943eaf4921cd61b52045",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "915053bbee05de12ecf5b19d9ea7cd06406519e564ae578cf5ed7a33476c40ad",
+      "entity": "000660"
+    },
+    {
+      "authority": "dart.fss.or.kr",
+      "resource_id": "reports/005380/2023",
+      "content_sha256": "fda2f86381ce97fcc50df9631968d78d38258dc4c5506d7685b5b60f7c582823",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "b146e00db9390b2d0ed5e16092c05b56a46054695bb56ec7053cbe9162eb42c1",
+      "entity": "005380"
+    },
+    {
+      "authority": "dart.fss.or.kr",
+      "resource_id": "reports/035420/2023",
+      "content_sha256": "b0707452a248d0cf5dd6f78c6843a7b1a5b09d7dea5f33821cd5e4f6644e3276",
+      "signer_id": "trusted_enterprise_signer",
+      "signature": "ddbed70202dcdff7ce9d7ff64e3562bd3b274e6c9c63e4b2b4436e3a2fde5313",
+      "entity": "035420"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "AAPL",
+      "content_sha256": "f77235cd74fc0ed8e5b1cbac8316335c2cb0f68a45e2f77f9577d01f73bcd4f4",
+      "signer_id": "internal_registry",
+      "signature": "f40c095e6214d155377530776ccc6ecf82fae83775608075228d4893327419e2",
+      "entity": "AAPL"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "MSFT",
+      "content_sha256": "84f8d570402dfcf3822fa78a7eb8888cddc34194d597dba57cc2214293b51435",
+      "signer_id": "internal_registry",
+      "signature": "254696060116b23b1378126a96d27c33483f94b221e93448077abc48618dc090",
+      "entity": "MSFT"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "NVDA",
+      "content_sha256": "806471ff69c5eb7441590aed3f8f88a0cfe9fe9395c9b3adc2e8471c5147c951",
+      "signer_id": "internal_registry",
+      "signature": "ee6f945b2ae66f889fef53f8bf16b4be6e3291b40e3a527d6248236cbe6ec55e",
+      "entity": "NVDA"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "GOOGL",
+      "content_sha256": "feaafacceed722b891cc2d34cc25e773f6d925b2c77b9e05fd7f082452327924",
+      "signer_id": "internal_registry",
+      "signature": "6f2147c0e05f2098edfbb548016f31d77295951f4bf035387bc7add1b318176d",
+      "entity": "GOOGL"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "AMZN",
+      "content_sha256": "ea9b58f3709ed14a4746af23eb6f003b3f31b5818daf0f3d5bb444c193766784",
+      "signer_id": "internal_registry",
+      "signature": "6d607f7ca8ff615f5a93686878dccb5101440b27de6b7e4408c71648ed182884",
+      "entity": "AMZN"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "005930",
+      "content_sha256": "fc06a3ac43346a6082e5aceae5b678e1e7df6ef00e3d96a768c77adf2ae61236",
+      "signer_id": "internal_registry",
+      "signature": "47a26b37669d20d14939f7959ac64239ca7c48f81083d5cde20b7224c6446db8",
+      "entity": "005930"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "000660",
+      "content_sha256": "4ee064af0a4866b5bee3a966f29e0d041ded1c8f7eca0416aa425eba111b6e45",
+      "signer_id": "internal_registry",
+      "signature": "deaacae360c3e970836867edadc97dc50bc05ad498b7a0379232f80040b86771",
+      "entity": "000660"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "005380",
+      "content_sha256": "e4746fb4d672e44f88121cd1e610926b56ab25bedda41cc927de0cd9552c66e9",
+      "signer_id": "internal_registry",
+      "signature": "3cd10e9c59a4f6919e7a0ea6ce74184179d3c220b6be232a3874970b734a8fc8",
+      "entity": "005380"
+    },
+    {
+      "authority": "internal.entity.registry",
+      "resource_id": "035420",
+      "content_sha256": "d9ca40e5fa0bba424ccc552f348790de0246c232e2d9c41a8146ca3d9ae22e5a",
+      "signer_id": "internal_registry",
+      "signature": "5b7650ba5216df6f0e9ce28dbcff6c5680e1ee5db9910ae89e46e536990dab94",
+      "entity": "035420"
+    }
+  ]
+}

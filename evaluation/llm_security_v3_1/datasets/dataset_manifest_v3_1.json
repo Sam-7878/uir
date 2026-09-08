@@ -1,0 +1,30 @@
+{
+  "benchmark_version": "v3.1_frozen_publication",
+  "description": "HETE Enterprise Security Benchmark v3.1 with Opaque Identifiers and Field Allow-List Enforcement",
+  "splits": {
+    "heldout": {
+      "split": "heldout",
+      "total_cases": 850,
+      "runtime_file": "custom_heldout_v3_1.jsonl",
+      "runtime_sha256": "ee37647b700e95d7d8412ad7c7b4d7c66b389a21fabe15ada115e393d05a34dd",
+      "oracle_file": "oracle_heldout_v3_1.jsonl",
+      "oracle_sha256": "0caec7455243aea6673be3762047849685996cc8739f0c76930f0f7606d9ac0d"
+    },
+    "validation": {
+      "split": "validation",
+      "total_cases": 350,
+      "runtime_file": "custom_validation_v3_1.jsonl",
+      "runtime_sha256": "7c1d2d6087a0c386fd915bd857d6c7c8cca509dd661e3dbafc75f227597ae9e8",
+      "oracle_file": "oracle_validation_v3_1.jsonl",
+      "oracle_sha256": "6ea3495579b27a95608270a5e0f95a59626c22150ce00480d3daff0435a05196"
+    },
+    "dev": {
+      "split": "dev",
+      "total_cases": 1400,
+      "runtime_file": "custom_dev_v3_1.jsonl",
+      "runtime_sha256": "8431ea4cf07052c59f3bfa420cacd4dcc8a3edf022ecd236ad1d7b11b59b01da",
+      "oracle_file": "oracle_dev_v3_1.jsonl",
+      "oracle_sha256": "c8758934ca0fc73d266942d49cbd7af491393575b94e072657f7e33cd00ff8e3"
+    }
+  }
+}

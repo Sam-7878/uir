@@ -140,7 +140,16 @@ class SecurityPolicyEngine:
                     is_authoritative=False,
                 )
 
-        # 5. Data Flow & Confidentiality Invariant (Rule: POL-DATA-001)
+        # 5. Adversarial False Premise Defense (Rule: POL-EVD-003)
+        if "FALSE_PREMISE_MARKER" in guarded_input.suspicious_telemetry_flags:
+            return PolicyEvaluationResult(
+                outcome=PolicyOutcome.DENY,
+                matched_rule="POL-EVD-003:UNGROUNDED_ADVERSARIAL_PREMISE",
+                decision_details="Adversarial false premise detected without verified factual substantiation.",
+                is_authoritative=False,
+            )
+
+        # 6. Data Flow & Confidentiality Invariant (Rule: POL-DATA-001)
         if DataClassification.SECRET in security_context.data_classification:
             if security_context.trust_level not in {TrustLevel.PRIVILEGED, TrustLevel.SYSTEM}:
                 return PolicyEvaluationResult(

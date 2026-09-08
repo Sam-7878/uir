@@ -53,10 +53,22 @@ class KoreanFrontend(BaseFrontend):
 
         # 2. Extract Entities (Tickers / CIKs / CRNOs / English or Korean Capitalized Terms)
         entities = []
-        ticker_matches = re.findall(r"\b([A-Z0-9]{3,6}|\d{6})\b", clean_text)
+        # Match 6-digit Korean stock codes even when attached to Korean particles (e.g. 005930의, 035420은)
+        code_matches = re.findall(r"(?:^|[^\d])(\d{6})(?:[^\d]|$)", clean_text)
+        for c in code_matches:
+            if c not in entities:
+                entities.append(c)
+
+        # Match uppercase English tickers (2-6 letters) even if followed by Korean particles
+        filter_out = {
+            "JSON", "UIR", "SLM", "DART", "API", "KRW", "USD", "SEC", "EDGAR", "EST",
+            "FY23", "FY24", "FY22", "FY", "10-K", "10-Q"
+        }
+        ticker_matches = re.findall(r"\b([A-Z]{2,6})(?:[가-힣]|\b)", clean_text)
         for t in ticker_matches:
-            if t not in {"JSON", "UIR", "SLM", "DART", "API", "KRW", "USD"}:
-                entities.append(t)
+            t_up = t.upper()
+            if t_up not in filter_out and t_up not in entities:
+                entities.append(t_up)
 
         # Korean Named Entities & English company mentions
         named_map = {
@@ -64,10 +76,30 @@ class KoreanFrontend(BaseFrontend):
             "삼성": "005930",
             "sk하이닉스": "000660",
             "하이닉스": "000660",
+            "현대차": "005380",
+            "현대자동차": "005380",
+            "네이버": "035420",
+            "naver": "035420",
+            "기아": "000270",
+            "kia": "000270",
+            "lg화학": "051910",
+            "셀트리온": "068270",
+            "포스코": "005490",
+            "카카오": "035720",
             "애플": "AAPL",
             "apple": "AAPL",
             "마이크로소프트": "MSFT",
             "microsoft": "MSFT",
+            "구글": "GOOGL",
+            "google": "GOOGL",
+            "아마존": "AMZN",
+            "amazon": "AMZN",
+            "엔비디아": "NVDA",
+            "nvidia": "NVDA",
+            "메타": "META",
+            "meta": "META",
+            "테슬라": "TSLA",
+            "tesla": "TSLA",
             "가짜기업": "가짜기업_99",
             "유령법인": "유령법인_001",
         }
@@ -83,6 +115,11 @@ class KoreanFrontend(BaseFrontend):
                 entities.append(match.group(1).strip().upper())
             else:
                 entities.append("UNKNOWN_ENTITY")
+        else:
+            from ..evidence.trusted_resolver import VERIFIED_ENTITY_REGISTRY
+            known = [e for e in entities if e in VERIFIED_ENTITY_REGISTRY]
+            if known:
+                entities = known + [e for e in entities if e not in known]
 
         # 3. Extract Year/Period
         period = None

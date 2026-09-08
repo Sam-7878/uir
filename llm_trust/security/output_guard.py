@@ -38,6 +38,7 @@ class OutputGuard:
         "CREDENTIAL": re.compile(r"(?i)(password|passwd|secret)\s*[:=]\s*['\"][^'\"]{4,}['\"]"),
         "INTERNAL_SSN_RRN": re.compile(r"\b\d{6}-[1-4]\d{6}\b"),
         "SYSTEM_PROMPT_LEAK": re.compile(r"(?i)(you are an ai assistant designed by|system instruction: you must|system prompt dump)"),
+        "UNVERIFIED_INSOLVENCY_CLAIM": re.compile(r"(?i)(부도\s*처리|채권단\s*청산|완전\s*파산|파산하여|자본잠식|매출\s*제로|zero\s+revenue|declared\s+insolvency|catastrophic\s+bankruptcy)"),
     }
 
     # Code / command injection patterns
@@ -85,13 +86,31 @@ class OutputGuard:
         parsed_json: Optional[Dict[str, Any]] = None
         if expected_schema_id:
             try:
-                # Extract JSON block if enclosed in markdown fences
+                # Extract JSON block if enclosed in markdown fences or outer braces
                 match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw_output, re.DOTALL)
-                json_str = match.group(1) if match else raw_output.strip()
+                if match:
+                    json_str = match.group(1)
+                else:
+                    brace_match = re.search(r"(\{.*\})", raw_output, re.DOTALL)
+                    json_str = brace_match.group(1) if brace_match else raw_output.strip()
                 parsed_json = json.loads(json_str)
             except Exception as e:
+                # Try appending closing brackets if truncated at token limit
+                try:
+                    repaired = json_str.strip()
+                    if repaired.startswith("{"):
+                        if '"' in repaired and repaired.count('"') % 2 != 0:
+                            repaired += '"'
+                        if "[" in repaired and repaired.count("[") > repaired.count("]"):
+                            repaired += "]"
+                        if repaired.count("{") > repaired.count("}"):
+                            repaired += "}"
+                        parsed_json = json.loads(repaired)
+                except Exception:
+                    pass
+
                 # If expecting structured output but received non-JSON
-                if expected_schema_id != "unstructured_text":
+                if parsed_json is None and expected_schema_id != "unstructured_text":
                     return OutputGuardVerdict(
                         status=OutputValidationStatus.SCHEMA_VIOLATION,
                         is_safe=False,
