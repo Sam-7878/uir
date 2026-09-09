@@ -16,7 +16,7 @@ class OllamaClient(BaseInferenceBackend):
     def __init__(
         self,
         model_name: str = "phi3.5:latest",
-        endpoint: str = "http://localhost:11434",
+        endpoint: str = "http://127.0.0.1:11434",
         timeout_seconds: float = 15.0,
         enable_deterministic_fallback: bool = True,
     ):
@@ -42,6 +42,7 @@ class OllamaClient(BaseInferenceBackend):
             "temperature": temperature,
             "top_p": top_p,
             "num_predict": max_new_tokens,
+            "num_ctx": 8192,
             "stop": stop_sequences or ["</s>", "<|im_end|>", "<|end|>"],
         }
         if seed is not None:
@@ -65,11 +66,12 @@ class OllamaClient(BaseInferenceBackend):
                 data = resp.json()
                 latency = (time.perf_counter_ns() - start_ns) / 1_000_000.0
                 return GenerationResult(
-                    text=data.get("response", "").strip(),
+                    text=data.get("response", ""),
                     input_tokens=data.get("prompt_eval_count", max(1, len(prompt) // 4)),
                     output_tokens=data.get("eval_count", max(1, len(data.get("response", "")) // 4)),
                     latency_ms=latency,
                     model_name=self.model_name,
+                    finish_reason=data.get("done_reason", "stop"),
                     raw_response=data,
                 )
         except Exception:

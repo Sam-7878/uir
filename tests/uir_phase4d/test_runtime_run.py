@@ -1,4 +1,5 @@
 from evaluation.uir_phase4d.common import read_jsonl, FROZEN_DIR
+from evaluation.uir_phase4d.pipelines import build_internal_request
 import os
 print("FROZEN_DIR is:", FROZEN_DIR)
 print("Exists?", FROZEN_DIR.exists())
