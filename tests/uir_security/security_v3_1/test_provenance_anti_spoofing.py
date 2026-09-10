@@ -14,7 +14,10 @@ from evaluation.llm_security_v3_1.provenance import (
 
 @pytest.fixture
 def verifier():
-    manifest_path = Path(__file__).resolve().parents[2] / "evaluation" / "llm_security_v3_1" / "fixtures" / "trusted_source_manifest.json"
+    root = Path(__file__).resolve().parents[3]
+    manifest_path = root / "evaluation" / "uir_security" / "llm_security_v3_1" / "fixtures" / "trusted_source_manifest.json"
+    if not manifest_path.exists():
+        manifest_path = root / "evaluation" / "llm_security_v3_1" / "fixtures" / "trusted_source_manifest.json"
     return ProvenanceVerifier(manifest_path=manifest_path)
 
 

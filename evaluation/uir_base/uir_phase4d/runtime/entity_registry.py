@@ -12,9 +12,9 @@ from enum import Enum
 from pathlib import Path
 from typing import Any
 
-from evaluation.uir_phase4d.common import ROOT
+from evaluation.uir_phase4d.common import EVAL_DIR, ROOT
 
-REGISTRY_PATH = ROOT / "evaluation/uir_phase4d/runtime/entity_registry.json"
+REGISTRY_PATH = (EVAL_DIR / "runtime/entity_registry.json") if (EVAL_DIR / "runtime/entity_registry.json").exists() else (ROOT / "evaluation/uir_phase4d/runtime/entity_registry.json")
 
 
 class EntityStatus(str, Enum):

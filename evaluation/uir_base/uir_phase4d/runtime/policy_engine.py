@@ -14,9 +14,9 @@ from typing import Any
 
 import yaml
 
-from evaluation.uir_phase4d.common import ROOT
+from evaluation.uir_phase4d.common import EVAL_DIR, ROOT
 
-RULES_PATH = ROOT / "evaluation/uir_phase4d/runtime/policy_rules.yaml"
+RULES_PATH = (EVAL_DIR / "runtime/policy_rules.yaml") if (EVAL_DIR / "runtime/policy_rules.yaml").exists() else (ROOT / "evaluation/uir_phase4d/runtime/policy_rules.yaml")
 
 
 class PolicyDecision(str, Enum):

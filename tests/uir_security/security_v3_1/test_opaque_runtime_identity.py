@@ -45,9 +45,13 @@ def test_runtime_case_accepts_valid_allowed_fields():
 
 
 def test_frozen_heldout_dataset_strict_compliance():
-    root = Path(__file__).resolve().parents[2]
-    custom_file = root / "evaluation" / "llm_security_v3_1" / "datasets" / "custom_heldout_v3_1.jsonl"
-    oracle_file = root / "evaluation" / "llm_security_v3_1" / "datasets" / "oracle_heldout_v3_1.jsonl"
+    root = Path(__file__).resolve().parents[3]
+    custom_file = root / "evaluation" / "uir_security" / "llm_security_v3_1" / "datasets" / "custom_heldout_v3_1.jsonl"
+    if not custom_file.exists():
+        custom_file = root / "evaluation" / "llm_security_v3_1" / "datasets" / "custom_heldout_v3_1.jsonl"
+    oracle_file = root / "evaluation" / "uir_security" / "llm_security_v3_1" / "datasets" / "oracle_heldout_v3_1.jsonl"
+    if not oracle_file.exists():
+        oracle_file = root / "evaluation" / "llm_security_v3_1" / "datasets" / "oracle_heldout_v3_1.jsonl"
 
     assert custom_file.exists()
     assert oracle_file.exists()

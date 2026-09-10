@@ -62,7 +62,7 @@ def _scan_ast_for_forbidden_identifiers(filepath: Path) -> List[str]:
 
 
 def test_no_oracle_leakage_in_uir_v3_pipeline_source():
-    v3_pipeline_file = Path("evaluation/llm_security_v3/baselines/uir_v3_security.py")
+    v3_pipeline_file = Path("evaluation/uir_security/llm_security_v3/baselines/uir_v3_security.py") if Path("evaluation/uir_security/llm_security_v3/baselines/uir_v3_security.py").exists() else Path("evaluation/llm_security_v3/baselines/uir_v3_security.py")
     violations = _scan_ast_for_forbidden_identifiers(v3_pipeline_file)
     assert not violations, f"Forbidden oracle fields found in SUT:\n" + "\n".join(violations)
 

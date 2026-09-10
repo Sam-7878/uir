@@ -10,8 +10,15 @@ from typing import Any, Dict, List
 from .generator import SecurityDatasetGenerator
 
 
-ROOT = Path(__file__).resolve().parents[3]
-DATASETS = ROOT / "evaluation/llm_security/datasets"
+def _find_repo_root(p: Path) -> Path:
+    for parent in [p] + list(p.parents):
+        if (parent / ".git").exists() or (parent / "Cargo.toml").exists():
+            return parent
+    return p.parents[4]
+
+
+ROOT = _find_repo_root(Path(__file__).resolve())
+DATASETS = (ROOT / "evaluation/uir_security/llm_security/datasets") if (ROOT / "evaluation/uir_security/llm_security/datasets").exists() else (ROOT / "evaluation/llm_security/datasets")
 BENIGN_VALUES = {
     "005930": ["258.93", "6.57"], "000660": ["32.77"],
     "AAPL": ["383.29", "96.99"], "MSFT": ["211.91", "72.36"],

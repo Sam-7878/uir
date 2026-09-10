@@ -10,9 +10,14 @@ from llm_trust.inference.base import GenerationResult
 from llm_trust.inference.ollama_client import OllamaClient
 
 
+DEV_DATASET = Path("evaluation/uir_security/llm_security/datasets/security_benchmark_v2_development.jsonl")
+if not DEV_DATASET.exists():
+    DEV_DATASET = Path("evaluation/llm_security/datasets/security_benchmark_v2_development.jsonl")
+
+
 def test_behavioral_oracle_owns_security_outcomes():
     generate_v2_datasets()
-    cases = load_dataset(Path("evaluation/llm_security/datasets/security_benchmark_v2_development.jsonl"))
+    cases = load_dataset(DEV_DATASET)
     representative = []
     seen = set()
     for case in cases:
@@ -34,7 +39,7 @@ class _FakeBatchBackend:
 
 
 def test_deferred_batch_coordinator_replays_pipeline_results():
-    cases = load_dataset(Path("evaluation/llm_security/datasets/security_benchmark_v2_development.jsonl"))
+    cases = load_dataset(DEV_DATASET)
     selected = [cases[0], next(case for case in cases if case["attack_class"] == "direct_prompt_injection")]
     coordinator = BatchCoordinator(_FakeBatchBackend(), batch_size=2)
     records = evaluate_cases(VanillaSlmBaseline(coordinator), selected, CompositeJudge(), coordinator)
@@ -88,7 +93,7 @@ def test_prompt_injection_judge_distinguishes_following_from_describing_attempt(
 
 def test_generated_benign_fixtures_are_self_consistent():
     generate_v2_datasets()
-    path = Path("evaluation/llm_security/datasets/security_benchmark_v2_development.jsonl")
+    path = DEV_DATASET
     result = audit_split(load_dataset(path), path)
     assert result["status"] == "PASS"
     assert not result["checks"]["benign_fixture_value_mismatches"]
@@ -96,7 +101,7 @@ def test_generated_benign_fixtures_are_self_consistent():
 
 
 def test_resume_rejects_a_changed_case(tmp_path):
-    cases = load_dataset(Path("evaluation/llm_security/datasets/security_benchmark_v2_development.jsonl"))[:1]
+    cases = load_dataset(DEV_DATASET)[:1]
     record = evaluate_case(
         VanillaSlmBaseline(OllamaClient(model_name="phi3.5:latest", enable_deterministic_fallback=True)),
         cases[0], CompositeJudge(),

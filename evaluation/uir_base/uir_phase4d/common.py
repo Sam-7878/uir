@@ -6,17 +6,24 @@ import json
 from pathlib import Path
 from typing import Any, Iterable
 
-ROOT = Path(__file__).resolve().parents[2]
-EVAL_DIR = ROOT / "evaluation/uir_phase4d"
-RESULTS_DIR = ROOT / "results/uir_phase4d"
-P4C_RESULTS_DIR = ROOT / "results/uir_phase4c"
+def _find_repo_root(p: Path) -> Path:
+    for parent in [p] + list(p.parents):
+        if (parent / ".git").exists() or (parent / "Cargo.toml").exists():
+            return parent
+    return p.parents[3]
+
+
+ROOT = _find_repo_root(Path(__file__).resolve())
+EVAL_DIR = (ROOT / "evaluation/uir_base/uir_phase4d") if (ROOT / "evaluation/uir_base/uir_phase4d").exists() else (ROOT / "evaluation/uir_phase4d")
+RESULTS_DIR = (ROOT / "results/uir_base/uir_phase4d") if (ROOT / "results/uir_base/uir_phase4d").exists() else (ROOT / "results/uir_phase4d")
+P4C_RESULTS_DIR = (ROOT / "results/uir_base/uir_phase4c") if (ROOT / "results/uir_base/uir_phase4c").exists() else (ROOT / "results/uir_phase4c")
 DOCS_DIR = ROOT / "docs/uir_phase4d"
 FROZEN_DIR = RESULTS_DIR / "frozen_inputs"
-SOURCE_DIR = ROOT / "evaluation/uir_phase4c/official_sources"
+SOURCE_DIR = (ROOT / "evaluation/uir_base/uir_phase4c/official_sources") if (ROOT / "evaluation/uir_base/uir_phase4c/official_sources").exists() else (ROOT / "evaluation/uir_phase4c/official_sources")
 RAW_DIR = RESULTS_DIR / "raw_captures"
 MANIFEST_4C = RESULTS_DIR / "PHASE4C_PARENT_MANIFEST.json"
 MANIFEST_4D = RESULTS_DIR / "PHASE4D_RUN_MANIFEST.json"
-PHASE4C_DIR = ROOT / "evaluation/uir_phase4c"
+PHASE4C_DIR = (ROOT / "evaluation/uir_base/uir_phase4c") if (ROOT / "evaluation/uir_base/uir_phase4c").exists() else (ROOT / "evaluation/uir_phase4c")
 
 MODEL_ID = "microsoft/Phi-3.5-mini-instruct"
 MODEL_REVISION = "2fe192450127e6a83f7441aef6e3ca586c338b77"
