@@ -42,6 +42,9 @@ formal/tools/*.jar
 docs/work_reports/
 docs/papers/
 results/
+evaluation/uir_law/law200/results/
+evaluation/uir_law/law200/results/**
+evaluation/uir_law/law200/data/
 
 # data/
 wasm/

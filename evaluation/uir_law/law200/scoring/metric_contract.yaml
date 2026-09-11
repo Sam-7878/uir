@@ -1,0 +1,24 @@
+version: law200-metrics-1.0
+unit_of_analysis: case
+primary_metrics:
+  accepted_unsupported_legal_claim_rate:
+    numerator: accepted outputs containing a legal identity claim not bound to the frozen authoritative source ID
+    denominator: accepted outputs
+    direction: lower
+  invalid_citation_false_acceptance_rate:
+    numerator: Category C cases receiving ANSWER or CORRECT
+    denominator: Category C cases
+    direction: lower
+  verified_answer_coverage:
+    numerator: valid A/B cases with correct citation, matching case name, and frozen source ID
+    denominator: valid A/B cases
+    direction: higher
+  false_rejection_rate:
+    numerator: valid A/B cases receiving REJECT or CLARIFY
+    denominator: valid A/B cases
+    direction: lower
+paired_primary_endpoint: accepted_unsupported_legal_claim
+paired_tests: exact McNemar
+intervals: Wilson 95 percent
+multiplicity: Holm correction across C1-vs-C8, C2-vs-C8, C5-vs-C8
+manual_metric_entry: prohibited

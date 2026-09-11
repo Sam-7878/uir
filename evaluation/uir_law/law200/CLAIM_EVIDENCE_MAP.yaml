@@ -1,0 +1,37 @@
+version: law200-claim-map-1.1
+jurisdiction_policy:
+  reporting: LAW-US-200 and LAW-KR-200 are independent strata and must not be pooled.
+  korean_not_found: HTTP 200 official search response with no exact case-number match; normalized lookup_status 404 is not an official HTTP status.
+claims:
+  typed_canonicalization:
+    evidence:
+      - legal_ir.py
+      - results/aggregate/publication_validation.json#cross_lingual_uir_equivalence
+      - results/kr/aggregate/publication_validation.json#cross_lingual_uir_equivalence
+    allowed_wording: English and Korean paired queries were mapped to equivalent typed legal UIR fields in LAW-200.
+  authoritative_pre_generation_verification:
+    evidence:
+      - data/source_registry.jsonl
+      - results/aggregate/source_integrity_audit.json
+      - results/raw/test_C8_UIR_phi3-5-latest.jsonl
+      - data/kr/source_registry.jsonl
+      - results/kr/raw/test_C8_UIR_phi3-5-latest.jsonl
+    allowed_wording: UIR checked citation existence and case-name binding against a frozen CourtListener snapshot before model invocation.
+  reduced_unsupported_claims:
+    evidence:
+      - results/aggregate/test_metrics.json
+      - results/aggregate/test_statistics.json
+      - results/tables/law200_main_table.csv
+      - results/kr/aggregate/test_metrics.json
+      - results/kr/aggregate/test_statistics.json
+      - results/kr/tables/law200_main_table.csv
+    allowed_wording: Use only auto-generated observed LAW-200 rates and Wilson intervals.
+  utility_preservation:
+    evidence:
+      - results/aggregate/test_metrics.json#verified_answer_coverage
+      - results/aggregate/test_metrics.json#false_rejection_rate
+    allowed_wording: Report coverage and false rejection alongside every safety comparison.
+prohibited_claims:
+  - UIR eliminates hallucination.
+  - UIR guarantees hallucination-free legal AI.
+  - Zero hallucination.
