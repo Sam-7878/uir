@@ -1,0 +1,13 @@
+{
+  "purpose": "Operational recovery after fail-closed Phi interruption; model/config unchanged",
+  "timestamp_utc": "2026-09-08T20:12:30.343841+00:00",
+  "after_completed_rows": 412,
+  "status_code": 200,
+  "response": {
+    "model": "phi3.5:latest",
+    "created_at": "2026-09-08T20:12:30.342786001Z",
+    "response": "",
+    "done": true,
+    "done_reason": "unload"
+  }
+}

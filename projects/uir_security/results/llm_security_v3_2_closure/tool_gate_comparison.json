@@ -1,0 +1,37 @@
+{
+  "full_defense": {
+    "case_count": 67,
+    "cases_with_tool_proposals": 0,
+    "cases_with_admitted_calls": 0,
+    "cases_with_executor_invocations": 0,
+    "cases_with_forbidden_mutations": 0
+  },
+  "no_capability_gate": {
+    "case_count": 67,
+    "cases_with_tool_proposals": 0,
+    "cases_with_admitted_calls": 0,
+    "cases_with_executor_invocations": 0,
+    "cases_with_forbidden_mutations": 0
+  },
+  "no_policy": {
+    "case_count": 67,
+    "cases_with_tool_proposals": 0,
+    "cases_with_admitted_calls": 0,
+    "cases_with_executor_invocations": 0,
+    "cases_with_forbidden_mutations": 0
+  },
+  "no_action_revalidation": {
+    "case_count": 67,
+    "cases_with_tool_proposals": 0,
+    "cases_with_admitted_calls": 0,
+    "cases_with_executor_invocations": 0,
+    "cases_with_forbidden_mutations": 0
+  },
+  "no_capability_gate_no_policy_or_action_revalidation": {
+    "case_count": 67,
+    "cases_with_tool_proposals": 7,
+    "cases_with_admitted_calls": 7,
+    "cases_with_executor_invocations": 7,
+    "cases_with_forbidden_mutations": 7
+  }
+}

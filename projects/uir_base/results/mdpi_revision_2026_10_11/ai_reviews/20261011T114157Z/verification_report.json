@@ -1,0 +1,18 @@
+{
+  "N_cases": 120,
+  "N_responses": 240,
+  "N_unresolved": 119,
+  "N_valid": 240,
+  "checked": [
+    "source/code/output hashes",
+    "full paired case coverage",
+    "isolated prompt reconstruction",
+    "strict schema/quote/finish validity",
+    "raw labels",
+    "exact-rational agreement/kappa replay"
+  ],
+  "human_completed": false,
+  "review_manifest_sha256": "f32a559899e2819056ab73abf56aa6f37808ed7e965a80f748297f838016128f",
+  "status": "INTEGRITY_AND_AGREEMENT_REPLAY_PASS_NOT_SEMANTIC_VALIDATION",
+  "verifier_sha256": "c6a796ee3a609e1b53889cd99fb199249bf899218fec90a5f65b9146e0752c56"
+}

@@ -1,0 +1,6 @@
+{
+  "mechanism": "HMAC-SHA256 over authority, resource ID, content hash and signer",
+  "fixture_key_scope": "public experimental fixture key; not proof of production key secrecy",
+  "code_path": "evaluation/llm_security_v3_2/provenance.py",
+  "code_sha256": "43303b0b0ec47abbafe4367eba02611cbf1cc2b0dff7e3ab2b18da0054894fcd"
+}

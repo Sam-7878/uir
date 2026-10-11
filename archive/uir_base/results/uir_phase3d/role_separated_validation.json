@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "role_separated_actual_model_audit_valid": true,
+  "prompt_template_sha256": "1660e3f70d9c11b0b415a7adb3c4bcc01dd1b8c9576af19c8881335336198310",
+  "frozen_v2_sha256": "9bb8a5d423b53bae14b2c699cba6b1338f0115345f94c6b4a9f93af2400d4a3c",
+  "parser_sha256": "bee778f3e3767fdcd64d0926f27c680143d217ea1d6febcabd08aac96de321d7",
+  "shared_case_count": 1200,
+  "reviewers": {
+    "AI-R1": {
+      "engine": "AntiGravity Gemini 3.5 Flash",
+      "model_selector": "gemini-3.5-flash",
+      "rows": 1200,
+      "unique_case_ids": 1200,
+      "raw_batches": 48,
+      "verified_raw_batches": 48,
+      "review_file_sha256": "357efb32f012a946d5d1b40dcfe804f3fabdf692361a822192840965af21af90",
+      "audit_packet_sha256": "47bc2e045ff55a421e93d74a38b4917e26fb4fe39e84687b3d418b100f1d9076"
+    },
+    "AI-R2": {
+      "engine": "AntiGravity Gemini 3.6 Flash",
+      "model_selector": "gemini-3.6-flash-high",
+      "rows": 1200,
+      "unique_case_ids": 1200,
+      "raw_batches": 48,
+      "verified_raw_batches": 48,
+      "review_file_sha256": "2d1126b47fee45f49ece3f6376c9aeead45725f6c17a67f8ea1f999dae273b6e",
+      "audit_packet_sha256": "1dbbcd6bdecef8e976c0de68a6e20fc4752b0036b3f00c50b35e5ef3e9696665"
+    },
+    "AI-R3": {
+      "engine": "AntiGravity Gemini 3.1 Pro",
+      "model_selector": "gemini-3.1-pro",
+      "rows": 1200,
+      "unique_case_ids": 1200,
+      "raw_batches": 48,
+      "verified_raw_batches": 48,
+      "review_file_sha256": "d1758cfe2f784576c30586166a4fd9d4a81fd1d4fe6387612776d220cd67fcc6",
+      "audit_packet_sha256": "92c5f1f53b0936d738d83276e8dc34a4acfae17f1d4ed8ae31362ac0c0651200"
+    }
+  },
+  "unique_session_count": 144,
+  "failures": [],
+  "warnings": [
+    {
+      "check": "legacy_packet_engine_metadata",
+      "detail": "AI-R1: packet engine=['AntiGravity Sonnet 4.6'], actual role=AntiGravity Gemini 3.5 Flash; the original packets are retained for hash reproducibility"
+    },
+    {
+      "check": "legacy_packet_engine_metadata",
+      "detail": "AI-R3: packet engine=['AntiGravity Opus 4.6'], actual role=AntiGravity Gemini 3.1 Pro; the original packets are retained for hash reproducibility"
+    }
+  ]
+}

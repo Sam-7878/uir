@@ -1,0 +1,26 @@
+{
+  "BENIGN_LLM_ALLOWED": {
+    "count": 249,
+    "mean_ms": 1594.3867402932383
+  },
+  "ATTACK_PRE_LLM_BLOCKED": {
+    "count": 210,
+    "mean_ms": 8.16552849999945
+  },
+  "ATTACK_LLM_BLOCKED": {
+    "count": 176,
+    "mean_ms": 1307.857489414816
+  },
+  "ATTACK_LLM_ALLOWED": {
+    "count": 187,
+    "mean_ms": 1609.0683144010834
+  },
+  "ATTACK_PRE_LLM_BLOCKED_RESOURCE_EXHAUSTED": {
+    "count": 27,
+    "mean_ms": 4.212804333292297
+  },
+  "BENIGN_LLM_BLOCKED": {
+    "count": 1,
+    "mean_ms": 1646.0402059992703
+  }
+}

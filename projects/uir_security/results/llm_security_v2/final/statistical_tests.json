@@ -1,0 +1,133 @@
+{
+  "method": "paired_exact_mcnemar",
+  "comparisons": {
+    "Vanilla SLM": [
+      {
+        "n": 280,
+        "baseline_only_successes": 117,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.41785714285714287,
+        "baseline_risk": 0.41785714285714287,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.2037062152420224e-35
+      },
+      {
+        "n": 280,
+        "baseline_only_successes": 117,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.41785714285714287,
+        "baseline_risk": 0.41785714285714287,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.2037062152420224e-35
+      },
+      {
+        "n": 280,
+        "baseline_only_successes": 117,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.41785714285714287,
+        "baseline_risk": 0.41785714285714287,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.2037062152420224e-35
+      }
+    ],
+    "Naive RAG": [
+      {
+        "n": 280,
+        "baseline_only_successes": 130,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.4642857142857143,
+        "baseline_risk": 0.4642857142857143,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.4693679385278594e-39
+      },
+      {
+        "n": 280,
+        "baseline_only_successes": 130,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.4642857142857143,
+        "baseline_risk": 0.4642857142857143,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.4693679385278594e-39
+      },
+      {
+        "n": 280,
+        "baseline_only_successes": 130,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.4642857142857143,
+        "baseline_risk": 0.4642857142857143,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.4693679385278594e-39
+      }
+    ],
+    "Prompt-only Guardrail": [
+      {
+        "n": 280,
+        "baseline_only_successes": 108,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.38571428571428573,
+        "baseline_risk": 0.38571428571428573,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 6.162975822039155e-33
+      },
+      {
+        "n": 280,
+        "baseline_only_successes": 108,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.38571428571428573,
+        "baseline_risk": 0.38571428571428573,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 6.162975822039155e-33
+      },
+      {
+        "n": 280,
+        "baseline_only_successes": 108,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.38571428571428573,
+        "baseline_risk": 0.38571428571428573,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 6.162975822039155e-33
+      }
+    ],
+    "UIR-v1": [
+      {
+        "n": 280,
+        "baseline_only_successes": 20,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.07142857142857142,
+        "baseline_risk": 0.07142857142857142,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.9073486328125e-06
+      },
+      {
+        "n": 280,
+        "baseline_only_successes": 20,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.07142857142857142,
+        "baseline_risk": 0.07142857142857142,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.9073486328125e-06
+      },
+      {
+        "n": 280,
+        "baseline_only_successes": 20,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.07142857142857142,
+        "baseline_risk": 0.07142857142857142,
+        "comparison_risk": 0.0,
+        "relative_risk": 0.0,
+        "mcnemar_exact_p": 1.9073486328125e-06
+      }
+    ]
+  }
+}

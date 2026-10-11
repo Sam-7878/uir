@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "independent_library_checks": 15,
+  "max_absolute_delta": 3.2751579226442118e-15,
+  "tolerance": 1e-12,
+  "libraries": {
+    "scikit-learn": "1.8.0",
+    "statsmodels": "0.14.6"
+  },
+  "checks": [
+    {
+      "field": "intent_valid",
+      "statistic": "fleiss_kappa",
+      "stored": 0.7928057553956827,
+      "independent": 0.7928057553956827,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "intent_valid",
+      "statistic": "AI-R1_AI-R2_kappa",
+      "stored": 0.6571428571428563,
+      "independent": 0.6571428571428571,
+      "absolute_delta": 8.881784197001252e-16
+    },
+    {
+      "field": "intent_valid",
+      "statistic": "AI-R1_AI-R3_kappa",
+      "stored": 1.0,
+      "independent": 1.0,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "intent_valid",
+      "statistic": "AI-R2_AI-R3_kappa",
+      "stored": 0.6571428571428563,
+      "independent": 0.6571428571428571,
+      "absolute_delta": 8.881784197001252e-16
+    },
+    {
+      "field": "target_valid",
+      "statistic": "fleiss_kappa",
+      "stored": -0.000277854959512857,
+      "independent": -0.000277854959512857,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "target_valid",
+      "statistic": "AI-R1_AI-R2_kappa",
+      "stored": 0.0,
+      "independent": 0.0,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "target_valid",
+      "statistic": "AI-R2_AI-R3_kappa",
+      "stored": 0.0,
+      "independent": 0.0,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "conditions_valid",
+      "statistic": "fleiss_kappa",
+      "stored": 0.19950738916256167,
+      "independent": 0.19950738916256144,
+      "absolute_delta": 2.220446049250313e-16
+    },
+    {
+      "field": "conditions_valid",
+      "statistic": "AI-R1_AI-R2_kappa",
+      "stored": 0.12479187123767228,
+      "independent": 0.12479187123767244,
+      "absolute_delta": 1.5265566588595902e-16
+    },
+    {
+      "field": "conditions_valid",
+      "statistic": "AI-R1_AI-R3_kappa",
+      "stored": 0.6148908857509627,
+      "independent": 0.6148908857509627,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "conditions_valid",
+      "statistic": "AI-R2_AI-R3_kappa",
+      "stored": 0.14690867838910948,
+      "independent": 0.14690867838910948,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "claims_valid",
+      "statistic": "fleiss_kappa",
+      "stored": 0.16933958384735748,
+      "independent": 0.1693395838473542,
+      "absolute_delta": 3.2751579226442118e-15
+    },
+    {
+      "field": "claims_valid",
+      "statistic": "AI-R1_AI-R2_kappa",
+      "stored": 0.0,
+      "independent": 0.0,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "claims_valid",
+      "statistic": "AI-R1_AI-R3_kappa",
+      "stored": 0.0,
+      "independent": 0.0,
+      "absolute_delta": 0.0
+    },
+    {
+      "field": "claims_valid",
+      "statistic": "AI-R2_AI-R3_kappa",
+      "stored": 0.375342465753425,
+      "independent": 0.37534246575342456,
+      "absolute_delta": 4.440892098500626e-16
+    }
+  ]
+}

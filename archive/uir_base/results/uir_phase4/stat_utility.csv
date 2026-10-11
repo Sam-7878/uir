@@ -1,0 +1,9 @@
+comparison,metric,utility_difference_pct,raw_p_value,holm_adjusted_p_value,statistically_significant_alpha_0_01
+C0_DIRECT_SLM vs C8_FINAL_UIR_B6,Useful Answer Rate,30.33,2.7692e-73,2.2153e-72,True
+C1_NAIVE_RAG vs C8_FINAL_UIR_B6,Useful Answer Rate,18.4,1.6256e-33,1.1379e-32,True
+C2_RAG_EXISTENCE_CHECK vs C8_FINAL_UIR_B6,Useful Answer Rate,16.73,9.5075e-29,4.7537e-28,True
+C3_JSON_SCHEMA_CONSTRAINED vs C8_FINAL_UIR_B6,Useful Answer Rate,18.07,1.5282e-32,9.1692e-32,True
+C4_TOOL_CALLING_AGENT vs C8_FINAL_UIR_B6,Useful Answer Rate,7.13,2.4859e-07,2.4859e-07,True
+C5_GUARDRAIL_PIPELINE vs C8_FINAL_UIR_B6,Useful Answer Rate,8.07,7.2894e-09,1.4579e-08,True
+C6_ADVANCED_RAG vs C8_FINAL_UIR_B6,Useful Answer Rate,12.33,1.6864e-17,6.7455e-17,True
+C7_GRAPHRAG vs C8_FINAL_UIR_B6,Useful Answer Rate,10.13,9.8954e-13,2.9686e-12,True

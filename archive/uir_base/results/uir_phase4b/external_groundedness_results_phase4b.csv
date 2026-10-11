@@ -1,0 +1,5 @@
+pipeline,total_cases,adversarial_cases,unsupported_claim_acceptance_rate,false_rejection_rate,overall_decision_accuracy,mean_claim_precision,mean_claim_recall,mean_latency_ms
+C1_NAIVE_RAG,200,100,42.0,0.0,79.0,0.73,0.715,38.76
+C2_RAG_EXISTENCE_CHECK,200,100,40.0,0.0,80.0,0.74,0.725,37.67
+C4_TOOL_CALLING,200,100,12.0,0.0,94.0,0.88,0.865,38.91
+C8_FINAL_UIR_B6,200,100,0.0,0.0,100.0,1.0,1.0,20.69

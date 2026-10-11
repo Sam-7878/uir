@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "protocol": "triple_independent_actual_model_audit",
+  "shared_three_model_cases": 1200,
+  "any_model_cases": 1200,
+  "full_1200x3": true,
+  "provenance_validated": true,
+  "agreement_statistics_valid": true,
+  "reviewers": {
+    "AI-R1": {
+      "engine": "AntiGravity Gemini 3.5 Flash",
+      "model_selector": "gemini-3.5-flash",
+      "rows": 1200
+    },
+    "AI-R2": {
+      "engine": "AntiGravity Gemini 3.6 Flash",
+      "model_selector": "gemini-3.6-flash-high",
+      "rows": 1200
+    },
+    "AI-R3": {
+      "engine": "AntiGravity Gemini 3.1 Pro",
+      "model_selector": "gemini-3.1-pro",
+      "rows": 1200
+    }
+  },
+  "disagreement_records": 829,
+  "disagreement_patterns": {
+    "R1 == R2 != R3": 162,
+    "R1 == R3 != R2": 504,
+    "R2 == R3 != R1": 163
+  },
+  "unresolved": 0,
+  "review_file_sha256": {
+    "AI-R1": "357efb32f012a946d5d1b40dcfe804f3fabdf692361a822192840965af21af90",
+    "AI-R2": "2d1126b47fee45f49ece3f6376c9aeead45725f6c17a67f8ea1f999dae273b6e",
+    "AI-R3": "d1758cfe2f784576c30586166a4fd9d4a81fd1d4fe6387612776d220cd67fcc6"
+  },
+  "script_generated_judgments_admitted": false
+}

@@ -1,0 +1,848 @@
+{
+  "batch_id": "AI-R3-V2C-1025--V2C-1049",
+  "reviewer_id": "AI-R3",
+  "engine": "AntiGravity Gemini 3.1 Pro",
+  "model_selector": "gemini-3.1-pro",
+  "case_ids": [
+    "V2C-1025",
+    "V2C-1026",
+    "V2C-1027",
+    "V2C-1028",
+    "V2C-1029",
+    "V2C-1030",
+    "V2C-1031",
+    "V2C-1032",
+    "V2C-1033",
+    "V2C-1034",
+    "V2C-1035",
+    "V2C-1036",
+    "V2C-1037",
+    "V2C-1038",
+    "V2C-1039",
+    "V2C-1040",
+    "V2C-1041",
+    "V2C-1042",
+    "V2C-1043",
+    "V2C-1044",
+    "V2C-1045",
+    "V2C-1046",
+    "V2C-1047",
+    "V2C-1048",
+    "V2C-1049"
+  ],
+  "timestamp": "2026-08-08T13:11:44.666103+00:00",
+  "duration_seconds": 91.07729995599993,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "3209f18e-d884-44d7-9b2c-57b1c954c0e4",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-1025\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"fact\",\"entity_id\":\"QV1025\",\"period\":null}],\"target\":\"QV1025\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1026\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1026\",\"period\":null}],\"target\":\"QV1026\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1027\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1027\",\"period\":null}],\"target\":\"QV1027\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1028\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"fact\",\"entity_id\":\"QV1028\",\"period\":null}],\"target\":\"QV1028\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1029\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"fact\",\"entity_id\":\"QV1029\",\"period\":null}],\"target\":\"QV1029\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1030\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1030\",\"period\":null}],\"target\":\"QV1030\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1031\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1031\",\"period\":null}],\"target\":\"QV1031\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1032\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"fact\",\"entity_id\":\"QV1032\",\"period\":null}],\"target\":\"QV1032\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1033\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"fact\",\"entity_id\":\"QV1033\",\"period\":null}],\"target\":\"QV1033\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1034\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1034\",\"period\":null}],\"target\":\"QV1034\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1035\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1035\",\"period\":null}],\"target\":\"QV1035\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1036\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"fact\",\"entity_id\":\"QV1036\",\"period\":null}],\"target\":\"QV1036\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1037\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"fact\",\"entity_id\":\"QV1037\",\"period\":null}],\"target\":\"QV1037\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1038\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1038\",\"period\":null}],\"target\":\"QV1038\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1039\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1039\",\"period\":null}],\"target\":\"QV1039\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1040\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"fact\",\"entity_id\":\"QV1040\",\"period\":null}],\"target\":\"QV1040\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1041\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"fact\",\"entity_id\":\"QV1041\",\"period\":null}],\"target\":\"QV1041\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1042\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1042\",\"period\":null}],\"target\":\"QV1042\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1043\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1043\",\"period\":null}],\"target\":\"QV1043\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1044\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"fact\",\"entity_id\":\"QV1044\",\"period\":null}],\"target\":\"QV1044\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1045\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"fact\",\"entity_id\":\"QV1045\",\"period\":null}],\"target\":\"QV1045\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1046\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1046\",\"period\":null}],\"target\":\"QV1046\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1047\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"fact\",\"entity_id\":\"QV1047\",\"period\":null}],\"target\":\"QV1047\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1048\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"fact\",\"entity_id\":\"QV1048\",\"period\":null}],\"target\":\"QV1048\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1049\",\"claims_valid\":\"0\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"NEEDS_CLARIFICATION\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"fact\",\"entity_id\":\"QV1049\",\"period\":null}],\"target\":\"QV1049\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 83.16290174,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-1025",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "fact",
+                "entity_id": "QV1025",
+                "period": null
+              }
+            ],
+            "target": "QV1025"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1026",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "fact",
+                "entity_id": "QV1026",
+                "period": null
+              }
+            ],
+            "target": "QV1026"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1027",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "fact",
+                "entity_id": "QV1027",
+                "period": null
+              }
+            ],
+            "target": "QV1027"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1028",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "fact",
+                "entity_id": "QV1028",
+                "period": null
+              }
+            ],
+            "target": "QV1028"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1029",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "fact",
+                "entity_id": "QV1029",
+                "period": null
+              }
+            ],
+            "target": "QV1029"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1030",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "fact",
+                "entity_id": "QV1030",
+                "period": null
+              }
+            ],
+            "target": "QV1030"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1031",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "fact",
+                "entity_id": "QV1031",
+                "period": null
+              }
+            ],
+            "target": "QV1031"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1032",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "fact",
+                "entity_id": "QV1032",
+                "period": null
+              }
+            ],
+            "target": "QV1032"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1033",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "fact",
+                "entity_id": "QV1033",
+                "period": null
+              }
+            ],
+            "target": "QV1033"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1034",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "fact",
+                "entity_id": "QV1034",
+                "period": null
+              }
+            ],
+            "target": "QV1034"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1035",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "fact",
+                "entity_id": "QV1035",
+                "period": null
+              }
+            ],
+            "target": "QV1035"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1036",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "fact",
+                "entity_id": "QV1036",
+                "period": null
+              }
+            ],
+            "target": "QV1036"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1037",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "fact",
+                "entity_id": "QV1037",
+                "period": null
+              }
+            ],
+            "target": "QV1037"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1038",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "fact",
+                "entity_id": "QV1038",
+                "period": null
+              }
+            ],
+            "target": "QV1038"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1039",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "fact",
+                "entity_id": "QV1039",
+                "period": null
+              }
+            ],
+            "target": "QV1039"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1040",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "fact",
+                "entity_id": "QV1040",
+                "period": null
+              }
+            ],
+            "target": "QV1040"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1041",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "fact",
+                "entity_id": "QV1041",
+                "period": null
+              }
+            ],
+            "target": "QV1041"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1042",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "fact",
+                "entity_id": "QV1042",
+                "period": null
+              }
+            ],
+            "target": "QV1042"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1043",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "fact",
+                "entity_id": "QV1043",
+                "period": null
+              }
+            ],
+            "target": "QV1043"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1044",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "fact",
+                "entity_id": "QV1044",
+                "period": null
+              }
+            ],
+            "target": "QV1044"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1045",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "fact",
+                "entity_id": "QV1045",
+                "period": null
+              }
+            ],
+            "target": "QV1045"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1046",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "fact",
+                "entity_id": "QV1046",
+                "period": null
+              }
+            ],
+            "target": "QV1046"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1047",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "fact",
+                "entity_id": "QV1047",
+                "period": null
+              }
+            ],
+            "target": "QV1047"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1048",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "fact",
+                "entity_id": "QV1048",
+                "period": null
+              }
+            ],
+            "target": "QV1048"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1049",
+          "claims_valid": "0",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source explicitly specifies a metric to verify, requiring a corresponding claim, but expected_claims is empty. Expected_conditions contains 'entity_verified', which is not supported by the source text.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "NEEDS_CLARIFICATION",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "fact",
+                "entity_id": "QV1049",
+                "period": null
+              }
+            ],
+            "target": "QV1049"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 31263,
+      "output_tokens": 10492,
+      "thinking_tokens": 5277,
+      "cache_read_tokens": 8142,
+      "total_tokens": 41755
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "487aff7db776b8ad9ccb8e1f4e9d9a59557939e234f2d7fe238ba4814435ec79"
+}

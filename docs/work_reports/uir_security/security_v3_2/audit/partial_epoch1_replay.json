@@ -1,0 +1,10 @@
+{
+  "scope": "Partial raw-record replay only; NOT final publication validation",
+  "counts": {
+    "primary_0.jsonl": 850,
+    "primary_1.jsonl": 850,
+    "primary_2.jsonl": 221
+  },
+  "passed": true,
+  "failures": []
+}

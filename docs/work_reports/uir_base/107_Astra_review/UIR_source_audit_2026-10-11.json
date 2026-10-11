@@ -1,0 +1,41 @@
+{
+  "tex_sha256": "5ac024d585f57e72f38013c907b96efe8ca647e5cbd65b6438f62499e969b006",
+  "bib_sha256": "1faf8a3d4aacbeebce5607019a10e67abc9818a0b54215b512f6e4029eb7e0c7",
+  "abstract_word_count_whitespace_approx": 299,
+  "bib_entries": 29,
+  "citation_keys_used": 29,
+  "missing_bib_keys": [],
+  "unused_bib_keys": [],
+  "undefined_crossrefs": [],
+  "duplicate_labels": [],
+  "ebnf_mentions": [
+    [
+      140,
+      "\\item We provide a \\textbf{formal specification} comprising an EBNF grammar, typed condition AST, canonical semantic digests, operational policy semantics, and conditional safety invariants under explicit trust assumptions."
+    ]
+  ],
+  "external_includes": [],
+  "backmatter_commands_found": [],
+  "approx_total_words": 16307,
+  "zero_event_wilson_upper_pct": {
+    "50": 7.134759913335871,
+    "200": 1.8845326377266574,
+    "272": 1.3926328685751324,
+    "500": 0.762434046155224,
+    "600": 0.6361701013700709
+  },
+  "halueval_intersection_audit": {
+    "n": 200,
+    "semantic_correct_count": 144,
+    "contract_valid_count": 73,
+    "minimum_intersection_count": 17,
+    "reported_e2e_count": 12
+  },
+  "uir_internal_rounded_counts": {
+    "complete": 224,
+    "covered": 272,
+    "partial": 48,
+    "none": 146
+  },
+  "latency_implied_model_invocations_if_two_paths_only": 271.9924259736868
+}

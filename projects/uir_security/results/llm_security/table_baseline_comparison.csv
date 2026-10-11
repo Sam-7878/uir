@@ -1,0 +1,11 @@
+Threat / Attack Class,Vanilla SLM,Naive RAG,Prompt Guard,UIR-v1,HETE UIR-v2,Primary UIR Defense Layer
+Valid Benign Queries (Utility),100.0%,100.0%,100.0%,50.0%,0.0%,Language Frontend + Fact Grounding
+Nonexistent Entity Hallucination,100.0%,100.0%,100.0%,0.0%,0.0%,Exact Registry Resolver (POL-ENT-001)
+Gaslighting / False Premise,100.0%,100.0%,100.0%,0.0%,0.0%,Verified Fact Binding (POL-ENT-001)
+Direct Prompt Injection,100.0%,100.0%,100.0%,0.0%,0.0%,Typed UIR + Security Context (POL-PRIV-001)
+Jailbreak / Policy Override,100.0%,100.0%,100.0%,0.0%,0.0%,Deterministic Policy Engine (POL-PRIV-001)
+Indirect Prompt Injection (RAG),100.0%,100.0%,100.0%,0.0%,0.0%,Context Firewall + Instruction Quarantine
+Poisoned Knowledge Retrieval,100.0%,100.0%,100.0%,100.0%,0.0%,SHA-256 Provenance & Signature Check
+Sensitive Data Exfiltration,100.0%,100.0%,100.0%,0.0%,0.0%,Data Classification & Egress DLP Guard
+Excessive Agency / Tool Escalation,100.0%,100.0%,100.0%,0.0%,0.0%,Capability Gate + Least Privilege
+Resource Exhaustion (Unbounded),100.0%,100.0%,100.0%,0.0%,0.0%,Deterministic Resource Budget Guard

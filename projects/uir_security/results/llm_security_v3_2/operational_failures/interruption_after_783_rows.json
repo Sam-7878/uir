@@ -1,0 +1,10 @@
+{
+  "group": "primary_0",
+  "case_id": "c_5a9525f498fc2fc5",
+  "error": "Non-live or incomplete backend response; no publication row admitted",
+  "completed_rows": 783,
+  "diagnostic_result": "Same frozen request returned a completed live response; original incomplete response body was not retained by interrupted runner",
+  "retry_policy": "Resume only the next missing case; preserve all 783 admitted rows; no model/policy/data changes",
+  "diagnostic_artifact": "backend_failure_diagnostic.json",
+  "resumption_utc": "2026-09-08T12:38:54.470721+00:00"
+}

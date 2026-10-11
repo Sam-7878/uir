@@ -1,0 +1,26 @@
+{
+  "diagnostic_title": "Representation-Level Consistency Diagnostic",
+  "scientific_integrity_note": "Evaluates semantic parsing consistency across representation layers (surface text, raw AST, typed DSL); not claimed as empirical inter-model human agreement.",
+  "timestamp_utc": "2026-09-04T11:02:21.435061+00:00",
+  "total_cases": 300,
+  "evaluators": {
+    "R1": {
+      "name": "Surface_Text_Heuristic_Evaluator",
+      "layer": "surface_text",
+      "records_path": "condition_audit_raw_R1.jsonl",
+      "agreement_rate_pct": 52.33
+    },
+    "R2": {
+      "name": "Raw_AST_Precedence_Evaluator",
+      "layer": "raw_ast",
+      "records_path": "condition_audit_raw_R2.jsonl",
+      "agreement_rate_pct": 86.67
+    },
+    "R3": {
+      "name": "UIR_Typed_AST_Canonical_Evaluator",
+      "layer": "parenthesized_dsl",
+      "records_path": "condition_audit_raw_R3.jsonl",
+      "agreement_rate_pct": 98.33
+    }
+  }
+}

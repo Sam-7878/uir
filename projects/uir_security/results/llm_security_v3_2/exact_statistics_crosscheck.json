@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "reference": "scipy.stats.binomtest plus independently coded Holm ordering",
+  "family_alpha": 0.05,
+  "pairs": [
+    {
+      "system": "Vanilla SLM",
+      "b_discordant": 99,
+      "c_discordant": 0,
+      "p_value": 3.1554436208840472e-30,
+      "holm_p": 9.466330862652142e-30
+    },
+    {
+      "system": "Naive RAG",
+      "b_discordant": 162,
+      "c_discordant": 0,
+      "p_value": 3.4211388289180104e-49,
+      "holm_p": 1.7105694144590052e-48
+    },
+    {
+      "system": "Spotlighting",
+      "b_discordant": 141,
+      "c_discordant": 0,
+      "p_value": 7.174648137343064e-43,
+      "holm_p": 2.8698592549372254e-42
+    },
+    {
+      "system": "Progent-inspired",
+      "b_discordant": 47,
+      "c_discordant": 0,
+      "p_value": 1.4210854715202004e-14,
+      "holm_p": 1.4210854715202004e-14
+    },
+    {
+      "system": "CaMeL-inspired",
+      "b_discordant": 72,
+      "c_discordant": 0,
+      "p_value": 4.235164736271502e-22,
+      "holm_p": 8.470329472543003e-22
+    }
+  ]
+}

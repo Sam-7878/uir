@@ -1,0 +1,673 @@
+{
+  "batch_id": "AI-R2-V2C-1050--V2C-1074",
+  "reviewer_id": "AI-R2",
+  "engine": "AntiGravity Gemini 3.6 Flash",
+  "model_selector": "gemini-3.6-flash-high",
+  "case_ids": [
+    "V2C-1050",
+    "V2C-1051",
+    "V2C-1052",
+    "V2C-1053",
+    "V2C-1054",
+    "V2C-1055",
+    "V2C-1056",
+    "V2C-1057",
+    "V2C-1058",
+    "V2C-1059",
+    "V2C-1060",
+    "V2C-1061",
+    "V2C-1062",
+    "V2C-1063",
+    "V2C-1064",
+    "V2C-1065",
+    "V2C-1066",
+    "V2C-1067",
+    "V2C-1068",
+    "V2C-1069",
+    "V2C-1070",
+    "V2C-1071",
+    "V2C-1072",
+    "V2C-1073",
+    "V2C-1074"
+  ],
+  "timestamp": "2026-08-08T11:58:39.861143+00:00",
+  "duration_seconds": 18.086777772000005,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "0c5445e0-5a9b-4fea-be93-67a46fe3f56f",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-1050\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1050\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1051\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1051\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1052\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1052\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1053\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1053\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1054\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1054\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1055\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1055\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1056\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1056\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1057\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1057\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1058\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1058\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1059\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1059\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1060\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1060\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1061\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1061\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1062\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1062\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1063\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1063\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1064\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1064\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1065\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1065\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1066\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1066\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1067\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1067\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1068\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1068\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1069\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1069\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1070\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1070\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1071\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1071\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1072\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1072\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1073\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1073\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1074\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1074\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 12.351529819,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-1050",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1050"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1051",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1051"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1052",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1052"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1053",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1053"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1054",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1054"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1055",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1055"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1056",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1056"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1057",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1057"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1058",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1058"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1059",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1059"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1060",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1060"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1061",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1061"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1062",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1062"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1063",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1063"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1064",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1064"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1065",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1065"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1066",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1066"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1067",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1067"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1068",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1068"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1069",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1069"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1070",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1070"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1071",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1071"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1072",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1072"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1073",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1073"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1074",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source requests data disclosure despite policy rejection. Reconstructed intent is DISCLOSE (candidate has VERIFY) and conditions are empty (candidate has entity_verified). Policy decision and outcome REJECT match candidate.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1074"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 31810,
+      "output_tokens": 10174,
+      "thinking_tokens": 5783,
+      "cache_read_tokens": 8161,
+      "total_tokens": 41984
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "29e8a84cc0035e6b71ef1331f6e9fe3ddc920f218af1cffa154c771b49e3cc45"
+}

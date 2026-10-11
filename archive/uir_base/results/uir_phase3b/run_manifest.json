@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "publication_ready": true,
+  "worktree_dirty": false,
+  "commit": "9b4b46e37d0f8d3e3dd3f005579656e3b93a0950",
+  "parser_hash": "bee778f3e3767fdcd64d0926f27c680143d217ea1d6febcabd08aac96de321d7",
+  "dataset_hash": "9bb8a5d423b53bae14b2c699cba6b1338f0115345f94c6b4a9f93af2400d4a3c",
+  "real_fact_subset_hash": "b66fb6fc48033b4194b57513e1b4162216516ce74cdc874953579960102b989e",
+  "sec_snapshot_hash": "0259422adbe060dda15cd151d018cf19c43d358e3e36cf444034eb71c31e4046",
+  "model": "phi3.5:latest",
+  "model_config_sha256": "c5f3447b5ad87e5fd99cfd79d7a7c8f42861810881f157380de9f6cdb20d009b",
+  "model_description_sha256": "876221f101d5fc926df3326d19ca31c36e6db09218bf17c8bb74845db489c94c",
+  "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "ram_bytes": 20971339776,
+  "gpu": "unavailable",
+  "rust": "rustc 1.96.0 (ac68faa20 2026-05-25)",
+  "python": "3.12.13 (main, May 24 2026, 05:37:06) [GCC 13.3.0]",
+  "ollama": "ollama version is 0.30.6",
+  "started_from_clean_commit": true,
+  "completed_at": "2026-08-07T12:29:26.766737+00:00",
+  "pipelines": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "review_type": "ai_assisted_manual_evidence_review",
+  "sample_count": 200,
+  "reviewed_count": 200,
+  "agreement_count": 200,
+  "agreement_rate": 1.0,
+  "incomplete_count": 0,
+  "balanced_20_per_class": true,
+  "disagreements": [],
+  "by_class": {
+    "direct_prompt_injection": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "excessive_agency_tool_escalation": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "gaslighting_false_premise": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "indirect_prompt_injection": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "jailbreak_policy_override": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "nonexistent_entity": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "poisoned_retrieval_evidence": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "resource_exhaustion": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "sensitive_data_exfiltration": {
+      "reviewed": 20,
+      "agreed": 20
+    },
+    "valid_benign": {
+      "reviewed": 20,
+      "agreed": 20
+    }
+  }
+}

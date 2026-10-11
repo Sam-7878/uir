@@ -1,0 +1,16 @@
+(* Reference revision CNL v1. Not an EBNF for unrestricted natural language.
+   Normative full-match parser: scripts/contract_frontend.py.
+   The legacy Rust lexicon frontend accepts additional surface forms; it is
+   a distinct frontend and must not be evaluated as this exact grammar. *)
+request = en_request | ko_request ;
+en_request = "verify ", entity, " ", en_metric, " ", year ;
+ko_request = entity, "의 ", year, "년 ", ko_metric, " 검증" ;
+en_metric = "revenue" | "net_income" | "operating_income" ;
+ko_metric = "매출" | "순이익" | "영업이익" ;
+entity = upper, {upper | digit | "." | "_" | "-"} ; (* length 1..16 *)
+year = ("19" | "20"), digit, digit ;
+upper = "A" ... "Z" ;
+digit = "0" ... "9" ;
+(* Leading/trailing whitespace stripped, Unicode NFC before parsing.
+   No internal whitespace folding, case folding, negation or conditions
+   silently accepted. Inputs outside this grammar need clarification. *)

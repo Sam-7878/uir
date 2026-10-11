@@ -1,0 +1,9 @@
+field,n,three_way_raw_agreement,fleiss_kappa,fleiss_reason,AI-R1_AI-R2_raw,AI-R1_AI-R2_kappa,AI-R1_AI-R2_reason,AI-R1_AI-R3_raw,AI-R1_AI-R3_kappa,AI-R1_AI-R3_reason,AI-R2_AI-R3_raw,AI-R2_AI-R3_kappa,AI-R2_AI-R3_reason
+source_text_valid,1200,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance
+language_valid,1200,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance
+intent_valid,1200,0.9791666666666666,0.7928057553956827,computed,0.9791666666666666,0.6571428571428563,computed,1.0,1.0,computed,0.9791666666666666,0.6571428571428563,computed
+target_valid,1200,0.9991666666666666,-0.000277854959512857,computed,0.9991666666666666,0.0,computed,1.0,NA,zero_marginal_variance,0.9991666666666666,0.0,computed
+conditions_valid,1200,0.415,0.19950738916256167,computed,0.4875,0.12479187123767228,computed,0.8125,0.6148908857509627,computed,0.53,0.14690867838910948,computed
+policy_valid,1200,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance
+outcome_valid,1200,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance,1.0,NA,zero_marginal_variance
+claims_valid,1200,0.9158333333333334,0.16933958384735748,computed,0.9783333333333334,0.0,computed,0.9166666666666666,0.0,computed,0.9366666666666666,0.375342465753425,computed

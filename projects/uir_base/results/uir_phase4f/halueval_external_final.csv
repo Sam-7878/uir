@@ -1,0 +1,5 @@
+dataset,model,pipeline,test_cases,raw_semantic_accuracy,contract_validity_rate,accepted_e2e_accuracy,raw_unsupported_generation_rate,accepted_unsupported_claim_rate,safe_rejection_rate,p50_latency_ms,p95_latency_ms
+HaluEval,microsoft/Phi-3.5-mini-instruct,C1_NAIVE_RAG,200,0.8,1.0,0.8,0.2,0.2,0.0,11347.0,14000.0
+HaluEval,microsoft/Phi-3.5-mini-instruct,C8_FINAL_UIR_B6,200,0.72,0.365,0.06,0.0,0.0,0.635,16399.0,20000.0
+HaluEval,Qwen/Qwen2.5-7B-Instruct,C1_NAIVE_RAG,200,0.615,1.0,0.615,0.0,0.0,0.0,3382.7,4617.1
+HaluEval,Qwen/Qwen2.5-7B-Instruct,C8_FINAL_UIR_B6,200,0.5,0.0,0.0,0.0,0.0,1.0,9897.0,11577.5

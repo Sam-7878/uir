@@ -1,5 +1,8 @@
 from pathlib import Path
 
+import pytest
+import requests
+from evaluation.llm_security.attacks import generator_v2
 from evaluation.llm_security.attacks.generator_v2 import generate_v2_datasets
 from evaluation.llm_security.baselines import NaiveRagBaseline, PromptGuardBaseline, UirV1Baseline, UirV2SecurityPipeline, VanillaSlmBaseline
 from evaluation.llm_security.batch_execution import BatchCoordinator
@@ -10,9 +13,21 @@ from llm_trust.inference.base import GenerationResult
 from llm_trust.inference.ollama_client import OllamaClient
 
 
-DEV_DATASET = Path("evaluation/uir_security/llm_security/datasets/security_benchmark_v2_development.jsonl")
-if not DEV_DATASET.exists():
-    DEV_DATASET = Path("evaluation/llm_security/datasets/security_benchmark_v2_development.jsonl")
+DEV_DATASET = Path(generator_v2.DATASETS) / "security_benchmark_v2_development.jsonl"
+
+
+@pytest.fixture(autouse=True)
+def isolated_datasets(tmp_path, monkeypatch):
+    # Regression fixtures must never overwrite frozen publication datasets.
+    dataset_dir = tmp_path / "datasets"
+    monkeypatch.setattr(generator_v2, "DATASETS", dataset_dir)
+    monkeypatch.setitem(globals(), "DEV_DATASET", dataset_dir / DEV_DATASET.name)
+    generate_v2_datasets()
+    # These are fallback/behavioral regression tests, not a live model campaign.
+    # Keep them deterministic and independent of any running Ollama instance.
+    def offline_post(*args, **kwargs):
+        raise requests.ConnectionError("Offline regression-test backend")
+    monkeypatch.setattr(requests.Session, "post", offline_post)
 
 
 def test_behavioral_oracle_owns_security_outcomes():

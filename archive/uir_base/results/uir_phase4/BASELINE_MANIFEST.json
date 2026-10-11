@@ -1,0 +1,21 @@
+{
+  "manifest_version": "4.0.0",
+  "timestamp_utc": "2026-09-04T10:15:17.656025+00:00",
+  "evaluated_pipelines": {
+    "C0_DIRECT_SLM": "Direct unconstrained SLM generation",
+    "C1_NAIVE_RAG": "Standard dense/BM25 retrieval without verification",
+    "C2_RAG_EXISTENCE_CHECK": "RAG with authoritative entity existence pre-check (Critical reviewer baseline)",
+    "C3_JSON_SCHEMA_CONSTRAINED": "Structured JSON-schema constrained decoding",
+    "C4_TOOL_CALLING_AGENT": "Agent invoking authoritative retrieval tools",
+    "C5_GUARDRAIL_PIPELINE": "NeMo-style input/output safety rails",
+    "C6_ADVANCED_RAG": "Corrective / Self-RAG relevance filtering",
+    "C7_GRAPHRAG": "Relational calculation linkbase graph retrieval",
+    "C8_FINAL_UIR_B6": "Full UIR compiler, L0-L3 policy engine, verified fact binding & renderer"
+  },
+  "total_benchmark_cases": 1500,
+  "datasets": {
+    "frozen_v2": "/mnt/d/_Work/goat_bank/uir/results/uir_phase3b/frozen_test_v2.jsonl",
+    "real_fact": "/mnt/d/_Work/goat_bank/uir/results/uir_phase3b/real_fact_subset.jsonl",
+    "frozen_v1_invalid": "/mnt/d/_Work/goat_bank/uir/evaluation/uir_external/frozen_test_v1.jsonl"
+  }
+}

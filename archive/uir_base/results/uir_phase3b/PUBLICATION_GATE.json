@@ -1,0 +1,16 @@
+{
+  "publication_ready": true,
+  "checks": {
+    "human_review_completed": true,
+    "adjudication_completed": true,
+    "frozen_v2": true,
+    "dataset_sha256_set": true,
+    "parser_sha256_fixed": true,
+    "clean_commit": true,
+    "final_slm_campaign_complete": true,
+    "real_world_fact_subset_complete": true,
+    "all_primary_metrics_complete": true,
+    "statistics_complete": true
+  },
+  "blocking_checks": []
+}

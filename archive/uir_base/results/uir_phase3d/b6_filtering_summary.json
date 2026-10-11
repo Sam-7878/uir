@@ -1,0 +1,11 @@
+{
+  "n": 1400,
+  "states": {
+    "FULL_VERIFIED_ANSWER": 1050,
+    "NO_VERIFIED_ANSWER": 150,
+    "PARTIAL_VERIFIED_ANSWER": 200
+  },
+  "partial_verified_answer_rate": 0.14285714285714285,
+  "unsupported_claim_acceptance_rate": 0.0,
+  "supported_subset_preserved": true
+}

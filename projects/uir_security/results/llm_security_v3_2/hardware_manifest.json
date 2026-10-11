@@ -1,0 +1,15 @@
+{
+  "os_release": "PRETTY_NAME=\"Ubuntu 26.04.1 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"26.04\"\nVERSION=\"26.04.1 LTS (Resolute Raccoon)\"\nVERSION_CODENAME=resolute\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=resolute\nLOGO=ubuntu-logo\n",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "python_executable": "/mnt/d/_Work/goat_bank/.venv/bin/python",
+  "python_version": "3.12.13",
+  "cpu_model": "13th Gen Intel(R) Core(TM) i9-13900HX",
+  "cpu_topology": "1 socket, 16 cores, 2 threads per core",
+  "memtotal": "MemTotal:       22539968 kB",
+  "gpu_observation": {
+    "status": "unavailable",
+    "command": "nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader",
+    "result": "Failed to initialize NVML: GPU access blocked by the operating system",
+    "claim_scope": "No GPU model, VRAM, driver, or accelerator-utilization claim is made from this run"
+  }
+}

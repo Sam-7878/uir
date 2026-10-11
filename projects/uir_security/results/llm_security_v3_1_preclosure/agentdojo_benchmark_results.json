@@ -1,0 +1,29 @@
+{
+  "total_cases": 5,
+  "baselines": {
+    "Vanilla SLM": {
+      "e2e_asr": 0.0,
+      "utility": 100.0
+    },
+    "Naive RAG": {
+      "e2e_asr": 0.0,
+      "utility": 100.0
+    },
+    "Spotlighting": {
+      "e2e_asr": 0.0,
+      "utility": 100.0
+    },
+    "Progent": {
+      "e2e_asr": 0.0,
+      "utility": 100.0
+    },
+    "CaMeL": {
+      "e2e_asr": 0.0,
+      "utility": 100.0
+    },
+    "HETE UIR-v3.1 Security": {
+      "e2e_asr": 0.0,
+      "utility": 100.0
+    }
+  }
+}

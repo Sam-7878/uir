@@ -1,0 +1,7 @@
+{
+  "configured_max_new_tokens": 384,
+  "p99_valid_structured_output_tokens": 87.0,
+  "required_minimum_tokens": 109,
+  "rule": "configured >= 1.25 * p99",
+  "pass": true
+}

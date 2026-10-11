@@ -1,0 +1,47 @@
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/finalize_closure.py", line 192, in <module>
+    time.sleep(15)
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/finalize_closure.py", line 208, in <module>
+    time.sleep(15)
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/finalize_closure.py", line 218, in <module>
+    if (OUT/'EXECUTION_FAILURE.json').exists():
+    ^^^^^^^^^^^^^^
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/finalize_closure.py", line 227, in <module>
+    time.sleep(15)
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/finalize_closure.py", line 227, in <module>
+    break
+^^^^^^^^^^
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/finalize_closure.py", line 228, in <module>
+    time.sleep(15)
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/finalize_closure.py", line 228, in <module>
+    if result['publication_evidence_valid']:
+            ^^^^^^^^^^^^^^
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(

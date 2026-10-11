@@ -1,0 +1,673 @@
+{
+  "batch_id": "AI-R1-V2C-1100--V2C-1124",
+  "reviewer_id": "AI-R1",
+  "engine": "AntiGravity Gemini 3.5 Flash",
+  "model_selector": "gemini-3.5-flash",
+  "case_ids": [
+    "V2C-1100",
+    "V2C-1101",
+    "V2C-1102",
+    "V2C-1103",
+    "V2C-1104",
+    "V2C-1105",
+    "V2C-1106",
+    "V2C-1107",
+    "V2C-1108",
+    "V2C-1109",
+    "V2C-1110",
+    "V2C-1111",
+    "V2C-1112",
+    "V2C-1113",
+    "V2C-1114",
+    "V2C-1115",
+    "V2C-1116",
+    "V2C-1117",
+    "V2C-1118",
+    "V2C-1119",
+    "V2C-1120",
+    "V2C-1121",
+    "V2C-1122",
+    "V2C-1123",
+    "V2C-1124"
+  ],
+  "timestamp": "2026-08-08T07:14:49.058324+00:00",
+  "duration_seconds": 33.39997360699999,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "5c5969a7-e4de-4856-94ef-36e7899c9950",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-1100\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1100\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1101\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1101\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1102\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1102\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1103\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1103\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1104\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1104\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1105\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1105\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1106\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1106\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1107\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1107\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1108\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1108\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1109\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1109\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1110\",\"claims_valid\":\"1,conditions_valid:\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1110\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1111\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1111\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1112\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1112\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1113\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1113\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1114\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1114\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1115\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1115\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1116\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1116\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1117\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1117\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1118\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1118\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1119\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1119\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1120\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1120\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1121\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1121\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1122\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1122\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1123\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1123\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1124\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1124\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n{\"judgments\":[{\"case_id\":\"V2C-1100\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1100\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1101\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1101\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1102\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1102\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1103\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1103\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1104\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1104\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1105\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1105\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1106\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1106\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1107\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1107\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1108\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1108\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1109\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1109\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1110\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1110\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1111\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1111\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1112\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1112\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1113\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1113\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1114\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1114\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1115\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT,required_claims:[],target:\",\"required_claims\":[],\"target\":\"QV1115\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1116\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1116\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1117\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1117\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1118\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1118\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1119\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1119\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1120\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1120\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1121\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1121\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1122\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1122\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1123\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1123\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1124\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"VERIFY\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1124\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 26.918078305,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-1100",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1100"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1101",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1101"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1102",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1102"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1103",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1103"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1104",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1104"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1105",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1105"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1106",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1106"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1107",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1107"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1108",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1108"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1109",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1109"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1110",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1110"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1111",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1111"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1112",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1112"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1113",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1113"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1114",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1114"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1115",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT,required_claims:[],target:",
+            "required_claims": [],
+            "target": "QV1115"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1116",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1116"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1117",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1117"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1118",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1118"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1119",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1119"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1120",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1120"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1121",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1121"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1122",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1122"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1123",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1123"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1124",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "The request contains prompt injection and is rejected unconditionally. The candidate annotation incorrectly includes entity verification conditions for a reject decision.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "VERIFY",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1124"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 71141,
+      "output_tokens": 15048,
+      "thinking_tokens": 7106,
+      "cache_read_tokens": 0,
+      "total_tokens": 86189
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "220c54184aaf742d50c4ba684d8231e61714b3e53737b1403e1bc182edde068b"
+}

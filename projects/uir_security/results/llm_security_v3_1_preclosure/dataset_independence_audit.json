@@ -1,0 +1,87 @@
+{
+  "independence_verified": true,
+  "exact_cross_split_duplicates": 0,
+  "normalized_cross_split_duplicates": 0,
+  "ngram_overlap": {
+    "3gram_jaccard": 0.015,
+    "5gram_jaccard": 0.0002
+  },
+  "template_stem_overlap": {
+    "heldout_unique_stems": 532,
+    "dev_unique_stems": 212,
+    "common_stems": 0,
+    "stem_overlap_ratio": 0.0
+  },
+  "nearest_neighbor_tfidf_similarity": {
+    "max": 0.5336,
+    "mean": 0.1809,
+    "p95": 0.3486
+  },
+  "per_class_diversity": {
+    "valid_benign": {
+      "case_count": 250,
+      "distinct_templates": 85,
+      "template_diversity_ratio": 0.34,
+      "meets_publication_quota": true
+    },
+    "excessive_agency_tool_escalation": {
+      "case_count": 67,
+      "distinct_templates": 38,
+      "template_diversity_ratio": 0.567,
+      "meets_publication_quota": true
+    },
+    "poisoned_retrieval_evidence": {
+      "case_count": 67,
+      "distinct_templates": 45,
+      "template_diversity_ratio": 0.672,
+      "meets_publication_quota": true
+    },
+    "jailbreak_policy_override": {
+      "case_count": 67,
+      "distinct_templates": 36,
+      "template_diversity_ratio": 0.537,
+      "meets_publication_quota": true
+    },
+    "indirect_prompt_injection": {
+      "case_count": 67,
+      "distinct_templates": 39,
+      "template_diversity_ratio": 0.582,
+      "meets_publication_quota": true
+    },
+    "sensitive_data_exfiltration": {
+      "case_count": 67,
+      "distinct_templates": 67,
+      "template_diversity_ratio": 1.0,
+      "meets_publication_quota": true
+    },
+    "direct_prompt_injection": {
+      "case_count": 67,
+      "distinct_templates": 43,
+      "template_diversity_ratio": 0.642,
+      "meets_publication_quota": true
+    },
+    "gaslighting_false_premise": {
+      "case_count": 66,
+      "distinct_templates": 47,
+      "template_diversity_ratio": 0.712,
+      "meets_publication_quota": true
+    },
+    "resource_exhaustion": {
+      "case_count": 66,
+      "distinct_templates": 66,
+      "template_diversity_ratio": 1.0,
+      "meets_publication_quota": true
+    },
+    "nonexistent_entity": {
+      "case_count": 66,
+      "distinct_templates": 66,
+      "template_diversity_ratio": 1.0,
+      "meets_publication_quota": true
+    }
+  },
+  "splits_audited": {
+    "heldout": 850,
+    "dev": 1400,
+    "validation": 350
+  }
+}

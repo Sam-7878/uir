@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "failures": [],
+  "method": "Independently reconstruct stored per-class, threat, adaptive, funnel and path-latency summaries from raw records"
+}

@@ -1,0 +1,11 @@
+{
+  "dev_total_cases": 1400,
+  "heldout_total_cases": 850,
+  "exact_cross_split_duplicates": 0,
+  "exact_duplicate_rate": 0.0,
+  "normalized_cross_split_duplicates": 0,
+  "normalized_duplicate_rate": 0.0,
+  "ngram_3_jaccard_overlap": 0.009018567639257295,
+  "ngram_5_jaccard_overlap": 0.0,
+  "independence_verified": true
+}

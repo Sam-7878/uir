@@ -1,0 +1,7 @@
+comparison,metric,test_name,n,effect_size,ci95_low,ci95_high,raw_p,holm_p
+B0_DIRECT_SLM_vs_B6,pipeline_total_us,paired_bootstrap,1200,551447.79,498432.935,602407.04,NA,NA
+B1_SLM_WITH_PROMPT_GUARD_vs_B6,pipeline_total_us,paired_bootstrap,1200,1181713.2558333334,1132151.3875,1229115.8633333333,NA,NA
+B2_NAIVE_RAG_SLM_vs_B6,pipeline_total_us,paired_bootstrap,1200,-227288.635,-276559.6975,-180149.08583333335,NA,NA
+B3_RAG_WITH_ENTITY_VALIDATION_vs_B6,pipeline_total_us,paired_bootstrap,1200,-38661.0875,-71256.5325,-6943.1866666666665,NA,NA
+B4_UIR_POLICY_SLM_vs_B6,pipeline_total_us,paired_bootstrap,1200,7.910833333333334,7.6725,8.144166666666667,NA,NA
+B5_FULL_UIR_OUTPUT_VALIDATION_vs_B6,pipeline_total_us,paired_bootstrap,1200,-1.8266666666666667,-2.0766666666666667,-1.5775,NA,NA

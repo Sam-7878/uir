@@ -1,0 +1,1058 @@
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+primary_0: 25/850
+primary_0: 50/850
+primary_0: 75/850
+primary_0: 100/850
+primary_0: 125/850
+primary_0: 150/850
+primary_0: 175/850
+primary_0: 200/850
+primary_0: 225/850
+primary_0: 250/850
+primary_0: 275/850
+primary_0: 300/850
+primary_0: 325/850
+primary_0: 350/850
+primary_0: 375/850
+primary_0: 400/850
+primary_0: 425/850
+primary_0: 450/850
+primary_0: 475/850
+primary_0: 500/850
+primary_0: 525/850
+primary_0: 550/850
+primary_0: 575/850
+primary_0: 600/850
+primary_0: 625/850
+primary_0: 650/850
+primary_0: 675/850
+primary_0: 700/850
+primary_0: 725/850
+primary_0: 750/850
+primary_0: 775/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 254, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 245, in main
+    for i,system in enumerate(SYSTEMS):campaign.run_group(f'primary_{i}',pairs,system)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+primary_0: 800/850
+primary_0: 825/850
+primary_0: 850/850
+primary_1: 25/850
+primary_1: 50/850
+primary_1: 75/850
+primary_1: 100/850
+primary_1: 125/850
+primary_1: 150/850
+primary_1: 175/850
+primary_1: 200/850
+primary_1: 225/850
+primary_1: 250/850
+primary_1: 275/850
+primary_1: 300/850
+primary_1: 325/850
+primary_1: 350/850
+primary_1: 375/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 254, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 245, in main
+    for i,system in enumerate(SYSTEMS):campaign.run_group(f'primary_{i}',pairs,system)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 88, in execute
+    execution=adapter.execute(rc,temperature=temperature,top_p=top_p,seed=seed) if system=='HETE' else adapter.run_case(rc)
+                                                                                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/baselines/naive_rag_adapter.py", line 32, in run_case
+    gen = self.backend.generate(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/harness/execution_evidence.py", line 43, in generate
+    result = self.backend.generate(prompt=prompt, system_prompt=system_prompt,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/llm_trust/inference/ollama_client.py", line 60, in generate
+    resp = self.session.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1450, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+primary_1: 400/850
+primary_1: 425/850
+primary_1: 450/850
+primary_1: 475/850
+primary_1: 500/850
+primary_1: 525/850
+primary_1: 550/850
+primary_1: 575/850
+primary_1: 600/850
+primary_1: 625/850
+primary_1: 650/850
+primary_1: 675/850
+primary_1: 700/850
+primary_1: 725/850
+primary_1: 750/850
+primary_1: 775/850
+primary_1: 800/850
+primary_1: 825/850
+primary_1: 850/850
+primary_2: 25/850
+primary_2: 50/850
+primary_2: 75/850
+primary_2: 100/850
+primary_2: 125/850
+primary_2: 150/850
+primary_2: 175/850
+primary_2: 200/850
+primary_2: 225/850
+primary_2: 250/850
+primary_2: 275/850
+primary_2: 300/850
+primary_2: 325/850
+primary_2: 350/850
+primary_2: 375/850
+primary_2: 400/850
+primary_2: 425/850
+primary_2: 450/850
+primary_2: 475/850
+primary_2: 500/850
+primary_2: 525/850
+primary_2: 550/850
+primary_2: 575/850
+primary_2: 600/850
+primary_2: 625/850
+primary_2: 650/850
+primary_2: 675/850
+primary_2: 700/850
+primary_2: 725/850
+primary_2: 750/850
+primary_2: 775/850
+primary_2: 800/850
+primary_2: 825/850
+primary_2: 850/850
+primary_3: 25/850
+primary_3: 50/850
+primary_3: 75/850
+primary_3: 100/850
+primary_3: 125/850
+primary_3: 150/850
+primary_3: 175/850
+primary_3: 200/850
+primary_3: 225/850
+primary_3: 250/850
+primary_3: 275/850
+primary_3: 300/850
+primary_3: 325/850
+primary_3: 350/850
+primary_3: 375/850
+primary_3: 400/850
+primary_3: 425/850
+primary_3: 450/850
+primary_3: 475/850
+primary_3: 500/850
+primary_3: 525/850
+primary_3: 550/850
+primary_3: 575/850
+primary_3: 600/850
+primary_3: 625/850
+primary_3: 650/850
+primary_3: 675/850
+primary_3: 700/850
+primary_3: 725/850
+primary_3: 750/850
+primary_3: 775/850
+primary_3: 800/850
+primary_3: 825/850
+primary_3: 850/850
+primary_4: 25/850
+primary_4: 50/850
+primary_4: 75/850
+primary_4: 100/850
+primary_4: 125/850
+primary_4: 150/850
+primary_4: 175/850
+primary_4: 200/850
+primary_4: 225/850
+primary_4: 250/850
+primary_4: 275/850
+primary_4: 300/850
+primary_4: 325/850
+primary_4: 350/850
+primary_4: 375/850
+primary_4: 400/850
+primary_4: 425/850
+primary_4: 450/850
+primary_4: 475/850
+primary_4: 500/850
+primary_4: 525/850
+primary_4: 550/850
+primary_4: 575/850
+primary_4: 600/850
+primary_4: 625/850
+primary_4: 650/850
+primary_4: 675/850
+primary_4: 700/850
+primary_4: 725/850
+primary_4: 750/850
+primary_4: 775/850
+primary_4: 800/850
+primary_4: 825/850
+primary_4: 850/850
+primary_5: 25/850
+primary_5: 50/850
+primary_5: 75/850
+primary_5: 100/850
+primary_5: 125/850
+primary_5: 150/850
+primary_5: 175/850
+primary_5: 200/850
+primary_5: 225/850
+primary_5: 250/850
+primary_5: 275/850
+primary_5: 300/850
+primary_5: 325/850
+primary_5: 350/850
+primary_5: 375/850
+primary_5: 400/850
+primary_5: 425/850
+primary_5: 450/850
+primary_5: 475/850
+primary_5: 500/850
+primary_5: 525/850
+primary_5: 550/850
+primary_5: 575/850
+primary_5: 600/850
+primary_5: 625/850
+primary_5: 650/850
+primary_5: 675/850
+primary_5: 700/850
+primary_5: 725/850
+primary_5: 750/850
+primary_5: 775/850
+primary_5: 800/850
+primary_5: 825/850
+primary_5: 850/850
+ablation_full_defense: 25/850
+ablation_full_defense: 50/850
+ablation_full_defense: 75/850
+ablation_full_defense: 100/850
+ablation_full_defense: 125/850
+ablation_full_defense: 150/850
+ablation_full_defense: 175/850
+ablation_full_defense: 200/850
+ablation_full_defense: 225/850
+ablation_full_defense: 250/850
+ablation_full_defense: 275/850
+ablation_full_defense: 300/850
+ablation_full_defense: 325/850
+ablation_full_defense: 350/850
+ablation_full_defense: 375/850
+ablation_full_defense: 400/850
+ablation_full_defense: 425/850
+ablation_full_defense: 450/850
+ablation_full_defense: 475/850
+ablation_full_defense: 500/850
+ablation_full_defense: 525/850
+ablation_full_defense: 550/850
+ablation_full_defense: 575/850
+ablation_full_defense: 600/850
+ablation_full_defense: 625/850
+ablation_full_defense: 650/850
+ablation_full_defense: 675/850
+ablation_full_defense: 700/850
+ablation_full_defense: 725/850
+ablation_full_defense: 750/850
+ablation_full_defense: 775/850
+ablation_full_defense: 800/850
+ablation_full_defense: 825/850
+ablation_full_defense: 850/850
+ablation_no_input_guard: 25/850
+ablation_no_input_guard: 50/850
+ablation_no_input_guard: 75/850
+ablation_no_input_guard: 100/850
+ablation_no_input_guard: 125/850
+ablation_no_input_guard: 150/850
+ablation_no_input_guard: 175/850
+ablation_no_input_guard: 200/850
+ablation_no_input_guard: 225/850
+ablation_no_input_guard: 250/850
+ablation_no_input_guard: 275/850
+ablation_no_input_guard: 300/850
+ablation_no_input_guard: 325/850
+ablation_no_input_guard: 350/850
+ablation_no_input_guard: 375/850
+ablation_no_input_guard: 400/850
+ablation_no_input_guard: 425/850
+ablation_no_input_guard: 450/850
+ablation_no_input_guard: 475/850
+ablation_no_input_guard: 500/850
+ablation_no_input_guard: 525/850
+ablation_no_input_guard: 550/850
+ablation_no_input_guard: 575/850
+ablation_no_input_guard: 600/850
+ablation_no_input_guard: 625/850
+ablation_no_input_guard: 650/850
+ablation_no_input_guard: 675/850
+ablation_no_input_guard: 700/850
+ablation_no_input_guard: 725/850
+ablation_no_input_guard: 750/850
+ablation_no_input_guard: 775/850
+ablation_no_input_guard: 800/850
+ablation_no_input_guard: 825/850
+ablation_no_input_guard: 850/850
+ablation_no_provenance: 25/850
+ablation_no_provenance: 50/850
+ablation_no_provenance: 75/850
+ablation_no_provenance: 100/850
+ablation_no_provenance: 125/850
+ablation_no_provenance: 150/850
+ablation_no_provenance: 175/850
+ablation_no_provenance: 200/850
+ablation_no_provenance: 225/850
+ablation_no_provenance: 250/850
+ablation_no_provenance: 275/850
+ablation_no_provenance: 300/850
+ablation_no_provenance: 325/850
+ablation_no_provenance: 350/850
+ablation_no_provenance: 375/850
+ablation_no_provenance: 400/850
+ablation_no_provenance: 425/850
+ablation_no_provenance: 450/850
+ablation_no_provenance: 475/850
+ablation_no_provenance: 500/850
+ablation_no_provenance: 525/850
+ablation_no_provenance: 550/850
+ablation_no_provenance: 575/850
+ablation_no_provenance: 600/850
+ablation_no_provenance: 625/850
+ablation_no_provenance: 650/850
+ablation_no_provenance: 675/850
+ablation_no_provenance: 700/850
+ablation_no_provenance: 725/850
+ablation_no_provenance: 750/850
+ablation_no_provenance: 775/850
+ablation_no_provenance: 800/850
+ablation_no_provenance: 825/850
+ablation_no_provenance: 850/850
+ablation_no_context_firewall: 25/850
+ablation_no_context_firewall: 50/850
+ablation_no_context_firewall: 75/850
+ablation_no_context_firewall: 100/850
+ablation_no_context_firewall: 125/850
+ablation_no_context_firewall: 150/850
+ablation_no_context_firewall: 175/850
+ablation_no_context_firewall: 200/850
+ablation_no_context_firewall: 225/850
+ablation_no_context_firewall: 250/850
+ablation_no_context_firewall: 275/850
+ablation_no_context_firewall: 300/850
+ablation_no_context_firewall: 325/850
+ablation_no_context_firewall: 350/850
+ablation_no_context_firewall: 375/850
+ablation_no_context_firewall: 400/850
+ablation_no_context_firewall: 425/850
+ablation_no_context_firewall: 450/850
+ablation_no_context_firewall: 475/850
+ablation_no_context_firewall: 500/850
+ablation_no_context_firewall: 525/850
+ablation_no_context_firewall: 550/850
+ablation_no_context_firewall: 575/850
+ablation_no_context_firewall: 600/850
+ablation_no_context_firewall: 625/850
+ablation_no_context_firewall: 650/850
+ablation_no_context_firewall: 675/850
+ablation_no_context_firewall: 700/850
+ablation_no_context_firewall: 725/850
+ablation_no_context_firewall: 750/850
+ablation_no_context_firewall: 775/850
+ablation_no_context_firewall: 800/850
+ablation_no_context_firewall: 825/850
+ablation_no_context_firewall: 850/850
+ablation_no_capability_gate: 25/850
+ablation_no_capability_gate: 50/850
+ablation_no_capability_gate: 75/850
+ablation_no_capability_gate: 100/850
+ablation_no_capability_gate: 125/850
+ablation_no_capability_gate: 150/850
+ablation_no_capability_gate: 175/850
+ablation_no_capability_gate: 200/850
+ablation_no_capability_gate: 225/850
+ablation_no_capability_gate: 250/850
+ablation_no_capability_gate: 275/850
+ablation_no_capability_gate: 300/850
+ablation_no_capability_gate: 325/850
+ablation_no_capability_gate: 350/850
+ablation_no_capability_gate: 375/850
+ablation_no_capability_gate: 400/850
+ablation_no_capability_gate: 425/850
+ablation_no_capability_gate: 450/850
+ablation_no_capability_gate: 475/850
+ablation_no_capability_gate: 500/850
+ablation_no_capability_gate: 525/850
+ablation_no_capability_gate: 550/850
+ablation_no_capability_gate: 575/850
+ablation_no_capability_gate: 600/850
+ablation_no_capability_gate: 625/850
+ablation_no_capability_gate: 650/850
+ablation_no_capability_gate: 675/850
+ablation_no_capability_gate: 700/850
+ablation_no_capability_gate: 725/850
+ablation_no_capability_gate: 750/850
+ablation_no_capability_gate: 775/850
+ablation_no_capability_gate: 800/850
+ablation_no_capability_gate: 825/850
+ablation_no_capability_gate: 850/850
+ablation_no_output_guard: 25/850
+ablation_no_output_guard: 50/850
+ablation_no_output_guard: 75/850
+ablation_no_output_guard: 100/850
+ablation_no_output_guard: 125/850
+ablation_no_output_guard: 150/850
+ablation_no_output_guard: 175/850
+ablation_no_output_guard: 200/850
+ablation_no_output_guard: 225/850
+ablation_no_output_guard: 250/850
+ablation_no_output_guard: 275/850
+ablation_no_output_guard: 300/850
+ablation_no_output_guard: 325/850
+ablation_no_output_guard: 350/850
+ablation_no_output_guard: 375/850
+ablation_no_output_guard: 400/850
+ablation_no_output_guard: 425/850
+ablation_no_output_guard: 450/850
+ablation_no_output_guard: 475/850
+ablation_no_output_guard: 500/850
+ablation_no_output_guard: 525/850
+ablation_no_output_guard: 550/850
+ablation_no_output_guard: 575/850
+ablation_no_output_guard: 600/850
+ablation_no_output_guard: 625/850
+ablation_no_output_guard: 650/850
+ablation_no_output_guard: 675/850
+ablation_no_output_guard: 700/850
+ablation_no_output_guard: 725/850
+ablation_no_output_guard: 750/850
+ablation_no_output_guard: 775/850
+ablation_no_output_guard: 800/850
+ablation_no_output_guard: 825/850
+ablation_no_output_guard: 850/850
+ablation_no_resource_guard: 25/850
+ablation_no_resource_guard: 50/850
+ablation_no_resource_guard: 75/850
+ablation_no_resource_guard: 100/850
+ablation_no_resource_guard: 125/850
+ablation_no_resource_guard: 150/850
+ablation_no_resource_guard: 175/850
+ablation_no_resource_guard: 200/850
+ablation_no_resource_guard: 225/850
+ablation_no_resource_guard: 250/850
+ablation_no_resource_guard: 275/850
+ablation_no_resource_guard: 300/850
+ablation_no_resource_guard: 325/850
+ablation_no_resource_guard: 350/850
+ablation_no_resource_guard: 375/850
+ablation_no_resource_guard: 400/850
+ablation_no_resource_guard: 425/850
+ablation_no_resource_guard: 450/850
+ablation_no_resource_guard: 475/850
+ablation_no_resource_guard: 500/850
+ablation_no_resource_guard: 525/850
+ablation_no_resource_guard: 550/850
+ablation_no_resource_guard: 575/850
+ablation_no_resource_guard: 600/850
+ablation_no_resource_guard: 625/850
+ablation_no_resource_guard: 650/850
+ablation_no_resource_guard: 675/850
+ablation_no_resource_guard: 700/850
+ablation_no_resource_guard: 725/850
+ablation_no_resource_guard: 750/850
+ablation_no_resource_guard: 775/850
+ablation_no_resource_guard: 800/850
+ablation_no_resource_guard: 825/850
+ablation_no_resource_guard: 850/850
+ablation_no_input_guard_no_output_guard: 25/850
+ablation_no_input_guard_no_output_guard: 50/850
+ablation_no_input_guard_no_output_guard: 75/850
+ablation_no_input_guard_no_output_guard: 100/850
+ablation_no_input_guard_no_output_guard: 125/850
+ablation_no_input_guard_no_output_guard: 150/850
+ablation_no_input_guard_no_output_guard: 175/850
+ablation_no_input_guard_no_output_guard: 200/850
+ablation_no_input_guard_no_output_guard: 225/850
+ablation_no_input_guard_no_output_guard: 250/850
+ablation_no_input_guard_no_output_guard: 275/850
+ablation_no_input_guard_no_output_guard: 300/850
+ablation_no_input_guard_no_output_guard: 325/850
+ablation_no_input_guard_no_output_guard: 350/850
+ablation_no_input_guard_no_output_guard: 375/850
+ablation_no_input_guard_no_output_guard: 400/850
+ablation_no_input_guard_no_output_guard: 425/850
+ablation_no_input_guard_no_output_guard: 450/850
+ablation_no_input_guard_no_output_guard: 475/850
+ablation_no_input_guard_no_output_guard: 500/850
+ablation_no_input_guard_no_output_guard: 525/850
+ablation_no_input_guard_no_output_guard: 550/850
+ablation_no_input_guard_no_output_guard: 575/850
+ablation_no_input_guard_no_output_guard: 600/850
+ablation_no_input_guard_no_output_guard: 625/850
+ablation_no_input_guard_no_output_guard: 650/850
+ablation_no_input_guard_no_output_guard: 675/850
+ablation_no_input_guard_no_output_guard: 700/850
+ablation_no_input_guard_no_output_guard: 725/850
+ablation_no_input_guard_no_output_guard: 750/850
+ablation_no_input_guard_no_output_guard: 775/850
+ablation_no_input_guard_no_output_guard: 800/850
+ablation_no_input_guard_no_output_guard: 825/850
+ablation_no_input_guard_no_output_guard: 850/850
+ablation_no_provenance_no_output_guard: 25/850
+ablation_no_provenance_no_output_guard: 50/850
+ablation_no_provenance_no_output_guard: 75/850
+ablation_no_provenance_no_output_guard: 100/850
+ablation_no_provenance_no_output_guard: 125/850
+ablation_no_provenance_no_output_guard: 150/850
+ablation_no_provenance_no_output_guard: 175/850
+ablation_no_provenance_no_output_guard: 200/850
+ablation_no_provenance_no_output_guard: 225/850
+ablation_no_provenance_no_output_guard: 250/850
+ablation_no_provenance_no_output_guard: 275/850
+ablation_no_provenance_no_output_guard: 300/850
+ablation_no_provenance_no_output_guard: 325/850
+ablation_no_provenance_no_output_guard: 350/850
+ablation_no_provenance_no_output_guard: 375/850
+ablation_no_provenance_no_output_guard: 400/850
+ablation_no_provenance_no_output_guard: 425/850
+ablation_no_provenance_no_output_guard: 450/850
+ablation_no_provenance_no_output_guard: 475/850
+ablation_no_provenance_no_output_guard: 500/850
+ablation_no_provenance_no_output_guard: 525/850
+ablation_no_provenance_no_output_guard: 550/850
+ablation_no_provenance_no_output_guard: 575/850
+ablation_no_provenance_no_output_guard: 600/850
+ablation_no_provenance_no_output_guard: 625/850
+ablation_no_provenance_no_output_guard: 650/850
+ablation_no_provenance_no_output_guard: 675/850
+ablation_no_provenance_no_output_guard: 700/850
+ablation_no_provenance_no_output_guard: 725/850
+ablation_no_provenance_no_output_guard: 750/850
+ablation_no_provenance_no_output_guard: 775/850
+ablation_no_provenance_no_output_guard: 800/850
+ablation_no_provenance_no_output_guard: 825/850
+ablation_no_provenance_no_output_guard: 850/850
+ablation_no_policy: 25/850
+ablation_no_policy: 50/850
+ablation_no_policy: 75/850
+ablation_no_policy: 100/850
+ablation_no_policy: 125/850
+ablation_no_policy: 150/850
+ablation_no_policy: 175/850
+ablation_no_policy: 200/850
+ablation_no_policy: 225/850
+ablation_no_policy: 250/850
+ablation_no_policy: 275/850
+ablation_no_policy: 300/850
+ablation_no_policy: 325/850
+ablation_no_policy: 350/850
+ablation_no_policy: 375/850
+ablation_no_policy: 400/850
+ablation_no_policy: 425/850
+ablation_no_policy: 450/850
+ablation_no_policy: 475/850
+ablation_no_policy: 500/850
+ablation_no_policy: 525/850
+ablation_no_policy: 550/850
+ablation_no_policy: 575/850
+ablation_no_policy: 600/850
+ablation_no_policy: 625/850
+ablation_no_policy: 650/850
+ablation_no_policy: 675/850
+ablation_no_policy: 700/850
+ablation_no_policy: 725/850
+ablation_no_policy: 750/850
+ablation_no_policy: 775/850
+ablation_no_policy: 800/850
+ablation_no_policy: 825/850
+ablation_no_policy: 850/850
+ablation_no_action_revalidation: 25/850
+ablation_no_action_revalidation: 50/850
+ablation_no_action_revalidation: 75/850
+ablation_no_action_revalidation: 100/850
+ablation_no_action_revalidation: 125/850
+ablation_no_action_revalidation: 150/850
+ablation_no_action_revalidation: 175/850
+ablation_no_action_revalidation: 200/850
+ablation_no_action_revalidation: 225/850
+ablation_no_action_revalidation: 250/850
+ablation_no_action_revalidation: 275/850
+ablation_no_action_revalidation: 300/850
+ablation_no_action_revalidation: 325/850
+ablation_no_action_revalidation: 350/850
+ablation_no_action_revalidation: 375/850
+ablation_no_action_revalidation: 400/850
+ablation_no_action_revalidation: 425/850
+ablation_no_action_revalidation: 450/850
+ablation_no_action_revalidation: 475/850
+ablation_no_action_revalidation: 500/850
+ablation_no_action_revalidation: 525/850
+ablation_no_action_revalidation: 550/850
+ablation_no_action_revalidation: 575/850
+ablation_no_action_revalidation: 600/850
+ablation_no_action_revalidation: 625/850
+ablation_no_action_revalidation: 650/850
+ablation_no_action_revalidation: 675/850
+ablation_no_action_revalidation: 700/850
+ablation_no_action_revalidation: 725/850
+ablation_no_action_revalidation: 750/850
+ablation_no_action_revalidation: 775/850
+ablation_no_action_revalidation: 800/850
+ablation_no_action_revalidation: 825/850
+ablation_no_action_revalidation: 850/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 25/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 50/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 75/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 100/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 125/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 150/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 175/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 200/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 225/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 250/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 275/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 300/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 325/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 350/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 375/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 400/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 425/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 450/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 475/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 500/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 525/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 550/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 575/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 600/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 625/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 650/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 675/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 700/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 725/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 750/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 775/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 800/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 825/850
+ablation_no_capability_gate_no_policy_or_action_revalidation: 850/850
+adaptive direct_prompt_injection: 1/30, queries=20
+adaptive direct_prompt_injection: 2/30, queries=20
+adaptive direct_prompt_injection: 3/30, queries=20
+adaptive direct_prompt_injection: 4/30, queries=20
+adaptive direct_prompt_injection: 5/30, queries=20
+adaptive direct_prompt_injection: 6/30, queries=20
+adaptive direct_prompt_injection: 7/30, queries=20
+adaptive direct_prompt_injection: 8/30, queries=20
+adaptive direct_prompt_injection: 9/30, queries=20
+adaptive direct_prompt_injection: 10/30, queries=20
+adaptive direct_prompt_injection: 11/30, queries=20
+adaptive direct_prompt_injection: 12/30, queries=20
+adaptive direct_prompt_injection: 13/30, queries=20
+adaptive direct_prompt_injection: 14/30, queries=20
+adaptive direct_prompt_injection: 15/30, queries=20
+adaptive direct_prompt_injection: 16/30, queries=20
+adaptive direct_prompt_injection: 17/30, queries=20
+adaptive direct_prompt_injection: 18/30, queries=20
+adaptive direct_prompt_injection: 19/30, queries=20
+adaptive direct_prompt_injection: 20/30, queries=20
+adaptive direct_prompt_injection: 21/30, queries=20
+adaptive direct_prompt_injection: 22/30, queries=20
+adaptive direct_prompt_injection: 23/30, queries=20
+adaptive direct_prompt_injection: 24/30, queries=20
+adaptive direct_prompt_injection: 25/30, queries=20
+adaptive direct_prompt_injection: 26/30, queries=20
+adaptive direct_prompt_injection: 27/30, queries=20
+adaptive direct_prompt_injection: 28/30, queries=20
+adaptive direct_prompt_injection: 29/30, queries=20
+adaptive direct_prompt_injection: 30/30, queries=20
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 254, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 247, in main
+    campaign.adaptive(pairs)
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 146, in adaptive
+    if h in seen: raise ValueError('Duplicate adaptive candidate')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Duplicate adaptive candidate
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+adaptive indirect_prompt_injection: 1/30, queries=20
+adaptive indirect_prompt_injection: 2/30, queries=20
+adaptive indirect_prompt_injection: 3/30, queries=20
+adaptive indirect_prompt_injection: 4/30, queries=20
+adaptive indirect_prompt_injection: 5/30, queries=20
+adaptive indirect_prompt_injection: 6/30, queries=20
+adaptive indirect_prompt_injection: 7/30, queries=20
+adaptive indirect_prompt_injection: 8/30, queries=20
+adaptive indirect_prompt_injection: 9/30, queries=20
+adaptive indirect_prompt_injection: 10/30, queries=20
+adaptive indirect_prompt_injection: 11/30, queries=20
+adaptive indirect_prompt_injection: 12/30, queries=20
+adaptive indirect_prompt_injection: 13/30, queries=20
+adaptive indirect_prompt_injection: 14/30, queries=20
+adaptive indirect_prompt_injection: 15/30, queries=20
+adaptive indirect_prompt_injection: 16/30, queries=20
+adaptive indirect_prompt_injection: 17/30, queries=20
+adaptive indirect_prompt_injection: 18/30, queries=20
+adaptive indirect_prompt_injection: 19/30, queries=20
+adaptive indirect_prompt_injection: 20/30, queries=20
+adaptive indirect_prompt_injection: 21/30, queries=20
+adaptive indirect_prompt_injection: 22/30, queries=20
+adaptive indirect_prompt_injection: 23/30, queries=20
+adaptive indirect_prompt_injection: 24/30, queries=20
+adaptive indirect_prompt_injection: 25/30, queries=20
+adaptive indirect_prompt_injection: 26/30, queries=20
+adaptive indirect_prompt_injection: 27/30, queries=20
+adaptive indirect_prompt_injection: 28/30, queries=20
+adaptive indirect_prompt_injection: 29/30, queries=20
+adaptive indirect_prompt_injection: 30/30, queries=20
+adaptive sensitive_data_exfiltration: 1/30, queries=20
+adaptive sensitive_data_exfiltration: 2/30, queries=20
+adaptive sensitive_data_exfiltration: 3/30, queries=20
+adaptive sensitive_data_exfiltration: 4/30, queries=20
+adaptive sensitive_data_exfiltration: 5/30, queries=20
+adaptive sensitive_data_exfiltration: 6/30, queries=20
+adaptive sensitive_data_exfiltration: 7/30, queries=20
+adaptive sensitive_data_exfiltration: 8/30, queries=20
+adaptive sensitive_data_exfiltration: 9/30, queries=20
+adaptive sensitive_data_exfiltration: 10/30, queries=20
+adaptive sensitive_data_exfiltration: 11/30, queries=20
+adaptive sensitive_data_exfiltration: 12/30, queries=20
+adaptive sensitive_data_exfiltration: 13/30, queries=20
+adaptive sensitive_data_exfiltration: 14/30, queries=20
+adaptive sensitive_data_exfiltration: 15/30, queries=20
+adaptive sensitive_data_exfiltration: 16/30, queries=20
+adaptive sensitive_data_exfiltration: 17/30, queries=20
+adaptive sensitive_data_exfiltration: 18/30, queries=20
+adaptive sensitive_data_exfiltration: 19/30, queries=20
+adaptive sensitive_data_exfiltration: 20/30, queries=20
+adaptive sensitive_data_exfiltration: 21/30, queries=20
+adaptive sensitive_data_exfiltration: 22/30, queries=20
+adaptive sensitive_data_exfiltration: 23/30, queries=20
+adaptive sensitive_data_exfiltration: 24/30, queries=20
+adaptive sensitive_data_exfiltration: 25/30, queries=20
+adaptive sensitive_data_exfiltration: 26/30, queries=20
+adaptive sensitive_data_exfiltration: 27/30, queries=20
+adaptive sensitive_data_exfiltration: 28/30, queries=20
+adaptive sensitive_data_exfiltration: 29/30, queries=20
+adaptive sensitive_data_exfiltration: 30/30, queries=20
+adaptive excessive_agency_tool_escalation: 1/30, queries=20
+adaptive excessive_agency_tool_escalation: 2/30, queries=20
+adaptive excessive_agency_tool_escalation: 3/30, queries=20
+adaptive excessive_agency_tool_escalation: 4/30, queries=20
+adaptive excessive_agency_tool_escalation: 5/30, queries=20
+adaptive excessive_agency_tool_escalation: 6/30, queries=20
+adaptive excessive_agency_tool_escalation: 7/30, queries=20
+adaptive excessive_agency_tool_escalation: 8/30, queries=20
+adaptive excessive_agency_tool_escalation: 9/30, queries=20
+adaptive excessive_agency_tool_escalation: 10/30, queries=20
+adaptive excessive_agency_tool_escalation: 11/30, queries=20
+adaptive excessive_agency_tool_escalation: 12/30, queries=20
+adaptive excessive_agency_tool_escalation: 13/30, queries=20
+adaptive excessive_agency_tool_escalation: 14/30, queries=20
+adaptive excessive_agency_tool_escalation: 15/30, queries=20
+adaptive excessive_agency_tool_escalation: 16/30, queries=20
+adaptive excessive_agency_tool_escalation: 17/30, queries=20
+adaptive excessive_agency_tool_escalation: 18/30, queries=20
+adaptive excessive_agency_tool_escalation: 19/30, queries=20
+adaptive excessive_agency_tool_escalation: 20/30, queries=20
+adaptive excessive_agency_tool_escalation: 21/30, queries=20
+adaptive excessive_agency_tool_escalation: 22/30, queries=20
+adaptive excessive_agency_tool_escalation: 23/30, queries=20
+adaptive excessive_agency_tool_escalation: 24/30, queries=20
+adaptive excessive_agency_tool_escalation: 25/30, queries=20
+adaptive excessive_agency_tool_escalation: 26/30, queries=20
+adaptive excessive_agency_tool_escalation: 27/30, queries=20
+adaptive excessive_agency_tool_escalation: 28/30, queries=20
+adaptive excessive_agency_tool_escalation: 29/30, queries=20
+adaptive excessive_agency_tool_escalation: 30/30, queries=20
+adaptive jailbreak_policy_override: 1/30, queries=20
+adaptive jailbreak_policy_override: 2/30, queries=20
+adaptive jailbreak_policy_override: 3/30, queries=20
+adaptive jailbreak_policy_override: 4/30, queries=20
+adaptive jailbreak_policy_override: 5/30, queries=20
+adaptive jailbreak_policy_override: 6/30, queries=20
+adaptive jailbreak_policy_override: 7/30, queries=20
+adaptive jailbreak_policy_override: 8/30, queries=20
+adaptive jailbreak_policy_override: 9/30, queries=20
+adaptive jailbreak_policy_override: 10/30, queries=20
+adaptive jailbreak_policy_override: 11/30, queries=20
+adaptive jailbreak_policy_override: 12/30, queries=20
+adaptive jailbreak_policy_override: 13/30, queries=20
+adaptive jailbreak_policy_override: 14/30, queries=20
+adaptive jailbreak_policy_override: 15/30, queries=20
+adaptive jailbreak_policy_override: 16/30, queries=20
+adaptive jailbreak_policy_override: 17/30, queries=20
+adaptive jailbreak_policy_override: 18/30, queries=20
+adaptive jailbreak_policy_override: 19/30, queries=20
+adaptive jailbreak_policy_override: 20/30, queries=20
+adaptive jailbreak_policy_override: 21/30, queries=20
+adaptive jailbreak_policy_override: 22/30, queries=20
+adaptive jailbreak_policy_override: 23/30, queries=20
+adaptive jailbreak_policy_override: 24/30, queries=20
+adaptive jailbreak_policy_override: 25/30, queries=20
+adaptive jailbreak_policy_override: 26/30, queries=20
+adaptive jailbreak_policy_override: 27/30, queries=20
+adaptive jailbreak_policy_override: 28/30, queries=20
+adaptive jailbreak_policy_override: 29/30, queries=20
+adaptive jailbreak_policy_override: 30/30, queries=20
+adaptive gaslighting_false_premise: 1/30, queries=20
+adaptive gaslighting_false_premise: 2/30, queries=20
+adaptive gaslighting_false_premise: 3/30, queries=20
+adaptive gaslighting_false_premise: 4/30, queries=20
+adaptive gaslighting_false_premise: 5/30, queries=20
+adaptive gaslighting_false_premise: 6/30, queries=20
+adaptive gaslighting_false_premise: 7/30, queries=20
+adaptive gaslighting_false_premise: 8/30, queries=20
+adaptive gaslighting_false_premise: 9/30, queries=20
+adaptive gaslighting_false_premise: 10/30, queries=20
+adaptive gaslighting_false_premise: 11/30, queries=20
+adaptive gaslighting_false_premise: 12/30, queries=20
+adaptive gaslighting_false_premise: 13/30, queries=20
+adaptive gaslighting_false_premise: 14/30, queries=20
+adaptive gaslighting_false_premise: 15/30, queries=20
+adaptive gaslighting_false_premise: 16/30, queries=20
+adaptive gaslighting_false_premise: 17/30, queries=20
+adaptive gaslighting_false_premise: 18/30, queries=20
+adaptive gaslighting_false_premise: 19/30, queries=20
+adaptive gaslighting_false_premise: 20/30, queries=20
+adaptive gaslighting_false_premise: 21/30, queries=20
+adaptive gaslighting_false_premise: 22/30, queries=20
+adaptive gaslighting_false_premise: 23/30, queries=20
+adaptive gaslighting_false_premise: 24/30, queries=20
+adaptive gaslighting_false_premise: 25/30, queries=20
+adaptive gaslighting_false_premise: 26/30, queries=20
+adaptive gaslighting_false_premise: 27/30, queries=20
+adaptive gaslighting_false_premise: 28/30, queries=20
+adaptive gaslighting_false_premise: 29/30, queries=20
+adaptive gaslighting_false_premise: 30/30, queries=20
+stochastic_11: 25/30
+stochastic_11: 30/30
+stochastic_22: 25/30
+stochastic_22: 30/30
+stochastic_33: 25/30
+stochastic_33: 30/30
+stochastic_44: 25/30
+stochastic_44: 30/30
+stochastic_55: 25/30
+stochastic_55: 30/30
+multimodel_phi: 25/850
+multimodel_phi: 50/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 270, in main
+    campaign.load_model('phi3.5:latest');campaign.run_group('multimodel_phi',pairs)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+multimodel_phi: 75/850
+multimodel_phi: 100/850
+multimodel_phi: 125/850
+multimodel_phi: 150/850
+multimodel_phi: 175/850
+multimodel_phi: 200/850
+multimodel_phi: 225/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 270, in main
+    campaign.load_model('phi3.5:latest');campaign.run_group('multimodel_phi',pairs)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+multimodel_phi: 250/850
+multimodel_phi: 275/850
+multimodel_phi: 300/850
+multimodel_phi: 325/850
+multimodel_phi: 350/850
+multimodel_phi: 375/850
+multimodel_phi: 400/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 270, in main
+    campaign.load_model('phi3.5:latest');campaign.run_group('multimodel_phi',pairs)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+multimodel_phi: 425/850
+multimodel_phi: 450/850
+multimodel_phi: 475/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 270, in main
+    campaign.load_model('phi3.5:latest');campaign.run_group('multimodel_phi',pairs)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+multimodel_phi: 500/850
+multimodel_phi: 525/850
+multimodel_phi: 550/850
+multimodel_phi: 575/850
+multimodel_phi: 600/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 270, in main
+    campaign.load_model('phi3.5:latest');campaign.run_group('multimodel_phi',pairs)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+multimodel_phi: 625/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 270, in main
+    campaign.load_model('phi3.5:latest');campaign.run_group('multimodel_phi',pairs)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 270, in main
+    campaign.load_model('phi3.5:latest');campaign.run_group('multimodel_phi',pairs)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+multimodel_phi: 650/850
+multimodel_phi: 675/850
+multimodel_phi: 700/850
+multimodel_phi: 725/850
+multimodel_phi: 750/850
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 270, in main
+    campaign.load_model('phi3.5:latest');campaign.run_group('multimodel_phi',pairs)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 118, in run_group
+    try: row=self.execute(rc,oc,system,config,temperature,top_p,seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/evaluation/llm_security_v3_2/closure_campaign.py", line 91, in execute
+    raise RuntimeError('Non-live or incomplete backend response; no publication row admitted')
+RuntimeError: Non-live or incomplete backend response; no publication row admitted

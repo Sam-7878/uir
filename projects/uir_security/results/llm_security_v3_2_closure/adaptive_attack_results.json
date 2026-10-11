@@ -1,0 +1,38 @@
+{
+  "direct_prompt_injection": {
+    "seeds": 30,
+    "queries": 600,
+    "mcr_seeds": 0,
+    "e2e_seeds": 0
+  },
+  "indirect_prompt_injection": {
+    "seeds": 30,
+    "queries": 600,
+    "mcr_seeds": 0,
+    "e2e_seeds": 0
+  },
+  "sensitive_data_exfiltration": {
+    "seeds": 30,
+    "queries": 600,
+    "mcr_seeds": 0,
+    "e2e_seeds": 0
+  },
+  "excessive_agency_tool_escalation": {
+    "seeds": 30,
+    "queries": 600,
+    "mcr_seeds": 1,
+    "e2e_seeds": 0
+  },
+  "jailbreak_policy_override": {
+    "seeds": 30,
+    "queries": 600,
+    "mcr_seeds": 0,
+    "e2e_seeds": 0
+  },
+  "gaslighting_false_premise": {
+    "seeds": 30,
+    "queries": 600,
+    "mcr_seeds": 0,
+    "e2e_seeds": 0
+  }
+}

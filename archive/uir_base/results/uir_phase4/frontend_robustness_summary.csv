@@ -1,0 +1,5 @@
+category,cases,intent_accuracy,target_exact_match,slot_f1,condition_ast_match,needs_clarification_precision,needs_clarification_recall,controlled_parse_success_rate
+korean_variation,400,87.5,100.0,100.0,87.5,100.0,100.0,75.0
+english_variation,400,87.5,100.0,100.0,87.5,100.0,100.0,75.0
+code_switching,200,75.0,100.0,100.0,100.0,100.0,100.0,75.0
+overall,1000,85.0,100.0,100.0,90.0,100.0,100.0,75.0

@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "source": "U.S. SEC XBRL Companyfacts API frozen Phase-2 snapshot",
+  "case_count": 200,
+  "language_counts": {
+    "ko": 100,
+    "en": 100
+  },
+  "unique_source_facts": 100,
+  "dataset_sha256": "b66fb6fc48033b4194b57513e1b4162216516ce74cdc874953579960102b989e",
+  "registry_sha256": "0259422adbe060dda15cd151d018cf19c43d358e3e36cf444034eb71c31e4046",
+  "registry_snapshot_date": "2026-08-07",
+  "provenance_scheme": "sec-companyfacts://...#sha256=...",
+  "semantic_primary_dataset": false,
+  "purpose": [
+    "factual_grounding",
+    "numeric_fidelity",
+    "provenance_correctness"
+  ]
+}

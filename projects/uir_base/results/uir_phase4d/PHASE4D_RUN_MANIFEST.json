@@ -1,0 +1,105 @@
+{
+  "created_at_utc": "2026-09-04T23:55:17.388248+00:00",
+  "files": [
+    {
+      "path": "results/uir_phase4d/frozen_inputs/strong_runtime_600.jsonl",
+      "sha256": "6551deb2c5140b41415bcf00988f2539bf4281a7fa25dfba257d726abb3af20b",
+      "size_bytes": 379284
+    },
+    {
+      "path": "results/uir_phase4d/frozen_inputs/strong_scoring_600.jsonl",
+      "sha256": "50bf8ce2392c81252c7ec828fb38ee5b2291838e058ed8ed5db7c0ef31d0d919",
+      "size_bytes": 534120
+    },
+    {
+      "path": "results/uir_phase4d/frozen_inputs/finqa_runtime_200.jsonl",
+      "sha256": "23b771a7910bae772ab4e7e5089ca71102e0dd53e98e015f28ab389974e6a646",
+      "size_bytes": 884777
+    },
+    {
+      "path": "results/uir_phase4d/frozen_inputs/halueval_qa_runtime_200.jsonl",
+      "sha256": "82e5a4875a19bcee1b08b7c55126b1d0ba7d38a6ad2d1c467c7bcb6e3d6806c0",
+      "size_bytes": 173437
+    },
+    {
+      "path": "results/uir_phase4d/strong_baseline_summary_actual.csv",
+      "sha256": "f3472467cc24506a7b5602f739d438712a5ff3af0e469ab19d37ee9aa827659d",
+      "size_bytes": 2720
+    },
+    {
+      "path": "results/uir_phase4d/per_case_evidence_actual.jsonl",
+      "sha256": "d3922c7e1e27254e7adf3e21ce24d88633b0a5fd66f2a4be6c1c6842fbca0d08",
+      "size_bytes": 17230504
+    },
+    {
+      "path": "results/uir_phase4d/stat_safety_actual.csv",
+      "sha256": "9f4c1e6dcfe5c8b070455413fd5161c9d1c04b5fae92c14b6c609ca9d0892090",
+      "size_bytes": 1361
+    },
+    {
+      "path": "results/uir_phase4d/stat_utility_actual.csv",
+      "sha256": "7078ca9936ddb6796c9f47a9e826b0daaf1c0c0765014ad52e695911f995a08d",
+      "size_bytes": 1547
+    },
+    {
+      "path": "results/uir_phase4d/stat_latency_actual.csv",
+      "sha256": "7d0b766f0a5a6596cb1022b00128fcd9a3626b367cc7e9cf7d5871258bbef5cc",
+      "size_bytes": 979
+    },
+    {
+      "path": "results/uir_phase4d/mutation_resilience_actual.csv",
+      "sha256": "78a4ae2cd8b5682067cb0bb2906d114b1759b5f32994665215eb0058eca8595d",
+      "size_bytes": 1688
+    },
+    {
+      "path": "results/uir_phase4d/external_generalization_summary.csv",
+      "sha256": "9e84a5254d35ff2428e669b8a331260e2be94d070a69eff8d52a236a8227179e",
+      "size_bytes": 1378
+    },
+    {
+      "path": "results/uir_phase4d/stat_generalization_actual.csv",
+      "sha256": "611e819a240931eb7e682f557bb5b51575cfd26fc85c59c2dc5062ad453183a9",
+      "size_bytes": 556
+    },
+    {
+      "path": "results/uir_phase4d/finqa_results_actual.csv",
+      "sha256": "ffadbf4129398f2e0d97578021447029f9614a5834a30af82b0b340593aef4a7",
+      "size_bytes": 439
+    },
+    {
+      "path": "results/uir_phase4d/halueval_results_actual.csv",
+      "sha256": "9f3bcf703be8dc541bf20145e3514dfc5c18a8350286e4d15d511779e3493532",
+      "size_bytes": 471
+    },
+    {
+      "path": "results/uir_phase4d/finqa_failure_taxonomy.csv",
+      "sha256": "d7fd46451274933d1881aac88aab25c606c9cbf6f4bb3f41d615015cabbaf26f",
+      "size_bytes": 17753
+    },
+    {
+      "path": "results/uir_phase4d/halueval_failure_taxonomy.csv",
+      "sha256": "d3b3c61a88ca3427e58ee4d39fcd54f317ea60a0a5725fa8ef6876a2da889472",
+      "size_bytes": 33139
+    },
+    {
+      "path": "results/uir_phase4d/runtime_label_leakage_audit.json",
+      "sha256": "1e185a8242c7badf99f8b1d2e95e1faa55412f87f5c7aee7eea96a49533462f3",
+      "size_bytes": 272
+    },
+    {
+      "path": "results/uir_phase4d/FINAL_EXPERIMENT_MANIFEST.json",
+      "sha256": "0ac5c89fb419eb25351386f3593742c59189af076eb48c2aa4450920b2a303c3",
+      "size_bytes": 3367
+    },
+    {
+      "path": "docs/uir_phase4d/EXTERNAL_FAILURE_ANALYSIS.md",
+      "sha256": "3a3475f81c1785e2487d6cafe36c2c406e5dc9247c2a9ff290887536c5a7c7ef",
+      "size_bytes": 5079
+    }
+  ],
+  "files_tracked": 19,
+  "parent_manifest_sha256": "def13cfcdfcd96ce845597dc5418a8ca2b38e446d9f184963e1f29739e62bf22",
+  "parent_phase": "UIR-4C",
+  "phase": "UIR-4D",
+  "status": "VALIDATED"
+}

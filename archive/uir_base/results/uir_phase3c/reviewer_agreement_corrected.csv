@@ -1,0 +1,9 @@
+field,n,r1_class_distribution,r2_class_distribution,raw_agreement,cohens_kappa,kappa_defined,kappa_reason
+source_text_valid,1200,{1:1200},{1:1200},1.000000000,NA,false,undefined_due_to_zero_marginal_variance
+language_valid,1200,{1:1200},{1:1200},1.000000000,NA,false,undefined_due_to_zero_marginal_variance
+intent_valid,1200,{1:1200},{1:1200},1.000000000,NA,false,undefined_due_to_zero_marginal_variance
+target_valid,1200,{1:1200},{1:1200},1.000000000,NA,false,undefined_due_to_zero_marginal_variance
+conditions_valid,1200,{1:1200},{1:1200},1.000000000,NA,false,undefined_due_to_zero_marginal_variance
+policy_valid,1200,{1:1200},{1:1200},1.000000000,NA,false,undefined_due_to_zero_marginal_variance
+outcome_valid,1200,{1:1200},{1:1200},1.000000000,NA,false,undefined_due_to_zero_marginal_variance
+claims_valid,1200,"{1:1050, NA:150}","{1:1050, NA:150}",1.000000000,1.000000000,true,computed

@@ -1,0 +1,13 @@
+case_id,field,r1_value,r2_value,r3_value,majority_value,agreement_pattern,audit_notes
+V2C-1002,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1006,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1010,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1014,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1018,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1022,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1026,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1030,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1034,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1038,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1042,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority
+V2C-1046,language_valid,1,1,0,1,R1==R2!=R3,pattern=R1==R2!=R3 | R3 disagrees with majority

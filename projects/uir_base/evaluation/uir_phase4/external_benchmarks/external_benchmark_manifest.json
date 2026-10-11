@@ -1,0 +1,26 @@
+{
+  "manifest_version": "1.0.0",
+  "timestamp_utc": "2026-09-04T10:15:00Z",
+  "benchmarks": {
+    "FinQA": {
+      "official_source": "https://github.com/czyssrs/FinQA (EMNLP 2021)",
+      "license": "MIT",
+      "split": "test_frozen_v1",
+      "cases": 200,
+      "file": "finqa_eval_v1.jsonl",
+      "sha256": "564424b404c2cfa991b7c832649249cc1aabe2e7dac112240c54ff5830ba467c",
+      "domain": "Financial Numerical Reasoning",
+      "official_metric": "Execution Accuracy (Exact Numeric Match)"
+    },
+    "HaluEval": {
+      "official_source": "https://github.com/RUCAIBox/HaluEval (EMNLP 2023)",
+      "license": "MIT",
+      "split": "qa_frozen_v1",
+      "cases": 200,
+      "file": "halueval_eval_v1.jsonl",
+      "sha256": "d6ca82d86c60dac4821f40f9d3ca85c8558a0cdb95a97d9de112abaa3a62eaff",
+      "domain": "Hallucination Detection & Grounded QA",
+      "official_metric": "Hallucination Detection Accuracy / Groundedness Recall"
+    }
+  }
+}

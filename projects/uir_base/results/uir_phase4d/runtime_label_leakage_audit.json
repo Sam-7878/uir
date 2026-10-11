@@ -1,0 +1,10 @@
+{
+  "audited_at_utc": "2026-10-11T12:01:46.649612+00:00",
+  "findings": [],
+  "forbidden_generation_gold_access": 0,
+  "gold_derived_runtime_decision_fields": 0,
+  "phase": "UIR-4D",
+  "runtime_files_checked": 4,
+  "status": "PASS",
+  "total_runtime_rows_checked": 1100
+}

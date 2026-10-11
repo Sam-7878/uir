@@ -1,0 +1,17 @@
+{
+  "comparison": "C8_vs_C1",
+  "complete_stat_significant_alpha05": false,
+  "coverage_stat_significant_alpha05": true,
+  "mcnemar_p_complete": 0.5,
+  "mcnemar_p_coverage": 0.0,
+  "n_01_coverage": 50,
+  "n_10_coverage": 0,
+  "n_both_correct": 222,
+  "n_both_wrong": 194,
+  "n_c1_correct_c8_wrong": 0,
+  "n_c1_wrong_c8_correct": 2,
+  "n_matched": 418,
+  "note_complete": "Non-significant (p=0.5): C8 complete accuracy is statistically similar to C1 complete accuracy. The benefit of UIR is reallocation from fabrication to safe partial/abstention, not universal task superiority.",
+  "primary_endpoint": "complete_claim_set_accuracy",
+  "secondary_endpoint": "supported_answer_coverage"
+}

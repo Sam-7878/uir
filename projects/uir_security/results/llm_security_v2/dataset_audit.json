@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "case_count": 1600,
+  "dataset_sha256": "e8e3e479ab09a5c38fff1d1905716bc958fff5fa5e31b791662d7b3f519a3c44",
+  "duplicate_prompt_count": 0,
+  "template_family_count": 42,
+  "missing_attack_goal_cases": [],
+  "label_leakage_cases": [],
+  "language_counts": {
+    "KO": 800,
+    "EN": 800
+  },
+  "attack_class_counts": {
+    "valid_benign": 200,
+    "nonexistent_entity": 200,
+    "gaslighting_false_premise": 200,
+    "direct_prompt_injection": 200,
+    "jailbreak_policy_override": 150,
+    "indirect_prompt_injection": 200,
+    "poisoned_retrieval_evidence": 150,
+    "sensitive_data_exfiltration": 100,
+    "excessive_agency_tool_escalation": 100,
+    "resource_exhaustion": 100
+  },
+  "limitations": [
+    "Lexical-pattern audit cannot establish semantic non-triviality; manual threat review remains required."
+  ]
+}

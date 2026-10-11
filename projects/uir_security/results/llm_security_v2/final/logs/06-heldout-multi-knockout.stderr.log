@@ -1,0 +1,197 @@
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+Loading weights:   0%|          | 0/195 [00:00<?, ?it/s]Loading weights:   1%|          | 1/195 [00:00<01:38,  1.98it/s]Loading weights:   2%|▏         | 4/195 [00:01<01:09,  2.73it/s]Loading weights:   5%|▌         | 10/195 [00:01<00:22,  8.10it/s]Loading weights:   8%|▊         | 16/195 [00:01<00:13, 13.76it/s]Loading weights:  11%|█▏        | 22/195 [00:01<00:08, 19.62it/s]Loading weights:  14%|█▍        | 28/195 [00:01<00:06, 25.07it/s]Loading weights:  17%|█▋        | 34/195 [00:02<00:05, 30.33it/s]Loading weights:  21%|██        | 40/195 [00:02<00:04, 34.95it/s]Loading weights:  24%|██▎       | 46/195 [00:02<00:03, 38.30it/s]Loading weights:  27%|██▋       | 52/195 [00:02<00:03, 42.47it/s]Loading weights:  30%|██▉       | 58/195 [00:02<00:03, 45.39it/s]Loading weights:  33%|███▎      | 64/195 [00:02<00:02, 47.45it/s]Loading weights:  36%|███▌      | 70/195 [00:02<00:02, 48.06it/s]Loading weights:  39%|███▉      | 76/195 [00:02<00:02, 48.42it/s]Loading weights:  42%|████▏     | 82/195 [00:03<00:02, 47.93it/s]Loading weights:  45%|████▍     | 87/195 [00:03<00:02, 48.24it/s]Loading weights:  47%|████▋     | 92/195 [00:03<00:02, 45.92it/s]Loading weights:  50%|█████     | 98/195 [00:03<00:02, 46.64it/s]Loading weights:  53%|█████▎    | 104/195 [00:03<00:01, 47.50it/s]Loading weights:  56%|█████▋    | 110/195 [00:03<00:01, 47.62it/s]Loading weights:  59%|█████▉    | 116/195 [00:03<00:01, 48.28it/s]Loading weights:  63%|██████▎   | 122/195 [00:03<00:01, 49.76it/s]Loading weights:  66%|██████▌   | 128/195 [00:04<00:01, 50.93it/s]Loading weights:  69%|██████▊   | 134/195 [00:04<00:01, 52.01it/s]Loading weights:  72%|███████▏  | 140/195 [00:04<00:01, 51.62it/s]Loading weights:  75%|███████▍  | 146/195 [00:04<00:00, 52.10it/s]Loading weights:  78%|███████▊  | 152/195 [00:04<00:00, 51.58it/s]Loading weights:  81%|████████  | 158/195 [00:04<00:00, 51.54it/s]Loading weights:  84%|████████▍ | 164/195 [00:04<00:00, 51.66it/s]Loading weights:  87%|████████▋ | 170/195 [00:04<00:00, 52.12it/s]Loading weights:  90%|█████████ | 176/195 [00:04<00:00, 52.17it/s]Loading weights:  93%|█████████▎| 182/195 [00:05<00:00, 52.38it/s]Loading weights:  96%|█████████▋| 188/195 [00:05<00:00, 52.17it/s]Loading weights:  99%|█████████▉| 194/195 [00:05<00:00, 52.35it/s]Loading weights: 100%|██████████| 195/195 [00:05<00:00, 37.00it/s]
+[phi-batch] resolved=16/135
+[phi-batch] resolved=32/135
+[phi-batch] resolved=48/135
+[phi-batch] resolved=64/135
+[phi-batch] resolved=80/135
+[phi-batch] resolved=96/135
+[phi-batch] resolved=112/135
+[phi-batch] resolved=128/135
+[phi-batch] resolved=135/135
+[phi-batch] resolved=16/135
+[phi-batch] resolved=32/135
+[phi-batch] resolved=48/135
+[phi-batch] resolved=64/135
+[phi-batch] resolved=80/135
+[phi-batch] resolved=96/135
+[phi-batch] resolved=112/135
+[phi-batch] resolved=128/135
+[phi-batch] resolved=135/135
+[phi-batch] resolved=16/135
+[phi-batch] resolved=32/135
+[phi-batch] resolved=48/135
+[phi-batch] resolved=64/135
+[phi-batch] resolved=80/135
+[phi-batch] resolved=96/135
+[phi-batch] resolved=112/135
+[phi-batch] resolved=128/135
+[phi-batch] resolved=135/135
+[phi-batch] resolved=16/320
+[phi-batch] resolved=32/320
+[phi-batch] resolved=48/320
+[phi-batch] resolved=64/320
+[phi-batch] resolved=80/320
+[phi-batch] resolved=96/320
+[phi-batch] resolved=112/320
+[phi-batch] resolved=128/320
+[phi-batch] resolved=144/320
+[phi-batch] resolved=160/320
+[phi-batch] resolved=176/320
+[phi-batch] resolved=192/320
+[phi-batch] resolved=208/320
+[phi-batch] resolved=224/320
+[phi-batch] resolved=240/320
+[phi-batch] resolved=256/320
+[phi-batch] resolved=272/320
+[phi-batch] resolved=288/320
+[phi-batch] resolved=304/320
+[phi-batch] resolved=320/320
+[phi-batch] resolved=16/320
+[phi-batch] resolved=32/320
+[phi-batch] resolved=48/320
+[phi-batch] resolved=64/320
+[phi-batch] resolved=80/320
+[phi-batch] resolved=96/320
+[phi-batch] resolved=112/320
+[phi-batch] resolved=128/320
+[phi-batch] resolved=144/320
+[phi-batch] resolved=160/320
+[phi-batch] resolved=176/320
+[phi-batch] resolved=192/320
+[phi-batch] resolved=208/320
+[phi-batch] resolved=224/320
+[phi-batch] resolved=240/320
+[phi-batch] resolved=256/320
+[phi-batch] resolved=272/320
+[phi-batch] resolved=288/320
+[phi-batch] resolved=304/320
+[phi-batch] resolved=320/320
+[phi-batch] resolved=16/320
+[phi-batch] resolved=32/320
+[phi-batch] resolved=48/320
+[phi-batch] resolved=64/320
+[phi-batch] resolved=80/320
+[phi-batch] resolved=96/320
+[phi-batch] resolved=112/320
+[phi-batch] resolved=128/320
+[phi-batch] resolved=144/320
+[phi-batch] resolved=160/320
+[phi-batch] resolved=176/320
+[phi-batch] resolved=192/320
+[phi-batch] resolved=208/320
+[phi-batch] resolved=224/320
+[phi-batch] resolved=240/320
+[phi-batch] resolved=256/320
+[phi-batch] resolved=272/320
+[phi-batch] resolved=288/320
+[phi-batch] resolved=304/320
+[phi-batch] resolved=320/320
+[phi-batch] resolved=16/280
+[phi-batch] resolved=32/280
+[phi-batch] resolved=48/280
+[phi-batch] resolved=64/280
+[phi-batch] resolved=80/280
+[phi-batch] resolved=96/280
+[phi-batch] resolved=112/280
+[phi-batch] resolved=128/280
+[phi-batch] resolved=144/280
+[phi-batch] resolved=160/280
+[phi-batch] resolved=176/280
+[phi-batch] resolved=192/280
+[phi-batch] resolved=208/280
+[phi-batch] resolved=224/280
+[phi-batch] resolved=240/280
+[phi-batch] resolved=256/280
+[phi-batch] resolved=272/280
+[phi-batch] resolved=280/280
+[phi-batch] resolved=16/280
+[phi-batch] resolved=32/280
+[phi-batch] resolved=48/280
+[phi-batch] resolved=64/280
+[phi-batch] resolved=80/280
+[phi-batch] resolved=96/280
+[phi-batch] resolved=112/280
+[phi-batch] resolved=128/280
+[phi-batch] resolved=144/280
+[phi-batch] resolved=160/280
+[phi-batch] resolved=176/280
+[phi-batch] resolved=192/280
+[phi-batch] resolved=208/280
+[phi-batch] resolved=224/280
+[phi-batch] resolved=240/280
+[phi-batch] resolved=256/280
+[phi-batch] resolved=272/280
+[phi-batch] resolved=280/280
+[phi-batch] resolved=16/280
+[phi-batch] resolved=32/280
+[phi-batch] resolved=48/280
+[phi-batch] resolved=64/280
+[phi-batch] resolved=80/280
+[phi-batch] resolved=96/280
+[phi-batch] resolved=112/280
+[phi-batch] resolved=128/280
+[phi-batch] resolved=144/280
+[phi-batch] resolved=160/280
+[phi-batch] resolved=176/280
+[phi-batch] resolved=192/280
+[phi-batch] resolved=208/280
+[phi-batch] resolved=224/280
+[phi-batch] resolved=240/280
+[phi-batch] resolved=256/280
+[phi-batch] resolved=272/280
+[phi-batch] resolved=280/280
+[phi-batch] resolved=16/280
+[phi-batch] resolved=32/280
+[phi-batch] resolved=48/280
+[phi-batch] resolved=64/280
+[phi-batch] resolved=80/280
+[phi-batch] resolved=96/280
+[phi-batch] resolved=112/280
+[phi-batch] resolved=128/280
+[phi-batch] resolved=144/280
+[phi-batch] resolved=160/280
+[phi-batch] resolved=176/280
+[phi-batch] resolved=192/280
+[phi-batch] resolved=208/280
+[phi-batch] resolved=224/280
+[phi-batch] resolved=240/280
+[phi-batch] resolved=256/280
+[phi-batch] resolved=272/280
+[phi-batch] resolved=280/280
+[phi-batch] resolved=16/280
+[phi-batch] resolved=32/280
+[phi-batch] resolved=48/280
+[phi-batch] resolved=64/280
+[phi-batch] resolved=80/280
+[phi-batch] resolved=96/280
+[phi-batch] resolved=112/280
+[phi-batch] resolved=128/280
+[phi-batch] resolved=144/280
+[phi-batch] resolved=160/280
+[phi-batch] resolved=176/280
+[phi-batch] resolved=192/280
+[phi-batch] resolved=208/280
+[phi-batch] resolved=224/280
+[phi-batch] resolved=240/280
+[phi-batch] resolved=256/280
+[phi-batch] resolved=272/280
+[phi-batch] resolved=280/280
+[phi-batch] resolved=16/280
+[phi-batch] resolved=32/280
+[phi-batch] resolved=48/280
+[phi-batch] resolved=64/280
+[phi-batch] resolved=80/280
+[phi-batch] resolved=96/280
+[phi-batch] resolved=112/280
+[phi-batch] resolved=128/280
+[phi-batch] resolved=144/280
+[phi-batch] resolved=160/280
+[phi-batch] resolved=176/280
+[phi-batch] resolved=192/280
+[phi-batch] resolved=208/280
+[phi-batch] resolved=224/280
+[phi-batch] resolved=240/280
+[phi-batch] resolved=256/280
+[phi-batch] resolved=272/280
+[phi-batch] resolved=280/280

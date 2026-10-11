@@ -1,0 +1,5 @@
+dataset,model,pipeline,test_cases,raw_expression_parse_rate,contract_validity_rate,safe_execution_rate,official_execution_accuracy,accepted_answer_accuracy,raw_unsupported_generation_rate,accepted_unsupported_claim_rate,p50_latency_ms,p95_latency_ms
+FinQA,microsoft/Phi-3.5-mini-instruct,C1_NAIVE_RAG,200,1.0,1.0,1.0,0.035,0.035,0.45,0.45,17310.0,19500.0
+FinQA,microsoft/Phi-3.5-mini-instruct,C8_FINAL_UIR_B6,200,0.96,0.96,0.96,0.01,0.01,0.0,0.0,17477.0,20000.0
+FinQA,Qwen/Qwen2.5-7B-Instruct,C1_NAIVE_RAG,200,1.0,1.0,1.0,0.0,0.0,0.0,0.0,18125.6,31296.9
+FinQA,Qwen/Qwen2.5-7B-Instruct,C8_FINAL_UIR_B6,200,0.955,0.955,0.955,0.215,0.215,0.045,0.0,36908.8,61239.7

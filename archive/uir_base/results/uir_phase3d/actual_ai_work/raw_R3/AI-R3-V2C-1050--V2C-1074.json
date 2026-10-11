@@ -1,0 +1,673 @@
+{
+  "batch_id": "AI-R3-V2C-1050--V2C-1074",
+  "reviewer_id": "AI-R3",
+  "engine": "AntiGravity Gemini 3.1 Pro",
+  "model_selector": "gemini-3.1-pro",
+  "case_ids": [
+    "V2C-1050",
+    "V2C-1051",
+    "V2C-1052",
+    "V2C-1053",
+    "V2C-1054",
+    "V2C-1055",
+    "V2C-1056",
+    "V2C-1057",
+    "V2C-1058",
+    "V2C-1059",
+    "V2C-1060",
+    "V2C-1061",
+    "V2C-1062",
+    "V2C-1063",
+    "V2C-1064",
+    "V2C-1065",
+    "V2C-1066",
+    "V2C-1067",
+    "V2C-1068",
+    "V2C-1069",
+    "V2C-1070",
+    "V2C-1071",
+    "V2C-1072",
+    "V2C-1073",
+    "V2C-1074"
+  ],
+  "timestamp": "2026-08-08T13:12:55.249994+00:00",
+  "duration_seconds": 71.66073761200005,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "b1dc97d4-dd7e-4b65-b063-b69a481a75e6",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-1050\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1050\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1051\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1051\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1052\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1052\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1053\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1053\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1054\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1054\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1055\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1055\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1056\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1056\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1057\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1057\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1058\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1058\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1059\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1059\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1060\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1060\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1061\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1061\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1062\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1062\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1063\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1063\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1064\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1064\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1065\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1065\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1066\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1066\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1067\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1067\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1068\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1068\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1069\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1069\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1070\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1070\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1071\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1071\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1072\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1072\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1073\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1073\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1074\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"READ\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1074\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 63.850456662,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-1050",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1050"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1051",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1051"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1052",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1052"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1053",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1053"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1054",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1054"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1055",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1055"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1056",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1056"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1057",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1057"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1058",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1058"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1059",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1059"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1060",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1060"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1061",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1061"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1062",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1062"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1063",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1063"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1064",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1064"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1065",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1065"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1066",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1066"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1067",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1067"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1068",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1068"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1069",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1069"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1070",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1070"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1071",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1071"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1072",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1072"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1073",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1073"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1074",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source asks to disclose data (READ), not VERIFY. Source does not mention an entity_verified condition. Policy and outcome correctly reflect the explicit rejection constraint.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "READ",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1074"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 31288,
+      "output_tokens": 7568,
+      "thinking_tokens": 3401,
+      "cache_read_tokens": 8142,
+      "total_tokens": 38856
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "fb52619402e4812a166004bc0a670e5537482b731a48b93fe07570598b7afeeb"
+}

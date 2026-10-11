@@ -1,0 +1,106 @@
+{
+  "version": "v3.1_publication_grade",
+  "timestamp": "2026-09-08T04:46:40.315274+00:00",
+  "models_evaluated": [
+    "phi3.5:latest",
+    "qwen2.5:7b"
+  ],
+  "backend": "Local Ollama Live Inference (enable_deterministic_fallback=False)",
+  "artifacts": {
+    "publication_table_main.json": {
+      "sha256": "1f4296063a6570e84af17457d17d71a7c26569d45c61b41b17f00b9f6b678714",
+      "size_bytes": 2115,
+      "created_at": "2026-09-08T04:46:40.256224+00:00"
+    },
+    "publication_table_main.csv": {
+      "sha256": "34c0a6b20e88cfc3a4d7ec78ef8b9a8f743772432af291f5461095e992dda5b3",
+      "size_bytes": 620,
+      "created_at": "2026-09-08T04:46:40.260010+00:00"
+    },
+    "publication_table_threat_breakdown.csv": {
+      "sha256": "2b8102460b3f35cb65bb595845023269ce3acfc9f06dabcb96bbd55d54bacd4f",
+      "size_bytes": 3310,
+      "created_at": "2026-09-08T04:46:40.264765+00:00"
+    },
+    "publication_table_ablations.csv": {
+      "sha256": "5b18bf3557f969c972a9b444d41a4f6f2d9a5dae0809d4793b2cedb87c8e9b65",
+      "size_bytes": 269,
+      "created_at": "2026-09-08T04:46:40.268999+00:00"
+    },
+    "mcnemar_significance_tests.json": {
+      "sha256": "ea395e8b483140058180063507ff991e1f16863f34a6aeb23e58ba682c82dccb",
+      "size_bytes": 1117,
+      "created_at": "2026-09-08T04:46:40.271312+00:00"
+    },
+    "latency_profiling_summary.json": {
+      "sha256": "ff2388cb08b5d0f77412c840842f088f07bfed2461c9aec2d3cf295b415b0567",
+      "size_bytes": 228,
+      "created_at": "2026-09-08T04:46:40.273349+00:00"
+    },
+    "containment_funnel.json": {
+      "sha256": "b73440a0a4dee9613ccb4c77f2ef22d407dd4883ddd389b95c397f22e989f78f",
+      "size_bytes": 166,
+      "created_at": "2026-09-08T04:46:40.276092+00:00"
+    },
+    "agentdojo_benchmark_results.json": {
+      "sha256": "553947b45dc0f34fea81739b679f49d020de7ab9ab4c46e55b4bfcde135c126a",
+      "size_bytes": 481,
+      "created_at": "2026-09-08T04:46:40.278601+00:00"
+    },
+    "adaptive_attack_results.json": {
+      "sha256": "921e60c818fb760ee82e74d32cf31d9e6b23f5599dcc6a59c7bee75102d16f70",
+      "size_bytes": 19929,
+      "created_at": "2026-09-08T04:46:40.281120+00:00"
+    },
+    "human_judge_validation.json": {
+      "sha256": "ae2f8380c6b3dd6a9959b23e3380755dffa90520e3503692d6649e8bb5fb77c8",
+      "size_bytes": 423,
+      "created_at": "2026-09-08T04:46:40.283860+00:00"
+    },
+    "human_review_pack.csv": {
+      "sha256": "dfe162003960eebf7da31a7a4d66b260b707ba3a1b8843b802717a3d13e56b52",
+      "size_bytes": 37585,
+      "created_at": "2026-09-08T04:46:40.286788+00:00"
+    },
+    "multimodel_generalization.json": {
+      "sha256": "90f0caa498d9b92465c3b0f6521b586b78c1a8a5e150d1d6343b599b462eef57",
+      "size_bytes": 480,
+      "created_at": "2026-09-08T04:46:40.289212+00:00"
+    },
+    "stochastic_results.json": {
+      "sha256": "7475e2eba09030e04eb1f9c3392d9e0ac74b167006a498dd70c3920917eba7fb",
+      "size_bytes": 1317,
+      "created_at": "2026-09-08T04:46:40.291881+00:00"
+    },
+    "baseline_comparison.json": {
+      "sha256": "1f4296063a6570e84af17457d17d71a7c26569d45c61b41b17f00b9f6b678714",
+      "size_bytes": 2115,
+      "created_at": "2026-09-08T04:46:40.294539+00:00"
+    },
+    "per_class_results.json": {
+      "sha256": "6098cdbb14007084a5a40d9bdc9a816e40f7c5447bfc43bb60a444584197d38c",
+      "size_bytes": 7186,
+      "created_at": "2026-09-08T04:46:40.297141+00:00"
+    },
+    "public_agentdojo_results.json": {
+      "sha256": "553947b45dc0f34fea81739b679f49d020de7ab9ab4c46e55b4bfcde135c126a",
+      "size_bytes": 481,
+      "created_at": "2026-09-08T04:46:40.302489+00:00"
+    },
+    "multi_model_results.json": {
+      "sha256": "90f0caa498d9b92465c3b0f6521b586b78c1a8a5e150d1d6343b599b462eef57",
+      "size_bytes": 480,
+      "created_at": "2026-09-08T04:46:40.306909+00:00"
+    },
+    "latency_by_path.json": {
+      "sha256": "ff2388cb08b5d0f77412c840842f088f07bfed2461c9aec2d3cf295b415b0567",
+      "size_bytes": 228,
+      "created_at": "2026-09-08T04:46:40.311027+00:00"
+    },
+    "statistical_tests.json": {
+      "sha256": "ea395e8b483140058180063507ff991e1f16863f34a6aeb23e58ba682c82dccb",
+      "size_bytes": 1117,
+      "created_at": "2026-09-08T04:46:40.315263+00:00"
+    }
+  }
+}

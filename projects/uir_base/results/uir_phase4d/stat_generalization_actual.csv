@@ -1,0 +1,5 @@
+dataset,model,comparison,n,accuracy_difference,unsupported_rate_reduction,c8_unsupported_rate,c1_unsupported_rate,c8_latency_p50_ms,c1_latency_p50_ms
+FinQA,microsoft/Phi-3.5-mini-instruct,C8_vs_C1,200,-0.025,0.45,0.0,0.45,17476.759224,17309.941510999997
+FinQA,Qwen/Qwen2.5-7B-Instruct,C8_vs_C1,10,0.0,0.4,0.0,0.4,3628.7033224998595,3448.4363625001606
+HaluEval,microsoft/Phi-3.5-mini-instruct,C8_vs_C1,200,-0.74,0.2,0.0,0.2,16399.13252,11347.060126
+HaluEval,Qwen/Qwen2.5-7B-Instruct,C8_vs_C1,10,-0.2,0.22,0.0,0.22,2379.1687729999467,292.73291550043723

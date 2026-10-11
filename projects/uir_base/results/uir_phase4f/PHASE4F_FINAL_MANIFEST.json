@@ -1,0 +1,97 @@
+{
+  "phase": "UIR-4F",
+  "title": "Phase UIR-4F Final Metric Closure Evidence Package Manifest",
+  "manuscript": "A Universal Intermediate Representation for Policy-Constrained Multilingual Small Language Model Agents",
+  "principle": "Prompt != Authority",
+  "status": "ABSOLUTE_FINAL_FROZEN",
+  "artifacts": {
+    "QWEN_MODEL_PROVENANCE.json": {
+      "sha256": "5a7b34c26b08378d4e7919e90d38318e3fd6f8eb1b3028d1e90e87ff96958074",
+      "size_bytes": 624,
+      "line_count": 21,
+      "description": "Qwen2.5-7B immutable cryptographic model identity and config",
+      "present": true
+    },
+    "METRIC_CONTRACT_PUBLICATION_FINAL.yaml": {
+      "present": false,
+      "description": "Formal metric contract with model/system separation"
+    },
+    "d1_constrained_raw_600.jsonl": {
+      "sha256": "1cd03045e750864b7f67ba4db84b07a42dc23be3eba36f79cf45b46cf79a52f1",
+      "size_bytes": 624160,
+      "line_count": 600,
+      "description": "D1 genuine grammar-constrained decoding raw captures (N=600)",
+      "present": true
+    },
+    "d1_constrained_summary_600.csv": {
+      "sha256": "71bf10e94df510c7dc0fa1e2a9e8757e1ce6af701a69c2e58a813913744c830e",
+      "size_bytes": 913,
+      "line_count": 2,
+      "description": "D1 genuine grammar-constrained decoding summary",
+      "present": true
+    },
+    "internal_final.csv": {
+      "sha256": "bdfaea358d3b44a3f62bcc92fa5a1bd3a8bd90202e96dfb410540a6ec1471efa",
+      "size_bytes": 1653,
+      "line_count": 11,
+      "description": "Internal 9-pipeline evaluation summary (N=600, N_commit=418)",
+      "present": true
+    },
+    "security_final.csv": {
+      "sha256": "de5ab234eec962eb7c7154b111a07da4fe5f1e11d3d638a59b1aec71b21c0f2a",
+      "size_bytes": 733,
+      "line_count": 11,
+      "description": "Security summary with explicit Adversarial ASR (N=50) vs Workload Incidence",
+      "present": true
+    },
+    "constrained_baseline_final.csv": {
+      "sha256": "75b86e45d14038a875da69cbceaf08316af5a009fc86058fcfb476c4d9342389",
+      "size_bytes": 728,
+      "line_count": 4,
+      "description": "Constrained decoding baseline comparison (C3 vs D1 vs C8)",
+      "present": true
+    },
+    "finqa_external_final.csv": {
+      "sha256": "9de5d8ca1ca7eea9cfca9cb9c979ff95b75eb55d480dca37d3ea3bfeb7479ba7",
+      "size_bytes": 666,
+      "line_count": 5,
+      "description": "FinQA cross-model evaluation with raw vs accepted separation (N=200)",
+      "present": true
+    },
+    "halueval_external_final.csv": {
+      "sha256": "86b6014a43adcee46b51906b776b054ff5f8f03954a315e3e510e4b82ee7160e",
+      "size_bytes": 611,
+      "line_count": 5,
+      "description": "HaluEval cross-model evaluation with semantic vs accepted E2E accuracy (N=200)",
+      "present": true
+    },
+    "external_case_scored_final.jsonl": {
+      "sha256": "93c99ae1b801332c5e6bc4c8bd57305cba156f58d88d8f43e55ce0a5108b399f",
+      "size_bytes": 731154,
+      "line_count": 800,
+      "description": "External benchmark scored cases with model provenance reference",
+      "present": true
+    },
+    "stat_complete_utility_final.csv": {
+      "sha256": "84aeca05d64dadca6878a03cf521bf4ecf3d993c4d222370353f3ad0149fa715",
+      "size_bytes": 478,
+      "line_count": 2,
+      "description": "Complete claim-set accuracy statistical test (exact McNemar p=0.50)",
+      "present": true
+    },
+    "stat_supported_coverage_final.csv": {
+      "sha256": "1a6e2a20491d3d36a0e338c7bbc508d01a721de31f5675b7226203aeb0f7e288",
+      "size_bytes": 529,
+      "line_count": 2,
+      "description": "Supported-answer coverage statistical test (+11.96%pp, p=1.29e-12)",
+      "present": true
+    },
+    "stat_security_final.csv": {
+      "sha256": "dcdfb7f094e4229e11efaf7d5ebbc4acb013260c79ec7232d80d127de280a58f",
+      "size_bytes": 372,
+      "line_count": 2,
+      "description": "Adversarial attack success rate statistical test (N=50, p < 0.001)",
+      "present": true
+    }
+  }
+}

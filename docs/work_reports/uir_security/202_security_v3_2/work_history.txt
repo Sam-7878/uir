@@ -1,0 +1,78 @@
+The server cleared a prefix of the conversation as it grew too large.
+
+The Ollama client is currently loading the qwen2.5:7b weights into memory for the initial test inference. Execution will resume automatically as soon as the test completes.
+
+HETE UIR-ZTA V3.2 Scientific Validity Closure Status Report
+1. Hardware & GPU Acceleration Status
+NVIDIA CUDA 13.2 / WSL2 Integration: Operating in P0 high-performance mode (nvidia-smi: 94% GPU utilization, 83W power, 5.5 GB VRAM allocated).
+Native Linux Ollama Daemon: 100% layer offloading confirmed with zero fallback (enable_deterministic_fallback=False).
+Throughput: Generating ~58 tokens/second on qwen2.5:7b (4–5 seconds for full 256-token outputs, ~1–2 seconds for short refusals, <1 ms for pre-LLM zero-trust policy blocks).
+2. Authoritative Campaign Execution Progress
+Background Task ID: 
+task-5464
+ (python -u evaluation/llm_security_v3_2/run_publication_campaign_v3_2.py)
+Phase 1 (Dataset Freezing): Completed. Stratified $N=240$ cases frozen to 
+
+heldout_v3_2_stratified_240.json
+ (60 benign + 180 attacks across 9 classes, 20/class).
+Phase 2 (Primary 6-System Campaign on Qwen2.5-7B):
+Vanilla SLM: Actively running (case 85/240). All 60 benign cases completed; attack cases progressing steadily.
+Subsequent systems queued: Naive RAG, Spotlighting, Progent-inspired, CaMeL-inspired, HETE UIR-ZTA.
+Subsequent Phases Queued in Pipeline:
+Phase 3: Secondary Model evaluation on Phi-3.5 ($N=240$).
+Phase 4: Full-size 9-configuration paired knockout ablations ($N=240$ per configuration, 2,160 total cases).
+Phase 5: Genuine 14-operator adaptive attack campaigns ($B=20$, 30 seeds, strict SHA-256 hash divergence).
+Phase 6: AgentDojo-inspired representative micro-suite ($N=5$).
+Phase 7: Stochastic robustness across 5 seeds ($T=0.7, p=0.9$, 30 cases each).
+Phase 8: Exact paired binomial McNemar significance tests (scipy.stats.binomtest + step-down Holm-Bonferroni).
+Phase 9: Threat breakdown & path-separated latency profiling.
+Phase 10: Cryptographic SHA-256 artifact manifest generation.
+3. Publication Delivery Reports Completed (7 of 7)
+All 7 required reports have been authored and mirrored to both 
+
+docs/security_v3_2/
+ and 
+
+docs/work_reports/202_security_v3_2/security_v3_2/
+:
+
+
+
+BASELINE_FIDELITY_REPORT.md
+: Documents baseline adaptations as "inspired approximations" conforming to Work Order §16 P15.
+
+
+HUMAN_REVIEW_PROTOCOL.md
+: Implements Option B (Work Order §2 P1), purging all synthetic simulated human review and replacing it with deterministic ground-truth behavioral oracles.
+
+
+AGENTDOJO_PROVENANCE.md
+: Implements Option B (Work Order §3 P2), scoping the micro-suite ($N=5$) and retracting general external benchmark claims.
+
+
+OUTPUT_GUARD_VALIDATION_REPORT.md
+: Implements whole-document parsing, trailing text rejection, schema enforcement, and canonical egress.
+
+
+ADAPTIVE_ATTACK_PROTOCOL.md
+: Details the 14 mutation operators, budget $B=20$, and SHA-256 hash divergence enforcement.
+
+
+README_REPRODUCE.md
+: Provides step-by-step reproduction commands for independent reviewers.
+
+
+HETE_UIR_V3_2_FINAL_SCIENTIFIC_VALIDITY_REPORT.md
+: Comprehensive closure report answering all 25 audit questions from Work Order §25 with full traceability.
+4. Manuscript & Toolchain Validation
+Tested LaTeX compilation of 
+
+_47.1_UIR_ZTA.tex
+ via WSL2 pdflatex. Verified clean compile to a 22-page PDF with 0 errors.
+5. Next Steps Immediately Following Campaign Completion
+Run independent validator: python evaluation/llm_security_v3_2/validate_v3_2_results.py --strict --output-json results/llm_security_v3_2/publication_evidence_validation.json to verify all 10 audits pass.
+Synchronize exact empirical numbers into Tables IV, VI, VII, VIII and text in 
+
+_47.1_UIR_ZTA.tex
+.
+Recompile the LaTeX manuscript and generate the final walkthrough.

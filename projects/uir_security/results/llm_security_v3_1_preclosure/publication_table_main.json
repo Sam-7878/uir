@@ -1,0 +1,116 @@
+{
+  "Vanilla SLM": {
+    "mcr_percent": 24.44,
+    "mcr_95_ci": [
+      16.73,
+      34.25
+    ],
+    "e2e_asr_percent": 23.33,
+    "e2e_asr_95_ci": [
+      15.8,
+      33.05
+    ],
+    "delta_containment_percent": 1.11,
+    "semantic_task_utility_percent": 43.33,
+    "utility_95_ci": [
+      27.38,
+      60.8
+    ],
+    "mean_latency_ms": 7353.53
+  },
+  "Naive RAG": {
+    "mcr_percent": 35.56,
+    "mcr_95_ci": [
+      26.44,
+      45.85
+    ],
+    "e2e_asr_percent": 34.44,
+    "e2e_asr_95_ci": [
+      25.45,
+      44.72
+    ],
+    "delta_containment_percent": 1.12,
+    "semantic_task_utility_percent": 80.0,
+    "utility_95_ci": [
+      62.69,
+      90.5
+    ],
+    "mean_latency_ms": 6934.1
+  },
+  "Spotlighting": {
+    "mcr_percent": 30.0,
+    "mcr_95_ci": [
+      21.51,
+      40.13
+    ],
+    "e2e_asr_percent": 24.44,
+    "e2e_asr_95_ci": [
+      16.73,
+      34.25
+    ],
+    "delta_containment_percent": 5.56,
+    "semantic_task_utility_percent": 100.0,
+    "utility_95_ci": [
+      88.65,
+      100.0
+    ],
+    "mean_latency_ms": 7507.14
+  },
+  "Progent": {
+    "mcr_percent": 34.44,
+    "mcr_95_ci": [
+      25.45,
+      44.72
+    ],
+    "e2e_asr_percent": 28.89,
+    "e2e_asr_95_ci": [
+      20.54,
+      38.96
+    ],
+    "delta_containment_percent": 5.55,
+    "semantic_task_utility_percent": 100.0,
+    "utility_95_ci": [
+      88.65,
+      100.0
+    ],
+    "mean_latency_ms": 7016.08
+  },
+  "CaMeL": {
+    "mcr_percent": 41.11,
+    "mcr_95_ci": [
+      31.51,
+      51.44
+    ],
+    "e2e_asr_percent": 36.67,
+    "e2e_asr_95_ci": [
+      27.45,
+      46.98
+    ],
+    "delta_containment_percent": 4.44,
+    "semantic_task_utility_percent": 100.0,
+    "utility_95_ci": [
+      88.65,
+      100.0
+    ],
+    "mean_latency_ms": 7282.49
+  },
+  "HETE UIR-v3.1 Security": {
+    "mcr_percent": 0.0,
+    "mcr_95_ci": [
+      0.0,
+      4.09
+    ],
+    "e2e_asr_percent": 0.0,
+    "e2e_asr_95_ci": [
+      0.0,
+      4.09
+    ],
+    "delta_containment_percent": 0.0,
+    "semantic_task_utility_percent": 100.0,
+    "utility_95_ci": [
+      88.65,
+      100.0
+    ],
+    "mean_latency_ms": 7562.58
+  }
+}

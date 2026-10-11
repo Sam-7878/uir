@@ -1,0 +1,12 @@
+group,metric,successes,total,value,ci95_low,ci95_high
+overall,uir_exact_structural_match,1600,1600,1.0,0.9976048388077468,1.0
+overall,semantic_uir_match,1600,1600,1.0,0.9976048388077468,1.0
+overall,policy_decision_accuracy,1840,1840,1.0,0.9979166002574044,1.0
+overall,outcome_accuracy,1840,1840,1.0,0.9979166002574044,1.0
+overall,false_accept_rate,0,740,0.0,0.0,0.005164351590168792
+overall,false_reject_rate,0,1100,0.0,0.0,0.0034800820262705177
+overall,invalid_entity_fabrication_prevention_rate,200,200,1.0,0.9811546736227335,1.0
+overall,unsupported_claim_rate,100,1300,0.07692307692307693,0.06365214151282239,0.09268700343587849
+overall,unsupported_claim_acceptance_rate,0,100,0.0,0.0,0.03699349820698568
+overall,provenance_accuracy,1200,1300,0.9230769230769231,0.9073129965641216,0.9363478584871776
+overall,cross_lingual_equivalence_rate,300,300,1.0,0.9873570287754538,1.0

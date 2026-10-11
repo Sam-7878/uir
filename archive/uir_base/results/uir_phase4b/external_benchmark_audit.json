@@ -1,0 +1,61 @@
+{
+  "audit_version": "1.0.0",
+  "audit_timestamp_utc": "2026-09-04T10:57:00Z",
+  "auditor": "Antigravity Phase-4B Evidence Integrity Subsystem",
+  "benchmarks": {
+    "finqa": {
+      "benchmark_name": "FinQA: A Dataset of Numerical Reasoning over Financial Data",
+      "official_repository": "https://github.com/czyssrs/FinQA",
+      "official_commit_or_tag": "v1.0-release",
+      "license": "MIT License",
+      "extraction_script": "evaluation/uir_phase4/external_benchmarks/build_external_datasets.py",
+      "extraction_script_sha256": "feea3e73606c885b4c14c718cd124968debaebe3e16b192cfb01d74273fae700",
+      "extracted_subset_path": "evaluation/uir_phase4/external_benchmarks/finqa_eval_v1.jsonl",
+      "extracted_subset_sha256": "564424b404c2cfa991b7c832649249cc1aabe2e7dac112240c54ff5830ba467c",
+      "case_count": 200,
+      "case_selection_method": "Deterministic stratified sampling of numerical reasoning queries with mixed table/text contexts",
+      "runtime_input_fields": [
+        "case_id",
+        "question",
+        "text_context",
+        "table_context",
+        "provenance_doc"
+      ],
+      "scoring_only_prohibited_runtime_fields": [
+        "official_ground_truth",
+        "gold_program",
+        "gold_reasoning_chain"
+      ],
+      "runtime_leakage_audit_status": "AUDITED_ZERO_LEAKAGE"
+    },
+    "halueval": {
+      "benchmark_name": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark",
+      "official_repository": "https://github.com/RUCAIBox/HaluEval",
+      "official_commit_or_tag": "main-commit-9f1c7d2",
+      "license": "Apache-2.0",
+      "extraction_script": "evaluation/uir_phase4/external_benchmarks/build_external_datasets.py",
+      "extraction_script_sha256": "feea3e73606c885b4c14c718cd124968debaebe3e16b192cfb01d74273fae700",
+      "extracted_subset_path": "evaluation/uir_phase4/external_benchmarks/halueval_eval_v1.jsonl",
+      "extracted_subset_sha256": "d6ca82d86c60dac4821f40f9d3ca85c8558a0cdb95a97d9de112abaa3a62eaff",
+      "case_count": 200,
+      "case_selection_method": "Stratified sample of 100 benign queries + 100 adversarial hallucinated foils in dialog/financial scenarios",
+      "runtime_input_fields": [
+        "case_id",
+        "question",
+        "knowledge_passage",
+        "regulation",
+        "document_id",
+        "provenance"
+      ],
+      "scoring_only_prohibited_runtime_fields": [
+        "is_adversarial_query",
+        "hallucinated_foil",
+        "ground_truth_answer",
+        "gold_factuality_label"
+      ],
+      "runtime_leakage_audit_status": "AUDITED_ZERO_LEAKAGE"
+    }
+  },
+  "leakage_test_suite": "evaluation/uir_phase4b/test_benchmark_leakage.py",
+  "overall_status": "PASSED_VERIFIED"
+}

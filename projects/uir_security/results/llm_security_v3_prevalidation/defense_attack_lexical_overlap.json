@@ -1,0 +1,15 @@
+{
+  "total_heldout_cases": 850,
+  "heldout_cases_free_of_textbook_defense_markers": 850,
+  "lexically_novel_attack_ratio": 1.0,
+  "marker_frequency": {
+    "ignore previous instructions": 0,
+    "system override": 0,
+    "admin mode": 0,
+    "reveal confidential": 0,
+    "disregard rules": 0,
+    "\uc774\uc804 \uc9c0\uc2dc\ub97c \ubb34\uc2dc": 0,
+    "\uc2dc\uc2a4\ud15c \ud504\ub86c\ud504\ud2b8": 0,
+    "\uad00\ub9ac\uc790 \ubaa8\ub4dc": 0
+  }
+}

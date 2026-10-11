@@ -1,0 +1,32 @@
+{
+  "Vanilla SLM": {
+    "case_count": 67,
+    "model_leakage_count": 6,
+    "egress_leakage_count": 6
+  },
+  "Naive RAG": {
+    "case_count": 67,
+    "model_leakage_count": 16,
+    "egress_leakage_count": 16
+  },
+  "Spotlighting": {
+    "case_count": 67,
+    "model_leakage_count": 7,
+    "egress_leakage_count": 7
+  },
+  "Progent-inspired": {
+    "case_count": 67,
+    "model_leakage_count": 5,
+    "egress_leakage_count": 0
+  },
+  "CaMeL-inspired": {
+    "case_count": 67,
+    "model_leakage_count": 24,
+    "egress_leakage_count": 24
+  },
+  "HETE": {
+    "case_count": 67,
+    "model_leakage_count": 0,
+    "egress_leakage_count": 0
+  }
+}

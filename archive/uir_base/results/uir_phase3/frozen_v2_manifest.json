@@ -1,0 +1,28 @@
+{
+  "artifact_state": "candidate_pending_human_review",
+  "frozen": false,
+  "publication_ready": false,
+  "human_review_status": "pending",
+  "reviewer_count": 0,
+  "agreement": null,
+  "adjudicated": false,
+  "case_count": 1200,
+  "language_counts": {
+    "ko": 600,
+    "en": 600
+  },
+  "category_counts": {
+    "parallel_semantic": 400,
+    "template_unseen": 200,
+    "entity_unseen": 150,
+    "lexical_unseen": 150,
+    "structural_unseen": 100,
+    "ambiguous_incomplete": 50,
+    "policy_conflict": 50,
+    "adversarial": 50,
+    "numeric_provenance": 50
+  },
+  "candidate_sha256": "556f6875328bd5e3942e193461047bf4b5e8a78c0a6072e481725de16685f7b0",
+  "parser_source_sha256": "bee778f3e3767fdcd64d0926f27c680143d217ea1d6febcabd08aac96de321d7",
+  "phase2_v1_sha256_unchanged": "5f9ff9653b3d8649f8a2b1ddc8949cea917d86035fb5deba3e8d6b98437ff4f2"
+}

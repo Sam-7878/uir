@@ -1,0 +1,11 @@
+condition_family,cases,surface_text_agreement_pct,raw_ast_agreement_pct,normalized_ast_agreement_pct,parenthesized_dsl_agreement_pct,primary_disagreement_source,recommended_resolution
+AND/OR Coordination,30,63.3,93.3,96.7,100.0,Minor Boundary Interpretation,Normalize into explicit typed parenthesized AST before policy judgment
+Complex Coordination,30,43.3,83.3,93.3,96.7,Operator Precedence / Scope Boundary,Normalize into explicit typed parenthesized AST before policy judgment
+Deeply Nested Conditions,30,43.3,83.3,93.3,96.7,Operator Precedence / Scope Boundary,Normalize into explicit typed parenthesized AST before policy judgment
+Except Exception Clause,30,50.0,90.0,96.7,100.0,Model Inversion of Exception Semantics,Normalize into explicit typed parenthesized AST before policy judgment
+Implicit Semantic Constraint,30,36.7,73.3,86.7,93.3,Ambiguous Natural Language Surface Wording,Normalize into explicit typed parenthesized AST before policy judgment
+Mixed-Language Condition,30,46.7,86.7,93.3,96.7,Cross-Lingual Particle Transpilation,Normalize into explicit typed parenthesized AST before policy judgment
+Scope Ambiguity,30,36.7,73.3,86.7,93.3,Ambiguous Natural Language Surface Wording,Normalize into explicit typed parenthesized AST before policy judgment
+Temporal Precedence,30,63.3,93.3,96.7,100.0,Minor Boundary Interpretation,Normalize into explicit typed parenthesized AST before policy judgment
+Unary Negation,30,63.3,93.3,96.7,100.0,Minor Boundary Interpretation,Normalize into explicit typed parenthesized AST before policy judgment
+Unless Modal Clause,30,50.0,90.0,96.7,100.0,Model Inversion of Exception Semantics,Normalize into explicit typed parenthesized AST before policy judgment

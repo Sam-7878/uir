@@ -1,0 +1,11 @@
+{
+  "phase": "UIR-3",
+  "status": "engineering_complete_evaluation_blocked",
+  "publication_ready": false,
+  "blocker": "two independent human reviews and adjudication are pending",
+  "v1_frozen_sha256": "5f9ff9653b3d8649f8a2b1ddc8949cea917d86035fb5deba3e8d6b98437ff4f2",
+  "candidate_sha256": "556f6875328bd5e3942e193461047bf4b5e8a78c0a6072e481725de16685f7b0",
+  "parser_source_sha256": "bee778f3e3767fdcd64d0926f27c680143d217ea1d6febcabd08aac96de321d7",
+  "candidate_case_count": 1200,
+  "claims": "diagnostic artifacts are not unseen-v2 results"
+}

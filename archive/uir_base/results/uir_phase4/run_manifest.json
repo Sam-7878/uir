@@ -1,0 +1,30 @@
+{
+  "campaign_id": "phase4-journal-strengthening-final",
+  "status": "complete",
+  "timestamp_utc": "2026-09-04T10:15:17.657722+00:00",
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "quantization": "bitsandbytes-nf4",
+  "hardware": "NVIDIA GeForce RTX 4070 Laptop GPU (8GB VRAM), WSL2 Ubuntu 24.04",
+  "total_cases_evaluated": 13500,
+  "deliverables_generated": [
+    "BASELINE_MANIFEST.json",
+    "external_benchmark_manifest.json",
+    "external_finance_results.csv",
+    "external_groundedness_results.csv",
+    "strong_baseline_summary.csv",
+    "frontend_robustness_summary.csv",
+    "condition_semantics_summary.csv",
+    "policy_summary.csv",
+    "groundedness_summary.csv",
+    "safety_utility_summary.csv",
+    "latency_by_category.csv",
+    "resource_summary.csv",
+    "stat_safety.csv",
+    "stat_utility.csv",
+    "stat_latency.csv",
+    "formal_invariant_test_report.csv",
+    "mutation_test_report.csv",
+    "failures.jsonl",
+    "run_manifest.json"
+  ]
+}

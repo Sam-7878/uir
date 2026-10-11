@@ -1,0 +1,185 @@
+{
+  "AI_review_completed": false,
+  "W08_human_requirement_satisfied": false,
+  "created_at_utc": "20261011T111359Z",
+  "endpoint": "http://127.0.0.1:18747",
+  "errors": [],
+  "finished_at_utc": "2026-10-11T11:37:58.034007+00:00",
+  "gpu_before": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 8188 MiB, 599 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 24576 MiB, 3916 MiB",
+  "gpu_uuid_configured_in_launcher": "GPU-ab53069a-3217-ee09-80f8-748b5fdbd156",
+  "human_review_complete": false,
+  "models": {
+    "ministral-3:14b": {
+      "capabilities": [
+        "vision",
+        "completion",
+        "tools"
+      ],
+      "details": {
+        "context_length": 262144,
+        "embedding_length": 5120,
+        "families": [
+          "mistral3"
+        ],
+        "family": "mistral3",
+        "format": "gguf",
+        "parameter_size": "13.9B",
+        "parent_model": "",
+        "quantization_level": "Q4_K_M"
+      },
+      "digest": "4760c35aeb9d9e9c6174c2492562c0b999e80a222804fd96b1915ab72bbcdcf7",
+      "license": "Apache-2.0",
+      "license_text_sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "model": "ministral-3:14b",
+      "modified_at": "2026-10-11T20:36:11.7560633+09:00",
+      "name": "ministral-3:14b",
+      "role": "AI_J2",
+      "size": 9082537546,
+      "smoke": {
+        "all_probes_passed": true,
+        "gpu_memory_allocated": true,
+        "loaded_models": [
+          {
+            "context_length": 8192,
+            "details": {
+              "families": [
+                "mistral3"
+              ],
+              "family": "mistral3",
+              "format": "gguf",
+              "parameter_size": "13.9B",
+              "parent_model": "",
+              "quantization_level": "Q4_K_M"
+            },
+            "digest": "4760c35aeb9d9e9c6174c2492562c0b999e80a222804fd96b1915ab72bbcdcf7",
+            "expires_at": "2026-10-11T20:47:57.884838441+09:00",
+            "model": "ministral-3:14b",
+            "name": "ministral-3:14b",
+            "size": 9537773895,
+            "size_vram": 9537773895
+          }
+        ],
+        "probe_count": 3,
+        "probe_passed": 3
+      },
+      "source": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "template_sha256": "aa65b5aebf89e7dfb3aa05af9220299a7e1cebe3ab97daae3c2e259acbdf278c"
+    },
+    "phi3.5:latest": {
+      "capabilities": [
+        "completion"
+      ],
+      "details": {
+        "context_length": 131072,
+        "embedding_length": 3072,
+        "families": [
+          "phi3"
+        ],
+        "family": "phi3",
+        "format": "gguf",
+        "parameter_size": "3.8B",
+        "parent_model": "",
+        "quantization_level": "Q4_0"
+      },
+      "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+      "license": "MIT",
+      "license_text_sha256": "c5f9f560a7047d53bbefeef37f0a5b448aba03871b2fb63c4331b9ae0248914a",
+      "model": "phi3.5:latest",
+      "modified_at": "2026-10-11T20:10:12.4064408+09:00",
+      "name": "phi3.5:latest",
+      "role": "answer_generator",
+      "size": 2176178843,
+      "smoke": {
+        "all_probes_passed": false,
+        "gpu_memory_allocated": true,
+        "loaded_models": [
+          {
+            "context_length": 8192,
+            "details": {
+              "families": [
+                "phi3"
+              ],
+              "family": "phi3",
+              "format": "gguf",
+              "parameter_size": "3.8B",
+              "parent_model": "",
+              "quantization_level": "Q4_0"
+            },
+            "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+            "expires_at": "2026-10-11T20:46:35.150920211+09:00",
+            "model": "phi3.5:latest",
+            "name": "phi3.5:latest",
+            "size": 5483884707,
+            "size_vram": 5483884707
+          }
+        ],
+        "probe_count": 3,
+        "probe_passed": 2
+      },
+      "source": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "template_sha256": "c608dc615584cd20d9d830363dabf8a4783ae5d34245c3d8c115edb3bc7b28e4"
+    },
+    "qwen3:4b": {
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ],
+      "details": {
+        "context_length": 262144,
+        "embedding_length": 2560,
+        "families": [
+          "qwen3"
+        ],
+        "family": "qwen3",
+        "format": "gguf",
+        "parameter_size": "4.0B",
+        "parent_model": "",
+        "quantization_level": "Q4_K_M"
+      },
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "license": "Apache-2.0",
+      "license_text_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+      "model": "qwen3:4b",
+      "modified_at": "2026-10-11T20:22:41.7344247+09:00",
+      "name": "qwen3:4b",
+      "role": "AI_J1",
+      "size": 2497293931,
+      "smoke": {
+        "all_probes_passed": false,
+        "gpu_memory_allocated": true,
+        "loaded_models": [
+          {
+            "context_length": 8192,
+            "details": {
+              "families": [
+                "qwen3"
+              ],
+              "family": "qwen3",
+              "format": "gguf",
+              "parameter_size": "4.0B",
+              "parent_model": "",
+              "quantization_level": "Q4_K_M"
+            },
+            "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+            "expires_at": "2026-10-11T20:46:55.382805727+09:00",
+            "model": "qwen3:4b",
+            "name": "qwen3:4b",
+            "size": 3873366343,
+            "size_vram": 3873366343
+          }
+        ],
+        "probe_count": 3,
+        "probe_passed": 1
+      },
+      "source": "https://huggingface.co/Qwen/Qwen3-4B",
+      "template_sha256": "2d54db2b9bb29ce7db54fea63a891f5859603813c555b1f88b5e0994652897f9"
+    }
+  },
+  "scope": "installation_and_operational_smoke",
+  "server_version": {
+    "version": "0.33.3"
+  },
+  "status": "INCOMPLETE_OR_SMOKE_FAILURE",
+  "weights_git_tracked": false
+}

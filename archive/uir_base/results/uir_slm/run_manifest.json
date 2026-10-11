@@ -1,0 +1,106 @@
+{
+  "commands": [
+    "cargo run -p poa-uir --bin uir-eval -- <frozen> <uir-records>",
+    "python evaluation/uir_slm/run_slm_campaign.py ...",
+    "python evaluation/uir_slm/aggregate_results.py ..."
+  ],
+  "evidence": {
+    "adversarial_primary.jsonl": {
+      "bytes": 3422413,
+      "sha256": "6bf0e85e1474ca19c520fa63ec875d9da13428ba3aa9507e858685c1eaaa19dc"
+    },
+    "adversarial_summary.csv": {
+      "bytes": 1468,
+      "sha256": "3ba1bca7e53cc36290bf30c139146ba4753fb9f9f1a7609c1d17d71ca7198f7d"
+    },
+    "baseline_comparison.csv": {
+      "bytes": 1711,
+      "sha256": "301c82db1a1a9a028222c697e77eb05df1438a786eac2a8e08a6c8d6744cceb1"
+    },
+    "claims_raw.jsonl": {
+      "bytes": 1449496,
+      "sha256": "a5bdb32bf6e5ed5aff8e22d07858278a0fea103855d6620d86439bf787be9650"
+    },
+    "core_latency_summary.csv": {
+      "bytes": 501,
+      "sha256": "b5cd50a837a32b1c132558be4d33690dd0fd6a718b679eeac53720e920cbbc7b"
+    },
+    "cross_run_variance.csv": {
+      "bytes": 864,
+      "sha256": "9af4df63b902b56ae2d0746627d70e79606630b98bce6b07d5be144cac425aa8"
+    },
+    "cross_seed_variance.csv": {
+      "bytes": 974,
+      "sha256": "620250fcb34bcc507c3e16fe6f49254f6adccc6df84f08947cc8c1d5ddc32c8f"
+    },
+    "failures.jsonl": {
+      "bytes": 16099057,
+      "sha256": "a965e808a84ab7425e4123a39c322b724dd249156385ccc0514f704074b97a46"
+    },
+    "frozen_primary.jsonl": {
+      "bytes": 11798533,
+      "sha256": "a48cf64964ad12866623bbb3b70699d799f3c7284d2d87558c22bce9f86b37b8"
+    },
+    "frozen_test_manifest.json": {
+      "bytes": 4833,
+      "sha256": "18fbebb85e1bd855c906ede4c8fd4550eca9f17fcb1f7fef426379fc4a3d147a"
+    },
+    "frozen_uir_core.jsonl": {
+      "bytes": 827549,
+      "sha256": "7ee873499740c1d86146dde2325b63ee06a43f40c350cc3be29bd86a483478d1"
+    },
+    "generalization_split_summary.csv": {
+      "bytes": 562,
+      "sha256": "ca30e9f42e4386da09511f64fe0bd29a09795e531a5d33ece14d83eba333640e"
+    },
+    "groundedness_summary.csv": {
+      "bytes": 1711,
+      "sha256": "301c82db1a1a9a028222c697e77eb05df1438a786eac2a8e08a6c8d6744cceb1"
+    },
+    "latency_summary.csv": {
+      "bytes": 819,
+      "sha256": "ab3598eba093a1f938a59dec842285027b8b971795a3f3b374fde1e2c30b4e39"
+    },
+    "metric_summary.csv": {
+      "bytes": 665,
+      "sha256": "1ff29a94427a677b080a4f73f0d08711ff4494615ea6117a068584ff62156e40"
+    },
+    "model_manifest.json": {
+      "bytes": 32183,
+      "sha256": "188ec8c0a7e4b23af7703827d5186f27564d6ea8a024364a161d48cb341db940"
+    },
+    "model_summary.csv": {
+      "bytes": 53,
+      "sha256": "218136d93dd314c48883aa3f255dba7958aece5669f3dcf3cf063bbbc410c282"
+    },
+    "numeric_primary.jsonl": {
+      "bytes": 2482841,
+      "sha256": "e3d485fb08c3b5ce85b49422874fe891f7d858b1caa630c5c8e87b55ec754100"
+    },
+    "numeric_summary.csv": {
+      "bytes": 2736,
+      "sha256": "0b8b6ebb4a01bd91d3562358f78d391c61b99bdf156fb13235648b18bf4d12fc"
+    },
+    "outputs_raw.jsonl": {
+      "bytes": 18741215,
+      "sha256": "5502ad81966d33adab86db05ea4f23e9798e573403cb5a1106e91f829129cbc8"
+    },
+    "repeated_runs_selected.jsonl": {
+      "bytes": 1037428,
+      "sha256": "fad3ff3272aa458a7ea1f171e542a9d7f690dcb36083d29b06ad5d165d9662a0"
+    },
+    "statistical_tests.csv": {
+      "bytes": 816,
+      "sha256": "105f80a81ecfd13bfcd74fcf064942644bdbe7c5e6591ee1955422aca80703ec"
+    }
+  },
+  "finished_at_utc": "2026-08-07T07:28:09.315092+00:00",
+  "frozen_dataset_sha256": "5f9ff9653b3d8649f8a2b1ddc8949cea917d86035fb5deba3e8d6b98437ff4f2",
+  "platform": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.13",
+  "registry_sha256": "0259422adbe060dda15cd151d018cf19c43d358e3e36cf444034eb71c31e4046",
+  "source_commit": "cca515db6919219a2af71419aefa1ff733897825",
+  "started_at_utc": "2026-08-07T02:31:25.122744+00:00",
+  "status": "complete",
+  "worktree_clean_at_start": true
+}

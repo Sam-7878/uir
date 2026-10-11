@@ -1,0 +1,12 @@
+{
+  "purpose": "Operational recovery after repeated fail-closed Phi interruption; no diagnostic request before campaign retry",
+  "after_completed_rows": 646,
+  "status_code": 200,
+  "response": {
+    "model": "phi3.5:latest",
+    "created_at": "2026-09-09T02:07:38.945389688Z",
+    "response": "",
+    "done": true,
+    "done_reason": "unload"
+  }
+}

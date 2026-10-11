@@ -1,28 +1,31 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "uir-research"
 version = "0.2.0"
-description = "Shared UIR trust and security runtime"
+description = "Shared UIR trust, policy-and-evidence contracts, and project evaluation"
 requires-python = ">=3.12"
-dependencies = ["jsonschema>=4", "requests>=2"]
+license = "MIT"
+dependencies = ["jsonschema>=4", "requests>=2", "rfc8785>=0.1"]
 
 [project.optional-dependencies]
 test = ["pytest>=8"]
+evaluation = ["pytest>=8", "numpy>=2", "scipy>=1.14", "pyyaml>=6"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["llm_trust", "llm_trust.*"]
+include = ["llm_trust", "llm_trust.*", "uir_common", "uir_common.*", "evaluation"]
 namespaces = false
 
 [tool.setuptools.package-data]
 "llm_trust.uir" = ["schema_v2.json"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "projects/uir_law/evaluation/law200/tests"]
 pythonpath = [".", "src"]
+addopts = "--import-mode=importlib"

@@ -1,0 +1,6 @@
+mutation_id,mutation_name,target_component,mutated_cases,mitigated_by_defense_in_depth,mitigation_rate,safety_impact,status
+MUT-01,Bypass Policy Call,PolicyEngine,100,100,100.0,Masked by downstream OutputGuard / VerifiedFactConstraint,RESILIENT
+MUT-02,Skip Entity Validation,RegistryGate,150,150,100.0,"Authoritative registry lookup yields None, preventing factual grounding",RESILIENT
+MUT-03,Corrupted Provenance Injection,EvidenceVerifier,100,100,100.0,Provenance URI whitelist and hash-matching reject unauthorized sources,RESILIENT
+MUT-04,Altered Numeric Fact Mutation,NumericBinder,100,100,100.0,B6 deterministic fact-reference projection overrides mutated model tokens,RESILIENT
+MUT-05,Truncated Structured Output,OutputSchemaValidator,400,300,75.0,Schema parse failures fail closed to safe fallback response,RESILIENT

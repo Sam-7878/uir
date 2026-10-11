@@ -1,0 +1,13 @@
+pipeline,metric,runs,mean,variance,minimum,maximum
+B0_DIRECT_SLM,claim_precision,5,0.25,0.0,0.25,0.25
+B0_DIRECT_SLM,unsupported_claim_rate,5,0.55,0.0,0.55,0.55
+B0_DIRECT_SLM,latency_us,5,1248327.56,25937264265.542404,1141047.1,1562286.85
+B0_DIRECT_SLM,validator_rejection_rate,5,0.0,0.0,0.0,0.0
+B4_UIR_POLICY_SLM,claim_precision,5,0.35,0.0,0.35,0.35
+B4_UIR_POLICY_SLM,unsupported_claim_rate,5,0.1,0.0,0.1,0.1
+B4_UIR_POLICY_SLM,latency_us,5,354998.27,55945844.72959997,347614.9,364760.25
+B4_UIR_POLICY_SLM,validator_rejection_rate,5,0.0,0.0,0.0,0.0
+B5_FULL_UIR_OUTPUT_VALIDATION,claim_precision,5,0.35,0.0,0.35,0.35
+B5_FULL_UIR_OUTPUT_VALIDATION,unsupported_claim_rate,5,0.1,0.0,0.1,0.1
+B5_FULL_UIR_OUTPUT_VALIDATION,latency_us,5,355008.07,55935586.82360021,347625.6,364769.5
+B5_FULL_UIR_OUTPUT_VALIDATION,validator_rejection_rate,5,0.15,0.0,0.15,0.15

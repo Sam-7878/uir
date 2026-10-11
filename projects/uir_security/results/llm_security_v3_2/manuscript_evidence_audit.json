@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "binding_checks": {
+    "all_primary_rows_exact": true,
+    "all_model_and_ablation_rows_exact": true,
+    "source_amendments_disclosed": true,
+    "operational_interruptions_disclosed": true
+  },
+  "forbidden_claims_absent": {
+    "0.9402": true,
+    "blinded human expert adjudication": true,
+    "100% publication criteria": true,
+    "bitsandbytes NF4": true,
+    "INCOMPLETE: LIVE EXECUTION / VALIDATION PENDING": true,
+    "Hard termination": true,
+    "complete TCB audit matrix": true,
+    "shi2026progent": true,
+    "slutzky2025camel": true,
+    "yang2024progent": true
+  },
+  "source_summaries": {
+    "ablation_results.json": "3c32422468224885ee4913832aaae4b9b0e6f29c4aad08ea983f931588432d66",
+    "adaptive_attack_results.json": "d527deccf253b4817b892dcf65f0d03d43fa549b638ac59204b52ccf19cb6c86",
+    "agency_results.json": "03e127cc6541395d2394d2bf832c79803361be204b7ff8169758919a72341c80",
+    "agentdojo_micro_results.json": "0566dd264f0f4ad3a15a0577c65842948a45f40f7eb2eb9f159730190b240afc",
+    "exfiltration_results.json": "58c2a052a775f581ef440471cf2e2af11220489b5068087d6bfb6b171409cd7a",
+    "multi_model_results.json": "8f2a374fc949992e7b1db9e5d0daf055eae3432d5cecefab5aa14749032d7ac0",
+    "per_class_results.json": "48a4f48e05471acea7f06d3edeea885e99c162984b6f5e3beb15f00c23a14d77",
+    "resource_results.json": "1a01039ec6ef2226d9dd834f1167620a629243f1280a77f04500348e64491036",
+    "stochastic_results.json": "eedaba61d3d900ed039d1effd0950ccf62e3f379a6302078328ba4dc3e09c81a"
+  },
+  "manuscript_sha256": "7d6ef7645b88a5c4cf7afca8fb227695030844e6cb82aa651bef705ab72652ca",
+  "render_command": "python docs/security_v3_2/audit/render_evidence.py --final"
+}

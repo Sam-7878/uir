@@ -1,0 +1,9 @@
+field,n,r1_class_distribution,r2_class_distribution,r3_class_distribution,raw_three_way_agreement,r1_r2_kappa,r1_r3_kappa,r2_r3_kappa,fleiss_kappa,kappa_defined,kappa_reason
+source_text_valid,1200,{1:1200},{1:1200},{1:1200},1.000000000,NA,NA,NA,NA,false,undefined_due_to_zero_marginal_variance
+language_valid,1200,{1:1200},{1:1200},"{0:12, 1:1188}",0.990000000,NA,0.000000000,0.000000000,-0.003344482,true,computed
+intent_valid,1200,{1:1200},{1:1200},{1:1200},1.000000000,NA,NA,NA,NA,false,undefined_due_to_zero_marginal_variance
+target_valid,1200,{1:1200},{1:1200},{1:1200},1.000000000,NA,NA,NA,NA,false,undefined_due_to_zero_marginal_variance
+conditions_valid,1200,{1:1200},{1:1200},{1:1200},1.000000000,NA,NA,NA,NA,false,undefined_due_to_zero_marginal_variance
+policy_valid,1200,{1:1200},{1:1200},{1:1200},1.000000000,NA,NA,NA,NA,false,undefined_due_to_zero_marginal_variance
+outcome_valid,1200,{1:1200},{1:1200},{1:1200},1.000000000,NA,NA,NA,NA,false,undefined_due_to_zero_marginal_variance
+claims_valid,1200,"{1:1050, NA:150}","{1:1050, NA:150}","{1:1050, NA:150}",1.000000000,1.000000000,1.000000000,1.000000000,1.000000000,true,computed

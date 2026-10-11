@@ -1,0 +1,16 @@
+{"records": 320, "resumed": "heldout-run-00-vanilla_slm.jsonl"}
+{"records": 320, "resumed": "heldout-run-00-naive_rag.jsonl"}
+{"records": 320, "resumed": "heldout-run-00-prompt-only_guardrail.jsonl"}
+{"records": 320, "resumed": "heldout-run-00-uir-v1.jsonl"}
+{"records": 320, "resumed": "heldout-run-00-hete_uir-v2_security.jsonl"}
+{"records": 320, "resumed": "heldout-run-01-vanilla_slm.jsonl"}
+{"records": 320, "resumed": "heldout-run-01-naive_rag.jsonl"}
+{"records": 320, "resumed": "heldout-run-01-prompt-only_guardrail.jsonl"}
+{"records": 320, "resumed": "heldout-run-01-uir-v1.jsonl"}
+{"records": 320, "resumed": "heldout-run-01-hete_uir-v2_security.jsonl"}
+{"records": 320, "resumed": "heldout-run-02-vanilla_slm.jsonl"}
+{"records": 320, "resumed": "heldout-run-02-naive_rag.jsonl"}
+{"records": 320, "resumed": "heldout-run-02-prompt-only_guardrail.jsonl"}
+{"records": 320, "resumed": "heldout-run-02-uir-v1.jsonl"}
+{"records": 320, "resumed": "heldout-run-02-hete_uir-v2_security.jsonl"}
+{"baselines": ["Vanilla SLM", "Naive RAG", "Prompt-only Guardrail", "UIR-v1", "HETE UIR-v2 Security"], "cases": 320, "publication_eligible": true, "runs": 3}

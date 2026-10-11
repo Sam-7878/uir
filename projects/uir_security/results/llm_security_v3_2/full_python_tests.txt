@@ -1,0 +1,9 @@
+........................................................................ [ 55%]
+..........................................................               [100%]
+=============================== warnings summary ===============================
+../../../_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92
+  /mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+130 passed, 1 warning in 8.34s

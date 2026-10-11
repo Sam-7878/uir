@@ -7,8 +7,8 @@ license.workspace = true
 [dependencies]
 chrono.workspace = true
 hex.workspace = true
-poa-core = { path = "../../../hete_sandbox/crates/poa-core" }
-poa-protocol = { path = "../../../hete_sandbox/crates/poa-protocol" }
+poa-core = { path = "../poa-core" }
+poa-protocol = { path = "../poa-protocol" }
 regex.workspace = true
 serde.workspace = true
 serde_json.workspace = true

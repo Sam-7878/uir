@@ -1,0 +1,57 @@
+{
+  "created_at_utc": "2026-09-04T23:33:45.702482+00:00",
+  "git_commit": "f0465cf88e4c5d17ff016325219324fd4a1cbee5",
+  "git_status": "D docs/work_reports/uir_phase4c/REPORT_PHASE4C_AUTHENTIC_EVIDENCE.md\n?? evaluation/uir_phase4d/",
+  "inviolability_assertion": "results/uir_phase4c/ remains strictly read-only and immutable for comparison.",
+  "parent_evidence_directory": "/mnt/d/_Work/goat_bank/uir/results/uir_phase4c",
+  "parent_files": {
+    "GOLD_ACCESS_AUDIT.md": {
+      "modified_iso": "2026-09-04T12:14:58.411951+00:00",
+      "sha256": "05e67c9d8821b291601dfc443995f555cad0819718f561c8859999e57c2aa270",
+      "size_bytes": 2123
+    },
+    "OFFICIAL_BENCHMARK_PROVENANCE.json": {
+      "modified_iso": "2026-09-04T18:16:54.531895+00:00",
+      "sha256": "c25c9046ed5a26bf1279c7699fe0d0148501f7e8ef63a04dc8f576ac6e11e477",
+      "size_bytes": 97732
+    },
+    "PUBLICATION_CONSISTENCY_PHASE4C.md": {
+      "modified_iso": "2026-09-04T22:40:00.920085+00:00",
+      "sha256": "9c2735b9cabb606780c64d58267d31e23332aa99c8d9c1485cb495bdcb5e5717",
+      "size_bytes": 671
+    },
+    "per_case_evidence_actual.jsonl": {
+      "modified_iso": "2026-09-04T18:16:53.263076+00:00",
+      "sha256": "fb56b01d4c614753cbc8161b46ca383efa45242f741a5062bd2dd074de435604",
+      "size_bytes": 15960704
+    },
+    "run_manifest_phase4c.json": {
+      "modified_iso": "2026-09-04T22:40:00.947349+00:00",
+      "sha256": "344f4dcb50b338fd9021d9e4af8b71da165b52cf6e85e7671ac64f312d3f2dea",
+      "size_bytes": 672
+    },
+    "stat_latency_actual.csv": {
+      "modified_iso": "2026-09-04T18:16:53.748463+00:00",
+      "sha256": "6650d6f50fd06adb5fb3fad9cb85e20cf916f8b4ff02ee1f0035dcb324ecc099",
+      "size_bytes": 1280
+    },
+    "stat_safety_actual.csv": {
+      "modified_iso": "2026-09-04T18:16:53.733208+00:00",
+      "sha256": "f5d710182d0fe200d1d45aff36b9386c47b606d098102dad7b69bd18270d4c54",
+      "size_bytes": 1240
+    },
+    "stat_utility_actual.csv": {
+      "modified_iso": "2026-09-04T18:16:53.746444+00:00",
+      "sha256": "21a08b81076a1557e1e6a9bcf0fbda6fc2d1100e10367c77c7c216eb6501e220",
+      "size_bytes": 1169
+    },
+    "strong_baseline_summary_actual.csv": {
+      "modified_iso": "2026-09-04T18:16:53.264570+00:00",
+      "sha256": "3f198bff7a678ebd6567b6470fa0809bc1540b6eaecd749e7ca61bba297de683",
+      "size_bytes": 2665
+    }
+  },
+  "parent_phase": "UIR-4C",
+  "parent_status": "AUTHENTIC_EXECUTION_BASELINE",
+  "phase": "UIR-4D-BASELINE-PRESERVATION"
+}

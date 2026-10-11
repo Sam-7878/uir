@@ -1,0 +1,8 @@
+{
+  "normalization": "B6 policy-prevented renderer path -> NO_VERIFIED_ANSWER",
+  "changed_rows": {
+    "results/uir_phase3d/campaign_frozen_v2.jsonl": 150,
+    "results/uir_phase3d/campaign_real_fact.jsonl": 0
+  },
+  "model_regeneration": false
+}

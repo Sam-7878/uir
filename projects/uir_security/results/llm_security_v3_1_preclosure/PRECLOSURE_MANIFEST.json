@@ -1,0 +1,32 @@
+{
+  "status": "V3_1_PRELIMINARY_PUBLICATION_EVIDENCE",
+  "archived_at": "2026-09-08T14:30:00+09:00",
+  "git_commit": "9c4c6c7",
+  "files": {
+    "_47.1_UIR_ZTA.tex": {
+      "path": "d:\\_Work\\goat_bank\\uir\\docs\\papers\\_47_1_UIR_for_ZTA\\_47.1_UIR_ZTA.tex",
+      "sha256": "166716553ae82b9f476278ee9ccb21c0a072a2bbafb3e42632f1b85e017047e3",
+      "size": 127215
+    },
+    "references.bib": {
+      "path": "d:\\_Work\\goat_bank\\uir\\docs\\papers\\_47_1_UIR_for_ZTA\\references.bib",
+      "sha256": "72a3ae367b4925a072759a6db3479db8687d3b4f504555463a82e48244c83e7b",
+      "size": 10152
+    },
+    "HETE_UIR_ZTA_V3_1_PUBLICATION_EVIDENCE_REPAIR_COMPLETION_REPORT.md": {
+      "path": "d:\\_Work\\goat_bank\\uir\\docs\\work_reports\\201_security_v3_1\\HETE_UIR_ZTA_V3_1_PUBLICATION_EVIDENCE_REPAIR_COMPLETION_REPORT.md",
+      "sha256": "808c0e6a6ccafcae33e2501a8c2f2c57a021a5fa9d754bcdbdffbaf321cc5de7",
+      "size": 22503
+    },
+    "ARTIFACT_MANIFEST.json": {
+      "path": "d:\\_Work\\goat_bank\\uir\\results\\llm_security_v3_1_preclosure\\ARTIFACT_MANIFEST.json",
+      "sha256": "c248ca344b046801092430ebe765684f579867f227ad3a6f787d916aab292ef1",
+      "size": 4220
+    },
+    "baseline_comparison.json": {
+      "path": "d:\\_Work\\goat_bank\\uir\\results\\llm_security_v3_1_preclosure\\baseline_comparison.json",
+      "sha256": "1f4296063a6570e84af17457d17d71a7c26569d45c61b41b17f00b9f6b678714",
+      "size": 2115
+    }
+  }
+}
