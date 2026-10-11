@@ -1,0 +1,9 @@
+Ablation Configuration,Overall ASR (%),FAR (%),FRR (%),Utility Rate (%),Avg Latency (ms)
+Full UIR-v2 Security,0.0%,0.0%,100.0%,0.0%,1257.65
+-entity_verifier,0.0%,0.0%,0.0%,100.0%,3823.36
+-policy_engine,0.0%,0.0%,0.0%,100.0%,4275.09
+-context_firewall,0.0%,0.0%,100.0%,0.0%,1225.90
+-provenance,0.0%,0.0%,50.0%,50.0%,1572.54
+-capability_gate,0.0%,0.0%,100.0%,0.0%,1311.83
+-output_guard,0.0%,0.0%,100.0%,0.0%,1246.01
+-resource_guard,0.0%,0.0%,100.0%,0.0%,1305.58

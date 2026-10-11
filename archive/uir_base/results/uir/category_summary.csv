@@ -1,0 +1,9 @@
+category,cases,outcome_accuracy,semantic_match,policy_accuracy,false_accept_rate,false_reject_rate
+adversarial,140,1.0,1.0,1.0,0.0,0.0
+ambiguous,100,1.0,1.0,1.0,0.0,0.0
+invalid_entity,200,1.0,1.0,1.0,0.0,0.0
+output_contract,100,1.0,1.0,1.0,0.0,0.0
+parallel,600,1.0,1.0,1.0,0.0,0.0
+paraphrase,200,1.0,1.0,1.0,0.0,0.0
+policy_violation,200,1.0,1.0,1.0,0.0,0.0
+valid,300,1.0,1.0,1.0,0.0,0.0

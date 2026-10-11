@@ -1,0 +1,998 @@
+{
+  "batch_id": "AI-R2-V2C-0475--V2C-0499",
+  "reviewer_id": "AI-R2",
+  "engine": "AntiGravity Gemini 3.6 Flash",
+  "model_selector": "gemini-3.6-flash-high",
+  "case_ids": [
+    "V2C-0475",
+    "V2C-0476",
+    "V2C-0477",
+    "V2C-0478",
+    "V2C-0479",
+    "V2C-0480",
+    "V2C-0481",
+    "V2C-0482",
+    "V2C-0483",
+    "V2C-0484",
+    "V2C-0485",
+    "V2C-0486",
+    "V2C-0487",
+    "V2C-0488",
+    "V2C-0489",
+    "V2C-0490",
+    "V2C-0491",
+    "V2C-0492",
+    "V2C-0493",
+    "V2C-0494",
+    "V2C-0495",
+    "V2C-0496",
+    "V2C-0497",
+    "V2C-0498",
+    "V2C-0499"
+  ],
+  "timestamp": "2026-08-08T11:50:26.035219+00:00",
+  "duration_seconds": 20.36630022999998,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "9d2b2abf-f836-4614-8972-e3a5b76ae35c",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-0475\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0475 (2022 operating_income) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0475\",\"period\":\"2022\"}],\"target\":\"QV0475\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0476\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0476 (2023 assets) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0476\",\"period\":\"2023\"}],\"target\":\"QV0476\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0477\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0477 (2024 revenue) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0477\",\"period\":\"2024\"}],\"target\":\"QV0477\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0478\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0478 (2025 net_income) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0478\",\"period\":\"2025\"}],\"target\":\"QV0478\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0479\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0479 (2026 operating_income) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0479\",\"period\":\"2026\"}],\"target\":\"QV0479\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0480\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0480 (2022 assets) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0480\",\"period\":\"2022\"}],\"target\":\"QV0480\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0481\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0481 (2023 revenue) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0481\",\"period\":\"2023\"}],\"target\":\"QV0481\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0482\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0482 (2024 net_income) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0482\",\"period\":\"2024\"}],\"target\":\"QV0482\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0483\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0483 (2025 operating_income) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0483\",\"period\":\"2025\"}],\"target\":\"QV0483\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0484\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0484 (2026 assets) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0484\",\"period\":\"2026\"}],\"target\":\"QV0484\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0485\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0485 (2022 revenue) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0485\",\"period\":\"2022\"}],\"target\":\"QV0485\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0486\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0486 (2023 net_income) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0486\",\"period\":\"2023\"}],\"target\":\"QV0486\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0487\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0487 (2024 operating_income) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0487\",\"period\":\"2024\"}],\"target\":\"QV0487\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0488\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0488 (2025 assets) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0488\",\"period\":\"2025\"}],\"target\":\"QV0488\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0489\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0489 (2026 revenue) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0489\",\"period\":\"2026\"}],\"target\":\"QV0489\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0490\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0490 (2022 net_income) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0490\",\"period\":\"2022\"}],\"target\":\"QV0490\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0491\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0491 (2023 operating_income) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0491\",\"period\":\"2023\"}],\"target\":\"QV0491\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0492\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0492 (2024 assets) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0492\",\"period\":\"2024\"}],\"target\":\"QV0492\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0493\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0493 (2025 revenue) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0493\",\"period\":\"2025\"}],\"target\":\"QV0493\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0494\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0494 (2026 net_income) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0494\",\"period\":\"2026\"}],\"target\":\"QV0494\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0495\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0495 (2022 operating_income) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0495\",\"period\":\"2022\"}],\"target\":\"QV0495\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0496\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0496 (2023 assets) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0496\",\"period\":\"2023\"}],\"target\":\"QV0496\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0497\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0497 (2024 revenue) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0497\",\"period\":\"2024\"}],\"target\":\"QV0497\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0498\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0498 (2025 net_income) in Korean matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0498\",\"period\":\"2025\"}],\"target\":\"QV0498\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0499\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0499 (2026 operating_income) matches candidate annotations.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0499\",\"period\":\"2026\"}],\"target\":\"QV0499\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 13.735549801,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-0475",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0475 (2022 operating_income) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0475",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0475"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0476",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0476 (2023 assets) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0476",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0476"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0477",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0477 (2024 revenue) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0477",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0477"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0478",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0478 (2025 net_income) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0478",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0478"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0479",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0479 (2026 operating_income) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0479",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0479"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0480",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0480 (2022 assets) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0480",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0480"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0481",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0481 (2023 revenue) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0481",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0481"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0482",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0482 (2024 net_income) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0482",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0482"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0483",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0483 (2025 operating_income) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0483",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0483"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0484",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0484 (2026 assets) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0484",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0484"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0485",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0485 (2022 revenue) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0485",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0485"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0486",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0486 (2023 net_income) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0486",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0486"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0487",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0487 (2024 operating_income) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0487",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0487"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0488",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0488 (2025 assets) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0488",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0488"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0489",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0489 (2026 revenue) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0489",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0489"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0490",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0490 (2022 net_income) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0490",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0490"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0491",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0491 (2023 operating_income) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0491",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0491"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0492",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0492 (2024 assets) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0492",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0492"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0493",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0493 (2025 revenue) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0493",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0493"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0494",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0494 (2026 net_income) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0494",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0494"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0495",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0495 (2022 operating_income) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0495",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0495"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0496",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0496 (2023 assets) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0496",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0496"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0497",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0497 (2024 revenue) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0497",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0497"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0498",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0498 (2025 net_income) in Korean matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0498",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0498"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0499",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0499 (2026 operating_income) matches candidate annotations.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0499",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0499"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 38261,
+      "output_tokens": 14857,
+      "thinking_tokens": 9490,
+      "cache_read_tokens": 8164,
+      "total_tokens": 53118
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "6ac9abdf52faa74359175d70a44a62e6d2413b0c6fbf3daf23d1eafaaa8d2a6f"
+}

@@ -1,0 +1,998 @@
+{
+  "batch_id": "AI-R2-V2C-0625--V2C-0649",
+  "reviewer_id": "AI-R2",
+  "engine": "AntiGravity Gemini 3.6 Flash",
+  "model_selector": "gemini-3.6-flash-high",
+  "case_ids": [
+    "V2C-0625",
+    "V2C-0626",
+    "V2C-0627",
+    "V2C-0628",
+    "V2C-0629",
+    "V2C-0630",
+    "V2C-0631",
+    "V2C-0632",
+    "V2C-0633",
+    "V2C-0634",
+    "V2C-0635",
+    "V2C-0636",
+    "V2C-0637",
+    "V2C-0638",
+    "V2C-0639",
+    "V2C-0640",
+    "V2C-0641",
+    "V2C-0642",
+    "V2C-0643",
+    "V2C-0644",
+    "V2C-0645",
+    "V2C-0646",
+    "V2C-0647",
+    "V2C-0648",
+    "V2C-0649"
+  ],
+  "timestamp": "2026-08-08T11:52:40.241037+00:00",
+  "duration_seconds": 18.950929475000066,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "3af0e6ec-83cb-46e1-a70a-09802c846b14",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-0625\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0625.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0625\",\"period\":\"2022\"}],\"target\":\"QV0625\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0626\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0626.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0626\",\"period\":\"2023\"}],\"target\":\"QV0626\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0627\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0627.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0627\",\"period\":\"2024\"}],\"target\":\"QV0627\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0628\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0628.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0628\",\"period\":\"2025\"}],\"target\":\"QV0628\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0629\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0629.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0629\",\"period\":\"2026\"}],\"target\":\"QV0629\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0630\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0630.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0630\",\"period\":\"2022\"}],\"target\":\"QV0630\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0631\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0631.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0631\",\"period\":\"2023\"}],\"target\":\"QV0631\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0632\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0632.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0632\",\"period\":\"2024\"}],\"target\":\"QV0632\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0633\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0633.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0633\",\"period\":\"2025\"}],\"target\":\"QV0633\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0634\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0634.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0634\",\"period\":\"2026\"}],\"target\":\"QV0634\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0635\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0635.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0635\",\"period\":\"2022\"}],\"target\":\"QV0635\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0636\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0636.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0636\",\"period\":\"2023\"}],\"target\":\"QV0636\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0637\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0637.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0637\",\"period\":\"2024\"}],\"target\":\"QV0637\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0638\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0638.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0638\",\"period\":\"2025\"}],\"target\":\"QV0638\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0639\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0639.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0639\",\"period\":\"2026\"}],\"target\":\"QV0639\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0640\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0640.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0640\",\"period\":\"2022\"}],\"target\":\"QV0640\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0641\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0641.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0641\",\"period\":\"2023\"}],\"target\":\"QV0641\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0642\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0642.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0642\",\"period\":\"2024\"}],\"target\":\"QV0642\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0643\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0643.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0643\",\"period\":\"2025\"}],\"target\":\"QV0643\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0644\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0644.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0644\",\"period\":\"2026\"}],\"target\":\"QV0644\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0645\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0645.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0645\",\"period\":\"2022\"}],\"target\":\"QV0645\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0646\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0646.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0646\",\"period\":\"2023\"}],\"target\":\"QV0646\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0647\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0647.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0647\",\"period\":\"2024\"}],\"target\":\"QV0647\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0648\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0648.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0648\",\"period\":\"2025\"}],\"target\":\"QV0648\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0649\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0649.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0649\",\"period\":\"2026\"}],\"target\":\"QV0649\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 13.014784403,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-0625",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0625.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0625",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0625"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0626",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0626.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0626",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0626"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0627",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0627.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0627",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0627"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0628",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0628.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0628",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0628"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0629",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0629.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0629",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0629"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0630",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0630.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0630",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0630"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0631",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0631.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0631",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0631"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0632",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0632.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0632",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0632"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0633",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0633.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0633",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0633"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0634",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0634.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0634",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0634"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0635",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0635.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0635",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0635"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0636",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0636.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0636",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0636"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0637",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0637.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0637",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0637"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0638",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0638.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0638",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0638"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0639",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0639.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0639",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0639"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0640",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0640.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0640",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0640"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0641",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0641.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0641",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0641"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0642",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0642.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0642",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0642"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0643",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0643.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0643",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0643"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0644",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0644.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0644",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0644"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0645",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0645.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0645",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0645"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0646",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0646.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0646",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0646"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0647",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0647.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0647",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0647"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0648",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0648.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0648",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0648"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0649",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent, target, conditions, policy, outcome, and claims match candidate annotation for QV0649.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0649",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0649"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 38243,
+      "output_tokens": 13516,
+      "thinking_tokens": 8150,
+      "cache_read_tokens": 8164,
+      "total_tokens": 51759
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "c4326a60417238c2b6b6393fc412fcb4a3b1c689ecadbed93bae5079a8704d53"
+}

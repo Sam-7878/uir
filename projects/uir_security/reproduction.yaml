@@ -1,0 +1,6 @@
+project: uir_security
+facade: scripts/reproduce_project.py
+modes: [verify, tests]
+source: evaluation
+paper_visibility: local_only
+scientific_revalidation: not_performed_in_base_revision

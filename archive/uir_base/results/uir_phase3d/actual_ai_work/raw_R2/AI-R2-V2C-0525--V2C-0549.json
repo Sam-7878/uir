@@ -1,0 +1,920 @@
+{
+  "batch_id": "AI-R2-V2C-0525--V2C-0549",
+  "reviewer_id": "AI-R2",
+  "engine": "AntiGravity Gemini 3.6 Flash",
+  "model_selector": "gemini-3.6-flash-high",
+  "case_ids": [
+    "V2C-0525",
+    "V2C-0526",
+    "V2C-0527",
+    "V2C-0528",
+    "V2C-0529",
+    "V2C-0530",
+    "V2C-0531",
+    "V2C-0532",
+    "V2C-0533",
+    "V2C-0534",
+    "V2C-0535",
+    "V2C-0536",
+    "V2C-0537",
+    "V2C-0538",
+    "V2C-0539",
+    "V2C-0540",
+    "V2C-0541",
+    "V2C-0542",
+    "V2C-0543",
+    "V2C-0544",
+    "V2C-0545",
+    "V2C-0546",
+    "V2C-0547",
+    "V2C-0548",
+    "V2C-0549"
+  ],
+  "timestamp": "2026-08-08T11:51:13.050902+00:00",
+  "duration_seconds": 27.378869646,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "94588a34-e840-4193-9ee1-bb285725c8e5",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-0525\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0525 2022 revenue. English source contains no conditions, so candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0525\",\"period\":\"2022\"}],\"target\":\"QV0525\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0526\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0526 2023 net_income with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0526\",\"period\":\"2023\"}],\"target\":\"QV0526\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0527\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0527 2024 operating_income. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0527\",\"period\":\"2024\"}],\"target\":\"QV0527\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0528\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0528 2025 assets with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0528\",\"period\":\"2025\"}],\"target\":\"QV0528\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0529\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0529 2026 revenue. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0529\",\"period\":\"2026\"}],\"target\":\"QV0529\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0530\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0530 2022 net_income with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0530\",\"period\":\"2022\"}],\"target\":\"QV0530\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0531\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0531 2023 operating_income. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0531\",\"period\":\"2023\"}],\"target\":\"QV0531\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0532\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0532 2024 assets with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0532\",\"period\":\"2024\"}],\"target\":\"QV0532\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0533\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0533 2025 revenue. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0533\",\"period\":\"2025\"}],\"target\":\"QV0533\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0534\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0534 2026 net_income with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0534\",\"period\":\"2026\"}],\"target\":\"QV0534\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0535\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0535 2022 operating_income. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0535\",\"period\":\"2022\"}],\"target\":\"QV0535\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0536\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0536 2023 assets with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0536\",\"period\":\"2023\"}],\"target\":\"QV0536\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0537\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0537 2024 revenue. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0537\",\"period\":\"2024\"}],\"target\":\"QV0537\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0538\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0538 2025 net_income with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0538\",\"period\":\"2025\"}],\"target\":\"QV0538\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0539\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0539 2026 operating_income. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0539\",\"period\":\"2026\"}],\"target\":\"QV0539\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0540\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0540 2022 assets with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0540\",\"period\":\"2022\"}],\"target\":\"QV0540\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0541\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0541 2023 revenue. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0541\",\"period\":\"2023\"}],\"target\":\"QV0541\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0542\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0542 2024 net_income with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0542\",\"period\":\"2024\"}],\"target\":\"QV0542\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0543\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0543 2025 operating_income. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0543\",\"period\":\"2025\"}],\"target\":\"QV0543\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0544\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0544 2026 assets with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0544\",\"period\":\"2026\"}],\"target\":\"QV0544\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0545\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0545 2022 revenue. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0545\",\"period\":\"2022\"}],\"target\":\"QV0545\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0546\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0546 2023 net_income with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0546\",\"period\":\"2023\"}],\"target\":\"QV0546\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0547\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0547 2024 operating_income. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0547\",\"period\":\"2024\"}],\"target\":\"QV0547\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0548\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0548 2025 assets with entity_verified condition. Candidate annotations match fully (all 1).\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0548\",\"period\":\"2025\"}],\"target\":\"QV0548\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0549\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed VERIFY intent for QV0549 2026 revenue. Source text has no condition; candidate condition is invalid (0).\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0549\",\"period\":\"2026\"}],\"target\":\"QV0549\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 21.441986246,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-0525",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0525 2022 revenue. English source contains no conditions, so candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0525",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0525"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0526",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0526 2023 net_income with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0526",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0526"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0527",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0527 2024 operating_income. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0527",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0527"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0528",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0528 2025 assets with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0528",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0528"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0529",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0529 2026 revenue. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0529",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0529"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0530",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0530 2022 net_income with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0530",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0530"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0531",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0531 2023 operating_income. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0531",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0531"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0532",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0532 2024 assets with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0532",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0532"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0533",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0533 2025 revenue. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0533",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0533"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0534",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0534 2026 net_income with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0534",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0534"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0535",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0535 2022 operating_income. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0535",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0535"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0536",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0536 2023 assets with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0536",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0536"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0537",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0537 2024 revenue. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0537",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0537"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0538",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0538 2025 net_income with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0538",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0538"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0539",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0539 2026 operating_income. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0539",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0539"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0540",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0540 2022 assets with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0540",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0540"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0541",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0541 2023 revenue. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0541",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0541"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0542",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0542 2024 net_income with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0542",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0542"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0543",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0543 2025 operating_income. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0543",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0543"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0544",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0544 2026 assets with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0544",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0544"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0545",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0545 2022 revenue. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0545",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0545"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0546",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0546 2023 net_income with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0546",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0546"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0547",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0547 2024 operating_income. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0547",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0547"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0548",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0548 2025 assets with entity_verified condition. Candidate annotations match fully (all 1).",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0548",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0548"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0549",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed VERIFY intent for QV0549 2026 revenue. Source text has no condition; candidate condition is invalid (0).",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0549",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0549"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 38245,
+      "output_tokens": 23148,
+      "thinking_tokens": 17805,
+      "cache_read_tokens": 8164,
+      "total_tokens": 61393
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "5ae2fbdd76e673615494ab4d1626a9abe44ddfd8967c95f9b3d3534541859e47"
+}

@@ -1,0 +1,926 @@
+{
+  "batch_id": "AI-R3-V2C-0800--V2C-0824",
+  "reviewer_id": "AI-R3",
+  "engine": "AntiGravity Gemini 3.1 Pro",
+  "model_selector": "gemini-3.1-pro",
+  "case_ids": [
+    "V2C-0800",
+    "V2C-0801",
+    "V2C-0802",
+    "V2C-0803",
+    "V2C-0804",
+    "V2C-0805",
+    "V2C-0806",
+    "V2C-0807",
+    "V2C-0808",
+    "V2C-0809",
+    "V2C-0810",
+    "V2C-0811",
+    "V2C-0812",
+    "V2C-0813",
+    "V2C-0814",
+    "V2C-0815",
+    "V2C-0816",
+    "V2C-0817",
+    "V2C-0818",
+    "V2C-0819",
+    "V2C-0820",
+    "V2C-0821",
+    "V2C-0822",
+    "V2C-0823",
+    "V2C-0824"
+  ],
+  "timestamp": "2026-08-08T12:58:24.647065+00:00",
+  "duration_seconds": 63.35846054900003,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "0baee657-ceec-44b3-988e-93ce48cc05c3",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-0800\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0800\",\"period\":\"2022\"}],\"target\":\"QV0800\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0801\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0801\",\"period\":\"2023\"}],\"target\":\"QV0801\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0802\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0802\",\"period\":\"2024\"}],\"target\":\"QV0802\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0803\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0803\",\"period\":\"2025\"}],\"target\":\"QV0803\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0804\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0804\",\"period\":\"2026\"}],\"target\":\"QV0804\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0805\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0805\",\"period\":\"2022\"}],\"target\":\"QV0805\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0806\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0806\",\"period\":\"2023\"}],\"target\":\"QV0806\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0807\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0807\",\"period\":\"2024\"}],\"target\":\"QV0807\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0808\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0808\",\"period\":\"2025\"}],\"target\":\"QV0808\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0809\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0809\",\"period\":\"2026\"}],\"target\":\"QV0809\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0810\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0810\",\"period\":\"2022\"}],\"target\":\"QV0810\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0811\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0811\",\"period\":\"2023\"}],\"target\":\"QV0811\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0812\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0812\",\"period\":\"2024\"}],\"target\":\"QV0812\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0813\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0813\",\"period\":\"2025\"}],\"target\":\"QV0813\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0814\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0814\",\"period\":\"2026\"}],\"target\":\"QV0814\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0815\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0815\",\"period\":\"2022\"}],\"target\":\"QV0815\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0816\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0816\",\"period\":\"2023\"}],\"target\":\"QV0816\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0817\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0817\",\"period\":\"2024\"}],\"target\":\"QV0817\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0818\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0818\",\"period\":\"2025\"}],\"target\":\"QV0818\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0819\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0819\",\"period\":\"2026\"}],\"target\":\"QV0819\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0820\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0820\",\"period\":\"2022\"}],\"target\":\"QV0820\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0821\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0821\",\"period\":\"2023\"}],\"target\":\"QV0821\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0822\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0822\",\"period\":\"2024\"}],\"target\":\"QV0822\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0823\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Source text does not state any conditions, but candidate annotation expects entity_verified condition.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0823\",\"period\":\"2025\"}],\"target\":\"QV0823\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0824\",\"claims_valid\":\"1\",\"conditions_valid\":\"1\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"entity_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0824\",\"period\":\"2026\"}],\"target\":\"QV0824\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 56.298638464,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-0800",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0800",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0800"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0801",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0801",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0801"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0802",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0802",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0802"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0803",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0803",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0803"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0804",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0804",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0804"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0805",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0805",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0805"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0806",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0806",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0806"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0807",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0807",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0807"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0808",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0808",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0808"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0809",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0809",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0809"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0810",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0810",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0810"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0811",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0811",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0811"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0812",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0812",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0812"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0813",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0813",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0813"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0814",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0814",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0814"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0815",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0815",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0815"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0816",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0816",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0816"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0817",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0817",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0817"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0818",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0818",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0818"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0819",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0819",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0819"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0820",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0820",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0820"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0821",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0821",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0821"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0822",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0822",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0822"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0823",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Source text does not state any conditions, but candidate annotation expects entity_verified condition.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0823",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0823"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0824",
+          "claims_valid": "1",
+          "conditions_valid": "1",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstruction matches all expected fields. Conditions correctly derived from '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "entity_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0824",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0824"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 37724,
+      "output_tokens": 6945,
+      "thinking_tokens": 1958,
+      "cache_read_tokens": 8147,
+      "total_tokens": 44669
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "c55758f83cfad28a7392bbcaa8043f308e4c376f47e6542431faaf92af45140c"
+}

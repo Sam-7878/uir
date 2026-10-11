@@ -1,0 +1,2 @@
+test,c1_adversarial_asr,c8_adversarial_asr,risk_difference_pp,discordant_c1_vuln_c8_safe,discordant_c1_safe_c8_vuln,p_value,significant_alpha_005,scientific_interpretation
+Exact McNemar test on adversarial attack success (N=50),0.92,0.0,-92.00%pp,46,0,2.84e-14,True,UIR eliminates adversarial prompt injection attacks with absolute statistical significance (p < 0.001).

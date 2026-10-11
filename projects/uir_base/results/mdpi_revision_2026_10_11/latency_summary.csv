@@ -1,0 +1,19 @@
+pipeline,subset,N,N_timed,mean_ms,p50_ms,p95_ms,p99_ms,interpretation
+C0_DIRECT_SLM,all_workload,600,600,11302.515195523332,11328.2804105,11677.86759815,13300.525873949999,historical matched-batch workload latency; not transformer speedup
+C0_DIRECT_SLM,model_invoked,600,600,11302.515195523332,11328.2804105,11677.86759815,13300.525873949999,historical matched-batch workload latency; not transformer speedup
+C1_NAIVE_RAG,all_workload,600,600,14286.645033726667,14691.296921,15942.37154555,16120.224484319999,historical matched-batch workload latency; not transformer speedup
+C1_NAIVE_RAG,model_invoked,600,600,14286.645033726667,14691.296921,15942.37154555,16120.224484319999,historical matched-batch workload latency; not transformer speedup
+C2_RAG_EXISTENCE_CHECK,all_workload,600,600,9385.913583553334,9420.217409500001,15674.73801875,15925.340479190001,historical matched-batch workload latency; not transformer speedup
+C2_RAG_EXISTENCE_CHECK,model_invoked,521,521,10809.097946829175,9599.025758,15847.751707,15925.340494200002,historical matched-batch workload latency; not transformer speedup
+C3_JSON_SCHEMA_STRUCTURED,all_workload,600,600,12614.10560178,12095.6247545,16008.95037115,16128.350647809999,historical matched-batch workload latency; not transformer speedup
+C3_JSON_SCHEMA_STRUCTURED,model_invoked,600,600,12614.10560178,12095.6247545,16008.95037115,16128.350647809999,historical matched-batch workload latency; not transformer speedup
+C4_TOOL_CALLING_AGENT,all_workload,600,600,20900.494875649998,19974.234852499998,29835.96263325,31723.911578109997,historical matched-batch workload latency; not transformer speedup
+C4_TOOL_CALLING_AGENT,model_invoked,600,600,20900.494875649998,19974.234852499998,29835.96263325,31723.911578109997,historical matched-batch workload latency; not transformer speedup
+C5_GUARDRAIL_STYLE,all_workload,600,600,6758.5969833983345,8035.326064499999,16082.783133700003,16226.464748100001,historical matched-batch workload latency; not transformer speedup
+C5_GUARDRAIL_STYLE,model_invoked,498,498,8142.886535913655,9303.4373395,16082.82007135,16226.464958909999,historical matched-batch workload latency; not transformer speedup
+C6_CORRECTIVE_RETRIEVAL,all_workload,600,600,5569.725452586667,0.0015815,15585.427109949998,15714.12041641,historical matched-batch workload latency; not transformer speedup
+C6_CORRECTIVE_RETRIEVAL,model_invoked,290,290,11523.5686654,9543.9583505,15671.27988385,15728.17622023,historical matched-batch workload latency; not transformer speedup
+C7_GRAPH_STRUCTURED_RAG,all_workload,600,600,11666.347488316667,11769.424104,14824.7714685,14969.805153,historical matched-batch workload latency; not transformer speedup
+C7_GRAPH_STRUCTURED_RAG,model_invoked,600,600,11666.347488316667,11769.424104,14824.7714685,14969.805153,historical matched-batch workload latency; not transformer speedup
+C8_FINAL_UIR_B6,all_workload,600,600,2082.9414122333337,0.154911,5843.29919105,6071.07810762,historical matched-batch workload latency; not transformer speedup
+C8_FINAL_UIR_B6,model_invoked,272,272,4594.662973044118,4403.687693,5887.1096265,6071.07945801,historical matched-batch workload latency; not transformer speedup

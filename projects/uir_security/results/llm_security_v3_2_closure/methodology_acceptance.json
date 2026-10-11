@@ -1,0 +1,31 @@
+{
+  "resource_runtime_validation": {
+    "passed": true,
+    "evidence_path": "benign_long_supplement/audit.json"
+  },
+  "tool_authorization_validation": {
+    "passed": true,
+    "evidence_path": "regression_tests.txt"
+  },
+  "output_guard_validation": {
+    "passed": true,
+    "evidence_path": "regression_tests.txt"
+  },
+  "full_repository_regression": {
+    "passed": true,
+    "evidence_path": "full_python_tests.txt"
+  },
+  "dataset_independence_audit": {
+    "passed": true,
+    "evidence_path": "dataset_independence_audit.json",
+    "limitation": "Normalized-request check only; within-primary reuse disclosed, no semantic-independence claim"
+  },
+  "manuscript_evidence_audit": {
+    "passed": true,
+    "evidence_path": "manuscript_evidence_audit.json"
+  },
+  "latex_clean_build": {
+    "passed": true,
+    "evidence_path": "latex_build_audit.json"
+  }
+}

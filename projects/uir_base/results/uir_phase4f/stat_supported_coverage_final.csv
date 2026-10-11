@@ -1,0 +1,2 @@
+test,cohort,c1_supported_coverage,c8_supported_coverage,risk_difference_pp,risk_difference_ci_95,discordant_c1_fail_c8_pass,discordant_c1_pass_c8_fail,p_value,significant_alpha_005,scientific_interpretation
+Exact McNemar test on binary supported-answer indicator,commit_eligible_requests (N=418),0.5311,0.6507,+11.96%pp,"[8.84%, 15.08%]",50,0,1.78e-15,True,Supported-answer coverage is significantly superior in C8 (p < 0.001) due to the preservation of safe partial verified answers that other baselines discard or fabricate.

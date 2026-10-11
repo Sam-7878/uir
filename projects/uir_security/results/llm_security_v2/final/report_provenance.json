@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "publication_manifest.json": "8951e625839e46891e081fb0e2e43588ec7d59ee226d431f6d44cd963db90d76",
+    "benchmark_metrics_summary.json": "70085badf6e32ef1d92aa294a181b59d87dd5cfdc574c24452854c3a5eabab36",
+    "heldout_metrics_summary.json": "a7f2bb24c6b603a166d5acfc2e9429551fa769f6232ef7b57f4d5c2782248fb2",
+    "ablation_metrics_summary.json": "128b089878ac2e100adc425203c7d586005001a217898bac7215a99ca86e9102",
+    "heldout_ablation_metrics_summary.json": "2847aeda8e17bd8f1ac936c3404e45407ce32540689cc1a18fce1aadaae3c8b0",
+    "multi_knockout_summary.json": "1cbbca43ddf50eb578d55644a92320313f8ffc9a9ec20404e7121dd3f66fed21",
+    "heldout_multi_knockout_summary.json": "cd7d1a64167815a450664e43deeb899d3403c7534b8e9cccbe3efa6aae3018fd",
+    "statistical_tests.json": "f2526afecfc3c9e081a2ebae76d25590d739ad7c730544750f575455b32a34b9",
+    "judge_validation.json": "dadab76091c61d2074bea976bc4068c9df376f97f66714d4ebc345157993c1ff"
+  },
+  "reports": {
+    "docs/evaluation/HETE_UIR_SECURITY_BENCHMARK_V2_FINAL.md": "49f13107f574ebe62f32064c9ceebf2b90dae387f8808d8107f358f536f75668",
+    "docs/work_reports/HETE_UIR_PUBLICATION_BENCHMARK_FINAL_REPORT.md": "49f13107f574ebe62f32064c9ceebf2b90dae387f8808d8107f358f536f75668"
+  }
+}

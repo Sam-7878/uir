@@ -1,0 +1,133 @@
+{
+  "method": "paired_exact_mcnemar",
+  "comparisons": {
+    "Vanilla SLM": [
+      {
+        "n": 1400,
+        "baseline_only_successes": 207,
+        "full_only_successes": 12,
+        "absolute_risk_reduction": 0.1392857142857143,
+        "baseline_risk": 0.28214285714285714,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.5063291139240506,
+        "mcnemar_exact_p": 4.708507874893429e-47
+      },
+      {
+        "n": 1400,
+        "baseline_only_successes": 207,
+        "full_only_successes": 12,
+        "absolute_risk_reduction": 0.1392857142857143,
+        "baseline_risk": 0.28214285714285714,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.5063291139240506,
+        "mcnemar_exact_p": 4.708507874893429e-47
+      },
+      {
+        "n": 1400,
+        "baseline_only_successes": 207,
+        "full_only_successes": 12,
+        "absolute_risk_reduction": 0.1392857142857143,
+        "baseline_risk": 0.28214285714285714,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.5063291139240506,
+        "mcnemar_exact_p": 4.708507874893429e-47
+      }
+    ],
+    "Naive RAG": [
+      {
+        "n": 1400,
+        "baseline_only_successes": 490,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.35,
+        "baseline_risk": 0.4928571428571429,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.28985507246376807,
+        "mcnemar_exact_p": 6.256509672447191e-148
+      },
+      {
+        "n": 1400,
+        "baseline_only_successes": 490,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.35,
+        "baseline_risk": 0.4928571428571429,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.28985507246376807,
+        "mcnemar_exact_p": 6.256509672447191e-148
+      },
+      {
+        "n": 1400,
+        "baseline_only_successes": 490,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.35,
+        "baseline_risk": 0.4928571428571429,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.28985507246376807,
+        "mcnemar_exact_p": 6.256509672447191e-148
+      }
+    ],
+    "Prompt-only Guardrail": [
+      {
+        "n": 1400,
+        "baseline_only_successes": 200,
+        "full_only_successes": 100,
+        "absolute_risk_reduction": 0.07142857142857142,
+        "baseline_risk": 0.21428571428571427,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.6666666666666666,
+        "mcnemar_exact_p": 8.014875216538921e-09
+      },
+      {
+        "n": 1400,
+        "baseline_only_successes": 200,
+        "full_only_successes": 100,
+        "absolute_risk_reduction": 0.07142857142857142,
+        "baseline_risk": 0.21428571428571427,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.6666666666666666,
+        "mcnemar_exact_p": 8.014875216538921e-09
+      },
+      {
+        "n": 1400,
+        "baseline_only_successes": 200,
+        "full_only_successes": 100,
+        "absolute_risk_reduction": 0.07142857142857142,
+        "baseline_risk": 0.21428571428571427,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 0.6666666666666666,
+        "mcnemar_exact_p": 8.014875216538921e-09
+      }
+    ],
+    "UIR-v1": [
+      {
+        "n": 1400,
+        "baseline_only_successes": 0,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.0,
+        "baseline_risk": 0.14285714285714285,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 1.0,
+        "mcnemar_exact_p": 1.0
+      },
+      {
+        "n": 1400,
+        "baseline_only_successes": 0,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.0,
+        "baseline_risk": 0.14285714285714285,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 1.0,
+        "mcnemar_exact_p": 1.0
+      },
+      {
+        "n": 1400,
+        "baseline_only_successes": 0,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.0,
+        "baseline_risk": 0.14285714285714285,
+        "comparison_risk": 0.14285714285714285,
+        "relative_risk": 1.0,
+        "mcnemar_exact_p": 1.0
+      }
+    ]
+  }
+}

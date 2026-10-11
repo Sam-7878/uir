@@ -1,5 +1,7 @@
 [workspace]
 members = [
+    "crates/poa-core",
+    "crates/poa-protocol",
     "crates/poa-uir",
 ]
 resolver = "2"
@@ -10,6 +12,7 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [workspace.dependencies]
+anyhow = "1.0"
 chrono = { version = "0.4", default-features = false, features = ["std", "clock", "serde"] }
 hex = { version = "0.4", features = ["serde"] }
 jsonschema = { version = "0.33", default-features = false }

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "candidate_not_frozen": true,
+  "template_overlap": 0,
+  "exact_text_overlap": 0,
+  "normalized_text_overlap": 0,
+  "five_gram_overlap_rate": 0.016319869441044473,
+  "entity_overlap": 0,
+  "lexicon_overlap_note": "category lexicon overlap expected; entity instances excluded from SemanticLexicon"
+}

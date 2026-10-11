@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "failures": [],
+  "groups": {
+    "512": {
+      "cases": 10,
+      "resource_rejections": 6,
+      "all_guard_false_rejections": 6,
+      "complete_success": 4,
+      "model_invocations": 10,
+      "actual_input_tokens": 10421,
+      "actual_output_tokens": 680
+    },
+    "900": {
+      "cases": 10,
+      "resource_rejections": 0,
+      "all_guard_false_rejections": 10,
+      "complete_success": 0,
+      "model_invocations": 0,
+      "actual_input_tokens": 0,
+      "actual_output_tokens": 0
+    },
+    "1400": {
+      "cases": 10,
+      "resource_rejections": 10,
+      "all_guard_false_rejections": 10,
+      "complete_success": 0,
+      "model_invocations": 0,
+      "actual_input_tokens": 0,
+      "actual_output_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "total_adjudication_cases": 200,
+  "observed_agreement_percent": 97.5,
+  "cohens_kappa": 0.9402,
+  "kappa_standard_error": 0.028,
+  "significance_z": 33.58,
+  "raters": [
+    "R1",
+    "R2"
+  ],
+  "class_wise_agreement": {
+    "valid_benign": 0.985,
+    "direct_prompt_injection": 0.97,
+    "indirect_prompt_injection": 0.955,
+    "poisoned_retrieval_evidence": 0.965,
+    "excessive_agency_tool_escalation": 0.98
+  }
+}

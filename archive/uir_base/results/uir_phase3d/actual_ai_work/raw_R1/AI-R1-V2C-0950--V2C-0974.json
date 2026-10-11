@@ -1,0 +1,925 @@
+{
+  "batch_id": "AI-R1-V2C-0950--V2C-0974",
+  "reviewer_id": "AI-R1",
+  "engine": "AntiGravity Gemini 3.5 Flash",
+  "model_selector": "gemini-3.5-flash",
+  "case_ids": [
+    "V2C-0950",
+    "V2C-0951",
+    "V2C-0952",
+    "V2C-0953",
+    "V2C-0954",
+    "V2C-0955",
+    "V2C-0956",
+    "V2C-0957",
+    "V2C-0958",
+    "V2C-0959",
+    "V2C-0960",
+    "V2C-0961",
+    "V2C-0962",
+    "V2C-0963",
+    "V2C-0964",
+    "V2C-0965",
+    "V2C-0966",
+    "V2C-0967",
+    "V2C-0968",
+    "V2C-0969",
+    "V2C-0970",
+    "V2C-0971",
+    "V2C-0972",
+    "V2C-0973",
+    "V2C-0974"
+  ],
+  "timestamp": "2026-08-08T07:08:46.908477+00:00",
+  "duration_seconds": 28.796212303000175,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "4b315bd1-3a99-4428-8cf1-250f7f8afd36",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-0950\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0950\",\"period\":\"2022\"}],\"target\":\"QV0950\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0951\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0951\",\"period\":\"2023\"}],\"target\":\"QV0951\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0952\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0952\",\"period\":\"2024\"}],\"target\":\"QV0952\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0953\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0953\",\"period\":\"2025\"}],\"target\":\"QV0953\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0954\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0954\",\"period\":\"2026\"}],\"target\":\"QV0954\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0955\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0955\",\"period\":\"2022\"}],\"target\":\"QV0955\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0956\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0956\",\"period\":\"2023\"}],\"target\":\"QV0956\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0957\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0957\",\"period\":\"2024\"}],\"target\":\"QV0957\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0958\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0958\",\"period\":\"2025\"}],\"target\":\"QV0958\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0959\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0959\",\"period\":\"2026\"}],\"target\":\"QV0959\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0960\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0960\",\"period\":\"2022\"}],\"target\":\"QV0960\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0961\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0961\",\"period\":\"2023\"}],\"target\":\"QV0961\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0962\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0962\",\"period\":\"2024\"}],\"target\":\"QV0962\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0963\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0963\",\"period\":\"2025\"}],\"target\":\"QV0963\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0964\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ,rhs:true}],expected_outcome:\"}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0964\",\"period\":\"2026\"}],\"target\":\"QV0964\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0965\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0965\",\"period\":\"2022\"}],\"target\":\"QV0965\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0966\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0966\",\"period\":\"2023\"}],\"target\":\"QV0966\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0967\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0967\",\"period\":\"2024\"}],\"target\":\"QV0967\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0968\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0968\",\"period\":\"2025\"}],\"target\":\"QV0968\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0969\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0969\",\"period\":\"2026\"}],\"target\":\"QV0969\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0970\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0970\",\"period\":\"2022\"}],\"target\":\"QV0970\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0971\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"operating_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0971\",\"period\":\"2023\"}],\"target\":\"QV0971\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0972\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"assets\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0972\",\"period\":\"2024\"}],\"target\":\"QV0972\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0973\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"revenue\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0973\",\"period\":\"2025\"}],\"target\":\"QV0973\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-0974\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"1\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.\",\"reconstructed\":{\"conditions\":[{\"lhs\":\"provenance_verified\",\"operator\":\"EQ\",\"rhs\":true}],\"expected_outcome\":\"COMMIT\",\"intent\":\"VERIFY\",\"policy_decision\":\"PERMIT\",\"required_claims\":[{\"attribute\":\"net_income\",\"claim_type\":\"numeric_claim\",\"entity_id\":\"QV0974\",\"period\":\"2026\"}],\"target\":\"QV0974\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 22.677240262,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-0950",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0950",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0950"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0951",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0951",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0951"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0952",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0952",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0952"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0953",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0953",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0953"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0954",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0954",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0954"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0955",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0955",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0955"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0956",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0956",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0956"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0957",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0957",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0957"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0958",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0958",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0958"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0959",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0959",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0959"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0960",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0960",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0960"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0961",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0961",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0961"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0962",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0962",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0962"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0963",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0963",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0963"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0964",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ,rhs:true}],expected_outcome:"
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0964",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0964"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0965",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0965",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0965"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0966",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0966",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0966"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0967",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0967",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0967"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0968",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0968",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0968"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0969",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0969",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0969"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0970",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0970",
+                "period": "2022"
+              }
+            ],
+            "target": "QV0970"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0971",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "operating_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0971",
+                "period": "2023"
+              }
+            ],
+            "target": "QV0971"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0972",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "assets",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0972",
+                "period": "2024"
+              }
+            ],
+            "target": "QV0972"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0973",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' condition, but source text contains no conditional clauses.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "revenue",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0973",
+                "period": "2025"
+              }
+            ],
+            "target": "QV0973"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-0974",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "1",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Candidate expected_conditions contains 'entity_verified' instead of reconstructed 'provenance_verified' based on Korean text '출처가 확인되면'.",
+          "reconstructed": {
+            "conditions": [
+              {
+                "lhs": "provenance_verified",
+                "operator": "EQ",
+                "rhs": true
+              }
+            ],
+            "expected_outcome": "COMMIT",
+            "intent": "VERIFY",
+            "policy_decision": "PERMIT",
+            "required_claims": [
+              {
+                "attribute": "net_income",
+                "claim_type": "numeric_claim",
+                "entity_id": "QV0974",
+                "period": "2026"
+              }
+            ],
+            "target": "QV0974"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 37094,
+      "output_tokens": 17149,
+      "thinking_tokens": 11949,
+      "cache_read_tokens": 8163,
+      "total_tokens": 54243
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "efcef48a7161fadb0391952821a5a1e9759bf844c4a0c23f5387d2743a1b3ffa"
+}

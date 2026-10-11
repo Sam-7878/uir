@@ -1,0 +1,100 @@
+{
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "primary_n": 850,
+  "human_validation": false,
+  "public_agentdojo": false,
+  "splits": {
+    "dev": {
+      "total": 1400,
+      "class_counts": {
+        "sensitive_data_exfiltration": 111,
+        "valid_benign": 400,
+        "nonexistent_entity": 111,
+        "excessive_agency_tool_escalation": 111,
+        "resource_exhaustion": 111,
+        "direct_prompt_injection": 112,
+        "poisoned_retrieval_evidence": 111,
+        "jailbreak_policy_override": 111,
+        "gaslighting_false_premise": 111,
+        "indirect_prompt_injection": 111
+      },
+      "source_sha256": "c8758934ca0fc73d266942d49cbd7af491393575b94e072657f7e33cd00ff8e3"
+    },
+    "validation": {
+      "total": 350,
+      "class_counts": {
+        "direct_prompt_injection": 28,
+        "valid_benign": 100,
+        "resource_exhaustion": 27,
+        "sensitive_data_exfiltration": 28,
+        "indirect_prompt_injection": 28,
+        "jailbreak_policy_override": 28,
+        "poisoned_retrieval_evidence": 28,
+        "gaslighting_false_premise": 27,
+        "nonexistent_entity": 28,
+        "excessive_agency_tool_escalation": 28
+      },
+      "source_sha256": "6ea3495579b27a95608270a5e0f95a59626c22150ce00480d3daff0435a05196"
+    },
+    "heldout": {
+      "total": 850,
+      "class_counts": {
+        "valid_benign": 250,
+        "excessive_agency_tool_escalation": 67,
+        "poisoned_retrieval_evidence": 67,
+        "jailbreak_policy_override": 67,
+        "indirect_prompt_injection": 67,
+        "sensitive_data_exfiltration": 67,
+        "direct_prompt_injection": 67,
+        "gaslighting_false_premise": 66,
+        "resource_exhaustion": 66,
+        "nonexistent_entity": 66
+      },
+      "source_sha256": "0caec7455243aea6673be3762047849685996cc8739f0c76930f0f7606d9ac0d"
+    }
+  },
+  "class_counts": {
+    "valid_benign": 250,
+    "excessive_agency_tool_escalation": 67,
+    "poisoned_retrieval_evidence": 67,
+    "jailbreak_policy_override": 67,
+    "indirect_prompt_injection": 67,
+    "sensitive_data_exfiltration": 67,
+    "direct_prompt_injection": 67,
+    "gaslighting_false_premise": 66,
+    "resource_exhaustion": 66,
+    "nonexistent_entity": 66
+  },
+  "files": {
+    "runtime": {
+      "path": "datasets/runtime.json",
+      "sha256": "ca07af4d8fe252273a8596f43a7a3c8f4845c218937bfd350992dd3af19a6fd5"
+    },
+    "oracle": {
+      "path": "datasets/oracle.json",
+      "sha256": "21825e889e4acd1af866de82ce83a92e13a4e2fb86880b647295c575ca21567c"
+    },
+    "lineage": {
+      "path": "datasets/lineage.json",
+      "sha256": "9d17b5212aca2b452e95dccb71d8b3acd723e199b4892e368c05df996fb19bf4"
+    }
+  },
+  "sampling": "All original held-out IDs; stimulus repairs recorded in lineage. Template-generated cases are not independent real-world tasks.",
+  "adaptive": {
+    "campaigns": 6,
+    "seeds_per_campaign": 30,
+    "budget": 20,
+    "knowledge": "A2"
+  },
+  "stochastic": {
+    "seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "temperature": 0.7,
+    "top_p": 0.9
+  }
+}

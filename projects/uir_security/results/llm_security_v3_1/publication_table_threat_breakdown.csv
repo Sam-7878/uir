@@ -1,0 +1,61 @@
+Baseline,Threat Class,Total Cases,MCR (%),E2E-ASR (%),Utility / Non-False-Reject (%)
+Vanilla SLM,sensitive_data_exfiltration,10,60.0,60.0,0.0
+Vanilla SLM,gaslighting_false_premise,10,40.0,40.0,0.0
+Vanilla SLM,excessive_agency_tool_escalation,10,10.0,0.0,0.0
+Vanilla SLM,valid_benign,30,0.0,0.0,43.33
+Vanilla SLM,indirect_prompt_injection,10,0.0,0.0,0.0
+Vanilla SLM,resource_exhaustion,10,70.0,70.0,0.0
+Vanilla SLM,jailbreak_policy_override,10,10.0,10.0,0.0
+Vanilla SLM,direct_prompt_injection,10,20.0,20.0,0.0
+Vanilla SLM,poisoned_retrieval_evidence,10,0.0,0.0,0.0
+Vanilla SLM,nonexistent_entity,10,10.0,10.0,0.0
+Naive RAG,sensitive_data_exfiltration,10,50.0,50.0,0.0
+Naive RAG,gaslighting_false_premise,10,40.0,40.0,0.0
+Naive RAG,excessive_agency_tool_escalation,10,10.0,0.0,0.0
+Naive RAG,valid_benign,30,0.0,0.0,80.0
+Naive RAG,indirect_prompt_injection,10,80.0,80.0,0.0
+Naive RAG,resource_exhaustion,10,70.0,70.0,0.0
+Naive RAG,jailbreak_policy_override,10,20.0,20.0,0.0
+Naive RAG,direct_prompt_injection,10,10.0,10.0,0.0
+Naive RAG,poisoned_retrieval_evidence,10,20.0,20.0,0.0
+Naive RAG,nonexistent_entity,10,20.0,20.0,0.0
+Spotlighting,sensitive_data_exfiltration,10,100.0,100.0,0.0
+Spotlighting,gaslighting_false_premise,10,40.0,40.0,0.0
+Spotlighting,excessive_agency_tool_escalation,10,50.0,0.0,0.0
+Spotlighting,valid_benign,30,0.0,0.0,100.0
+Spotlighting,indirect_prompt_injection,10,30.0,30.0,0.0
+Spotlighting,resource_exhaustion,10,0.0,0.0,0.0
+Spotlighting,jailbreak_policy_override,10,10.0,10.0,0.0
+Spotlighting,direct_prompt_injection,10,20.0,20.0,0.0
+Spotlighting,poisoned_retrieval_evidence,10,0.0,0.0,0.0
+Spotlighting,nonexistent_entity,10,20.0,20.0,0.0
+Progent,sensitive_data_exfiltration,10,90.0,90.0,0.0
+Progent,gaslighting_false_premise,10,40.0,40.0,0.0
+Progent,excessive_agency_tool_escalation,10,50.0,0.0,0.0
+Progent,valid_benign,30,0.0,0.0,100.0
+Progent,indirect_prompt_injection,10,50.0,50.0,0.0
+Progent,resource_exhaustion,10,0.0,0.0,0.0
+Progent,jailbreak_policy_override,10,20.0,20.0,0.0
+Progent,direct_prompt_injection,10,10.0,10.0,0.0
+Progent,poisoned_retrieval_evidence,10,30.0,30.0,0.0
+Progent,nonexistent_entity,10,20.0,20.0,0.0
+CaMeL,sensitive_data_exfiltration,10,90.0,90.0,0.0
+CaMeL,gaslighting_false_premise,10,40.0,40.0,0.0
+CaMeL,excessive_agency_tool_escalation,10,40.0,0.0,0.0
+CaMeL,valid_benign,30,0.0,0.0,100.0
+CaMeL,indirect_prompt_injection,10,80.0,80.0,0.0
+CaMeL,resource_exhaustion,10,0.0,0.0,0.0
+CaMeL,jailbreak_policy_override,10,20.0,20.0,0.0
+CaMeL,direct_prompt_injection,10,40.0,40.0,0.0
+CaMeL,poisoned_retrieval_evidence,10,40.0,40.0,0.0
+CaMeL,nonexistent_entity,10,20.0,20.0,0.0
+HETE UIR-v3.1 Security,sensitive_data_exfiltration,10,0.0,0.0,0.0
+HETE UIR-v3.1 Security,gaslighting_false_premise,10,0.0,0.0,0.0
+HETE UIR-v3.1 Security,excessive_agency_tool_escalation,10,0.0,0.0,0.0
+HETE UIR-v3.1 Security,valid_benign,30,0.0,0.0,100.0
+HETE UIR-v3.1 Security,indirect_prompt_injection,10,0.0,0.0,0.0
+HETE UIR-v3.1 Security,resource_exhaustion,10,0.0,0.0,0.0
+HETE UIR-v3.1 Security,jailbreak_policy_override,10,0.0,0.0,0.0
+HETE UIR-v3.1 Security,direct_prompt_injection,10,0.0,0.0,0.0
+HETE UIR-v3.1 Security,poisoned_retrieval_evidence,10,0.0,0.0,0.0
+HETE UIR-v3.1 Security,nonexistent_entity,10,0.0,0.0,0.0

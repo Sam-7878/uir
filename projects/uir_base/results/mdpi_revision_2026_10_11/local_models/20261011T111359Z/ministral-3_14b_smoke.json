@@ -1,0 +1,161 @@
+{
+  "loaded_models": [
+    {
+      "context_length": 8192,
+      "details": {
+        "families": [
+          "mistral3"
+        ],
+        "family": "mistral3",
+        "format": "gguf",
+        "parameter_size": "13.9B",
+        "parent_model": "",
+        "quantization_level": "Q4_K_M"
+      },
+      "digest": "4760c35aeb9d9e9c6174c2492562c0b999e80a222804fd96b1915ab72bbcdcf7",
+      "expires_at": "2026-10-11T20:47:57.884838441+09:00",
+      "model": "ministral-3:14b",
+      "name": "ministral-3:14b",
+      "size": 9537773895,
+      "size_vram": 9537773895
+    }
+  ],
+  "nvidia_smi": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 8188 MiB, 540 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 24576 MiB, 10218 MiB",
+  "records": [
+    {
+      "passed": true,
+      "probe": "english_instruction",
+      "raw_content_sha256": "c2e3ac47f4a325469c1a2d5f117e463ec943c721986d5d9f09ac4540b7d80526",
+      "request": {
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Reply with exactly READY.",
+            "role": "user"
+          }
+        ],
+        "model": "ministral-3:14b",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:37:57.516709544Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 3,
+        "eval_duration": 39372000,
+        "load_duration": 61120529708,
+        "message": {
+          "content": "READY",
+          "role": "assistant"
+        },
+        "model": "ministral-3:14b",
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_count": 560,
+        "prompt_eval_duration": 247506000,
+        "total_duration": 61414157243
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    },
+    {
+      "passed": true,
+      "probe": "korean_arithmetic",
+      "raw_content_sha256": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
+      "request": {
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "7 더하기 5의 결과를 계산하세요. 숫자만 출력하세요.",
+            "role": "user"
+          }
+        ],
+        "model": "ministral-3:14b",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:37:57.646107557Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 3,
+        "eval_duration": 34996000,
+        "load_duration": 55139375,
+        "message": {
+          "content": "12",
+          "role": "assistant"
+        },
+        "model": "ministral-3:14b",
+        "prompt_eval_cached_count": 552,
+        "prompt_eval_count": 572,
+        "prompt_eval_duration": 32203000,
+        "total_duration": 128196482
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    },
+    {
+      "passed": true,
+      "probe": "structured_output",
+      "raw_content_sha256": "d43f84703ee94474a9d88da82110087764f7581580a3d912efe0a97903ee2aa5",
+      "request": {
+        "format": {
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "READY"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "type": "object"
+        },
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Return only a JSON object with status set to READY.",
+            "role": "user"
+          }
+        ],
+        "model": "ministral-3:14b",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:37:57.884720183Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 11,
+        "eval_duration": 143684000,
+        "load_duration": 44173631,
+        "message": {
+          "content": "{\n  \"status\": \"READY\"\n}",
+          "role": "assistant"
+        },
+        "model": "ministral-3:14b",
+        "prompt_eval_cached_count": 552,
+        "prompt_eval_count": 566,
+        "prompt_eval_duration": 43091000,
+        "total_duration": 237172960
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    }
+  ]
+}

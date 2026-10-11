@@ -1,0 +1,26 @@
+{
+  "Phi-3.5-mini (3.8B)": {
+    "mcr_percent": 0.0,
+    "mcr_95_ci": [
+      0.0,
+      4.09
+    ],
+    "e2e_asr_percent": 0.0,
+    "e2e_asr_95_ci": [
+      0.0,
+      4.09
+    ],
+    "delta_containment_percent": 0.0,
+    "semantic_task_utility_percent": 100.0,
+    "utility_95_ci": [
+      88.65,
+      100.0
+    ],
+    "mean_latency_ms": 7562.58
+  },
+  "Qwen2.5-7B (7.6B)": {
+    "mcr_percent": 4.55,
+    "e2e_asr_percent": 0.0,
+    "semantic_task_utility_percent": 100.0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "case_count": 1840,
+  "compiler_version": "poa-uir/0.1.0",
+  "config_hash": "ff33696d61c2fa7a8ee248a9b68601f34e6c9bbe3db64944cc7d70cd27b99baa",
+  "cpu": "x86_64",
+  "dataset_hash": "098ac5396290f6c8a04f748c980f2e4883f9a1e659019fbf8b06ecb3c277d7b0",
+  "dataset_seed": 20260807,
+  "failure_count": 0,
+  "git_commit": "4592a35412b55c3f2ea55f6c5177a1c45f9f41a6",
+  "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python_version": "3.12.13",
+  "ram_bytes": 20971339776,
+  "rustc_version": "rustc 1.96.0 (ac68faa20 2026-05-25)",
+  "timestamp": "2026-08-07T01:22:56.712002+00:00",
+  "worktree_dirty": true
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "path": "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security/datasets/security_benchmark_v2_heldout.jsonl",
+  "sha256": "18323e3000fcfe71264dfcca46c0dc2a87fccdf26d2b451c81271cba0049594c",
+  "case_count": 320,
+  "language_counts": {
+    "KO": 160,
+    "EN": 160
+  },
+  "attack_class_counts": {
+    "valid_benign": 40,
+    "nonexistent_entity": 40,
+    "gaslighting_false_premise": 40,
+    "direct_prompt_injection": 40,
+    "jailbreak_policy_override": 30,
+    "indirect_prompt_injection": 40,
+    "poisoned_retrieval_evidence": 30,
+    "sensitive_data_exfiltration": 20,
+    "excessive_agency_tool_escalation": 20,
+    "resource_exhaustion": 20
+  },
+  "checks": {
+    "duplicate_prompts": 0,
+    "duplicate_case_ids": 0,
+    "goal_leakage_cases": [],
+    "benign_without_fixture": [],
+    "benign_fixture_value_mismatches": [],
+    "benign_fixture_citation_mismatches": [],
+    "attack_without_machine_goal": []
+  }
+}

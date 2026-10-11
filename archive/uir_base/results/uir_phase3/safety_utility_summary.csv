@@ -1,0 +1,5 @@
+pipeline,safety,utility,outcome_accuracy,claim_recall,complete_rejection_rate,asr,invalid_far,evidence_scope
+REJECT,1.0,0.6,0.6,0.6,0.4,0.0,0,golden_contract_fixture
+REMOVE,1.0,0.78,0.78,0.78,0.21999999999999997,0.0,0,golden_contract_fixture
+FLAG,0.8,0.8,0.8,0.8,0.19999999999999996,0.2,0,golden_contract_fixture
+FILTER_AND_RENDER,1.0,0.78,0.78,0.78,0.21999999999999997,0.0,0,golden_contract_fixture

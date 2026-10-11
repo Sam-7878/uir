@@ -1,0 +1,2 @@
+metric,test_name,n,effect_size,p_value,ci95,holm_adjusted
+unsupported_claim_acceptance,McNemar exact,100,-0.2,diagnostic_fixture,NA,False

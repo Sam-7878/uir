@@ -1,0 +1,83 @@
+version: "1.0.0"
+phase: "UIR-4E"
+map_title: "Authoritative Empirical Evidence Hierarchy"
+description: >
+  Defines the 6-level authoritative provenance hierarchy for all publication artifacts in Phase UIR-4E.
+  Every Level N+1 artifact must be mechanically derived from Level N or explicitly reference it.
+  Hand-entered numbers in reports or manuscripts are strictly forbidden.
+
+hierarchy:
+  level_1_raw_captures:
+    description: "Raw model generation outputs and execution traces captured with cryptographic hashes."
+    artifacts:
+      - path: "results/uir_phase4d/frozen_inputs/strong_runtime_600.jsonl"
+        role: "Immutable input cases for internal evaluation"
+      - path: "results/uir_phase4d/frozen_inputs/strong_scoring_600.jsonl"
+        role: "Immutable ground-truth scoring cases for internal evaluation"
+      - path: "results/uir_phase4d/per_case_evidence_actual.jsonl"
+        role: "Raw Phase 4D model generation captures (5,400 runs across C0-C8)"
+      - path: "results/uir_phase4e/qwen_finqa_C1_raw.jsonl"
+        role: "Qwen2.5-7B FinQA N=200 raw generation and scoring captures for C1"
+      - path: "results/uir_phase4e/qwen_finqa_C8_raw.jsonl"
+        role: "Qwen2.5-7B FinQA N=200 raw generation and scoring captures for C8"
+      - path: "results/uir_phase4e/qwen_halueval_C1_raw.jsonl"
+        role: "Qwen2.5-7B HaluEval N=200 raw generation and scoring captures for C1"
+      - path: "results/uir_phase4e/qwen_halueval_C8_raw.jsonl"
+        role: "Qwen2.5-7B HaluEval N=200 raw generation and scoring captures for C8"
+      - path: "results/uir_phase4e/constrained_decoding_per_case.jsonl"
+        role: "D1 external grammar-constrained decoding per-case captures"
+
+  level_2_scored_evidence:
+    description: "Case-level scored records re-evaluated strictly via METRIC_CONTRACT_FINAL.yaml."
+    derivation_script: "evaluation/uir_phase4e/rescore_internal_final.py"
+    artifacts:
+      - path: "results/uir_phase4e/per_case_scored_final.jsonl"
+        role: "Canonical per-case scored internal evidence (5,400 rows)"
+
+  level_3_aggregate_csvs:
+    description: "Deterministic aggregations of Level 2 per-case scored data."
+    derivation_script: "evaluation/uir_phase4e/rescore_internal_final.py"
+    artifacts:
+      - path: "results/uir_phase4e/strong_baseline_summary_final.csv"
+        role: "Primary 9-pipeline evaluation summary (C0-C8)"
+      - path: "results/uir_phase4e/external_constrained_decoding_summary.csv"
+        role: "D1 grammar-constrained baseline summary"
+      - path: "results/uir_phase4e/external_generalization_final.csv"
+        role: "Cross-model external benchmark summary (FinQA + HaluEval across Phi-3.5 and Qwen2.5-7B)"
+      - path: "results/uir_phase4e/external_failure_taxonomy_final.csv"
+        role: "Taxonomy breakdown of contract and semantic failures on external benchmarks"
+      - path: "results/uir_phase4e/latency_summary_final.csv"
+        role: "Path-separated latency profiling summary"
+
+  level_4_statistical_csvs:
+    description: "Statistical significance tests, confidence intervals, and hypothesis evaluations."
+    derivation_script: "evaluation/uir_phase4e/rescore_internal_final.py"
+    artifacts:
+      - path: "results/uir_phase4e/stat_safety_final.csv"
+        role: "Wilson 95% score intervals and exact McNemar safety tests"
+      - path: "results/uir_phase4e/stat_complete_utility_final.csv"
+        role: "Complete claim-set accuracy statistical tests (McNemar p=0.50)"
+      - path: "results/uir_phase4e/stat_partial_utility_final.csv"
+        role: "Supported-answer coverage and partial response statistical tests"
+      - path: "results/uir_phase4e/stat_c1_vs_c8_mcnemar.json"
+        role: "Detailed contingency matrix and exact p-values for C1 vs C8"
+
+  level_5_manuscript_tables:
+    description: "Tables mechanically rendered from Level 3 and Level 4 CSVs with zero manual edits."
+    derivation_script: "evaluation/uir_phase4e/generate_publication_tables.py"
+    artifacts:
+      - path: "docs/work_reports/uir_phase4e/generated_tables.md"
+        role: "Markdown publication tables"
+      - path: "docs/work_reports/uir_phase4e/generated_tables.tex"
+        role: "LaTeX publication tables matching target IEEEtran format"
+
+  level_6_prose_claims:
+    description: "Scientific text, claims, and abstracts verified by consistency and overclaim linters."
+    verification_scripts:
+      - "evaluation/uir_phase4e/check_final_publication_consistency.py"
+      - "evaluation/uir_phase4e/lint_scientific_claims.py"
+    artifacts:
+      - path: "docs/work_reports/105_uir_pahse_4e/REPORT_PHASE4E_FINAL_PUBLICATION_FREEZE.md"
+        role: "Phase 4E final reconciliation work report"
+      - path: "docs/papers/_47_UIR/_47_UIR_8p.tex"
+        role: "Target IEEEtran manuscript"

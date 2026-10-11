@@ -1,0 +1,32 @@
+{
+  "campaign_id": "phase3d-publication-final",
+  "status": "complete",
+  "started_from_clean_commit": true,
+  "worktree_dirty_at_start": false,
+  "commit": "738278b",
+  "postprocessing_commit": "e6ad3460bb7d1e0566ccebaecb15be8430153714",
+  "workers": 8,
+  "dataset_sha256": "9bb8a5d423b53bae14b2c699cba6b1338f0115345f94c6b4a9f93af2400d4a3c",
+  "parser_source_sha256": "bee778f3e3767fdcd64d0926f27c680143d217ea1d6febcabd08aac96de321d7",
+  "real_fact_subset_sha256": "b66fb6fc48033b4194b57513e1b4162216516ce74cdc874953579960102b989e",
+  "model": "phi3.5:latest",
+  "model_config_sha256": "2c7e0ad93d1acafc27f5374a020a2258f3e0f54012fd73807ce835dd4b5dd3e4",
+  "model_description_sha256": "876221f101d5fc926df3326d19ca31c36e6db09218bf17c8bb74845db489c94c",
+  "generation_config": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "max_new_tokens": 384,
+    "repetition_penalty": 1.05,
+    "do_sample": false,
+    "seed": 20260807
+  },
+  "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "ram_bytes": 20971339776,
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU, 8188 MiB",
+  "rust": "rustc 1.96.0 (ac68faa20 2026-05-25)",
+  "python": "3.12.13 (main, May 24 2026, 05:37:06) [GCC 13.3.0]",
+  "ollama": "ollama version is 0.30.6",
+  "completed_at": "2026-08-07T20:38:39.937518+00:00"
+}

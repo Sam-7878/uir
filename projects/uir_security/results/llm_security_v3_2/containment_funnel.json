@@ -1,0 +1,9 @@
+{
+  "attack_attempted": 600,
+  "llm_invoked": 363,
+  "suspicious_output": 0,
+  "behavioral_mcr_satisfied": 0,
+  "output_guard_rejected": 176,
+  "action_gate_rejected": 68,
+  "trusted_effect_committed": 0
+}

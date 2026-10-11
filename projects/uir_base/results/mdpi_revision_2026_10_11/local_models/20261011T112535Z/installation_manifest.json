@@ -1,0 +1,88 @@
+{
+  "AI_review_completed": false,
+  "W08_human_requirement_satisfied": false,
+  "created_at_utc": "20261011T112535Z",
+  "endpoint": "http://127.0.0.1:18747",
+  "errors": [],
+  "finished_at_utc": "2026-10-11T11:34:34.489036+00:00",
+  "gpu_before": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 8188 MiB, 446 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 24576 MiB, 3990 MiB",
+  "gpu_uuid_configured_in_launcher": "GPU-ab53069a-3217-ee09-80f8-748b5fdbd156",
+  "human_review_complete": false,
+  "models": {
+    "qwen3:4b-instruct-2507-q4_K_M": {
+      "capabilities": [
+        "completion",
+        "tools"
+      ],
+      "details": {
+        "context_length": 262144,
+        "embedding_length": 2560,
+        "families": [
+          "qwen3"
+        ],
+        "family": "qwen3",
+        "format": "gguf",
+        "parameter_size": "4.0B",
+        "parent_model": "",
+        "quantization_level": "Q4_K_M"
+      },
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "gguf_identity": {
+        "general.architecture": "qwen3",
+        "general.basename": "Qwen3",
+        "general.file_type": 15,
+        "general.finetune": "Instruct",
+        "general.license": "apache-2.0",
+        "general.license.link": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE",
+        "general.parameter_count": 4022468096,
+        "general.quantization_version": 2,
+        "general.size_label": "4B",
+        "general.tags": null,
+        "general.type": "model",
+        "general.version": "2507"
+      },
+      "license": "Apache-2.0",
+      "license_text_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "modified_at": "2026-10-11T20:34:16.0996713+09:00",
+      "name": "qwen3:4b-instruct-2507-q4_K_M",
+      "role": "AI_J1",
+      "size": 2497293803,
+      "smoke": {
+        "all_probes_passed": true,
+        "gpu_memory_allocated": true,
+        "loaded_models": [
+          {
+            "context_length": 8192,
+            "details": {
+              "families": [
+                "qwen3"
+              ],
+              "family": "qwen3",
+              "format": "gguf",
+              "parameter_size": "4.0B",
+              "parent_model": "",
+              "quantization_level": "Q4_K_M"
+            },
+            "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+            "expires_at": "2026-10-11T20:44:34.373774722+09:00",
+            "model": "qwen3:4b-instruct-2507-q4_K_M",
+            "name": "qwen3:4b-instruct-2507-q4_K_M",
+            "size": 3873366343,
+            "size_vram": 3873366343
+          }
+        ],
+        "probe_count": 3,
+        "probe_passed": 3
+      },
+      "source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "template_sha256": "40c21f34cf67d8c760ef72f8ad3ae5afad514299d4b06e91dd9a8d705af7b541"
+    }
+  },
+  "scope": "installation_and_operational_smoke",
+  "server_version": {
+    "version": "0.33.3"
+  },
+  "status": "INSTALLED_GPU_SMOKE_VERIFIED",
+  "weights_git_tracked": false
+}

@@ -1,0 +1,60 @@
+{
+  "authoritative_subsystem_hashes": {
+    "attack_oracle_py": "d3ceb1a2779ec85bd7cf167cd954f508f67e32c2b25a27ef37635bfe54783e22",
+    "entity_registry_json": "4cb564c095c259658157c71c9624b71c56b59bd4503fe668cef7ba4da179035b",
+    "policy_rules_yaml": "20cc499792babbb4877505cd9c78a1317634a99d3c38a2fb1b27d69cc265c19e",
+    "uir_compiler_py": "dbf5e44d61f7aecd2da9c5092f24f5f8121237480fceca7378ac66b8111345f7"
+  },
+  "dataset_hashes": {
+    "finqa_runtime_200.jsonl": "23b771a7910bae772ab4e7e5089ca71102e0dd53e98e015f28ab389974e6a646",
+    "finqa_scoring_200.jsonl": "0d310899aa40fa99c1fca9b549ca252a5409f00c1bdcf9705a93e34b4545be80",
+    "halueval_qa_runtime_200.jsonl": "82e5a4875a19bcee1b08b7c55126b1d0ba7d38a6ad2d1c467c7bcb6e3d6806c0",
+    "halueval_qa_scoring_200.jsonl": "63de957e70becc670a077b6c58d872cdc01372053a9d58af85e81e4bf900bf24",
+    "smoke_runtime_100.jsonl": "df969251853c56e92f585a8581e94e6392a59db59b3d5494cd1730f2bb5b0e62",
+    "smoke_scoring_100.jsonl": "7d864d6f9960126f80e5ab0bbe86f6ba1a0aa3c585c922bdd51eee9a01eb206f",
+    "strong_runtime_600.jsonl": "6551deb2c5140b41415bcf00988f2539bf4281a7fa25dfba257d726abb3af20b",
+    "strong_scoring_600.jsonl": "50bf8ce2392c81252c7ec828fb38ee5b2291838e058ed8ed5db7c0ef31d0d919"
+  },
+  "generated_at_utc": "2026-09-04T23:54:29.499959+00:00",
+  "git": {
+    "commit_sha": "f0465cf88e4c5d17ff016325219324fd4a1cbee5",
+    "is_clean": false,
+    "status_summary": "D docs/work_reports/uir_phase4c/REPORT_PHASE4C_AUTHENTIC_EVIDENCE.md\n?? docs/uir_phase4d/\n?? evaluation/uir_phase4d/\n?? tests/uir_phase4d/"
+  },
+  "phase": "UIR-4D-FINAL-PUBLICATION-FREEZE",
+  "primary_model": {
+    "architecture": "Phi-3.5-mini-instruct (3.8B parameters)",
+    "decoding": "Greedy (do_sample=False, temperature=0.0, seed=42)",
+    "max_new_tokens": 128,
+    "model_id": "microsoft/Phi-3.5-mini-instruct",
+    "quantization": "bfloat16 / None (full precision)",
+    "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77"
+  },
+  "publication_gates_passed": 18,
+  "publication_gates_verified": 18,
+  "results_summary": {
+    "external_generalization_summary_csv": "9e84a5254d35ff2428e669b8a331260e2be94d070a69eff8d52a236a8227179e",
+    "mutation_resilience_actual_csv": "78a4ae2cd8b5682067cb0bb2906d114b1759b5f32994665215eb0058eca8595d",
+    "stat_generalization_actual_csv": "611e819a240931eb7e682f557bb5b51575cfd26fc85c59c2dc5062ad453183a9",
+    "stat_latency_actual_csv": "7d0b766f0a5a6596cb1022b00128fcd9a3626b367cc7e9cf7d5871258bbef5cc",
+    "stat_safety_actual_csv": "9f4c1e6dcfe5c8b070455413fd5161c9d1c04b5fae92c14b6c609ca9d0892090",
+    "stat_utility_actual_csv": "7078ca9936ddb6796c9f47a9e826b0daaf1c0c0765014ad52e695911f995a08d",
+    "strong_baseline_summary_actual_csv": "f3472467cc24506a7b5602f739d438712a5ff3af0e469ab19d37ee9aa827659d"
+  },
+  "secondary_model": {
+    "architecture": "Qwen2.5-7B-Instruct (7B parameters)",
+    "decoding": "Greedy (temperature=0.0, seed=42)",
+    "max_new_tokens": 128,
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "quantization": "Q4_K_M (Ollama)"
+  },
+  "status": "FROZEN_AND_SEALED",
+  "system_and_hardware": {
+    "cuda_available": true,
+    "gpu_device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "gpu_vram": "8.00 GB",
+    "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python_version": "3.12.13",
+    "torch_version": "2.5.1+cu121"
+  }
+}

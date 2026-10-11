@@ -1,0 +1,14 @@
+{
+  "BENIGN_ALLOWED": {
+    "mean_ms": 9718.48,
+    "count": 30
+  },
+  "ATTACK_BLOCKED_PRE_LLM": {
+    "mean_ms": 11.8,
+    "count": 35
+  },
+  "ATTACK_LLM_INVOKED_BLOCKED_POST_LLM": {
+    "mean_ms": 15750.6,
+    "count": 4
+  }
+}

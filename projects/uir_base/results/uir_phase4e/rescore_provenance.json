@@ -1,0 +1,7 @@
+{
+  "metric_contract": "METRIC_CONTRACT_FINAL.yaml",
+  "n_rows_processed": 5400,
+  "scorer_version": "4E-final-v1",
+  "source_file": "/mnt/d/_Work/goat_bank/uir/results/uir_phase4d/per_case_evidence_actual.jsonl",
+  "source_sha256": "d3922c7e1e27254e7adf3e21ce24d88633b0a5fd66f2a4be6c1c6842fbca0d08"
+}

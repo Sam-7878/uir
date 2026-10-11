@@ -1,0 +1,5 @@
+strategy,n,claim_precision,claim_recall,useful_answer_rate,unsupported_claim_acceptance_rate,complete_rejection_rate,evidence_scope,observed_zero_ci95
+REJECT,100,0.8,0.6,0.6,0.0,0.4,golden_contract_fixture,"[0,0.036993]"
+REMOVE,100,0.94,0.78,0.78,0.0,0.21999999999999997,golden_contract_fixture,"[0,0.036993]"
+FLAG,100,0.8,0.8,0.8,0.2,0.19999999999999996,golden_contract_fixture,NA
+FILTER_AND_RENDER,100,0.94,0.78,0.78,0.0,0.21999999999999997,golden_contract_fixture,"[0,0.036993]"

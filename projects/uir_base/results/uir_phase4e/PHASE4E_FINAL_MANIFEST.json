@@ -1,0 +1,125 @@
+{
+  "phase": "UIR-4E",
+  "title": "Final Publication Evidence Package Manifest",
+  "manuscript": "A Universal Intermediate Representation for Policy-Constrained Multilingual Small Language Model Agents",
+  "principle": "Prompt != Authority",
+  "status": "FROZEN",
+  "artifacts": {
+    "AUTHORITATIVE_EVIDENCE_MAP.yaml": {
+      "sha256": "b4e8d7ee879ac1a92541c12b0c207f980edc2cb271cf25a053d81c7b50bfca62",
+      "size_bytes": 4778,
+      "line_count": 83,
+      "description": "Authoritative 6-level evidence hierarchy map",
+      "present": true
+    },
+    "METRIC_CONTRACT_FINAL.yaml": {
+      "present": false,
+      "description": "Authoritative metric contract and statistical endpoints"
+    },
+    "per_case_scored_final.jsonl": {
+      "sha256": "e2622f8a0f45040d77dc8d29b4e86bc9965acedc3988f10899996171acf4838f",
+      "size_bytes": 3175858,
+      "line_count": 5400,
+      "description": "Canonical per-case scored internal evidence (5,400 rows)",
+      "present": true
+    },
+    "strong_baseline_summary_final.csv": {
+      "sha256": "c4ababb77674a12ef8d3d22154dd612b9f7c51fa2690a9dada3cd77f66cae3cd",
+      "size_bytes": 1864,
+      "line_count": 10,
+      "description": "Primary 9-pipeline evaluation summary",
+      "present": true
+    },
+    "stat_safety_final.csv": {
+      "sha256": "2757889700c3cea3572907a32da19328e5b641c143506526eeab94e9c2a13365",
+      "size_bytes": 609,
+      "line_count": 10,
+      "description": "Wilson 95% intervals and McNemar safety tests",
+      "present": true
+    },
+    "stat_complete_utility_final.csv": {
+      "sha256": "d176850ec3bd059796bb19a092d7c54e96c37fd36f1531f10376b0f32a255e8d",
+      "size_bytes": 776,
+      "line_count": 10,
+      "description": "Complete claim-set accuracy statistical tests",
+      "present": true
+    },
+    "stat_partial_utility_final.csv": {
+      "sha256": "810e1bd75c56edbf933d7b490d45d189f72c7561a1100a1676cbe071eb14fac0",
+      "size_bytes": 620,
+      "line_count": 10,
+      "description": "Supported-answer coverage statistical tests",
+      "present": true
+    },
+    "stat_c1_vs_c8_mcnemar.json": {
+      "sha256": "d40f90eb46865e7ea2f61ed0b631a0e67ed8a133ac4f4e2b1dce9b4157a6f7b5",
+      "size_bytes": 689,
+      "line_count": 17,
+      "description": "C1 vs C8 contingency matrix and exact McNemar p-value",
+      "present": true
+    },
+    "latency_summary_final.csv": {
+      "sha256": "b398455f8315470b5c65a4821ec89e6a52c888e55eec15ac53836f1b97c7dbee",
+      "size_bytes": 558,
+      "line_count": 10,
+      "description": "Path-separated latency profiling breakdown",
+      "present": true
+    },
+    "external_constrained_decoding_summary.csv": {
+      "sha256": "b0fc92b968133195c0f956a03e2bc378569bdd7b07c169f63e45820ddb13e960",
+      "size_bytes": 747,
+      "line_count": 2,
+      "description": "D1 genuine grammar-constrained decoding summary",
+      "present": true
+    },
+    "constrained_decoding_per_case.jsonl": {
+      "sha256": "6a20b155b28821fecb7b78115c9c7966ef2938e050f2f10bf984e0a811422f6b",
+      "size_bytes": 2173,
+      "line_count": 2,
+      "description": "D1 genuine grammar-constrained decoding per-case captures",
+      "present": true
+    },
+    "qwen_finqa_C1_raw.jsonl": {
+      "sha256": "bba2bbad4eb24f102d83e0f161ea3cfc92e3a7508f0564dc396c89e830a914f4",
+      "size_bytes": 128194,
+      "line_count": 200,
+      "description": "Qwen2.5-7B FinQA C1 raw generation and scoring captures (N=200)",
+      "present": true
+    },
+    "qwen_finqa_C8_raw.jsonl": {
+      "sha256": "ab719a6ea612c14e3a26bca3418d795a22fd74404bf69160ed45dd0b363ddd40",
+      "size_bytes": 178293,
+      "line_count": 200,
+      "description": "Qwen2.5-7B FinQA C8 raw generation and scoring captures (N=200)",
+      "present": true
+    },
+    "qwen_halueval_C1_raw.jsonl": {
+      "sha256": "d6add964ca19c17942e4785ac7562b87642cf0b86126082eaf727a17235f7cd7",
+      "size_bytes": 106825,
+      "line_count": 200,
+      "description": "Qwen2.5-7B HaluEval C1 raw generation and scoring captures (N=200)",
+      "present": true
+    },
+    "qwen_halueval_C8_raw.jsonl": {
+      "sha256": "db36633dc326fe3e631cf071b08017b2542013ae4e086aa8214cd48d45ae1806",
+      "size_bytes": 159443,
+      "line_count": 200,
+      "description": "Qwen2.5-7B HaluEval C8 raw generation and scoring captures (N=200)",
+      "present": true
+    },
+    "external_generalization_final.csv": {
+      "sha256": "d70e0ac490e62d70c4f9252ebe697028ae195da0450592d5d8f7a07daf1fafc2",
+      "size_bytes": 801,
+      "line_count": 9,
+      "description": "Cross-model external benchmark summary",
+      "present": true
+    },
+    "external_failure_taxonomy_final.csv": {
+      "sha256": "81e37b8299db0cd9872815b84b09c8e446323659a78555fe1d51573408ab0063",
+      "size_bytes": 25109,
+      "line_count": 401,
+      "description": "External failure taxonomy classification",
+      "present": true
+    }
+  }
+}

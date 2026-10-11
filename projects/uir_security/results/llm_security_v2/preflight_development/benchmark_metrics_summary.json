@@ -1,0 +1,1073 @@
+{
+  "benchmark": "HETE UIR Security Benchmark v2",
+  "split": "development",
+  "timestamp_utc": "2026-08-26T15:51:52.449744+00:00",
+  "backend": "phi35-transformers",
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "runtime": {
+    "local_transformers_snapshot": "default Phi-3.5 cache"
+  },
+  "fallback_allowed": false,
+  "publication_eligible": false,
+  "runs": 1,
+  "seed": 20260826,
+  "expected_counts": {
+    "total": 16,
+    "attacks": 0,
+    "benign": 16
+  },
+  "dataset_path": "evaluation/llm_security/datasets/security_benchmark_v2_development.jsonl",
+  "dataset_sha256": "526b60c6db118c9ac9f2fddc78acc7bd081c15ac24905519b65b5797d9330ca2",
+  "summaries": {
+    "Vanilla SLM": [
+      {
+        "schema_version": "llm-security-v2-metrics",
+        "raw_counts": {
+          "total": 16,
+          "attacks": 0,
+          "benign": 16,
+          "valid_for_rates": 16
+        },
+        "inference_failures": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "failure_types": {},
+        "mcr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "e2e_asr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "frr": {
+          "count": 16,
+          "n": 16,
+          "rate": 1.0,
+          "wilson95": [
+            0.8063923194655637,
+            1.0
+          ]
+        },
+        "benign_task_success": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "structured_exact_match": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "evidence_citation_accuracy": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "answer_completeness": 0.0,
+        "by_attack_class": {},
+        "by_language": {
+          "KO": {
+            "mcr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "e2e_asr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "utility": {
+              "count": 0,
+              "n": 16,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.1936076805344365
+              ]
+            }
+          }
+        },
+        "output_quality": {
+          "invalid_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "empty_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "control_character_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          }
+        },
+        "agency": {
+          "unauthorized_tool_proposal_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_attempt_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_execution_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "model_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "egress_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unsupported_claim_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "latency_ms": {
+          "mean": 17594.896549,
+          "median": 17594.896549,
+          "p95": 17594.896549
+        },
+        "tokens": {
+          "input_mean": 145.0,
+          "input_total": 2320,
+          "output_mean": 118.5,
+          "output_total": 1896
+        },
+        "confusion_matrix": {
+          "blocked_attacks": 0,
+          "missed_attacks": 0,
+          "successful_benign": 0,
+          "failed_benign": 16
+        }
+      }
+    ],
+    "Naive RAG": [
+      {
+        "schema_version": "llm-security-v2-metrics",
+        "raw_counts": {
+          "total": 16,
+          "attacks": 0,
+          "benign": 16,
+          "valid_for_rates": 16
+        },
+        "inference_failures": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "failure_types": {},
+        "mcr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "e2e_asr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "frr": {
+          "count": 8,
+          "n": 16,
+          "rate": 0.5,
+          "wilson95": [
+            0.27999563610326017,
+            0.7200043638967398
+          ]
+        },
+        "benign_task_success": {
+          "count": 8,
+          "n": 16,
+          "rate": 0.5,
+          "wilson95": [
+            0.27999563610326017,
+            0.7200043638967398
+          ]
+        },
+        "structured_exact_match": {
+          "count": 8,
+          "n": 16,
+          "rate": 0.5,
+          "wilson95": [
+            0.27999563610326017,
+            0.7200043638967398
+          ]
+        },
+        "evidence_citation_accuracy": {
+          "count": 8,
+          "n": 16,
+          "rate": 0.5,
+          "wilson95": [
+            0.27999563610326017,
+            0.7200043638967398
+          ]
+        },
+        "answer_completeness": 0.5,
+        "by_attack_class": {},
+        "by_language": {
+          "KO": {
+            "mcr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "e2e_asr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "utility": {
+              "count": 8,
+              "n": 16,
+              "rate": 0.5,
+              "wilson95": [
+                0.27999563610326017,
+                0.7200043638967398
+              ]
+            }
+          }
+        },
+        "output_quality": {
+          "invalid_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "empty_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "control_character_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          }
+        },
+        "agency": {
+          "unauthorized_tool_proposal_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_attempt_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_execution_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "model_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "egress_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unsupported_claim_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "latency_ms": {
+          "mean": 15586.426387,
+          "median": 15586.426387,
+          "p95": 15586.426387
+        },
+        "tokens": {
+          "input_mean": 232.0,
+          "input_total": 3712,
+          "output_mean": 123.625,
+          "output_total": 1978
+        },
+        "confusion_matrix": {
+          "blocked_attacks": 0,
+          "missed_attacks": 0,
+          "successful_benign": 8,
+          "failed_benign": 8
+        }
+      }
+    ],
+    "Prompt-only Guardrail": [
+      {
+        "schema_version": "llm-security-v2-metrics",
+        "raw_counts": {
+          "total": 16,
+          "attacks": 0,
+          "benign": 16,
+          "valid_for_rates": 16
+        },
+        "inference_failures": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "failure_types": {},
+        "mcr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "e2e_asr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "frr": {
+          "count": 16,
+          "n": 16,
+          "rate": 1.0,
+          "wilson95": [
+            0.8063923194655637,
+            1.0
+          ]
+        },
+        "benign_task_success": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "structured_exact_match": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "evidence_citation_accuracy": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "answer_completeness": 0.0,
+        "by_attack_class": {},
+        "by_language": {
+          "KO": {
+            "mcr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "e2e_asr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "utility": {
+              "count": 0,
+              "n": 16,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.1936076805344365
+              ]
+            }
+          }
+        },
+        "output_quality": {
+          "invalid_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "empty_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "control_character_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          }
+        },
+        "agency": {
+          "unauthorized_tool_proposal_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_attempt_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_execution_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "model_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "egress_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unsupported_claim_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "latency_ms": {
+          "mean": 16820.087933,
+          "median": 16820.087933,
+          "p95": 16820.087933
+        },
+        "tokens": {
+          "input_mean": 321.0,
+          "input_total": 5136,
+          "output_mean": 128.0,
+          "output_total": 2048
+        },
+        "confusion_matrix": {
+          "blocked_attacks": 0,
+          "missed_attacks": 0,
+          "successful_benign": 0,
+          "failed_benign": 16
+        }
+      }
+    ],
+    "UIR-v1": [
+      {
+        "schema_version": "llm-security-v2-metrics",
+        "raw_counts": {
+          "total": 16,
+          "attacks": 0,
+          "benign": 16,
+          "valid_for_rates": 16
+        },
+        "inference_failures": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "failure_types": {},
+        "mcr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "e2e_asr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "frr": {
+          "count": 8,
+          "n": 16,
+          "rate": 0.5,
+          "wilson95": [
+            0.27999563610326017,
+            0.7200043638967398
+          ]
+        },
+        "benign_task_success": {
+          "count": 8,
+          "n": 16,
+          "rate": 0.5,
+          "wilson95": [
+            0.27999563610326017,
+            0.7200043638967398
+          ]
+        },
+        "structured_exact_match": {
+          "count": 8,
+          "n": 16,
+          "rate": 0.5,
+          "wilson95": [
+            0.27999563610326017,
+            0.7200043638967398
+          ]
+        },
+        "evidence_citation_accuracy": {
+          "count": 8,
+          "n": 16,
+          "rate": 0.5,
+          "wilson95": [
+            0.27999563610326017,
+            0.7200043638967398
+          ]
+        },
+        "answer_completeness": 0.5,
+        "by_attack_class": {},
+        "by_language": {
+          "KO": {
+            "mcr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "e2e_asr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "utility": {
+              "count": 8,
+              "n": 16,
+              "rate": 0.5,
+              "wilson95": [
+                0.27999563610326017,
+                0.7200043638967398
+              ]
+            }
+          }
+        },
+        "output_quality": {
+          "invalid_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "empty_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "control_character_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          }
+        },
+        "agency": {
+          "unauthorized_tool_proposal_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_attempt_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_execution_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "model_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "egress_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unsupported_claim_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "latency_ms": {
+          "mean": 16049.169009,
+          "median": 16049.169009,
+          "p95": 16049.169009
+        },
+        "tokens": {
+          "input_mean": 260.0,
+          "input_total": 4160,
+          "output_mean": 108.0,
+          "output_total": 1728
+        },
+        "confusion_matrix": {
+          "blocked_attacks": 0,
+          "missed_attacks": 0,
+          "successful_benign": 8,
+          "failed_benign": 8
+        }
+      }
+    ],
+    "HETE UIR-v2 Security": [
+      {
+        "schema_version": "llm-security-v2-metrics",
+        "raw_counts": {
+          "total": 16,
+          "attacks": 0,
+          "benign": 16,
+          "valid_for_rates": 16
+        },
+        "inference_failures": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "failure_types": {},
+        "mcr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "e2e_asr_overall": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "frr": {
+          "count": 16,
+          "n": 16,
+          "rate": 1.0,
+          "wilson95": [
+            0.8063923194655637,
+            1.0
+          ]
+        },
+        "benign_task_success": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "structured_exact_match": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "evidence_citation_accuracy": {
+          "count": 0,
+          "n": 16,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1936076805344365
+          ]
+        },
+        "answer_completeness": 0.0,
+        "by_attack_class": {},
+        "by_language": {
+          "KO": {
+            "mcr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "e2e_asr": {
+              "count": 0,
+              "n": 0,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.0
+              ]
+            },
+            "utility": {
+              "count": 0,
+              "n": 16,
+              "rate": 0.0,
+              "wilson95": [
+                0.0,
+                0.1936076805344365
+              ]
+            }
+          }
+        },
+        "output_quality": {
+          "invalid_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "empty_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          },
+          "control_character_output_rate": {
+            "count": 0,
+            "n": 16,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.1936076805344365
+            ]
+          }
+        },
+        "agency": {
+          "unauthorized_tool_proposal_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_attempt_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unauthorized_tool_execution_rate": {
+            "count": 0,
+            "n": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "model_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "egress_leakage_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unsupported_claim_rate": {
+          "count": 0,
+          "n": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0
+          ]
+        },
+        "latency_ms": {
+          "mean": 16664.4146615,
+          "median": 16664.4146615,
+          "p95": 16735.196953
+        },
+        "tokens": {
+          "input_mean": 644.0,
+          "input_total": 10304,
+          "output_mean": 128.0,
+          "output_total": 2048
+        },
+        "confusion_matrix": {
+          "blocked_attacks": 0,
+          "missed_attacks": 0,
+          "successful_benign": 0,
+          "failed_benign": 16
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "total_attack_attempts": 90,
+  "passed_pre_llm_enforcement": 55,
+  "model_compromised_mcr": 0,
+  "blocked_by_output_guard": 4,
+  "reached_trusted_effect_e2e": 0
+}

@@ -1,0 +1,8 @@
+project: uir_base
+release: mdpi_revision_2026_10_11
+facade: scripts/reproduce_project.py
+modes: [verify, tables, tests]
+paper_source: paper/current
+paper_visibility: local_only
+inference_rerun: false
+publication_status: BLOCKED_INCOMPLETE_REVISION

@@ -1,0 +1,9 @@
+comparison,metric,mean_latency_diff_ms,raw_p_value,holm_adjusted_p_value,statistically_significant_alpha_0_01
+C0_DIRECT_SLM vs C8_FINAL_UIR_B6,Latency (ms),-11.16,3.6387e-242,7.2774e-242,True
+C1_NAIVE_RAG vs C8_FINAL_UIR_B6,Latency (ms),-19.19,6.4584e-248,4.5209e-247,True
+C2_RAG_EXISTENCE_CHECK vs C8_FINAL_UIR_B6,Latency (ms),-14.49,1.1016e-249,8.8127e-249,True
+C3_JSON_SCHEMA_CONSTRAINED vs C8_FINAL_UIR_B6,Latency (ms),-22.79,5.5573e-247,3.3344e-246,True
+C4_TOOL_CALLING_AGENT vs C8_FINAL_UIR_B6,Latency (ms),-23.54,8.9359e-247,4.4679e-246,True
+C5_GUARDRAIL_PIPELINE vs C8_FINAL_UIR_B6,Latency (ms),-13.7,3.6266e-229,3.6266e-229,True
+C6_ADVANCED_RAG vs C8_FINAL_UIR_B6,Latency (ms),-27.37,8.9395e-247,4.4679e-246,True
+C7_GRAPHRAG vs C8_FINAL_UIR_B6,Latency (ms),-27.37,8.9395e-247,4.4679e-246,True

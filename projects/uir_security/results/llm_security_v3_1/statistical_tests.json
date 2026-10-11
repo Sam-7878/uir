@@ -1,0 +1,47 @@
+{
+  "HETE_vs_Naive RAG": {
+    "b_discordant": 31,
+    "c_discordant": 0,
+    "chi2": 29.0323,
+    "p_value": 0.0,
+    "statistically_significant": true,
+    "holm_alpha_threshold": 0.002,
+    "holm_significant": true
+  },
+  "HETE_vs_CaMeL": {
+    "b_discordant": 33,
+    "c_discordant": 0,
+    "chi2": 31.0303,
+    "p_value": 0.0,
+    "statistically_significant": true,
+    "holm_alpha_threshold": 0.0025,
+    "holm_significant": true
+  },
+  "HETE_vs_Progent": {
+    "b_discordant": 26,
+    "c_discordant": 0,
+    "chi2": 24.0385,
+    "p_value": 1e-06,
+    "statistically_significant": true,
+    "holm_alpha_threshold": 0.003333,
+    "holm_significant": true
+  },
+  "HETE_vs_Spotlighting": {
+    "b_discordant": 22,
+    "c_discordant": 0,
+    "chi2": 20.0455,
+    "p_value": 8e-06,
+    "statistically_significant": true,
+    "holm_alpha_threshold": 0.005,
+    "holm_significant": true
+  },
+  "HETE_vs_Vanilla SLM": {
+    "b_discordant": 21,
+    "c_discordant": 0,
+    "chi2": 19.0476,
+    "p_value": 1.3e-05,
+    "statistically_significant": true,
+    "holm_alpha_threshold": 0.01,
+    "holm_significant": true
+  }
+}

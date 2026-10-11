@@ -1,0 +1,1460 @@
+[
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0003",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "period_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0014",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0025",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0031",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0050",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0058",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0071",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0076",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0093",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0095",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-ADVERSARIAL-0098",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-AMBIGUOUS-0003",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-AMBIGUOUS-0015",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-AMBIGUOUS-0024",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-AMBIGUOUS-0026",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-AMBIGUOUS-0035",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-AMBIGUOUS-0044",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0009",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0022",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0033",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0034",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0040",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0042",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0043",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0053",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0065",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0066",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0077",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0079",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-INVALID_ENTITY-0084",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-NUMERIC_PROVENANCE-0019",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-NUMERIC_PROVENANCE-0029",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PAIR-0004-KO",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PAIR-0007-EN",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PAIR-0080-EN",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PAIR-0089-EN",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PAIR-0136-KO",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PAIR-0195-EN",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PARAPHRASE-0003",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PARAPHRASE-0005",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PARAPHRASE-0030",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-PARAPHRASE-0172",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0001",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0019",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0022",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0044",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0055",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0056",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0062",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0071",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0075",
+    "disagree_or_invalid_fields": [
+      "intent_match"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0080",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0081",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "EXT-POLICY_CONFLICT-0100",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-012-KO",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-013-EN",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-016-EN",
+    "disagree_or_invalid_fields": [
+      "policy_decision"
+    ],
+    "final_label": null,
+    "uncertain_fields": []
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-023-EN",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-026-EN",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-028-KO",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-030-EN",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-030-KO",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-031-EN",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-034-EN",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-038-KO",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-045-EN",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-048-KO",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-077-EN",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-087-KO",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "SEC3B-093-KO",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0010",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0030",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0087",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0116",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0502",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0512",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0653",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0761",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0795",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0886",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0901",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0903",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0921",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0922",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0927",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0931",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0932",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0935",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision"
+    ],
+    "final_label": null,
+    "uncertain_fields": []
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0938",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0942",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0945",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0954",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0957",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0966",
+    "disagree_or_invalid_fields": [
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0976",
+    "disagree_or_invalid_fields": [
+      "policy_decision",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0979",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-0994",
+    "disagree_or_invalid_fields": [
+      "policy_decision"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1017",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "period_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1028",
+    "disagree_or_invalid_fields": [
+      "entity_match",
+      "attribute_match",
+      "period_match"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "period_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1030",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "period_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "period_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1050",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1057",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1061",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1074",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1077",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1079",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1082",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1088",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1115",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1118",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1119",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1120",
+    "disagree_or_invalid_fields": [
+      "entity_match",
+      "attribute_match",
+      "period_match"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "period_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1128",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1130",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1133",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "period_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1139",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1141",
+    "disagree_or_invalid_fields": [
+      "intent_match",
+      "entity_match",
+      "attribute_match",
+      "period_match",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "intent_match",
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1178",
+    "disagree_or_invalid_fields": [],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  },
+  {
+    "adjudication_status": "UNRESOLVED_NO_HUMAN_ORACLE",
+    "case_id": "V2C-1199",
+    "disagree_or_invalid_fields": [
+      "conditions_preservation",
+      "ambiguity"
+    ],
+    "final_label": null,
+    "uncertain_fields": [
+      "ambiguity"
+    ]
+  }
+]

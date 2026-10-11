@@ -12,3 +12,7 @@
 * text=auto
 .gitignore text eol=lf
 Cargo.lock text eol=lf
+projects/*/results/** -text
+archive/*/results/** -text
+projects/*/evaluation/**/datasets/** -text
+projects/*/evaluation/**/official_sources/** -text

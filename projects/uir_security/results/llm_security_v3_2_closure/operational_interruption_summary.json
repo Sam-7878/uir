@@ -1,0 +1,151 @@
+{
+  "unique_interruption_count": 8,
+  "interruptions": [
+    {
+      "group": "multimodel_phi",
+      "case_id": "c_01c3078e429fa7e2",
+      "completed_rows": 624,
+      "error": "Non-live or incomplete backend response; no publication row admitted",
+      "evidence_paths": [
+        "operational_failures/EXECUTION_FAILURE_phi_after_624_rows.json"
+      ],
+      "diagnostics": []
+    },
+    {
+      "group": "multimodel_phi",
+      "case_id": "c_0f32f93e74f52fc0",
+      "completed_rows": 496,
+      "error": "Non-live or incomplete backend response; no publication row admitted",
+      "evidence_paths": [
+        "operational_failures/EXECUTION_FAILURE_phi_after_496_rows.json"
+      ],
+      "diagnostics": []
+    },
+    {
+      "group": "multimodel_phi",
+      "case_id": "c_47cf76a6768f1f39",
+      "completed_rows": 646,
+      "error": "Non-live or incomplete backend response; no publication row admitted",
+      "evidence_paths": [
+        "operational_failures/EXECUTION_FAILURE_phi_after_646_rows.json",
+        "operational_failures/EXECUTION_FAILURE_phi_after_646_rows_retry.json"
+      ],
+      "diagnostics": [
+        {
+          "path": "operational_failures/backend_failure_diagnostic_phi_after_646_rows_recovery.json",
+          "complete_response": true,
+          "purpose": "Unscored exact-case diagnostic after fail-closed Phi response; excluded from all denominators"
+        }
+      ]
+    },
+    {
+      "group": "multimodel_phi",
+      "case_id": "c_4f81ad8aebf880f0",
+      "completed_rows": 53,
+      "error": "Non-live or incomplete backend response; no publication row admitted",
+      "evidence_paths": [
+        "operational_failures/EXECUTION_FAILURE_phi_after_53_rows.json",
+        "operational_failures/EXECUTION_FAILURE_phi_after_53_rows_active_marker.json"
+      ],
+      "diagnostics": [
+        {
+          "path": "operational_failures/backend_failure_diagnostic_phi_after_53_rows.json",
+          "complete_response": true,
+          "purpose": "Unscored exact-case diagnostic after fail-closed incomplete Phi response; excluded from all denominators"
+        }
+      ]
+    },
+    {
+      "group": "multimodel_phi",
+      "case_id": "c_8e6026ea95115b45",
+      "completed_rows": 412,
+      "error": "Non-live or incomplete backend response; no publication row admitted",
+      "evidence_paths": [
+        "operational_failures/EXECUTION_FAILURE_phi_after_412_rows.json"
+      ],
+      "diagnostics": []
+    },
+    {
+      "group": "multimodel_phi",
+      "case_id": "c_bfb96b5196175e21",
+      "completed_rows": 240,
+      "error": "Non-live or incomplete backend response; no publication row admitted",
+      "evidence_paths": [
+        "operational_failures/EXECUTION_FAILURE_phi_after_240_rows.json"
+      ],
+      "diagnostics": [
+        {
+          "path": "operational_failures/backend_failure_diagnostic_phi_after_240_rows.json",
+          "complete_response": false,
+          "purpose": "Unscored exact-case diagnostic after fail-closed incomplete Phi response; excluded from all denominators"
+        },
+        {
+          "path": "operational_failures/backend_failure_diagnostic_phi_after_240_rows_reload.json",
+          "complete_response": true,
+          "purpose": "Unscored exact-case diagnostic after explicit normal model unload/reload; excluded from all denominators"
+        }
+      ]
+    },
+    {
+      "group": "multimodel_phi",
+      "case_id": "c_d499d629bd814de9",
+      "completed_rows": 768,
+      "error": "Non-live or incomplete backend response; no publication row admitted",
+      "evidence_paths": [
+        "operational_failures/EXECUTION_FAILURE_phi_after_768_rows.json"
+      ],
+      "diagnostics": []
+    },
+    {
+      "group": "primary_0",
+      "case_id": "c_5a9525f498fc2fc5",
+      "completed_rows": 783,
+      "error": "Non-live or incomplete backend response; no publication row admitted",
+      "evidence_paths": [
+        "operational_failures/EXECUTION_FAILURE_original.json",
+        "operational_failures/interruption_after_783_rows.json"
+      ],
+      "diagnostics": []
+    }
+  ],
+  "recovery_events": [
+    {
+      "path": "operational_failures/phi_model_unload_after_412_rows.json",
+      "after_completed_rows": 412,
+      "status_code": 200,
+      "done": true,
+      "purpose": "Operational recovery after fail-closed Phi interruption; model/config unchanged"
+    },
+    {
+      "path": "operational_failures/phi_model_unload_after_496_rows.json",
+      "after_completed_rows": 496,
+      "status_code": 200,
+      "done": true,
+      "purpose": "Operational recovery after fail-closed Phi interruption; model/config unchanged"
+    },
+    {
+      "path": "operational_failures/phi_model_unload_after_624_rows.json",
+      "after_completed_rows": 624,
+      "status_code": 200,
+      "done": true,
+      "purpose": "Operational recovery after fail-closed Phi interruption; model/config unchanged"
+    },
+    {
+      "path": "operational_failures/phi_model_unload_after_646_rows_retry.json",
+      "after_completed_rows": 646,
+      "status_code": 200,
+      "done": true,
+      "purpose": "Operational recovery after repeated fail-closed Phi interruption; no diagnostic request before campaign retry"
+    },
+    {
+      "path": "operational_failures/phi_model_unload_after_768_rows.json",
+      "after_completed_rows": 768,
+      "status_code": 200,
+      "done": true,
+      "purpose": "Operational recovery after fail-closed Phi interruption; no diagnostic request before campaign retry"
+    }
+  ],
+  "admission_policy": "A response missing done=true, containing an error, or using fallback is rejected before a publication row is written.",
+  "resumption_policy": "Preserve checkpoints and failure evidence; retry only the missing frozen case without changing model, input, evaluation policy, or outcome criteria.",
+  "limitation": "Rejected response bodies were not retained by the campaign runner; only diagnostics performed after interruption retain response bodies."
+}

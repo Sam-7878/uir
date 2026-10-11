@@ -1,0 +1,18 @@
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/benign_long_supplement.py", line 61, in <module>
+    time.sleep(15)
+KeyboardInterrupt
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/benign_long_supplement.py", line 57, in <module>
+    p=prepare()
+      ^^^^^^^^^
+  File "/mnt/d/_work/goat_bank/uir/docs/security_v3_2/audit/benign_long_supplement.py", line 31, in prepare
+    if path.exists():assert json.loads(path.read_text())==data,'Frozen supplementary protocol changed'
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Frozen supplementary protocol changed
+/mnt/d/_Work/goat_bank/.venv/lib/python3.12/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(

@@ -1,0 +1,66 @@
+{
+  "os": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "python": "3.12.13 (main, May  6 2026, 18:46:41) [GCC 15.2.0]",
+  "python_executable": "/mnt/d/_Work/goat_bank/.venv/bin/python",
+  "ollama_version": {
+    "version": "0.33.3"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "qwen2.5:7b",
+        "model": "qwen2.5:7b",
+        "modified_at": "2026-09-08T14:53:02.179286504+09:00",
+        "size": 4683087332,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "7.6B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 32768,
+          "embedding_length": 3584
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      },
+      {
+        "name": "phi3.5:latest",
+        "model": "phi3.5:latest",
+        "modified_at": "2026-09-08T14:53:02.179604121+09:00",
+        "size": 2176178843,
+        "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "phi3",
+          "families": [
+            "phi3"
+          ],
+          "parameter_size": "3.8B",
+          "quantization_level": "Q4_0",
+          "context_length": 131072,
+          "embedding_length": 3072
+        },
+        "capabilities": [
+          "completion"
+        ]
+      }
+    ]
+  },
+  "context_length": 8192,
+  "max_new_tokens": 384,
+  "timeout_seconds": 180,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 42,
+  "stochastic_temperature": 0.7,
+  "stochastic_top_p": 0.9,
+  "code_commit": "9c4c6c718b5a5e5fbfe143fa910857ddf985e753"
+}

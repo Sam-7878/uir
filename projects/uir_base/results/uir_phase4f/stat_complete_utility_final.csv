@@ -1,0 +1,2 @@
+test,cohort,c1_complete_accuracy,c8_complete_accuracy,risk_difference_pp,both_correct,c1_wrong_c8_correct,c1_correct_c8_wrong,both_wrong,p_value,significant_alpha_005,scientific_interpretation
+Exact McNemar test (two-sided),commit_eligible_requests (N=418),0.5311,0.5359,+0.48%pp,222,2,0,194,0.5,False,Complete task accuracy is statistically equivalent (p=0.50). UIR preserves full complete utility while providing deterministic boundary enforcement and safe partial answers.

@@ -1,0 +1,7 @@
+Baseline,E2E-ASR (%),Utility (%)
+Vanilla SLM,0.0,100.0
+Naive RAG,0.0,100.0
+Spotlighting,0.0,100.0
+Progent,0.0,100.0
+CaMeL,0.0,100.0
+HETE UIR-v3.1 Security,0.0,100.0

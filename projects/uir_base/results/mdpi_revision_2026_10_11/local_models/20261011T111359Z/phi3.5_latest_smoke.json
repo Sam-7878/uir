@@ -1,0 +1,161 @@
+{
+  "loaded_models": [
+    {
+      "context_length": 8192,
+      "details": {
+        "families": [
+          "phi3"
+        ],
+        "family": "phi3",
+        "format": "gguf",
+        "parameter_size": "3.8B",
+        "parent_model": "",
+        "quantization_level": "Q4_0"
+      },
+      "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+      "expires_at": "2026-10-11T20:46:35.150920211+09:00",
+      "model": "phi3.5:latest",
+      "name": "phi3.5:latest",
+      "size": 5483884707,
+      "size_vram": 5483884707
+    }
+  ],
+  "nvidia_smi": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 8188 MiB, 539 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 24576 MiB, 5528 MiB",
+  "records": [
+    {
+      "passed": false,
+      "probe": "english_instruction",
+      "raw_content_sha256": "f7a50ef039ab1ebce7d7a1eaa65f43fe4d0c4369538fc7c181108964d5461097",
+      "request": {
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Reply with exactly READY.",
+            "role": "user"
+          }
+        ],
+        "model": "phi3.5:latest",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:36:29.178883273Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 31,
+        "eval_duration": 156735000,
+        "load_duration": 16895061232,
+        "message": {
+          "content": "READY\n\nI am ready to assist you with your request. Please provide the details or context for the information or task you need help with.",
+          "role": "assistant"
+        },
+        "model": "phi3.5:latest",
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_count": 17,
+        "prompt_eval_duration": 57749000,
+        "total_duration": 17113075151
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    },
+    {
+      "passed": true,
+      "probe": "korean_arithmetic",
+      "raw_content_sha256": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
+      "request": {
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "7 더하기 5의 결과를 계산하세요. 숫자만 출력하세요.",
+            "role": "user"
+          }
+        ],
+        "model": "phi3.5:latest",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:36:34.988343279Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 3,
+        "eval_duration": 93744000,
+        "load_duration": 57870134,
+        "message": {
+          "content": "12",
+          "role": "assistant"
+        },
+        "model": "phi3.5:latest",
+        "prompt_eval_cached_count": 3,
+        "prompt_eval_count": 51,
+        "prompt_eval_duration": 5631127000,
+        "total_duration": 5808296878
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    },
+    {
+      "passed": true,
+      "probe": "structured_output",
+      "raw_content_sha256": "867e0cd435381bb56251908fc2cf891b652c72d233a5f3a2fe5582a98cfde5e0",
+      "request": {
+        "format": {
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "READY"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "type": "object"
+        },
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Return only a JSON object with status set to READY.",
+            "role": "user"
+          }
+        ],
+        "model": "phi3.5:latest",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:36:35.150770781Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 8,
+        "eval_duration": 45556000,
+        "load_duration": 29789443,
+        "message": {
+          "content": "{\"status\": \"READY\"}",
+          "role": "assistant"
+        },
+        "model": "phi3.5:latest",
+        "prompt_eval_cached_count": 3,
+        "prompt_eval_count": 22,
+        "prompt_eval_duration": 65709000,
+        "total_duration": 161077720
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    }
+  ]
+}

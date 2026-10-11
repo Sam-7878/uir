@@ -1,0 +1,54 @@
+이번 Repair 작업은 방향과 구현 수준에서는 잘 수행되었습니다. 이전 benchmark v1에서 문제가 되었던 평가 방식이 상당 부분 바로잡혔습니다. 하지만 아직 논문 초안으로 넘어갈 단계는 아닙니다. 현재 결과가 명시적으로 publication_eligible = false이고, 실제 security attack benchmark가 아니라 smoke test이기 때문입니다. 
+가장 긍정적인 변화는 MCR(Model Compromise Rate)와 E2E-ASR(End-to-End Attack Success Rate)를 분리했다는 점입니다. 이는 지금까지 논의한 HETE의 핵심 주장, 즉 “LLM 자체가 공격에 넘어가는 것”과 “그 공격이 trusted system state/output까지 영향을 미치는 것”을 구분할 수 있게 합니다. Repair report도 동일한 independent case-goal oracle로 두 metric을 계산한다고 명시합니다. 
+또한 dataset 쪽은 상당히 잘 정리되었습니다. 제가 압축 결과의 dataset_audit.json까지 직접 확인했는데, 총 1,600건, KO 800 / EN 800, duplicate prompt 0, missing attack goal 0으로 기록되어 있습니다. GitHub에도 development set뿐 아니라 별도의 security_benchmark_v2_heldout.jsonl과 manifest가 실제로 존재합니다. 즉 이전에 요구했던 development/held-out 분리까지 구현되어 있습니다.
+Phi-3.5 실행 환경도 실제 모델 checkpoint를 로드하여 probe까지 성공했습니다. cached microsoft/Phi-3.5-mini-instruct를 CUDA NF4 quantization으로 로드했고, DynamicCache 호환성 문제 때문에 eager attention + cache-free greedy decoding을 사용하도록 조정한 것도 문서화되어 있습니다. 이는 fallback model로 바꾼 것이 아니라 동일 checkpoint의 실행 호환성 조치입니다. 
+하지만 현재 압축 결과의 실제 benchmark summary를 보면 핵심적인 한계가 분명합니다. 실제로 실행된 것은 12개의 benign case뿐이고 attack case는 0개입니다. 그래서 표의 MCR=0/0, E2E-ASR=0/0은 보안 성능이 0%라는 뜻이 아니라, 아직 공격 실험이 수행되지 않았다는 뜻입니다. 보고서도 이를 정확하게 “harness smoke run, not SCI evidence”라고 표시하고 있습니다. 
+Ablation 결과 역시 현재는 해석하면 안 됩니다. 모든 security knockout에서 ΔASR/ΔMCR이 0으로 보이는 것은 공격 case가 없기 때문입니다. 따라서 현재의 “Targeted degradation observed=False”는 component가 효과 없다는 뜻이 아닙니다. 
+이 점에서 이번 구현은 오히려 이전보다 학술적으로 훨씬 건강합니다. 이전처럼 smoke 결과를 “PUBLICATION_BENCHMARK_VERIFIED”라고 잘못 선언하지 않고, production run이 완료될 때까지 publication eligibility를 차단하고 있습니다. Phi 실행 문서도 세 개 production runner와 strict validator가 모두 성공하기 전에는 SCI manuscript에 결과를 인용하지 말라고 명확히 규정합니다. 
+따라서 현재 단계의 판단은 다음과 같습니다.
+항목	판단
+UIR-v2 security architecture	완료 수준
+Independent attack-success judge	구현됨
+MCR / E2E-ASR 분리	잘 수행됨
+1,600-case dataset	준비됨
+KO/EN 균형	준비됨
+Development / Held-out split	준비됨
+Phi-3.5 runtime	검증됨
+Smoke test	통과
+Full security benchmark	미실행
+3-run repetition	미실행
+Ablation 실증	미실행
+Multi-knockout 실증	미실행
+SCI Results 사용 가능	아직 불가
+즉, 새로운 security architecture를 더 개발할 필요는 현재로서는 없습니다. 지금 필요한 것은 “개발”보다는 production-scale experimental execution과 최종 validation입니다.
+다만 한 가지를 추가로 권합니다. 최종 benchmark 전에 independent judge 자체에 대해 소규모 human/manual agreement 검증을 수행하는 것이 좋습니다. deterministic judge가 아무리 잘 작성되어 있어도 그 judge가 실제 공격 성공 여부를 정확히 판정하는지 검증해야 하기 때문입니다. 예를 들어 attack class마다 20건 정도를 사람이 직접 판정하고 judge 결과와 비교하여 ≥95% agreement를 확인하면 SCI reviewer에게 상당히 강한 근거가 됩니다.
+그래서 이번에는 논문 초안을 만들지 않고, 최종 publication benchmark 실행 작업지시서를 작성했습니다.
+./uir/docs/work_reports/002_security_benchmark_execution/HETE_UIR_PUBLICATION_BENCHMARK_EXECUTION_WORK_ORDER.md file이 이 작업지시서입니다.
+
+이 작업지시서의 핵심은 다음입니다.
+•	실제 Phi-3.5 backend만 사용 
+•	fallback/mock/Ollama 결과 금지 
+•	1,600-case 전체 실행 
+•	5 baselines × 전체 dataset × 최소 3 runs 
+•	full ablation × 최소 3 runs 
+•	required multi-knockout × 최소 3 runs 
+•	development와 held-out 결과 분리 
+•	attack count가 0이면 publication gate 무조건 실패 
+•	judge manual validation 추가 
+•	McNemar test, Wilson CI, raw numerator/denominator 보고 
+•	malformed/timeout/CUDA failure를 attack block으로 오인하지 않도록 별도 기록 
+•	report와 JSON의 일치 여부 자동 검증 
+•	최종적으로 publication_eligible=true일 때만 논문 Results 작성 
+특히 이번 최종 실험에서 기대해야 하는 결과가 반드시 “HETE E2E-ASR = 0%”일 필요는 없습니다. 예를 들어:
+Vanilla       MCR 72%   E2E-ASR 72%
+Prompt Guard  MCR 31%   E2E-ASR 31%
+UIR-v1        MCR 18%   E2E-ASR 9%
+UIR-v2        MCR 11%   E2E-ASR 0.8%
+처럼 나와도 오히려 학술적으로 더 신뢰성 있는 결과일 수 있습니다.
+중요한 것은 HETE의 논문 주장을
+“LLM은 공격을 받지 않는다”
+가 아니라
+“LLM이 공격에 의해 compromise되더라도 deterministic UIR security envelope이 그 behavior의 authority와 system-level impact를 제한한다.”
+로 실증하는 것입니다.
+따라서 이번 Repair는 잘 수행되었습니다. 다음 단계는 architecture 추가 개발이 아니라, 작성한 작업지시서대로 full Phi-3.5 production benchmark를 완료하는 것입니다. 그 결과가 publication_eligible=true로 통과하면, 그때는 추가 개발보다 지금까지의 UIR/HETE architecture, threat model, MCR/E2E-ASR, baseline, ablation, held-out 결과를 중심으로 바로 SCI 논문 초안을 작성하는 것이 맞습니다.
+

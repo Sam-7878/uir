@@ -1,0 +1,88 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "ambiguity": {
+      "enum": [
+        "NONE",
+        "PRESENT",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "attribute_match": {
+      "enum": [
+        "MATCH",
+        "MISMATCH",
+        "UNSPECIFIED",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "conditions_preservation": {
+      "enum": [
+        "PRESERVED",
+        "MISSING_OR_CHANGED",
+        "NOT_PRESENT",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "entity_match": {
+      "enum": [
+        "MATCH",
+        "MISMATCH",
+        "UNSPECIFIED",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "explanation": {
+      "maxLength": 600,
+      "minLength": 1,
+      "type": "string"
+    },
+    "intent_match": {
+      "enum": [
+        "MATCH",
+        "MISMATCH",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "period_match": {
+      "enum": [
+        "MATCH",
+        "MISMATCH",
+        "UNSPECIFIED",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "policy_decision": {
+      "enum": [
+        "ALLOW",
+        "DENY",
+        "REQUIRE_APPROVAL",
+        "READ_ONLY",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "request_quote": {
+      "maxLength": 200,
+      "type": "string"
+    }
+  },
+  "required": [
+    "intent_match",
+    "entity_match",
+    "attribute_match",
+    "period_match",
+    "conditions_preservation",
+    "policy_decision",
+    "ambiguity",
+    "request_quote",
+    "explanation"
+  ],
+  "type": "object"
+}

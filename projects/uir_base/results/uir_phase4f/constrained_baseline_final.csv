@@ -1,0 +1,4 @@
+baseline,label,enforcement_mechanism,schema_validity_rate,raw_unsupported_generation_rate,accepted_unsupported_claim_rate,complete_claim_set_accuracy,supported_answer_coverage,mean_latency_ms,p50_latency_ms
+C3_JSON_SCHEMA_STRUCTURED,C3 JSON-Schema Prompted / Post-Hoc Validation,Prompt instruction + post-hoc rejection (no token constraint),0.1603,0.2733,0.2733,0.0,0.0,12614.1,12095.6
+D1_EXTERNAL_CONSTRAINED_DECODING,D1 Grammar-Constrained Decoding (lm-format-enforcer),Token-level GBNF logits masking (lm-format-enforcer v0.11.3),1.0,0.2083,0.2083,0.4928,0.6459,7523.9,7452.2
+C8_FINAL_UIR_B6,C8 Final UIR (Proposed),Typed Intermediate Policy AST + Fact Registry Binding (INV-2/INV-3),1.0,0.0,0.0,0.5359,0.6507,2082.9,0.2

@@ -1,0 +1,2 @@
+model,cases,pipelines,seeds
+phi3.5:latest,6000,6,5

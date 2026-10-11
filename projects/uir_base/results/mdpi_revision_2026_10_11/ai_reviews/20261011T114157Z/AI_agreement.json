@@ -1,0 +1,260 @@
+{
+  "N_packet": 120,
+  "fields": {
+    "ambiguity": {
+      "N_agree": 26,
+      "N_both_uncertain": 23,
+      "N_disagree": 94,
+      "N_jointly_valid": 120,
+      "N_missing_or_invalid_pair": 0,
+      "agreement_jointly_valid": 0.21666666666666667,
+      "cohen_kappa_jointly_valid": -0.020814479638009045,
+      "confusion_counts": [
+        {
+          "AI_J1": "NONE",
+          "AI_J2": "NONE",
+          "N": 3
+        },
+        {
+          "AI_J1": "NONE",
+          "AI_J2": "UNCERTAIN",
+          "N": 2
+        },
+        {
+          "AI_J1": "UNCERTAIN",
+          "AI_J2": "NONE",
+          "N": 92
+        },
+        {
+          "AI_J1": "UNCERTAIN",
+          "AI_J2": "UNCERTAIN",
+          "N": 23
+        }
+      ],
+      "decisive_valid_agreement_full_packet": 0.025,
+      "kappa_note": "undefined for no valid pairs or degenerate expected agreement of 1",
+      "valid_agreement_full_packet": 0.21666666666666667
+    },
+    "attribute_match": {
+      "N_agree": 101,
+      "N_both_uncertain": 0,
+      "N_disagree": 19,
+      "N_jointly_valid": 120,
+      "N_missing_or_invalid_pair": 0,
+      "agreement_jointly_valid": 0.8416666666666667,
+      "cohen_kappa_jointly_valid": 0.5873303167420815,
+      "confusion_counts": [
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "MATCH",
+          "N": 84
+        },
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "MISMATCH",
+          "N": 13
+        },
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "UNSPECIFIED",
+          "N": 4
+        },
+        {
+          "AI_J1": "UNCERTAIN",
+          "AI_J2": "UNSPECIFIED",
+          "N": 2
+        },
+        {
+          "AI_J1": "UNSPECIFIED",
+          "AI_J2": "UNSPECIFIED",
+          "N": 17
+        }
+      ],
+      "decisive_valid_agreement_full_packet": 0.8416666666666667,
+      "kappa_note": "undefined for no valid pairs or degenerate expected agreement of 1",
+      "valid_agreement_full_packet": 0.8416666666666667
+    },
+    "conditions_preservation": {
+      "N_agree": 83,
+      "N_both_uncertain": 0,
+      "N_disagree": 37,
+      "N_jointly_valid": 120,
+      "N_missing_or_invalid_pair": 0,
+      "agreement_jointly_valid": 0.6916666666666667,
+      "cohen_kappa_jointly_valid": 0.1722595078299777,
+      "confusion_counts": [
+        {
+          "AI_J1": "MISSING_OR_CHANGED",
+          "AI_J2": "MISSING_OR_CHANGED",
+          "N": 77
+        },
+        {
+          "AI_J1": "MISSING_OR_CHANGED",
+          "AI_J2": "NOT_PRESENT",
+          "N": 37
+        },
+        {
+          "AI_J1": "NOT_PRESENT",
+          "AI_J2": "NOT_PRESENT",
+          "N": 6
+        }
+      ],
+      "decisive_valid_agreement_full_packet": 0.6916666666666667,
+      "kappa_note": "undefined for no valid pairs or degenerate expected agreement of 1",
+      "valid_agreement_full_packet": 0.6916666666666667
+    },
+    "entity_match": {
+      "N_agree": 107,
+      "N_both_uncertain": 0,
+      "N_disagree": 13,
+      "N_jointly_valid": 120,
+      "N_missing_or_invalid_pair": 0,
+      "agreement_jointly_valid": 0.8916666666666667,
+      "cohen_kappa_jointly_valid": 0.682862370400488,
+      "confusion_counts": [
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "MATCH",
+          "N": 90
+        },
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "MISMATCH",
+          "N": 7
+        },
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "UNSPECIFIED",
+          "N": 4
+        },
+        {
+          "AI_J1": "UNCERTAIN",
+          "AI_J2": "UNSPECIFIED",
+          "N": 2
+        },
+        {
+          "AI_J1": "UNSPECIFIED",
+          "AI_J2": "UNSPECIFIED",
+          "N": 17
+        }
+      ],
+      "decisive_valid_agreement_full_packet": 0.8916666666666667,
+      "kappa_note": "undefined for no valid pairs or degenerate expected agreement of 1",
+      "valid_agreement_full_packet": 0.8916666666666667
+    },
+    "intent_match": {
+      "N_agree": 86,
+      "N_both_uncertain": 19,
+      "N_disagree": 34,
+      "N_jointly_valid": 120,
+      "N_missing_or_invalid_pair": 0,
+      "agreement_jointly_valid": 0.7166666666666667,
+      "cohen_kappa_jointly_valid": 0.4137931034482758,
+      "confusion_counts": [
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "MATCH",
+          "N": 67
+        },
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "MISMATCH",
+          "N": 20
+        },
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "UNCERTAIN",
+          "N": 13
+        },
+        {
+          "AI_J1": "UNCERTAIN",
+          "AI_J2": "MATCH",
+          "N": 1
+        },
+        {
+          "AI_J1": "UNCERTAIN",
+          "AI_J2": "UNCERTAIN",
+          "N": 19
+        }
+      ],
+      "decisive_valid_agreement_full_packet": 0.5583333333333333,
+      "kappa_note": "undefined for no valid pairs or degenerate expected agreement of 1",
+      "valid_agreement_full_packet": 0.7166666666666667
+    },
+    "period_match": {
+      "N_agree": 113,
+      "N_both_uncertain": 0,
+      "N_disagree": 7,
+      "N_jointly_valid": 120,
+      "N_missing_or_invalid_pair": 0,
+      "agreement_jointly_valid": 0.9416666666666667,
+      "cohen_kappa_jointly_valid": 0.8094806078475845,
+      "confusion_counts": [
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "MATCH",
+          "N": 96
+        },
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "MISMATCH",
+          "N": 1
+        },
+        {
+          "AI_J1": "MATCH",
+          "AI_J2": "UNSPECIFIED",
+          "N": 3
+        },
+        {
+          "AI_J1": "UNCERTAIN",
+          "AI_J2": "UNSPECIFIED",
+          "N": 3
+        },
+        {
+          "AI_J1": "UNSPECIFIED",
+          "AI_J2": "UNSPECIFIED",
+          "N": 17
+        }
+      ],
+      "decisive_valid_agreement_full_packet": 0.9416666666666667,
+      "kappa_note": "undefined for no valid pairs or degenerate expected agreement of 1",
+      "valid_agreement_full_packet": 0.9416666666666667
+    },
+    "policy_decision": {
+      "N_agree": 77,
+      "N_both_uncertain": 0,
+      "N_disagree": 43,
+      "N_jointly_valid": 120,
+      "N_missing_or_invalid_pair": 0,
+      "agreement_jointly_valid": 0.6416666666666667,
+      "cohen_kappa_jointly_valid": 0.35500000000000015,
+      "confusion_counts": [
+        {
+          "AI_J1": "ALLOW",
+          "AI_J2": "ALLOW",
+          "N": 34
+        },
+        {
+          "AI_J1": "ALLOW",
+          "AI_J2": "DENY",
+          "N": 1
+        },
+        {
+          "AI_J1": "DENY",
+          "AI_J2": "ALLOW",
+          "N": 42
+        },
+        {
+          "AI_J1": "DENY",
+          "AI_J2": "DENY",
+          "N": 43
+        }
+      ],
+      "decisive_valid_agreement_full_packet": 0.6416666666666667,
+      "kappa_note": "undefined for no valid pairs or degenerate expected agreement of 1",
+      "valid_agreement_full_packet": 0.6416666666666667
+    }
+  },
+  "human_review_completed": false,
+  "scope": "cross-family_AI_agreement_not_accuracy_or_human_gold"
+}

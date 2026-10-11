@@ -1,0 +1,144 @@
+{
+  "artifacts": [
+    {
+      "path": "audit/FINAL_RECONCILIATION_REPORT.md",
+      "size": 3041,
+      "sha256": "16be88aec3bbee855c29d564deaeed91118a51209f53fbba6c9cc4548f8036e4"
+    },
+    {
+      "path": "audit/final_number_reconciliation.json",
+      "size": 710,
+      "sha256": "4648f7ebef2eab64e7dbb43ad416c4cbffa3e04c087b8c330fcee87d6a496284"
+    },
+    {
+      "path": "audit/manuscript_build.log",
+      "size": 83774,
+      "sha256": "45dacf23a7f1348464164ac259fd4f0c9412f8f5540ba555e827a02dd1bec105"
+    },
+    {
+      "path": "audit/manuscript_build_audit.json",
+      "size": 245,
+      "sha256": "1b24aef9cc0774958f81709a429e00d8905146ca8a1b892a54be6c990f31ff31"
+    },
+    {
+      "path": "audit/stale_claim_scan.txt",
+      "size": 72,
+      "sha256": "92559ae8d3d9f525db8409103d5f91d94ed325d3bcce435a8fce142dbc308dc8"
+    },
+    {
+      "path": "documentation/ADAPTIVE_ATTACK_PROTOCOL.md",
+      "size": 1512,
+      "sha256": "77d117f44c9604d2271438e674e6e829ebd364569da2574fc34e262ca01f8641"
+    },
+    {
+      "path": "documentation/AGENTDOJO_PROVENANCE.md",
+      "size": 598,
+      "sha256": "fb9f28a41941f8ccb7793278d61866ea6ac6af23d5558092bba47a171cbceece"
+    },
+    {
+      "path": "documentation/BASELINE_FIDELITY_REPORT.md",
+      "size": 2800,
+      "sha256": "20d72bb7a880c77c6f07fabbf957884a46fb4ae989a55b5bae88c58ff79a6ef1"
+    },
+    {
+      "path": "documentation/HETE_UIR_V3_2_FINAL_SCIENTIFIC_VALIDITY_REPORT.md",
+      "size": 18587,
+      "sha256": "c3907cac95bf40269f2573feae519b73f6f9e8364bf05166628fe56aadefac4c"
+    },
+    {
+      "path": "documentation/HUMAN_REVIEW_PROTOCOL.md",
+      "size": 672,
+      "sha256": "b305a345b1b01ea092db4ab72b718cc952c0412f8610069b3dbfd5f5e7943dc8"
+    },
+    {
+      "path": "documentation/OUTPUT_GUARD_VALIDATION_REPORT.md",
+      "size": 1503,
+      "sha256": "f73cf160cd27ccd1875f436b3bca4d2fe266fb9e0e680df03d9c5112980d3935"
+    },
+    {
+      "path": "documentation/README_REPRODUCE.md",
+      "size": 2501,
+      "sha256": "4ffba1fafc12e2101718b578b7b794af0b2474bd8a239917297d2cab0ee36b78"
+    },
+    {
+      "path": "evidence/ARTIFACT_MANIFEST.json",
+      "size": 295047,
+      "sha256": "8479e10a2df7c13ea85fdf0bd85cfa9b679284d35afb1b8eeaa5f050fe8276ff"
+    },
+    {
+      "path": "evidence/ablation_results.json",
+      "size": 18250,
+      "sha256": "3c32422468224885ee4913832aaae4b9b0e6f29c4aad08ea983f931588432d66"
+    },
+    {
+      "path": "evidence/adaptive_attack_results.json",
+      "size": 693,
+      "sha256": "d527deccf253b4817b892dcf65f0d03d43fa549b638ac59204b52ccf19cb6c86"
+    },
+    {
+      "path": "evidence/baseline_comparison.json",
+      "size": 9097,
+      "sha256": "e46f67a7a65507ffdd0d3f0a5ebd21b34e4d93583b926866ba3726d56335adf4"
+    },
+    {
+      "path": "evidence/containment_funnel.json",
+      "size": 205,
+      "sha256": "bbcb459753bf1186e8ab6e948a598c0f213f91e5e2ec3962746ea39eb12bf8c5"
+    },
+    {
+      "path": "evidence/containment_funnel_cases.jsonl",
+      "size": 145193,
+      "sha256": "c164c4e51bc142029561b50c307a9eed9f7068106951cef1bcda28d3f45663b5"
+    },
+    {
+      "path": "evidence/multi_model_results.json",
+      "size": 3016,
+      "sha256": "8f2a374fc949992e7b1db9e5d0daf055eae3432d5cecefab5aa14749032d7ac0"
+    },
+    {
+      "path": "evidence/operational_interruption_summary.json",
+      "size": 5977,
+      "sha256": "606546cf4c07daf007c30bc6ff6d2984731ad1291ca2420699a06fe006471693"
+    },
+    {
+      "path": "evidence/per_class_results.json",
+      "size": 76570,
+      "sha256": "48a4f48e05471acea7f06d3edeea885e99c162984b6f5e3beb15f00c23a14d77"
+    },
+    {
+      "path": "evidence/publication_evidence_validation.json",
+      "size": 10196,
+      "sha256": "bc7339d45faa25d07da4b329896741fe5d55b347b2de97694b88aa1d9e59095f"
+    },
+    {
+      "path": "evidence/statistical_tests.json",
+      "size": 1479,
+      "sha256": "c89fb8da787e8e74f4dc41bdc6072c79a63f7c361051a2982fb31b21bc33b64e"
+    },
+    {
+      "path": "evidence/stochastic_results.json",
+      "size": 7059,
+      "sha256": "eedaba61d3d900ed039d1effd0950ccf62e3f379a6302078328ba4dc3e09c81a"
+    },
+    {
+      "path": "manuscript/_47.1_UIR_ZTA.pdf",
+      "size": 314626,
+      "sha256": "c644dd74688187942ebec9eab260d10328240bcf061e682c367f241f9ac7e2e7"
+    },
+    {
+      "path": "manuscript/_47.1_UIR_ZTA.tex",
+      "size": 78305,
+      "sha256": "4dc6b874cfeff4dbb69447a8bd60f357abd6189cffd0da86b22b85b1a5471bab"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "size": 9713,
+      "sha256": "7e0f8a5ff5475c679116b1e6f702dd761226b0e42cddb73d885ae03598ec7410"
+    },
+    {
+      "path": "manuscript/v3_2_evidence.tex",
+      "size": 18684,
+      "sha256": "17e1313761c560d75249397b4a58c768addf9fb4681309edfd8e7b208c880b40"
+    }
+  ]
+}

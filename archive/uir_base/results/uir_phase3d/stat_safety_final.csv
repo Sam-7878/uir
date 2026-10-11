@@ -1,0 +1,7 @@
+comparison,metric,test_name,n,effect_size,ci95_low,ci95_high,raw_p,holm_p
+B0_DIRECT_SLM_vs_B6,unsupported_claim_nonacceptance,paired_McNemar+risk_difference,1200,0.56,0.5325,0.5883333333333334,1.020640762992391e-202,5.103203814961955e-202
+B1_SLM_WITH_PROMPT_GUARD_vs_B6,unsupported_claim_nonacceptance,paired_McNemar+risk_difference,1200,0.11666666666666667,0.09833333333333333,0.13583333333333333,1.4349296274686127e-42,4.304788882405838e-42
+B2_NAIVE_RAG_SLM_vs_B6,unsupported_claim_nonacceptance,paired_McNemar+risk_difference,1200,0.6125,0.585,0.6391666666666667,1.1065809325636131e-221,6.639485595381678e-221
+B3_RAG_WITH_ENTITY_VALIDATION_vs_B6,unsupported_claim_nonacceptance,paired_McNemar+risk_difference,1200,0.305,0.28,0.3308333333333333,1.3306124500025471e-110,5.3224498000101884e-110
+B4_UIR_POLICY_SLM_vs_B6,unsupported_claim_nonacceptance,paired_McNemar+risk_difference,1200,0.006666666666666667,0.0025,0.011666666666666667,0.0078125,0.015625
+B5_FULL_UIR_OUTPUT_VALIDATION_vs_B6,unsupported_claim_nonacceptance,paired_McNemar+risk_difference,1200,0.0,0.0,0.0,1.0,1

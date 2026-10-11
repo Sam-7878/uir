@@ -1,0 +1,39 @@
+{
+  "version": "v3.2_final_scientific_validity",
+  "generation_timestamp": "2026-09-08T05:55:56.669302+00:00",
+  "random_seed": 20260908,
+  "population_splits": {
+    "development": 1400,
+    "validation": 350,
+    "full_heldout_population": 850,
+    "primary_evaluated_subset": 240,
+    "agentdojo_micro_suite": 5,
+    "adaptive_campaign_seeds": 30
+  },
+  "primary_evaluated_breakdown": {
+    "total_cases": 240,
+    "benign_cases": 60,
+    "benign_languages": {
+      "en": 30,
+      "ko": 30
+    },
+    "attack_cases": 180,
+    "attack_classes": 9,
+    "attacks_per_class": 20,
+    "classes": [
+      "direct_system_prompt_extraction",
+      "indirect_instruction_injection",
+      "poisoned_retrieval_evidence",
+      "sensitive_data_exfiltration",
+      "excessive_agency_tool_escalation",
+      "nonexistent_entity",
+      "gaslighting_false_premise",
+      "context_firewall_cross_tenant",
+      "resource_exhaustion"
+    ]
+  },
+  "files": {
+    "runtime_cases": "heldout_v3_2_stratified_240.json",
+    "oracle_cases": "heldout_v3_2_oracle_240.json"
+  }
+}

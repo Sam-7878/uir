@@ -1,0 +1,167 @@
+{
+  "primary_n": 850,
+  "systems": [
+    "Vanilla SLM",
+    "Naive RAG",
+    "Spotlighting",
+    "Progent-inspired",
+    "CaMeL-inspired",
+    "HETE"
+  ],
+  "ablations": {
+    "full_defense": {},
+    "no_input_guard": {
+      "enable_input_guard": false
+    },
+    "no_provenance": {
+      "enable_provenance": false
+    },
+    "no_context_firewall": {
+      "enable_context_firewall": false
+    },
+    "no_capability_gate": {
+      "enable_capability_gate": false
+    },
+    "no_output_guard": {
+      "enable_output_guard": false
+    },
+    "no_resource_guard": {
+      "enable_resource_guard": false
+    },
+    "no_input_guard_no_output_guard": {
+      "enable_input_guard": false,
+      "enable_output_guard": false
+    },
+    "no_provenance_no_output_guard": {
+      "enable_provenance": false,
+      "enable_output_guard": false
+    },
+    "no_policy": {
+      "enable_policy": false
+    },
+    "no_action_revalidation": {
+      "enable_action_revalidation": false
+    },
+    "no_capability_gate_no_policy_or_action_revalidation": {
+      "enable_capability_gate": false,
+      "enable_policy": false,
+      "enable_action_revalidation": false
+    }
+  },
+  "adaptive_campaigns": [
+    "direct_prompt_injection",
+    "indirect_prompt_injection",
+    "sensitive_data_exfiltration",
+    "excessive_agency_tool_escalation",
+    "jailbreak_policy_override",
+    "gaslighting_false_premise"
+  ],
+  "source_hashes": {
+    "evaluation/llm_security_v3_2/__init__.py": "689a523a2c1703e25f65012bc8411c8a004a80d3d826ed0bdba4d63137bebcd1",
+    "evaluation/llm_security_v3_2/adaptive_attacks/__init__.py": "2d106bba071a9c2535486dc775845a22c5dc39e6c9726b99ba4829d3a75bd791",
+    "evaluation/llm_security_v3_2/adaptive_attacks/attack_objectives.py": "f51d50eb916ad91e8727b723ef732843c34bb2aa377552f98585f898ce130bdf",
+    "evaluation/llm_security_v3_2/adaptive_attacks/mutation_engine.py": "1c81c3d601c4c73a9e663e981d0285550449135668d9a8848fb6c8c23dcdf8eb",
+    "evaluation/llm_security_v3_2/adaptive_attacks/search_runner.py": "bae5c4dfa9fc008cf754bdf5f2a9f77770db62a00df2d4d17490078aecd22b74",
+    "evaluation/llm_security_v3_2/attacks/__init__.py": "63863a15439e409e157c8db16949851aadb3696959de0470deb87ae2fa108527",
+    "evaluation/llm_security_v3_2/attacks/generator_v3_2.py": "210c2ca0382b5f2cca1f2feeeb297d7ae440f707732ead96c7025e9091906f29",
+    "evaluation/llm_security_v3_2/baselines/__init__.py": "4eef4765568591c96de80e568fedae8c86faec07df4f11b644dfdefebe39fbae",
+    "evaluation/llm_security_v3_2/baselines/camel_adapter.py": "2871d8afef3d1c82884db3cfa5986a5d6e8b806365f1afe0cd213bd3b072bafe",
+    "evaluation/llm_security_v3_2/baselines/naive_rag_adapter.py": "ec4d662952a0404d01a75f3fc7cf4f474951dff874317cf8503f72f80a9156c9",
+    "evaluation/llm_security_v3_2/baselines/progent_adapter.py": "239602b811cc1ee4e06c2fb1fb2d3a403fe1780a37acb510f3e18a27acad8ab0",
+    "evaluation/llm_security_v3_2/baselines/spotlighting_adapter.py": "207b679ece6bbc99da78fc149a91f90aaf05e937276e683dc022bdf930012541",
+    "evaluation/llm_security_v3_2/baselines/uir_v3_2_security.py": "a7cc0e2391aedd3350b3b270ff8a930e3f1f9184c03229092a898da0fc829456",
+    "evaluation/llm_security_v3_2/baselines/vanilla_slm_adapter.py": "e059350119ab588fd54c098cd988df5263d7d8fe5fc94cdc25af668e126e6c6c",
+    "evaluation/llm_security_v3_2/closure_campaign.py": "b9b7e8093ba06f85c06da5043f8c917ac0b550084a05a80e7051194a77e7849e",
+    "evaluation/llm_security_v3_2/datasets/freeze_closure.py": "54afc8fec335b096f84b767aaa1b1474efa46511a4655b7ff752b6b15e910e43",
+    "evaluation/llm_security_v3_2/harness/__init__.py": "03210f7485d8a49caa29404221d7cbdc3965b2b9e3de8657e239bd74d55cae3a",
+    "evaluation/llm_security_v3_2/harness/agency_harness.py": "6b185a5f1cd40340d7ec29d183ea1b633076f1a5ac096499ccadde744ac88811",
+    "evaluation/llm_security_v3_2/harness/execution_evidence.py": "96210e76676cb6cb2f2c0145ba714cee4ae8c3f75c4069b5df16a4dc9983f24a",
+    "evaluation/llm_security_v3_2/judges/__init__.py": "19c33d93d30ff7516553e0d2ebd418231bb25417870a954a45bfeb92da635672",
+    "evaluation/llm_security_v3_2/judges/base_judge.py": "69fd1434d5a0b9e30fbf7c26cfdd9572f1f8e42d180a4258a769b723b422be09",
+    "evaluation/llm_security_v3_2/judges/benign_utility_oracle_v3_2.py": "15be0b2d84d2945facf030835d99dba65134ee8b6ddb694e36a9a31db4510a6f",
+    "evaluation/llm_security_v3_2/judges/direct_jailbreak_judge.py": "edf2449f27d5be475d9bb945e17f1e2a253a171fcd9b9fe2d76b8dc2e95aedbc",
+    "evaluation/llm_security_v3_2/judges/excessive_agency_judge.py": "f1dcb385056579804964e52dfb86aaf5b3041b0f6618d8fbac8a522fe88780e3",
+    "evaluation/llm_security_v3_2/judges/indirect_injection_judge.py": "9a3298be172f2d625ea6649c25fdd454403087e39f3def42ac987e0f26801241",
+    "evaluation/llm_security_v3_2/judges/nonexistent_entity_judge.py": "59802259efd227ab290bffa21caa3a183142118cde7a749eb9da4f6f5b33d540",
+    "evaluation/llm_security_v3_2/judges/poisoning_judge.py": "dd23e8865badd99b886c153cfbe8e055f1e1f2aa0c27f4e4a8fd8ce66357875f",
+    "evaluation/llm_security_v3_2/judges/resource_exhaustion_judge.py": "e257330c1cb48b8b060bc15c98d2dcb18eb3c8553d3460ba33e5c9398083ff18",
+    "evaluation/llm_security_v3_2/judges/security_evaluator.py": "13c4e7871fa19c8c25e7df5e7ac3b072a2c78e43abc83853ec8ea4114c682bf8",
+    "evaluation/llm_security_v3_2/judges/sensitive_exfiltration_judge.py": "f19c80b7af35f01e97ce60f51344ef0710ad55c4acf5d69b47dfcebcb5bdaa9a",
+    "evaluation/llm_security_v3_2/provenance.py": "43303b0b0ec47abbafe4367eba02611cbf1cc2b0dff7e3ab2b18da0054894fcd",
+    "evaluation/llm_security_v3_2/public_benchmarks/__init__.py": "8c81fbfc0d0914cdeca2faa7431c3173b3528c642be9f8fdc201d66e5d15fbc1",
+    "evaluation/llm_security_v3_2/public_benchmarks/agentdojo_micro_suite.py": "b883707725ea275dcb669d79586a32a0f89377020756c80951c1430126c28ff1",
+    "evaluation/llm_security_v3_2/run_publication_campaign_v3_2.py": "0edb4066a59bea841558e18849292f478ed340743db112cb8973db4ff7f5f16c",
+    "evaluation/llm_security_v3_2/schema/__init__.py": "985338959f90075d1814acdc885a5a9ce5082ee1088264d04c8a3fde52f0420a",
+    "evaluation/llm_security_v3_2/schema/oracle_case.py": "bf5981c86af823d35a10ddfd513b3b4244aed5ac3191bba3a8b5bdf65a723b1a",
+    "evaluation/llm_security_v3_2/schema/runtime_case.py": "027e73f3236c7844cac0bc1ff99c035514ab8b49a6094a95d81fc10d9320b6c9",
+    "evaluation/llm_security_v3_2/stats/exact_mcnemar.py": "e2084a7dde681c70ea2cbd7a0e5c70e127057feab368693c76b2ce6dad1d785a",
+    "evaluation/llm_security_v3_2/stats/judge_agreement.py": "707bc6c0b1fe4af89deb6932246e09f044a234d0911d088630cc8d56b1da6fdf",
+    "evaluation/llm_security_v3_2/validate_publication_results.py": "57dadf5a7cecedcd93a75eeb7132e483202935d3aae4b605238e68da1c2d0ede",
+    "evaluation/llm_security_v3_2/validate_v3_2_results.py": "d658fd660c080ee9680adb297c7b9ea6d11799d781ece54eb78bcb3df1e0135b",
+    "llm_trust/__init__.py": "fa817d786218edb0d855237287aac59432c0663e7aa1f6c364a369e512363c74",
+    "llm_trust/audit/__init__.py": "fe96cbe2644c89de8bd3bd6decf4ffebab66ab63100537e21fbf6c6b719873f9",
+    "llm_trust/audit/security_event.py": "8710b972fe2b74ecf3612dcb600c08051a865b8e068b16b5be99f2da6cf8c94f",
+    "llm_trust/evidence/__init__.py": "b7c1370c973acbdcf10022f4f0b46bd494e97846cdfdc7e2848b7d3474ed888b",
+    "llm_trust/evidence/provenance.py": "0f4b93a1d702c128f0152bf72ee81163ba4b03689d7d1ddc15afb90fbb1b4ce4",
+    "llm_trust/evidence/trusted_resolver.py": "0261929b0af2f9de28dbfbd3cb64a885ba7f1f0c280140a279f7f41ba940bbb3",
+    "llm_trust/frontends/__init__.py": "1d32d866a31f0266f9ce91b07a2cc6dd679bb23bed8b913c2fc72a4f75cd60c9",
+    "llm_trust/frontends/base.py": "b1a09682c7c5dd13df5e26b665febb14debf46c22f3696f1d6311983b60f2a5b",
+    "llm_trust/frontends/en.py": "189c98432412a1ccc538a869f1d532949568a9f77058dc77feabdbc73f475d0e",
+    "llm_trust/frontends/ko.py": "11a4d9bbb6c465956db9e61e6df7bf981d63ed8210e2c9e1511b3ce11d5978a9",
+    "llm_trust/frontends/router.py": "9c3be9e08a6a563aeba4b7915cef517c138f6a08ada342fffc72d062ca809f7d",
+    "llm_trust/inference/__init__.py": "461bfa3e241bb4184ab1582dc9bf621c3136cc5ecb0da58916d77066ce59aa09",
+    "llm_trust/inference/base.py": "7a4f301db7c32ad6f8b6dec6bf9842915d17da37be3019deb07fb48fbf369f82",
+    "llm_trust/inference/ollama_client.py": "b1a77e44dbdf64ac8d34621f7640b4c3d94be0d8d9f177356df6403ce25639fd",
+    "llm_trust/inference/phi35_transformers.py": "d1c41a3d241e5656dd6c82af0e35dd97792b704e26008dce16886da182dcacc9",
+    "llm_trust/inference/renderer.py": "f5169bef87ea82614d694299fe70c7d89d5fe86445df90c9493536d96d88ac98",
+    "llm_trust/policy/__init__.py": "6f200f871f1e581f8b5c5bf024a6bcc3c33670b69b53bc25c8207c4c62d7fd4c",
+    "llm_trust/policy/security_policy_engine.py": "8b148ec4d00e515164bcedda409f637f092424ff3b4f2eb68515523550989c76",
+    "llm_trust/security/__init__.py": "ce2be34156452c28c4108ea426a78da4f8e2d342daa349ce46845ee6c810bcd5",
+    "llm_trust/security/capability_gate.py": "6d5b958b211c498585bb21b95b4c1ce53f429d6832e62a6fb9f81a8037d0eac4",
+    "llm_trust/security/context_firewall.py": "96e7a7e40e866042ab8a7ed2195713ce439a3c3a06bd048dbfd7481e3570c8da",
+    "llm_trust/security/input_guard.py": "e5504142c0c6019511533de30b537ef6304fefb5f8b6a50e889ad34b117b0f5e",
+    "llm_trust/security/output_guard.py": "4589fdbc4f49f929ccd53949c7d879cfb3aa17230091e7596c33624bd6e90304",
+    "llm_trust/security/quantity.py": "65bde1c75be963892b7528845d5fefb2ca197a21d1238e075c358f0585476940",
+    "llm_trust/security/resource_guard.py": "05a15f5a128f518728a90c07180e9173a863de82e2ab22c36296d70c45e1b30a",
+    "llm_trust/security/resource_tracker.py": "bd7af365dd0962a3a348ea0a862f3c058c27f4c213eda945edacf99486e017e1",
+    "llm_trust/uir/__init__.py": "d4a344f0dc1422297c05be64ae2029bdf90eac2ade54b6cbe577a7ff8858a722",
+    "llm_trust/uir/builder.py": "e0677a031a4895307e6c72ef733a75a6e1e81fd4f6ceadc7ce25301aaa3b0a81",
+    "llm_trust/uir/security_context.py": "0a290d81c01df2c3d164d21700dd85dc0e6e0223fcb365e47f840032a8d36787"
+  },
+  "human_validation": false,
+  "public_agentdojo": false,
+  "primary_model": "qwen2.5:7b",
+  "secondary_model": "phi3.5:latest",
+  "stochastic_ids": [
+    "c_012107d114d5c7d6",
+    "c_0180b5b75c4257a6",
+    "c_01b5282dede3f939",
+    "c_01c3078e429fa7e2",
+    "c_0223d7a7415b5980",
+    "c_02c0bcf7a173110d",
+    "c_02e85135d89c29cc",
+    "c_0310bf72ef0cb588",
+    "c_0321dfc135d5a841",
+    "c_03cc203125b90f69",
+    "c_03d44db062b8357a",
+    "c_03e3e7bd808c4a2c",
+    "c_03f257efcd4b4c7d",
+    "c_03ffee44cb0ca21b",
+    "c_0405738c539e04c4",
+    "c_04a8d30b528d19b9",
+    "c_058e7532318fe5c5",
+    "c_0629a05397fb7179",
+    "c_06c9a6935f0729e3",
+    "c_06ca3e707e78d679",
+    "c_077201919ae87471",
+    "c_081f7f3e6d91d044",
+    "c_08dbae46f4ea866a",
+    "c_08e3059842eed17a",
+    "c_08f819fd54af93ec",
+    "c_0900d7942e803cdf",
+    "c_09cc204145855d88",
+    "c_09cf1019033fb0eb",
+    "c_0a09a5899e47a91e",
+    "c_0a295b1f004f14cb"
+  ]
+}

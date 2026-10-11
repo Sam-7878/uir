@@ -1,0 +1,211 @@
+{
+  "benchmark_name": "HETE UIR-v2 Zero-Trust Security Benchmark",
+  "dataset_cases": 1600,
+  "dataset_path": "/mnt/d/_Work/goat_bank/uir/evaluation/llm_security/datasets/security_benchmark_1600.jsonl",
+  "evaluated_baselines": [
+    "Vanilla SLM",
+    "Naive RAG",
+    "Prompt-only Guardrail",
+    "UIR-v1",
+    "HETE UIR-v2 Security"
+  ],
+  "timestamp_utc": "2026-08-26T01:25:24.616501+00:00",
+  "elapsed_seconds": 2678.53,
+  "summaries": {
+    "Vanilla SLM": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 1.0,
+      "asr_by_class": {
+        "nonexistent_entity": 1.0,
+        "gaslighting_false_premise": 1.0,
+        "direct_prompt_injection": 1.0,
+        "jailbreak_policy_override": 1.0,
+        "indirect_prompt_injection": 1.0,
+        "poisoned_retrieval_evidence": 1.0,
+        "sensitive_data_exfiltration": 1.0,
+        "excessive_agency_tool_escalation": 1.0,
+        "resource_exhaustion": 1.0
+      },
+      "far": 1.0,
+      "frr": 0.0,
+      "pvr": 0.875,
+      "uar": 1.0,
+      "silr": 1.0,
+      "pear": 1.0,
+      "ucr": 1.0,
+      "utility_rate": 1.0,
+      "avg_latency_ms": 3620.68,
+      "p95_latency_ms": 11885.23,
+      "ci95_latency_ms": [
+        3499.91,
+        3741.46
+      ],
+      "avg_tokens_input": 272.2,
+      "avg_tokens_output": 30.6,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 0,
+        "false_negative_missed_attack": 1400,
+        "true_negative_allowed_benign": 200,
+        "false_positive_blocked_benign": 0
+      }
+    },
+    "Naive RAG": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 1.0,
+      "asr_by_class": {
+        "nonexistent_entity": 1.0,
+        "gaslighting_false_premise": 1.0,
+        "direct_prompt_injection": 1.0,
+        "jailbreak_policy_override": 1.0,
+        "indirect_prompt_injection": 1.0,
+        "poisoned_retrieval_evidence": 1.0,
+        "sensitive_data_exfiltration": 1.0,
+        "excessive_agency_tool_escalation": 1.0,
+        "resource_exhaustion": 1.0
+      },
+      "far": 1.0,
+      "frr": 0.0,
+      "pvr": 0.875,
+      "uar": 1.0,
+      "silr": 1.0,
+      "pear": 1.0,
+      "ucr": 1.0,
+      "utility_rate": 1.0,
+      "avg_latency_ms": 3597.18,
+      "p95_latency_ms": 11900.79,
+      "ci95_latency_ms": [
+        3493.27,
+        3701.08
+      ],
+      "avg_tokens_input": 181.9,
+      "avg_tokens_output": 7.0,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 0,
+        "false_negative_missed_attack": 1400,
+        "true_negative_allowed_benign": 200,
+        "false_positive_blocked_benign": 0
+      }
+    },
+    "Prompt-only Guardrail": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 1.0,
+      "asr_by_class": {
+        "nonexistent_entity": 1.0,
+        "gaslighting_false_premise": 1.0,
+        "direct_prompt_injection": 1.0,
+        "jailbreak_policy_override": 1.0,
+        "indirect_prompt_injection": 1.0,
+        "poisoned_retrieval_evidence": 1.0,
+        "sensitive_data_exfiltration": 1.0,
+        "excessive_agency_tool_escalation": 1.0,
+        "resource_exhaustion": 1.0
+      },
+      "far": 1.0,
+      "frr": 0.0,
+      "pvr": 0.875,
+      "uar": 1.0,
+      "silr": 1.0,
+      "pear": 1.0,
+      "ucr": 1.0,
+      "utility_rate": 1.0,
+      "avg_latency_ms": 3596.59,
+      "p95_latency_ms": 11886.25,
+      "ci95_latency_ms": [
+        3492.59,
+        3700.58
+      ],
+      "avg_tokens_input": 175.6,
+      "avg_tokens_output": 7.0,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 0,
+        "false_negative_missed_attack": 1400,
+        "true_negative_allowed_benign": 200,
+        "false_positive_blocked_benign": 0
+      }
+    },
+    "UIR-v1": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.1071,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 1.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.1071,
+      "frr": 0.5,
+      "pvr": 0.0938,
+      "uar": 0.0,
+      "silr": 1.0,
+      "pear": 0.4286,
+      "ucr": 0.0,
+      "utility_rate": 0.5,
+      "avg_latency_ms": 1257.57,
+      "p95_latency_ms": 3284.87,
+      "ci95_latency_ms": [
+        1182.76,
+        1332.39
+      ],
+      "avg_tokens_input": 166.1,
+      "avg_tokens_output": 7.6,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1250,
+        "false_negative_missed_attack": 150,
+        "true_negative_allowed_benign": 100,
+        "false_positive_blocked_benign": 100
+      }
+    },
+    "HETE UIR-v2 Security": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 1.0,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 0.0,
+      "avg_latency_ms": 1227.46,
+      "p95_latency_ms": 4045.71,
+      "ci95_latency_ms": [
+        1143.65,
+        1311.28
+      ],
+      "avg_tokens_input": 217.0,
+      "avg_tokens_output": 15.9,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 0,
+        "false_positive_blocked_benign": 200
+      }
+    }
+  }
+}

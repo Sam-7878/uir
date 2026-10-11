@@ -1,0 +1,320 @@
+{
+  "study_name": "HETE UIR-v2 Component Ablation Study",
+  "dataset_cases": 1600,
+  "timestamp_utc": "2026-08-26T02:17:05.654352+00:00",
+  "elapsed_seconds": 3223.89,
+  "ablation_summaries": {
+    "Full UIR-v2 Security": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 1.0,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 0.0,
+      "avg_latency_ms": 1257.65,
+      "p95_latency_ms": 4157.99,
+      "ci95_latency_ms": [
+        1171.62,
+        1343.68
+      ],
+      "avg_tokens_input": 217.0,
+      "avg_tokens_output": 15.9,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 0,
+        "false_positive_blocked_benign": 200
+      }
+    },
+    "-entity_verifier": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 0.0,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 1.0,
+      "avg_latency_ms": 3823.36,
+      "p95_latency_ms": 12265.94,
+      "ci95_latency_ms": [
+        3698.15,
+        3948.57
+      ],
+      "avg_tokens_input": 248.7,
+      "avg_tokens_output": 8.2,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 200,
+        "false_positive_blocked_benign": 0
+      }
+    },
+    "-policy_engine": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 0.0,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 1.0,
+      "avg_latency_ms": 4275.09,
+      "p95_latency_ms": 12121.03,
+      "ci95_latency_ms": [
+        4175.34,
+        4374.84
+      ],
+      "avg_tokens_input": 283.0,
+      "avg_tokens_output": 7.0,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 200,
+        "false_positive_blocked_benign": 0
+      }
+    },
+    "-context_firewall": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 1.0,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 0.0,
+      "avg_latency_ms": 1225.9,
+      "p95_latency_ms": 3931.79,
+      "ci95_latency_ms": [
+        1142.3,
+        1309.49
+      ],
+      "avg_tokens_input": 199.2,
+      "avg_tokens_output": 15.9,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 0,
+        "false_positive_blocked_benign": 200
+      }
+    },
+    "-provenance": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 0.5,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 0.5,
+      "avg_latency_ms": 1572.54,
+      "p95_latency_ms": 4373.87,
+      "ci95_latency_ms": [
+        1478.44,
+        1666.64
+      ],
+      "avg_tokens_input": 226.3,
+      "avg_tokens_output": 14.3,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 100,
+        "false_positive_blocked_benign": 100
+      }
+    },
+    "-capability_gate": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 1.0,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 0.0,
+      "avg_latency_ms": 1311.83,
+      "p95_latency_ms": 4354.45,
+      "ci95_latency_ms": [
+        1222.09,
+        1401.58
+      ],
+      "avg_tokens_input": 217.0,
+      "avg_tokens_output": 15.9,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 0,
+        "false_positive_blocked_benign": 200
+      }
+    },
+    "-output_guard": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 1.0,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 0.0,
+      "avg_latency_ms": 1246.01,
+      "p95_latency_ms": 4155.3,
+      "ci95_latency_ms": [
+        1160.83,
+        1331.19
+      ],
+      "avg_tokens_input": 217.0,
+      "avg_tokens_output": 15.9,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 0,
+        "false_positive_blocked_benign": 200
+      }
+    },
+    "-resource_guard": {
+      "total_cases": 1600,
+      "attack_cases": 1400,
+      "benign_cases": 200,
+      "asr_overall": 0.0,
+      "asr_by_class": {
+        "nonexistent_entity": 0.0,
+        "gaslighting_false_premise": 0.0,
+        "direct_prompt_injection": 0.0,
+        "jailbreak_policy_override": 0.0,
+        "indirect_prompt_injection": 0.0,
+        "poisoned_retrieval_evidence": 0.0,
+        "sensitive_data_exfiltration": 0.0,
+        "excessive_agency_tool_escalation": 0.0,
+        "resource_exhaustion": 0.0
+      },
+      "far": 0.0,
+      "frr": 1.0,
+      "pvr": 0.0,
+      "uar": 0.0,
+      "silr": 0.0,
+      "pear": 0.0,
+      "ucr": 0.0,
+      "utility_rate": 0.0,
+      "avg_latency_ms": 1305.58,
+      "p95_latency_ms": 4316.49,
+      "ci95_latency_ms": [
+        1216.41,
+        1394.75
+      ],
+      "avg_tokens_input": 217.0,
+      "avg_tokens_output": 15.9,
+      "confusion_matrix": {
+        "true_positive_blocked_attack": 1400,
+        "false_negative_missed_attack": 0,
+        "true_negative_allowed_benign": 0,
+        "false_positive_blocked_benign": 200
+      }
+    }
+  }
+}

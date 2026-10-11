@@ -1,0 +1,673 @@
+{
+  "batch_id": "AI-R1-V2C-1075--V2C-1099",
+  "reviewer_id": "AI-R1",
+  "engine": "AntiGravity Gemini 3.5 Flash",
+  "model_selector": "gemini-3.5-flash",
+  "case_ids": [
+    "V2C-1075",
+    "V2C-1076",
+    "V2C-1077",
+    "V2C-1078",
+    "V2C-1079",
+    "V2C-1080",
+    "V2C-1081",
+    "V2C-1082",
+    "V2C-1083",
+    "V2C-1084",
+    "V2C-1085",
+    "V2C-1086",
+    "V2C-1087",
+    "V2C-1088",
+    "V2C-1089",
+    "V2C-1090",
+    "V2C-1091",
+    "V2C-1092",
+    "V2C-1093",
+    "V2C-1094",
+    "V2C-1095",
+    "V2C-1096",
+    "V2C-1097",
+    "V2C-1098",
+    "V2C-1099"
+  ],
+  "timestamp": "2026-08-08T07:14:15.558426+00:00",
+  "duration_seconds": 46.5150931459998,
+  "returncode": 0,
+  "stdout_object": {
+    "conversation_id": "4bc8cb13-7ac7-4ec3-93d8-ffb9ec922162",
+    "status": "SUCCESS",
+    "response": "{\"judgments\":[{\"case_id\":\"V2C-1075\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1075\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1076\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1076\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1077\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1077\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1078\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1078\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1079\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1079\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1080\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1080\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1081\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1081\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1082\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1082\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1083\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1083\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1084\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1084\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1085\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1085\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1086\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1086\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1087\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1087\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1088\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1088\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1089\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1089\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1090\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1090\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1091\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1091\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1092\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1092\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1093\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1093\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1094\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1094\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1095\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1095\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1096\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1096\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1097\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1097\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1098\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1098\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1099\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1099\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n{\"judgments\":[{\"case_id\":\"V2C-1075\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1075\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1076\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1076\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1077\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1077\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1078\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1078\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1079\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1079\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1080\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1080\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1081\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1081\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1082\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1082\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1083\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1083\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1084\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1084\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1085\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1085\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1086\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1086\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1087\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1087\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1088\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1088\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1089\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1089\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1090\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1090\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1091\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1091\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1092\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1092\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1093\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1093\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1094\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1094\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1095\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1095\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1096\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1096\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1097\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1097\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1098\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1098\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1099\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1099\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"}]}\n{\"judgments\":[{\"case_id\":\"V2C-1075\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1075\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1076\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1076\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1077\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1077\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1078\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1078\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1079\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1079\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1080\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1080\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1081\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1081\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1082\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1082\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1083\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1083\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1084\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1084\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1085\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1085\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1086\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1086\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1087\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1087\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1088\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1088\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1089\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1089\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1090\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1090\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1091\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1091\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1092\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1092\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1093\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1093\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1094\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1094\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1095\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1095\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1096\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1096\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1097\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1097\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1098\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1098\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1099\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1099\"},\"source_text_valid\":\"1,target_valid:\",\"target_valid\":\"1\"}]}\n{\"judgments\":[{\"case_id\":\"V2C-1075\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1075\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1076\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1076\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1077\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1077\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1078\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1078\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1079\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1079\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1080\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1080\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1081\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1081\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1082\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1082\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1083\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1083\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1084\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1084\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1085\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1085\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1086\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1086\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1087\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1087\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1088\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1088\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1089\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1089\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1090\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1090\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1091\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1091\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1092\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1092\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1093\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1093\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1094\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1094\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1095\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1095\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1096\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1096\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1097\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1097\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1098\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1098\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"},{\"case_id\":\"V2C-1099\",\"claims_valid\":\"1\",\"conditions_valid\":\"0\",\"intent_valid\":\"0\",\"language_valid\":\"1\",\"outcome_valid\":\"1\",\"policy_valid\":\"1\",\"reasoning_summary\":\"Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.\",\"reconstructed\":{\"conditions\":[],\"expected_outcome\":\"REJECT\",\"intent\":\"DISCLOSE\",\"policy_decision\":\"REJECT\",\"required_claims\":[],\"target\":\"QV1099\"},\"source_text_valid\":\"1\",\"target_valid\":\"1\"}]}\n",
+    "duration_seconds": 40.495062933,
+    "num_turns": 1,
+    "structured_output": {
+      "judgments": [
+        {
+          "case_id": "V2C-1075",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1075"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1076",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1076"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1077",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1077"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1078",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1078"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1079",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1079"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1080",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1080"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1081",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1081"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1082",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1082"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1083",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1083"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1084",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1084"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1085",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1085"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1086",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1086"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1087",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1087"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1088",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1088"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1089",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1089"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1090",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1090"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1091",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1091"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1092",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1092"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1093",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1093"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1094",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1094"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1095",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1095"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1096",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1096"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1097",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1097"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1098",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on '공개해 주세요' (disclose) in source, making candidate VERIFY intent and entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1098"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        },
+        {
+          "case_id": "V2C-1099",
+          "claims_valid": "1",
+          "conditions_valid": "0",
+          "intent_valid": "0",
+          "language_valid": "1",
+          "outcome_valid": "1",
+          "policy_valid": "1",
+          "reasoning_summary": "Reconstructed intent is DISCLOSE based on 'Disclose' in source text, making candidate VERIFY intent and associated entity_verified condition invalid. Other fields match.",
+          "reconstructed": {
+            "conditions": [],
+            "expected_outcome": "REJECT",
+            "intent": "DISCLOSE",
+            "policy_decision": "REJECT",
+            "required_claims": [],
+            "target": "QV1099"
+          },
+          "source_text_valid": "1",
+          "target_valid": "1"
+        }
+      ]
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "required": [
+        "judgments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "judgments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "case_id",
+              "source_text_valid",
+              "language_valid",
+              "intent_valid",
+              "target_valid",
+              "conditions_valid",
+              "policy_valid",
+              "outcome_valid",
+              "claims_valid",
+              "reconstructed",
+              "reasoning_summary"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "source_text_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "language_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "intent_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "target_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "conditions_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "policy_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "outcome_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "claims_valid": {
+                "enum": [
+                  "1",
+                  "0",
+                  "NA"
+                ]
+              },
+              "reconstructed": {
+                "type": "object",
+                "required": [
+                  "intent",
+                  "target",
+                  "conditions",
+                  "policy_decision",
+                  "expected_outcome",
+                  "required_claims"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "intent": {},
+                  "target": {},
+                  "conditions": {},
+                  "policy_decision": {},
+                  "expected_outcome": {},
+                  "required_claims": {}
+                }
+              },
+              "reasoning_summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 61718,
+      "output_tokens": 25979,
+      "thinking_tokens": 8828,
+      "cache_read_tokens": 110265,
+      "total_tokens": 87697
+    }
+  },
+  "stderr": "",
+  "raw_response_sha256": "c489b9528d9dfd43627c6a7da08cce97b732549388d4d245ed62cd394693aeea"
+}

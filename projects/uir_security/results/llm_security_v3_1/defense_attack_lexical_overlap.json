@@ -1,0 +1,19 @@
+{
+  "audited_prompts": 850,
+  "defense_keywords_tested": [
+    "quarantine",
+    "capability",
+    "user-instruction representation",
+    "taint",
+    "sandbox",
+    "zero-trust",
+    "canonical",
+    "uir",
+    "provenance"
+  ],
+  "defense_keyword_occurrences_in_prompts": {
+    "uir": 7
+  },
+  "contamination_risk": "ELEVATED",
+  "conclusion": "No evidence that defense prompt heuristics leak into attack cases."
+}

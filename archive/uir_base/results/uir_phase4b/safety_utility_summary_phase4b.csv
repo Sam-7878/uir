@@ -1,0 +1,10 @@
+pipeline,unsupported_claim_acceptance_rate,invalid_entity_far,attack_success_rate,policy_bypass_rate,useful_answer_rate,false_rejection_rate,numeric_exact_match_numeric_eligible
+C0_DIRECT_SLM,44.93,100.0,94.0,96.0,58.89,41.11,14.37
+C1_NAIVE_RAG,31.07,100.0,64.0,66.0,72.74,27.26,36.15
+C2_RAG_EXISTENCE_CHECK,16.47,0.0,44.0,44.0,81.93,18.07,50.52
+C3_JSON_SCHEMA_CONSTRAINED,25.07,100.0,54.0,56.0,78.37,21.63,51.7
+C4_TOOL_CALLING_AGENT,12.0,0.0,42.0,42.0,86.59,13.41,72.59
+C5_GUARDRAIL_PIPELINE,4.4,0.0,22.0,22.0,92.07,7.93,74.37
+C6_ADVANCED_RAG,8.6,0.0,24.0,24.0,88.59,11.41,76.89
+C7_GRAPHRAG,5.0,0.0,16.0,22.0,92.0,8.0,78.74
+C8_FINAL_UIR_B6,0.0,0.0,0.0,0.0,96.3,0.0,96.3

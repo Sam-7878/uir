@@ -1,0 +1,18 @@
+{
+  "phase": "3C",
+  "status": "complete",
+  "base_phase3b_commit": "9b4b46e37d0f8d3e3dd3f005579656e3b93a0950",
+  "dataset_hash": "9bb8a5d423b53bae14b2c699cba6b1338f0115345f94c6b4a9f93af2400d4a3c",
+  "parser_hash": "bee778f3e3767fdcd64d0926f27c680143d217ea1d6febcabd08aac96de321d7",
+  "python": "3.12.13 (main, May 24 2026, 05:37:06) [GCC 13.3.0]",
+  "completed_at": "2026-08-07T14:32:57.601287+00:00",
+  "components": [
+    "ai_r3_independent_audit",
+    "corrected_reviewer_agreement",
+    "tri_agent_agreement",
+    "tri_agent_adjudication",
+    "review_protocol_metadata",
+    "publication_gate_phase3c"
+  ],
+  "campaign_rerun": "deferred_to_codex_session"
+}

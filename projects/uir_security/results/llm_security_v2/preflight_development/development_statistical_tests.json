@@ -1,0 +1,53 @@
+{
+  "method": "paired_exact_mcnemar",
+  "comparisons": {
+    "Vanilla SLM": [
+      {
+        "n": 0,
+        "baseline_only_successes": 0,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.0,
+        "baseline_risk": 0.0,
+        "comparison_risk": 0.0,
+        "relative_risk": null,
+        "mcnemar_exact_p": 1.0
+      }
+    ],
+    "Naive RAG": [
+      {
+        "n": 0,
+        "baseline_only_successes": 0,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.0,
+        "baseline_risk": 0.0,
+        "comparison_risk": 0.0,
+        "relative_risk": null,
+        "mcnemar_exact_p": 1.0
+      }
+    ],
+    "Prompt-only Guardrail": [
+      {
+        "n": 0,
+        "baseline_only_successes": 0,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.0,
+        "baseline_risk": 0.0,
+        "comparison_risk": 0.0,
+        "relative_risk": null,
+        "mcnemar_exact_p": 1.0
+      }
+    ],
+    "UIR-v1": [
+      {
+        "n": 0,
+        "baseline_only_successes": 0,
+        "full_only_successes": 0,
+        "absolute_risk_reduction": 0.0,
+        "baseline_risk": 0.0,
+        "comparison_risk": 0.0,
+        "relative_risk": null,
+        "mcnemar_exact_p": 1.0
+      }
+    ]
+  }
+}

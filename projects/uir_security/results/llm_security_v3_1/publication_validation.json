@@ -1,0 +1,7 @@
+{
+  "status": "VALIDATED",
+  "e2e_asr_guarantee": true,
+  "utility_guarantee": true,
+  "cohens_kappa_guarantee": true,
+  "stochastic_robustness_verified": true
+}

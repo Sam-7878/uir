@@ -1,0 +1,6 @@
+invariant_id,name,tested_cases,passed_cases,pass_rate,status,details
+INV-1,Fail-Closed Execution,100,100,100.0,PASS,All policy-rejected/invalid-entity cases strictly bypass LLM inference and renderer.
+INV-2,Verified-Claim Acceptance,1050,1050,100.0,PASS,All accepted factual claims resolve directly to authoritative verified facts.
+INV-3,Numeric Binding Invariance,1050,1050,100.0,PASS,"Exact preservation of numeric value, sign, unit, and period from source facts."
+INV-4,Semantic Digest Invariance,200,200,100.0,PASS,Canonical semantic digest is strictly invariant to excluded/transient metadata fields.
+INV-5,Cross-Language Canonicalization,200,200,100.0,PASS,Controlled-template KO and EN queries map to identical canonical semantic representations.

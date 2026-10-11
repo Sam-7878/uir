@@ -1,0 +1,164 @@
+{
+  "loaded_models": [
+    {
+      "context_length": 8192,
+      "details": {
+        "families": [
+          "qwen3"
+        ],
+        "family": "qwen3",
+        "format": "gguf",
+        "parameter_size": "4.0B",
+        "parent_model": "",
+        "quantization_level": "Q4_K_M"
+      },
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "expires_at": "2026-10-11T20:46:55.382805727+09:00",
+      "model": "qwen3:4b",
+      "name": "qwen3:4b",
+      "size": 3873366343,
+      "size_vram": 3873366343
+    }
+  ],
+  "nvidia_smi": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 8188 MiB, 539 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 24576 MiB, 3992 MiB",
+  "records": [
+    {
+      "passed": false,
+      "probe": "english_instruction",
+      "raw_content_sha256": "329a7947ccbd3f5e7857a174045f8cb06c17b679b57fe5ce68f828739e48414b",
+      "request": {
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Reply with exactly READY.",
+            "role": "user"
+          }
+        ],
+        "model": "qwen3:4b",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false,
+        "think": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:36:54.684883053Z",
+        "done": true,
+        "done_reason": "length",
+        "eval_count": 64,
+        "eval_duration": 396924000,
+        "load_duration": 18868184270,
+        "message": {
+          "content": "Hmm, the user just asked me to reply with exactly \"READY\". That's a very specific request. \n\nOkay, let me think about this. The user wants a precise response without any extra words or explanations. They're probably testing if I can follow instructions strictly. \n\nI recall that in previous interactions, I've",
+          "role": "assistant"
+        },
+        "model": "qwen3:4b",
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_count": 15,
+        "prompt_eval_duration": 86780000,
+        "total_duration": 19355061526
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    },
+    {
+      "passed": false,
+      "probe": "korean_arithmetic",
+      "raw_content_sha256": "650c117b05e5ae1b0390327dd087823d40b7357558525bb04a2f9f8b97a50abc",
+      "request": {
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "7 더하기 5의 결과를 계산하세요. 숫자만 출력하세요.",
+            "role": "user"
+          }
+        ],
+        "model": "qwen3:4b",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false,
+        "think": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:36:55.193915256Z",
+        "done": true,
+        "done_reason": "length",
+        "eval_count": 64,
+        "eval_duration": 415527000,
+        "load_duration": 50240590,
+        "message": {
+          "content": "Okay, let's see. I need to calculate 7 plus 5. Hmm, basic addition. Let me think. 7 plus 5... Well, 7 plus 3 is 10, so adding 2 more would be 12. Wait, no, that's not right. Wait",
+          "role": "assistant"
+        },
+        "model": "qwen3:4b",
+        "prompt_eval_cached_count": 3,
+        "prompt_eval_count": 28,
+        "prompt_eval_duration": 24840000,
+        "total_duration": 507837813
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    },
+    {
+      "passed": true,
+      "probe": "structured_output",
+      "raw_content_sha256": "d43f84703ee94474a9d88da82110087764f7581580a3d912efe0a97903ee2aa5",
+      "request": {
+        "format": {
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "READY"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "type": "object"
+        },
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Return only a JSON object with status set to READY.",
+            "role": "user"
+          }
+        ],
+        "model": "qwen3:4b",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false,
+        "think": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:36:55.382656541Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 10,
+        "eval_duration": 87389000,
+        "load_duration": 44308698,
+        "message": {
+          "content": "{\n  \"status\": \"READY\"\n}",
+          "role": "assistant"
+        },
+        "model": "qwen3:4b",
+        "prompt_eval_cached_count": 3,
+        "prompt_eval_count": 21,
+        "prompt_eval_duration": 39226000,
+        "total_duration": 187311539
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    }
+  ]
+}

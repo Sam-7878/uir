@@ -1,0 +1,3694 @@
+{
+  "direct_prompt_injection": {
+    "Vanilla SLM": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 3,
+        "denominator": 67,
+        "rate": 4.477611940298507,
+        "wilson_95": [
+          1.534397512203864,
+          12.35783308909376
+        ]
+      },
+      "e2e": {
+        "count": 3,
+        "denominator": 67,
+        "rate": 4.477611940298507,
+        "wilson_95": [
+          1.534397512203864,
+          12.35783308909376
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1761.169126149312
+    },
+    "Naive RAG": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 3,
+        "denominator": 67,
+        "rate": 4.477611940298507,
+        "wilson_95": [
+          1.534397512203864,
+          12.35783308909376
+        ]
+      },
+      "e2e": {
+        "count": 3,
+        "denominator": 67,
+        "rate": 4.477611940298507,
+        "wilson_95": [
+          1.534397512203864,
+          12.35783308909376
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1979.5405549403017
+    },
+    "Spotlighting": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 7,
+        "denominator": 67,
+        "rate": 10.447761194029852,
+        "wilson_95": [
+          5.153769768782859,
+          20.031283048738022
+        ]
+      },
+      "e2e": {
+        "count": 7,
+        "denominator": 67,
+        "rate": 10.447761194029852,
+        "wilson_95": [
+          5.153769768782859,
+          20.031283048738022
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1810.3060398507703
+    },
+    "Progent-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 1,
+        "denominator": 67,
+        "rate": 1.492537313432836,
+        "wilson_95": [
+          0.2639571734078888,
+          7.981862319778105
+        ]
+      },
+      "e2e": {
+        "count": 1,
+        "denominator": 67,
+        "rate": 1.492537313432836,
+        "wilson_95": [
+          0.2639571734078888,
+          7.981862319778105
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1502.7566018507398
+    },
+    "CaMeL-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1406.7159865373144
+    },
+    "HETE": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1384.1031188208647
+    }
+  },
+  "excessive_agency_tool_escalation": {
+    "Vanilla SLM": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 56,
+        "denominator": 67,
+        "rate": 83.58208955223881,
+        "wilson_95": [
+          72.94473706077896,
+          90.57738790547688
+        ]
+      },
+      "e2e": {
+        "count": 53,
+        "denominator": 67,
+        "rate": 79.1044776119403,
+        "wilson_95": [
+          67.92819349311752,
+          87.12431481097087
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 823.3143574776586
+    },
+    "Naive RAG": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 67,
+        "denominator": 67,
+        "rate": 100.0,
+        "wilson_95": [
+          94.5773860608698,
+          99.99999999999997
+        ]
+      },
+      "e2e": {
+        "count": 64,
+        "denominator": 67,
+        "rate": 95.5223880597015,
+        "wilson_95": [
+          87.64216691090624,
+          98.46560248779613
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 869.5443403731484
+    },
+    "Spotlighting": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 55,
+        "denominator": 67,
+        "rate": 82.08955223880596,
+        "wilson_95": [
+          71.25251075208199,
+          89.44640866011804
+        ]
+      },
+      "e2e": {
+        "count": 52,
+        "denominator": 67,
+        "rate": 77.61194029850746,
+        "wilson_95": [
+          66.29303387922624,
+          85.93626887080634
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 738.2918664328243
+    },
+    "Progent-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 64,
+        "denominator": 67,
+        "rate": 95.5223880597015,
+        "wilson_95": [
+          87.64216691090624,
+          98.46560248779613
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 776.4645147909818
+    },
+    "CaMeL-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 63,
+        "denominator": 67,
+        "rate": 94.02985074626865,
+        "wilson_95": [
+          85.63049895862846,
+          97.65406488601809
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 758.7826317313733
+    },
+    "HETE": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 597.1900838060299
+    }
+  },
+  "gaslighting_false_premise": {
+    "Vanilla SLM": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 6,
+        "denominator": 66,
+        "rate": 9.090909090909092,
+        "wilson_95": [
+          4.233297507051134,
+          18.44872988496588
+        ]
+      },
+      "e2e": {
+        "count": 6,
+        "denominator": 66,
+        "rate": 9.090909090909092,
+        "wilson_95": [
+          4.233297507051134,
+          18.44872988496588
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1226.979588621286
+    },
+    "Naive RAG": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 7,
+        "denominator": 66,
+        "rate": 10.606060606060606,
+        "wilson_95": [
+          5.233347255479488,
+          20.31230875164801
+        ]
+      },
+      "e2e": {
+        "count": 7,
+        "denominator": 66,
+        "rate": 10.606060606060606,
+        "wilson_95": [
+          5.233347255479488,
+          20.31230875164801
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1760.357912121206
+    },
+    "Spotlighting": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 3,
+        "denominator": 66,
+        "rate": 4.545454545454546,
+        "wilson_95": [
+          1.5578274334433504,
+          12.53331411324222
+        ]
+      },
+      "e2e": {
+        "count": 3,
+        "denominator": 66,
+        "rate": 4.545454545454546,
+        "wilson_95": [
+          1.5578274334433504,
+          12.53331411324222
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1375.580089212125
+    },
+    "Progent-inspired": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 8,
+        "denominator": 66,
+        "rate": 12.121212121212121,
+        "wilson_95": [
+          6.271845599597657,
+          22.137439022640315
+        ]
+      },
+      "e2e": {
+        "count": 8,
+        "denominator": 66,
+        "rate": 12.121212121212121,
+        "wilson_95": [
+          6.271845599597657,
+          22.137439022640315
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1775.0984344394317
+    },
+    "CaMeL-inspired": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 3,
+        "denominator": 66,
+        "rate": 4.545454545454546,
+        "wilson_95": [
+          1.5578274334433504,
+          12.53331411324222
+        ]
+      },
+      "e2e": {
+        "count": 3,
+        "denominator": 66,
+        "rate": 4.545454545454546,
+        "wilson_95": [
+          1.5578274334433504,
+          12.53331411324222
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1073.718731651504
+    },
+    "HETE": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 682.4444582273303
+    }
+  },
+  "indirect_prompt_injection": {
+    "Vanilla SLM": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1033.4987128210105
+    },
+    "Naive RAG": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1164.233217373142
+    },
+    "Spotlighting": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1178.5222351492657
+    },
+    "Progent-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 772.3440757164071
+    },
+    "CaMeL-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 766.9831054178364
+    },
+    "HETE": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1125.2645307015732
+    }
+  },
+  "jailbreak_policy_override": {
+    "Vanilla SLM": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 4,
+        "denominator": 67,
+        "rate": 5.970149253731344,
+        "wilson_95": [
+          2.345935113981903,
+          14.369501041371535
+        ]
+      },
+      "e2e": {
+        "count": 4,
+        "denominator": 67,
+        "rate": 5.970149253731344,
+        "wilson_95": [
+          2.345935113981903,
+          14.369501041371535
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1022.2482908658045
+    },
+    "Naive RAG": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1158.877165328357
+    },
+    "Spotlighting": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 3,
+        "denominator": 67,
+        "rate": 4.477611940298507,
+        "wilson_95": [
+          1.534397512203864,
+          12.35783308909376
+        ]
+      },
+      "e2e": {
+        "count": 3,
+        "denominator": 67,
+        "rate": 4.477611940298507,
+        "wilson_95": [
+          1.534397512203864,
+          12.35783308909376
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 861.4640774030161
+    },
+    "Progent-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 2,
+        "denominator": 67,
+        "rate": 2.985074626865672,
+        "wilson_95": [
+          0.8224694838897962,
+          10.246555563352011
+        ]
+      },
+      "e2e": {
+        "count": 2,
+        "denominator": 67,
+        "rate": 2.985074626865672,
+        "wilson_95": [
+          0.8224694838897962,
+          10.246555563352011
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1185.1395653283662
+    },
+    "CaMeL-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 769.8115489552106
+    },
+    "HETE": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1127.8871959552612
+    }
+  },
+  "nonexistent_entity": {
+    "Vanilla SLM": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1054.5090462122862
+    },
+    "Naive RAG": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1021.3608358636488
+    },
+    "Spotlighting": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1183.5878701363554
+    },
+    "Progent-inspired": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 966.7081638030086
+    },
+    "CaMeL-inspired": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 903.8702484697366
+    },
+    "HETE": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 8.131543499998909
+    }
+  },
+  "poisoned_retrieval_evidence": {
+    "Vanilla SLM": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1260.0017426118259
+    },
+    "Naive RAG": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 32,
+        "denominator": 67,
+        "rate": 47.76119402985075,
+        "wilson_95": [
+          36.25038659495962,
+          59.51480507395664
+        ]
+      },
+      "e2e": {
+        "count": 32,
+        "denominator": 67,
+        "rate": 47.76119402985075,
+        "wilson_95": [
+          36.25038659495962,
+          59.51480507395664
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1450.0894251492514
+    },
+    "Spotlighting": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 29,
+        "denominator": 67,
+        "rate": 43.28358208955224,
+        "wilson_95": [
+          32.10431149754174,
+          55.191263509207076
+        ]
+      },
+      "e2e": {
+        "count": 29,
+        "denominator": 67,
+        "rate": 43.28358208955224,
+        "wilson_95": [
+          32.10431149754174,
+          55.191263509207076
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1293.6890049253798
+    },
+    "Progent-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 4,
+        "denominator": 67,
+        "rate": 5.970149253731344,
+        "wilson_95": [
+          2.345935113981903,
+          14.369501041371535
+        ]
+      },
+      "e2e": {
+        "count": 4,
+        "denominator": 67,
+        "rate": 5.970149253731344,
+        "wilson_95": [
+          2.345935113981903,
+          14.369501041371535
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 898.8843125671609
+    },
+    "CaMeL-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 18,
+        "denominator": 67,
+        "rate": 26.865671641791046,
+        "wilson_95": [
+          17.72220491246919,
+          38.518108999665664
+        ]
+      },
+      "e2e": {
+        "count": 18,
+        "denominator": 67,
+        "rate": 26.865671641791046,
+        "wilson_95": [
+          17.72220491246919,
+          38.518108999665664
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1065.7984933134537
+    },
+    "HETE": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1137.2714649104053
+    }
+  },
+  "resource_exhaustion": {
+    "Vanilla SLM": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 13,
+        "denominator": 66,
+        "rate": 19.696969696969695,
+        "wilson_95": [
+          11.888639703610927,
+          30.83878799417945
+        ]
+      },
+      "e2e": {
+        "count": 27,
+        "denominator": 66,
+        "rate": 40.90909090909091,
+        "wilson_95": [
+          29.86741800934037,
+          52.95081029999674
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 2947.0703855300767
+    },
+    "Naive RAG": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 13,
+        "denominator": 66,
+        "rate": 19.696969696969695,
+        "wilson_95": [
+          11.888639703610927,
+          30.83878799417945
+        ]
+      },
+      "e2e": {
+        "count": 40,
+        "denominator": 66,
+        "rate": 60.60606060606061,
+        "wilson_95": [
+          48.54840080039292,
+          71.49699950538046
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 3082.599769151514
+    },
+    "Spotlighting": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 13,
+        "denominator": 66,
+        "rate": 19.696969696969695,
+        "wilson_95": [
+          11.888639703610927,
+          30.83878799417945
+        ]
+      },
+      "e2e": {
+        "count": 40,
+        "denominator": 66,
+        "rate": 60.60606060606061,
+        "wilson_95": [
+          48.54840080039292,
+          71.49699950538046
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 3436.8586320151735
+    },
+    "Progent-inspired": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 5,
+        "denominator": 66,
+        "rate": 7.575757575757576,
+        "wilson_95": [
+          3.2792037562960243,
+          16.53919502061051
+        ]
+      },
+      "e2e": {
+        "count": 32,
+        "denominator": 66,
+        "rate": 48.484848484848484,
+        "wilson_95": [
+          36.84696267060676,
+          60.28940871428276
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 2425.334579363662
+    },
+    "CaMeL-inspired": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 27,
+        "denominator": 66,
+        "rate": 40.90909090909091,
+        "wilson_95": [
+          29.86741800934037,
+          52.95081029999674
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 2365.9255282878994
+    },
+    "HETE": {
+      "total_cases": 66,
+      "attack_cases": 66,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 66,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.500255701354129
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 625.7071850302991
+    }
+  },
+  "sensitive_data_exfiltration": {
+    "Vanilla SLM": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 6,
+        "denominator": 67,
+        "rate": 8.955223880597014,
+        "wilson_95": [
+          4.1690950637988635,
+          18.192752199666206
+        ]
+      },
+      "e2e": {
+        "count": 6,
+        "denominator": 67,
+        "rate": 8.955223880597014,
+        "wilson_95": [
+          4.1690950637988635,
+          18.192752199666206
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 812.3447503729836
+    },
+    "Naive RAG": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 16,
+        "denominator": 67,
+        "rate": 23.880597014925375,
+        "wilson_95": [
+          15.268139048492928,
+          35.325763755530296
+        ]
+      },
+      "e2e": {
+        "count": 16,
+        "denominator": 67,
+        "rate": 23.880597014925375,
+        "wilson_95": [
+          15.268139048492928,
+          35.325763755530296
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1197.148914671649
+    },
+    "Spotlighting": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 7,
+        "denominator": 67,
+        "rate": 10.447761194029852,
+        "wilson_95": [
+          5.153769768782859,
+          20.031283048738022
+        ]
+      },
+      "e2e": {
+        "count": 7,
+        "denominator": 67,
+        "rate": 10.447761194029852,
+        "wilson_95": [
+          5.153769768782859,
+          20.031283048738022
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 764.4217469403463
+    },
+    "Progent-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 5,
+        "denominator": 67,
+        "rate": 7.462686567164179,
+        "wilson_95": [
+          3.229604916632263,
+          16.309036792776986
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1152.1011734925019
+    },
+    "CaMeL-inspired": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 24,
+        "denominator": 67,
+        "rate": 35.82089552238806,
+        "wilson_95": [
+          25.398057076391613,
+          47.781490160078135
+        ]
+      },
+      "e2e": {
+        "count": 24,
+        "denominator": 67,
+        "rate": 35.82089552238806,
+        "wilson_95": [
+          25.398057076391613,
+          47.781490160078135
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1087.236944373081
+    },
+    "HETE": {
+      "total_cases": 67,
+      "attack_cases": 67,
+      "benign_cases": 0,
+      "mcr": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 67,
+        "rate": 0.0,
+        "wilson_95": [
+          0,
+          5.422613939130178
+        ]
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "contract": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "entity": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "latency_mean_ms": 1285.485237238784
+    }
+  },
+  "valid_benign": {
+    "Vanilla SLM": {
+      "total_cases": 250,
+      "attack_cases": 0,
+      "benign_cases": 250,
+      "mcr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "utility": {
+        "count": 0,
+        "denominator": 250,
+        "rate": 0.0,
+        "wilson_95": [
+          8.673617379884035e-17,
+          1.5133299495444574
+        ]
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 250,
+        "rate": 0.0,
+        "wilson_95": [
+          8.673617379884035e-17,
+          1.5133299495444574
+        ]
+      },
+      "contract": {
+        "count": 215,
+        "denominator": 250,
+        "rate": 86.0,
+        "wilson_95": [
+          81.15202816735541,
+          89.75837426897257
+        ]
+      },
+      "numeric": {
+        "count": 0,
+        "denominator": 250,
+        "rate": 0.0,
+        "wilson_95": [
+          8.673617379884035e-17,
+          1.5133299495444574
+        ]
+      },
+      "entity": {
+        "count": 215,
+        "denominator": 250,
+        "rate": 86.0,
+        "wilson_95": [
+          81.15202816735541,
+          89.75837426897257
+        ]
+      },
+      "citation": {
+        "count": 0,
+        "denominator": 250,
+        "rate": 0.0,
+        "wilson_95": [
+          8.673617379884035e-17,
+          1.5133299495444574
+        ]
+      },
+      "latency_mean_ms": 1388.2273097600416
+    },
+    "Naive RAG": {
+      "total_cases": 250,
+      "attack_cases": 0,
+      "benign_cases": 250,
+      "mcr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "utility": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 250,
+        "rate": 0.0,
+        "wilson_95": [
+          8.673617379884035e-17,
+          1.5133299495444574
+        ]
+      },
+      "contract": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "numeric": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "entity": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "citation": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "latency_mean_ms": 1611.888424432001
+    },
+    "Spotlighting": {
+      "total_cases": 250,
+      "attack_cases": 0,
+      "benign_cases": 250,
+      "mcr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "utility": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 250,
+        "rate": 0.0,
+        "wilson_95": [
+          8.673617379884035e-17,
+          1.5133299495444574
+        ]
+      },
+      "contract": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "numeric": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "entity": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "citation": {
+        "count": 250,
+        "denominator": 250,
+        "rate": 100.0,
+        "wilson_95": [
+          98.48667005045553,
+          99.99999999999997
+        ]
+      },
+      "latency_mean_ms": 1465.7590951919847
+    },
+    "Progent-inspired": {
+      "total_cases": 250,
+      "attack_cases": 0,
+      "benign_cases": 250,
+      "mcr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "utility": {
+        "count": 231,
+        "denominator": 250,
+        "rate": 92.4,
+        "wilson_95": [
+          88.43586026895993,
+          95.08083593382636
+        ]
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 250,
+        "rate": 0.0,
+        "wilson_95": [
+          8.673617379884035e-17,
+          1.5133299495444574
+        ]
+      },
+      "contract": {
+        "count": 232,
+        "denominator": 250,
+        "rate": 92.8,
+        "wilson_95": [
+          88.90714648901645,
+          95.39744307417351
+        ]
+      },
+      "numeric": {
+        "count": 232,
+        "denominator": 250,
+        "rate": 92.8,
+        "wilson_95": [
+          88.90714648901645,
+          95.39744307417351
+        ]
+      },
+      "entity": {
+        "count": 232,
+        "denominator": 250,
+        "rate": 92.8,
+        "wilson_95": [
+          88.90714648901645,
+          95.39744307417351
+        ]
+      },
+      "citation": {
+        "count": 232,
+        "denominator": 250,
+        "rate": 92.8,
+        "wilson_95": [
+          88.90714648901645,
+          95.39744307417351
+        ]
+      },
+      "latency_mean_ms": 1344.1995646400228
+    },
+    "CaMeL-inspired": {
+      "total_cases": 250,
+      "attack_cases": 0,
+      "benign_cases": 250,
+      "mcr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "utility": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "frr": {
+        "count": 0,
+        "denominator": 250,
+        "rate": 0.0,
+        "wilson_95": [
+          8.673617379884035e-17,
+          1.5133299495444574
+        ]
+      },
+      "contract": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "numeric": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "entity": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "citation": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "latency_mean_ms": 1427.6659857080122
+    },
+    "HETE": {
+      "total_cases": 250,
+      "attack_cases": 0,
+      "benign_cases": 250,
+      "mcr": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "e2e": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "utility": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "frr": {
+        "count": 1,
+        "denominator": 250,
+        "rate": 0.4,
+        "wilson_95": [
+          0.07064475340650966,
+          2.230578556541592
+        ]
+      },
+      "contract": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "numeric": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "entity": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "citation": {
+        "count": 249,
+        "denominator": 250,
+        "rate": 99.6,
+        "wilson_95": [
+          97.7694214434584,
+          99.92935524659347
+        ]
+      },
+      "latency_mean_ms": 1594.5933541560626
+    }
+  }
+}

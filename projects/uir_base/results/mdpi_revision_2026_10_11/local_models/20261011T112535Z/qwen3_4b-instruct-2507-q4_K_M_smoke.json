@@ -1,0 +1,161 @@
+{
+  "loaded_models": [
+    {
+      "context_length": 8192,
+      "details": {
+        "families": [
+          "qwen3"
+        ],
+        "family": "qwen3",
+        "format": "gguf",
+        "parameter_size": "4.0B",
+        "parent_model": "",
+        "quantization_level": "Q4_K_M"
+      },
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "expires_at": "2026-10-11T20:44:34.373774722+09:00",
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "name": "qwen3:4b-instruct-2507-q4_K_M",
+      "size": 3873366343,
+      "size_vram": 3873366343
+    }
+  ],
+  "nvidia_smi": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 8188 MiB, 539 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 24576 MiB, 3992 MiB",
+  "records": [
+    {
+      "passed": true,
+      "probe": "english_instruction",
+      "raw_content_sha256": "c2e3ac47f4a325469c1a2d5f117e463ec943c721986d5d9f09ac4540b7d80526",
+      "request": {
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Reply with exactly READY.",
+            "role": "user"
+          }
+        ],
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:34:34.148732894Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 2,
+        "eval_duration": 15979000,
+        "load_duration": 17542597704,
+        "message": {
+          "content": "READY",
+          "role": "assistant"
+        },
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_count": 13,
+        "prompt_eval_duration": 83938000,
+        "total_duration": 17651172651
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    },
+    {
+      "passed": true,
+      "probe": "korean_arithmetic",
+      "raw_content_sha256": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
+      "request": {
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "7 더하기 5의 결과를 계산하세요. 숫자만 출력하세요.",
+            "role": "user"
+          }
+        ],
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:34:34.262352876Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 3,
+        "eval_duration": 23081000,
+        "load_duration": 47922861,
+        "message": {
+          "content": "12",
+          "role": "assistant"
+        },
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "prompt_eval_cached_count": 3,
+        "prompt_eval_count": 26,
+        "prompt_eval_duration": 24366000,
+        "total_duration": 111916074
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    },
+    {
+      "passed": true,
+      "probe": "structured_output",
+      "raw_content_sha256": "11bec2db0e99977c840a5df4b17be528421aadd5f4aa79d3622c126c481397fb",
+      "request": {
+        "format": {
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "READY"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "type": "object"
+        },
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Return only a JSON object with status set to READY.",
+            "role": "user"
+          }
+        ],
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 64,
+          "seed": 20261011,
+          "temperature": 0
+        },
+        "stream": false
+      },
+      "response": {
+        "created_at": "2026-10-11T11:34:34.373657848Z",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 6,
+        "eval_duration": 42000000,
+        "load_duration": 31065723,
+        "message": {
+          "content": "{\"status\":\"READY\"}",
+          "role": "assistant"
+        },
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "prompt_eval_cached_count": 3,
+        "prompt_eval_count": 19,
+        "prompt_eval_duration": 22103000,
+        "total_duration": 109901343
+      },
+      "scope": "operational_smoke_only_not_benchmark_or_judge_accuracy"
+    }
+  ]
+}

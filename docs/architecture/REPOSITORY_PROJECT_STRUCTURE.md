@@ -1,5 +1,12 @@
 # UIR Repository Multi-Project Architecture Specification
 
+> Historical layout document, superseded on 2026-10-11 by
+> [PROJECT_LAYOUT.md](PROJECT_LAYOUT.md). The current repository has three projects,
+> with real sources/evidence under `projects/<project>` and shared Python under
+> `src/`. Paths below remain useful as legacy aliases, but the old two-project,
+> environment, blanket compatibility and result-validity statements are not the
+> current specification. This historical mapping is retained for provenance.
+
 ## 1. 개요 (Overview)
 
 본 저장소(`uir`)는 학술적 목표와 평가 대상이 구분되는 **총 2개의 프로젝트**를 공유하는 모노레포(Monorepo) 구조로 운영됩니다.

@@ -1,0 +1,17 @@
+strategy,stage,count,denominator,rate,evidence_scope
+REJECT,input,300,300,1.000000,dev_golden_diagnostic
+REJECT,semantic_parsed,240,300,0.800000,dev_golden_diagnostic
+REJECT,entity_resolved,240,300,0.800000,dev_golden_diagnostic
+REJECT,facts_found,240,300,0.800000,dev_golden_diagnostic
+REJECT,required_facts_covered,240,300,0.800000,dev_golden_diagnostic
+REJECT,claims_generated,240,300,0.800000,dev_golden_diagnostic
+REJECT,claims_supported,240,300,0.800000,dev_golden_diagnostic
+REJECT,final_answer_emitted,180,300,0.600000,dev_golden_diagnostic
+FILTER_AND_RENDER,input,300,300,1.000000,dev_golden_diagnostic
+FILTER_AND_RENDER,semantic_parsed,240,300,0.800000,dev_golden_diagnostic
+FILTER_AND_RENDER,entity_resolved,240,300,0.800000,dev_golden_diagnostic
+FILTER_AND_RENDER,facts_found,240,300,0.800000,dev_golden_diagnostic
+FILTER_AND_RENDER,required_facts_covered,240,300,0.800000,dev_golden_diagnostic
+FILTER_AND_RENDER,claims_generated,240,300,0.800000,dev_golden_diagnostic
+FILTER_AND_RENDER,claims_supported,240,300,0.800000,dev_golden_diagnostic
+FILTER_AND_RENDER,final_answer_emitted,240,300,0.800000,dev_golden_diagnostic

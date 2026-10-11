@@ -1,0 +1,11 @@
+{"records": 1600, "resumed": "development-run-00-vanilla_slm.jsonl"}
+{"records": 1600, "resumed": "development-run-00-naive_rag.jsonl"}
+{"records": 1600, "resumed": "development-run-00-prompt-only_guardrail.jsonl"}
+{"records": 1600, "resumed": "development-run-00-uir-v1.jsonl"}
+{"records": 1600, "resumed": "development-run-00-hete_uir-v2_security.jsonl"}
+{"records": 1600, "resumed": "development-run-01-vanilla_slm.jsonl"}
+{"records": 1600, "resumed": "development-run-01-naive_rag.jsonl"}
+{"records": 1600, "resumed": "development-run-01-prompt-only_guardrail.jsonl"}
+{"records": 1600, "resumed": "development-run-01-uir-v1.jsonl"}
+{"records": 1600, "resumed": "development-run-01-hete_uir-v2_security.jsonl"}
+{"baselines": ["Vanilla SLM", "Naive RAG", "Prompt-only Guardrail", "UIR-v1", "HETE UIR-v2 Security"], "cases": 1600, "publication_eligible": true, "runs": 3}

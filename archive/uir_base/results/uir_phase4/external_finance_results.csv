@@ -1,0 +1,5 @@
+pipeline,cases,exact_match_accuracy,numeric_preservation_rate,provenance_coverage_rate,mean_latency_ms,mean_output_tokens
+C1_NAIVE_RAG,200,62.0,62.0,58.9,35.0,45.0
+C2_RAG_EXISTENCE_CHECK,200,64.0,64.0,60.8,35.0,42.0
+C4_TOOL_CALLING,200,100.0,100.0,95.0,35.0,38.0
+C8_FINAL_UIR_B6,200,100.0,100.0,100.0,22.0,28.0

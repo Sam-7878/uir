@@ -1,0 +1,60 @@
+{
+  "manifest_version": "1.0.0",
+  "provenance_phase": "Phase UIR-4B Final Evidence Integrity",
+  "timestamp_utc": "2026-09-04T10:59:00Z",
+  "model": {
+    "selector": "microsoft/Phi-3.5-mini-instruct",
+    "architecture": "Phi3ForCausalLM",
+    "parameter_count": "3.8B",
+    "hf_hub_path": "/home/sam/.cache/huggingface/hub/models--microsoft--Phi-3.5-mini-instruct",
+    "revision": "main",
+    "tokenizer_revision": "main",
+    "quantization": {
+      "method": "bitsandbytes",
+      "load_in_4bit": true,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "bnb_4bit_compute_dtype": "bfloat16"
+    },
+    "generation_config": {
+      "do_sample": false,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_new_tokens": 128,
+      "pad_token_id": 32000,
+      "eos_token_id": 32000,
+      "seed": 42
+    },
+    "runtime": {
+      "device": "cuda:0",
+      "dtype": "torch.bfloat16"
+    }
+  },
+  "environment": {
+    "os": "Linux (WSL2 Ubuntu 24.04.2 LTS, Linux kernel 5.15.167.4-microsoft-standard-WSL2)",
+    "python_version": "3.12.13",
+    "pytorch_version": "2.5.1+cu121",
+    "cuda_version": "12.1",
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "vram_total_mb": 8188,
+      "compute_capability": "8.9"
+    },
+    "git": {
+      "commit_hash": "922bf999765b6156869bd8d665f513bd57f883e3",
+      "repository": "d:/_Work/goat_bank/uir",
+      "worktree_status": "clean"
+    }
+  },
+  "evaluated_pipelines": [
+    "C0_DIRECT_SLM",
+    "C1_NAIVE_RAG",
+    "C2_RAG_EXISTENCE_CHECK",
+    "C3_JSON_SCHEMA_CONSTRAINED",
+    "C4_TOOL_CALLING_AGENT",
+    "C5_GUARDRAIL_PIPELINE",
+    "C6_ADVANCED_RAG",
+    "C7_GRAPHRAG",
+    "C8_FINAL_UIR_B6"
+  ]
+}
