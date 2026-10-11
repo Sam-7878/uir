@@ -1,6 +1,0 @@
-{
-  "scope": "Independent synthetic security regression; not a publication observation",
-  "terminal_status": "ALLOWED",
-  "accepted_tampered_unsigned_claim": true,
-  "expected_behavior": "Reject a value inconsistent with authenticated content"
-}
