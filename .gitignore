@@ -41,6 +41,7 @@ formal/tools/*.jar
 
 # docs/architecture/
 docs/papers/
+docs/work_reports/
 evaluation/uir_law/law200/results/
 evaluation/uir_law/law200/results/**
 evaluation/uir_law/law200/data/
