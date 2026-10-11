@@ -2,7 +2,7 @@
 
 **Version:** 3.0.0  
 **Grammar Reference:** `docs/formal/SECURITY_POLICY_DSL.ebnf`  
-**Executable Mapping:** `llm_trust/policy/security_policy_engine.py`
+**Executable Mapping:** `src/llm_trust/policy/security_policy_engine.py`
 
 ---
 

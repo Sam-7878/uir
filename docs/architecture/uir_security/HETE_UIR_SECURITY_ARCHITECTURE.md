@@ -236,7 +236,7 @@ Untrusted Input (User / Tool / RAG / Memory)
 
 ## 5. Security Component Reference
 
-### 5.1 InputGuard (`llm_trust/security/input_guard.py`)
+### 5.1 InputGuard (`src/llm_trust/security/input_guard.py`)
 
 - Unicode normalization (NFKC) — eliminates homoglyph/invisible-character attacks.
 - Token pre-budget check — DENY before any parsing if budget exceeded.
@@ -245,14 +245,14 @@ Untrusted Input (User / Tool / RAG / Memory)
 
 > Attack-pattern regexes are insufficient as a primary control because adversaries trivially paraphrase or obfuscate. UIR structural typing and deterministic policy enforcement provide the actual security boundary.
 
-### 5.2 UIR v2 Builder (`llm_trust/uir/builder.py`)
+### 5.2 UIR v2 Builder (`src/llm_trust/uir/builder.py`)
 
 - `security_context` populated exclusively from trusted application state.
 - Cryptographic SHA-256 digest of raw prompt for audit chaining.
 - JSON Schema 2020-12 validation via `jsonschema`.
 - RFC 8785 (JCS) canonicalization for deterministic digest computation.
 
-### 5.3 Evidence Resolver / Provenance (`llm_trust/evidence/`)
+### 5.3 Evidence Resolver / Provenance (`src/llm_trust/evidence/`)
 
 - Exact entity ID lookup prioritized over semantic fallback.
 - Allow-listed external API sources only.
@@ -260,14 +260,14 @@ Untrusted Input (User / Tool / RAG / Memory)
 - Conflicting evidence detection → `QUARANTINE_EVIDENCE`.
 - Explicit `NO_VERIFIED_EVIDENCE` result → fail-closed behavior.
 
-### 5.4 Context Firewall (`llm_trust/security/context_firewall.py`)
+### 5.4 Context Firewall (`src/llm_trust/security/context_firewall.py`)
 
 - RAG/tool/memory content wrapped as quoted evidence, never as executable instructions.
 - Instruction-bearing metadata detected and neutralized.
 - Evidence hash preserved in audit record even after neutralization.
 - Enforces INVAR-002 (retrieved content must not mutate `intent.action`).
 
-### 5.5 Security Policy Engine (`llm_trust/policy/security_policy_engine.py`)
+### 5.5 Security Policy Engine (`src/llm_trust/policy/security_policy_engine.py`)
 
 Policy evaluation order:
 1. Resource budget (POL-RES-001/002)
@@ -280,14 +280,14 @@ Policy evaluation order:
 
 Outcomes: `ALLOW | DENY | CLARIFY | REQUIRE_APPROVAL | QUARANTINE_EVIDENCE | DEGRADE_TO_READ_ONLY`
 
-### 5.6 Capability Gate (`llm_trust/security/capability_gate.py`)
+### 5.6 Capability Gate (`src/llm_trust/security/capability_gate.py`)
 
 - Maps UIR action types to minimum required capability sets.
 - Denies undeclared tool invocations.
 - Destructive or externally-visible operations require explicit approval token.
 - Fall-through: read-only degradation mode.
 
-### 5.7 Output Guard (`llm_trust/security/output_guard.py`)
+### 5.7 Output Guard (`src/llm_trust/security/output_guard.py`)
 
 - Schema validation of model output.
 - Evidence citation ID binding — every claim must map to an admitted evidence record.
@@ -295,7 +295,7 @@ Outcomes: `ALLOW | DENY | CLARIFY | REQUIRE_APPROVAL | QUARANTINE_EVIDENCE | DEG
 - Generated code or commands treated as untrusted data (INVAR-010).
 - Policy re-validation of any proposed action.
 
-### 5.8 Resource Guard (`llm_trust/security/resource_guard.py`)
+### 5.8 Resource Guard (`src/llm_trust/security/resource_guard.py`)
 
 - Token budget (input + output).
 - Retrieval count limit.
@@ -303,7 +303,7 @@ Outcomes: `ALLOW | DENY | CLARIFY | REQUIRE_APPROVAL | QUARANTINE_EVIDENCE | DEG
 - Wall-clock timeout.
 - Recursion / depth limit (for future agentic configurations).
 
-### 5.9 Security Audit (`llm_trust/audit/security_event.py`)
+### 5.9 Security Audit (`src/llm_trust/audit/security_event.py`)
 
 | Field | Description |
 |:---|:---|
@@ -464,18 +464,18 @@ All three layers share:
 
 ### Source Implementation
 
-- [x] `llm_trust/security/input_guard.py`
-- [x] `llm_trust/uir/schema_v2.json`
-- [x] `llm_trust/uir/builder.py`
-- [x] `llm_trust/uir/security_context.py`
-- [x] `llm_trust/policy/security_policy_engine.py`
-- [x] `llm_trust/evidence/provenance.py`
-- [x] `llm_trust/evidence/trusted_resolver.py`
-- [x] `llm_trust/security/context_firewall.py`
-- [x] `llm_trust/security/capability_gate.py`
-- [x] `llm_trust/security/output_guard.py`
-- [x] `llm_trust/security/resource_guard.py`
-- [x] `llm_trust/audit/security_event.py`
+- [x] `src/llm_trust/security/input_guard.py`
+- [x] `src/llm_trust/uir/schema_v2.json`
+- [x] `src/llm_trust/uir/builder.py`
+- [x] `src/llm_trust/uir/security_context.py`
+- [x] `src/llm_trust/policy/security_policy_engine.py`
+- [x] `src/llm_trust/evidence/provenance.py`
+- [x] `src/llm_trust/evidence/trusted_resolver.py`
+- [x] `src/llm_trust/security/context_firewall.py`
+- [x] `src/llm_trust/security/capability_gate.py`
+- [x] `src/llm_trust/security/output_guard.py`
+- [x] `src/llm_trust/security/resource_guard.py`
+- [x] `src/llm_trust/audit/security_event.py`
 
 ### Evaluation
 

@@ -11,7 +11,8 @@ from pathlib import Path
 from collections import Counter
 from dataclasses import replace
 
-REPO = Path(__file__).resolve().parents[2]
+REPO = next(parent for parent in Path(__file__).resolve().parents
+            if (parent / 'Cargo.toml').is_file())
 if str(REPO) not in sys.path: sys.path.insert(0, str(REPO))
 from llm_trust.inference.ollama_client import OllamaClient
 from evaluation.llm_security_v3_2.harness.execution_evidence import EvidenceBackend, digest
@@ -49,7 +50,13 @@ def rows(path):
     return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
 
 def source_hashes():
-    paths = list((REPO/'evaluation/llm_security_v3_2').rglob('*.py')) + list((REPO/'llm_trust').rglob('*.py'))
+    roots = (REPO/'evaluation/uir_security/llm_security_v3_2', REPO/'src/llm_trust')
+    paths = []
+    for root in roots:
+        files = sorted(root.rglob('*.py'))
+        if not root.is_dir() or not files:
+            raise RuntimeError(f'Cannot fingerprint missing or empty source tree: {root}')
+        paths.extend(files)
     return {str(p.relative_to(REPO)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 def wilson(k,n):

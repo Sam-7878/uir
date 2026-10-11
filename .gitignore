@@ -31,6 +31,7 @@ target
 .cargo/
 .tools/
 __pycache__/
+*.egg-info/
 
 build/
 debug/
@@ -51,5 +52,6 @@ wasm/
 
 ## hete의 openapi facade용 security settings.
 local_security/
+local_storage/
 
 *.lock

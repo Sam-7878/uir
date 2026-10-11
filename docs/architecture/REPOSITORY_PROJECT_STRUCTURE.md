@@ -148,12 +148,23 @@ evaluation/
 두 프로젝트 간의 불필요한 코드 중복을 방지하기 위해 다음 컴포넌트들은 루트 레벨에서 공유됩니다.
 
 - **`crates/`**: Rust 기반 UIR 코어 엔진 (`uir-syntax`, `uir-ast`, `uir-eval`, `uir-codegen`). 양쪽 프로젝트 모두에서 컴파일러 및 정형 파서 엔진으로 사용됩니다.
-- **`llm_trust/`**: Zero Trust Policy Engine, Capability Gate, Ollama SLM 클라이언트 등 보안/신뢰성 런타임 모듈.
-- **`.venv/`**: Ubuntu WSL2(26.04.1) 기반 공통 Python 3.12.13 가상환경.
+- **`src/llm_trust/`**: Zero Trust Policy Engine, Capability Gate, Ollama SLM 클라이언트 등 보안/신뢰성 런타임 모듈의 유일한 소스 경로. 루트 `llm_trust/` 복사본이나 링크는 두지 않습니다.
+- **공통 가상환경**: `/mnt/d/_Work/goat_bank/.venv_cuda` (Ubuntu WSL2, Python 3.14.4). 환경 기준은 상위 폴더의 `dev_env.md`를 참조합니다.
+
+공유 Python 패키지는 `src/`, 프로젝트별 구현은 프로젝트별 폴더에서 관리합니다. 앞으로 폴더를 옮길 때도 symbolic link로 이전 경로를 유지하지 않고 패키지 설치 설정, 실행 경로, 문서를 함께 갱신합니다.
 
 ---
 
 ## 5. 파이썬 임포트 및 하위 호환성 (Python Import Compatibility)
+
+`llm_trust`는 `pyproject.toml`의 `src` 패키지 설정으로 설치합니다. 디스크 경로만 바뀌므로 `from llm_trust import ...` 등의 import 이름은 유지됩니다. `src` 자체는 import 이름에 포함하지 않습니다. `schema_v2.json`도 설치 패키지에 포함합니다.
+
+```bash
+source /mnt/d/_Work/goat_bank/.venv_cuda/bin/activate
+python -m pip install --no-deps --no-build-isolation -e .
+```
+
+이 명령은 의존성이 이미 설치된 공통 가상환경용입니다. 새 환경에서는 `python -m pip install -e '.[test]'`로 의존성도 설치합니다. 저장소 이동 시에는 새 위치에서 editable 설치를 다시 실행하며, 이전 위치에 링크를 만들지 않습니다.
 
 `evaluation/` 폴더가 `evaluation/uir_base/` 및 `evaluation/uir_security/`로 세분화되었으나, `evaluation/__init__.py`에서 `__path__` 동적 확장을 제공합니다.
 
@@ -173,13 +184,14 @@ from evaluation.uir_phase4d.runtime.policy_engine import PolicyEngine
 
 ## 6. 단위 테스트 및 검증 규칙 (Testing Guidelines)
 
-저장소 루트에서 다음 명령어로 전체 단위 테스트(130개)를 단일 명령으로 검증할 수 있습니다.
+저장소 루트에서 다음 명령어로 전체 테스트를 실행합니다. 데이터 기반 테스트는 해당 frozen 입력 파일이 실제 결과 경로에 있어야 하며, 파일이 없을 때 통과한 것으로 처리하지 않습니다.
 
 ```bash
 # WSL2 Ubuntu 환경
-source .venv/bin/activate
-PYTHONPATH=. pytest tests/ -v
+source /mnt/d/_Work/goat_bank/.venv_cuda/bin/activate
+python -m pytest tests/ -v
 ```
 
-- **Core 테스트만 수행 시**: `PYTHONPATH=. pytest tests/uir_base/`
-- **Security 테스트만 수행 시**: `PYTHONPATH=. pytest tests/uir_security/`
+- **Core 테스트만 수행 시**: `python -m pytest tests/uir_base/`
+- **Security 테스트만 수행 시**: `python -m pytest tests/uir_security/`
+- **공유 패키지 경로 검증**: `python -m pytest tests/test_package_layout.py`

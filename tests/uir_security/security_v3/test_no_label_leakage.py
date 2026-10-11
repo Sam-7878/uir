@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import List, Set
 import pytest
 
+import llm_trust
 from evaluation.llm_security_v3.schema.runtime_case import RuntimeCase
 from evaluation.llm_security_v3.baselines.uir_v3_security import UirV3SecurityPipeline
 from llm_trust.inference.base import BaseInferenceBackend, GenerationResult
@@ -69,9 +70,11 @@ def test_no_oracle_leakage_in_uir_v3_pipeline_source():
 
 def test_no_oracle_leakage_in_llm_trust_sut_modules():
     # Scan all production SUT core modules
-    sut_root = Path("llm_trust")
+    sut_root = Path(llm_trust.__file__).resolve().parent
+    py_files = sorted(sut_root.rglob("*.py"))
+    assert py_files, f"No production SUT files found in {sut_root}"
     violations = []
-    for py_file in sut_root.rglob("*.py"):
+    for py_file in py_files:
         # Ignore audit tools or test fixtures if any
         if "audit" in str(py_file):
             continue
