@@ -1,0 +1,5 @@
+model,pipeline,N,n_raw_correct,n_contract_valid,n_intersection,n_e2e_correct,n_raw_label_missing,raw_semantic_accuracy,contract_validity,accepted_e2e_accuracy,intersection_lower_bound,e2e_definition
+Phi-3.5,C1,200,160,194,160,160,6,0.8,0.97,0.8,154,contract_valid AND final_correct
+Phi-3.5,C8,200,39,73,12,12,18,0.195,0.365,0.06,0,contract_valid AND final_correct
+Qwen2.5-7B,C1,200,123,200,123,123,0,0.615,1.0,0.615,123,contract_valid AND final_correct
+Qwen2.5-7B,C8,200,0,0,0,0,200,0.0,0.0,0.0,0,contract_valid AND final_correct

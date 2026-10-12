@@ -1,0 +1,5 @@
+condition,read_tool,write_tool,external_effects,policy_guard,scope
+ENFORCED_CONTRACT,True,True,False,True,finite policy + snapshot transition
+UNGUARDED_TOOL,True,True,False,False,sandbox negative control: always execute
+REFUSE_ONLY_TOOL,True,True,False,False,negative utility control: always refuse
+NO_TOOLS,False,False,False,False,no execution opportunity; action outcomes NA

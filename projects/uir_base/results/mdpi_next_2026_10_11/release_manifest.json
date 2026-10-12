@@ -1,0 +1,98 @@
+{
+  "allowed_nondeterministic_metadata": [
+    "created_at_utc",
+    "environment.json",
+    "logs/test durations"
+  ],
+  "created_at_utc": "2026-10-11T15:05:03.282420+00:00",
+  "evidence_kind": "historical_reanalysis",
+  "human_validation": false,
+  "inference_rerun": false,
+  "input_sources": [
+    {
+      "path": "projects/uir_base/results/uir_phase4d/frozen_inputs/strong_runtime_600.jsonl",
+      "sha256": "6551deb2c5140b41415bcf00988f2539bf4281a7fa25dfba257d726abb3af20b"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4d/frozen_inputs/strong_scoring_600.jsonl",
+      "sha256": "50bf8ce2392c81252c7ec828fb38ee5b2291838e058ed8ed5db7c0ef31d0d919"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4d/per_case_evidence_actual.jsonl",
+      "sha256": "d3922c7e1e27254e7adf3e21ce24d88633b0a5fd66f2a4be6c1c6842fbca0d08"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4f/d1_constrained_raw_600.jsonl",
+      "sha256": "1cd03045e750864b7f67ba4db84b07a42dc23be3eba36f79cf45b46cf79a52f1"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4d/frozen_inputs/halueval_qa_runtime_200.jsonl",
+      "sha256": "82e5a4875a19bcee1b08b7c55126b1d0ba7d38a6ad2d1c467c7bcb6e3d6806c0"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4d/frozen_inputs/halueval_qa_scoring_200.jsonl",
+      "sha256": "63de957e70becc670a077b6c58d872cdc01372053a9d58af85e81e4bf900bf24"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4d/halueval_predictions_actual_C1.jsonl",
+      "sha256": "53b951e9b147c218435b162465c05e4e23fea8161c34010ff1fefb34777a3fd5"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4d/halueval_predictions_actual_C8.jsonl",
+      "sha256": "b713d5c9830d7ea4e46ad892a54d57189aaa61f4ca8984b801fc29c1bdeda868"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4e/qwen_halueval_C1_raw.jsonl",
+      "sha256": "d6add964ca19c17942e4785ac7562b87642cf0b86126082eaf727a17235f7cd7"
+    },
+    {
+      "path": "projects/uir_base/results/uir_phase4e/qwen_halueval_C8_raw.jsonl",
+      "sha256": "db36633dc326fe3e631cf071b08017b2542013ae4e086aa8214cd48d45ae1806"
+    }
+  ],
+  "schema_version": "uir-next-release-v1",
+  "scientific_output_sha256": {
+    "action_traces.jsonl": "e402f39c32c79246cb43dba77c44dbdd603400e2e76be35fc10aae9bee31304e",
+    "all_candidate_replay_summary.csv": "117b71679f78358cfe726895973a754ba3b028902e8f4dbc9c7eafa42d26a101",
+    "annotations/H1_blinded_cases.jsonl": "ede2816c90a5f52858a6771596453cbc8f44ee4f2316feb6f80cf0c14b4dce0e",
+    "annotations/H1_labels_template.csv": "2d95b747b0d5bec7a665d53856a28c8fe4090aa84f41f833f3369c8d2dd15d7c",
+    "annotations/H2_blinded_cases.jsonl": "ede2816c90a5f52858a6771596453cbc8f44ee4f2316feb6f80cf0c14b4dce0e",
+    "annotations/H2_labels_template.csv": "8345455fb15dd460cd1730ad0e4d44c6905bcb53faa395a20a642c0e447d9160",
+    "candidate_stage_manifest.csv": "887249597325cd2f7e4380b88fbf56a1d29064b10ab2f648f8c1f709d7ddff48",
+    "case_metric_transition.csv": "8dac7a6b0e0600dcdde9ba3a97b1e05c80c1d41ffd9e82b6092e8924c3a2b109",
+    "d1_raw_schema_errors.jsonl": "8dd2ba291acab16f2c68905bfc095b0ae151239b4e639171f83497bcd9a009e0",
+    "external_error_taxonomy.csv": "525a5ca9356f7f61b5ba51b25190bfc7c83350cafb77c2d40164e01447bec3aa",
+    "frontend_case_results.jsonl": "367130c85026f4f5432877c62e7c681d54c2173f6385d1ea5ae6b038b3b38395",
+    "halueval_extraction_audit.jsonl": "eb44089da6d940c353e7a27c71a423bcc3648837d0165b500e0902fd6f826f39",
+    "historical_reanalysis/claim_evidence_map.csv": "6d9eb086435764dc92315385bb3e4cb158630ca6033987d94c2ce0e411f9915e",
+    "historical_reanalysis/cohort_manifest.csv": "f7e24a1bac6524b032ec37f051feff6ca7501355c599f5622dc73d6e78c954f9",
+    "historical_reanalysis/d1_schema_case_audit.csv": "91451fca6c34140be42eccde7f775f68e6047f807337ab05276cbc165de7a6bf",
+    "historical_reanalysis/generated_metrics.tex": "f939352aec65e3b800b3b135d1518a40c24dd44ba8c31de8c241f5a1c031cace",
+    "historical_reanalysis/generated_tables/internal_utility.tex": "916676f217ca4655a32b71a10fd725ee014e6c0141d58d93fdf6d4a14fc4d1c3",
+    "historical_reanalysis/halueval_case_audit.csv": "f8bf3af6bcf762c097122ba0284257499fb418dcd1e83b1c928536058f3fa664",
+    "historical_reanalysis/halueval_recomputed.csv": "b55638aeeaf9038e1a026dc7afb95f9d571c5a9cdd25106f5113e0fbf7cf50b3",
+    "historical_reanalysis/halueval_transition_tables.csv": "b7d79412256229a728c2448c1a54881d1f66de5315706441e41be76b318cbe81",
+    "historical_reanalysis/internal_utility_recomputed.csv": "8f4dbf90c8a049408f6b913c665062b67218245e756e9a4f64a6b6465647060b",
+    "historical_reanalysis/latency_case_results.csv": "64eb40ae3514094c020f06c8de698fad634f6ce2a579e88d4ec57ca34d9f8c31",
+    "historical_reanalysis/latency_summary.csv": "f852db87e54a91821753b8964438b4c0293f618311b882959f766e8ae4c07de2",
+    "historical_reanalysis/metrics_case_level.csv": "93a09fe272d22003f0d9cf3c85578c0d4c470a8b895ce8abd095f5a109d4e5a0",
+    "historical_reanalysis/paired_statistics.csv": "44a85b086c329ab62cf2d1733996410ef9db9b463799baff683ab6f31ccab623",
+    "matched_case_results.csv": "d0528d2df6ce7b8bb2a8b576ecb196d46f7d05953a3a24c9c7c12764648d97f2",
+    "paired_source_family_statistics.csv": "80f705527f28801ca28cdc08519c985a038843e5c5dadf05449b76be891422bf",
+    "replay_exclusion_audit.csv": "e5d7f77cf3e1bab1ffc61dc751a50bde6f9440476e304afd753c8ea10af3ee7f",
+    "source_family_manifest.csv": "ec59e679ec24ceabb68e3f30540f4c1b7e8de38de2a5954c93f1b1fe5d644224"
+  },
+  "source_hashes": {
+    "projects/uir_base/scripts/__init__.py": "7c4461011ad47ba4eb4c9f6941184427e2ced4c774d8743492cf5b92e873501b",
+    "projects/uir_base/scripts/contract_frontend.py": "718db79b2d169db48e8afda9b53f4a31791cefb7262fab694e655010bd5120cd",
+    "projects/uir_base/scripts/next_frontend.py": "577b65ee8cd62490f62e41e1416f8192c795fed5803e5371525247df843b0804",
+    "projects/uir_base/scripts/next_release.py": "dae2d794463e9fa367f8ae39cf7bca7987845927350d48c2098c305b38b83c41",
+    "projects/uir_base/scripts/next_runtime_worker.py": "026e081d9fb1fce7f9c0ec1d1bf1f4baf18f5c71d11a1773d633adeb8dabd365",
+    "projects/uir_base/scripts/revision_audit.py": "0ef3bb69ee503fb11f677b4094a18f7ccb90c2bfec74d134136acd31bd318781",
+    "projects/uir_base/scripts/revision_support.py": "93a167d5dc257b46525dc97cf51bbcfe347ec4d1ffc261be3e89c183423a1b22",
+    "projects/uir_base/scripts/run_local_ai_review.py": "1095cb7831fad4bf65eca5da7bae65907afa9f9cd0f00c43ec29bcccc76b0c5b",
+    "projects/uir_base/scripts/setup_local_models.py": "c66bd18af021ba59edfa5913bcd710f5fdd20e2cb10c926e1edf321210137b73",
+    "projects/uir_base/scripts/verify_local_ai_review.py": "c6a796ee3a609e1b53889cd99fb199249bf899218fec90a5f65b9146e0752c56"
+  },
+  "study_route": "B_AI_ONLY"
+}

@@ -1,0 +1,19 @@
+reviewer,field,N_packet,N_valid,N_correct,accuracy_all_packet_missing_as_not_correct,accuracy_valid,N_uncertain,N_not_evaluable,scope
+AI_J1,request_ambiguity,16,16,2,0.125,0.125,0,0,synthetic conformance only
+AI_J1,candidate_status,16,16,12,0.75,0.75,0,0,synthetic conformance only
+AI_J1,slot_match,16,16,8,0.5,0.5,0,8,synthetic conformance only
+AI_J1,user_condition_presence,16,16,13,0.8125,0.8125,0,0,synthetic conformance only
+AI_J1,condition_preservation,16,16,8,0.5,0.5,0,10,synthetic conformance only
+AI_J1,policy_decision,16,16,11,0.6875,0.6875,0,0,synthetic conformance only
+AI_J1,task_admissibility,16,16,11,0.6875,0.6875,0,0,synthetic conformance only
+AI_J1,entity_availability,16,16,13,0.8125,0.8125,0,0,synthetic conformance only
+AI_J1,evidence_availability,16,16,15,0.9375,0.9375,0,0,synthetic conformance only
+AI_J2,request_ambiguity,16,16,2,0.125,0.125,1,0,synthetic conformance only
+AI_J2,candidate_status,16,16,2,0.125,0.125,0,0,synthetic conformance only
+AI_J2,slot_match,16,16,2,0.125,0.125,0,16,synthetic conformance only
+AI_J2,user_condition_presence,16,16,5,0.3125,0.3125,7,0,synthetic conformance only
+AI_J2,condition_preservation,16,16,2,0.125,0.125,0,16,synthetic conformance only
+AI_J2,policy_decision,16,16,7,0.4375,0.4375,9,0,synthetic conformance only
+AI_J2,task_admissibility,16,16,4,0.25,0.25,0,0,synthetic conformance only
+AI_J2,entity_availability,16,16,16,1.0,1.0,0,0,synthetic conformance only
+AI_J2,evidence_availability,16,16,16,1.0,1.0,0,0,synthetic conformance only

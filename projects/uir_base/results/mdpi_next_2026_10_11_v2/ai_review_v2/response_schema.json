@@ -1,0 +1,112 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "candidate_status": {
+      "enum": [
+        "PRESENT",
+        "ABSENT"
+      ],
+      "type": "string"
+    },
+    "condition_preservation": {
+      "enum": [
+        "PRESERVED",
+        "MISSING_OR_CHANGED",
+        "NOT_PRESENT",
+        "NOT_EVALUABLE",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "entity_availability": {
+      "enum": [
+        "AVAILABLE",
+        "UNAVAILABLE",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "evidence_availability": {
+      "enum": [
+        "AVAILABLE",
+        "UNAVAILABLE",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "explanation": {
+      "maxLength": 240,
+      "type": "string"
+    },
+    "policy_decision": {
+      "enum": [
+        "ALLOW",
+        "DENY",
+        "READ_ONLY",
+        "REQUIRE_APPROVAL",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "request_ambiguity": {
+      "enum": [
+        "CLEAR",
+        "AMBIGUOUS",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "request_quote": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "reviewer_epistemic_state": {
+      "enum": [
+        "DECISIVE",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "slot_match": {
+      "enum": [
+        "MATCH",
+        "MISMATCH",
+        "NOT_EVALUABLE",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "task_admissibility": {
+      "enum": [
+        "ADMISSIBLE",
+        "INADMISSIBLE",
+        "UNKNOWN",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    },
+    "user_condition_presence": {
+      "enum": [
+        "PRESENT",
+        "ABSENT",
+        "UNCERTAIN"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "request_ambiguity",
+    "reviewer_epistemic_state",
+    "candidate_status",
+    "slot_match",
+    "user_condition_presence",
+    "condition_preservation",
+    "policy_decision",
+    "task_admissibility",
+    "entity_availability",
+    "evidence_availability",
+    "request_quote",
+    "explanation"
+  ],
+  "type": "object"
+}

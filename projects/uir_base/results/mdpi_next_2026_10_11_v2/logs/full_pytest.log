@@ -1,0 +1,10 @@
+........................................................................ [ 34%]
+........................................................................ [ 69%]
+..............................................................           [100%]
+=============================== warnings summary ===============================
+tests/uir_base/test_next_release.py::test_archive_rejects_escaping_and_duplicate_entries
+  /usr/lib/python3.14/zipfile/__init__.py:1721: UserWarning: Duplicate name: 'file'
+    return self._open_to_write(zinfo, force_zip64=force_zip64)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+206 passed, 1 warning in 14.91s

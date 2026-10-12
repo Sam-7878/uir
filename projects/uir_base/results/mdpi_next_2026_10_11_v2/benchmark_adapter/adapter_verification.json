@@ -1,0 +1,14 @@
+{
+  "N_company_overlap": 180,
+  "N_contract_executable_gold": 172,
+  "N_disjoint_indices": 200,
+  "N_document_overlap": 71,
+  "N_intersection_tests": 7,
+  "N_parity_tests": 12,
+  "dataset_sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+  "holdout_semantics": "index-disjoint, not necessarily document/company-independent",
+  "official_evaluator_sha256": "845cd131cab843eceff256cf6d392978cc470a7da4a80107beb56027fdca5c13",
+  "parity_failures": 0,
+  "status": "PARITY_ON_SUPPORTED_INTERSECTION_ONLY",
+  "unsupported_claims": "NOT_MEASURED"
+}

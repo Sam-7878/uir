@@ -1,0 +1,5 @@
+model,condition,N,N_correct,accuracy,wilson95_low,wilson95_high,N_semantic_literal_match,N_missing,N_finished,N_strict_json,N_contract_rejected,unsupported_claims,evidence_kind,output_scope
+Phi-3.5,C1_NATIVE_ANSWER,200,4,0.02,0.0078044264163494685,0.050287086905826436,4,108,195,0,0,NOT_MEASURED,fresh_model_inference,task answer/program only
+Phi-3.5,C8_ARITHMETIC_CONTRACT,200,0,0.0,0.0,0.018845326377266575,0,0,200,200,200,NOT_MEASURED,fresh_model_inference,task answer/program only
+Qwen3-1.7B,C1_NATIVE_ANSWER,200,1,0.005,0.0008831687156009797,0.02777370439789293,1,138,199,0,0,NOT_MEASURED,fresh_model_inference,task answer/program only
+Qwen3-1.7B,C8_ARITHMETIC_CONTRACT,200,0,0.0,0.0,0.018845326377266575,0,6,194,194,198,NOT_MEASURED,fresh_model_inference,task answer/program only

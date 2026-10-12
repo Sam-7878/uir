@@ -1,0 +1,14 @@
+{
+  "N_requests": 800,
+  "diagnostic_only": true,
+  "future_changes": "develop on declared development data; new prospective protocol/version and unused holdout required, never quietly rescore or rerun this holdout as confirmatory",
+  "interpretation": "strict end-marker extraction and percent/benchmark-unit ambiguity confound pure reasoning attribution; program string schema does not enforce DSL syntax",
+  "marker_present_but_adapter_missing": 64,
+  "primary_metrics_unchanged": true,
+  "program_rejection_reasons": {
+    "NONE": 2,
+    "missing_or_resource_limit": 13,
+    "unsupported_operator_or_steps": 385
+  },
+  "raw_capture_sha256": "ba11f63615f2de0625058f316a1fcdceb244390cc7859338b3bb76fdcbc2bc81"
+}

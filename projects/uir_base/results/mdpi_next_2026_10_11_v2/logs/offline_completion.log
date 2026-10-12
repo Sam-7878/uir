@@ -1,0 +1,71 @@
+{
+  "release": "mdpi_revision_2026_10_11",
+  "D1": {
+    "N": 600,
+    "raw_json_valid": 596,
+    "raw_schema_valid": 596
+  },
+  "HaluEval": [
+    {
+      "model": "Phi-3.5",
+      "pipeline": "C1",
+      "N": 200,
+      "n_raw_correct": 160,
+      "n_contract_valid": 194,
+      "n_intersection": 160,
+      "n_e2e_correct": 160,
+      "n_raw_label_missing": 6,
+      "raw_semantic_accuracy": 0.8,
+      "contract_validity": 0.97,
+      "accepted_e2e_accuracy": 0.8,
+      "intersection_lower_bound": 154,
+      "e2e_definition": "contract_valid AND final_correct"
+    },
+    {
+      "model": "Phi-3.5",
+      "pipeline": "C8",
+      "N": 200,
+      "n_raw_correct": 39,
+      "n_contract_valid": 73,
+      "n_intersection": 12,
+      "n_e2e_correct": 12,
+      "n_raw_label_missing": 18,
+      "raw_semantic_accuracy": 0.195,
+      "contract_validity": 0.365,
+      "accepted_e2e_accuracy": 0.06,
+      "intersection_lower_bound": 0,
+      "e2e_definition": "contract_valid AND final_correct"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "pipeline": "C1",
+      "N": 200,
+      "n_raw_correct": 123,
+      "n_contract_valid": 200,
+      "n_intersection": 123,
+      "n_e2e_correct": 123,
+      "n_raw_label_missing": 0,
+      "raw_semantic_accuracy": 0.615,
+      "contract_validity": 1.0,
+      "accepted_e2e_accuracy": 0.615,
+      "intersection_lower_bound": 123,
+      "e2e_definition": "contract_valid AND final_correct"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "pipeline": "C8",
+      "N": 200,
+      "n_raw_correct": 0,
+      "n_contract_valid": 0,
+      "n_intersection": 0,
+      "n_e2e_correct": 0,
+      "n_raw_label_missing": 200,
+      "raw_semantic_accuracy": 0.0,
+      "contract_validity": 0.0,
+      "accepted_e2e_accuracy": 0.0,
+      "intersection_lower_bound": 0,
+      "e2e_definition": "contract_valid AND final_correct"
+    }
+  ]
+}
+Offline evidence completion written to /mnt/d/_Work/goat_bank/uir/projects/uir_base/results/mdpi_next_2026_10_11_v2

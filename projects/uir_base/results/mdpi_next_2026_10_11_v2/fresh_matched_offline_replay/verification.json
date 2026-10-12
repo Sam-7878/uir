@@ -1,0 +1,36 @@
+{
+  "N_model_calls": 272,
+  "N_no_extractable_object": 21,
+  "N_requests": 600,
+  "equal": {
+    "matched_case_results.csv": true,
+    "matched_summary.csv": true
+  },
+  "finish_reasons": {
+    "length": 21,
+    "stop": 251
+  },
+  "inference_calls_in_this_replay": 0,
+  "missing_field_cases_nonexclusive": {
+    "period": 249,
+    "unit": 118
+  },
+  "runtime_schema_required": [
+    "claim_type",
+    "entity_id",
+    "attribute",
+    "value",
+    "provenance"
+  ],
+  "scope_warning": "five-required-field syntax constraint vs seven-field exact support; not an unbiased model or IR contribution estimate",
+  "scorer_bound_fields": [
+    "claim_type",
+    "entity_id",
+    "attribute",
+    "value",
+    "unit",
+    "period",
+    "provenance"
+  ],
+  "status": "OFFLINE_CAPTURE_REPLAY_PASS_NOT_MODEL_RERUN"
+}

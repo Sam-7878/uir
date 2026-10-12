@@ -1,0 +1,5 @@
+scope,N,p50_ms,p95_ms,p99_ms,unit,repetitions_per_request,claim
+first_load_inclusive,1,21230.496547,21230.496547,21230.496547,one measured sequential request/stage,1,"descriptive only; no transformer acceleration, repeated-latency or historical batch comparison"
+warm_model_requests,271,854.045583,3697.804026,3824.4298069000006,one measured sequential request/stage,1,"descriptive only; no transformer acceleration, repeated-latency or historical batch comparison"
+early_rejection,328,0.000228,0.000395,0.0004623300000000004,one measured sequential request/stage,1,"descriptive only; no transformer acceleration, repeated-latency or historical batch comparison"
+deterministic_template,600,0.079692,0.15792539999999994,0.19891309,one measured sequential request/stage,1,"descriptive only; no transformer acceleration, repeated-latency or historical batch comparison"

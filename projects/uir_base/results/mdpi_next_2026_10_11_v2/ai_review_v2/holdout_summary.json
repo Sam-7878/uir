@@ -1,0 +1,76 @@
+{
+  "N_responses": 32,
+  "N_unresolved_cases": 16,
+  "N_valid": 32,
+  "general_NL_semantic_validation": false,
+  "gpu_allocations": {
+    "AI_J1": {
+      "models": [
+        {
+          "context_length": 8192,
+          "details": {
+            "families": [
+              "qwen3"
+            ],
+            "family": "qwen3",
+            "format": "gguf",
+            "parameter_size": "4.0B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "expires_at": "2026-10-12T00:51:49.22853282+09:00",
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "name": "qwen3:4b-instruct-2507-q4_K_M",
+          "size": 3873366343,
+          "size_vram": 3873366343
+        }
+      ]
+    },
+    "AI_J2": {
+      "models": [
+        {
+          "context_length": 8192,
+          "details": {
+            "families": [
+              "mistral3"
+            ],
+            "family": "mistral3",
+            "format": "gguf",
+            "parameter_size": "13.9B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "4760c35aeb9d9e9c6174c2492562c0b999e80a222804fd96b1915ab72bbcdcf7",
+          "expires_at": "2026-10-12T00:53:41.656279408+09:00",
+          "model": "ministral-3:14b",
+          "name": "ministral-3:14b",
+          "size": 9537773895,
+          "size_vram": 9537773895
+        }
+      ]
+    }
+  },
+  "human_validation": false,
+  "no_majority_adjudication": true,
+  "raw_sha256": "f643e68fc63195909528f738163b95a2c94df261f07a14bfeced06f740ae7ab9",
+  "status": "CAPTURE_COMPLETE_SYNTHETIC_ONLY",
+  "unresolved": [
+    "BLIND-0ec4d577253cec06",
+    "BLIND-13b5bc63b72519f2",
+    "BLIND-22f11c041e9ad962",
+    "BLIND-2a69445971da3198",
+    "BLIND-36af6053a3fec517",
+    "BLIND-3d2fc54a1db00e82",
+    "BLIND-4eb3ff9236a4dbfc",
+    "BLIND-566cba23818cd5ed",
+    "BLIND-ad116fc6f2774557",
+    "BLIND-b151c09f4b554d9a",
+    "BLIND-ba790248f8d7c180",
+    "BLIND-bb94873351ed45d4",
+    "BLIND-d743afbc116910d5",
+    "BLIND-d8facab3226769d7",
+    "BLIND-eccd504a8b200461",
+    "BLIND-edbcc2e9844cc1ea"
+  ]
+}

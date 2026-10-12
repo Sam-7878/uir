@@ -1,0 +1,73 @@
+{
+  "status": "ARCHIVE_ONLY_OFFLINE_REPRODUCTION_PASS",
+  "scientific_files_equal": 31,
+  "no_development_checkout_imports": true,
+  "ai_raw_response_replay": {
+    "status": "RAW_RESPONSE_TO_LABELS_AND_EXACT_AGREEMENT_PASS_NOT_SEMANTIC_VALIDATION",
+    "N_cases": 120,
+    "N_responses": 240,
+    "N_unresolved": 119,
+    "human_validation": false,
+    "fields": {
+      "ambiguity": {
+        "N": 120,
+        "N_agree": 26,
+        "agreement": 0.21666666666666667,
+        "kappa": -0.02081447963800905,
+        "joint_uncertain": 23,
+        "decisive_agreement": 3
+      },
+      "attribute_match": {
+        "N": 120,
+        "N_agree": 101,
+        "agreement": 0.8416666666666667,
+        "kappa": 0.5873303167420815,
+        "joint_uncertain": 0,
+        "decisive_agreement": 101
+      },
+      "conditions_preservation": {
+        "N": 120,
+        "N_agree": 83,
+        "agreement": 0.6916666666666667,
+        "kappa": 0.17225950782997762,
+        "joint_uncertain": 0,
+        "decisive_agreement": 83
+      },
+      "entity_match": {
+        "N": 120,
+        "N_agree": 107,
+        "agreement": 0.8916666666666667,
+        "kappa": 0.6828623704004879,
+        "joint_uncertain": 0,
+        "decisive_agreement": 107
+      },
+      "intent_match": {
+        "N": 120,
+        "N_agree": 86,
+        "agreement": 0.7166666666666667,
+        "kappa": 0.41379310344827586,
+        "joint_uncertain": 19,
+        "decisive_agreement": 67
+      },
+      "period_match": {
+        "N": 120,
+        "N_agree": 113,
+        "agreement": 0.9416666666666667,
+        "kappa": 0.8094806078475845,
+        "joint_uncertain": 0,
+        "decisive_agreement": 113
+      },
+      "policy_decision": {
+        "N": 120,
+        "N_agree": 77,
+        "agreement": 0.6416666666666667,
+        "kappa": 0.355,
+        "joint_uncertain": 0,
+        "decisive_agreement": 77
+      }
+    }
+  },
+  "archive_sha256": "739aa4a0f18f006e3c046e5e823984dccd242dd6e78778a80015ca1e5a8f3248",
+  "fresh_inference_rerun": false,
+  "semantic_validation": false
+}

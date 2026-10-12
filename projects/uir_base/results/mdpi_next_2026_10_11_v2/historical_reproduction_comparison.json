@@ -1,0 +1,62 @@
+[
+  {
+    "exact_bytes_equal": true,
+    "file": "metrics_case_level.csv",
+    "historical_sha256": "93a09fe272d22003f0d9cf3c85578c0d4c470a8b895ce8abd095f5a109d4e5a0",
+    "reproduced_sha256": "93a09fe272d22003f0d9cf3c85578c0d4c470a8b895ce8abd095f5a109d4e5a0"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "internal_utility_recomputed.csv",
+    "historical_sha256": "8f4dbf90c8a049408f6b913c665062b67218245e756e9a4f64a6b6465647060b",
+    "reproduced_sha256": "8f4dbf90c8a049408f6b913c665062b67218245e756e9a4f64a6b6465647060b"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "d1_schema_case_audit.csv",
+    "historical_sha256": "91451fca6c34140be42eccde7f775f68e6047f807337ab05276cbc165de7a6bf",
+    "reproduced_sha256": "91451fca6c34140be42eccde7f775f68e6047f807337ab05276cbc165de7a6bf"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "halueval_case_audit.csv",
+    "historical_sha256": "f8bf3af6bcf762c097122ba0284257499fb418dcd1e83b1c928536058f3fa664",
+    "reproduced_sha256": "f8bf3af6bcf762c097122ba0284257499fb418dcd1e83b1c928536058f3fa664"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "halueval_recomputed.csv",
+    "historical_sha256": "b55638aeeaf9038e1a026dc7afb95f9d571c5a9cdd25106f5113e0fbf7cf50b3",
+    "reproduced_sha256": "b55638aeeaf9038e1a026dc7afb95f9d571c5a9cdd25106f5113e0fbf7cf50b3"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "halueval_transition_tables.csv",
+    "historical_sha256": "b7d79412256229a728c2448c1a54881d1f66de5315706441e41be76b318cbe81",
+    "reproduced_sha256": "b7d79412256229a728c2448c1a54881d1f66de5315706441e41be76b318cbe81"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "paired_statistics.csv",
+    "historical_sha256": "44a85b086c329ab62cf2d1733996410ef9db9b463799baff683ab6f31ccab623",
+    "reproduced_sha256": "44a85b086c329ab62cf2d1733996410ef9db9b463799baff683ab6f31ccab623"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "latency_case_results.csv",
+    "historical_sha256": "64eb40ae3514094c020f06c8de698fad634f6ce2a579e88d4ec57ca34d9f8c31",
+    "reproduced_sha256": "64eb40ae3514094c020f06c8de698fad634f6ce2a579e88d4ec57ca34d9f8c31"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "latency_summary.csv",
+    "historical_sha256": "f852db87e54a91821753b8964438b4c0293f618311b882959f766e8ae4c07de2",
+    "reproduced_sha256": "f852db87e54a91821753b8964438b4c0293f618311b882959f766e8ae4c07de2"
+  },
+  {
+    "exact_bytes_equal": true,
+    "file": "cohort_manifest.csv",
+    "historical_sha256": "f7e24a1bac6524b032ec37f051feff6ca7501355c599f5622dc73d6e78c954f9",
+    "reproduced_sha256": "f7e24a1bac6524b032ec37f051feff6ca7501355c599f5622dc73d6e78c954f9"
+  }
+]

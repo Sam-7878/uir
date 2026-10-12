@@ -1,0 +1,8 @@
+{
+  "N_gate_results": 1500,
+  "N_mutations": 500,
+  "differences": [],
+  "model_calls": 0,
+  "scope": "legacy preexecution classification only; no actual generated-output corruption/factual safety assessment",
+  "status": "PASS_AGGREGATE_REPLAY"
+}

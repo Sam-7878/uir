@@ -1,0 +1,76 @@
+{
+  "N_responses": 32,
+  "N_unresolved_cases": 16,
+  "N_valid": 32,
+  "general_NL_semantic_validation": false,
+  "gpu_allocations": {
+    "AI_J1": {
+      "models": [
+        {
+          "context_length": 8192,
+          "details": {
+            "families": [
+              "qwen3"
+            ],
+            "family": "qwen3",
+            "format": "gguf",
+            "parameter_size": "4.0B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "expires_at": "2026-10-12T00:45:43.233663813+09:00",
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "name": "qwen3:4b-instruct-2507-q4_K_M",
+          "size": 3873366343,
+          "size_vram": 3873366343
+        }
+      ]
+    },
+    "AI_J2": {
+      "models": [
+        {
+          "context_length": 8192,
+          "details": {
+            "families": [
+              "mistral3"
+            ],
+            "family": "mistral3",
+            "format": "gguf",
+            "parameter_size": "13.9B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "4760c35aeb9d9e9c6174c2492562c0b999e80a222804fd96b1915ab72bbcdcf7",
+          "expires_at": "2026-10-12T00:47:43.844690379+09:00",
+          "model": "ministral-3:14b",
+          "name": "ministral-3:14b",
+          "size": 9537773895,
+          "size_vram": 9537773895
+        }
+      ]
+    }
+  },
+  "human_validation": false,
+  "no_majority_adjudication": true,
+  "raw_sha256": "bf8ef993ed66f8533fbea07f9e769a7e73a2aff1b08e282fa09f72a12db57505",
+  "status": "CAPTURE_COMPLETE_SYNTHETIC_ONLY",
+  "unresolved": [
+    "BLIND-15eadca37ac50a8e",
+    "BLIND-1a8fa75ea34bf4d3",
+    "BLIND-268f0adfcca6194f",
+    "BLIND-34c3b0f94d25ce75",
+    "BLIND-7ea500f84aaddb1e",
+    "BLIND-814ee3c5d445bb87",
+    "BLIND-86614805caac1cdb",
+    "BLIND-8ea1a07dadada9e8",
+    "BLIND-925587e5d1ea69b4",
+    "BLIND-a17c513094bb55d8",
+    "BLIND-a5c2a8089f9ae582",
+    "BLIND-c42a9d4b934bd2fd",
+    "BLIND-d5ba46c92948c3d4",
+    "BLIND-d87f10b112c92ba5",
+    "BLIND-eeced5936824bc3a",
+    "BLIND-f6bf61270df7ca6e"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "N_finqa_requests": 800,
+  "human_validation": false,
+  "model_calls_in_replay": 0,
+  "reviews": {
+    "calibration": {
+      "N_responses": 32,
+      "N_unresolved": 16,
+      "status": "RAW_TO_SYNTHETIC_ACCURACY_AGREEMENT_PASS_NOT_HUMAN_VALIDATION"
+    },
+    "holdout": {
+      "N_responses": 32,
+      "N_unresolved": 16,
+      "status": "RAW_TO_SYNTHETIC_ACCURACY_AGREEMENT_PASS_NOT_HUMAN_VALIDATION"
+    }
+  },
+  "status": "MATCHED_AI_AND_FINQA_CAPTURE_REPLAY_PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "D1_field_mismatches_nonexclusive": {
+    "attribute": 64,
+    "claim_type": 64,
+    "entity_id": 42,
+    "period": 28,
+    "provenance": 10,
+    "unit": 156,
+    "value": 164
+  },
+  "evidence_kind": "historical_reanalysis",
+  "legacy_D1_complete": 206,
+  "legacy_D1_pure_scorer_reexecuted_not_inplace_main": true,
+  "legacy_D1_unsupported": 125,
+  "old_phi_72_percent": "hardcoded literal in rescore_publication_final.py; no per-case estimator was found",
+  "old_qwen_50_percent": "run_qwen_external_full.py initialized prediction=No before JSON parse; not missing-aware semantic ability",
+  "prose_safety": "NOT_MEASURED"
+}

@@ -1,0 +1,119 @@
+{
+  "N_attempted": 800,
+  "gpu_allocations": {
+    "Phi-3.5": {
+      "models": [
+        {
+          "context_length": 8192,
+          "details": {
+            "families": [
+              "phi3"
+            ],
+            "family": "phi3",
+            "format": "gguf",
+            "parameter_size": "3.8B",
+            "parent_model": "",
+            "quantization_level": "Q4_0"
+          },
+          "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+          "expires_at": "2026-10-12T01:01:42.096310673+09:00",
+          "model": "phi3.5:latest",
+          "name": "phi3.5:latest",
+          "size": 5483884707,
+          "size_vram": 5483884707
+        }
+      ]
+    },
+    "Qwen3-1.7B": {
+      "models": [
+        {
+          "context_length": 8192,
+          "details": {
+            "families": [
+              "qwen3"
+            ],
+            "family": "qwen3",
+            "format": "gguf",
+            "parameter_size": "2.0B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+          "expires_at": "2026-10-12T01:05:45.27872563+09:00",
+          "model": "qwen3:1.7b-q4_K_M",
+          "name": "qwen3:1.7b-q4_K_M",
+          "size": 2235280915,
+          "size_vram": 2235280915
+        }
+      ]
+    }
+  },
+  "gpu_before": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 753 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 0 MiB\n",
+  "human_validation": false,
+  "models": {
+    "Phi-3.5": {
+      "artifact": {
+        "capabilities": [
+          "completion"
+        ],
+        "details": {
+          "context_length": 131072,
+          "embedding_length": 3072,
+          "families": [
+            "phi3"
+          ],
+          "family": "phi3",
+          "format": "gguf",
+          "parameter_size": "3.8B",
+          "parent_model": "",
+          "quantization_level": "Q4_0"
+        },
+        "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+        "model": "phi3.5:latest",
+        "modified_at": "2026-10-11T20:10:12.4064408+09:00",
+        "name": "phi3.5:latest",
+        "size": 2176178843
+      },
+      "chat_template_sha256": "d8f54cd6a963870bbcbb9b225c009083065c5c55a38c5e887f1328b27ce3e068",
+      "parameters": "stop                           \"<|system|>\"\nstop                           \"<|user|>\"\nstop                           \"<|end|>\"\nstop                           \"<|assistant|>\"",
+      "server_version": {
+        "version": "0.33.3"
+      }
+    },
+    "Qwen3-1.7B": {
+      "artifact": {
+        "capabilities": [
+          "completion",
+          "tools",
+          "thinking"
+        ],
+        "details": {
+          "context_length": 40960,
+          "embedding_length": 2048,
+          "families": [
+            "qwen3"
+          ],
+          "family": "qwen3",
+          "format": "gguf",
+          "parameter_size": "2.0B",
+          "parent_model": "",
+          "quantization_level": "Q4_K_M"
+        },
+        "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "model": "qwen3:1.7b-q4_K_M",
+        "modified_at": "2026-10-12T00:33:48.5559614+09:00",
+        "name": "qwen3:1.7b-q4_K_M",
+        "size": 1359293444
+      },
+      "chat_template_sha256": "7d324826d81029e9cc04696166b97b66637ec0178f32f85c8c56ab61dc4141a1",
+      "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+      "server_version": {
+        "version": "0.33.3"
+      }
+    }
+  },
+  "protocol_sha256": "2da2a172b7be57be07884291c8d7e4df4aabd058e274c566b612e3db4c7038f5",
+  "raw_sha256": "ba11f63615f2de0625058f316a1fcdceb244390cc7859338b3bb76fdcbc2bc81",
+  "remote_inference": false,
+  "status": "RAW_CAPTURE_COMPLETE_NOT_SUBMISSION_READY"
+}

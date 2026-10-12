@@ -1,0 +1,11 @@
+field,N_jointly_valid,N_agree,agreement,kappa,joint_uncertain,joint_not_evaluable,decisive_evaluable_agreement,scope
+request_ambiguity,16,16,1.0,,0,0,16,agreement not accuracy; unavailable candidates separately identified
+reviewer_epistemic_state,16,16,1.0,,16,0,0,agreement not accuracy; unavailable candidates separately identified
+candidate_status,16,2,0.125,0.0,0,0,2,agreement not accuracy; unavailable candidates separately identified
+slot_match,16,6,0.375,0.0,0,6,0,agreement not accuracy; unavailable candidates separately identified
+user_condition_presence,16,4,0.25,0.0051813471502590676,0,0,4,agreement not accuracy; unavailable candidates separately identified
+condition_preservation,16,9,0.5625,0.0,0,9,0,agreement not accuracy; unavailable candidates separately identified
+policy_decision,16,4,0.25,0.16521739130434782,0,0,4,agreement not accuracy; unavailable candidates separately identified
+task_admissibility,16,6,0.375,0.23076923076923078,0,0,6,agreement not accuracy; unavailable candidates separately identified
+entity_availability,16,13,0.8125,0.3333333333333333,0,0,13,agreement not accuracy; unavailable candidates separately identified
+evidence_availability,16,15,0.9375,0.8181818181818182,0,0,15,agreement not accuracy; unavailable candidates separately identified

@@ -1,0 +1,17 @@
+{
+  "W08_original_human_requirement": "NOT_SATISFIED",
+  "allowed_claims": [
+    "restricted bilingual CNL conformance",
+    "typed policy/evidence contract system evaluation"
+  ],
+  "approval_date_local": "2026-10-11",
+  "approved_by": "human_user_in_current_task",
+  "excluded_claims": [
+    "human validated",
+    "expert gold",
+    "unrestricted natural language semantic accuracy",
+    "statistically independent AI errors"
+  ],
+  "human_annotation_performed": false,
+  "route": "B_AI_ONLY"
+}

@@ -1,0 +1,64 @@
+{
+  "N_errors": 0,
+  "N_model_calls": 272,
+  "N_requests": 600,
+  "evidence_kind": "fresh_model_inference",
+  "gpu_before": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 8188 MiB, 838 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 24576 MiB, 0 MiB\n",
+  "human_validation": false,
+  "loaded_model_gpu_allocation": {
+    "models": [
+      {
+        "context_length": 8192,
+        "details": {
+          "families": [
+            "phi3"
+          ],
+          "family": "phi3",
+          "format": "gguf",
+          "parameter_size": "3.8B",
+          "parent_model": "",
+          "quantization_level": "Q4_0"
+        },
+        "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+        "expires_at": "2026-10-12T00:41:11.118472352+09:00",
+        "model": "phi3.5:latest",
+        "name": "phi3.5:latest",
+        "size": 5483884707,
+        "size_vram": 5483884707
+      }
+    ]
+  },
+  "model": {
+    "capabilities": [
+      "completion"
+    ],
+    "details": {
+      "context_length": 131072,
+      "embedding_length": 3072,
+      "families": [
+        "phi3"
+      ],
+      "family": "phi3",
+      "format": "gguf",
+      "parameter_size": "3.8B",
+      "parent_model": "",
+      "quantization_level": "Q4_0"
+    },
+    "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+    "model": "phi3.5:latest",
+    "modified_at": "2026-10-11T20:10:12.4064408+09:00",
+    "name": "phi3.5:latest",
+    "size": 2176178843
+  },
+  "model_quantization": "Q4_0",
+  "old_FP16_NF4_equivalence_claimed": false,
+  "protocol_sha256": "f8461ec322b4ca0efc2662af693e51e3efc972d70eac3afb3aa717859287282f",
+  "raw_capture_sha256": "2fa67fc944820289b3f0124279093cea5dd34ad8d8a48712819eee5d36f68c78",
+  "remote_inference": false,
+  "runner_sha256": "a748151e485846f6d38e7e27bcb3cfdb47d4e5b6d49d5131d7fc32e77ce1ff22",
+  "server_version": {
+    "version": "0.33.3"
+  },
+  "status": "COMPLETE_NOT_SUBMISSION_READY",
+  "template_sha256": "c608dc615584cd20d9d830363dabf8a4783ae5d34245c3d8c115edb3bc7b28e4"
+}

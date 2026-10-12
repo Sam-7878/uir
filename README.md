@@ -40,6 +40,13 @@ are under `docs/work_reports/uir_base/107_Astra_review/`. Refer to case-level so
 hashes and evaluator definitions before citing a number. AI review is not human
 annotation or automatic submission approval.
 
+The next-stage audit, AI-only scope amendment, and explicitly local RTX3090 runs
+are recorded in
+[the N00–N13 implementation record](docs/work_reports/uir_base/110_mdpi_rev/implementation/README.md).
+Its results are separately versioned as `mdpi_next_2026_10_11_v2`; historical
+evidence is not replaced. Qwen3-1.7B is a newly selected generator comparison,
+not a relabeling of Qwen2.5-7B or an independent human evaluator.
+
 ## Local verification
 
 Use the environment specified in the parent workspace's `dev_env.md`.

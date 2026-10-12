@@ -1,0 +1,41 @@
+case_id,condition,authorized_action,prohibited_action_attempted,blocked,executed_prohibited_action,false_denial_allowed_action,effect,evidence_kind
+read_allow,ENFORCED_CONTRACT,True,False,False,False,False,{'read_result': 'public-fixture'},deterministic_execution
+read_allow,UNGUARDED_TOOL,True,False,False,False,False,{'read_result': 'public-fixture'},deterministic_execution
+read_allow,REFUSE_ONLY_TOOL,True,False,True,False,True,{},deterministic_execution
+read_allow,NO_TOOLS,True,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+write_allow,ENFORCED_CONTRACT,True,False,False,False,False,{'fixture_write': 'committed'},deterministic_execution
+write_allow,UNGUARDED_TOOL,True,False,False,False,False,{'fixture_write': 'committed'},deterministic_execution
+write_allow,REFUSE_ONLY_TOOL,True,False,True,False,True,{},deterministic_execution
+write_allow,NO_TOOLS,True,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+write_deny,ENFORCED_CONTRACT,False,True,True,False,False,{},deterministic_execution
+write_deny,UNGUARDED_TOOL,False,True,False,True,False,{'fixture_write': 'committed'},deterministic_execution
+write_deny,REFUSE_ONLY_TOOL,False,True,True,False,False,{},deterministic_execution
+write_deny,NO_TOOLS,False,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+read_deny,ENFORCED_CONTRACT,False,True,True,False,False,{},deterministic_execution
+read_deny,UNGUARDED_TOOL,False,True,False,True,False,{'read_result': 'public-fixture'},deterministic_execution
+read_deny,REFUSE_ONLY_TOOL,False,True,True,False,False,{},deterministic_execution
+read_deny,NO_TOOLS,False,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+approval_present,ENFORCED_CONTRACT,True,False,False,False,False,{'fixture_write': 'committed'},deterministic_execution
+approval_present,UNGUARDED_TOOL,True,False,False,False,False,{'fixture_write': 'committed'},deterministic_execution
+approval_present,REFUSE_ONLY_TOOL,True,False,True,False,True,{},deterministic_execution
+approval_present,NO_TOOLS,True,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+approval_absent,ENFORCED_CONTRACT,False,True,True,False,False,{},deterministic_execution
+approval_absent,UNGUARDED_TOOL,False,True,False,True,False,{'fixture_write': 'committed'},deterministic_execution
+approval_absent,REFUSE_ONLY_TOOL,False,True,True,False,False,{},deterministic_execution
+approval_absent,NO_TOOLS,False,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+read_only_read,ENFORCED_CONTRACT,True,False,False,False,False,{'read_result': 'public-fixture'},deterministic_execution
+read_only_read,UNGUARDED_TOOL,True,False,False,False,False,{'read_result': 'public-fixture'},deterministic_execution
+read_only_read,REFUSE_ONLY_TOOL,True,False,True,False,True,{},deterministic_execution
+read_only_read,NO_TOOLS,True,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+read_only_write,ENFORCED_CONTRACT,False,True,True,False,False,{},deterministic_execution
+read_only_write,UNGUARDED_TOOL,False,True,False,True,False,{'fixture_write': 'committed'},deterministic_execution
+read_only_write,REFUSE_ONLY_TOOL,False,True,True,False,False,{},deterministic_execution
+read_only_write,NO_TOOLS,False,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+approval_revoked,ENFORCED_CONTRACT,False,True,True,False,False,{},deterministic_execution
+approval_revoked,UNGUARDED_TOOL,False,True,False,True,False,{'fixture_write': 'committed'},deterministic_execution
+approval_revoked,REFUSE_ONLY_TOOL,False,True,True,False,False,{},deterministic_execution
+approval_revoked,NO_TOOLS,False,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
+policy_changed,ENFORCED_CONTRACT,False,True,True,False,False,{},deterministic_execution
+policy_changed,UNGUARDED_TOOL,False,True,False,True,False,{'read_result': 'public-fixture'},deterministic_execution
+policy_changed,REFUSE_ONLY_TOOL,False,True,True,False,False,{},deterministic_execution
+policy_changed,NO_TOOLS,False,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,,deterministic_execution
