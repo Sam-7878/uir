@@ -1,0 +1,8 @@
+{
+  "QA_sha256": "584779a857eb5d87fca5438bed46ea1e5e5dc36c8078e7314aac55137a15578a",
+  "completion_report_sha256": "9281396d54dc5fe0da904e3b82abed92a5d2b3ae6b9b3c11a0334aa24f0fb8a2",
+  "final_archive": "S_STAGE_REVIEW_PACKAGE_FINAL.zip",
+  "full_count_sha256": "46b3a110a943387cb57f9fa2ae8c7fc11de48b8b92d4aa6acd14fe7d6fbce49f",
+  "no_archive_replacement": true,
+  "receipt_sha256": "47c51dce074bbdccef49381ac1d4ae7499801657640ae359439834b08c397ef5"
+}

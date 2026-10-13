@@ -1,0 +1,144 @@
+{
+  "release": "mdpi_revision_2026_10_11",
+  "D1": {
+    "N": 600,
+    "raw_json_valid": 596,
+    "raw_schema_valid": 596
+  },
+  "HaluEval": [
+    {
+      "model": "Phi-3.5",
+      "pipeline": "C1",
+      "N": 200,
+      "n_raw_correct": 160,
+      "n_contract_valid": 194,
+      "n_intersection": 160,
+      "n_e2e_correct": 160,
+      "n_raw_label_missing": 6,
+      "raw_semantic_accuracy": 0.8,
+      "contract_validity": 0.97,
+      "accepted_e2e_accuracy": 0.8,
+      "intersection_lower_bound": 154,
+      "e2e_definition": "contract_valid AND final_correct"
+    },
+    {
+      "model": "Phi-3.5",
+      "pipeline": "C8",
+      "N": 200,
+      "n_raw_correct": 39,
+      "n_contract_valid": 73,
+      "n_intersection": 12,
+      "n_e2e_correct": 12,
+      "n_raw_label_missing": 18,
+      "raw_semantic_accuracy": 0.195,
+      "contract_validity": 0.365,
+      "accepted_e2e_accuracy": 0.06,
+      "intersection_lower_bound": 0,
+      "e2e_definition": "contract_valid AND final_correct"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "pipeline": "C1",
+      "N": 200,
+      "n_raw_correct": 123,
+      "n_contract_valid": 200,
+      "n_intersection": 123,
+      "n_e2e_correct": 123,
+      "n_raw_label_missing": 0,
+      "raw_semantic_accuracy": 0.615,
+      "contract_validity": 1.0,
+      "accepted_e2e_accuracy": 0.615,
+      "intersection_lower_bound": 123,
+      "e2e_definition": "contract_valid AND final_correct"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "pipeline": "C8",
+      "N": 200,
+      "n_raw_correct": 0,
+      "n_contract_valid": 0,
+      "n_intersection": 0,
+      "n_e2e_correct": 0,
+      "n_raw_label_missing": 200,
+      "raw_semantic_accuracy": 0.0,
+      "contract_validity": 0.0,
+      "accepted_e2e_accuracy": 0.0,
+      "intersection_lower_bound": 0,
+      "e2e_definition": "contract_valid AND final_correct"
+    }
+  ]
+}
+Offline evidence completion written to /tmp/uir-next-final.GXjWpo/checkout/reproduced-offline
+
+--- Fresh raw-capture replay ---
+{"matched_case_results.csv": true, "matched_summary.csv": true}
+[
+  {
+    "model": "Phi-3.5",
+    "condition": "C1_NATIVE_ANSWER",
+    "N": 200,
+    "N_correct": 4,
+    "accuracy": 0.02,
+    "wilson95_low": 0.0078044264163494685,
+    "wilson95_high": 0.050287086905826436,
+    "N_semantic_literal_match": 4,
+    "N_missing": 108,
+    "N_finished": 195,
+    "N_strict_json": 0,
+    "N_contract_rejected": 0,
+    "unsupported_claims": "NOT_MEASURED",
+    "evidence_kind": "fresh_model_inference",
+    "output_scope": "task answer/program only"
+  },
+  {
+    "model": "Phi-3.5",
+    "condition": "C8_ARITHMETIC_CONTRACT",
+    "N": 200,
+    "N_correct": 0,
+    "accuracy": 0.0,
+    "wilson95_low": 0.0,
+    "wilson95_high": 0.018845326377266575,
+    "N_semantic_literal_match": 0,
+    "N_missing": 0,
+    "N_finished": 200,
+    "N_strict_json": 200,
+    "N_contract_rejected": 200,
+    "unsupported_claims": "NOT_MEASURED",
+    "evidence_kind": "fresh_model_inference",
+    "output_scope": "task answer/program only"
+  },
+  {
+    "model": "Qwen3-1.7B",
+    "condition": "C1_NATIVE_ANSWER",
+    "N": 200,
+    "N_correct": 1,
+    "accuracy": 0.005,
+    "wilson95_low": 0.0008831687156009797,
+    "wilson95_high": 0.02777370439789293,
+    "N_semantic_literal_match": 1,
+    "N_missing": 138,
+    "N_finished": 199,
+    "N_strict_json": 0,
+    "N_contract_rejected": 0,
+    "unsupported_claims": "NOT_MEASURED",
+    "evidence_kind": "fresh_model_inference",
+    "output_scope": "task answer/program only"
+  },
+  {
+    "model": "Qwen3-1.7B",
+    "condition": "C8_ARITHMETIC_CONTRACT",
+    "N": 200,
+    "N_correct": 0,
+    "accuracy": 0.0,
+    "wilson95_low": 0.0,
+    "wilson95_high": 0.018845326377266575,
+    "N_semantic_literal_match": 0,
+    "N_missing": 6,
+    "N_finished": 194,
+    "N_strict_json": 194,
+    "N_contract_rejected": 198,
+    "unsupported_claims": "NOT_MEASURED",
+    "evidence_kind": "fresh_model_inference",
+    "output_scope": "task answer/program only"
+  }
+]

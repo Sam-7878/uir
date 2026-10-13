@@ -1,0 +1,13 @@
+Obtaining file:///tmp/uir-s-final-release-tph3otks/checkout
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: uir-research
+  Building editable for uir-research (pyproject.toml): started
+  Building editable for uir-research (pyproject.toml): finished with status 'done'
+  Created wheel for uir-research: filename=uir_research-0.2.0-0.editable-py3-none-any.whl size=1460 sha256=ac50ccb580261f4376d4901c42bd4d622c01bae23751d2a7c78e48c9d6b92e89
+  Stored in directory: /tmp/pip-ephem-wheel-cache-vb82f74_/wheels/1d/36/45/f4c44a49d68a999fdfb53f0ac4b1b31c4e8e5aafcf2e6c153f
+Successfully built uir-research
+Installing collected packages: uir-research
+Successfully installed uir-research-0.2.0

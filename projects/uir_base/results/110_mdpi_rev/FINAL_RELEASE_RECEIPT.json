@@ -1,0 +1,34 @@
+{
+  "archive": "docs/work_reports/uir_base/110_mdpi_rev/uir_next_source_evidence_v3.zip",
+  "archive_sha256": "aea0551d1b7e14cc98f5e8cfd32694cb9c1fcac25a700dee284c6d3c6814da76",
+  "clean_room_log_sha256": "6ded5a0060c7533e38463b7d179a8599a1f94fa718bdbbc5fd85444dedfd20e1",
+  "clean_room_report": "docs/work_reports/uir_base/110_mdpi_rev/clean_room_report.json",
+  "clean_room_report_sha256": "73983b0181123514099af41c2019eb59f571a738044b9c080a28ff97eaa3d6a5",
+  "configured_tests": 242,
+  "gates": {
+    "archive_sha256": "aea0551d1b7e14cc98f5e8cfd32694cb9c1fcac25a700dee284c6d3c6814da76",
+    "blocking_reasons": [
+      "N05 representation-layer comparison incomplete and output schema/scorer mismatch",
+      "N07 assessors remain unresolved, not human semantic gold",
+      "N09 strict adapter/DSL/unit effects confound reasoning attribution",
+      "N12 full MDPI source/template/narrative numeric/PDF review incomplete",
+      "Actual author/institution declarations and final journal/indexing/APC checks pending"
+    ],
+    "gates": {
+      "EXPORT_INTEGRITY_PASS": "PASS",
+      "MANUSCRIPT_READY": "BLOCKED",
+      "REPRODUCIBLE_EVALUATION_PASS": "PASS_OFFLINE_CAPTURE_REPLAY_ONLY",
+      "SEMANTIC_SCOPE_VALIDATED": "PARTIAL_RESTRICTED_CONFORMANCE_ONLY",
+      "SUBMISSION_READY": "BLOCKED"
+    },
+    "human_validation": false,
+    "independent_human_reproduction": false,
+    "original_W08": "NOT_SATISFIED",
+    "status": "BLOCKED_FOR_SUBMISSION",
+    "study_route": "B_AI_ONLY"
+  },
+  "model_inference_calls_in_reproduction": 0,
+  "receipt_inside_archive": false,
+  "release_index_sha256": "6937f64317abb11192e26a8ee022ff4c398fed30e91e7abb5057cb08bfb5f25e",
+  "status": "VERIFIED_TECHNICAL_EVIDENCE_PARTIAL_SCIENTIFIC_COMPLETION"
+}

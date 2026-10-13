@@ -1,0 +1,152 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.24
+   Compiling autocfg v1.5.1
+   Compiling num-traits v0.2.19
+   Compiling syn v3.0.4
+   Compiling syn v2.0.119
+   Compiling synstructure v0.13.2
+   Compiling serde_core v1.0.229
+   Compiling zerofrom-derive v0.1.7
+   Compiling zerofrom v0.1.8
+   Compiling yoke-derive v0.8.2
+   Compiling stable_deref_trait v1.2.1
+   Compiling serde v1.0.229
+   Compiling yoke v0.8.3
+   Compiling serde_derive v1.0.229
+   Compiling version_check v0.9.5
+   Compiling zerovec-derive v0.11.6
+   Compiling zerovec v0.11.8
+   Compiling displaydoc v0.2.7
+   Compiling memchr v2.8.3
+   Compiling zmij v1.0.23
+   Compiling libc v0.2.189
+   Compiling tinystr v0.8.4
+   Compiling litemap v0.8.3
+   Compiling cfg-if v1.0.4
+   Compiling writeable v0.6.4
+   Compiling serde_json v1.0.151
+   Compiling smallvec v1.15.2
+   Compiling icu_locale_core v2.3.0
+   Compiling zerotrie v0.2.5
+   Compiling potential_utf v0.1.6
+   Compiling generic-array v0.14.7
+   Compiling num-integer v0.1.47
+   Compiling itoa v1.0.18
+   Compiling icu_normalizer_data v2.3.0
+   Compiling icu_properties_data v2.3.0
+   Compiling utf8_iter v1.0.4
+   Compiling icu_collections v2.3.0
+   Compiling icu_provider v2.3.1
+   Compiling typenum v1.20.1
+   Compiling parking_lot_core v0.9.12
+   Compiling ref-cast v1.0.27
+   Compiling getrandom v0.3.4
+   Compiling zerocopy v0.8.56
+   Compiling num-bigint v0.4.8
+   Compiling aho-corasick v1.1.5
+   Compiling ahash v0.8.12
+   Compiling ref-cast-impl v1.0.27
+   Compiling scopeguard v1.2.0
+   Compiling regex-syntax v0.8.11
+   Compiling lock_api v0.4.14
+   Compiling num-rational v0.4.2
+   Compiling icu_properties v2.3.0
+   Compiling regex-automata v0.4.18
+   Compiling icu_normalizer v2.3.0
+   Compiling num-iter v0.1.46
+   Compiling num-complex v0.4.6
+   Compiling bit-vec v0.8.0
+   Compiling borrow-or-share v0.2.4
+   Compiling once_cell v1.21.4
+   Compiling fluent-uri v0.3.2
+   Compiling bit-set v0.8.0
+   Compiling num v0.4.3
+   Compiling parking_lot v0.12.5
+   Compiling idna_adapter v1.2.2
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling uuid v1.25.0
+   Compiling percent-encoding v2.3.2
+   Compiling outref v0.5.2
+   Compiling thiserror v1.0.69
+   Compiling lazy_static v1.5.0
+   Compiling vsimd v0.8.0
+   Compiling fraction v0.15.4
+   Compiling uuid-simd v0.8.0
+   Compiling referencing v0.33.0
+   Compiling digest v0.10.7
+   Compiling idna v1.1.0
+   Compiling fancy-regex v0.16.2
+   Compiling regex v1.13.1
+   Compiling email_address v0.2.9
+   Compiling thiserror-impl v1.0.69
+   Compiling num-cmp v0.1.0
+   Compiling bytecount v0.6.9
+   Compiling cpufeatures v0.2.17
+   Compiling base64 v0.22.1
+   Compiling sha2 v0.10.9
+   Compiling jsonschema v0.33.0
+   Compiling hex v0.4.3
+   Compiling iana-time-zone v0.1.65
+   Compiling chrono v0.4.45
+   Compiling poa-protocol v0.1.0 (/tmp/uir-s-final-release-3qigl2np/checkout/crates/poa-protocol)
+   Compiling poa-core v0.1.0 (/tmp/uir-s-final-release-3qigl2np/checkout/crates/poa-core)
+   Compiling anyhow v1.0.104
+   Compiling poa-uir v0.1.0 (/tmp/uir-s-final-release-3qigl2np/checkout/crates/poa-uir)
+error: couldn't read `crates/poa-protocol/tests/../../../protocol/schema/poa-protocol-v1.schema.json`: No such file or directory (os error 2)
+  --> crates/poa-protocol/tests/protocol.rs:21:26
+   |
+21 |       serde_json::from_str(include_str!(
+   |  __________________________^
+22 | |         "../../../protocol/schema/poa-protocol-v1.schema.json"
+23 | |     ))
+   | |_____^
+
+error: couldn't read `crates/poa-protocol/tests/../../../protocol/base/hete.base.verifier.json`: No such file or directory (os error 2)
+  --> crates/poa-protocol/tests/protocol.rs:27:26
+   |
+27 |       serde_json::from_str(include_str!(
+   |  __________________________^
+28 | |         "../../../protocol/base/hete.base.verifier.json"
+29 | |     ))
+   | |_____^
+
+error: couldn't read `crates/poa-protocol/tests/../../../protocol/examples/hete.verifier.payment.json`: No such file or directory (os error 2)
+  --> crates/poa-protocol/tests/protocol.rs:33:26
+   |
+33 |       serde_json::from_str(include_str!(
+   |  __________________________^
+34 | |         "../../../protocol/examples/hete.verifier.payment.json"
+35 | |     ))
+   | |_____^
+
+error: couldn't read `crates/poa-protocol/tests/../../../protocol/fixtures/valid/empty-unveil.json`: No such file or directory (os error 2)
+  --> crates/poa-protocol/tests/protocol.rs:39:26
+   |
+39 |       serde_json::from_str(include_str!(
+   |  __________________________^
+40 | |         "../../../protocol/fixtures/valid/empty-unveil.json"
+41 | |     ))
+   | |_____^
+
+error: couldn't read `crates/poa-protocol/tests/../../../protocol/examples/hete.verifier.payment.effective.canonical.json`: No such file or directory (os error 2)
+   --> crates/poa-protocol/tests/protocol.rs:274:9
+    |
+274 |         include_bytes!("../../../protocol/examples/hete.verifier.payment.effective.canonical.json")
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: couldn't read `crates/poa-protocol/tests/../../../protocol/examples/hete.verifier.payment.effective.sha256`: No such file or directory (os error 2)
+   --> crates/poa-protocol/tests/protocol.rs:280:9
+    |
+280 |         include_str!("../../../protocol/examples/hete.verifier.payment.effective.sha256").trim()
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: couldn't read `crates/poa-protocol/tests/../../../protocol/examples/hete.verifier.payment.effective.sha256`: No such file or directory (os error 2)
+   --> crates/poa-protocol/tests/protocol.rs:295:9
+    |
+295 |         include_str!("../../../protocol/examples/hete.verifier.payment.effective.sha256").trim()
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: could not compile `poa-protocol` (test "protocol") due to 7 previous errors
+warning: build failed, waiting for other jobs to finish...

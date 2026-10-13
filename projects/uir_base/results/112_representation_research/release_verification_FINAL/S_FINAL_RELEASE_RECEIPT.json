@@ -1,0 +1,13 @@
+{
+  "archive": "docs/work_reports/uir_base/112_representation_research/S_STAGE_REVIEW_PACKAGE_FINAL.zip",
+  "archive_rights": "PRIVATE_REVIEW_ONLY",
+  "archive_sha256": "9b0d5741ff13b11e3a38766c1c88ab5e7fff88762eee79b1d4a1d93dc91da6c5",
+  "created_at_utc": "2026-10-13T06:40:20.126904+00:00",
+  "gates_sha256": "6fa2ce36809b0cb8407a22ed7c647e712fb847b2f51802972b695b04290e863d",
+  "main_PDF_sha256": "929a3df1df6f303a27128f531d4f50480374c6fea1e4abbb2c1eec804bcd901e",
+  "main_tex_sha256": "f193629a4db622c7cc50f27360559df8b6835914dd70a97dda8de956c09cba58",
+  "receipt_inside_archive": false,
+  "replay_sha256": "c242946535792763f466e8e3db97f7594b32cf44f76104db814b065512938fad",
+  "science_manifest_sha256": "75380331fe34e5c6fede2af1f54931a3e1e79b24f04b34cb0e31ebbc5b4f3e3f",
+  "submission_ready": false
+}

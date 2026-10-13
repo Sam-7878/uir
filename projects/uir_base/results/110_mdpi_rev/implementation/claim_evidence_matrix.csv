@@ -1,0 +1,9 @@
+claim,status,evidence,limitation
+Restricted bilingual CNL equivalence/conditions,SUPPORTED_CONFORMANCE_ONLY,projects/uir_base/results/mdpi_next_2026_10_11_v2/frontend_case_results.jsonl,Not general free-NL semantic accuracy.
+Registry-relative structured support,SUPPORTED_SCOPED,projects/uir_base/results/mdpi_next_2026_10_11_v2/whole_output_assessment.csv,Not whole-prose factuality or correct underlying registries.
+SLM necessary for useful trusted-slot output,NOT_SUPPORTED,projects/uir_base/results/mdpi_next_2026_10_11_v2/historical_reanalysis/internal_utility_recomputed.csv,Control has 48 more complete cases at equal coverage.
+Typed IR improves accuracy over equivalent no-IR validation,NOT_ESTABLISHED,projects/uir_base/results/mdpi_next_2026_10_11_v2/fresh_matched_offline_replay/verification.json,Representation comparison absent; output schema/scorer confound.
+Two AI reviewers replace independent human gold,NOT_CLAIMED,projects/uir_base/results/mdpi_next_2026_10_11_v2/ai_review_v2/holdout_summary.json,Supplementary only; original W08 unmet.
+Superior generator reasoning on new FinQA,NOT_ESTABLISHED,projects/uir_base/results/mdpi_next_2026_10_11_v2/finqa_holdout_v2/posthoc_diagnostic_summary.json,Extraction/units/DSL confounded.
+Finite sandbox enforcement,SUPPORTED_FINITE_CONFORMANCE,projects/uir_base/results/mdpi_next_2026_10_11_v2/policy_conformance/action_summary.csv,Not deployed agent or host/registry-compromise security.
+Offline raw-to-metric reconstruction,SUPPORTED_SCOPED,projects/uir_base/results/mdpi_next_2026_10_11_v2/fresh_independent_replay/verification.json,Not model rerun or independent human validation.

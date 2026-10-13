@@ -1,0 +1,15 @@
+{
+  "JUnit_conversion_not_independent_rerun": true,
+  "Python": {
+    "errors": "0",
+    "failures": "0",
+    "hostname": "HS-4070",
+    "name": "pytest",
+    "skipped": "0",
+    "tests": "328",
+    "time": "1.713",
+    "timestamp": "2026-10-13T15:27:22.001156+09:00"
+  },
+  "Rust_log_sha256": "0b2c1da38e02ed3d28001cbfab78a5420eb404d80cb390fc2bb35623bb81fbf1",
+  "Rust_tests_from_actual_stdout": 64
+}

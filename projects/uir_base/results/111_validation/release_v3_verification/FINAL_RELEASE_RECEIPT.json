@@ -1,0 +1,14 @@
+{
+  "Python_passed": 296,
+  "Rust_passed": 62,
+  "archive": "docs/work_reports/uir_base/111_validation/uir_repr_private_review_release_v3.zip",
+  "archive_sha256": "c9adb265258cf0b44367bfe76cc11ad116467d24498fe6947dcdb0dc6f0bc9ab",
+  "gates_sha256": "d1db5a951fa569213df107668bc230c83b97e4db3f03857e85500104e46f3a6e",
+  "inference_calls_in_replay": 0,
+  "main_pdf_sha256": "4f8a2765dc69ec2277208119a18289a9655b8df91514035db97520af0369d358",
+  "main_tex_sha256": "9c69872b9bce2c9b6e571f6564dce0cbe15c6becd7bccb05bd2d538e11d6ecf3",
+  "receipt_inside_archive": false,
+  "replay_report_sha256": "ea1990f845659ba4a88312a6312a4a42eefc0f4b66e6f14e3e531f5e862dc1d2",
+  "science_release_sha256": "7e94aafb697dd57ff7dc42e31331d1c3a36f2f426d6eafb590760d0523fb2475",
+  "scope": "PRIVATE_REVIEW_ONLY; data/code/manuscript rights not approved for public upload"
+}

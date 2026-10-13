@@ -67,6 +67,7 @@ local_storage/
 *.safetensors
 *.gguf
 *.bin
+*.whl
 *.zip
 # Manuscripts remain local; code and numerical evidence are public candidates.
 projects/*/paper/

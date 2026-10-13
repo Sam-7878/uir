@@ -1,0 +1,3 @@
+condition,lexical_parser,catalog,policy,tools,output_guard,renderer,public_shared_IR
+UIR_SHARED_TYPED,shared CNL vNext,identical non-oracle fixed catalog,identical authenticated context,read/write sandbox opportunities,same exact support validator,same deterministic bound-claim renderer,True
+SPECIALIZED_STRUCTURED_NO_SHARED_UIR,shared CNL vNext,identical non-oracle fixed catalog,identical authenticated context,read/write sandbox opportunities,same exact support validator,same deterministic bound-claim renderer,False

@@ -1,0 +1,16 @@
+{
+  "ARCHIVE_INTEGRITY": "PASS",
+  "MANUSCRIPT_READY": "BLOCKED_AUTHOR_RIGHTS_CURRENT_RULES",
+  "OFFLINE_REPRODUCTION": "PASS_SCOPED_SAME_HOST_NAMESPACE",
+  "REPRESENTATION_CLAIM_VALIDITY": "PASS_SCOPED_FINITE_ENGINEERING_ONLY",
+  "SUBMISSION_READY": "BLOCKED",
+  "actual_author_approval": false,
+  "confirmatory": "BLOCKED_NO_CONFIRMATORY_DATA",
+  "created_at_utc": "2026-10-13T06:40:08.322371+00:00",
+  "full_research_superiority": "NOT_ESTABLISHED",
+  "human_W08": "NOT_SATISFIED",
+  "institution_approval": false,
+  "live_submission_rules_certified": false,
+  "public_rights_approval": false,
+  "responsible": "Codex technical evidence; author/institution authority not delegated"
+}

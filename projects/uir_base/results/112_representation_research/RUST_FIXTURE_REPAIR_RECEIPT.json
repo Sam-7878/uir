@@ -1,0 +1,71 @@
+{
+  "cause": "S ZIP v1 standalone Rust compile failed: original protocol fixtures absent; no test weakened",
+  "original_fixtures": [
+    {
+      "path": "protocol/base/hete.base.verifier.json",
+      "sha256": "544af6019170dfafa9f2ca8e3098a16d3b587bb53b58c415824329fe22bac8b0"
+    },
+    {
+      "path": "protocol/examples/hete.verifier.payment.effective.canonical.json",
+      "sha256": "21a32a009f9e0cdc605215c6d2d688c6c8d7ea6d1c3ce4115464716fb27756ad"
+    },
+    {
+      "path": "protocol/examples/hete.verifier.payment.effective.sha256",
+      "sha256": "55e80e3efb7df2b81afc9e09d556450b36508028169585f3e18e82cb872fc625"
+    },
+    {
+      "path": "protocol/examples/hete.verifier.payment.json",
+      "sha256": "2f6a2ffac5aba75089b25b7ee2babe6fe09ff3a0b2493df3d46c39c053bf18e8"
+    },
+    {
+      "path": "protocol/examples/hete.verifier.pbea-eval.json",
+      "sha256": "08896e390d69f762be1e62d70b1eaf56de19a60cc01c88b8766a9ea894a5f5cd"
+    },
+    {
+      "path": "protocol/schema/poa-protocol-v1.schema.json",
+      "sha256": "c51aa3c84d2ded586f6eaa4f17643feea518b63c78e90377c9ba8f8534a161d2"
+    },
+    {
+      "path": "protocol/schemas/uir.schema.json",
+      "sha256": "50af7f3278cc1b04a672705b396ab8cbae86f2de8c0a718b888f8d3c49ede3ed"
+    },
+    {
+      "path": "protocol/fixtures/electronic_warrant/README.md",
+      "sha256": "d2e53a72bc37f62308c620240099d5443fd9fbf7991fb0f4d116a60e3cedc8ff"
+    },
+    {
+      "path": "protocol/fixtures/invalid/kernel-resource-missing.json",
+      "sha256": "dff5d12e0ad20caad618ad6c2db7f3d31523375df1da27c6e292aee9052a4762"
+    },
+    {
+      "path": "protocol/fixtures/invalid/missing-failure-policy.json",
+      "sha256": "8b7a0371b6333772228095919a55d228518c5f94d8d9e8c70b5acc12e373c0a2"
+    },
+    {
+      "path": "protocol/fixtures/invalid/path-traversal.json",
+      "sha256": "5244d0b226af9d18423f039d05a03a976f9353969c56c85f17282d4d0fecb4d8"
+    },
+    {
+      "path": "protocol/fixtures/invalid/unknown-field.json",
+      "sha256": "582495a6ef0ab8a28562c2eab4c3692eca211bbcf0f6c63e20262897830cdf6c"
+    },
+    {
+      "path": "protocol/fixtures/valid/empty-unveil.json",
+      "sha256": "f5d17e568e90861f340b2b9dc652899060b57871b7e9658e511e96044f9aa1b4"
+    },
+    {
+      "path": "protocol/examples/electronic_warrant/korea-authority-policy.json",
+      "sha256": "893e6535acf2c20db470f9d6f8ae413f932463bf138caf63f16d56b3cf933da5"
+    },
+    {
+      "path": "protocol/examples/uir/en_verify.json",
+      "sha256": "329fed9ffa4f870d6a19845d5347d88f0ef44ea237850ad7aed17e42b72028be"
+    },
+    {
+      "path": "protocol/examples/uir/ko_verify.json",
+      "sha256": "c772502e7d3e246c4c88a5dc6248d0fbbdcd35f7255755b4556fc87e51a06a9e"
+    }
+  ],
+  "preserved_failure_log": "release_verification/standalone_rust.log",
+  "superseded_archive_sha256": "e3f558bcab765190c33fe17c96fc74323ca4e0f73d765be5d0ba89029bb80347"
+}

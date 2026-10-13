@@ -1,0 +1,22 @@
+{
+  "archive_sha256": "aea0551d1b7e14cc98f5e8cfd32694cb9c1fcac25a700dee284c6d3c6814da76",
+  "blocking_reasons": [
+    "N05 representation-layer comparison incomplete and output schema/scorer mismatch",
+    "N07 assessors remain unresolved, not human semantic gold",
+    "N09 strict adapter/DSL/unit effects confound reasoning attribution",
+    "N12 full MDPI source/template/narrative numeric/PDF review incomplete",
+    "Actual author/institution declarations and final journal/indexing/APC checks pending"
+  ],
+  "gates": {
+    "EXPORT_INTEGRITY_PASS": "PASS",
+    "MANUSCRIPT_READY": "BLOCKED",
+    "REPRODUCIBLE_EVALUATION_PASS": "PASS_OFFLINE_CAPTURE_REPLAY_ONLY",
+    "SEMANTIC_SCOPE_VALIDATED": "PARTIAL_RESTRICTED_CONFORMANCE_ONLY",
+    "SUBMISSION_READY": "BLOCKED"
+  },
+  "human_validation": false,
+  "independent_human_reproduction": false,
+  "original_W08": "NOT_SATISFIED",
+  "status": "BLOCKED_FOR_SUBMISSION",
+  "study_route": "B_AI_ONLY"
+}

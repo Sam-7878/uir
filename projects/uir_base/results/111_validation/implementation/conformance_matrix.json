@@ -1,0 +1,16 @@
+{
+  "N_backend_pairs": 192,
+  "N_minimum_pairs": 12,
+  "backends": [
+    "reference candidate",
+    "seven-field candidate"
+  ],
+  "human_semantic_validation": false,
+  "independent_backend_verifier": false,
+  "raw_frontends": [
+    "restricted KO CNL",
+    "restricted EN CNL",
+    "authenticated API slots"
+  ],
+  "shared_verifier": true
+}

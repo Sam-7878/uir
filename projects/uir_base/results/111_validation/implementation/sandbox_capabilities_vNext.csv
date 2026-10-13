@@ -1,0 +1,6 @@
+condition,tool_available,read_write_tools,approval_rule,difference
+UIR_ENFORCED,True,same temporary public/private files,same trusted owner policy and nonce-use check,"unguarded/refuse/no-tools are diagnostic controls, not representation ablation"
+SPECIALIZED_EQUIVALENT_ENFORCED,True,same temporary public/private files,same trusted owner policy and nonce-use check,"unguarded/refuse/no-tools are diagnostic controls, not representation ablation"
+UNGUARDED_DIAGNOSTIC,True,same temporary public/private files,same trusted owner policy and nonce-use check,"unguarded/refuse/no-tools are diagnostic controls, not representation ablation"
+REFUSE_ONLY,True,same temporary public/private files,same trusted owner policy and nonce-use check,"unguarded/refuse/no-tools are diagnostic controls, not representation ablation"
+NO_TOOLS,False,same temporary public/private files,same trusted owner policy and nonce-use check,"unguarded/refuse/no-tools are diagnostic controls, not representation ablation"

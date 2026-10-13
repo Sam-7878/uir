@@ -1,0 +1,23 @@
+{
+  "PDF_sha256": "929a3df1df6f303a27128f531d4f50480374c6fea1e4abbb2c1eec804bcd901e",
+  "abstract_words": 178,
+  "all_pages_visually_inspected": true,
+  "author_approval": false,
+  "created_at_utc": "2026-10-13T06:44:06.283872+00:00",
+  "final_renderings": {
+    "whole-final-01.jpg": "19d200c48163f43d81e20acbc39f717023f797ad10851e11367e53648268ba49",
+    "whole-final-02.jpg": "5a7a4a812dece46929d162aba453b1ce324981c980ea96a0ae7a5670305097c8",
+    "whole-final-03.jpg": "d019fe1b96d6dc19d4f26d85dbdd4c0b047c005db36f539fcf078b3740fdb18f",
+    "whole-final-04.jpg": "b960848b38f51852fb3a07a3f192daa43660cbeeaa355de4cb075b79ee35effb",
+    "whole-final-05.jpg": "d3b0d8b2dc2706277daad6216ec2e6f563071b7c84c4c6f2b365ae6b96a5361c",
+    "whole-final-06.jpg": "2769df03905bcecde42dc065bc1078e03632f1b76fc4abedeea43f47aa80d7de",
+    "whole-final-07.jpg": "477b857394c4d0eefb5f9849c77da46c7bcbdd3a005af40bd14fbc752a2f7fc4",
+    "whole-final-08.jpg": "b44a00e9ff84b7fb8ae89ec3519e0faa65cf4149e35bce864b65cdcea4f2b1c6",
+    "whole-final-09.jpg": "240e8850401969aa8550458415a306a7129efe1bea56d9d318800d52ae366dd4",
+    "whole-final-10.jpg": "55c352bb4dad3f2c7a81a83499678f824518e04a14ba8b0b3916002f73f476f5"
+  },
+  "main_tex_sha256": "f193629a4db622c7cc50f27360559df8b6835914dd70a97dda8de956c09cba58",
+  "no_overfull_or_undefined": true,
+  "pages": 10,
+  "supersedes": "pre-whole-suite paper_final_QA_S.json, not the scientific data/protocol"
+}

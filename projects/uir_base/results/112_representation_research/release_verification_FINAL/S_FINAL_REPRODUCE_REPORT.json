@@ -1,0 +1,125 @@
+{
+  "CPU_replay": {
+    "command": [
+      "unshare",
+      "-Urnm",
+      "--fork",
+      "/bin/bash",
+      "-c",
+      "set -eu\nmount --make-rprivate /\nmount -t tmpfs -o size=1m uir-s-source-hidden /mnt/d/_Work/goat_bank\ntest ! -e /mnt/d/_Work/goat_bank/uir/Cargo.toml\ncd /tmp/uir-s-final-release-tph3otks/checkout\nPYTHONPATH=src:. /tmp/uir-s-final-release-tph3otks/venv/bin/python -c 'from pathlib import Path;import json;from projects.uir_base.validation.release import reconstruct as r;from projects.uir_base.representation_research.replay import reconstruct as s;print(json.dumps({'\"'\"'R'\"'\"':r(Path.cwd()),'\"'\"'S'\"'\"':s(Path('\"'\"'/tmp/uir-s-final-release-tph3otks/checkout/projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z'\"'\"'))}))'"
+    ],
+    "cwd": "/tmp/uir-s-final-release-tph3otks",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification_FINAL/CPU_raw_replay.log",
+    "log_sha256": "15891e3d652f54d2d76796ca96b2deb531b18b8862d7a4031f0382db45770d2d"
+  },
+  "GPU_model_calls": 0,
+  "N_manifest_files": 5908,
+  "Python_scope": "entire repository collection: prior296 plus32new S tests; exact-source closure included",
+  "archive_sha256": "9b0d5741ff13b11e3a38766c1c88ab5e7fff88762eee79b1d4a1d93dc91da6c5",
+  "build_install": {
+    "command": [
+      "/tmp/uir-s-final-release-tph3otks/venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--no-deps",
+      "--require-hashes",
+      "--find-links",
+      "/tmp/uir-s-final-release-tph3otks/checkout/projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/build_wheelhouse",
+      "-r",
+      "/tmp/uir-s-final-release-tph3otks/checkout/projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/build_requirements.lock"
+    ],
+    "cwd": "/tmp/uir-s-final-release-tph3otks",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification_FINAL/build_install.log",
+    "log_sha256": "f4b7a1627eea8f12d73bdbb61ec4fb786361f469a4e34258137def6572254f07"
+  },
+  "created_at_utc": "2026-10-13T06:27:41.258726+00:00",
+  "editable_install": {
+    "command": [
+      "/tmp/uir-s-final-release-tph3otks/venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--no-build-isolation",
+      "--no-deps",
+      "-e",
+      "/tmp/uir-s-final-release-tph3otks/checkout"
+    ],
+    "cwd": "/tmp/uir-s-final-release-tph3otks",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification_FINAL/editable_install.log",
+    "log_sha256": "1a7335ea3325743a0cfaca659f2f40682e577282eb777c277bd1a2b995c1d6bc"
+  },
+  "independent_human_replication": false,
+  "install": {
+    "command": [
+      "/tmp/uir-s-final-release-tph3otks/venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--no-deps",
+      "--require-hashes",
+      "--find-links",
+      "/tmp/uir-s-final-release-tph3otks/checkout/projects/uir_base/results/uir_repr_validation_2026_10_12_v1/wheelhouse",
+      "-r",
+      "/tmp/uir-s-final-release-tph3otks/checkout/projects/uir_base/results/uir_repr_validation_2026_10_12_v1/requirements.lock"
+    ],
+    "cwd": "/tmp/uir-s-final-release-tph3otks",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification_FINAL/install.log",
+    "log_sha256": "ba7f9aa0b2adc3edd22ea5999cdcb5f348733b5143fa9df9fe118317d2977094"
+  },
+  "namespace": "actual user/mount/network isolation",
+  "network_replay": "unshare network namespace plus pip --no-index/cargo --offline",
+  "original_workspace_hidden": true,
+  "python_tests": {
+    "command": [
+      "unshare",
+      "-Urnm",
+      "--fork",
+      "/bin/bash",
+      "-c",
+      "set -eu\nmount --make-rprivate /\nmount -t tmpfs -o size=1m uir-s-source-hidden /mnt/d/_Work/goat_bank\ntest ! -e /mnt/d/_Work/goat_bank/uir/Cargo.toml\ncd /tmp/uir-s-final-release-tph3otks/checkout\nPYTHONPATH=src:. /tmp/uir-s-final-release-tph3otks/venv/bin/python -m pytest -q --junitxml=/tmp/uir-s-final-release-tph3otks/standalone_python.xml"
+    ],
+    "cwd": "/tmp/uir-s-final-release-tph3otks",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification_FINAL/standalone_python.log",
+    "log_sha256": "babffe9f9aba1caa88b9e3bb306f5582c4bf54c5eaf1f4a472ae48cb86480af1"
+  },
+  "rust_tests": {
+    "command": [
+      "unshare",
+      "-Urnm",
+      "--fork",
+      "/bin/bash",
+      "-c",
+      "set -eu\nmount --make-rprivate /\nmount -t tmpfs -o size=1m uir-s-source-hidden /mnt/d/_Work/goat_bank\ntest ! -e /mnt/d/_Work/goat_bank/uir/Cargo.toml\ncd /tmp/uir-s-final-release-tph3otks/checkout\n/home/sam/.cargo/bin/cargo test --offline --locked --workspace --all-features"
+    ],
+    "cwd": "/tmp/uir-s-final-release-tph3otks",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification_FINAL/standalone_rust.log",
+    "log_sha256": "0b2c1da38e02ed3d28001cbfab78a5420eb404d80cb390fc2bb35623bb81fbf1"
+  },
+  "same_physical_host": true,
+  "scratch": "/tmp/uir-s-final-release-tph3otks",
+  "shared_interpreter_toolchain_provisioning": true,
+  "status": "PASS_SCOPED",
+  "venv": {
+    "command": [
+      "/mnt/d/_Work/goat_bank/.venv_cuda/bin/python",
+      "-m",
+      "venv",
+      "--copies",
+      "/tmp/uir-s-final-release-tph3otks/venv"
+    ],
+    "cwd": "/tmp/uir-s-final-release-tph3otks",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification_FINAL/venv.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

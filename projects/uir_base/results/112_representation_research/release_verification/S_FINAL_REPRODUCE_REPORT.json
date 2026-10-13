@@ -1,0 +1,89 @@
+{
+  "CPU_replay": {
+    "command": [
+      "unshare",
+      "-Urnm",
+      "--fork",
+      "/bin/bash",
+      "-c",
+      "set -eu\nmount --make-rprivate /\nmount -t tmpfs -o size=1m uir-s-source-hidden /mnt/d/_Work/goat_bank\ntest ! -e /mnt/d/_Work/goat_bank/uir/Cargo.toml\ncd /tmp/uir-s-final-release-3qigl2np/checkout\nPYTHONPATH=src:. /tmp/uir-s-final-release-3qigl2np/venv/bin/python -c 'from pathlib import Path;import json;from projects.uir_base.validation.release import reconstruct as r;from projects.uir_base.representation_research.replay import reconstruct as s;print(json.dumps({'\"'\"'R'\"'\"':r(Path.cwd()),'\"'\"'S'\"'\"':s(Path('\"'\"'/tmp/uir-s-final-release-3qigl2np/checkout/projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z'\"'\"'))}))'"
+    ],
+    "cwd": "/tmp/uir-s-final-release-3qigl2np",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification/CPU_raw_replay.log",
+    "log_sha256": "fc2365cba693e925b83040326eca662acb2def142d123f9f3f580ba8b99bf444"
+  },
+  "GPU_model_calls": 0,
+  "N_manifest_files": 5620,
+  "Python_scope": "all supplied tests/uir_base; other-project165 tests not claimed standalone",
+  "archive_sha256": "e3f558bcab765190c33fe17c96fc74323ca4e0f73d765be5d0ba89029bb80347",
+  "created_at_utc": "2026-10-13T05:55:58.382339+00:00",
+  "independent_human_replication": false,
+  "install": {
+    "command": [
+      "/tmp/uir-s-final-release-3qigl2np/venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--no-deps",
+      "--require-hashes",
+      "--find-links",
+      "/tmp/uir-s-final-release-3qigl2np/checkout/projects/uir_base/results/uir_repr_validation_2026_10_12_v1/wheelhouse",
+      "-r",
+      "/tmp/uir-s-final-release-3qigl2np/checkout/projects/uir_base/results/uir_repr_validation_2026_10_12_v1/requirements.lock"
+    ],
+    "cwd": "/tmp/uir-s-final-release-3qigl2np",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification/install.log",
+    "log_sha256": "31b663e184ed987ca9d67983cd7b7b5b06d364f3907d4b60a506cbdb5dab46bc"
+  },
+  "namespace": "actual user/mount/network isolation",
+  "network_replay": "unshare network namespace plus pip --no-index/cargo --offline",
+  "original_workspace_hidden": true,
+  "python_tests": {
+    "command": [
+      "unshare",
+      "-Urnm",
+      "--fork",
+      "/bin/bash",
+      "-c",
+      "set -eu\nmount --make-rprivate /\nmount -t tmpfs -o size=1m uir-s-source-hidden /mnt/d/_Work/goat_bank\ntest ! -e /mnt/d/_Work/goat_bank/uir/Cargo.toml\ncd /tmp/uir-s-final-release-3qigl2np/checkout\nPYTHONPATH=src:. /tmp/uir-s-final-release-3qigl2np/venv/bin/python -m pytest -q tests/uir_base --junitxml=/tmp/uir-s-final-release-3qigl2np/standalone_python.xml"
+    ],
+    "cwd": "/tmp/uir-s-final-release-3qigl2np",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification/standalone_python.log",
+    "log_sha256": "f46c730f5d5edfec05283ccee2292d995467b8e6864ce89a9405e2d3474034c8"
+  },
+  "rust_tests": {
+    "command": [
+      "unshare",
+      "-Urnm",
+      "--fork",
+      "/bin/bash",
+      "-c",
+      "set -eu\nmount --make-rprivate /\nmount -t tmpfs -o size=1m uir-s-source-hidden /mnt/d/_Work/goat_bank\ntest ! -e /mnt/d/_Work/goat_bank/uir/Cargo.toml\ncd /tmp/uir-s-final-release-3qigl2np/checkout\n/home/sam/.cargo/bin/cargo test --offline --locked --workspace --all-features"
+    ],
+    "cwd": "/tmp/uir-s-final-release-3qigl2np",
+    "exit_code": 101,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification/standalone_rust.log",
+    "log_sha256": "83998e92e4e5024a5dcb6eadc080c3d10b43ddb1a6da081720edefd979f5c690"
+  },
+  "same_physical_host": true,
+  "scratch": "/tmp/uir-s-final-release-3qigl2np",
+  "shared_interpreter_toolchain_provisioning": true,
+  "status": "FAIL",
+  "venv": {
+    "command": [
+      "/mnt/d/_Work/goat_bank/.venv_cuda/bin/python",
+      "-m",
+      "venv",
+      "--copies",
+      "/tmp/uir-s-final-release-3qigl2np/venv"
+    ],
+    "cwd": "/tmp/uir-s-final-release-3qigl2np",
+    "exit_code": 0,
+    "log": "/mnt/d/_Work/goat_bank/uir/docs/work_reports/uir_base/112_representation_research/release_verification/venv.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

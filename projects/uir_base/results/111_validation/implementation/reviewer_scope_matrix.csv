@@ -1,0 +1,4 @@
+cohort,truth,accuracy,allowed_claim
+historical 120 cases / 240 responses,no independent human semantic labels,NOT_ESTABLISHED,agreement/uncertainty only
+synthetic v2 16 calibration + 16 holdout / 64 responses,executable fixture rules,synthetic rule accuracy only,not human gold
+new v3 open judgment 8 cases / 16 responses,NONE,NOT_MEASURED,agreement/uncertainty; no majority tie resolution

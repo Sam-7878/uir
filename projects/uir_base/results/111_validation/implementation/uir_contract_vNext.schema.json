@@ -1,0 +1,97 @@
+{
+  "authority_fields": [
+    "claim_type",
+    "entity_id",
+    "attribute",
+    "value",
+    "unit",
+    "period",
+    "provenance"
+  ],
+  "full_claim_candidate": {
+    "additionalProperties": false,
+    "properties": {
+      "claims": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "attribute": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "claim_type": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "entity_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "period": {
+              "minLength": 0,
+              "type": "string"
+            },
+            "provenance": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "unit": {
+              "minLength": 0,
+              "type": "string"
+            },
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "claim_type",
+            "entity_id",
+            "attribute",
+            "value",
+            "unit",
+            "period",
+            "provenance"
+          ],
+          "type": "object"
+        },
+        "maxItems": 32,
+        "type": "array"
+      },
+      "contract_digest": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      }
+    },
+    "required": [
+      "contract_digest",
+      "claims"
+    ],
+    "type": "object"
+  },
+  "numeric_unit_period_unknown": "REJECT",
+  "reference_candidate": {
+    "additionalProperties": false,
+    "properties": {
+      "contract_digest": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "fact_ids": {
+        "items": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "maxItems": 32,
+        "type": "array",
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "contract_digest",
+      "fact_ids"
+    ],
+    "type": "object"
+  },
+  "version": "uir-representation-vNext-1"
+}

@@ -1,0 +1,4 @@
+Looking in links: /tmp/uir-s-final-release-tph3otks/checkout/projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/build_wheelhouse
+Processing ./checkout/projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/build_wheelhouse/setuptools-84.0.0-py3-none-any.whl (from -r /tmp/uir-s-final-release-tph3otks/checkout/projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/build_requirements.lock (line 1))
+Installing collected packages: setuptools
+Successfully installed setuptools-84.0.0

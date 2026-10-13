@@ -1,0 +1,134 @@
+{
+  "scope": "actual new32 tests incl guard/claim/baseline/gold/authority negatives; not32 publication approvals",
+  "source_xml_sha256": "7185db3a5c03151957619686107275f6128135171e3e0c55677b829a03f9a792",
+  "tests": [
+    {
+      "name": "test_query_has_real_distractors",
+      "status": "PASS"
+    },
+    {
+      "name": "test_true_bilingual_raw_without_slots[show CIRRUS assets for 2024 in USD.]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_true_bilingual_raw_without_slots[CIRRUS\\uc758 2024\\ub144 \\uc790\\uc0b0\\uc744 USD \\ub2e8\\uc704\\ub85c \\ubcf4\\uc5ec \\uc8fc\\uc138\\uc694.]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_true_bilingual_raw_without_slots[Please show CIRRUS assets for 2024 in USD.]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_unsupported_language_clarifies[\\uadf8 \\ud68c\\uc0ac\\uc758 \\uc0c1\\ud669\\uc774 \\uc88b\\uc740\\uac00\\uc694?]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_unsupported_language_clarifies[Explain why it improved.]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_unsupported_language_clarifies[CIRRUS assets \\uc880 \\uc54c\\ub824\\uc918]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_unsupported_language_clarifies[show CIRRUS assets between 2023 and 2024 in USD.]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_negation_preserves_difference",
+      "status": "PASS"
+    },
+    {
+      "name": "test_untrusted_mutations_quarantine[digest]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_untrusted_mutations_quarantine[evidence]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_untrusted_mutations_quarantine[policy]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_untrusted_mutations_quarantine[version]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_full_visible_output_not_unchecked_prose",
+      "status": "PASS"
+    },
+    {
+      "name": "test_nonempty_safe_partial",
+      "status": "PASS"
+    },
+    {
+      "name": "test_missing_operand_removes_derived_claim",
+      "status": "PASS"
+    },
+    {
+      "name": "test_no_implicit_permission_elevation",
+      "status": "PASS"
+    },
+    {
+      "name": "test_old_replay_cannot_be_final",
+      "status": "PASS"
+    },
+    {
+      "name": "test_zip_hash_contamination",
+      "status": "PASS"
+    },
+    {
+      "name": "test_zip_members_fail_closed[names0]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_zip_members_fail_closed[names1]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_zip_members_fail_closed[names2]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_duplicate_cases_and_missing_lineage",
+      "status": "PASS"
+    },
+    {
+      "name": "test_gold_is_not_runtime_input",
+      "status": "PASS"
+    },
+    {
+      "name": "test_negative_scientific_claims[record0]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_negative_scientific_claims[record1]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_negative_scientific_claims[record2]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_negative_scientific_claims[record3]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_negative_scientific_claims[record4]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_negative_scientific_claims[record5]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_negative_scientific_claims[record6]",
+      "status": "PASS"
+    },
+    {
+      "name": "test_submission_without_real_author_is_blocked",
+      "status": "PASS"
+    }
+  ]
+}

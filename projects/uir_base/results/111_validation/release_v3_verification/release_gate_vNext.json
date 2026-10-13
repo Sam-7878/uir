@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "c9adb265258cf0b44367bfe76cc11ad116467d24498fe6947dcdb0dc6f0bc9ab",
+  "author_institution_signoff": false,
+  "blockers": [
+    "Actual author/ethics/funding/disclosure/access rights and institution confirmations absent",
+    "Current complete journal instructions/indexing/institution recognition/APC confirmation pending"
+  ],
+  "claim_scope_limits": [
+    "No verified unused family-disjoint confirmatory run; no generalization claim",
+    "No human semantic assessment; original W08 unmet, modified AI-only/conformance scope only"
+  ],
+  "created_at_utc": "2026-10-12T16:01:50.526795+00:00",
+  "gates": {
+    "ARCHIVE_INTEGRITY": "PASS",
+    "MANUSCRIPT_READY": "BLOCKED_AUTHOR_AND_CURRENT_RULES",
+    "OFFLINE_REPRODUCTION": "PASS_FRESH_VENV_SAME_HOST",
+    "REPRESENTATION_CLAIM_VALIDITY": "PASS_RESTRICTED_ENGINEERING_CONFORMANCE_ONLY",
+    "SUBMISSION_READY": "BLOCKED"
+  },
+  "human_validation": false,
+  "original_W08": "NOT_SATISFIED",
+  "status": "BLOCKED_FOR_SUBMISSION",
+  "study_route": "B_AI_ONLY",
+  "unsupported_native_prose_rate": "NOT_MEASURED",
+  "verified_family_disjoint_confirmatory_evaluation": false
+}

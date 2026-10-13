@@ -1,0 +1,10 @@
+{
+  "authoritative_report_directory": "release_verification_FINAL",
+  "final_archive_name": "S_STAGE_REVIEW_PACKAGE_FINAL.zip",
+  "full_pilot_tests": 328,
+  "primary_model_experiments_changed": false,
+  "standalone_SOURCE_closure_sha256": "a337f25260fe1936679026104d6db6850f7eaa8675b7336863dace9683573c6a",
+  "v1_failure_log_sha256": "83998e92e4e5024a5dcb6eadc080c3d10b43ddb1a6da081720edefd979f5c690",
+  "v2_scope": "163 tests, superseded for full collection",
+  "v2_sha256": "8bf2824652d2b6a3662ab8cf0bcdb763a1a1f5b8027585703771f018d03f6851"
+}

@@ -1,0 +1,1346 @@
+{
+  "files": [
+    {
+      "bytes": 34,
+      "path": "projects/uir_law/evaluation/__init__.py",
+      "sha256": "8aa2d9586a6a01f9db23d79f86a2a606045e7d44f32cdf156bf264eac49ff353"
+    },
+    {
+      "bytes": 1876,
+      "path": "projects/uir_law/evaluation/law200/CLAIM_EVIDENCE_MAP.yaml",
+      "sha256": "81dac7d94350f4e55b68192c716bc6a0328542b6fafaa95876d2be3cb5a520c4"
+    },
+    {
+      "bytes": 76,
+      "path": "projects/uir_law/evaluation/law200/__init__.py",
+      "sha256": "df4d9077daf18f5148db8ec220a3be5e5f1069c7ff8a8d8b1ca3214ebc214198"
+    },
+    {
+      "bytes": 32,
+      "path": "projects/uir_law/evaluation/law200/audits/__init__.py",
+      "sha256": "f1e1f71495e1b624769ec5b5f712ef665dc13cfe1f3caeb2173ce90740a7e061"
+    },
+    {
+      "bytes": 2009,
+      "path": "projects/uir_law/evaluation/law200/audits/audit_dataset_duplicates.py",
+      "sha256": "04fea889d5ee527cf7430cd344cf2055332563c89599dae5f3d975c936afe508"
+    },
+    {
+      "bytes": 2425,
+      "path": "projects/uir_law/evaluation/law200/audits/audit_gold_access.py",
+      "sha256": "464b0f7ac00c3736573a2857e4a2ccd71b07046a56a994d7d59c459a911e63e0"
+    },
+    {
+      "bytes": 3252,
+      "path": "projects/uir_law/evaluation/law200/audits/audit_source_integrity.py",
+      "sha256": "885facad4f0e17cb1db3ea76f8cd6c7af0f20aa9e0968844b8d9707e77fbe16c"
+    },
+    {
+      "bytes": 175,
+      "path": "projects/uir_law/evaluation/law200/baselines/__init__.py",
+      "sha256": "1ad66940ae2548b41ffd6def8b0e990d15fdb28cfcff76dbf70cbb14c7e30df4"
+    },
+    {
+      "bytes": 11688,
+      "path": "projects/uir_law/evaluation/law200/baselines/core.py",
+      "sha256": "bc861dfdfa149afb7565c9db10f761f906313db622081dbb3b807fdd5bd60acb"
+    },
+    {
+      "bytes": 153,
+      "path": "projects/uir_law/evaluation/law200/baselines/direct.py",
+      "sha256": "43982b6579decc50e73498d1629528f37149d617a274066add670544971059fb"
+    },
+    {
+      "bytes": 162,
+      "path": "projects/uir_law/evaluation/law200/baselines/existence_check.py",
+      "sha256": "b436531c2428d33f8c10a5fc5e5d87b3868a79138475759b764c672bc6f9ff3e"
+    },
+    {
+      "bytes": 156,
+      "path": "projects/uir_law/evaluation/law200/baselines/guardrail.py",
+      "sha256": "9975496ef759308a216ff08a382b1b9bfbb427e273c291aa5b51aa7c3b965378"
+    },
+    {
+      "bytes": 156,
+      "path": "projects/uir_law/evaluation/law200/baselines/naive_rag.py",
+      "sha256": "81903143bcd427a7f835a84fb67b0658d515e3c56999e5853f94a1eda6c333a4"
+    },
+    {
+      "bytes": 157,
+      "path": "projects/uir_law/evaluation/law200/baselines/tool_agent.py",
+      "sha256": "83fe6afa2fa690b4176b335b2a4bf5951311c7c6f2f71c244e3d6f1a2c2366dc"
+    },
+    {
+      "bytes": 150,
+      "path": "projects/uir_law/evaluation/law200/baselines/uir.py",
+      "sha256": "3c4c29035e10eb90d3e191413ace627127c12ed26f881e74cf93bfb516250338"
+    },
+    {
+      "bytes": 41,
+      "path": "projects/uir_law/evaluation/law200/builders/__init__.py",
+      "sha256": "11aa7297aa413f50dd81d7c7a89371893876e043b7bd16dcd5fadbf203700b4f"
+    },
+    {
+      "bytes": 2065,
+      "path": "projects/uir_law/evaluation/law200/builders/fetch_valid_citations.py",
+      "sha256": "bc0b2164fac7439fc6e552e24acd9c9cd767b165e54c2333dde2f9f24891992f"
+    },
+    {
+      "bytes": 9945,
+      "path": "projects/uir_law/evaluation/law200/builders/freeze_dataset.py",
+      "sha256": "8e56061281cb7ffee74617f6c484a4a77d26953569dfcc51946fea5fa8bbd3d8"
+    },
+    {
+      "bytes": 3874,
+      "path": "projects/uir_law/evaluation/law200/builders/generate_hard_negatives.py",
+      "sha256": "cd2e01b6f48d2e5137eb8e21bad330d91b0e9be495a1b01e93d9d9fe2e84d760"
+    },
+    {
+      "bytes": 1250,
+      "path": "projects/uir_law/evaluation/law200/builders/generate_mismatch_cases.py",
+      "sha256": "9e39a086b260a9205c2e49963c8f6090af391abc0aa80fdbd8bd0855fb5a9d69"
+    },
+    {
+      "bytes": 5190,
+      "path": "projects/uir_law/evaluation/law200/common.py",
+      "sha256": "7b8589b2403e317a842c444a2e3ba4e34ddce5ebcdb05198b1c5d7e1f2e577d1"
+    },
+    {
+      "bytes": 7440,
+      "path": "projects/uir_law/evaluation/law200/courtlistener.py",
+      "sha256": "5cc114fe4987f1608c7465c61c6279711c31171cc9d7fdd47db71044f74fdb15"
+    },
+    {
+      "bytes": 2053,
+      "path": "projects/uir_law/evaluation/law200/data/citation_seeds.json",
+      "sha256": "59c20d378b52ecf69e65bd6b38f2be9366431f003c805b930dd034639d186137"
+    },
+    {
+      "bytes": 1621,
+      "path": "projects/uir_law/evaluation/law200/data/kr/benchmark_manifest.json",
+      "sha256": "9d09a2392983ecec650007d822dc6b31e5d63bcd3484aadacb3609d6aecf2887"
+    },
+    {
+      "bytes": 1346,
+      "path": "projects/uir_law/evaluation/law200/data/kr/pre_freeze_bugfix_001/benchmark_manifest.json",
+      "sha256": "482c30bdc32c90ea4ee3d1ebf8f7cd2daa2ec843e6e7f5b7cfebd818724f76cc"
+    },
+    {
+      "bytes": 1486,
+      "path": "projects/uir_law/evaluation/law200/data/kr/pre_freeze_bugfix_002/benchmark_manifest.json",
+      "sha256": "17a49bcd4a067cddb2541c6f617ec41be5cc0fc8c87bf0e70c74ca42e42942e3"
+    },
+    {
+      "bytes": 1522,
+      "path": "projects/uir_law/evaluation/law200/data/kr/pre_freeze_bugfix_003/benchmark_manifest.json",
+      "sha256": "f47534607b29b0d960f586de195cfbabcc73b3ab365c62a87cdfd14f69be50b1"
+    },
+    {
+      "bytes": 1149,
+      "path": "projects/uir_law/evaluation/law200/data/kr/source_responses/invalid_batch_000_4ae98e3ae82699c4.json",
+      "sha256": "4ae98e3ae82699c46a16f43a896d2a462b21aac58aa672764e4a9e55af90079e"
+    },
+    {
+      "bytes": 1429,
+      "path": "projects/uir_law/evaluation/law200/data/kr/source_responses/invalid_batch_000_4ae98e3ae82699c4.metadata.json",
+      "sha256": "ea21dcf7add27d9f38273e937a4b3e38b61c284a0a9d08bfa803610cf7fa4b54"
+    },
+    {
+      "bytes": 1149,
+      "path": "projects/uir_law/evaluation/law200/data/kr/source_responses/invalid_batch_000_8b508e5627edcff1.json",
+      "sha256": "6cd44532b1fea40890bf631fe44f9c79c73b797a6a0209e16515b20f750dc3e5"
+    },
+    {
+      "bytes": 1331,
+      "path": "projects/uir_law/evaluation/law200/data/kr/source_responses/invalid_batch_000_8b508e5627edcff1.metadata.json",
+      "sha256": "c1b277ad6bf76b19df133a559284a9494f985014277519d72af68ca05ee42a60"
+    },
+    {
+      "bytes": 51486,
+      "path": "projects/uir_law/evaluation/law200/data/kr/source_responses/valid_page_001_1c3028d3b4440b1e.json",
+      "sha256": "1c3028d3b4440b1e69a906b97823dade1b0371630a21e9f30adcf55201e4ed49"
+    },
+    {
+      "bytes": 417,
+      "path": "projects/uir_law/evaluation/law200/data/kr/source_responses/valid_page_001_1c3028d3b4440b1e.metadata.json",
+      "sha256": "a6326816c040bc4160d8bacf8c68e8c304ad2085c52e275d663ebc9b6eb5eaea"
+    },
+    {
+      "bytes": 51486,
+      "path": "projects/uir_law/evaluation/law200/data/kr/source_responses/valid_page_001_6d8a3626b180ad26.json",
+      "sha256": "1c3028d3b4440b1e69a906b97823dade1b0371630a21e9f30adcf55201e4ed49"
+    },
+    {
+      "bytes": 313,
+      "path": "projects/uir_law/evaluation/law200/data/kr/source_responses/valid_page_001_6d8a3626b180ad26.metadata.json",
+      "sha256": "2a18867655622bf287d15e3793369bcd64010d442e0f0833c860204bc8fb9857"
+    },
+    {
+      "bytes": 10689,
+      "path": "projects/uir_law/evaluation/law200/generate_report.py",
+      "sha256": "3308abe6145a2c6e39f96caee7e749c2e27c06dea4c252a6c1c6a35acb08f620"
+    },
+    {
+      "bytes": 70,
+      "path": "projects/uir_law/evaluation/law200/kr/__init__.py",
+      "sha256": "3953635db3276d95a2edbdcea6c85282880e989bb33e323c73d656b721566cb5"
+    },
+    {
+      "bytes": 9794,
+      "path": "projects/uir_law/evaluation/law200/kr/build_dataset.py",
+      "sha256": "6241496625b87f5c1c306aad7b8a3fd78118edbcd56fddfd90a79b1f2dd5252a"
+    },
+    {
+      "bytes": 1028,
+      "path": "projects/uir_law/evaluation/law200/kr/capture_hardware.py",
+      "sha256": "036bbe6345fc7a0791d6006f1f5593a14c67a207fcdc2615a8ca318f60796655"
+    },
+    {
+      "bytes": 14660,
+      "path": "projects/uir_law/evaluation/law200/kr/generate_report.py",
+      "sha256": "581679b7f4b36a8e61c5d490ccc359f7c5cfa8cd6a74376cd47a1ee482465248"
+    },
+    {
+      "bytes": 7075,
+      "path": "projects/uir_law/evaluation/law200/kr/law_go_kr.py",
+      "sha256": "b11c9e0c3f2b5bdf974f3475a45ecac4aa948cae7be0f1990c6c436dbeb030a0"
+    },
+    {
+      "bytes": 7291,
+      "path": "projects/uir_law/evaluation/law200/kr/update_kaic_docx.py",
+      "sha256": "4eac9ba5cc8310383b76d1db8b7e10478baf2021ca5055696a5a89c7b109425f"
+    },
+    {
+      "bytes": 14960,
+      "path": "projects/uir_law/evaluation/law200/kr/validate_publication_results.py",
+      "sha256": "23d100e03f6f0df02256b972900ff9e9a177be289b5874c40c35327385e76d4e"
+    },
+    {
+      "bytes": 5081,
+      "path": "projects/uir_law/evaluation/law200/legal_ir.py",
+      "sha256": "55d973a676851f07284b203ea9b672f147837c65898cca60d86a18cfb54d5e0c"
+    },
+    {
+      "bytes": 3399,
+      "path": "projects/uir_law/evaluation/law200/model.py",
+      "sha256": "a86dceb40387e3030dca96bc5d8400587d02a667c14476166aff3593b91f18d7"
+    },
+    {
+      "bytes": 10925,
+      "path": "projects/uir_law/evaluation/law200/results/kr/aggregate/dev_metrics.json",
+      "sha256": "32b1b9221b254c69e7335f6901b565e8003cc5b23b056c91979861c98eb9aaab"
+    },
+    {
+      "bytes": 1306,
+      "path": "projects/uir_law/evaluation/law200/results/kr/aggregate/dev_statistics.json",
+      "sha256": "4bd9053afb913ddcd98e7d639e5c2781897a67960666a5c452e8c0f8894a5709"
+    },
+    {
+      "bytes": 755,
+      "path": "projects/uir_law/evaluation/law200/results/kr/aggregate/hardware_environment.json",
+      "sha256": "d8f090d2bf9cda76b2d18259178811dea750e36bbbb216e69023557b85bb19c7"
+    },
+    {
+      "bytes": 7665,
+      "path": "projects/uir_law/evaluation/law200/results/kr/aggregate/publication_validation.json",
+      "sha256": "ed78a0d99f10dbd21cae21d2ef7002844c512ce6f73ac995e4d2559067498eea"
+    },
+    {
+      "bytes": 11176,
+      "path": "projects/uir_law/evaluation/law200/results/kr/aggregate/test_metrics.json",
+      "sha256": "4f55f946d3ff75e5bcc9774977cfd309a101e6adafb070a1c46ac8b5c08649e2"
+    },
+    {
+      "bytes": 1362,
+      "path": "projects/uir_law/evaluation/law200/results/kr/aggregate/test_statistics.json",
+      "sha256": "1b1ba6da35922afebae05d6390df300efa1d7bb2a08b55e124fb77d99b169039"
+    },
+    {
+      "bytes": 1378,
+      "path": "projects/uir_law/evaluation/law200/results/kr/raw/dev_execution_manifest_phi3-5-latest.json",
+      "sha256": "24d259e2e6fca3df6384db4c7e5bd0cc2474b949c7abf0760414d3ac3547ef2d"
+    },
+    {
+      "bytes": 551,
+      "path": "projects/uir_law/evaluation/law200/results/kr/raw/dev_pre_generation_access_log.json",
+      "sha256": "5e5e16faaa7878a11145d9474686d451160f1af3df606e284adde0b7b2eeb488"
+    },
+    {
+      "bytes": 1380,
+      "path": "projects/uir_law/evaluation/law200/results/kr/raw/test_execution_manifest_phi3-5-latest.json",
+      "sha256": "69a4a3fb4f333652384dc960e23427c0c360b0bac3e67fe12f879cf9ba922f79"
+    },
+    {
+      "bytes": 552,
+      "path": "projects/uir_law/evaluation/law200/results/kr/raw/test_pre_generation_access_log.json",
+      "sha256": "2e1550dae026a81d639a16491cbd9ceb1e92682398c2e7f3691c4944698349ee"
+    },
+    {
+      "bytes": 415,
+      "path": "projects/uir_law/evaluation/law200/results/kr/tables/law200_main_table.csv",
+      "sha256": "abd79f2b2f5e74f6cafcbd89d32660dc2dc03bfb95c8431c819a7421f437bed0"
+    },
+    {
+      "bytes": 10808,
+      "path": "projects/uir_law/evaluation/law200/results/kr_pre_final_freeze_003/aggregate/dev_metrics.json",
+      "sha256": "91577cccf0c0372117fe9a4e9617e156effb8a61631cc1ed501c815a5ca0ece4"
+    },
+    {
+      "bytes": 1295,
+      "path": "projects/uir_law/evaluation/law200/results/kr_pre_final_freeze_003/aggregate/dev_statistics.json",
+      "sha256": "2124442e41cbdc7aae1335634e613276a5e8bce8b8199ed5dc33118f6734072d"
+    },
+    {
+      "bytes": 1274,
+      "path": "projects/uir_law/evaluation/law200/results/kr_pre_final_freeze_003/raw/dev_execution_manifest_phi3-5-latest.json",
+      "sha256": "5874f4ca003f1adeec113808fc610f060379dba53ed13438ec8bf4fdc19d1c75"
+    },
+    {
+      "bytes": 551,
+      "path": "projects/uir_law/evaluation/law200/results/kr_pre_final_freeze_003/raw/dev_pre_generation_access_log.json",
+      "sha256": "159760d3f5d5b756556e396ca34dd55ea5ca1389b053ac2804b36d212f105ac1"
+    },
+    {
+      "bytes": 1157,
+      "path": "projects/uir_law/evaluation/law200/retrieval.py",
+      "sha256": "8829104d3fefe8bff1bbf354fc973af72f728ba23d7897a8b1e9eb81796dd662"
+    },
+    {
+      "bytes": 5435,
+      "path": "projects/uir_law/evaluation/law200/run_law200.py",
+      "sha256": "6ca0c9782c8172963975bc484494cecf45d1418a14edba073747623859acd304"
+    },
+    {
+      "bytes": 1626,
+      "path": "projects/uir_law/evaluation/law200/score_law200.py",
+      "sha256": "e7c5ea6e550d2068ddd3dd7c8386b23604f2fba301278564ea17dac01958a6f9"
+    },
+    {
+      "bytes": 59,
+      "path": "projects/uir_law/evaluation/law200/scoring/__init__.py",
+      "sha256": "2524e8c5949e8b8222028132cca765676f8a666ad2fc372df601783f93983d23"
+    },
+    {
+      "bytes": 963,
+      "path": "projects/uir_law/evaluation/law200/scoring/metric_contract.yaml",
+      "sha256": "be9f49a8566ce79ca09b7415e09c6f60473eb5c00d536c5fcabf4d2dabd1d47f"
+    },
+    {
+      "bytes": 2285,
+      "path": "projects/uir_law/evaluation/law200/scoring/score_entity.py",
+      "sha256": "a0e29ca10dc09c0da81ad75fb6bb494dffb52e2cc8eaa005fd8d5381cbd3e5dc"
+    },
+    {
+      "bytes": 9152,
+      "path": "projects/uir_law/evaluation/law200/scoring/score_supported_claims.py",
+      "sha256": "1278d81c1652f46d922a1cda4c2a8aed5e52e1d7b407d408166f794b753c91c8"
+    },
+    {
+      "bytes": 2287,
+      "path": "projects/uir_law/evaluation/law200/scoring/statistics.py",
+      "sha256": "e391a30b42ba193ebfbb33967152416f9a72f0d24104d1344acff98ecdfa2648"
+    },
+    {
+      "bytes": 10786,
+      "path": "projects/uir_law/evaluation/law200/tests/test_law200.py",
+      "sha256": "678ff3c254dcf0115799b23d7355752af75d62965f227bc59be278fc87e40b69"
+    },
+    {
+      "bytes": 9423,
+      "path": "projects/uir_law/evaluation/law200/update_kaic_docx.py",
+      "sha256": "6394d373d9ec5ab89d6b7ad8df09d0f0ded3330b3590a29e09ce47259fd00860"
+    },
+    {
+      "bytes": 9996,
+      "path": "projects/uir_law/evaluation/law200/validate_publication_results.py",
+      "sha256": "dead0a991ab0778395ca411b4d9db876cfa117dabfcc3de1fa4607cf0486041d"
+    },
+    {
+      "bytes": 206,
+      "path": "projects/uir_security/evaluation/__init__.py",
+      "sha256": "bd25dc14d742ca6c05dfd0cb08a443d640f90d982e42c927cbc693c42f395537"
+    },
+    {
+      "bytes": 17954,
+      "path": "projects/uir_security/evaluation/llm_security/attacks/generator.py",
+      "sha256": "2f89d649fa6f06ead8983015d4c9ad7322357c687c76dac89618fe805456dfe7"
+    },
+    {
+      "bytes": 6618,
+      "path": "projects/uir_security/evaluation/llm_security/attacks/generator_v2.py",
+      "sha256": "02f31a0286dbd4fd8c77b844169f46c43631147432ac5666ad8ed6c56a893139"
+    },
+    {
+      "bytes": 2249,
+      "path": "projects/uir_security/evaluation/llm_security/audit_dataset.py",
+      "sha256": "2f5c5f70a0dacdcecf7dc5a7fac4746a0b6fce2f4c5af9f0d1d230d0a741a49d"
+    },
+    {
+      "bytes": 5143,
+      "path": "projects/uir_security/evaluation/llm_security/audit_publication_datasets.py",
+      "sha256": "74d746b0fd9084bfe1921c4df8c9c0e850702520e3dfabb2b889b1642ae301d2"
+    },
+    {
+      "bytes": 382,
+      "path": "projects/uir_security/evaluation/llm_security/baselines/__init__.py",
+      "sha256": "8cf330d80079edbd7307b9b317dbbde5c088489820404107647a36ef319a0dc8"
+    },
+    {
+      "bytes": 1638,
+      "path": "projects/uir_security/evaluation/llm_security/baselines/naive_rag.py",
+      "sha256": "e4d40fb9593fc9c285e0631e84a9a3f9c3761c7b97a29ae12b1ce21cb33004f4"
+    },
+    {
+      "bytes": 986,
+      "path": "projects/uir_security/evaluation/llm_security/baselines/output_contract.py",
+      "sha256": "4ee9c29d8680d7bd3fbfd6ffdea6d2119408d3518001f58e5652895dd2b0bafe"
+    },
+    {
+      "bytes": 2344,
+      "path": "projects/uir_security/evaluation/llm_security/baselines/prompt_guard.py",
+      "sha256": "b71906d0c871378ebcf05335ed530555ddfe5418f62d6c3f4538685fbb27e426"
+    },
+    {
+      "bytes": 2641,
+      "path": "projects/uir_security/evaluation/llm_security/baselines/uir_v1.py",
+      "sha256": "a85ebc6bc5f7291cfaad9624c9ad8bf7f91afb080ac382f01ea238eb86b5e3d0"
+    },
+    {
+      "bytes": 9312,
+      "path": "projects/uir_security/evaluation/llm_security/baselines/uir_v2_security.py",
+      "sha256": "9cac5d0a8d61e145f18666f1aa1928388b8397eabe0777d0c9bf8970ba515dfa"
+    },
+    {
+      "bytes": 1182,
+      "path": "projects/uir_security/evaluation/llm_security/baselines/vanilla_slm.py",
+      "sha256": "75803ab5b6dfc04d8f1d7b1c0160bd97ace04d2ada200a8de991967d75fb1bcc"
+    },
+    {
+      "bytes": 3690,
+      "path": "projects/uir_security/evaluation/llm_security/batch_execution.py",
+      "sha256": "b66932f1e47a4fff37608b6a0915939db0a04e2bf63863e035baf58df5baec63"
+    },
+    {
+      "bytes": 4626,
+      "path": "projects/uir_security/evaluation/llm_security/check_progress.py",
+      "sha256": "2f7480447f310147d53828090b415acf5ccf3cbe8b6348569b20359497983ada"
+    },
+    {
+      "bytes": 290,
+      "path": "projects/uir_security/evaluation/llm_security/datasets/security_benchmark_v2_manifest.json",
+      "sha256": "d638b25e5d66b74679a2870ca6c5273be83b4ee1c60bb2fb84a64bc6596e4658"
+    },
+    {
+      "bytes": 2996,
+      "path": "projects/uir_security/evaluation/llm_security/execution.py",
+      "sha256": "6103a00e1e88ae643cc5aaa7275859a565f7cc2ce73ae771df3821dfcefcf335"
+    },
+    {
+      "bytes": 3830,
+      "path": "projects/uir_security/evaluation/llm_security/freeze_publication_experiment.py",
+      "sha256": "1e6dbbe51b80342432b0d8e8181e9eccabef035707ef12a9204966d0d9ec296d"
+    },
+    {
+      "bytes": 6791,
+      "path": "projects/uir_security/evaluation/llm_security/generate_publication_report.py",
+      "sha256": "f6b33cf20206e40f5c6ccd88d7c89eb300da0956084c53e95cdd6aedc828ca9e"
+    },
+    {
+      "bytes": 15447,
+      "path": "projects/uir_security/evaluation/llm_security/generate_security_report.py",
+      "sha256": "f0a12bbfe548b7999a9bb2eb91ed56260b48a2990a5296d6398954f4571e7b1d"
+    },
+    {
+      "bytes": 5142,
+      "path": "projects/uir_security/evaluation/llm_security/generate_security_report_v2.py",
+      "sha256": "353a3123497128937864919e6cbc16df19ab31db1482f76cca19a3ab27b3b41e"
+    },
+    {
+      "bytes": 7551,
+      "path": "projects/uir_security/evaluation/llm_security/judge_validation.py",
+      "sha256": "98f839d95700945de2f1b479b89f6ca37ec94bb4dfadf6ee07bd0aa9d961da68"
+    },
+    {
+      "bytes": 137,
+      "path": "projects/uir_security/evaluation/llm_security/judges/__init__.py",
+      "sha256": "12d6e196859baf47efe1b753e5cdd691d6e0eabadcf9a41fc28dcbf638ec5ceb"
+    },
+    {
+      "bytes": 629,
+      "path": "projects/uir_security/evaluation/llm_security/judges/agency_judge.py",
+      "sha256": "0f92be2bd294253c856cfec310cbc53e0a592a1ba793b819c9b9c65efdff6a66"
+    },
+    {
+      "bytes": 388,
+      "path": "projects/uir_security/evaluation/llm_security/judges/base.py",
+      "sha256": "6aab583e7750b229a669395196c6d4e763cc024655cfa5a2dbbedcf4823481a1"
+    },
+    {
+      "bytes": 3814,
+      "path": "projects/uir_security/evaluation/llm_security/judges/composite.py",
+      "sha256": "6fc5d44dfe4919df5bce18f78c95e126a00fe7d1a6c92902b89d959890e0c3b8"
+    },
+    {
+      "bytes": 707,
+      "path": "projects/uir_security/evaluation/llm_security/judges/deterministic.py",
+      "sha256": "34a32fc2d923d7ca0b86088192966cb48f22ad08957c75d365f997f1d242c5ea"
+    },
+    {
+      "bytes": 3313,
+      "path": "projects/uir_security/evaluation/llm_security/judges/entity_judge.py",
+      "sha256": "d0766c5830bf5652636f37c249c0dcf8b8c0db1e73512e791bb904b16c80af91"
+    },
+    {
+      "bytes": 637,
+      "path": "projects/uir_security/evaluation/llm_security/judges/exfiltration_judge.py",
+      "sha256": "6a90d10bd5cca25929b000ea1f2188f82ed6cfc25d7cd3a4c42e2fb7c7f191f4"
+    },
+    {
+      "bytes": 139,
+      "path": "projects/uir_security/evaluation/llm_security/judges/poisoning_judge.py",
+      "sha256": "1758bb8c9ef4373f00f894932407ee05d34d2f07282c1a7c0a3fc7bfdd8bdd6c"
+    },
+    {
+      "bytes": 3805,
+      "path": "projects/uir_security/evaluation/llm_security/judges/prompt_injection_judge.py",
+      "sha256": "597b03cff2fe38f38c6685586a272a6252013e492e4d9e8dec2145e249f27c87"
+    },
+    {
+      "bytes": 775,
+      "path": "projects/uir_security/evaluation/llm_security/judges/rag_injection_judge.py",
+      "sha256": "03df7314831eadd100d99c33e04a9b89367c42950cde2ad21e888e6be5ab5896"
+    },
+    {
+      "bytes": 888,
+      "path": "projects/uir_security/evaluation/llm_security/judges/resource_judge.py",
+      "sha256": "8e573ef7ea7c77f22d46aa9bf696a90b8d2be6d96c3e742b23f96a869c37fe7e"
+    },
+    {
+      "bytes": 1613,
+      "path": "projects/uir_security/evaluation/llm_security/judges/utility_judge.py",
+      "sha256": "63fc3a83693b119002363cc44a251aac21109f31ae7a3b636a50ad1874d93e4d"
+    },
+    {
+      "bytes": 7544,
+      "path": "projects/uir_security/evaluation/llm_security/metrics.py",
+      "sha256": "1fcbd1d8226f0fa7d7300ff72ed61820db1eaf5cf6760d950a508373925d7405"
+    },
+    {
+      "bytes": 7394,
+      "path": "projects/uir_security/evaluation/llm_security/metrics_v2.py",
+      "sha256": "4b2809d18b342b902831131c317c8764b98e6b6dc977e13966e15ed5ba07e1e3"
+    },
+    {
+      "bytes": 3196,
+      "path": "projects/uir_security/evaluation/llm_security/run_ablation_study.py",
+      "sha256": "cb58c93ed5fa570834251ed60bc1c9654bd7284c4a52b9123a2b3ff1e87bca48"
+    },
+    {
+      "bytes": 8467,
+      "path": "projects/uir_security/evaluation/llm_security/run_ablation_study_v2.py",
+      "sha256": "2941e9f8ce1d39a378443cb13d660451f625a2708b0e9d471b35a31e116d5b4f"
+    },
+    {
+      "bytes": 1314,
+      "path": "projects/uir_security/evaluation/llm_security/run_all_security_eval.py",
+      "sha256": "28e07ecd90a1638ad29acedc78ddd89ab5a5e06732ca13cfd498840718b7138b"
+    },
+    {
+      "bytes": 5449,
+      "path": "projects/uir_security/evaluation/llm_security/run_multi_knockout.py",
+      "sha256": "ab9e216dbba5bbdfbf331446c770ac56cb114bb981eb987f402a5f0ba8855021"
+    },
+    {
+      "bytes": 3484,
+      "path": "projects/uir_security/evaluation/llm_security/run_security_benchmark.py",
+      "sha256": "c382982b1bb8f4f4a238f49277d97aeba277e2dab573148b4cab598687cdf745"
+    },
+    {
+      "bytes": 12105,
+      "path": "projects/uir_security/evaluation/llm_security/run_security_benchmark_v2.py",
+      "sha256": "bf4ac54ac883a87eb6da2fc99b354411b9e112196c9c8fdeb84aec6741ec7361"
+    },
+    {
+      "bytes": 1625,
+      "path": "projects/uir_security/evaluation/llm_security/statistics_v2.py",
+      "sha256": "1f97fd6705185a2a6954ff3c3236ab1d21e7556a06e2fc0edeb28821ac4c60d8"
+    },
+    {
+      "bytes": 1037,
+      "path": "projects/uir_security/evaluation/llm_security/threat_taxonomy.yaml",
+      "sha256": "7b50f7b3b003d9b1626c94f45ae5881186b9dbef2bd56860abc12b049d738609"
+    },
+    {
+      "bytes": 6255,
+      "path": "projects/uir_security/evaluation/llm_security/validate_results.py",
+      "sha256": "f6a9d900bf0b7b2763706b9da00d77dd91ae01c3253a9264577789eeb3e8a80a"
+    },
+    {
+      "bytes": 9760,
+      "path": "projects/uir_security/evaluation/llm_security_v3/adaptive_attacks/campaigns.py",
+      "sha256": "48e2e2daa7b3da3699121cf5d42113f0542b65b152ec4ecffd4d65ec1fa7a2f8"
+    },
+    {
+      "bytes": 6215,
+      "path": "projects/uir_security/evaluation/llm_security_v3/adaptive_attacks/search_runner.py",
+      "sha256": "79c7606efc8bfa1387e4d9a8560a88be5e6aded4216ed1c0271aafb88b51db7e"
+    },
+    {
+      "bytes": 21783,
+      "path": "projects/uir_security/evaluation/llm_security_v3/attacks/generator_v3.py",
+      "sha256": "ad45bba5e12b1155897bf5e9e70d3f9a51c443ca7ef7b4bce498ccbc0c6eaf20"
+    },
+    {
+      "bytes": 5618,
+      "path": "projects/uir_security/evaluation/llm_security_v3/audit_semantic_leakage.py",
+      "sha256": "6622520b85500dccbdda34885400af58c2aad7a64753bb331433618341f7311c"
+    },
+    {
+      "bytes": 6179,
+      "path": "projects/uir_security/evaluation/llm_security_v3/baselines/camel_adapter.py",
+      "sha256": "d04818d1b1e01543d18b69398d18fdb67281194ee0f4ec99d7aa43f6bc36719b"
+    },
+    {
+      "bytes": 4807,
+      "path": "projects/uir_security/evaluation/llm_security_v3/baselines/progent_adapter.py",
+      "sha256": "479759446a5d55e7a486f24e7cc9e5e46f73f20ebe24a87a80ccddaa15ce3689"
+    },
+    {
+      "bytes": 4252,
+      "path": "projects/uir_security/evaluation/llm_security_v3/baselines/spotlighting_adapter.py",
+      "sha256": "4043598b58f25701817805477e691fd24b20bec7d027b91e2176cc224fd2f5bc"
+    },
+    {
+      "bytes": 13528,
+      "path": "projects/uir_security/evaluation/llm_security_v3/baselines/uir_v3_security.py",
+      "sha256": "e611d1c518b215cc97f05b5079eee40591763a1df9fb403dfc1599fe163e9aa7"
+    },
+    {
+      "bytes": 1348,
+      "path": "projects/uir_security/evaluation/llm_security_v3/datasets/dataset_manifest_v3.json",
+      "sha256": "7644f6694a6d68e806f414b0d58bab7217d6d8edf57b486733a4ca8a8c03e5ed"
+    },
+    {
+      "bytes": 1283,
+      "path": "projects/uir_security/evaluation/llm_security_v3/fixtures/environments.json",
+      "sha256": "53141593d36da27fe8fad8fe27d377e6ec62515b3a65888985e7240398a84a46"
+    },
+    {
+      "bytes": 2585,
+      "path": "projects/uir_security/evaluation/llm_security_v3/fixtures/principals.json",
+      "sha256": "fe9ced57c5d48f9a939babbc6d0c87522ff96cd29d915e1892b0a5b4d1507e91"
+    },
+    {
+      "bytes": 3549,
+      "path": "projects/uir_security/evaluation/llm_security_v3/human_validation/adjudication_analyzer.py",
+      "sha256": "7418a8644ec3091a78f45e84c5b5599ce1d911ba927853a45c1c8a762b8d24f5"
+    },
+    {
+      "bytes": 6165,
+      "path": "projects/uir_security/evaluation/llm_security_v3/parser_robustness/run_parser_robustness.py",
+      "sha256": "28798e3aceb326853c70149918d3a8298d820bc644894c5c2e9fc42c0c4a740e"
+    },
+    {
+      "bytes": 8668,
+      "path": "projects/uir_security/evaluation/llm_security_v3/provenance.py",
+      "sha256": "f9f1065412e5727b58f674a7fa18b89f2f36d948aed3689b53bacd7a91808906"
+    },
+    {
+      "bytes": 5270,
+      "path": "projects/uir_security/evaluation/llm_security_v3/public_benchmarks/agentdojo_adapter.py",
+      "sha256": "23976547ee7d95845a3ab0b83d35f1d3b93550ac77684e39ba09fd0a10200d63"
+    },
+    {
+      "bytes": 20254,
+      "path": "projects/uir_security/evaluation/llm_security_v3/run_publication_campaign.py",
+      "sha256": "9a42597d2cbb3ee4d9f9232780beba57a5446aa8f3c7e61b605dd5a871d01b7b"
+    },
+    {
+      "bytes": 115,
+      "path": "projects/uir_security/evaluation/llm_security_v3/schema/__init__.py",
+      "sha256": "3d8276de17992d624d3ea52bf59cf1bad32d8d37f9c3e64d315de4465afcdfad"
+    },
+    {
+      "bytes": 1840,
+      "path": "projects/uir_security/evaluation/llm_security_v3/schema/oracle_case.py",
+      "sha256": "69423f816e80c45c7464f776e5a64ab68c53cb2d7d61bf64b925e380df0f95b0"
+    },
+    {
+      "bytes": 1814,
+      "path": "projects/uir_security/evaluation/llm_security_v3/schema/runtime_case.py",
+      "sha256": "9050e6e905427cfa747afb132312e3f6bbb2b4054bc5bfe564e1757bfb1d9f18"
+    },
+    {
+      "bytes": 3887,
+      "path": "projects/uir_security/evaluation/llm_security_v3/validate_publication_results.py",
+      "sha256": "9a09ee9153f4bde6cc17ad1a5645d7f30022eb89908ea45a06b7e6115d367d6d"
+    },
+    {
+      "bytes": 0,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/adaptive_attacks/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9814,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/adaptive_attacks/campaigns.py",
+      "sha256": "1a1c0f2a3a1adfc8c59d8e2c963f2db47703df769ee6861969a2764a6062d3ba"
+    },
+    {
+      "bytes": 6306,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/adaptive_attacks/search_runner.py",
+      "sha256": "8ead5383c1535eacb17ff58d17e7ce190e75b75fa45d35cfcec4f8d44b505f9e"
+    },
+    {
+      "bytes": 37840,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/attacks/generator_v3_1.py",
+      "sha256": "9eb35be78d52f7ed9a69ed167b0270a819c428b4a74028db536cb86b8ae232d0"
+    },
+    {
+      "bytes": 9571,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/audit_semantic_leakage.py",
+      "sha256": "7cd5bc4924beacc377426fb0cd87fe34b4c567e45e90c575d2aef8cad22a1657"
+    },
+    {
+      "bytes": 0,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/baselines/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6292,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/baselines/camel_adapter.py",
+      "sha256": "85cc47642d5f3df1a32df397bc04ad4b0fd88eec35bed0021a755a9d83e9e91f"
+    },
+    {
+      "bytes": 1674,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/baselines/naive_rag_adapter.py",
+      "sha256": "d4dd294b033e5fcbf5e42f52ef5cd825c3fd4a84ab1dd9e83727d667f6de99d4"
+    },
+    {
+      "bytes": 4920,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/baselines/progent_adapter.py",
+      "sha256": "9928e34e13dffebb722a8d84df09f0b093cb1ca42922e4500f823ed0df47894b"
+    },
+    {
+      "bytes": 4318,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/baselines/spotlighting_adapter.py",
+      "sha256": "71908b715c1d79b4c63d2a73c0c8878c95bfdd5b3c7c99a794b0c5f928406117"
+    },
+    {
+      "bytes": 17522,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/baselines/uir_v3_1_security.py",
+      "sha256": "e4363af67cd8f2a381f29c4b91da54af95aebcbadf72338b4e589fc731e95a2c"
+    },
+    {
+      "bytes": 1356,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/baselines/vanilla_slm_adapter.py",
+      "sha256": "56055d885490f05e9d3d3dcceeba425eb78e996cc86960165f29164182a9ed0d"
+    },
+    {
+      "bytes": 693,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/check_e2e.py",
+      "sha256": "29561c786b2c717ac76d3be77a09d064b21fe6bc02d3bfcfbe406fa7d196d43d"
+    },
+    {
+      "bytes": 614,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/check_e2e_oracle.py",
+      "sha256": "64e1cc1c7a13317b52453b5662f939dfe3e85879000c0903a4ee38c497a18492"
+    },
+    {
+      "bytes": 2143,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/check_mcnemar.py",
+      "sha256": "6e87dcea10f33764a77249ec900d3d2cd02264e20fc4ea39ca4cf416767dad56"
+    },
+    {
+      "bytes": 1397,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/check_per_class.py",
+      "sha256": "cd093b0b61b68fcffa6cc198abc050886a8fc69c1ad5144cf90300c8e74c66a7"
+    },
+    {
+      "bytes": 1550,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/check_progress.py",
+      "sha256": "8786adcc3c3f0cf29698ce2c37f2502b6366d2b3c2eb2721750d89fec8f56b76"
+    },
+    {
+      "bytes": 768175,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/datasets/custom_heldout_v3_1.jsonl",
+      "sha256": "ee37647b700e95d7d8412ad7c7b4d7c66b389a21fabe15ada115e393d05a34dd"
+    },
+    {
+      "bytes": 1261,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/datasets/dataset_manifest_v3_1.json",
+      "sha256": "8af91bcd731b0b91fa93b30ef0c5221d78d2f1adc14481dca22d4dc796ea8774"
+    },
+    {
+      "bytes": 5631,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/datasets/generate_opaque_datasets.py",
+      "sha256": "b125e3b09eafdc6350271103d1ae9fe741e92bb0dd216814960f1274c48db144"
+    },
+    {
+      "bytes": 380982,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/datasets/oracle_heldout_v3_1.jsonl",
+      "sha256": "0caec7455243aea6673be3762047849685996cc8739f0c76930f0f7606d9ac0d"
+    },
+    {
+      "bytes": 1918,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/fixtures/build_manifest.py",
+      "sha256": "4fa442b86dc7fb7464e012082f11ba470892abbc8132177fead7d1350237e5f1"
+    },
+    {
+      "bytes": 6087,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/fixtures/trusted_source_manifest.json",
+      "sha256": "2730d4d114e1db42ec24194bd957064129eab56a6890d2499feaf7c0d66b454e"
+    },
+    {
+      "bytes": 3857,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/human_validation/adjudication_analyzer.py",
+      "sha256": "45780afa3a4e9ce4d62cf284a6b1cacf004ba08c89ef36410fa1be267cb5e747"
+    },
+    {
+      "bytes": 0,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 679,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/base_judge.py",
+      "sha256": "843d798b7f40e6796653850fd3c12fd9f77903706c071fbf7c825793e97c86df"
+    },
+    {
+      "bytes": 1818,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/direct_jailbreak_judge.py",
+      "sha256": "5b364d492b847f5afe566f02270ac3d3933295182643c75a25243e9f864fe29f"
+    },
+    {
+      "bytes": 1652,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/excessive_agency_judge.py",
+      "sha256": "883fadcece23ca555886bb4afb3d0624dd98831c43ccff79c0cc6bab8f1270ba"
+    },
+    {
+      "bytes": 1419,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/indirect_injection_judge.py",
+      "sha256": "9e754d03d9ecb0349114db1e6346b4d28e697d1f2705673e5e53c299b4aa045a"
+    },
+    {
+      "bytes": 1672,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/nonexistent_entity_judge.py",
+      "sha256": "d21d504dd3c8db80784e40366f7bbbcc4b3934bd3a32249486069805b5a5bc0e"
+    },
+    {
+      "bytes": 1337,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/poisoning_judge.py",
+      "sha256": "bb8270ce8d550f94a280124f3d1fc573e95a7df21e4590935713acddd17b75f0"
+    },
+    {
+      "bytes": 1263,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/resource_exhaustion_judge.py",
+      "sha256": "de99df8cb6046fb5bdb20b72056977269f7005dc07c7717768426b92c180679f"
+    },
+    {
+      "bytes": 3835,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/security_evaluator.py",
+      "sha256": "82a03e6ae4ae5214b59bba05193672d9db391caced9a87699413796e210965ec"
+    },
+    {
+      "bytes": 1338,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/judges/sensitive_exfiltration_judge.py",
+      "sha256": "0a2bf78496a9732e45e03f60fbf1fe259243fc3ce7ab692bf7b5cde68c608fd9"
+    },
+    {
+      "bytes": 6165,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/parser_robustness/run_parser_robustness.py",
+      "sha256": "28798e3aceb326853c70149918d3a8298d820bc644894c5c2e9fc42c0c4a740e"
+    },
+    {
+      "bytes": 10318,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/provenance.py",
+      "sha256": "c27d34b61748582bbe951667e1449e1c31908c053dc5b8a93f0160f956da3d3b"
+    },
+    {
+      "bytes": 5804,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/public_benchmarks/agentdojo_adapter.py",
+      "sha256": "3870faa92ea79aeb30247689334f04a0195584b7605268435afde8b32b68f517"
+    },
+    {
+      "bytes": 54110,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/run_publication_campaign.py",
+      "sha256": "07d5bb50dc4c8161cd261933a0554373c2adc3fb596bdcfafa230359cdbb27cc"
+    },
+    {
+      "bytes": 0,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/schema/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3546,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/schema/oracle_case.py",
+      "sha256": "0e3a22c9558b5505f04da995fe499bf38c2ba380a49a46cc21bf9f2f53e4ce31"
+    },
+    {
+      "bytes": 2784,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/schema/runtime_case.py",
+      "sha256": "5bbbe961a17473551a7056acbe334475c7976762f82f28221d78f10733b085c9"
+    },
+    {
+      "bytes": 5208,
+      "path": "projects/uir_security/evaluation/llm_security_v3_1/validate_publication_results.py",
+      "sha256": "db2effb78e1345f6a199e6ed11a7b3a233a5dfd0f66a602e1ce4556c3794998d"
+    },
+    {
+      "bytes": 272,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/__init__.py",
+      "sha256": "689a523a2c1703e25f65012bc8411c8a004a80d3d826ed0bdba4d63137bebcd1"
+    },
+    {
+      "bytes": 262,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/adaptive_attacks/__init__.py",
+      "sha256": "2d106bba071a9c2535486dc775845a22c5dc39e6c9726b99ba4829d3a75bd791"
+    },
+    {
+      "bytes": 410,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/adaptive_attacks/attack_objectives.py",
+      "sha256": "f51d50eb916ad91e8727b723ef732843c34bb2aa377552f98585f898ce130bdf"
+    },
+    {
+      "bytes": 10057,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/adaptive_attacks/mutation_engine.py",
+      "sha256": "1c81c3d601c4c73a9e663e981d0285550449135668d9a8848fb6c8c23dcdf8eb"
+    },
+    {
+      "bytes": 4836,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/adaptive_attacks/search_runner.py",
+      "sha256": "bae5c4dfa9fc008cf754bdf5f2a9f77770db62a00df2d4d17490078aecd22b74"
+    },
+    {
+      "bytes": 155,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/attacks/__init__.py",
+      "sha256": "63863a15439e409e157c8db16949851aadb3696959de0470deb87ae2fa108527"
+    },
+    {
+      "bytes": 38051,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/attacks/generator_v3_2.py",
+      "sha256": "210c2ca0382b5f2cca1f2feeeb297d7ae440f707732ead96c7025e9091906f29"
+    },
+    {
+      "bytes": 590,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/baselines/__init__.py",
+      "sha256": "4eef4765568591c96de80e568fedae8c86faec07df4f11b644dfdefebe39fbae"
+    },
+    {
+      "bytes": 4395,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/baselines/camel_adapter.py",
+      "sha256": "2871d8afef3d1c82884db3cfa5986a5d6e8b806365f1afe0cd213bd3b072bafe"
+    },
+    {
+      "bytes": 3406,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/baselines/naive_rag_adapter.py",
+      "sha256": "ec4d662952a0404d01a75f3fc7cf4f474951dff874317cf8503f72f80a9156c9"
+    },
+    {
+      "bytes": 4515,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/baselines/progent_adapter.py",
+      "sha256": "239602b811cc1ee4e06c2fb1fb2d3a403fe1780a37acb510f3e18a27acad8ab0"
+    },
+    {
+      "bytes": 3969,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/baselines/spotlighting_adapter.py",
+      "sha256": "207b679ece6bbc99da78fc149a91f90aaf05e937276e683dc022bdf930012541"
+    },
+    {
+      "bytes": 27559,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/baselines/uir_v3_2_security.py",
+      "sha256": "a7cc0e2391aedd3350b3b270ff8a930e3f1f9184c03229092a898da0fc829456"
+    },
+    {
+      "bytes": 2926,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/baselines/vanilla_slm_adapter.py",
+      "sha256": "e059350119ab588fd54c098cd988df5263d7d8fe5fc94cdc25af668e126e6c6c"
+    },
+    {
+      "bytes": 19818,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/closure_campaign.py",
+      "sha256": "75add9839fd4a23faff751b67c7bc33fd817195a5ced8d98eb66f7ea59b0549a"
+    },
+    {
+      "bytes": 1100,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/datasets/dataset_manifest_v3_2.json",
+      "sha256": "7c8a58e632da65de95b0f810073060edd726b3ba55438bcb5757d6ca783d3fc9"
+    },
+    {
+      "bytes": 7568,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/datasets/freeze_closure.py",
+      "sha256": "54afc8fec335b096f84b767aaa1b1474efa46511a4655b7ff752b6b15e910e43"
+    },
+    {
+      "bytes": 181753,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/datasets/heldout_v3_2_oracle_240.json",
+      "sha256": "122d09816ac0597eee92b897bb1236cea42067fd1ce6ca65c4ff01db70675f02"
+    },
+    {
+      "bytes": 329845,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/datasets/heldout_v3_2_stratified_240.json",
+      "sha256": "f6c3f10a55e5b52491bdea26a23ccb0f3abf380e8bd99c6d857de0d022ef3948"
+    },
+    {
+      "bytes": 445,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/harness/__init__.py",
+      "sha256": "03210f7485d8a49caa29404221d7cbdc3965b2b9e3de8657e239bd74d55cae3a"
+    },
+    {
+      "bytes": 11414,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/harness/agency_harness.py",
+      "sha256": "6b185a5f1cd40340d7ec29d183ea1b633076f1a5ac096499ccadde744ac88811"
+    },
+    {
+      "bytes": 3050,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/harness/execution_evidence.py",
+      "sha256": "96210e76676cb6cb2f2c0145ba714cee4ae8c3f75c4069b5df16a4dc9983f24a"
+    },
+    {
+      "bytes": 956,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/__init__.py",
+      "sha256": "19c33d93d30ff7516553e0d2ebd418231bb25417870a954a45bfeb92da635672"
+    },
+    {
+      "bytes": 546,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/base_judge.py",
+      "sha256": "69fd1434d5a0b9e30fbf7c26cfdd9572f1f8e42d180a4258a769b723b422be09"
+    },
+    {
+      "bytes": 4686,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/benign_utility_oracle_v3_2.py",
+      "sha256": "15be0b2d84d2945facf030835d99dba65134ee8b6ddb694e36a9a31db4510a6f"
+    },
+    {
+      "bytes": 2161,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/direct_jailbreak_judge.py",
+      "sha256": "edf2449f27d5be475d9bb945e17f1e2a253a171fcd9b9fe2d76b8dc2e95aedbc"
+    },
+    {
+      "bytes": 2160,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/excessive_agency_judge.py",
+      "sha256": "f1dcb385056579804964e52dfb86aaf5b3041b0f6618d8fbac8a522fe88780e3"
+    },
+    {
+      "bytes": 1093,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/indirect_injection_judge.py",
+      "sha256": "9a3298be172f2d625ea6649c25fdd454403087e39f3def42ac987e0f26801241"
+    },
+    {
+      "bytes": 1619,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/nonexistent_entity_judge.py",
+      "sha256": "59802259efd227ab290bffa21caa3a183142118cde7a749eb9da4f6f5b33d540"
+    },
+    {
+      "bytes": 1039,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/poisoning_judge.py",
+      "sha256": "dd23e8865badd99b886c153cfbe8e055f1e1f2aa0c27f4e4a8fd8ce66357875f"
+    },
+    {
+      "bytes": 2038,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/resource_exhaustion_judge.py",
+      "sha256": "e257330c1cb48b8b060bc15c98d2dcb18eb3c8553d3460ba33e5c9398083ff18"
+    },
+    {
+      "bytes": 3393,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/security_evaluator.py",
+      "sha256": "13c4e7871fa19c8c25e7df5e7ac3b072a2c78e43abc83853ec8ea4114c682bf8"
+    },
+    {
+      "bytes": 1805,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/judges/sensitive_exfiltration_judge.py",
+      "sha256": "f19c80b7af35f01e97ce60f51344ef0710ad55c4acf5d69b47dfcebcb5bdaa9a"
+    },
+    {
+      "bytes": 8230,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/provenance.py",
+      "sha256": "43303b0b0ec47abbafe4367eba02611cbf1cc2b0dff7e3ab2b18da0054894fcd"
+    },
+    {
+      "bytes": 209,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/public_benchmarks/__init__.py",
+      "sha256": "8c81fbfc0d0914cdeca2faa7431c3173b3528c642be9f8fdc201d66e5d15fbc1"
+    },
+    {
+      "bytes": 5261,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/public_benchmarks/agentdojo_micro_suite.py",
+      "sha256": "b883707725ea275dcb669d79586a32a0f89377020756c80951c1430126c28ff1"
+    },
+    {
+      "bytes": 354,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/run_publication_campaign_v3_2.py",
+      "sha256": "0edb4066a59bea841558e18849292f478ed340743db112cb8973db4ff7f5f16c"
+    },
+    {
+      "bytes": 162,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/schema/__init__.py",
+      "sha256": "985338959f90075d1814acdc885a5a9ce5082ee1088264d04c8a3fde52f0420a"
+    },
+    {
+      "bytes": 3526,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/schema/oracle_case.py",
+      "sha256": "bf5981c86af823d35a10ddfd513b3b4244aed5ac3191bba3a8b5bdf65a723b1a"
+    },
+    {
+      "bytes": 2784,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/schema/runtime_case.py",
+      "sha256": "027e73f3236c7844cac0bc1ff99c035514ab8b49a6094a95d81fc10d9320b6c9"
+    },
+    {
+      "bytes": 6102,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/stats/exact_mcnemar.py",
+      "sha256": "e2084a7dde681c70ea2cbd7a0e5c70e127057feab368693c76b2ce6dad1d785a"
+    },
+    {
+      "bytes": 3430,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/stats/judge_agreement.py",
+      "sha256": "707bc6c0b1fe4af89deb6932246e09f044a234d0911d088630cc8d56b1da6fdf"
+    },
+    {
+      "bytes": 12140,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/validate_publication_results.py",
+      "sha256": "e665d2c8085ab064f01dc1241bdea1fd6c1af2e0d9cd9f87097787e7437308e3"
+    },
+    {
+      "bytes": 284,
+      "path": "projects/uir_security/evaluation/llm_security_v3_2/validate_v3_2_results.py",
+      "sha256": "d658fd660c080ee9680adb297c7b9ea6d11799d781ece54eb78bcb3df1e0135b"
+    },
+    {
+      "bytes": 406,
+      "path": "scripts/migrate_project_layout.py",
+      "sha256": "44c70af1dadbb5e35a7be287566c9915a3501fe6727dee51a61eb76bd6f6970d"
+    },
+    {
+      "bytes": 4983,
+      "path": "tests/test_package_layout.py",
+      "sha256": "ee1b6f4b07c4324d65399e4de005a676838e8ab919f63fa982a3625318a78e4b"
+    },
+    {
+      "bytes": 3678,
+      "path": "tests/uir_base/test_local_ai_review.py",
+      "sha256": "38b1c122f2fb4ba4a12cd1b14d6527ec42bb4fcb2c0992d9b6f79b8cb6f1896e"
+    },
+    {
+      "bytes": 1243,
+      "path": "tests/uir_base/test_local_ollama.py",
+      "sha256": "c9b3a7e6fb975c3301243f6b3ea91b51816f0bcc3319edff875ce6d83b22acf3"
+    },
+    {
+      "bytes": 2190,
+      "path": "tests/uir_base/test_next_experiments.py",
+      "sha256": "cb9334a753ff4bd7df3ce1d2856330bd1ebc7ba313fb9c288233d45267452921"
+    },
+    {
+      "bytes": 4216,
+      "path": "tests/uir_base/test_next_frontend.py",
+      "sha256": "48619665fdaf32c7f13f78163deebfd9187471c8ba55419e97c78a0b03adc762"
+    },
+    {
+      "bytes": 1215,
+      "path": "tests/uir_base/test_next_handoff.py",
+      "sha256": "99d1fd7b32cf2b8b2cd4411a24dffef6488599ceb5c8b7ff59085a3b75ac56d1"
+    },
+    {
+      "bytes": 3287,
+      "path": "tests/uir_base/test_next_release.py",
+      "sha256": "f23f51e983e0849a55ea1a65ba9455127b82066339a930b05edecad92bed9b92"
+    },
+    {
+      "bytes": 2329,
+      "path": "tests/uir_base/test_r_stage_negative.py",
+      "sha256": "99a16922bd9e50b7fbdbf4181039768363b337f157173801734e9e0ccbb7c6d7"
+    },
+    {
+      "bytes": 2900,
+      "path": "tests/uir_base/test_representation_dependencies.py",
+      "sha256": "fa04254f42b99dae0aa5b55779efa92e40799bc0df58c14545ec17d4d61fed2b"
+    },
+    {
+      "bytes": 5401,
+      "path": "tests/uir_base/test_representation_vnext.py",
+      "sha256": "f9f79be8d77083d6ac8ca9e0cd015034c0a9af1b89cfb50988ddb0b11e950841"
+    },
+    {
+      "bytes": 5030,
+      "path": "tests/uir_base/test_revision_audit.py",
+      "sha256": "835c3b9ae7b00e97373fc19a370150946ab40c54cd59fe885b98cb063311b6ab"
+    },
+    {
+      "bytes": 6282,
+      "path": "tests/uir_base/test_s_representation_research.py",
+      "sha256": "141bdba1b7519fb14b8c2d875c3f29c5fb34e431f50fbff154b2b9cd45cdc5a1"
+    },
+    {
+      "bytes": 1553,
+      "path": "tests/uir_base/test_typed_arithmetic_vnext.py",
+      "sha256": "a6d6d844301da0770212e79d7eabac297e172d1602f8c1b13fae89e9f19d39fc"
+    },
+    {
+      "bytes": 3032,
+      "path": "tests/uir_base/uir_phase4d/test_adapters.py",
+      "sha256": "abb2b6ca376ee9f0758da4ec813a29971154121f3529b9ac70aa08b0cf8cf007"
+    },
+    {
+      "bytes": 1605,
+      "path": "tests/uir_base/uir_phase4d/test_no_runtime_label_leakage.py",
+      "sha256": "52be80b9c496b6debe6f1f92408f91586958f8245e6b0e23fbf4e50042f1b369"
+    },
+    {
+      "bytes": 236,
+      "path": "tests/uir_base/uir_phase4d/test_qwen.py",
+      "sha256": "8b1e150363f7db1e49e1f2ba2e0528b526109f2ab6c410ee582773a622aced5c"
+    },
+    {
+      "bytes": 3186,
+      "path": "tests/uir_base/uir_phase4d/test_runtime_components.py",
+      "sha256": "ba42fe48b1732c98591b17537b15da0ab3b5a385aa68b8677d5a7fe36d13c9a9"
+    },
+    {
+      "bytes": 745,
+      "path": "tests/uir_base/uir_phase4d/test_runtime_run.py",
+      "sha256": "15584a00bd692252779e07189e5cd142f1b3f24ba24ff1582b043bff93d7caf2"
+    },
+    {
+      "bytes": 1726,
+      "path": "tests/uir_security/security_v3/test_authority_non_escalation.py",
+      "sha256": "dd9a62b9b52c7e93f6357fe42fd936b5b80f54b4ef63602cb265fa6f2fe1e87d"
+    },
+    {
+      "bytes": 1275,
+      "path": "tests/uir_security/security_v3/test_evidence_admission.py",
+      "sha256": "ec1c27c20b142f44519839e81c7f579dd5b12d220040fc3559fb3837aad343d2"
+    },
+    {
+      "bytes": 5515,
+      "path": "tests/uir_security/security_v3/test_no_label_leakage.py",
+      "sha256": "0becbc5c715a337507c28ce701b96efcfe6673f9b7f6f41e2bff15767bf5d9c2"
+    },
+    {
+      "bytes": 1141,
+      "path": "tests/uir_security/security_v3/test_output_non_authority.py",
+      "sha256": "135c8946856160d30776f7008587b22f6c8a768e5b95bfa26b7adbdac70fed76"
+    },
+    {
+      "bytes": 3677,
+      "path": "tests/uir_security/security_v3/test_provenance_security.py",
+      "sha256": "233d1daed755aea4a2545cf347801480d47c23b6f06a3b0ab9df26c345dbfce9"
+    },
+    {
+      "bytes": 1089,
+      "path": "tests/uir_security/security_v3/test_taint_propagation.py",
+      "sha256": "1fb0bdc4a8ab110597ca6ff881f62ab227557c96b0628a4816607c45a547d710"
+    },
+    {
+      "bytes": 0,
+      "path": "tests/uir_security/security_v3_1/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3335,
+      "path": "tests/uir_security/security_v3_1/test_behavioral_judges.py",
+      "sha256": "4b00dd2f27d7d272e884e4afe477cc8c4d8336fde2c76c6780804dcf238d8283"
+    },
+    {
+      "bytes": 2959,
+      "path": "tests/uir_security/security_v3_1/test_opaque_runtime_identity.py",
+      "sha256": "b9077ebf81748d5e4177e36388f5a5dd8b0a1c8d1ae4c9796053978e2163282d"
+    },
+    {
+      "bytes": 3946,
+      "path": "tests/uir_security/security_v3_1/test_pipeline_no_oracle_access.py",
+      "sha256": "9c9222c6a546fa801ad44be8c5b38970454fa113d51e3f0230eb15eee7c5f14c"
+    },
+    {
+      "bytes": 5456,
+      "path": "tests/uir_security/security_v3_1/test_provenance_anti_spoofing.py",
+      "sha256": "885f02bdca349df56ca95d775177121063cf6b48eaf16732ae7f9cc00f42f01a"
+    },
+    {
+      "bytes": 2250,
+      "path": "tests/uir_security/security_v3_2/test_agency_mock_execution.py",
+      "sha256": "b14d5aefa8ef606dcdd87f6169aac2ddb297b3028ad47b3c37d8699dcebb39d4"
+    },
+    {
+      "bytes": 2903,
+      "path": "tests/uir_security/security_v3_2/test_baselines_v3_2.py",
+      "sha256": "f039f085c86a4cfbde74d760b714828972998aa4d27bd83f16a3e9f127d4965b"
+    },
+    {
+      "bytes": 2190,
+      "path": "tests/uir_security/security_v3_2/test_benign_utility_oracle.py",
+      "sha256": "abb7fd468e1948e0e455c2262754c5aa35e1101f3938c729eee2c419572f2b67"
+    },
+    {
+      "bytes": 8294,
+      "path": "tests/uir_security/security_v3_2/test_closure_integrity.py",
+      "sha256": "79e8a37c845ba5f3d0329da1acbde94cad0c229c9dd2f17da989be2c18b86a3f"
+    },
+    {
+      "bytes": 1498,
+      "path": "tests/uir_security/security_v3_2/test_exact_mcnemar.py",
+      "sha256": "3828aaa60bad3005b88ed472cf6064f2e20fde64aa4f89e77157ce18c436c0da"
+    },
+    {
+      "bytes": 2664,
+      "path": "tests/uir_security/security_v3_2/test_generator_v3_2.py",
+      "sha256": "5aed9f5c7e41d74a2bfe30b11745c5b3e17a71b392f3d4f5e14898d35b2bb14e"
+    },
+    {
+      "bytes": 1172,
+      "path": "tests/uir_security/security_v3_2/test_judge_agreement.py",
+      "sha256": "ef1fb5184b3996f16debf402abc262a5206020fe9ea061d6dc68a2dc6a718dca"
+    },
+    {
+      "bytes": 4206,
+      "path": "tests/uir_security/security_v3_2/test_judges_v3_2.py",
+      "sha256": "a1c92ad51dae2994b334bd04fbfe63cc849679aa84e5a290d99066ab8f1f45c8"
+    },
+    {
+      "bytes": 1293,
+      "path": "tests/uir_security/security_v3_2/test_mutation_engine.py",
+      "sha256": "05468a44cfe23df4bf06233bed5f3b868c636b50b6a852994dc0a3e9f122b79a"
+    },
+    {
+      "bytes": 1863,
+      "path": "tests/uir_security/security_v3_2/test_output_guard_hidden_context.py",
+      "sha256": "830106dc99972dbbdce5b94ea5b64958f1714a7e471550fc4133210aacd99d05"
+    },
+    {
+      "bytes": 2091,
+      "path": "tests/uir_security/security_v3_2/test_output_guard_schema.py",
+      "sha256": "14f0bd20f5c08be690b3b626eeb859092589d931721ce487e0c98975bfc89c37"
+    },
+    {
+      "bytes": 2641,
+      "path": "tests/uir_security/security_v3_2/test_output_guard_trailing_text.py",
+      "sha256": "e5832a5f1aec14a2d98c852c55a2be1335a9e343c803ca604665c35a561e4063"
+    },
+    {
+      "bytes": 1681,
+      "path": "tests/uir_security/security_v3_2/test_resource_tracker.py",
+      "sha256": "43f25d1667e73b8039edd83ad3de2c2f7d9615e7a9ef6d18062a74ae015f6dd3"
+    },
+    {
+      "bytes": 1561,
+      "path": "tests/uir_security/test_benign_util.py",
+      "sha256": "3e063fe462bccc108369e8a74eb84f5baa5615c9d19031312fe06e923eeb8c07"
+    },
+    {
+      "bytes": 6879,
+      "path": "tests/uir_security/test_llm_trust.py",
+      "sha256": "c5249f070b120bb0bffc30c1e1853fb140b724a58607b116b675689d5ffa8ff5"
+    },
+    {
+      "bytes": 7201,
+      "path": "tests/uir_security/test_security_benchmark_v2.py",
+      "sha256": "b0abd8112e521efc37656e4d3c08eed065ed814e7e46419e7ea7f1111eb221ed"
+    }
+  ],
+  "scope": "exact current test+module+synthetic historical schema fixtures; private only, not newly scored benchmarks",
+  "source_generated_or_weakened": false
+}

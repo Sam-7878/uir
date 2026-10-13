@@ -1,0 +1,8 @@
+field,seven_field_generator,reference_generator,authoritative_source,scorer,approved_renderer
+claim_type,required string,not generated,versioned catalog,exact seven-field support,authoritative bound value
+entity_id,required string,not generated,versioned catalog,exact seven-field support,authoritative bound value
+attribute,required string,not generated,versioned catalog,exact seven-field support,authoritative bound value
+value,required string,not generated,versioned catalog,exact seven-field support,authoritative bound value
+unit,required string,not generated,versioned catalog,exact seven-field support,authoritative bound value
+period,required string,not generated,versioned catalog,exact seven-field support,authoritative bound value
+provenance,required string,not generated,versioned catalog,exact seven-field support,authoritative bound value
