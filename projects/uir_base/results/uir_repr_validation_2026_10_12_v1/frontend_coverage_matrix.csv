@@ -1,0 +1,7 @@
+input_mode,language_group,N,N_clarification,N_joint_conformance,general_NL_accuracy,language_scope
+raw_only_CNL,ko,24,0,24,NOT_MEASURED,"KO/EN supported CNL; unsupported-free-NL reused English diagnostic text in both group tags, not KO free-NL coverage"
+raw_only_CNL,en,24,0,24,NOT_MEASURED,"KO/EN supported CNL; unsupported-free-NL reused English diagnostic text in both group tags, not KO free-NL coverage"
+trusted_slot_assisted,ko,24,0,24,NOT_MEASURED,"KO/EN supported CNL; unsupported-free-NL reused English diagnostic text in both group tags, not KO free-NL coverage"
+trusted_slot_assisted,en,24,0,24,NOT_MEASURED,"KO/EN supported CNL; unsupported-free-NL reused English diagnostic text in both group tags, not KO free-NL coverage"
+unsupported_free_NL,ko,24,24,24,NOT_MEASURED,"KO/EN supported CNL; unsupported-free-NL reused English diagnostic text in both group tags, not KO free-NL coverage"
+unsupported_free_NL,en,24,24,24,NOT_MEASURED,"KO/EN supported CNL; unsupported-free-NL reused English diagnostic text in both group tags, not KO free-NL coverage"

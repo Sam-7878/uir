@@ -1,0 +1,10 @@
+{
+  "N_company_document_disjoint_available": 26,
+  "N_document_disjoint_available": 304,
+  "N_index_unused": 747,
+  "dataset_sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+  "executed": false,
+  "reason": "No verified family-disjoint pool spanning document/company/template; remaining rows are availability audit only, not a selected confirmatory set.",
+  "status": "NO_FAMILY_DISJOINT_HOLDOUT",
+  "template_independence_verified": false
+}

@@ -1,0 +1,12 @@
+{
+  "N_parity_cases": 11,
+  "N_parity_pass": 11,
+  "N_raw_diagnostics": 800,
+  "N_retrieval_cases": 400,
+  "full_numeric_operand_presence": 399,
+  "lexical_numeric_operand_presence": 260,
+  "new_FinQA_inference": false,
+  "official_evaluator_sha256": "845cd131cab843eceff256cf6d392978cc470a7da4a80107beb56027fdca5c13",
+  "old_primary_unchanged": true,
+  "presence_not_semantic_sufficiency": true
+}

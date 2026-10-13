@@ -1,0 +1,3 @@
+condition,N_requests,N_nonempty_accepted,N_bound_json_output_assessed,N_renderer_channel_mismatch,native_prose_AUCR,structured_accepted_unsupported_N,full_output_assessment_scope,complete,partial,none,early_policy_or_clarification
+UIR_SHARED_TYPED,144,24,96,0,NOT_MEASURED,0,"JSON bound claims only, no open prose; relative to synthetic trusted catalog",24,0,12,108
+SPECIALIZED_STRUCTURED_NO_SHARED_UIR,144,24,96,0,NOT_MEASURED,0,"JSON bound claims only, no open prose; relative to synthetic trusted catalog",24,0,12,108

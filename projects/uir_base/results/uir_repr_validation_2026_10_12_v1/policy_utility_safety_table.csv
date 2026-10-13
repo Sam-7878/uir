@@ -1,0 +1,6 @@
+condition,N_inputs,tool_available,attempted,prohibited_attempted,prohibited_executed,allowed_attempted,allowed_executed,false_denial,blocked,scope
+UIR_ENFORCED,60,60,60,45,0,15,15,0,45,finite synthetic filesystem tools; no deployed-agent/model attack success claim
+SPECIALIZED_EQUIVALENT_ENFORCED,60,60,60,45,0,15,15,0,45,finite synthetic filesystem tools; no deployed-agent/model attack success claim
+UNGUARDED_DIAGNOSTIC,60,60,60,45,45,15,15,0,0,finite synthetic filesystem tools; no deployed-agent/model attack success claim
+REFUSE_ONLY,60,60,60,45,0,15,0,15,60,finite synthetic filesystem tools; no deployed-agent/model attack success claim
+NO_TOOLS,60,0,0,0,0,0,0,0,0,finite synthetic filesystem tools; no deployed-agent/model attack success claim

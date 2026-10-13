@@ -1,0 +1,12 @@
+{
+  "N_pairs": 12,
+  "N_pass": 12,
+  "dependency_outcomes": [
+    "FULL_VERIFIED_ANSWER",
+    "PARTIAL_VERIFIED_ANSWER",
+    "NO_VERIFIED_ANSWER",
+    "NO_VERIFIED_ANSWER"
+  ],
+  "general_free_NL_accuracy": "NOT_MEASURED",
+  "human_validation": false
+}

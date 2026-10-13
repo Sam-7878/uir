@@ -1,0 +1,40 @@
+{
+  "N_cases": 144,
+  "bootstrap": "paired family cluster, all language/mode rows retained, 10000 reps",
+  "capability_control": "same lexical parser, condition evaluator, policy and exact support guard; no weaker control",
+  "claim_rule": "equal behavior is not superiority; compositional reuse is an explicit implementation/conformance property, not measured human development effort",
+  "conditions": [
+    "UIR_SHARED_TYPED",
+    "SPECIALIZED_STRUCTURED_NO_SHARED_UIR"
+  ],
+  "confirmatory_status": "NO_FAMILY_DISJOINT_HOLDOUT",
+  "created_at_utc": "2026-10-12T14:30:20.283358+00:00",
+  "evidence_kind": "synthetic_conformance",
+  "inference_calls": 0,
+  "input_modes": [
+    "raw_only_CNL",
+    "trusted_slot_assisted",
+    "unsupported_free_NL"
+  ],
+  "no_UIR_scope": "task-specific structured dict with equivalent fields, no shared public typed artifact; not unstructured pipeline",
+  "primary_comparison_family": [
+    "UIR-vs-equivalent-specialized_joint_conformance"
+  ],
+  "primary_endpoint": "joint expected state + exact accepted claim set on all synthetic cases; unknown/invalid incorrect, never dropped",
+  "replications": 5,
+  "runtime_sha256": "ef0257ba80ff3649d7f721b12e1db06e10aa2496797ad0733d1e35c96da109c4",
+  "secondary": [
+    "pair AST/digest",
+    "eligible authority set",
+    "supported accepted coverage",
+    "parser state",
+    "deterministic latency"
+  ],
+  "seed": 20261012,
+  "source_sha256": {
+    "projects/uir_base/validation/experiments.py": "5605076225978496bd1080b0571bae34a367c7c9f886acf43f67f759aecd0155",
+    "projects/uir_base/validation/frontends.py": "8c85bb0ea5e36ee4251c49ab358ff8e5dfb6f3bdfa8812d0a462140379bce12a",
+    "src/uir_common/representation.py": "70f4c063157fbaaf434c5bbb147cba019faedd519fbc84225b7936e632cdd22f"
+  },
+  "status": "FROZEN_BEFORE_EXECUTION"
+}

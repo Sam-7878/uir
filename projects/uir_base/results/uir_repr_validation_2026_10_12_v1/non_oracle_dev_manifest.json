@@ -1,0 +1,9 @@
+{
+  "N_cases": 144,
+  "N_source_families": 24,
+  "gold_generation": "evaluation file built after runtime packets; synthetic normative variant states",
+  "human_gold": false,
+  "new_unused_holdout": false,
+  "runtime_fact_selection": "only typed request and catalog; catalog contains unrelated entities/attributes/periods/units",
+  "runtime_sha256": "ef0257ba80ff3649d7f721b12e1db06e10aa2496797ad0733d1e35c96da109c4"
+}

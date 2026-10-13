@@ -1,0 +1,22 @@
+{
+  "author_signoff": false,
+  "human_validation": false,
+  "original_W08": "NOT_SATISFIED",
+  "private_review_only": true,
+  "sources": {
+    "projects/uir_base/results/mdpi_next_2026_10_11_v2/historical_reanalysis/internal_utility_recomputed.csv": "8f4dbf90c8a049408f6b913c665062b67218245e756e9a4f64a6b6465647060b",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/cluster_bootstrap_results.csv": "4c9e2ad45fd183887a9c42ea95482e018d6eb59549c3aa82e288821cc83b82b2",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/confirmatory_protocol.json": "df08e73358f911385f1ad264c893d1ec5bacb73128621b5604d9a126bb2e03c5",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/finqa_development_summary.json": "a1871b488e9c0f1dec238e1e06bb1fab972513b065f5ecd454222a0a8262edff",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/fixture_lineage_summary.json": "2404c1ac920b6967d98d85ed816ad68f2ad923901a39af08f21a0361657a1517",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/independent_replay_report.json": "603ad3f47340783ab84548ffc418aa07603745e65897c7014a78b77c0edb8d54",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/open_review_summary.json": "cf8b0775314f3fe8d293c99f470a68644634499596ab1faf4e5cd042273799a0",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/policy_utility_safety_table.csv": "a52087b8114ed4c88dd506a4e533379b1c8fa284aff6222a7b679a74b1977a6d",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/renderer_bound_summary.json": "3900655832d6e1c922f30d1e3eb9b1482c17c14ba4a6c332ba1affdbf4d24e2e",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/renderer_summary.csv": "6541be70c5fff2b60973161b6dc80492941da2ce6bad94d294c53da3eb76d6a6",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/repr_execution_manifest.json": "f82a40f34bad551c7bd522c73df7428a5d113df2e95cc7d37177be608216e38c",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/repr_summary.csv": "a8e8141e646eb568841187dea7cef54cfd4f09dce636c1d5833a862772d5e73a",
+    "projects/uir_base/results/uir_repr_validation_2026_10_12_v1/semantic_conformance_summary.json": "20e6d1e3a95be74c457724d62535db3d045ed144d17581277bb2ef6759ea0a4c"
+  },
+  "version": "representation-scientific-numbers-v1"
+}

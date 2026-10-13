@@ -1,0 +1,39 @@
+{
+  "cargo": "cargo 1.99.0 (5f94df478 2026-08-27)",
+  "cargo_lock_sha256": "d7efafe6017e6c654f2994b7a925fc8f600699ec114265b4933a7dcb53c2c613",
+  "created_at_utc": "2026-10-12T14:20:30.402968+00:00",
+  "frozen": {
+    "N_final_index_checked": 144,
+    "archive_sha256": "aea0551d1b7e14cc98f5e8cfd32694cb9c1fcac25a700dee284c6d3c6814da76",
+    "status": "PASS"
+  },
+  "machine": "x86_64",
+  "packages": {
+    "PyYAML": "6.0.3",
+    "Pygments": "2.21.0",
+    "attrs": "26.1.0",
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "idna": "3.20",
+    "iniconfig": "2.3.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "numpy": "2.5.3",
+    "packaging": "26.3",
+    "pluggy": "1.6.0",
+    "pytest": "9.1.1",
+    "referencing": "0.37.0",
+    "requests": "2.34.2",
+    "rfc8785": "0.1.4",
+    "rpds-py": "2026.9.1",
+    "scipy": "1.18.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0"
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "platform_scope": "Linux x86_64 CPython 3.14; not arbitrary platforms",
+  "python": "3.14.4",
+  "python_implementation": "CPython",
+  "python_shared_environment_modified": false,
+  "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)"
+}

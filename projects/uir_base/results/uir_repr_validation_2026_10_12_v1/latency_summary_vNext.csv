@@ -1,0 +1,5 @@
+condition,kind,N_measurements,p50_ms,p95_ms,p99_ms,inference_calls,scope
+UIR_SHARED_TYPED,initial,144,0.13313550000000002,0.4314673,0.5928826699999998,0,initial includes frontend plus two backend checks; warm only common guard; imports excluded; neither is GPU cold-start
+UIR_SHARED_TYPED,warm_guard_only,480,0.023001,0.08228094999999995,0.13433742999999987,0,initial includes frontend plus two backend checks; warm only common guard; imports excluded; neither is GPU cold-start
+SPECIALIZED_STRUCTURED_NO_SHARED_UIR,initial,144,0.055998000000000006,0.35488685,0.5332238199999986,0,initial includes frontend plus two backend checks; warm only common guard; imports excluded; neither is GPU cold-start
+SPECIALIZED_STRUCTURED_NO_SHARED_UIR,warm_guard_only,480,0.019035999999999997,0.08030109999999999,0.17518504999999998,0,initial includes frontend plus two backend checks; warm only common guard; imports excluded; neither is GPU cold-start

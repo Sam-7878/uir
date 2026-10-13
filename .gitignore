@@ -38,6 +38,7 @@ debug/
 release/
 target/
 formal/tools/*.jar
+wheelhouse/
 
 # docs/architecture/
 docs/papers/

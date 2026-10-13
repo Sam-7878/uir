@@ -1,0 +1,19 @@
+{
+  "N_eligible": 418,
+  "cohorts": {
+    "A_ORACLE_LIKE_PRESELECTED": 290,
+    "D_EMPTY_EVIDENCE": 128
+  },
+  "direct_runtime_gold_file_access_proven": false,
+  "historical_272_complete_template_scope": "oracle-like trusted-slot output-layer execution, not independent retrieval/semantic grounding",
+  "runtime_assisted_slots_derived_from_expected_semantics": true,
+  "runtime_fixture_uses_preselected_answer_facts": true,
+  "source_dataset_by_cohort": {
+    "frozen_v1/A_ORACLE_LIKE_PRESELECTED": 0,
+    "frozen_v1/D_EMPTY_EVIDENCE": 128,
+    "frozen_v2/A_ORACLE_LIKE_PRESELECTED": 224,
+    "frozen_v2/D_EMPTY_EVIDENCE": 0,
+    "real_fact/A_ORACLE_LIKE_PRESELECTED": 66,
+    "real_fact/D_EMPTY_EVIDENCE": 0
+  }
+}

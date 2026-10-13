@@ -1,0 +1,7 @@
+{
+  "N_repeated_warm_guard_calls_per_compilable_request": 5,
+  "family_mean_difference": 0.0,
+  "generic_speed_advantage_claimed": false,
+  "model_latency": "new renderer call-level captures descriptive once per condition; no transformer acceleration claim",
+  "unknown_source_dependencies": true
+}

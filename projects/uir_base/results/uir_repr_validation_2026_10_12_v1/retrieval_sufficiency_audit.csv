@@ -1,0 +1,401 @@
+source_index,source_id,gold_operand_literals_N,lexical_all_operand_numbers_present,full_document_all_operand_numbers_present,lexical_missing_operands,full_source_missing_operands,gold_program,evaluation_only,semantic_operand_selection_or_unit_sufficiency,answer_display,exe_ans,display_has_percent
+1,INTC/2015/page_41.pdf-4,2,False,True,8.1,,"divide(8.1, 56.0)",True,NOT_MEASURED,14%,0.14464,True
+4,MAS/2017/page_27.pdf-2,2,True,True,,,"subtract(318.46, const_100), divide(#0, const_100), subtract(206.49, const_100), divide(#2, const_100), subtract(#1, #3)",True,NOT_MEASURED,,1.1197,False
+6,AES/2010/page_227.pdf-3,2,True,True,,,"divide(463, 4612)",True,NOT_MEASURED,10%,0.10039,True
+9,CMCSA/2015/page_112.pdf-2,2,False,True,1136|1171,,"subtract(1136, 1171)",True,NOT_MEASURED,-35,-35.0,False
+12,GIS/2018/page_110.pdf-2,2,True,True,,,"divide(137.4, 559.3)",True,NOT_MEASURED,24.6%,0.24566,True
+13,JKHY/2019/page_18.pdf-3,2,True,True,,,"greater(281.09, 286.22)",True,NOT_MEASURED,no,no,False
+14,AWK/2014/page_121.pdf-2,2,True,True,,,"subtract(6348, 6241), divide(#0, 6241)",True,NOT_MEASURED,1.7%,0.01714,True
+15,MRO/2011/page_108.pdf-1,0,True,True,,,"table_average(net change for the year, none)",True,NOT_MEASURED,3298,3297.66667,False
+18,ADBE/2008/page_89.pdf-3,2,True,True,,,"divide(139549, const_1000), divide(15.3, #0)",True,NOT_MEASURED,11.0%,0.10964,True
+19,JPM/2010/page_273.pdf-2,4,True,True,,,"add(25.0, 24.0), add(9.7, 10.2), add(#1, #0)",True,NOT_MEASURED,68.9,68.9,False
+20,PNC/2012/page_68.pdf-2,2,True,True,,,"subtract(772, 843), divide(#0, 843)",True,NOT_MEASURED,-8.4%,-0.08422,True
+23,MAR/2018/page_43.pdf-2,2,True,True,,,"divide(230, 13208)",True,NOT_MEASURED,2%,0.01741,True
+30,UNP/2015/page_56.pdf-1,2,False,True,3581,,"divide(3581, 21813)",True,NOT_MEASURED,16.4%,0.16417,True
+32,AAPL/2006/page_100.pdf-3,0,True,True,,,"table_max(provision for income taxes, none)",True,NOT_MEASURED,829,829.0,False
+35,ABMD/2008/page_86.pdf-1,2,True,True,,,"subtract(168, 56)",True,NOT_MEASURED,112,112.0,False
+36,ETFC/2012/page_24.pdf-1,2,False,True,254000,,"divide(165000, 254000)",True,NOT_MEASURED,64.9%,0.64961,True
+37,ETFC/2007/page_18.pdf-2,2,False,True,219000,,"divide(166000, 219000)",True,NOT_MEASURED,75.8%,0.75799,True
+39,MKTX/2004/page_99.pdf-3,2,True,True,,,"add(1939734, 1937141)",True,NOT_MEASURED,3876875,3876875.0,False
+40,ETR/2013/page_21.pdf-3,2,True,True,,,"subtract(1854, 2045)",True,NOT_MEASURED,-191,-191.0,False
+43,ZBH/2008/page_57.pdf-2,2,True,True,,,"divide(460.1, 1020.1)",True,NOT_MEASURED,45.10%,0.45103,True
+46,FIS/2017/page_64.pdf-3,2,True,True,,,"subtract(1909, 1336), divide(#0, 1336)",True,NOT_MEASURED,42.9%,0.42889,True
+48,PNC/2012/page_65.pdf-1,2,True,True,,,"divide(10.4, 61.4), multiply(#0, const_100)",True,NOT_MEASURED,16.93%,16.93811,True
+51,ETFC/2011/page_144.pdf-2,2,True,True,,,"divide(2.3, 0.5)",True,NOT_MEASURED,4.6,4.6,False
+54,ETR/2004/page_239.pdf-3,2,False,True,380.2,,"subtract(426.6, 380.2), divide(#0, 380.2)",True,NOT_MEASURED,12.2%,0.12204,True
+58,FIS/2012/page_48.pdf-1,2,True,True,,,"subtract(26.4, 18.6), divide(#0, 18.6)",True,NOT_MEASURED,42%,0.41935,True
+61,HIG/2004/page_140.pdf-1,2,True,True,,,"divide(294, 30)",True,NOT_MEASURED,9.8,9.8,False
+64,ETR/2013/page_21.pdf-2,3,False,True,1854,,"subtract(2045, 1854), divide(194, #0)",True,NOT_MEASURED,102%,1.01571,True
+65,ABMD/2005/page_29.pdf-2,2,True,True,,,"greater(28000, 19000)",True,NOT_MEASURED,yes,yes,False
+69,PNC/2012/page_68.pdf-4,2,False,True,2936,,"divide(843, 2936)",True,NOT_MEASURED,28.7%,0.28713,True
+71,PM/2017/page_32.pdf-1,2,True,True,,,"subtract(164, 199), divide(#0, 199)",True,NOT_MEASURED,-17.6%,-0.17588,True
+83,AWK/2012/page_117.pdf-4,2,False,True,180993,,"divide(74360, 180993)",True,NOT_MEASURED,41.1%,0.41084,True
+88,STT/2009/page_127.pdf-2,2,True,True,,,"subtract(368, 68)",True,NOT_MEASURED,300,300.0,False
+89,RSG/2018/page_94.pdf-1,2,False,True,34.3|38.9,,"subtract(34.3, 38.9), divide(#0, 38.9)",True,NOT_MEASURED,11.9%,-0.11825,True
+90,MRO/2004/page_46.pdf-1,2,False,True,45686,,"divide(42749, 45686)",True,NOT_MEASURED,93.6%,0.93571,True
+93,CDNS/2018/page_66.pdf-4,2,False,True,341003,,"subtract(426932, 341003)",True,NOT_MEASURED,85929,85929.0,False
+96,L/2009/page_84.pdf-4,1,True,True,,,"subtract(121.48, const_100), divide(#0, const_100)",True,NOT_MEASURED,21.5%,0.2148,True
+103,GPN/2010/page_89.pdf-4,4,False,True,41|42|713|762,,"multiply(762, 41), multiply(713, 42), subtract(#1, #0), divide(#2, #0)",True,NOT_MEASURED,-4.1%,-0.04148,True
+110,AMT/2016/page_49.pdf-3,2,True,True,,,"subtract(108.11, 118.09), divide(#0, 118.09)",True,NOT_MEASURED,-8.5%,-0.08451,True
+114,MRO/2013/page_19.pdf-3,0,True,True,,,"table_sum(worldwide, none)",True,NOT_MEASURED,3897,3879.0,False
+116,UPS/2007/page_49.pdf-1,0,True,True,,,"table_sum(total, none)",True,NOT_MEASURED,28809,28809.0,False
+118,MKTX/2012/page_42.pdf-1,2,False,True,31.16,,"subtract(37.79, 31.16), divide(#0, 31.16)",True,NOT_MEASURED,21.3%,0.21277,True
+120,AWK/2014/page_121.pdf-1,3,True,True,,,"add(53818, -36528), add(#0, 157)",True,NOT_MEASURED,17447,17447.0,False
+124,CME/2017/page_40.pdf-2,2,True,True,,,"subtract(208.14, 100), divide(#0, 100), divide(const_1, const_5), exp(#1, #2), subtract(#3, const_1)",True,NOT_MEASURED,2%,0.01577,True
+125,AMT/2012/page_50.pdf-1,2,True,True,,,"divide(102400, 619314)",True,NOT_MEASURED,16.5%,0.16534,True
+126,SNA/2012/page_110.pdf-2,3,False,True,-379|-22|203,,"add(203, -379), add(#0, -22)",True,NOT_MEASURED,-198,-198.0,False
+130,DISCA/2011/page_49.pdf-1,1,True,True,,,"subtract(296.67, const_100), divide(#0, const_100)",True,NOT_MEASURED,196.67,1.9667,False
+131,ZBH/2007/page_67.pdf-2,2,True,True,,,"subtract(25.2, 6.1), divide(#0, 6.1)",True,NOT_MEASURED,313%,3.13115,True
+134,DRE/2008/page_46.pdf-2,2,False,True,139255,,"divide(217692, 139255)",True,NOT_MEASURED,1.56,1.56326,False
+135,IP/2006/page_75.pdf-2,2,False,True,117|579,,"divide(117, 579)",True,NOT_MEASURED,20%,0.20207,True
+138,AON/2007/page_171.pdf-1,2,True,True,,,"subtract(-726, -1010)",True,NOT_MEASURED,284,284.0,False
+141,JPM/2018/page_90.pdf-5,2,True,True,,,"subtract(2.36, 2.25), multiply(#0, const_100)",True,NOT_MEASURED,11,11.0,False
+142,AMT/2014/page_160.pdf-4,2,True,True,,,"divide(574438, const_1000), greater(655.0, #0)",True,NOT_MEASURED,yes,yes,False
+145,IP/2006/page_31.pdf-2,2,False,True,4625,,"divide(895, 4625)",True,NOT_MEASURED,19%,0.19351,True
+146,HST/2018/page_135.pdf-1,1,False,True,11,,"subtract(11, 11)",True,NOT_MEASURED,0,0.0,False
+150,ANET/2015/page_156.pdf-2,2,True,True,,,"divide(1336, 42546)",True,NOT_MEASURED,3.1%,0.0314,True
+152,PNC/2012/page_247.pdf-3,1,True,True,,,"subtract(const_4, 3.9), divide(#0, const_4), multiply(#1, const_100)",True,NOT_MEASURED,2.5%,2.5,True
+154,UPS/2007/page_98.pdf-1,2,True,True,,,"multiply(1.8, 64.20)",True,NOT_MEASURED,115.6,115.56,False
+161,DG/2007/page_67.pdf-1,2,True,True,,,"subtract(0.2, 9.4)",True,NOT_MEASURED,-9.2,-9.2,False
+163,AES/2001/page_33.pdf-2,2,True,True,,,"subtract(52.25, 39.95)",True,NOT_MEASURED,12.30,12.3,False
+164,CMCSA/2015/page_67.pdf-1,2,False,True,2424|7034,,"divide(2424, 7034)",True,NOT_MEASURED,34%,0.34461,True
+167,CE/2016/page_19.pdf-3,2,True,True,,,"subtract(78, 119)",True,NOT_MEASURED,-41,-41.0,False
+175,LMT/2012/page_73.pdf-3,2,True,True,,,"subtract(335.9, 364.2), divide(#0, 364.2)",True,NOT_MEASURED,-7.8%,-0.0777,True
+177,ADBE/2008/page_89.pdf-4,2,True,True,,,"greater(57.7, 68.9)",True,NOT_MEASURED,no,no,False
+178,MRO/2003/page_45.pdf-2,0,True,True,,,"table_sum(distillates, none)",True,NOT_MEASURED,1056,1056.0,False
+186,V/2014/page_126.pdf-2,2,True,True,,,"subtract(44.11, 39.03)",True,NOT_MEASURED,13.0%,5.08,True
+189,LMT/2016/page_49.pdf-4,0,True,True,,,"table_average(operating profit, none)",True,NOT_MEASURED,1215,1214.66667,False
+191,HWM/2018/page_96.pdf-2,4,True,True,,,"multiply(11, 33.32), multiply(13, 26.93), subtract(#0, #1)",True,NOT_MEASURED,16.43,16.43,False
+192,PKG/2013/page_88.pdf-2,2,True,True,,,"multiply(151945, 24.61)",True,NOT_MEASURED,3739366.45,3739366.45,False
+193,AES/2001/page_33.pdf-1,2,True,True,,,"subtract(17.80, 11.60)",True,NOT_MEASURED,6.20,6.2,False
+195,STT/2006/page_95.pdf-3,2,True,True,,,"subtract(186, 26), divide(#0, 26)",True,NOT_MEASURED,615.4%,6.15385,True
+198,RSG/2018/page_94.pdf-2,2,True,True,,,"divide(78.6, 108.1)",True,NOT_MEASURED,72.7%,0.7271,True
+200,LMT/2014/page_91.pdf-2,3,True,True,,,"add(385, 383), add(#0, 380), divide(#1, const_3)",True,NOT_MEASURED,382.7,382.66667,False
+201,FBHS/2017/page_22.pdf-1,2,False,True,502.9,,"divide(2467.1, 502.9)",True,NOT_MEASURED,4.9,4.90575,False
+206,AAL/2016/page_8.pdf-3,2,False,True,122300,,"divide(23000, 122300)",True,NOT_MEASURED,18.8%,0.18806,True
+209,C/2008/page_44.pdf-2,3,True,True,,,"subtract(438, -291), divide(#0, 291)",True,NOT_MEASURED,251%,2.50515,True
+210,CME/2010/page_91.pdf-2,2,False,True,11.8,,"divide(11.8, 146.1)",True,NOT_MEASURED,8%,0.08077,True
+217,DRE/2002/page_15.pdf-3,3,False,True,4800|5080|45708,,"add(45708, 4800), divide(5080, #0)",True,NOT_MEASURED,10.1%,0.10058,True
+223,UPS/2007/page_98.pdf-2,2,True,True,,,"multiply(2.13%, 64.20)",True,NOT_MEASURED,1.4,1.36746,False
+224,GPN/2008/page_78.pdf-4,2,False,True,13536,,"divide(13536, 16594)",True,NOT_MEASURED,81.6%,0.81572,True
+228,ABC/2005/page_49.pdf-4,2,True,True,,,"divide(630, 700)",True,NOT_MEASURED,90%,0.9,True
+229,TFX/2017/page_78.pdf-1,2,True,True,,,"add(1708928, 3629455), divide(1708928, #0)",True,NOT_MEASURED,32.0%,0.32012,True
+232,CDW/2015/page_93.pdf-4,2,True,True,,,"add(171.8, 0.4)",True,NOT_MEASURED,172.2,172.2,False
+234,SNA/2012/page_110.pdf-3,2,True,True,,,"subtract(707, 48.87)",True,NOT_MEASURED,34551,658.13,False
+235,CDW/2015/page_93.pdf-1,3,True,True,,,"add(19.8, 21.9), add(17.3, #0), divide(#1, const_3)",True,NOT_MEASURED,19.7,19.66667,False
+247,RCL/2016/page_6.pdf-1,2,True,True,,,"divide(503000, 298)",True,NOT_MEASURED,1687.92,1687.91946,False
+249,ZBH/2009/page_58.pdf-4,2,True,True,,,"divide(1127.6, 2719.3)",True,NOT_MEASURED,41%,0.41467,True
+250,PPG/2006/page_42.pdf-1,2,True,True,,,"divide(5, 4), multiply(#0, 5)",True,NOT_MEASURED,6.25,6.25,False
+251,PKG/2013/page_88.pdf-1,2,True,True,,,"divide(2140954, 151945)",True,NOT_MEASURED,14.1,14.09032,False
+255,INTC/2015/page_41.pdf-2,2,False,True,30.7|47.9,,"divide(30.7, 47.9)",True,NOT_MEASURED,64.1%,0.64092,True
+257,JPM/2014/page_70.pdf-2,2,True,True,,,"divide(43634, 94205)",True,NOT_MEASURED,46%,0.46318,True
+259,AAPL/2004/page_68.pdf-1,2,True,True,,,"subtract(8.2, 5.5)",True,NOT_MEASURED,2.7,2.7,False
+262,ETR/2016/page_150.pdf-1,5,True,True,,,"add(21.7, 22.3), add(#0, 22.7), add(#1, 23.2), add(#2, 11)",True,NOT_MEASURED,100.9,100.9,False
+264,GS/2018/page_69.pdf-4,0,True,True,,,"table_max(provision for credit losses, none)",True,NOT_MEASURED,674,674.0,False
+268,MRO/2017/page_96.pdf-1,0,True,True,,,"table_max(ultimate trend rate, none)",True,NOT_MEASURED,4.7%,0.047,True
+269,IPG/2008/page_72.pdf-1,2,True,True,,,"divide(131.8, 148.8), multiply(#0, const_100)",True,NOT_MEASURED,88.57,88.57527,False
+270,ETR/2015/page_17.pdf-4,2,True,True,,,"subtract(107, 66), divide(#0, 66)",True,NOT_MEASURED,62.12%,0.62121,True
+273,BLL/2012/page_31.pdf-1,1,True,True,,,"subtract(207.62, const_100), divide(#0, const_100)",True,NOT_MEASURED,107.6%,1.0762,True
+276,PPG/2008/page_52.pdf-1,2,False,True,21,,"add(21, 99)",True,NOT_MEASURED,120,120.0,False
+277,BLK/2015/page_124.pdf-1,2,False,True,560|1203,,"divide(560, 1203)",True,NOT_MEASURED,46.55,0.4655,False
+279,ZBH/2008/page_57.pdf-4,2,True,True,,,"divide(149.3, 1020.1)",True,NOT_MEASURED,15%,0.14636,True
+281,JPM/2009/page_175.pdf-5,4,True,True,,,"add(384102, 121417), add(381415, 65439), subtract(#0, #1)",True,NOT_MEASURED,58665,58665.0,False
+282,RCL/2012/page_75.pdf-2,2,True,True,,,"subtract(459.8, 442.9), divide(#0, 442.9)",True,NOT_MEASURED,3.8%,0.03816,True
+283,KHC/2018/page_132.pdf-3,2,False,True,1214|1220,,"subtract(1220, 1214)",True,NOT_MEASURED,6,6.0,False
+285,AMT/2014/page_160.pdf-1,2,True,True,,,"subtract(655.0, 495.2), divide(#0, 495.2)",True,NOT_MEASURED,32.3%,0.3227,True
+287,MKTX/2004/page_99.pdf-4,2,True,True,,,"add(64001, 289581)",True,NOT_MEASURED,353582,353582.0,False
+292,GS/2013/page_72.pdf-2,2,True,True,,,"subtract(58219, 71267), divide(#0, 71267)",True,NOT_MEASURED,-18.3%,-0.18309,True
+294,LMT/2014/page_50.pdf-1,2,False,True,18100|20500,,"subtract(20500, 18100), divide(#0, 18100)",True,NOT_MEASURED,13.3%,0.1326,True
+306,ABC/2005/page_49.pdf-1,2,True,True,,,"add(13.3, 5.4)",True,NOT_MEASURED,18.7,18.7,False
+309,ETFC/2012/page_24.pdf-2,2,False,True,254000,,"divide(254000, 107000)",True,NOT_MEASURED,2.37,2.37383,False
+313,HWM/2015/page_173.pdf-1,3,True,True,,,"divide(8, 2), subtract(#0, 1)",True,NOT_MEASURED,300%,3.0,True
+318,GS/2013/page_126.pdf-2,2,True,True,,,"subtract(355173, 377677), divide(#0, 377677)",True,NOT_MEASURED,-6.0%,-0.05959,True
+322,ADBE/2008/page_74.pdf-2,2,True,True,,,"greater(4, 1)",True,NOT_MEASURED,yes,yes,False
+323,MRK/2013/page_125.pdf-4,2,True,True,,,"multiply(1.2, const_1000), subtract(665, #0), divide(#1, #0)",True,NOT_MEASURED,44.59%,-0.44583,True
+325,JPM/2009/page_175.pdf-1,2,True,True,,,"subtract(318063, 60224)",True,NOT_MEASURED,257839,257839.0,False
+326,MMM/2007/page_84.pdf-1,2,True,True,,,"divide(332, 121)",True,NOT_MEASURED,2.74,2.7438,False
+327,MAS/2017/page_27.pdf-4,2,True,True,,,"divide(200.79, 151.94)",True,NOT_MEASURED,1.32,1.32151,False
+330,AMT/2008/page_107.pdf-4,2,True,True,,,"subtract(7327, 20963)",True,NOT_MEASURED,-13636,-13636.0,False
+333,TMUS/2017/page_29.pdf-2,2,False,True,17|1400000,,"divide(1400000, 17)",True,NOT_MEASURED,82352.94,82352.94118,False
+334,UPS/2016/page_114.pdf-2,2,False,True,190|207,,"subtract(190, 207)",True,NOT_MEASURED,-17,-17.0,False
+335,MRO/2017/page_96.pdf-3,0,True,True,,,"table_average(initial health care trend rate, none)",True,NOT_MEASURED,8.08,0.08083,False
+338,SNA/2013/page_84.pdf-1,2,False,True,546.5,,"divide(14.9, 546.5)",True,NOT_MEASURED,2.72%,0.02726,True
+339,DVN/2015/page_79.pdf-3,2,True,True,,,"subtract(28.8, 30.3), divide(#0, 30.3)",True,NOT_MEASURED,-5%,-0.0495,True
+344,GRMN/2006/page_68.pdf-2,2,False,True,268766,,"divide(265409, 268766)",True,NOT_MEASURED,98.75%,0.98751,True
+345,JPM/2003/page_106.pdf-1,2,True,True,,,"divide(18.0, 23.5)",True,NOT_MEASURED,0.76,0.76596,False
+350,GPN/2010/page_89.pdf-2,2,True,True,,,"multiply(713, 42)",True,NOT_MEASURED,29946,29946.0,False
+354,FIS/2016/page_31.pdf-1,1,True,True,,,"subtract(311.81, const_100), divide(#0, const_100)",True,NOT_MEASURED,211.81%,2.1181,True
+359,GS/2013/page_72.pdf-1,2,True,True,,,"subtract(58219, 71267)",True,NOT_MEASURED,-13048,-13048.0,False
+364,AAL/2010/page_72.pdf-1,2,False,True,989|4959,,"divide(4959, 989)",True,NOT_MEASURED,,5.01416,False
+365,ETR/2004/page_212.pdf-1,2,True,True,,,"subtract(931.3, 973.7), divide(#0, 973.7)",True,NOT_MEASURED,-4.4%,-0.04355,True
+369,AMAT/2013/page_37.pdf-1,2,False,False,100000,100000,"divide(100000, const_100), subtract(118.21, const_100), multiply(#0, #1)",True,NOT_MEASURED,18210,18210.0,False
+375,CDNS/2015/page_30.pdf-3,2,True,True,,,"subtract(314.36, const_100), divide(#0, const_100), subtract(223.74, const_100), divide(#2, const_100), subtract(#1, #3)",True,NOT_MEASURED,90.62%,0.9062,True
+378,GS/2013/page_85.pdf-1,2,False,True,45826|182650,,"divide(45826, 182650)",True,NOT_MEASURED,25%,0.2509,True
+380,JPM/2010/page_281.pdf-2,2,True,True,,,"divide(472.7, 635.6)",True,NOT_MEASURED,74.4%,0.74371,True
+382,ETR/2004/page_212.pdf-4,3,True,True,,,"subtract(973.7, 931.3), divide(18.7, #0)",True,NOT_MEASURED,44.1%,0.44104,True
+388,GPN/2013/page_87.pdf-1,2,False,True,44|561,,"multiply(561, 44)",True,NOT_MEASURED,24684,24684.0,False
+389,GPN/2013/page_92.pdf-2,2,True,True,,,"subtract(8985, 11057)",True,NOT_MEASURED,-18.7%,-2072.0,True
+390,ETR/2017/page_143.pdf-2,2,False,True,760000|857679,,"subtract(857679, 760000), divide(#0, 760000)",True,NOT_MEASURED,12.9%,0.12853,True
+392,HWM/2018/page_96.pdf-1,2,True,True,,,"multiply(9, 26.79)",True,NOT_MEASURED,241.11,241.11,False
+393,CE/2009/page_65.pdf-2,2,False,True,-677|372,,"add(-677, 372)",True,NOT_MEASURED,-305,-305.0,False
+395,GS/2013/page_149.pdf-4,0,True,True,,,"table_min(collateral posted, none)",True,NOT_MEASURED,18178,18178.0,False
+401,SNA/2013/page_83.pdf-1,2,True,True,,,"subtract(7.7, 19.6)",True,NOT_MEASURED,-11.9,-11.9,False
+405,V/2014/page_126.pdf-1,3,True,True,,,"add(172, 179), add(#0, 147)",True,NOT_MEASURED,498,498.0,False
+407,ILMN/2008/page_86.pdf-4,2,True,True,,,"subtract(2.6, 1.4)",True,NOT_MEASURED,1.2,1.2,False
+410,AMT/2012/page_118.pdf-1,2,False,True,5536|38519,,"add(5536, 38519)",True,NOT_MEASURED,44055,44055.0,False
+411,AON/2007/page_188.pdf-1,2,True,True,,,"divide(70, 53), subtract(#0, const_1)",True,NOT_MEASURED,32.07%,0.32075,True
+414,GPN/2008/page_78.pdf-1,2,True,True,,,"divide(4091, 14)",True,NOT_MEASURED,292.2,292.21429,False
+419,AMT/2006/page_113.pdf-2,2,False,True,665|2239,,"subtract(665, 2239)",True,NOT_MEASURED,-1574,-1574.0,False
+422,HIG/2011/page_53.pdf-1,2,False,True,57|320,,"divide(57, 320)",True,NOT_MEASURED,17.8%,0.17813,True
+425,JPM/2014/page_122.pdf-1,2,True,True,,,"subtract(324502, 308263), divide(#0, 308263)",True,NOT_MEASURED,5%,0.05268,True
+426,MO/2016/page_19.pdf-2,2,False,True,192.56|286.61,,"greater(286.61, 192.56)",True,NOT_MEASURED,yes,yes,False
+429,AMT/2006/page_104.pdf-3,2,True,True,,,"divide(325.1, 400.0)",True,NOT_MEASURED,81.3%,0.81275,True
+430,RSG/2015/page_98.pdf-1,2,True,True,,,"subtract(46.7, 38.9), subtract(#0, 38.9)",True,NOT_MEASURED,20.1%,-31.1,True
+431,MO/2014/page_62.pdf-2,2,True,True,,,"divide(86, 5070)",True,NOT_MEASURED,1.70%,0.01696,True
+432,NCLH/2018/page_64.pdf-2,2,True,True,,,"subtract(1.6, 1.2), divide(#0, 1.2)",True,NOT_MEASURED,33.3%,0.33333,True
+433,STT/2006/page_95.pdf-1,2,True,True,,,"subtract(25.25, 17.90), divide(#0, 17.90)",True,NOT_MEASURED,41.1%,0.41061,True
+434,PNC/2012/page_174.pdf-3,2,False,True,1141|1589,,"subtract(1589, 1141)",True,NOT_MEASURED,448,448.0,False
+435,MAS/2017/page_27.pdf-3,2,True,True,,,"subtract(206.49, 169.82), divide(#0, 169.82)",True,NOT_MEASURED,21.6%,0.21593,True
+438,GPN/2013/page_87.pdf-2,2,True,True,,,"divide(33.5, 2.5)",True,NOT_MEASURED,$ 13.4 million,13.4,False
+439,STT/2011/page_69.pdf-2,2,True,True,,,"divide(1400, 5%)",True,NOT_MEASURED,28000,28000.0,False
+440,HUM/2009/page_105.pdf-1,2,True,True,,,"subtract(14.24, 17.95), divide(#0, 17.95)",True,NOT_MEASURED,-21%,-0.20669,True
+443,EL/2008/page_59.pdf-1,2,True,True,,,"multiply(1.7, const_100), divide(#0, 7.75)",True,NOT_MEASURED,219.35,21.93548,False
+444,PNC/2012/page_100.pdf-2,2,False,True,74|110,,"add(74, 110), divide(#0, const_2)",True,NOT_MEASURED,92,92.0,False
+446,HII/2015/page_88.pdf-1,1,True,True,,,"divide(const_100, 40)",True,NOT_MEASURED,2.5%,2.5,True
+447,MRO/2004/page_125.pdf-2,2,True,True,,,"subtract(802, 711), divide(#0, 802)",True,NOT_MEASURED,11.3%,0.11347,True
+449,AWK/2013/page_122.pdf-1,2,False,True,177947,,"add(242, 177947)",True,NOT_MEASURED,$ 178189,178189.0,False
+450,MRO/2017/page_96.pdf-2,2,True,True,,,"subtract(8.00%, 4.70%)",True,NOT_MEASURED,3.30%,0.033,True
+451,AAL/2013/page_172.pdf-1,2,False,True,5424,,"divide(849, 5424)",True,NOT_MEASURED,15.7%,0.15653,True
+452,HII/2015/page_121.pdf-2,2,True,True,,,"divide(96, 1717)",True,NOT_MEASURED,5.6%,0.05591,True
+457,AAL/2016/page_8.pdf-1,2,False,True,101500,,"divide(13400, 101500)",True,NOT_MEASURED,13.2%,0.13202,True
+459,JPM/2018/page_90.pdf-6,2,True,True,,,"divide(4630, 46780)",True,NOT_MEASURED,9.9%,0.09897,True
+460,UNP/2011/page_33.pdf-1,2,True,True,,,"divide(5.5, const_100), add(#0, 70.6%)",True,NOT_MEASURED,81.6%,0.761,True
+462,JPM/2008/page_117.pdf-1,2,False,True,32|38,,"add(32, 38), divide(#0, const_2), multiply(#1, const_1000000)",True,NOT_MEASURED,35000000,35000000.0,False
+464,DG/2009/page_77.pdf-1,1,False,True,20,,"divide(const_100, 20)",True,NOT_MEASURED,5%,5.0,True
+466,SNA/2007/page_69.pdf-1,2,True,True,,,"subtract(1.7, 1.2), divide(#0, 1.2)",True,NOT_MEASURED,41.7%,0.41667,True
+467,HOLX/2006/page_71.pdf-1,2,False,True,15.52|4218065,,"multiply(4218065, 15.52)",True,NOT_MEASURED,65464368.80,65464368.8,False
+468,ETR/2011/page_17.pdf-2,3,False,True,13|24|49,,"add(13, 24), add(#0, 49)",True,NOT_MEASURED,86,86.0,False
+469,CDNS/2015/page_30.pdf-4,1,True,True,,,"subtract(314.36, const_100), divide(#0, const_100)",True,NOT_MEASURED,214.36%,2.1436,True
+471,MO/2014/page_39.pdf-1,2,True,True,,,"divide(765, 824)",True,NOT_MEASURED,92.8%,0.9284,True
+476,IP/2009/page_45.pdf-1,2,False,True,1407,,"divide(574, 1407)",True,NOT_MEASURED,41%,0.40796,True
+485,MSI/2008/page_69.pdf-2,2,True,True,,,"subtract(1.2, 2.2), divide(#0, 1.2)",True,NOT_MEASURED,-83.3%,-0.83333,True
+487,AMT/2007/page_29.pdf-1,3,False,True,13900|19600|57800,,"add(19600, 13900), add(#0, 57800)",True,NOT_MEASURED,91300,91300.0,False
+490,MRK/2013/page_3.pdf-1,2,True,True,,,"subtract(44033, 47267), divide(#0, 47267)",True,NOT_MEASURED,-6.8%,-0.06842,True
+493,CB/2008/page_229.pdf-2,3,True,True,,,"add(90, 77), add(64, #0), divide(#1, const_3)",True,NOT_MEASURED,77,77.0,False
+497,GPN/2008/page_78.pdf-3,2,False,True,13536,,"divide(13536, 16594)",True,NOT_MEASURED,81.6%,0.81572,True
+501,MRO/2013/page_19.pdf-4,2,False,True,145|586,,"divide(145, 586)",True,NOT_MEASURED,24.7%,0.24744,True
+505,UPS/2010/page_52.pdf-3,2,False,True,2963|23556,,"divide(2963, 23556)",True,NOT_MEASURED,13%,0.12579,True
+506,DISCA/2014/page_64.pdf-2,1,False,True,233.86,,"subtract(233.86, const_100), divide(#0, const_100)",True,NOT_MEASURED,133.86%,1.3386,True
+507,AAPL/2006/page_100.pdf-1,2,False,True,29|829,,"multiply(829, 29%)",True,NOT_MEASURED,$ 240.41,240.41,False
+509,APD/2016/page_40.pdf-1,2,True,True,,,"subtract(26.8%, 21.9%)",True,NOT_MEASURED,4.9%,0.049,True
+511,ABMD/2012/page_41.pdf-1,2,True,True,,,"greater(162.45, 127.66)",True,NOT_MEASURED,yes,yes,False
+512,RSG/2018/page_135.pdf-1,2,False,True,18|82,,"divide(82, 18)",True,NOT_MEASURED,4.6,4.55556,False
+513,ETR/2004/page_212.pdf-2,2,True,True,,,"divide(-29.4, 931.3)",True,NOT_MEASURED,3.16%,-0.03157,True
+514,V/2008/page_180.pdf-3,3,False,True,945|1088|1105,,"add(1088, 1105), add(#0, 945)",True,NOT_MEASURED,3138,3138.0,False
+519,AMT/2003/page_27.pdf-3,2,True,True,,,"divide(10000, 30000)",True,NOT_MEASURED,33.3%,0.33333,True
+529,PKG/2005/page_74.pdf-1,2,True,True,,,"divide(2408, 3772)",True,NOT_MEASURED,64%,0.63839,True
+531,PPG/2006/page_42.pdf-2,1,True,True,,,"divide(10, const_9)",True,NOT_MEASURED,111%,1.11111,True
+533,HOLX/2009/page_151.pdf-2,2,True,True,,,"multiply(1461, 31.23)",True,NOT_MEASURED,45627.03,45627.03,False
+538,GS/2013/page_220.pdf-4,1,True,True,,,"subtract(248.36, const_100), divide(#0, const_100)",True,NOT_MEASURED,148.36%,1.4836,True
+539,DVN/2018/page_35.pdf-3,2,True,True,,,"subtract(156, 15), divide(#0, 15), multiply(#1, const_100)",True,NOT_MEASURED,940%,940.0,True
+541,TMUS/2017/page_29.pdf-4,2,True,True,,,"divide(1700000, 900000)",True,NOT_MEASURED,1.9,1.88889,False
+542,D/2002/page_87.pdf-2,2,False,True,643|8369,,"divide(643, 8369)",True,NOT_MEASURED,7.7%,0.07683,True
+546,GS/2012/page_121.pdf-1,2,False,True,923225|938555,,"subtract(938555, 923225), divide(#0, 923225)",True,NOT_MEASURED,1.7%,0.0166,True
+548,AAL/2013/page_18.pdf-3,2,True,True,,,"subtract(104, 87), divide(#0, 87)",True,NOT_MEASURED,19.5%,0.1954,True
+552,MRK/2013/page_125.pdf-3,2,True,True,,,"divide(319, 88)",True,NOT_MEASURED,3.625,3.625,False
+559,MO/2014/page_39.pdf-2,2,True,True,,,"divide(664, 824)",True,NOT_MEASURED,80.6%,0.80583,True
+562,CME/2017/page_89.pdf-4,3,False,True,2.1|3.0|3.7,,"add(2.1, 3.7), add(3.0, #0), divide(#1, 3)",True,NOT_MEASURED,2.93,2.93333,False
+563,DISH/2010/page_117.pdf-1,2,False,True,390239,,"divide(390239, 777443)",True,NOT_MEASURED,50%,0.50195,True
+568,ADBE/2008/page_74.pdf-3,2,False,True,5,,"greater(5, 6)",True,NOT_MEASURED,no,no,False
+569,CME/2010/page_123.pdf-3,2,True,True,,,"divide(1211143, 1217121)",True,NOT_MEASURED,99.5%,0.99509,True
+570,UA/2011/page_69.pdf-2,2,True,True,,,"divide(6882, 70842)",True,NOT_MEASURED,9.7%,0.09715,True
+573,ABMD/2008/page_86.pdf-2,2,True,True,,,"divide(1.8, 5.6)",True,NOT_MEASURED,32%,0.32143,True
+574,JPM/2003/page_106.pdf-3,0,True,True,,,"table_average(structured commercial loan vehicles, none)",True,NOT_MEASURED,6.25,6.25,False
+577,RSG/2015/page_98.pdf-2,2,False,True,46.7,,"divide(100.3, 46.7)",True,NOT_MEASURED,,2.14775,False
+578,INTC/2013/page_31.pdf-4,2,True,True,,,"divide(209, 191), divide(#0, 191)",True,NOT_MEASURED,9.42%,0.00573,True
+586,GS/2017/page_86.pdf-4,2,False,True,391555|408164,,"subtract(408164, 391555)",True,NOT_MEASURED,16609,16609.0,False
+592,GS/2017/page_179.pdf-2,2,True,True,,,"subtract(2.90, 2.60), divide(#0, 2.60)",True,NOT_MEASURED,12%,0.11538,True
+596,LMT/2014/page_91.pdf-1,3,True,True,,,"add(385, 383), add(#0, 380), divide(#1, const_3)",True,NOT_MEASURED,383,382.66667,False
+597,ETR/2013/page_21.pdf-1,2,False,True,2045,,"subtract(1854, 2045), divide(#0, 2045)",True,NOT_MEASURED,-9.3%,-0.0934,True
+600,FIS/2012/page_48.pdf-2,2,True,True,,,"subtract(27.1, 26.4), divide(#0, 26.4)",True,NOT_MEASURED,2.7%,0.02652,True
+601,DG/2005/page_44.pdf-3,2,True,True,,,"add(5.8, 6.3)",True,NOT_MEASURED,12.1,12.1,False
+603,ILMN/2003/page_58.pdf-2,2,True,True,,,"divide(63.84, 93.20)",True,NOT_MEASURED,0.685,0.68498,False
+604,SNA/2018/page_31.pdf-2,2,False,True,149.28|90000,,"multiply(90000, 149.28)",True,NOT_MEASURED,13435200,13435200.0,False
+606,AAPL/2005/page_43.pdf-2,2,False,True,165,,"divide(165, 6816)",True,NOT_MEASURED,2.4%,0.02421,True
+611,AAL/2014/page_15.pdf-2,2,False,True,113300,,"divide(22500, 113300)",True,NOT_MEASURED,19.9%,0.19859,True
+619,BLL/2011/page_32.pdf-2,0,True,True,,,"table_average(net sales, none)",True,NOT_MEASURED,7657.1,7657.1,False
+620,JPM/2010/page_120.pdf-2,2,True,True,,,"subtract(222510, 200077), divide(#0, 200077)",True,NOT_MEASURED,,0.11212,False
+623,BLL/2010/page_35.pdf-1,2,True,True,,,"divide(635, 1000)",True,NOT_MEASURED,.635,0.635,False
+626,SLG/2001/page_48.pdf-1,2,True,True,,,"greater(-4096, 891)",True,NOT_MEASURED,no,no,False
+629,PPG/2012/page_29.pdf-1,3,True,True,,,"add(358, 355), add(#0, 360)",True,NOT_MEASURED,1073,1073.0,False
+630,GS/2012/page_142.pdf-3,2,True,True,,,"subtract(24296, 29002), divide(#0, 29002)",True,NOT_MEASURED,-16%,-0.16226,True
+635,GS/2012/page_142.pdf-1,2,True,True,,,"subtract(27885, 35066), divide(#0, 35066)",True,NOT_MEASURED,-20%,-0.20479,True
+638,ILMN/2008/page_86.pdf-1,2,False,True,2402|21376,,"divide(2402, 21376)",True,NOT_MEASURED,11.2%,0.11237,True
+639,GS/2017/page_86.pdf-3,2,True,True,,,"subtract(1341016, 1270173)",True,NOT_MEASURED,70843,70843.0,False
+640,EL/2008/page_59.pdf-2,2,True,True,,,"divide(34, 66.3)",True,NOT_MEASURED,51.28%,0.51282,True
+644,L/2009/page_84.pdf-2,2,True,True,,,"subtract(80.74, 128.16), divide(#0, 128.16)",True,NOT_MEASURED,-37.0%,-0.37001,True
+645,FBHS/2017/page_22.pdf-2,2,False,True,5283.3,,"multiply(5283.3, 15%)",True,NOT_MEASURED,792.5,792.495,False
+646,IPG/2006/page_77.pdf-1,3,True,True,,,"subtract(258.6, 250.0), subtract(#0, 1.4)",True,NOT_MEASURED,7.2,7.2,False
+647,AAL/2015/page_114.pdf-1,2,True,True,,,"divide(1733, 2655)",True,NOT_MEASURED,65.3%,0.65273,True
+653,MRK/2013/page_3.pdf-2,2,True,True,,,"subtract(47267, 48047), divide(#0, 48047)",True,NOT_MEASURED,-1.6%,-0.01623,True
+658,DISCA/2011/page_49.pdf-2,1,True,True,,,"subtract(217.56, const_100), divide(#0, const_100)",True,NOT_MEASURED,117.56%,1.1756,True
+663,UPS/2016/page_114.pdf-1,2,False,True,68,,"subtract(68, 74)",True,NOT_MEASURED,-6,-6.0,False
+664,AMT/2003/page_27.pdf-1,2,True,True,,,"subtract(30000, 20000), divide(#0, 30000)",True,NOT_MEASURED,33.3%,0.33333,True
+665,CE/2013/page_16.pdf-2,2,True,True,,,"subtract(83, 78), divide(#0, 78)",True,NOT_MEASURED,6.4%,0.0641,True
+667,PNC/2012/page_174.pdf-4,2,True,True,,,"add(587, 580)",True,NOT_MEASURED,1167,1167.0,False
+675,C/2009/page_63.pdf-2,2,False,True,83659,,"divide(47162, 83659)",True,NOT_MEASURED,56%,0.56374,True
+676,CB/2008/page_229.pdf-3,2,False,True,684|7001,,"divide(684, 7001)",True,NOT_MEASURED,9.8%,0.0977,True
+677,HIG/2011/page_53.pdf-4,2,True,True,,,"subtract(169, 138), divide(#0, 138)",True,NOT_MEASURED,,0.22464,False
+689,AWK/2012/page_117.pdf-3,2,True,True,,,"subtract(158578, 118314)",True,NOT_MEASURED,40264,40264.0,False
+692,DRE/2008/page_46.pdf-4,2,True,True,,,"subtract(22.7, 33.1), divide(#0, 33.1)",True,NOT_MEASURED,"-31.47,",-0.3142,False
+694,BLK/2014/page_120.pdf-1,2,False,True,613|1178,,"divide(613, 1178)",True,NOT_MEASURED,52.04%,0.52037,True
+696,C/2018/page_175.pdf-1,2,True,True,,,"subtract(5301, 4229), divide(#0, 4229)",True,NOT_MEASURED,25.3%,0.25349,True
+700,LMT/2014/page_91.pdf-4,2,False,True,2070|13430,,"divide(2070, 13430)",True,NOT_MEASURED,0.15,0.15413,False
+701,D/2002/page_87.pdf-1,3,True,True,,,"add(34, 23), add(13, #0)",True,NOT_MEASURED,70,70.0,False
+702,IP/2006/page_30.pdf-2,2,False,True,7170,,"divide(465, 7170)",True,NOT_MEASURED,6%,0.06485,True
+704,AAL/2013/page_172.pdf-3,2,False,True,5424,,"divide(849, 5424)",True,NOT_MEASURED,15.7%,0.15653,True
+706,SLB/2012/page_56.pdf-2,2,True,True,,,"add(27, 37)",True,NOT_MEASURED,78,64.0,False
+720,IPG/2017/page_92.pdf-4,2,True,True,,,"divide(121.0, 268.4)",True,NOT_MEASURED,45.1%,0.45082,True
+723,AAL/2013/page_172.pdf-2,2,False,True,1246|3329,,"divide(3329, 1246)",True,NOT_MEASURED,2.7,2.67175,False
+725,MSI/2012/page_87.pdf-3,2,True,True,,,"add(30.56, 35.61), divide(#0, const_2)",True,NOT_MEASURED,33.085,33.085,False
+726,MSI/2008/page_69.pdf-3,2,False,True,2690,,"divide(2690, 18988)",True,NOT_MEASURED,14.2%,0.14167,True
+727,FIS/2016/page_9.pdf-2,2,True,True,,,"subtract(4566, 3846), divide(#0, 3846)",True,NOT_MEASURED,18.7%,0.18721,True
+735,AMT/2014/page_149.pdf-2,2,False,True,28524,,"add(4934, 28524)",True,NOT_MEASURED,63458,33458.0,False
+736,AAPL/2006/page_131.pdf-1,2,False,True,149768|450000,,"add(149768, 450000)",True,NOT_MEASURED,599768,599768.0,False
+738,AON/2018/page_87.pdf-3,3,True,True,,,"add(228, 219), add(240, #0), divide(#1, const_3)",True,NOT_MEASURED,229,229.0,False
+739,DVN/2014/page_87.pdf-1,2,True,True,,,"subtract(164, 30), divide(#0, 30), multiply(#1, const_100)",True,NOT_MEASURED,446%,446.66667,True
+740,GIS/2018/page_110.pdf-1,2,True,True,,,"add(540.8, 167.3)",True,NOT_MEASURED,708.1,708.1,False
+741,UNP/2006/page_15.pdf-1,2,False,True,26466,,"divide(26466, 32339)",True,NOT_MEASURED,81.8%,0.81839,True
+743,ANSS/2012/page_93.pdf-1,2,False,True,265436|798018,,"divide(265436, 798018)",True,NOT_MEASURED,33.26%,0.33262,True
+746,LMT/2014/page_91.pdf-3,2,True,True,,,"subtract(200, 190)",True,NOT_MEASURED,10,10.0,False
+747,GIS/2017/page_31.pdf-4,2,True,True,,,"divide(21, 14.6)",True,NOT_MEASURED,1.44,1.43836,False
+752,AES/2010/page_227.pdf-1,2,False,True,3152,,"divide(3152, 4612)",True,NOT_MEASURED,68%,0.68343,True
+754,NCLH/2018/page_97.pdf-1,2,True,True,,,"subtract(37.2, 31.9), divide(#0, 31.9)",True,NOT_MEASURED,16.6%,0.16614,True
+756,ETR/2003/page_157.pdf-1,2,True,True,,,"divide(4900, 14773)",True,NOT_MEASURED,33.2%,0.33169,True
+758,RSG/2012/page_93.pdf-1,2,False,True,45.3|48.1,,"subtract(45.3, 48.1)",True,NOT_MEASURED,-2.8,-2.8,False
+760,JPM/2008/page_117.pdf-2,2,False,True,32|38,,"add(32, 38), multiply(#0, const_1000000)",True,NOT_MEASURED,70000000,70000000.0,False
+764,PNC/2012/page_174.pdf-2,2,True,True,,,"add(587, 580)",True,NOT_MEASURED,1167,1167.0,False
+765,MAS/2012/page_26.pdf-2,2,True,True,,,"subtract(79.90, 63.45), divide(#0, 63.45)",True,NOT_MEASURED,25.93%,0.25926,True
+766,UPS/2007/page_49.pdf-4,1,False,True,3465,,"table_sum(total, none), divide(3465, #0)",True,NOT_MEASURED,12%,0.12027,True
+767,UNP/2011/page_33.pdf-2,2,True,True,,,"subtract(5%, 3%)",True,NOT_MEASURED,2%,0.02,True
+769,MRO/2003/page_84.pdf-2,2,True,True,,,"subtract(-57, -41), divide(#0, -41)",True,NOT_MEASURED,39.0%,0.39024,True
+772,UNP/2009/page_42.pdf-1,2,True,True,,,"divide(100, 44), multiply(#0, const_1000000)",True,NOT_MEASURED,2270000,2272727.27273,False
+773,ECL/2017/page_79.pdf-2,2,False,True,605.5,,"divide(511.7, 605.5)",True,NOT_MEASURED,84.5%,0.84509,True
+775,MO/2014/page_62.pdf-1,2,True,True,,,"subtract(5058, 4523), divide(#0, 4523)",True,NOT_MEASURED,11.8%,0.11828,True
+777,MRO/2017/page_96.pdf-4,2,True,True,,,"subtract(8.25%, 4.50%)",True,NOT_MEASURED,3.75%,0.0375,True
+778,JPM/2018/page_90.pdf-2,2,True,True,,,"subtract(2180592, 51410)",True,NOT_MEASURED,2129182,2129182.0,False
+781,AAL/2013/page_18.pdf-1,2,False,True,8717|8959,,"subtract(8959, 8717), divide(#0, 8717)",True,NOT_MEASURED,2.8%,0.02776,True
+788,DISH/2010/page_117.pdf-2,2,True,True,,,"divide(75970, 777443)",True,NOT_MEASURED,10%,0.09772,True
+791,DRE/2007/page_56.pdf-3,3,True,True,,,"add(217692, 145095), add(309183, #0), divide(#1, const_3)",True,NOT_MEASURED,223990,223990.0,False
+796,UAA/2016/page_42.pdf-1,2,True,True,,,"divide(817388, 2030900)",True,NOT_MEASURED,40.2%,0.40248,True
+800,AAL/2013/page_18.pdf-4,2,False,True,33.2|8304,,"divide(8304, 33.2%)",True,NOT_MEASURED,25012,25012.04819,False
+807,HWM/2015/page_173.pdf-2,4,False,True,8|29,,"add(29, 4), add(8, 2), divide(29, #0), divide(8, #1), subtract(#2, #3)",True,NOT_MEASURED,7.87%,0.07879,True
+810,PKG/2005/page_74.pdf-4,2,False,True,1364|2408,,"add(2408, 1364)",True,NOT_MEASURED,3772,3772.0,False
+815,MRO/2013/page_19.pdf-2,2,False,True,236|3057,,"subtract(236, 3057), divide(#0, 3057)",True,NOT_MEASURED,-92.3%,-0.9228,True
+816,ABMD/2007/page_78.pdf-1,0,True,True,,,"table_average(expected volatility, none)",True,NOT_MEASURED,74,0.74,False
+817,ETFC/2018/page_153.pdf-2,1,True,True,,,"divide(const_7, 4.7)",True,NOT_MEASURED,0.15%,1.48936,True
+819,SNA/2013/page_34.pdf-1,2,True,True,,,"divide(223.82, 195.02)",True,NOT_MEASURED,1.15,1.14768,False
+821,ALLE/2015/page_24.pdf-2,2,True,True,,,"subtract(8.8, 2.9)",True,NOT_MEASURED,5.9,5.9,False
+824,GS/2012/page_189.pdf-1,0,True,True,,,"table_max(tier 1 capital, none)",True,NOT_MEASURED,20704,20704.0,False
+833,FIS/2016/page_31.pdf-4,1,True,True,,,"subtract(311.81, const_100), divide(const_1000000, const_100), multiply(#1, #0)",True,NOT_MEASURED,211810,2118100.0,False
+835,JPM/2009/page_175.pdf-4,4,False,True,77901,,"add(318063, 110457), add(60224, 77901), subtract(#0, #1)",True,NOT_MEASURED,290395,290395.0,False
+841,GS/2014/page_165.pdf-4,2,False,True,16075,,"divide(8368, 16075)",True,NOT_MEASURED,52%,0.52056,True
+853,IPG/2008/page_72.pdf-4,2,True,True,,,"divide(131.8, 148.8)",True,NOT_MEASURED,88.6%,0.88575,True
+854,NWS/2019/page_116.pdf-1,2,True,True,,,"subtract(210, 182)",True,NOT_MEASURED,28,28.0,False
+855,LMT/2015/page_89.pdf-1,2,False,True,3538|50962,,"divide(3538, 50962)",True,NOT_MEASURED,6.94%,0.06942,True
+858,AON/2007/page_175.pdf-1,3,True,True,,,"add(38, -110), add(#0, 1)",True,NOT_MEASURED,-71,-71.0,False
+859,GPN/2010/page_87.pdf-2,4,False,True,5.2|6.3,,"subtract(18.1, 6.3), subtract(14.6, 5.2), subtract(#0, #1), divide(#2, #1)",True,NOT_MEASURED,25.5%,0.25532,True
+864,GS/2014/page_51.pdf-1,2,True,True,,,"subtract(856240, 911507), divide(#0, 911507)",True,NOT_MEASURED,-6.1%,-0.06063,True
+865,ETR/2015/page_17.pdf-3,2,True,True,,,"divide(187, 5829)",True,NOT_MEASURED,3.2%,0.03208,True
+866,MS/2013/page_139.pdf-1,2,False,True,503|538,,"greater(538, 503)",True,NOT_MEASURED,yes,yes,False
+867,UPS/2010/page_52.pdf-1,2,False,True,1334|23556,,"divide(1334, 23556)",True,NOT_MEASURED,6%,0.05663,True
+876,AMT/2005/page_102.pdf-2,2,True,True,,,"subtract(16.8, 17.7), divide(#0, 17.7)",True,NOT_MEASURED,-5.1%,-0.05085,True
+877,HII/2015/page_121.pdf-3,4,True,True,,,"add(1594, 1719), add(#0, 1717), add(#1, 1927)",True,NOT_MEASURED,6957,6957.0,False
+882,JPM/2009/page_175.pdf-3,2,True,True,,,"divide(110457, 77901)",True,NOT_MEASURED,1.72,1.41792,False
+885,MSI/2007/page_70.pdf-2,2,False,True,5400,,"multiply(5400, 45%)",True,NOT_MEASURED,2430,2430.0,False
+890,RSG/2018/page_135.pdf-2,2,False,True,17|30,,"subtract(17, 30), divide(#0, 30)",True,NOT_MEASURED,,-0.43333,False
+895,DVN/2015/page_79.pdf-2,1,True,True,,,"add(2.89, 2.89), add(#0, const_3), divide(#1, const_3)",True,NOT_MEASURED,2.9266,2.92667,False
+896,CME/2010/page_69.pdf-3,2,True,True,,,"multiply(612.5, const_1000000), multiply(#0, 4.72%)",True,NOT_MEASURED,28910000,28910000.0,False
+897,ABMD/2012/page_79.pdf-2,2,False,True,1473,,"add(1473, 4218), divide(#0, const_2)",True,NOT_MEASURED,35%,2845.5,True
+901,DXC/2018/page_56.pdf-1,2,True,True,,,"divide(17944, 22885)",True,NOT_MEASURED,78%,0.78409,True
+902,GS/2015/page_171.pdf-3,2,True,True,,,"divide(172099, const_1000), divide(69.80, #0)",True,NOT_MEASURED,40.6%,0.40558,True
+903,DVN/2012/page_77.pdf-3,2,False,True,500|3189,,"divide(3189, 500)",True,NOT_MEASURED,6.4,6.378,False
+905,SNA/2013/page_84.pdf-3,2,False,True,14.9,,"divide(14.9, 546.5)",True,NOT_MEASURED,2.9%,0.02726,True
+906,INTC/2013/page_31.pdf-1,2,True,True,,,"divide(157, 191)",True,NOT_MEASURED,0.82,0.82199,False
+907,BLL/2006/page_67.pdf-3,2,True,True,,,"divide(411.1, 802.6)",True,NOT_MEASURED,51%,0.51221,True
+909,MRO/2003/page_45.pdf-3,2,True,True,,,"subtract(776, 748), divide(#0, 748)",True,NOT_MEASURED,3.7%,0.03743,True
+914,ETR/2004/page_239.pdf-2,2,False,True,380.2,,"subtract(426.6, 380.2)",True,NOT_MEASURED,46.4,46.4,False
+917,STT/2011/page_69.pdf-4,2,False,True,190,,"divide(190, 289)",True,NOT_MEASURED,65.7%,0.65744,True
+918,ZBH/2009/page_58.pdf-3,2,True,True,,,"subtract(26.6, 47.6), divide(#0, 47.6)",True,NOT_MEASURED,-44%,-0.44118,True
+919,MRO/2013/page_39.pdf-3,2,False,True,95.11|98.05,,"subtract(98.05, 95.11), divide(#0, 95.11)",True,NOT_MEASURED,3.1%,0.03091,True
+921,PM/2017/page_32.pdf-2,2,False,True,3.68|3.79,,"subtract(3.79, 3.68), subtract(#0, const_100)",True,NOT_MEASURED,11,-99.89,False
+924,JPM/2018/page_90.pdf-4,2,True,True,,,"subtract(2.50, 2.36), multiply(#0, const_100)",True,NOT_MEASURED,14,14.0,False
+927,HOLX/2007/page_93.pdf-1,2,True,True,,,"multiply(2590898, 22.08), divide(#0, const_1000000)",True,NOT_MEASURED,57.2,57.20703,False
+928,DXC/2018/page_56.pdf-2,2,True,True,,,"divide(2010, 22885)",True,NOT_MEASURED,9%,0.08783,True
+929,FIS/2016/page_45.pdf-1,2,True,True,,,"subtract(1925, 1131), divide(#0, 1131)",True,NOT_MEASURED,70.2%,0.70203,True
+932,DRE/2005/page_30.pdf-1,2,True,True,,,"divide(16.5, 9.6)",True,NOT_MEASURED,1.72,1.71875,False
+939,MSI/2008/page_69.pdf-1,4,True,True,,,"multiply(66%, 28383), multiply(40%, 12099), subtract(#0, #1), divide(#2, #1)",True,NOT_MEASURED,-287%,2.87073,True
+940,GS/2013/page_85.pdf-2,2,True,True,,,"add(184.07, 174.62), divide(#0, const_2)",True,NOT_MEASURED,179.35,179.345,False
+945,CB/2010/page_103.pdf-1,2,True,True,,,"subtract(1983, 1667), divide(#0, 1667)",True,NOT_MEASURED,19.0%,0.18956,True
+946,HUM/2017/page_118.pdf-4,3,True,True,,,"add(75, 77), add(#0, 93), divide(#1, const_3)",True,NOT_MEASURED,81.6,81.66667,False
+947,WRK/2018/page_107.pdf-1,2,True,True,,,"subtract(127.1, 106.6), divide(#0, 106.6)",True,NOT_MEASURED,19.23%,0.19231,True
+948,SNA/2013/page_83.pdf-3,2,False,True,17.0|18.9,,"subtract(17.0, 18.9)",True,NOT_MEASURED,1.9,-1.9,False
+952,C/2018/page_176.pdf-2,2,False,True,73.87|12896599,,"multiply(12896599, 73.87)",True,NOT_MEASURED,952671768.13,952671768.13,False
+956,IP/2009/page_45.pdf-2,2,False,True,946,,"divide(199, 946)",True,NOT_MEASURED,21%,0.21036,True
+958,HOLX/2008/page_143.pdf-1,2,True,True,,,"divide(205500, 8800)",True,NOT_MEASURED,23.4,23.35227,False
+960,UNP/2009/page_35.pdf-1,2,True,True,,,"add(88, 4)",True,NOT_MEASURED,92,92.0,False
+968,UNP/2011/page_24.pdf-1,2,True,True,,,"greater(3.6, 1.9)",True,NOT_MEASURED,yes,yes,False
+973,ILMN/2008/page_82.pdf-2,2,False,True,10.91|1125734,,"multiply(1125734, 10.91)",True,NOT_MEASURED,12281757.94,12281757.94,False
+975,HOLX/2007/page_93.pdf-2,2,False,True,2943694,,"divide(2590898, 2943694)",True,NOT_MEASURED,88.0%,0.88015,True
+976,GS/2014/page_165.pdf-1,2,False,True,16044,,"divide(7874, 16044)",True,NOT_MEASURED,49%,0.49078,True
+992,JPM/2015/page_137.pdf-4,2,False,True,1423,,"divide(1423, 59677)",True,NOT_MEASURED,2.4%,0.02385,True
+994,RSG/2010/page_57.pdf-1,2,True,True,,,"divide(850.0, 650.0)",True,NOT_MEASURED,1.31,1.30769,False
+995,K/2006/page_52.pdf-3,2,True,True,,,"subtract(1410.5, 1229.0), subtract(#0, 1229.0)",True,NOT_MEASURED,14.77,-1047.5,False
+999,STT/2007/page_111.pdf-4,2,True,True,,,"subtract(558368, 506032)",True,NOT_MEASURED,10%,52336.0,True
+1000,SNA/2013/page_34.pdf-2,2,True,True,,,"subtract(145.51, 100), divide(#0, 100)",True,NOT_MEASURED,45.51,0.4551,False
+1001,MRK/2013/page_125.pdf-1,2,False,True,4277|4425,,"subtract(4425, 4277), divide(#0, 4277)",True,NOT_MEASURED,3.5%,0.0346,True
+1002,CDNS/2018/page_66.pdf-2,2,True,True,,,"subtract(426932, 341003), divide(#0, 341003)",True,NOT_MEASURED,25%,0.25199,True
+1006,AES/2001/page_85.pdf-3,2,False,True,12806,,"divide(12806, 22258)",True,NOT_MEASURED,57.5%,0.57534,True
+1010,AMT/2006/page_113.pdf-3,2,False,True,301|665,,"subtract(301, 665)",True,NOT_MEASURED,-364,-364.0,False
+1014,C/2009/page_63.pdf-1,2,True,True,,,"divide(160, 72)",True,NOT_MEASURED,2.22,2.22222,False
+1021,JPM/2009/page_175.pdf-2,2,True,True,,,"subtract(384102, 78841)",True,NOT_MEASURED,305261,305261.0,False
+1022,JKHY/2017/page_26.pdf-2,2,True,True,,,"divide(322.60, 271.10)",True,NOT_MEASURED,119%,1.18997,True
+1025,ETR/2016/page_150.pdf-2,3,True,True,,,"add(353, 6), subtract(#0, 32)",True,NOT_MEASURED,327,327.0,False
+1034,GS/2012/page_121.pdf-2,2,True,True,,,"subtract(377677, 388669), divide(#0, 388669)",True,NOT_MEASURED,-2.8%,-0.02828,True
+1039,K/2006/page_52.pdf-1,2,False,True,957.4,,"divide(957.4, 1410.5)",True,NOT_MEASURED,67.88,0.67877,False
+1043,JKHY/2019/page_18.pdf-2,2,True,True,,,"subtract(240.29, 100.00)",True,NOT_MEASURED,140.29,140.29,False
+1050,PPG/2018/page_85.pdf-3,2,False,True,90|291,,"divide(90, 291)",True,NOT_MEASURED,31%,0.30928,True
+1052,ABMD/2012/page_79.pdf-3,2,True,True,,,"subtract(64350, 40000), divide(#0, 40000)",True,NOT_MEASURED,60.9%,0.60875,True
+1059,ADI/2010/page_80.pdf-3,2,False,True,7943|8690,,"subtract(8690, 7943), divide(#0, 7943)",True,NOT_MEASURED,9.4%,0.09405,True
+1061,ABMD/2008/page_86.pdf-3,2,False,True,168|224,,"subtract(168, 224), divide(#0, 224)",True,NOT_MEASURED,-25.0%,-0.25,True
+1062,ALXN/2016/page_153.pdf-3,2,True,True,,,"subtract(136, 133), divide(#0, 133)",True,NOT_MEASURED,2.3%,0.02256,True
+1067,ANSS/2016/page_47.pdf-2,2,True,True,,,"divide(40859, 29808)",True,NOT_MEASURED,1.371:1,1.37074,False
+1069,ANSS/2012/page_93.pdf-3,2,True,True,,,"subtract(265436, 188649)",True,NOT_MEASURED,76787,76787.0,False
+1072,IP/2009/page_84.pdf-4,3,True,True,,,"add(3.5, 2.6), add(#0, 3.7)",True,NOT_MEASURED,9.8,9.8,False
+1080,BLK/2015/page_124.pdf-3,4,False,True,131|133|134|1203,,"add(134, 133), add(#0, 131), divide(#1, 1203)",True,NOT_MEASURED,33.1%,0.33084,True
+1083,ABMD/2005/page_29.pdf-4,2,False,True,2.56|3.87,,"subtract(3.87, 2.56), divide(#0, 2.56)",True,NOT_MEASURED,51.2%,0.51172,True
+1086,PPG/2006/page_42.pdf-4,2,True,True,,,"subtract(10, 4)",True,NOT_MEASURED,6,6.0,False
+1090,IP/2006/page_31.pdf-3,2,False,True,373|4545,,"divide(373, 4545)",True,NOT_MEASURED,8.2%,0.08207,True
+1093,TFX/2015/page_89.pdf-3,2,True,True,,,"add(170, 7819)",True,NOT_MEASURED,$ 7989 thousand,7989.0,False
+1098,ABMD/2012/page_41.pdf-3,2,True,True,,,"subtract(75.55, 100), divide(#0, 100)",True,NOT_MEASURED,-24.5%,-0.2445,True
+1099,UNP/2015/page_56.pdf-4,2,False,True,4074,,"divide(4074, 20397)",True,NOT_MEASURED,20%,0.19974,True
+1100,BLK/2017/page_121.pdf-3,2,True,True,,,"subtract(342, 301), divide(#0, 301)",True,NOT_MEASURED,13.6%,0.13621,True
+1102,IP/2006/page_75.pdf-3,3,True,True,,,"add(217, 216), add(225, #0)",True,NOT_MEASURED,658,658.0,False
+1103,BLK/2012/page_145.pdf-1,3,False,True,750|1000,,"add(750, 1000), divide(#0, 5700)",True,NOT_MEASURED,30.7%,0.30702,True
+1104,PPG/2012/page_29.pdf-3,2,True,True,,,"subtract(56, 34)",True,NOT_MEASURED,22,22.0,False
+1107,UNP/2010/page_21.pdf-3,1,True,True,,,"multiply(3063816, const_4)",True,NOT_MEASURED,12255264,12255264.0,False
+1108,IP/2009/page_45.pdf-4,2,True,True,,,"divide(574, 304), subtract(#0, const_1)",True,NOT_MEASURED,88.81%,0.88816,True
+1113,VRTX/2006/page_111.pdf-4,2,True,True,,,"divide(61535, 54533)",True,NOT_MEASURED,1.13,1.1284,False
+1116,LKQ/2016/page_87.pdf-3,3,True,True,,,"add(211.5, 168.4), add(148.5, #0)",True,NOT_MEASURED,528.4,528.4,False
+1122,UNP/2011/page_33.pdf-4,2,False,True,16058|17282,,"subtract(17282, 16058)",True,NOT_MEASURED,1224,1224.0,False
+1125,LKQ/2016/page_87.pdf-4,2,False,True,136462,,"divide(136462, 1184594)",True,NOT_MEASURED,11.5%,0.1152,True
+1127,NCLH/2018/page_97.pdf-3,2,False,True,2549621|6609866,,"divide(2549621, 6609866)",True,NOT_MEASURED,38.6%,0.38573,True
+1128,UNP/2009/page_42.pdf-3,2,False,True,5312|24166,,"divide(5312, 24166)",True,NOT_MEASURED,22%,0.21981,True
+1130,CMCSA/2015/page_112.pdf-3,2,False,True,1171|1701,,"subtract(1171, 1701)",True,NOT_MEASURED,530,-530.0,False
+1131,ABMD/2007/page_78.pdf-4,2,True,True,,,"subtract(8.05, 6.91), divide(#0, 6.91)",True,NOT_MEASURED,16.5%,0.16498,True
+1133,BLK/2012/page_145.pdf-3,3,False,True,750|1000,,"add(750, 1000), add(#0, 750), divide(#1, 5700)",True,NOT_MEASURED,43.9%,0.4386,True
+1134,MO/2014/page_62.pdf-4,2,True,True,,,"subtract(5070, 4535), divide(#0, 4535)",True,NOT_MEASURED,11.8%,0.11797,True
+1135,ABMD/2008/page_86.pdf-4,1,True,True,,,"add(5583333, 5583333), divide(#0, const_1000000)",True,NOT_MEASURED,11.2,11.16667,False
+1140,CMCSA/2015/page_112.pdf-4,2,True,True,,,"divide(135, 700)",True,NOT_MEASURED,19.3%,0.19286,True
+1143,UNP/2009/page_42.pdf-4,2,False,True,2975|24166,,"divide(2975, 24166)",True,NOT_MEASURED,12%,0.12311,True
+1146,IP/2006/page_30.pdf-4,2,True,True,,,"add(1.5, 1.4), add(#0, 1.5)",True,NOT_MEASURED,4.4,4.4,False

@@ -1,0 +1,5 @@
+condition,N,N_complete,N_partial,N_accepted_nonempty,N_structured_unsupported,N_model_calls,scope,native_prose_AUCR
+DETERMINISTIC_CATALOG,272,272,0,272,0,0,"preselected oracle-like output-layer development, not representation causal comparison",NOT_MEASURED
+FACT_ID_BINDING,272,1,0,1,0,272,"preselected oracle-like output-layer development, not representation causal comparison",NOT_MEASURED
+FACT_ID_PARTIAL_OFF,272,1,0,1,0,0,"preselected oracle-like output-layer development, not representation causal comparison",NOT_MEASURED
+SEVEN_FIELD_NATIVE,272,79,0,209,130,272,"preselected oracle-like output-layer development, not representation causal comparison",NOT_MEASURED

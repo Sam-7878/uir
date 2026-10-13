@@ -1,0 +1,12 @@
+{
+  "N_conformant": 288,
+  "N_rows": 288,
+  "backend_N": 192,
+  "backend_N_equal": 192,
+  "created_at_utc": "2026-10-12T14:30:21.018743+00:00",
+  "model_calls": 0,
+  "physical_independence": false,
+  "protocol_sha256": "2f380f2d11ee400b563dd28226255e8e920e25fe5933979dfec9d7cf581a1724",
+  "raw_sha256": "850c56a4cde3bd512c08b550a79575b65449098df56d055d0608820c90988c55",
+  "status": "EXECUTED_SYNTHETIC_DEVELOPMENT"
+}

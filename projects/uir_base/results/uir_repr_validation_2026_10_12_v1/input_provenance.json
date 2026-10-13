@@ -1,0 +1,22 @@
+{
+  "N_v3_added": 113,
+  "created_at_utc": "2026-10-12T14:20:30.853591+00:00",
+  "detached_receipt_sha256": "ac09fb0d9769fab6a643be9b8b1a9e8cb2f8a539c31728d0c807b02bb10a5b6e",
+  "expected_delivery_zip_sha256": "007ae2715abb8a996d6376d5786d529d19608c7857769a5f2d7214ffe2e5b3e8",
+  "human_signoff": false,
+  "modified_shared": [
+    "README.md",
+    "archive_manifest.json",
+    "projects/uir_base/scripts/next_gpu_matched.py",
+    "projects/uir_base/scripts/next_verify.py",
+    "tests/uir_base/test_next_release.py"
+  ],
+  "physical_independent_machine": false,
+  "previous_work_order_sha256": "a52b3064abfeb795b90d3294bce80528749f785e0b11e4a0666c161d7ca43ce8",
+  "report_delivery_zip_status": "MISSING",
+  "v3": {
+    "N_final_index_checked": 144,
+    "archive_sha256": "aea0551d1b7e14cc98f5e8cfd32694cb9c1fcac25a700dee284c6d3c6814da76",
+    "status": "PASS"
+  }
+}

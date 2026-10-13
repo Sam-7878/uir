@@ -1,0 +1,82 @@
+{
+  "N_cases": 8,
+  "created_at_utc": "2026-10-12T14:49:44.176235+00:00",
+  "models": {
+    "AI_J1": [
+      "qwen3:4b-instruct-2507-q4_K_M",
+      "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0"
+    ],
+    "AI_J2": [
+      "ministral-3:14b",
+      "4760c35aeb9d9e9c6174c2492562c0b999e80a222804fd96b1915ab72bbcdcf7"
+    ]
+  },
+  "options": {
+    "num_ctx": 8192,
+    "num_gpu": 99,
+    "num_predict": 512,
+    "seed": 20261012,
+    "temperature": 0
+  },
+  "packet_sha256": "9c0d4ab76bdc05797518c70cb2245585103fb50dd713589ea695d7f9d29e05d0",
+  "retries": 0,
+  "schema": {
+    "additionalProperties": false,
+    "properties": {
+      "candidate_status": {
+        "enum": [
+          "PRESENT",
+          "ABSENT"
+        ],
+        "type": "string"
+      },
+      "epistemic_uncertainty": {
+        "enum": [
+          "LOW",
+          "HIGH"
+        ],
+        "type": "string"
+      },
+      "explanation": {
+        "type": "string"
+      },
+      "policy_status": {
+        "enum": [
+          "ALLOW",
+          "DENY",
+          "APPROVAL_PENDING",
+          "NOT_EVALUABLE"
+        ],
+        "type": "string"
+      },
+      "request_ambiguity": {
+        "enum": [
+          "AMBIGUOUS",
+          "UNAMBIGUOUS",
+          "UNCERTAIN"
+        ],
+        "type": "string"
+      },
+      "source_availability": {
+        "enum": [
+          "PROVIDED",
+          "UNAVAILABLE"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_ambiguity",
+      "epistemic_uncertainty",
+      "candidate_status",
+      "source_availability",
+      "policy_status",
+      "explanation"
+    ],
+    "type": "object"
+  },
+  "source_sha256": "7b5e42016576e930b192545e57e0a79a60d1177dd11eb2ddc44d861c3ed1470f",
+  "status": "FROZEN_BEFORE_OPEN_AI_JUDGMENT",
+  "thinking": false,
+  "truth": "NONE; agreement and uncertainty only, no accuracy, no independent human semantic validation"
+}

@@ -1,0 +1,60 @@
+{
+  "N_calls": 544,
+  "allocation": {
+    "models": [
+      {
+        "context_length": 8192,
+        "details": {
+          "families": [
+            "phi3"
+          ],
+          "family": "phi3",
+          "format": "gguf",
+          "parameter_size": "3.8B",
+          "parent_model": "",
+          "quantization_level": "Q4_0"
+        },
+        "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+        "expires_at": "2026-10-12T23:59:17.511506383+09:00",
+        "model": "phi3.5:latest",
+        "name": "phi3.5:latest",
+        "size": 5483884707,
+        "size_vram": 5483884707
+      }
+    ]
+  },
+  "created_at_utc": "2026-10-12T14:49:17.515991+00:00",
+  "gpu_before": "NVIDIA GeForce RTX 4070 Laptop GPU, GPU-d85076de-b5c8-b1c8-f901-421545b321fd, 690 MiB\nNVIDIA GeForce RTX 3090, GPU-ab53069a-3217-ee09-80f8-748b5fdbd156, 0 MiB\n",
+  "human_validation": false,
+  "model": {
+    "capabilities": [
+      "completion"
+    ],
+    "details": {
+      "context_length": 131072,
+      "embedding_length": 3072,
+      "families": [
+        "phi3"
+      ],
+      "family": "phi3",
+      "format": "gguf",
+      "parameter_size": "3.8B",
+      "parent_model": "",
+      "quantization_level": "Q4_0"
+    },
+    "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+    "model": "phi3.5:latest",
+    "modified_at": "2026-10-11T20:10:12.4064408+09:00",
+    "name": "phi3.5:latest",
+    "size": 2176178843
+  },
+  "parameters": "stop                           \"<|system|>\"\nstop                           \"<|user|>\"\nstop                           \"<|end|>\"\nstop                           \"<|assistant|>\"",
+  "protocol_sha256": "19f0c61fcbf9a240ece8425895ca9fc8fa80f3596a0e183724717cf8845ca243",
+  "raw_sha256": "fb85cc60f1c5fc144422883491f78b9dc2a4106a1e6ffa1aa24c4eb2721b459a",
+  "remote_inference": false,
+  "server": {
+    "version": "0.33.3"
+  },
+  "status": "CAPTURE_COMPLETE_DEVELOPMENT",
+  "template_sha256": "d8f54cd6a963870bbcbb9b225c009083065c5c55a38c5e887f1328b27ce3e068"
+}

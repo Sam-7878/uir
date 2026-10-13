@@ -1,0 +1,9 @@
+{
+  "correction": "v1 absolute references retained as provenance only; no captured reviews changed",
+  "files": {
+    "projects/uir_base/results/mdpi_next_2026_10_11_v2/ai_review_v2/calibration_raw_reviews.jsonl": "bf8ef993ed66f8533fbea07f9e769a7e73a2aff1b08e282fa09f72a12db57505",
+    "projects/uir_base/results/mdpi_next_2026_10_11_v2/ai_review_v2/holdout_raw_reviews.jsonl": "f643e68fc63195909528f738163b95a2c94df261f07a14bfeced06f740ae7ab9",
+    "projects/uir_base/results/mdpi_revision_2026_10_11/ai_reviews/20261011T114157Z/AI_J1_raw_reviews.jsonl": "e5563ddf976adcafdc662c9ba7d67f7d9d3520bf3654e3d60e7054e8f4979421",
+    "projects/uir_base/results/mdpi_revision_2026_10_11/ai_reviews/20261011T114157Z/AI_J2_raw_reviews.jsonl": "335f1ae082e5d317894ff6545ae4d12b59e8fa7a07a91597e717b1c28568fda8"
+  }
+}

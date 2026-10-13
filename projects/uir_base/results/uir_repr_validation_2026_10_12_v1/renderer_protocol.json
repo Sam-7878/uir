@@ -1,0 +1,124 @@
+{
+  "N_calls": 544,
+  "N_cases": 272,
+  "authority": "same supplied facts/policy/contract/output scope in all conditions",
+  "cohort": "same previously observed 272 Phi invocations; oracle-like output layer DEVELOPMENT, never unused holdout",
+  "conditions": [
+    "SEVEN_FIELD_NATIVE",
+    "FACT_ID_BINDING"
+  ],
+  "created_at_utc": "2026-10-12T14:35:50.030743+00:00",
+  "derived_conditions": [
+    "DETERMINISTIC_CATALOG",
+    "FACT_ID_PARTIAL_OFF"
+  ],
+  "model": {
+    "Phi-3.5": [
+      "phi3.5:latest",
+      "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba"
+    ]
+  },
+  "old_0_of_418": "frozen five/seven-field confounded historical result remains unchanged",
+  "options": {
+    "num_ctx": 8192,
+    "num_gpu": 99,
+    "num_predict": 512,
+    "seed": 20261012,
+    "temperature": 0
+  },
+  "primary_endpoint": "all declared authorized facts returned exactly, all 272 requests; incomplete/missing incorrect",
+  "retries": 0,
+  "runtime_sha256": "69d6e3a9205d35bd9913184d71040406d5bc7e4f31388c0ea0c6355348569881",
+  "schema": {
+    "FACT_ID_BINDING": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "fact_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "contract_digest",
+        "fact_ids"
+      ],
+      "type": "object"
+    },
+    "SEVEN_FIELD_NATIVE": {
+      "additionalProperties": false,
+      "properties": {
+        "claims": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "attribute": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "claim_type": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "entity_id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "period": {
+                "minLength": 0,
+                "type": "string"
+              },
+              "provenance": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "unit": {
+                "minLength": 0,
+                "type": "string"
+              },
+              "value": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "claim_type",
+              "entity_id",
+              "attribute",
+              "value",
+              "unit",
+              "period",
+              "provenance"
+            ],
+            "type": "object"
+          },
+          "maxItems": 32,
+          "type": "array"
+        },
+        "contract_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "contract_digest",
+        "claims"
+      ],
+      "type": "object"
+    }
+  },
+  "scope": "not raw-only interpretation, non-oracle retrieval, or representation-layer causal effect",
+  "shared_contract_sha256": "70f4c063157fbaaf434c5bbb147cba019faedd519fbc84225b7936e632cdd22f",
+  "source_sha256": "c9399ede3e4eff60ce4fadb67f004ce100e7c6e16fba143d3dd4f4b191588e1e",
+  "status": "FROZEN_BEFORE_NEW_DEVELOPMENT_INFERENCE",
+  "thinking": false,
+  "uncertainty": "exploratory development counts; no confirmatory generalization claim, no significance tuning"
+}

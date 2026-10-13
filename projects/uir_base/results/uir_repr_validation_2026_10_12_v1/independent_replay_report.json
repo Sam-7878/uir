@@ -1,0 +1,139 @@
+{
+  "created_at_utc": "2026-10-12T14:22:05.764365+00:00",
+  "environment_path": "/tmp/uir-r00-r1yfeh3u",
+  "exit_code": 0,
+  "host_python_shared_site_packages": false,
+  "independent_human_operator": false,
+  "missing_rfc8785_negative_exit": 1,
+  "model_calls": 0,
+  "network_disable_enforced": false,
+  "network_used_in_replay": false,
+  "new_environment": {
+    "base_prefix": "/usr",
+    "packages": [
+      "PyYAML==6.0.3",
+      "Pygments==2.21.0",
+      "attrs==26.1.0",
+      "certifi==2026.7.22",
+      "charset-normalizer==3.5.2",
+      "idna==3.20",
+      "iniconfig==2.3.0",
+      "jsonschema-specifications==2025.9.1",
+      "jsonschema==4.26.0",
+      "numpy==2.5.3",
+      "packaging==26.3",
+      "pip==25.1.1",
+      "pluggy==1.6.0",
+      "pytest==9.1.1",
+      "referencing==0.37.0",
+      "requests==2.34.2",
+      "rfc8785==0.1.4",
+      "rpds-py==2026.9.1",
+      "scipy==1.18.1",
+      "typing_extensions==4.16.0",
+      "urllib3==2.8.0"
+    ],
+    "paths": [
+      "/usr/lib/python314.zip",
+      "/usr/lib/python3.14",
+      "/usr/lib/python3.14/lib-dynload",
+      "/tmp/uir-r00-r1yfeh3u/venv/lib/python3.14/site-packages"
+    ],
+    "prefix": "/tmp/uir-r00-r1yfeh3u/venv"
+  },
+  "physical_independent_machine": false,
+  "proof": {
+    "ai_raw_response_replay": {
+      "N_cases": 120,
+      "N_responses": 240,
+      "N_unresolved": 119,
+      "fields": {
+        "ambiguity": {
+          "N": 120,
+          "N_agree": 26,
+          "agreement": 0.21666666666666667,
+          "decisive_agreement": 3,
+          "joint_uncertain": 23,
+          "kappa": -0.02081447963800905
+        },
+        "attribute_match": {
+          "N": 120,
+          "N_agree": 101,
+          "agreement": 0.8416666666666667,
+          "decisive_agreement": 101,
+          "joint_uncertain": 0,
+          "kappa": 0.5873303167420815
+        },
+        "conditions_preservation": {
+          "N": 120,
+          "N_agree": 83,
+          "agreement": 0.6916666666666667,
+          "decisive_agreement": 83,
+          "joint_uncertain": 0,
+          "kappa": 0.17225950782997762
+        },
+        "entity_match": {
+          "N": 120,
+          "N_agree": 107,
+          "agreement": 0.8916666666666667,
+          "decisive_agreement": 107,
+          "joint_uncertain": 0,
+          "kappa": 0.6828623704004879
+        },
+        "intent_match": {
+          "N": 120,
+          "N_agree": 86,
+          "agreement": 0.7166666666666667,
+          "decisive_agreement": 67,
+          "joint_uncertain": 19,
+          "kappa": 0.41379310344827586
+        },
+        "period_match": {
+          "N": 120,
+          "N_agree": 113,
+          "agreement": 0.9416666666666667,
+          "decisive_agreement": 113,
+          "joint_uncertain": 0,
+          "kappa": 0.8094806078475845
+        },
+        "policy_decision": {
+          "N": 120,
+          "N_agree": 77,
+          "agreement": 0.6416666666666667,
+          "decisive_agreement": 77,
+          "joint_uncertain": 0,
+          "kappa": 0.355
+        }
+      },
+      "human_validation": false,
+      "status": "RAW_RESPONSE_TO_LABELS_AND_EXACT_AGREEMENT_PASS_NOT_SEMANTIC_VALIDATION"
+    },
+    "archive_sha256": "aea0551d1b7e14cc98f5e8cfd32694cb9c1fcac25a700dee284c6d3c6814da76",
+    "fresh_capture_replay": {
+      "N_finqa_requests": 800,
+      "human_validation": false,
+      "model_calls_in_replay": 0,
+      "reviews": {
+        "calibration": {
+          "N_responses": 32,
+          "N_unresolved": 16,
+          "status": "RAW_TO_SYNTHETIC_ACCURACY_AGREEMENT_PASS_NOT_HUMAN_VALIDATION"
+        },
+        "holdout": {
+          "N_responses": 32,
+          "N_unresolved": 16,
+          "status": "RAW_TO_SYNTHETIC_ACCURACY_AGREEMENT_PASS_NOT_HUMAN_VALIDATION"
+        }
+      },
+      "status": "MATCHED_AI_AND_FINQA_CAPTURE_REPLAY_PASS"
+    },
+    "fresh_inference_rerun": false,
+    "no_development_checkout_imports": true,
+    "scientific_files_equal": 31,
+    "semantic_validation": false,
+    "status": "ARCHIVE_ONLY_OFFLINE_REPRODUCTION_PASS"
+  },
+  "secret_read_proof": "NOT_OS_SANDBOXED; environment sanitized and extracted import scope checked, native/hidden host access not proven",
+  "status": "FRESH_VENV_ARCHIVE_REPLAY_PASS",
+  "wheel_lock_sha256": "2c7d0cddfd76a36d51a8460a13f19151d6421cd08b29c5da648c4634d855044c"
+}

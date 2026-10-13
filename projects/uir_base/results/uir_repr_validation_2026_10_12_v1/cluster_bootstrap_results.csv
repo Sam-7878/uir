@@ -1,0 +1,2 @@
+comparison,endpoint,N_cases,N_families,difference,ci_low,ci_high,seed,bootstrap_reps,primary_comparison_family_N,interpretation
+UIR_minus_equivalent_specialized,joint_conformance,144,24,0.0,0.0,0.0,20261012,10000,1,"synthetic conformance difference, not equivalence proof/generalization or causal accuracy improvement"

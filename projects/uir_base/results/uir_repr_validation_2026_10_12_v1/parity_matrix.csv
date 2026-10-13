@@ -1,0 +1,12 @@
+program,official_invalid,official_value,typed_value,typed_unit,parity,scope
+"add(10, 5)",0,15.0,15,1,True,declared typed operands; FinQA source units not automatically known
+"subtract(10, 5)",0,5.0,5,1,True,declared typed operands; FinQA source units not automatically known
+"multiply(10, 5)",0,50.0,50,1,True,declared typed operands; FinQA source units not automatically known
+"divide(10, 5)",0,2.0,2,1,True,declared typed operands; FinQA source units not automatically known
+"greater(10, 5)",0,yes,yes,BOOLEAN,True,declared typed operands; FinQA source units not automatically known
+"exp(2, 5)",0,32.0,32,1,True,declared typed operands; FinQA source units not automatically known
+"add(25%, 2)",0,2.25,2.25,1,True,declared typed operands; FinQA source units not automatically known
+"table_sum(Revenue, none)",0,17.0,17,1,True,explicit table-cell source refs
+"table_average(Revenue, none)",0,5.66667,5.66666666666666666666666666666666666666666666667,1,True,explicit table-cell source refs
+"table_min(Revenue, none)",0,2.0,2,1,True,explicit table-cell source refs
+"table_max(Revenue, none)",0,10.0,10,1,True,explicit table-cell source refs

@@ -1,0 +1,10 @@
+{
+  "author_institution_signoff": false,
+  "decision": "B_AI_ONLY_NARROWED_CLAIMS",
+  "human_reply_verbatim": "B — AI-only로 설계 변경, 주장 범위 축소",
+  "human_semantic_annotation": false,
+  "original_W08": "NOT_SATISFIED",
+  "question_item_id": "request_user_input_async/call_454162e4421d42839a4f3acc7a8890e2/0",
+  "scope": "conversation research-design authorization only, not institutional/ethics approval or author signature",
+  "trusted_record": "direct human reply in this conversation"
+}

@@ -1,0 +1,8 @@
+{
+  "created_at_utc": "2026-10-12T14:49:12.283902+00:00",
+  "overwritten_existing_file": false,
+  "path": "docs/work_reports/uir_base/107_Astra_review/layout_migration_manifest.json",
+  "reason": "baseline regression failed due to deleted historical metadata; exact bytes recovered, not recreated or test bypassed",
+  "sha256": "aa9a9788cc27e2fa64a3d6497cba600ea72a438e74ba80f1f93c1388e060aebb",
+  "source_archive_sha256": "aea0551d1b7e14cc98f5e8cfd32694cb9c1fcac25a700dee284c6d3c6814da76"
+}

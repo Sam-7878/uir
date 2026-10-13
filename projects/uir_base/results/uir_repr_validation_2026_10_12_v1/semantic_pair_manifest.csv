@@ -1,0 +1,13 @@
+pair_id,expected_relation,passed
+PAIR-R-0,equivalent,True
+PAIR-R-1,equivalent,True
+PAIR-R-2,equivalent,True
+PAIR-R-3,equivalent,True
+PAIR-R-4,different,True
+PAIR-R-5,different,True
+PAIR-R-6,different,True
+PAIR-R-7,different,True
+PAIR-R-8,different,True
+PAIR-R-9,different,True
+PAIR-R-10,clarification,True
+PAIR-R-11,clarification,True
