@@ -1,0 +1,3 @@
+# Query-aware synthetic development
+
+Source accounting tables precede questions and gold. Every request sees the same 48-fact universe (32 current public facts), with other entities, periods, metrics, stale and private/unit-mismatch facts. Gold has a strict proper subset, stored separately. Real company/source retrieval and confirmatory generalization are NOT_MEASURED. CNL is intentionally easy and constructed by the implementer, not human validated. Query semantics may be compiled without gold. Endpoint QUERY_AWARE_SELECTION is distinct from old CATALOG_ENUMERATION_TRANSPORT; END_TO_END_RETRIEVAL is NOT_IMPLEMENTED.

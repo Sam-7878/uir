@@ -1,0 +1,16 @@
+{
+  "evidence_kind": "HISTORICAL_REPLAY",
+  "lexical_context": {
+    "denominator": 400,
+    "numerator": 260
+  },
+  "metric": "operand_numeric_literal_presence",
+  "new_operand_selection_or_task_accuracy": "NOT_EXECUTED_NO_CONFIRMATORY_DATA",
+  "old_800_scores_modified": false,
+  "parent_report_scanned": false,
+  "source_sha256": "a1871b488e9c0f1dec238e1e06bb1fab972513b065f5ecd454222a0a8262edff",
+  "supplied_page_context": {
+    "denominator": 400,
+    "numerator": 399
+  }
+}

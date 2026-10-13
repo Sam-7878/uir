@@ -1,0 +1,9 @@
+{
+  "copied_exact_bytes": true,
+  "files": {
+    "S_BASELINE_MANIFEST.json": "1253b2edd17d0b98e8fcdcb7b9a716ba071d0dc783d07ea3ac47c2cd90affb82",
+    "historical_endpoint_audit.csv": "0b0a883cfd5dd19d8378ae7323ac4a7d7b253ba6a731606cb3b2c78ab39041ef",
+    "release_report_sidecars.json": "7cac6686c16934a9e29529a805d3cf1f3e51b10bebc6cc8c6b64d6583e84df8e"
+  },
+  "source_run": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T045818Z"
+}

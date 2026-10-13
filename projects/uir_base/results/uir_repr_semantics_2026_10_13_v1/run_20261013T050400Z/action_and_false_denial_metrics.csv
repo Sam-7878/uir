@@ -1,0 +1,3 @@
+representation,N_opportunities,N_attempted,N_executed,N_blocked,N_allowed,N_prohibited,N_false_denial,N_prohibited_executed,scope
+UIR_SHARED_TYPED,35,35,3,32,3,32,0,0,finite synthetic read-only S1 capability
+SPECIALIZED_EQUIVALENT,35,35,3,32,3,32,0,0,finite synthetic read-only S1 capability

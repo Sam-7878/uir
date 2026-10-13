@@ -1,0 +1,18 @@
+[
+  {
+    "archive_sha256": "c9adb265258cf0b44367bfe76cc11ad116467d24498fe6947dcdb0dc6f0bc9ab",
+    "artifact_generation": "R_RELEASE_V3",
+    "authoritative_for_release": true,
+    "path": "docs/work_reports/uir_base/111_validation/release_v3_verification/final_reproduce_report.json",
+    "sha256": "ea1990f845659ba4a88312a6312a4a42eefc0f4b66e6f14e3e531f5e862dc1d2",
+    "superseded_by": null
+  },
+  {
+    "archive_sha256": "7381e5f0c08317eae99ad4ea5462153570b6b1bf4e7837c513e395ef4e5f40de",
+    "artifact_generation": "R_RELEASE_V1",
+    "authoritative_for_release": false,
+    "path": "docs/work_reports/uir_base/111_validation/final_reproduce_report.json",
+    "sha256": "c2b910f94d5690e56c6926b81bfe5c79e1b2cbc9d9ebf7b5c36bae5f41ad3222",
+    "superseded_by": "docs/work_reports/uir_base/111_validation/release_v3_verification/final_reproduce_report.json"
+  }
+]

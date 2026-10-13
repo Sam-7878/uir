@@ -1,0 +1,3 @@
+# Exploratory factorial protocol
+
+See immutable preregistration.json and its SHA-256 receipt. All 24 development requests and16 factorial cells are retained. Identical model payloads are cached per hash, so reuse is not an independent repeated sample. Same raw request, evidence, capabilities, shared Python decision engine and whole-output guard in both representation conditions. UIR adds a public serialized/digested contract; specialized uses a native trusted plan. Primary contrast is selector choice with template renderer/non-oracle evidence, not a claim of UIR accuracy superiority. Four constructed clusters are insufficient for broad equivalence/generalization. No confirmatory inference is planned without verified unused external families.

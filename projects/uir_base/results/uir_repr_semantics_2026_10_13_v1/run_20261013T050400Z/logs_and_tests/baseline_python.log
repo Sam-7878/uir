@@ -1,0 +1,45 @@
+........................................................................ [ 54%]
+.....................................................FF....              [100%]
+=================================== FAILURES ===================================
+________________________ test_no_runtime_label_leakage _________________________
+
+    def test_no_runtime_label_leakage():
+        report = audit_runtime_files()
+>       assert report["status"] == "PASS", f"Leakage audit failed with findings: {report['findings']}"
+E       AssertionError: Leakage audit failed with findings: [{'file': 'smoke_runtime_100', 'error': 'file_missing'}, {'file': 'finqa_runtime_200', 'error': 'file_missing'}]
+E       assert 'FAIL' == 'PASS'
+E         
+E         - PASS
+E         + FAIL
+
+tests/uir_base/uir_phase4d/test_no_runtime_label_leakage.py:13: AssertionError
+___________________ test_runtime_audit_default_is_read_only ____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-sam/pytest-0/test_runtime_audit_default_is_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x73a9cfba67b0>
+
+    def test_runtime_audit_default_is_read_only(tmp_path, monkeypatch):
+        monkeypatch.setattr(runtime_audit, "RESULTS_DIR", tmp_path)
+    
+        def unexpected_write(*args, **kwargs):
+            pytest.fail("A read-only audit must not write historical result reports")
+    
+        monkeypatch.setattr(runtime_audit, "write_json", unexpected_write)
+        report = runtime_audit.audit_runtime_files()
+>       assert report["status"] == "PASS"
+E       AssertionError: assert 'FAIL' == 'PASS'
+E         
+E         - PASS
+E         + FAIL
+
+tests/uir_base/uir_phase4d/test_no_runtime_label_leakage.py:27: AssertionError
+=============================== warnings summary ===============================
+tests/uir_base/test_next_release.py::test_archive_rejects_escaping_and_duplicate_entries
+  /usr/lib/python3.14/zipfile/__init__.py:1721: UserWarning: Duplicate name: 'file'
+    return self._open_to_write(zinfo, force_zip64=force_zip64)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/uir_base/uir_phase4d/test_no_runtime_label_leakage.py::test_no_runtime_label_leakage
+FAILED tests/uir_base/uir_phase4d/test_no_runtime_label_leakage.py::test_runtime_audit_default_is_read_only
+2 failed, 129 passed, 1 warning in 0.73s

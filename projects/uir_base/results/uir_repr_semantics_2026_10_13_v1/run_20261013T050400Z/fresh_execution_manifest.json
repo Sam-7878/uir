@@ -1,0 +1,56 @@
+{
+  "CUDA_device_binding": "dedicated server script uses RTX3090 UUID; separate from default 11434",
+  "N_condition_cases": 384,
+  "actual_model_calls": 72,
+  "allocation": {
+    "models": [
+      {
+        "context_length": 8192,
+        "details": {
+          "families": [
+            "phi3"
+          ],
+          "family": "phi3",
+          "format": "gguf",
+          "parameter_size": "3.8B",
+          "parent_model": "",
+          "quantization_level": "Q4_0"
+        },
+        "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+        "expires_at": "2026-10-13T14:28:28.938363978+09:00",
+        "model": "phi3.5:latest",
+        "name": "phi3.5:latest",
+        "size": 5483884707,
+        "size_vram": 5483884707
+      }
+    ]
+  },
+  "capture_sha256": "b698d0ca38923d4ef80cf457137e18de3627ef2b5d0eba2dc892ee78861424b4",
+  "created_at_utc": "2026-10-13T05:18:29.001616+00:00",
+  "model_artifact": {
+    "capabilities": [
+      "completion"
+    ],
+    "details": {
+      "context_length": 131072,
+      "embedding_length": 3072,
+      "families": [
+        "phi3"
+      ],
+      "family": "phi3",
+      "format": "gguf",
+      "parameter_size": "3.8B",
+      "parent_model": "",
+      "quantization_level": "Q4_0"
+    },
+    "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+    "model": "phi3.5:latest",
+    "modified_at": "2026-10-11T20:10:12.4064408+09:00",
+    "name": "phi3.5:latest",
+    "size": 2176178843
+  },
+  "output_sha256": "7e4736a7d0ce707aea7110a25812a03bd8fd0ec2dc7e785b5c2209c90295b369",
+  "prereg_hash": "8fb932b572e9a6304691271c67879ff79a948c72fbc50e12b5880f11b94187b4",
+  "remote_inference": false,
+  "status": "CAPTURE_COMPLETE_DEVELOPMENT"
+}

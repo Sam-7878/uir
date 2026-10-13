@@ -1,0 +1,583 @@
+{
+  "facts": [
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2024_assets",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:12bc1649bcae12ce6a7c4fc9654be2f5387bb96149b44c8358ff5aa8d3f02906",
+      "status": "current",
+      "unit": "USD",
+      "value": "2000",
+      "visibility": "public"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2024_revenue",
+      "metric": "revenue",
+      "period": "2024",
+      "provenance": "synthetic-document:12bc1649bcae12ce6a7c4fc9654be2f5387bb96149b44c8358ff5aa8d3f02906",
+      "status": "current",
+      "unit": "USD",
+      "value": "1000",
+      "visibility": "public"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2024_profit",
+      "metric": "profit",
+      "period": "2024",
+      "provenance": "synthetic-document:12bc1649bcae12ce6a7c4fc9654be2f5387bb96149b44c8358ff5aa8d3f02906",
+      "status": "current",
+      "unit": "USD",
+      "value": "200",
+      "visibility": "public"
+    },
+    {
+      "dependencies": [
+        "CIRRUS_2024_profit",
+        "CIRRUS_2024_revenue"
+      ],
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2024_margin",
+      "metric": "margin",
+      "operation": "PERCENT_DIV",
+      "period": "2024",
+      "provenance": "synthetic-document:12bc1649bcae12ce6a7c4fc9654be2f5387bb96149b44c8358ff5aa8d3f02906",
+      "status": "current",
+      "unit": "percent",
+      "value": "20",
+      "visibility": "public"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2024_assets_stale",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:12bc1649bcae12ce6a7c4fc9654be2f5387bb96149b44c8358ff5aa8d3f02906",
+      "status": "stale",
+      "unit": "USD",
+      "value": "777",
+      "visibility": "public"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2024_assets_EUR",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:12bc1649bcae12ce6a7c4fc9654be2f5387bb96149b44c8358ff5aa8d3f02906",
+      "status": "current",
+      "unit": "EUR",
+      "value": "123",
+      "visibility": "private"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2025_assets",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:ed92e7f663fe0c7bcf6afc30957cf2c1d6017a5e84e9029bee2774f472fd2eef",
+      "status": "current",
+      "unit": "USD",
+      "value": "3000",
+      "visibility": "public"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2025_revenue",
+      "metric": "revenue",
+      "period": "2025",
+      "provenance": "synthetic-document:ed92e7f663fe0c7bcf6afc30957cf2c1d6017a5e84e9029bee2774f472fd2eef",
+      "status": "current",
+      "unit": "USD",
+      "value": "1500",
+      "visibility": "public"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2025_profit",
+      "metric": "profit",
+      "period": "2025",
+      "provenance": "synthetic-document:ed92e7f663fe0c7bcf6afc30957cf2c1d6017a5e84e9029bee2774f472fd2eef",
+      "status": "current",
+      "unit": "USD",
+      "value": "300",
+      "visibility": "public"
+    },
+    {
+      "dependencies": [
+        "CIRRUS_2025_profit",
+        "CIRRUS_2025_revenue"
+      ],
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2025_margin",
+      "metric": "margin",
+      "operation": "PERCENT_DIV",
+      "period": "2025",
+      "provenance": "synthetic-document:ed92e7f663fe0c7bcf6afc30957cf2c1d6017a5e84e9029bee2774f472fd2eef",
+      "status": "current",
+      "unit": "percent",
+      "value": "20",
+      "visibility": "public"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2025_assets_stale",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:ed92e7f663fe0c7bcf6afc30957cf2c1d6017a5e84e9029bee2774f472fd2eef",
+      "status": "stale",
+      "unit": "USD",
+      "value": "777",
+      "visibility": "public"
+    },
+    {
+      "entity": "CIRRUS",
+      "id": "CIRRUS_2025_assets_EUR",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:ed92e7f663fe0c7bcf6afc30957cf2c1d6017a5e84e9029bee2774f472fd2eef",
+      "status": "current",
+      "unit": "EUR",
+      "value": "123",
+      "visibility": "private"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2024_assets",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:49e95f1eb87767b8044d1fca16298cf6a68dcb58fb59333824cde6bbac34071e",
+      "status": "current",
+      "unit": "USD",
+      "value": "4000",
+      "visibility": "public"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2024_revenue",
+      "metric": "revenue",
+      "period": "2024",
+      "provenance": "synthetic-document:49e95f1eb87767b8044d1fca16298cf6a68dcb58fb59333824cde6bbac34071e",
+      "status": "current",
+      "unit": "USD",
+      "value": "2000",
+      "visibility": "public"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2024_profit",
+      "metric": "profit",
+      "period": "2024",
+      "provenance": "synthetic-document:49e95f1eb87767b8044d1fca16298cf6a68dcb58fb59333824cde6bbac34071e",
+      "status": "current",
+      "unit": "USD",
+      "value": "400",
+      "visibility": "public"
+    },
+    {
+      "dependencies": [
+        "MAPLE_2024_profit",
+        "MAPLE_2024_revenue"
+      ],
+      "entity": "MAPLE",
+      "id": "MAPLE_2024_margin",
+      "metric": "margin",
+      "operation": "PERCENT_DIV",
+      "period": "2024",
+      "provenance": "synthetic-document:49e95f1eb87767b8044d1fca16298cf6a68dcb58fb59333824cde6bbac34071e",
+      "status": "current",
+      "unit": "percent",
+      "value": "20",
+      "visibility": "public"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2024_assets_stale",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:49e95f1eb87767b8044d1fca16298cf6a68dcb58fb59333824cde6bbac34071e",
+      "status": "stale",
+      "unit": "USD",
+      "value": "777",
+      "visibility": "public"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2024_assets_EUR",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:49e95f1eb87767b8044d1fca16298cf6a68dcb58fb59333824cde6bbac34071e",
+      "status": "current",
+      "unit": "EUR",
+      "value": "123",
+      "visibility": "private"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2025_assets",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:bb9dd9dd49e6ca287b4eb882e523a88dbd2628e67ae996e465e1fe394fbf39d9",
+      "status": "current",
+      "unit": "USD",
+      "value": "5000",
+      "visibility": "public"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2025_revenue",
+      "metric": "revenue",
+      "period": "2025",
+      "provenance": "synthetic-document:bb9dd9dd49e6ca287b4eb882e523a88dbd2628e67ae996e465e1fe394fbf39d9",
+      "status": "current",
+      "unit": "USD",
+      "value": "2500",
+      "visibility": "public"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2025_profit",
+      "metric": "profit",
+      "period": "2025",
+      "provenance": "synthetic-document:bb9dd9dd49e6ca287b4eb882e523a88dbd2628e67ae996e465e1fe394fbf39d9",
+      "status": "current",
+      "unit": "USD",
+      "value": "500",
+      "visibility": "public"
+    },
+    {
+      "dependencies": [
+        "MAPLE_2025_profit",
+        "MAPLE_2025_revenue"
+      ],
+      "entity": "MAPLE",
+      "id": "MAPLE_2025_margin",
+      "metric": "margin",
+      "operation": "PERCENT_DIV",
+      "period": "2025",
+      "provenance": "synthetic-document:bb9dd9dd49e6ca287b4eb882e523a88dbd2628e67ae996e465e1fe394fbf39d9",
+      "status": "current",
+      "unit": "percent",
+      "value": "20",
+      "visibility": "public"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2025_assets_stale",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:bb9dd9dd49e6ca287b4eb882e523a88dbd2628e67ae996e465e1fe394fbf39d9",
+      "status": "stale",
+      "unit": "USD",
+      "value": "777",
+      "visibility": "public"
+    },
+    {
+      "entity": "MAPLE",
+      "id": "MAPLE_2025_assets_EUR",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:bb9dd9dd49e6ca287b4eb882e523a88dbd2628e67ae996e465e1fe394fbf39d9",
+      "status": "current",
+      "unit": "EUR",
+      "value": "123",
+      "visibility": "private"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2024_assets",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:5f759abaf10641e978c817c3ffe2dd7810b7500d28e58ba6b459f1faf65cbbe1",
+      "status": "current",
+      "unit": "USD",
+      "value": "6000",
+      "visibility": "public"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2024_revenue",
+      "metric": "revenue",
+      "period": "2024",
+      "provenance": "synthetic-document:5f759abaf10641e978c817c3ffe2dd7810b7500d28e58ba6b459f1faf65cbbe1",
+      "status": "current",
+      "unit": "USD",
+      "value": "3000",
+      "visibility": "public"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2024_profit",
+      "metric": "profit",
+      "period": "2024",
+      "provenance": "synthetic-document:5f759abaf10641e978c817c3ffe2dd7810b7500d28e58ba6b459f1faf65cbbe1",
+      "status": "current",
+      "unit": "USD",
+      "value": "600",
+      "visibility": "public"
+    },
+    {
+      "dependencies": [
+        "ORBIT_2024_profit",
+        "ORBIT_2024_revenue"
+      ],
+      "entity": "ORBIT",
+      "id": "ORBIT_2024_margin",
+      "metric": "margin",
+      "operation": "PERCENT_DIV",
+      "period": "2024",
+      "provenance": "synthetic-document:5f759abaf10641e978c817c3ffe2dd7810b7500d28e58ba6b459f1faf65cbbe1",
+      "status": "current",
+      "unit": "percent",
+      "value": "20",
+      "visibility": "public"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2024_assets_stale",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:5f759abaf10641e978c817c3ffe2dd7810b7500d28e58ba6b459f1faf65cbbe1",
+      "status": "stale",
+      "unit": "USD",
+      "value": "777",
+      "visibility": "public"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2024_assets_EUR",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:5f759abaf10641e978c817c3ffe2dd7810b7500d28e58ba6b459f1faf65cbbe1",
+      "status": "current",
+      "unit": "EUR",
+      "value": "123",
+      "visibility": "private"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2025_assets",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:cbfe8a78e8a87147580bdefe78d28e8dd11e66c805a07d22ad29d1399989521c",
+      "status": "current",
+      "unit": "USD",
+      "value": "7000",
+      "visibility": "public"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2025_revenue",
+      "metric": "revenue",
+      "period": "2025",
+      "provenance": "synthetic-document:cbfe8a78e8a87147580bdefe78d28e8dd11e66c805a07d22ad29d1399989521c",
+      "status": "current",
+      "unit": "USD",
+      "value": "3500",
+      "visibility": "public"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2025_profit",
+      "metric": "profit",
+      "period": "2025",
+      "provenance": "synthetic-document:cbfe8a78e8a87147580bdefe78d28e8dd11e66c805a07d22ad29d1399989521c",
+      "status": "current",
+      "unit": "USD",
+      "value": "700",
+      "visibility": "public"
+    },
+    {
+      "dependencies": [
+        "ORBIT_2025_profit",
+        "ORBIT_2025_revenue"
+      ],
+      "entity": "ORBIT",
+      "id": "ORBIT_2025_margin",
+      "metric": "margin",
+      "operation": "PERCENT_DIV",
+      "period": "2025",
+      "provenance": "synthetic-document:cbfe8a78e8a87147580bdefe78d28e8dd11e66c805a07d22ad29d1399989521c",
+      "status": "current",
+      "unit": "percent",
+      "value": "20",
+      "visibility": "public"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2025_assets_stale",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:cbfe8a78e8a87147580bdefe78d28e8dd11e66c805a07d22ad29d1399989521c",
+      "status": "stale",
+      "unit": "USD",
+      "value": "777",
+      "visibility": "public"
+    },
+    {
+      "entity": "ORBIT",
+      "id": "ORBIT_2025_assets_EUR",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:cbfe8a78e8a87147580bdefe78d28e8dd11e66c805a07d22ad29d1399989521c",
+      "status": "current",
+      "unit": "EUR",
+      "value": "123",
+      "visibility": "private"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2024_assets",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:eba3cba5204e765dea67224efa39275b52260bb771177e5bfc85ee2bb2a4f872",
+      "status": "current",
+      "unit": "USD",
+      "value": "8000",
+      "visibility": "public"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2024_revenue",
+      "metric": "revenue",
+      "period": "2024",
+      "provenance": "synthetic-document:eba3cba5204e765dea67224efa39275b52260bb771177e5bfc85ee2bb2a4f872",
+      "status": "current",
+      "unit": "USD",
+      "value": "4000",
+      "visibility": "public"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2024_profit",
+      "metric": "profit",
+      "period": "2024",
+      "provenance": "synthetic-document:eba3cba5204e765dea67224efa39275b52260bb771177e5bfc85ee2bb2a4f872",
+      "status": "current",
+      "unit": "USD",
+      "value": "800",
+      "visibility": "public"
+    },
+    {
+      "dependencies": [
+        "PINE_2024_profit",
+        "PINE_2024_revenue"
+      ],
+      "entity": "PINE",
+      "id": "PINE_2024_margin",
+      "metric": "margin",
+      "operation": "PERCENT_DIV",
+      "period": "2024",
+      "provenance": "synthetic-document:eba3cba5204e765dea67224efa39275b52260bb771177e5bfc85ee2bb2a4f872",
+      "status": "current",
+      "unit": "percent",
+      "value": "20",
+      "visibility": "public"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2024_assets_stale",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:eba3cba5204e765dea67224efa39275b52260bb771177e5bfc85ee2bb2a4f872",
+      "status": "stale",
+      "unit": "USD",
+      "value": "777",
+      "visibility": "public"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2024_assets_EUR",
+      "metric": "assets",
+      "period": "2024",
+      "provenance": "synthetic-document:eba3cba5204e765dea67224efa39275b52260bb771177e5bfc85ee2bb2a4f872",
+      "status": "current",
+      "unit": "EUR",
+      "value": "123",
+      "visibility": "private"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2025_assets",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:7b4803d251f3a8070aa0c1a8de6edf1161e6cc62a5672805a93f886d75b549ae",
+      "status": "current",
+      "unit": "USD",
+      "value": "9000",
+      "visibility": "public"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2025_revenue",
+      "metric": "revenue",
+      "period": "2025",
+      "provenance": "synthetic-document:7b4803d251f3a8070aa0c1a8de6edf1161e6cc62a5672805a93f886d75b549ae",
+      "status": "current",
+      "unit": "USD",
+      "value": "4500",
+      "visibility": "public"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2025_profit",
+      "metric": "profit",
+      "period": "2025",
+      "provenance": "synthetic-document:7b4803d251f3a8070aa0c1a8de6edf1161e6cc62a5672805a93f886d75b549ae",
+      "status": "current",
+      "unit": "USD",
+      "value": "900",
+      "visibility": "public"
+    },
+    {
+      "dependencies": [
+        "PINE_2025_profit",
+        "PINE_2025_revenue"
+      ],
+      "entity": "PINE",
+      "id": "PINE_2025_margin",
+      "metric": "margin",
+      "operation": "PERCENT_DIV",
+      "period": "2025",
+      "provenance": "synthetic-document:7b4803d251f3a8070aa0c1a8de6edf1161e6cc62a5672805a93f886d75b549ae",
+      "status": "current",
+      "unit": "percent",
+      "value": "20",
+      "visibility": "public"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2025_assets_stale",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:7b4803d251f3a8070aa0c1a8de6edf1161e6cc62a5672805a93f886d75b549ae",
+      "status": "stale",
+      "unit": "USD",
+      "value": "777",
+      "visibility": "public"
+    },
+    {
+      "entity": "PINE",
+      "id": "PINE_2025_assets_EUR",
+      "metric": "assets",
+      "period": "2025",
+      "provenance": "synthetic-document:7b4803d251f3a8070aa0c1a8de6edf1161e6cc62a5672805a93f886d75b549ae",
+      "status": "current",
+      "unit": "EUR",
+      "value": "123",
+      "visibility": "private"
+    }
+  ],
+  "trusted_provenance": [
+    "synthetic-document:12bc1649bcae12ce6a7c4fc9654be2f5387bb96149b44c8358ff5aa8d3f02906",
+    "synthetic-document:ed92e7f663fe0c7bcf6afc30957cf2c1d6017a5e84e9029bee2774f472fd2eef",
+    "synthetic-document:49e95f1eb87767b8044d1fca16298cf6a68dcb58fb59333824cde6bbac34071e",
+    "synthetic-document:bb9dd9dd49e6ca287b4eb882e523a88dbd2628e67ae996e465e1fe394fbf39d9",
+    "synthetic-document:5f759abaf10641e978c817c3ffe2dd7810b7500d28e58ba6b459f1faf65cbbe1",
+    "synthetic-document:cbfe8a78e8a87147580bdefe78d28e8dd11e66c805a07d22ad29d1399989521c",
+    "synthetic-document:eba3cba5204e765dea67224efa39275b52260bb771177e5bfc85ee2bb2a4f872",
+    "synthetic-document:7b4803d251f3a8070aa0c1a8de6edf1161e6cc62a5672805a93f886d75b549ae"
+  ],
+  "version": "synthetic-corpus-S1"
+}

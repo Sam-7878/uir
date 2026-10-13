@@ -1,0 +1,8 @@
+{
+  "GPU_calls_in_replay": 0,
+  "N_actual_captures": 72,
+  "N_saved_factorial": 384,
+  "created_at_utc": "2026-10-13T05:23:48.639074+00:00",
+  "same_host": true,
+  "status": "S_CPU_RAW_TO_APPROVED_REPLAY_PASS"
+}

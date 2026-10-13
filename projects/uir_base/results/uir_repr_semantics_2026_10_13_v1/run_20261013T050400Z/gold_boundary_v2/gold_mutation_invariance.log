@@ -1,0 +1,25 @@
+{"probe": "GOLD_READ_BLOCKED"}
+{"case_id": "SDEV-00-EN", "result": {"fact_ids": ["CIRRUS_2024_assets"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-00-KO", "result": {"fact_ids": ["CIRRUS_2024_assets"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-01-EN", "result": {"fact_ids": ["CIRRUS_2024_revenue"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-01-KO", "result": {"fact_ids": ["CIRRUS_2024_revenue"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-02-EN", "result": {"fact_ids": ["CIRRUS_2024_margin"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-02-KO", "result": {"fact_ids": ["CIRRUS_2024_margin"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-03-EN", "result": {"fact_ids": ["MAPLE_2025_assets"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-03-KO", "result": {"fact_ids": ["MAPLE_2025_assets"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-04-EN", "result": {"fact_ids": ["MAPLE_2025_revenue"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-04-KO", "result": {"fact_ids": ["MAPLE_2025_revenue"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-05-EN", "result": {"fact_ids": ["MAPLE_2025_margin"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-05-KO", "result": {"fact_ids": ["MAPLE_2025_margin"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-06-EN", "result": {"fact_ids": ["ORBIT_2024_assets"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-06-KO", "result": {"fact_ids": ["ORBIT_2024_assets"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-07-EN", "result": {"fact_ids": ["ORBIT_2024_revenue"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-07-KO", "result": {"fact_ids": ["ORBIT_2024_revenue"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-08-EN", "result": {"fact_ids": ["ORBIT_2024_margin"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-08-KO", "result": {"fact_ids": ["ORBIT_2024_margin"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-09-EN", "result": {"fact_ids": ["PINE_2025_assets"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-09-KO", "result": {"fact_ids": ["PINE_2025_assets"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-10-EN", "result": {"fact_ids": ["PINE_2025_revenue"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-10-KO", "result": {"fact_ids": ["PINE_2025_revenue"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-11-EN", "result": {"fact_ids": ["PINE_2025_margin"], "state": "FULL_VERIFIED_ANSWER"}}
+{"case_id": "SDEV-11-KO", "result": {"fact_ids": ["PINE_2025_margin"], "state": "FULL_VERIFIED_ANSWER"}}

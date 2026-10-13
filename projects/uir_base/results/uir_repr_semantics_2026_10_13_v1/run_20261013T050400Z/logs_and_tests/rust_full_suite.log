@@ -1,0 +1,126 @@
+   Compiling poa-uir v0.1.0 (/mnt/d/_Work/goat_bank/uir/crates/poa-uir)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.40s
+     Running unittests src/lib.rs (target/debug/deps/poa_core-d807bbac78d1d6ec)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/risk_evidence.rs (target/debug/deps/risk_evidence-ecb1885571b1a55c)
+
+running 18 tests
+test re_mod_001_zero_bps_allowed ... ok
+test re_mod_002_ten_thousand_bps_allowed ... ok
+test re_mod_003_out_of_range_bps_rejected ... ok
+test re_dis_003_direct_quarantine_semantics_unchanged ... ok
+test re_mod_005_empty_correlation_rejected ... ok
+test re_eval_020_to_026_any_threshold_success_combinations ... ok
+test re_ker_001_to_004_risk_at_every_precommit_stage_quarantines ... ok
+test re_dis_001_risk_disabled_rejects_and_re_dis_002_preserves_audit_data ... ok
+test re_eval_001_to_008_all_threshold_truth_table ... ok
+test re_ker_005_insufficient_risk_rejects ... ok
+test re_mod_004_zero_occurrences_rejected ... ok
+test re_ker_006_policy_rejects_and_re_ker_007_internal_aborts ... ok
+test re_state_001_to_005_candidates_never_leak_before_commit_and_retry_is_clean ... ok
+test re_mod_008_source_round_trip ... ok
+test re_aud_001_to_006_structured_minimal_round_trip ... ok
+test re_mod_007_category_round_trip ... ok
+test re_mod_006_unknown_json_field_rejected ... ok
+test re_prop_001_to_006_deterministic_monotone_bounded_and_timestamp_independent ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/lib.rs (target/debug/deps/poa_protocol-bc9cb869722dc310)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/protocol.rs (target/debug/deps/protocol-fd73a2d7335b6724)
+
+running 25 tests
+test re_protocol_runtime_evidence_is_not_accepted_as_policy ... ok
+test spec_003_unknown_field ... ok
+test spec_005_invalid_unveil_permission ... ok
+test spec_007_invalid_message_size ... ok
+test spec_002_missing_required_field ... ok
+test spec_001_valid_specification ... ok
+test spec_006_path_traversal ... ok
+test spec_004_invalid_pledge ... ok
+test p1_malformed_cidr_rejected ... ok
+test inh_003_missing_parent ... ok
+test inh_004_cycle_includes_chain ... ok
+test spec_008_production_noop ... ok
+test inh_007_expanding_pledge_rejected ... ok
+test dig_003_004_005_material_changes_change_digest ... ok
+test dig_001_002_and_006_order_independent_and_repeatable ... ok
+test p1_approved_expansion_is_accepted_and_audited ... ok
+test re_protocol_policy_weakening_requires_approved_expansion ... ok
+test sbox_empty_001_empty_unveil_is_valid_deny_all_policy ... ok
+test re_protocol_optional_absence_preserves_legacy_golden_digest ... ok
+test re_protocol_child_omission_inherits_parent_risk_policy ... ok
+test re_protocol_risk_policy_golden_digest ... ok
+test inh_009_context_weakening_rejected ... ok
+test inh_001_and_006_valid_narrowing ... ok
+test digest_golden_and_canonical_snapshot_match ... ok
+test re_protocol_policy_is_strict_bounded_and_digest_bound ... ok
+
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+
+     Running unittests src/lib.rs (target/debug/deps/poa_uir-44ad16dcc502a3a4)
+
+running 19 tests
+test tests::rejected_path_never_invokes_renderer ... ok
+test tests::legacy_dsl_fail_closed_concepts_are_retained ... ok
+test tests::adversarial_input_is_rejected ... ok
+test tests::verified_numeric_slot_binding_preserves_exact_text_provenance_and_digest ... ok
+test tests::test_condition_typed_operators_and_eval ... ok
+test tests::test_formal_invariant_inv1_fail_closed ... ok
+test tests::needs_clarification_never_produces_executable_uir ... ok
+test tests::output_contract_rejects_unsupported_claim ... ok
+test tests::validator_fails_closed ... ok
+test tests::filter_and_render_never_emits_unsupported_model_text ... ok
+test tests::typed_lexicon_generalizes_surface_forms_without_entity_instances ... ok
+test tests::test_formal_invariant_inv4_semantic_digest_invariance ... ok
+test tests::test_formal_invariant_inv5_cross_lingual_canonicalization ... ok
+test tests::ko_en_frontends_have_equal_semantic_digest ... ok
+test tests::policy_binding_and_aaco_mapping ... ok
+test tests::uir_model_and_condition_round_trip ... ok
+test tests::uir_canonical_and_digest_are_deterministic ... ok
+test tests::controlled_frontends_cover_condition_operators_and_enforcement ... ok
+test tests::uir_json_schema_accepts_compiler_output ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+     Running unittests src/bin/uir_eval.rs (target/debug/deps/uir_eval-dddf165c5544871b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/uir_contract_eval.rs (target/debug/deps/uir_contract_eval-7150e91dbaf0edbf)
+
+running 2 tests
+test tests::invalid_sections_are_not_accepted ... ok
+test tests::evaluator_gold_is_not_runtime_input ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests poa_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests poa_protocol
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests poa_uir
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

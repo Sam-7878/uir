@@ -1,0 +1,95 @@
+{
+  "created_at_utc": "2026-10-13T05:30:44.123056+00:00",
+  "files": [
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/runtime/query_aware_dev.jsonl",
+      "sha256": "232d712ed8acdca5194428d86e67a5b6da586590abbb6d31a137e669b856aadb"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/evaluator_only/query_aware_gold.jsonl",
+      "sha256": "50fe3abbd99407145205740cd8cdbe3c5848c4d2245f402d2fa8964dbefaef23"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/synthetic_source_documents.jsonl",
+      "sha256": "c1ed229424626f64a00e2ce084bb750882f7367cfc11939da08131c9f89ec1af"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/source_snapshot.json",
+      "sha256": "578b580cdce99bd21c5ce3099a918f5c8712a1d35dd3517773e7fe7407b5fc59"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/preregistration.json",
+      "sha256": "8fb932b572e9a6304691271c67879ff79a948c72fbc50e12b5880f11b94187b4"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/protocol_freeze_receipt.json",
+      "sha256": "49094c0dcc3f5177b648db453ba490fb36483232a84a76ce94488ce109b71408"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/fresh_model_raw.jsonl",
+      "sha256": "b698d0ca38923d4ef80cf457137e18de3627ef2b5d0eba2dc892ee78861424b4"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/factorial_saved_outputs.jsonl",
+      "sha256": "7e4736a7d0ce707aea7110a25812a03bd8fd0ec2dc7e785b5c2209c90295b369"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/fresh_execution_manifest.json",
+      "sha256": "1d1f131d498f450f0ecf0da6b003d4103d1eea80a4a248d4eecb27e1dc1b85b2"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/query_aware_summary.csv",
+      "sha256": "1c45636e6e790f6c908d81d36f8e5c3d3036374ec3c598a6322815f5b4e26fcf"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/query_aware_case_metrics.csv",
+      "sha256": "0e7f81f578ba4d6915c2ad4febee9e8f7009aac9f542ae09eadb014643032bda"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/paired_analysis.json",
+      "sha256": "6835b557d75c8ed7e8f15c13e6bff8f1caf276c1aa9caa42a1baeb7dead573a0"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/semantic_differential_cases.jsonl",
+      "sha256": "86ce60ee01d17bd726316c3b29f8281ca56a4e55890aa83b44c4b15318093719"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/interpreter_agreement_v2.jsonl",
+      "sha256": "919075ca789e0f1a5bc0d32ca3e0526525d9b4f01d4746e40cefdb3e7a513691"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/independent_backend_scope_v2.json",
+      "sha256": "bb2f47e197f154e6816b1da38718d201b37f5710b2b1a1977139791eb4ce0173"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/backend_portability_cases.jsonl",
+      "sha256": "b32f4dd7379d3cc80144b7522efc1e96397ad92a283ffb0fc77d63279203474a"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/implementation_cost.csv",
+      "sha256": "06eaeccacad33c385ba362737fc01638e81f18d51eddeb35350058bb7560057b"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/finqa_scope_metrics.json",
+      "sha256": "5140877e5e6506434a9f3825df39b34cb8509aca1221e0943035d4e3b41f3ba5"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/gold_boundary_v2/gold_isolation_status.json",
+      "sha256": "505953d3152ddf6a6a4c868179934ef8a3c35e2f7d99e3921e22667870eed5ef"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/policy_v2/action_and_false_denial_metrics.csv",
+      "sha256": "0b136337b7c91016139bdd20a49ec9780273ede21f34b5cbdeff15e4537beab8"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/S_cpu_raw_reconstruct.json",
+      "sha256": "64f37dacc20038d3d70108818922d9043b37359eb5802904460440ecb5fe62d6"
+    },
+    {
+      "path": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/namespace_standalone_report.json",
+      "sha256": "7a8dd80a8441d9848095754eea61907c97656b1cb1ddcddd475d71868f642352"
+    }
+  ],
+  "paper_generation_source_sha256": "e41255d0873dd4fd2375d382d050ec3da8c78755813eabf730f17185a41b5285",
+  "scope": "SYNTHETIC_DEVELOPMENT_AND_HISTORICAL_SCOPE_CORRECTIONS"
+}

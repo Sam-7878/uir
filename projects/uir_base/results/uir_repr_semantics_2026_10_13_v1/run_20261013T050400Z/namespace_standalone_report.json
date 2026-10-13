@@ -1,0 +1,12 @@
+{
+  "GPU_inference_calls": 0,
+  "created_at_utc": "2026-10-13T05:09:35.351532+00:00",
+  "fixture_overlay": "exact bytes only in temporary extracted checkout",
+  "kernel_namespace_container": true,
+  "network_namespace_separate": true,
+  "not_full_rootfs_image": true,
+  "original_workspace_hidden": true,
+  "replay_exit_code": 0,
+  "same_physical_host": true,
+  "test_exit_code": 0
+}

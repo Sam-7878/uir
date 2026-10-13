@@ -1,0 +1,33 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "execution_contract": {
+      "type": "object"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "output_contract": {
+      "type": "object"
+    },
+    "policy_constraints": {
+      "type": "object"
+    },
+    "semantic_digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "semantics": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "metadata",
+    "semantics",
+    "policy_constraints",
+    "execution_contract",
+    "output_contract",
+    "semantic_digest"
+  ],
+  "type": "object"
+}

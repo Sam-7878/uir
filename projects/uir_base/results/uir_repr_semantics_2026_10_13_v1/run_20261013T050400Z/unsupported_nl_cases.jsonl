@@ -1,0 +1,8 @@
+{"evidence_kind": "SYNTHETIC_CONFORMANCE", "expected_state": "CLARIFICATION", "language": "EN", "raw_user_request": "Please explain why its situation worsened last year."}
+{"evidence_kind": "SYNTHETIC_CONFORMANCE", "expected_state": "CLARIFICATION", "language": "KO", "raw_user_request": "작년에 그 회사의 상황이 왜 나빠졌는지 설명해 주세요."}
+{"evidence_kind": "SYNTHETIC_CONFORMANCE", "expected_state": "CLARIFICATION", "language": "KO", "raw_user_request": "매출이 아니라 자산을 알려 주실 수 있나요?"}
+{"evidence_kind": "SYNTHETIC_CONFORMANCE", "expected_state": "CLARIFICATION", "language": "EN", "raw_user_request": "Show assets if active or approved and not frozen."}
+{"evidence_kind": "SYNTHETIC_CONFORMANCE", "expected_state": "CLARIFICATION", "language": "KO", "raw_user_request": "활성 또는 승인이고 동결이 아니라면 자산을 알려 주세요."}
+{"evidence_kind": "SYNTHETIC_CONFORMANCE", "expected_state": "CLARIFICATION", "language": "EN", "raw_user_request": "show CIRRUS assets between 2023 and 2025 in USD."}
+{"evidence_kind": "SYNTHETIC_CONFORMANCE", "expected_state": "CLARIFICATION", "language": "KO", "raw_user_request": "CIRRUS의 2023년부터 2025년까지 자산을 알려 주세요."}
+{"evidence_kind": "SYNTHETIC_CONFORMANCE", "expected_state": "CLARIFICATION", "language": "KO", "raw_user_request": "CIRRUS assets를 USD로 부탁해요."}

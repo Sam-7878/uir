@@ -1,0 +1,41 @@
+{
+  "CI": "descriptive paired family bootstrap 1000 replicates seed13013; not powered equivalence",
+  "GPU": "RTX3090 UUID GPU-ab53069a-3217-ee09-80f8-748b5fdbd156",
+  "N_cases": 24,
+  "N_conditions": 16,
+  "already_observed_before_freeze": "synthetic corpus and deterministic/differential conformance pilot; no S model inference yet",
+  "capture_reuse": "exact request-hash identical payloads shared across conditions; not independent repeated model samples",
+  "cluster": "constructed source entity/year; 4 clusters, KO/EN variants linked; same command template",
+  "code_revision": "84960d3f35c6c0918d06b86e3acf67ce17cf3b66",
+  "created_at_utc": "2026-10-13T05:16:49.913290+00:00",
+  "gold_sha256_grader_only": "50fe3abbd99407145205740cd8cdbe3c5848c4d2245f402d2fa8964dbefaef23",
+  "invalid_handling": "all cases retained as invalid/none, no retries or outcome-based exclusions",
+  "model": "phi3.5:latest",
+  "model_digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+  "model_endpoint": "http://127.0.0.1:18747",
+  "multiple_testing": "one predeclared primary contrast; secondary tables descriptive, no selective p-values",
+  "options": {
+    "num_ctx": 8192,
+    "num_gpu": 99,
+    "num_predict": 512,
+    "seed": 13013,
+    "temperature": 0
+  },
+  "preselected": "trusted deterministic query selection plus operand closure, explicitly assisted",
+  "primary_contrast": "SLM vs deterministic selector with template renderer in non_oracle_pool; representation paired equality reported",
+  "primary_endpoint": "exact accepted relevant fact-ID set over all raw requests",
+  "raw_selector_exact_endpoint": "secondary; keep catalog_copy flag distinct",
+  "runtime_sha256": "232d712ed8acdca5194428d86e67a5b6da586590abbb6d31a137e669b856aadb",
+  "schema": "reference enum all presented IDs, not gold subset; renderer closed fact-line strings",
+  "scope": "EXPLORATORY_DEVELOPMENT_NOT_CONFIRMATORY",
+  "source_hashes": {
+    "projects/uir_base/representation_research/analysis.py": "8d2d596aaa6029ade9ee7e06dad4e83042b834233a15d7a06fbc7a837d9c9aa4",
+    "projects/uir_base/representation_research/evaluation.py": "822ff87269a08cd1b6804ea2ee06607b8a08594b4cf78f7768bbd0892a4c0d72",
+    "projects/uir_base/representation_research/experiment.py": "8ff4414dade5bcd70fffad0f3ea1d602fd1fecc8c1c5a1c05d5abc6366e9cef0",
+    "projects/uir_base/representation_research/interpreter_python.py": "9a3a6de16608ec09b5062a65b8443bdeb9c5cd6eb4c0d3bf8b87f36dd51392f4",
+    "projects/uir_base/representation_research/specialized.py": "213df9f4f6d5d639b65e7bfe20a50e8dd842bc37a1b5805f271a70fb035078cf",
+    "src/uir_common/query_contract.py": "7d2879b517126c2eaf11e6dd7e359ff4c29fd88970bdbdadbd8e4252395a07f8"
+  },
+  "synthetic_source_sha256": "578b580cdce99bd21c5ce3099a918f5c8712a1d35dd3517773e7fe7407b5fc59",
+  "whole_output_scope": "approved CLOSED_FACT_LINES_S1, every displayed line checked; native arbitrary prose NOT_MEASURED"
+}

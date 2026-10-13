@@ -1,0 +1,12 @@
+{
+  "N": 41,
+  "N_agreement": 41,
+  "N_normative_conformance": 41,
+  "binary_sha256": "7841dfeff2312adeea885336ea071a0224a1016982b2e2c9684afda701e58916",
+  "case_input_sha256": "86ce60ee01d17bd726316c3b29f8281ca56a4e55890aa83b44c4b15318093719",
+  "independently_coded": true,
+  "independently_staffed": false,
+  "python_source_sha256": "9a3a6de16608ec09b5062a65b8443bdeb9c5cd6eb4c0d3bf8b87f36dd51392f4",
+  "rust_source_sha256": "a502b3f4f0a28156cf9f222af8fa7a390c023778bd651d19cb57eac68f17f3cd",
+  "supersedes": "pilot source/binary binding only; original41 outcomes retained"
+}

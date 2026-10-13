@@ -1,0 +1,21 @@
+pair_id,both_compile,semantic_equal,raw_en,raw_ko,human_validated,scope
+PAIR-00,True,True,show CIRRUS assets for 2024 in USD.,CIRRUS의 2024년 자산을 USD 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-01,True,True,show CIRRUS revenue for 2024 in USD.,CIRRUS의 2024년 매출을 USD 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-02,True,True,show CIRRUS margin for 2024 in percent.,CIRRUS의 2024년 이익률을 percent 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-03,True,True,show MAPLE assets for 2025 in USD.,MAPLE의 2025년 자산을 USD 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-04,True,True,show MAPLE revenue for 2025 in USD.,MAPLE의 2025년 매출을 USD 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-05,True,True,show MAPLE margin for 2025 in percent.,MAPLE의 2025년 이익률을 percent 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-06,True,True,show ORBIT assets for 2024 in USD.,ORBIT의 2024년 자산을 USD 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-07,True,True,show ORBIT revenue for 2024 in USD.,ORBIT의 2024년 매출을 USD 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-08,True,True,show ORBIT margin for 2024 in percent.,ORBIT의 2024년 이익률을 percent 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-09,True,True,show PINE assets for 2025 in USD.,PINE의 2025년 자산을 USD 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-10,True,True,show PINE revenue for 2025 in USD.,PINE의 2025년 매출을 USD 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+PAIR-11,True,True,show PINE margin for 2025 in percent.,PINE의 2025년 이익률을 percent 단위로 보여 주세요.,False,CONSTRUCTED_CNL
+UNSUPPORTED-12,False,NOT_APPLICABLE,Please explain why its situation worsened last year.,,False,UNSUPPORTED_FREE_RAW
+UNSUPPORTED-13,False,NOT_APPLICABLE,,작년에 그 회사의 상황이 왜 나빠졌는지 설명해 주세요.,False,UNSUPPORTED_FREE_RAW
+UNSUPPORTED-14,False,NOT_APPLICABLE,,매출이 아니라 자산을 알려 주실 수 있나요?,False,UNSUPPORTED_FREE_RAW
+UNSUPPORTED-15,False,NOT_APPLICABLE,Show assets if active or approved and not frozen.,,False,UNSUPPORTED_FREE_RAW
+UNSUPPORTED-16,False,NOT_APPLICABLE,,활성 또는 승인이고 동결이 아니라면 자산을 알려 주세요.,False,UNSUPPORTED_FREE_RAW
+UNSUPPORTED-17,False,NOT_APPLICABLE,show CIRRUS assets between 2023 and 2025 in USD.,,False,UNSUPPORTED_FREE_RAW
+UNSUPPORTED-18,False,NOT_APPLICABLE,,CIRRUS의 2023년부터 2025년까지 자산을 알려 주세요.,False,UNSUPPORTED_FREE_RAW
+UNSUPPORTED-19,False,NOT_APPLICABLE,,CIRRUS assets를 USD로 부탁해요.,False,UNSUPPORTED_FREE_RAW

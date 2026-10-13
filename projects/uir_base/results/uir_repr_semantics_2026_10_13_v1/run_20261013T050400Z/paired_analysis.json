@@ -1,0 +1,15 @@
+{
+  "GPU_model_replay_calls": 0,
+  "N_repr_equal": 192,
+  "N_repr_pairs": 192,
+  "actual_calls": 72,
+  "descriptive_family_bootstrap_95_interval": [
+    0.0,
+    0.0
+  ],
+  "difference": 0.0,
+  "family_clusters": 4,
+  "general_equivalence_or_generalization": false,
+  "multiplicity": "one primary, other cells descriptive",
+  "primary_contrast": "SLM-minus-deterministic accepted exact set, template/non-oracle"
+}

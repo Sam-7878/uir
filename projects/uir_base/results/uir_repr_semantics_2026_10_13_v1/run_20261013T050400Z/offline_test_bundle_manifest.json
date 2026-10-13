@@ -1,0 +1,24 @@
+{
+  "added_fixtures": [
+    {
+      "bytes": 67778,
+      "path": "projects/uir_base/results/uir_phase4d/frozen_inputs/smoke_runtime_100.jsonl",
+      "rights": "PRIVATE_REVIEW_ONLY_PENDING_PUBLIC_RIGHTS",
+      "sha256": "df969251853c56e92f585a8581e94e6392a59db59b3d5494cd1730f2bb5b0e62",
+      "source": "exact existing frozen runtime fixture; not regenerated"
+    },
+    {
+      "bytes": 884777,
+      "path": "projects/uir_base/results/uir_phase4d/frozen_inputs/finqa_runtime_200.jsonl",
+      "rights": "PRIVATE_REVIEW_ONLY_PENDING_PUBLIC_RIGHTS",
+      "sha256": "23b771a7910bae772ab4e7e5089ca71102e0dd53e98e015f28ab389974e6a646",
+      "source": "exact existing frozen runtime fixture; not regenerated"
+    }
+  ],
+  "baseline_sha256": "c9adb265258cf0b44367bfe76cc11ad116467d24498fe6947dcdb0dc6f0bc9ab",
+  "checkout_collection": 296,
+  "original_collection": 131,
+  "other_project_test_count": 165,
+  "rights": "PRIVATE_REVIEW_ONLY",
+  "scope": "complete delivered tests/uir_base suite; not whole-repository 296"
+}

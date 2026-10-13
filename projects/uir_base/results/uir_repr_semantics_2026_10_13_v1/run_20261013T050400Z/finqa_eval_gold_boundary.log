@@ -1,0 +1,1 @@
+NOT_EXECUTED: no S-stage FinQA inference process. Historical runtime fixtures are restored byte-identically and their no-label audit runs in the standalone suite. This is not a new kernel-isolated FinQA end-to-end accuracy evaluation.

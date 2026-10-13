@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-10-13T05:09:33.816808+00:00",
+  "frozen_gold_modified": false,
+  "gold_directory_hidden_by_kernel_mount": true,
+  "gold_hash_only_for_grader": "50fe3abbd99407145205740cd8cdbe3c5848c4d2245f402d2fa8964dbefaef23",
+  "mutated_evaluator_file_sha256": "86b8ef1c5da325382cb7995cc8b90446c79a5313f260c344d080612f8ee6884e",
+  "network_namespace_separate": true,
+  "outputs_identical": true,
+  "run1_exit": 0,
+  "run2_exit": 0,
+  "runtime_sha256": "232d712ed8acdca5194428d86e67a5b6da586590abbb6d31a137e669b856aadb",
+  "scope": "new evaluator-only directory at canonical path; not protection against compromised host/root or arbitrary aliases",
+  "status": "PASS_SCOPED_KERNEL_NAMESPACE"
+}

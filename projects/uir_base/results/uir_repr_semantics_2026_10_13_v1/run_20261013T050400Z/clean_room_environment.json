@@ -1,0 +1,143 @@
+{
+  "CPU_replay": {
+    "command": [
+      "/tmp/uir-s-standalone-oilq9ypa/venv/bin/python",
+      "-c",
+      "from pathlib import Path;import json;from projects.uir_base.validation.release import reconstruct;print(json.dumps(reconstruct(Path.cwd())))"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa/checkout",
+    "exit_code": 0,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/cpu_raw_reconstruct.log",
+    "log_sha256": "7d7e99c3071180f7a984bdb1add0b6790e7e14f0457f96d79b3773ccf595fb31"
+  },
+  "GPU_used": false,
+  "baseline_test": {
+    "command": [
+      "/tmp/uir-s-standalone-oilq9ypa/venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/uir_base",
+      "--junitxml=projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/baseline_python.xml"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa/checkout",
+    "exit_code": 1,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/baseline_python.log",
+    "log_sha256": "07e1ee755f78ac93d20a6c37c2665031967022addd2f4e45d6b96f8d7f7ea401"
+  },
+  "checkout_collection": {
+    "command": [
+      "/mnt/d/_Work/goat_bank/.venv_cuda/bin/python",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q"
+    ],
+    "cwd": "/mnt/d/_Work/goat_bank/uir",
+    "exit_code": 0,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/checkout_collection.log",
+    "log_sha256": "735f1a23d0131dfffb10d2a500cfeb0e179e78fd26e7d5e8181e00892997df06"
+  },
+  "collection": {
+    "command": [
+      "/tmp/uir-s-standalone-oilq9ypa/venv/bin/python",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q",
+      "tests/uir_base"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa/checkout",
+    "exit_code": 0,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/baseline_collection.log",
+    "log_sha256": "d38ab4552b63f596c53aa0e933efe34e924469a24c347c0aacf105c927b0fe6f"
+  },
+  "container_probe": {
+    "command": [
+      "/bin/bash",
+      "-c",
+      "docker version"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa",
+    "exit_code": 1,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/container_availability.log",
+    "log_sha256": "663ca6c96d74b96ae6cdccb23c6be8294ad56f20da13a8da31b6551d66968f0b"
+  },
+  "container_status": "UNAVAILABLE",
+  "created_at_utc": "2026-10-13T04:58:54.353290+00:00",
+  "different_machine": false,
+  "fresh_virtual_environment": true,
+  "interpreter": "/tmp/uir-s-standalone-oilq9ypa/venv/bin/python",
+  "missing_fixture_test": {
+    "command": [
+      "/tmp/uir-s-standalone-oilq9ypa/venv/bin/python",
+      "-c",
+      "from pathlib import Path;from evaluation.uir_phase4d import audit_runtime_gold_access as a;a.FROZEN_DIR=Path('/nonexistent-uiR-fixtures');r=a.audit_runtime_files();assert r['status']=='FAIL';print(r)"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa/checkout",
+    "exit_code": 0,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/missing_fixture_negative.log",
+    "log_sha256": "7e8b21b4ff0122c396069f5910f62344bb03885acd8650de5b1944f8a1612f1a"
+  },
+  "offline_install": {
+    "command": [
+      "/tmp/uir-s-standalone-oilq9ypa/venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--no-deps",
+      "--require-hashes",
+      "--find-links",
+      "/tmp/uir-s-standalone-oilq9ypa/checkout/projects/uir_base/results/uir_repr_validation_2026_10_12_v1/wheelhouse",
+      "-r",
+      "/tmp/uir-s-standalone-oilq9ypa/checkout/projects/uir_base/results/uir_repr_validation_2026_10_12_v1/requirements.lock"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa",
+    "exit_code": 0,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/install.log",
+    "log_sha256": "8ca9936785421933fa3a0267b916710fc9b1d0d91b0c8e7bc5dbc48e8dc32062"
+  },
+  "original_repo_import_path_used": false,
+  "patched_test": {
+    "command": [
+      "/tmp/uir-s-standalone-oilq9ypa/venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/uir_base",
+      "--junitxml=projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/python_full_suite.xml"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa/checkout",
+    "exit_code": 0,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/python_full_suite.log",
+    "log_sha256": "a4992502e7de9f41950e293d31a3aec376f3ee56ebcb8d506487dfeb92b2d225"
+  },
+  "provisioned_by_host_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "remote_db_used": false,
+  "scratch": "/tmp/uir-s-standalone-oilq9ypa",
+  "tool_environment": {
+    "command": [
+      "/bin/bash",
+      "-c",
+      "uname -sr; /home/sam/.cargo/bin/rustc --version; /home/sam/.cargo/bin/cargo --version; python3 --version"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa",
+    "exit_code": 0,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/host_toolchains.log",
+    "log_sha256": "7ac76a373f7f8ad4c6b51a67dc258f27ca188ca6b6efd0b57978360a8f452191"
+  },
+  "venv": {
+    "command": [
+      "/mnt/d/_Work/goat_bank/.venv_cuda/bin/python",
+      "-m",
+      "venv",
+      "--copies",
+      "/tmp/uir-s-standalone-oilq9ypa/venv"
+    ],
+    "cwd": "/tmp/uir-s-standalone-oilq9ypa",
+    "exit_code": 0,
+    "log": "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1/run_20261013T050400Z/logs_and_tests/venv.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

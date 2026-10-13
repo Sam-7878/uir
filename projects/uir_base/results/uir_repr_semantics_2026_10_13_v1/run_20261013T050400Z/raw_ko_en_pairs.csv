@@ -1,0 +1,13 @@
+pair_id,raw_en,raw_ko,expected_relation,evidence_kind,human_validated
+PAIR-00,show CIRRUS assets for 2024 in USD.,CIRRUS의 2024년 자산을 USD 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-01,show CIRRUS revenue for 2024 in USD.,CIRRUS의 2024년 매출을 USD 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-02,show CIRRUS margin for 2024 in percent.,CIRRUS의 2024년 이익률을 percent 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-03,show MAPLE assets for 2025 in USD.,MAPLE의 2025년 자산을 USD 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-04,show MAPLE revenue for 2025 in USD.,MAPLE의 2025년 매출을 USD 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-05,show MAPLE margin for 2025 in percent.,MAPLE의 2025년 이익률을 percent 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-06,show ORBIT assets for 2024 in USD.,ORBIT의 2024년 자산을 USD 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-07,show ORBIT revenue for 2024 in USD.,ORBIT의 2024년 매출을 USD 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-08,show ORBIT margin for 2024 in percent.,ORBIT의 2024년 이익률을 percent 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-09,show PINE assets for 2025 in USD.,PINE의 2025년 자산을 USD 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-10,show PINE revenue for 2025 in USD.,PINE의 2025년 매출을 USD 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
+PAIR-11,show PINE margin for 2025 in percent.,PINE의 2025년 이익률을 percent 단위로 보여 주세요.,same_semantics,SYNTHETIC_CONFORMANCE,False
