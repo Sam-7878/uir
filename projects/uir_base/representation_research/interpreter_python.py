@@ -1,5 +1,5 @@
 """Independent Python S1 reference decisions (does not import prior accept())."""
-from decimal import Decimal
+import re
 from uir_common.contracts import canonical_digest, reject_gold
 from uir_common.query_contract import VERSION
 
@@ -36,6 +36,7 @@ def interpret(packet):
         predicate = query["predicate"]
         if predicate is not None:
             if (set(predicate) != {"op", "field", "value"} or predicate["op"] != "EQ_BOOL"
+                    or not isinstance(predicate["field"], str)
                     or type(predicate["value"]) is not bool or type(packet["context"].get(predicate["field"])) is not bool):
                 return {"state": "CLARIFICATION", "fact_ids": []}
             if packet["context"][predicate["field"]] != predicate["value"]:
@@ -43,7 +44,7 @@ def interpret(packet):
         decision = authority["decision"]
         if decision == "DENY":
             return {"state": "DENY", "fact_ids": []}
-        if decision == "APPROVAL" and not authority.get("approved", False):
+        if decision == "APPROVAL" and authority.get("approved") is not True:
             return {"state": "APPROVAL_PENDING", "fact_ids": []}
         if decision == "READ_ONLY" and policy["action"] == "write":
             return {"state": "READ_ONLY", "fact_ids": []}
@@ -77,7 +78,7 @@ def interpret(packet):
                 raise ValueError("DEPENDENCY_SCOPE")
             if fact["provenance"] not in execution["trusted_provenance"]:
                 raise ValueError("UNTRUSTED_PROVENANCE")
-            if not isinstance(fact["value"], str) or not fact["value"].lstrip("-").isdigit():
+            if not isinstance(fact["value"], str) or re.fullmatch(r"-?[0-9]+", fact["value"]) is None:
                 raise ValueError("NONINTEGER_FACT")
             if not -(2**127) <= int(fact["value"]) < 2**127:
                 raise ValueError("INTEGER_RANGE")
@@ -86,16 +87,21 @@ def interpret(packet):
             if not all(supported(dep) for dep in deps):
                 visiting.remove(fid)
                 return False
-            if fact.get("operation"):
+            if "operation" in fact:
                 if fact["operation"] != "PERCENT_DIV" or len(deps) != 2 or fact["unit"] != "percent":
                     raise ValueError("UNKNOWN_DERIVATION")
                 numerator, denominator = [by_id[d] for d in deps]
                 if numerator["unit"] != denominator["unit"] or numerator["unit"] not in {"USD", "EUR"}:
                     raise ValueError("DERIVATION_UNIT")
-                if Decimal(denominator["value"]) == 0:
+                divisor = int(denominator["value"])
+                if divisor == 0:
                     raise ValueError("ZERO_DENOMINATOR")
-                expected = Decimal(numerator["value"]) * 100 / Decimal(denominator["value"])
-                if expected != Decimal(fact["value"]):
+                # S1 wire semantics use checked i128 intermediates, not Decimal
+                # context precision or an unbounded Python arithmetic extension.
+                scaled = int(numerator["value"]) * 100
+                if not -(2**127) <= scaled < 2**127:
+                    raise ValueError("INTEGER_INTERMEDIATE_RANGE")
+                if scaled % divisor != 0 or scaled // divisor != int(fact["value"]):
                     raise ValueError("DERIVATION_VALUE")
             elif deps:
                 raise ValueError("UNDEFINED_DEPENDENCY")

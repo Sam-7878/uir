@@ -89,3 +89,7 @@ projects/uir_law/evaluation/law200/data/
 projects/uir_law/evaluation/law200/results/
 projects/*/results/*/human_labels_private*
 projects/*/results/*/adjudication_private*
+
+# T-stage is LOCAL ONLY by owner decision (2026-10-20).
+# Publication requires an explicit, separately approved byte allowlist/export.
+/projects/uir_base/results/uir_electronics_T_2026_10_13_v1/
