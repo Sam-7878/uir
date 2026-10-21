@@ -5,9 +5,9 @@ import hashlib, json
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-SOURCE = ROOT / "evaluation/uir_generalization/candidate/frozen_test_v2_candidate.jsonl"
-OUT = ROOT / "evaluation/uir_phase3b/candidate_v2_0.jsonl"
-LOG = ROOT / "evaluation/uir_phase3b/CANDIDATE_CHANGE_LOG.json"
+SOURCE = ROOT / "projects/uir_base/evaluation/uir_generalization/candidate/frozen_test_v2_candidate.jsonl"
+OUT = ROOT / "projects/uir_base/evaluation/uir_phase3b/candidate_v2_0.jsonl"
+LOG = ROOT / "projects/uir_base/evaluation/uir_phase3b/CANDIDATE_CHANGE_LOG.json"
 
 def main() -> None:
     rows = [json.loads(x) for x in SOURCE.read_text(encoding="utf-8").splitlines() if x]

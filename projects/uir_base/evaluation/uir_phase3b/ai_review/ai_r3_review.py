@@ -23,9 +23,9 @@ import unicodedata
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-CANDIDATE = ROOT / "evaluation/uir_phase3b/candidate_v2_0.jsonl"
-REVIEW_R3 = ROOT / "evaluation/uir_phase3b/review/review_R3.csv"
-STATS_OUT = ROOT / "evaluation/uir_phase3b/ai_review/ai_r3_review_stats.json"
+CANDIDATE = ROOT / "projects/uir_base/evaluation/uir_phase3b/candidate_v2_0.jsonl"
+REVIEW_R3 = ROOT / "projects/uir_base/evaluation/uir_phase3b/review/review_R3.csv"
+STATS_OUT = ROOT / "projects/uir_base/evaluation/uir_phase3b/ai_review/ai_r3_review_stats.json"
 
 FIELDS = (
     "source_text_valid",
@@ -461,7 +461,7 @@ def main() -> None:
     print(f"Stats saved to: {STATS_OUT}")
 
     # Also save as AI_R3_AUDIT.csv in results dir
-    audit_out = ROOT / "results/uir_phase3c/AI_R3_AUDIT.csv"
+    audit_out = ROOT / "projects/uir_base/results/uir_phase3c/AI_R3_AUDIT.csv"
     audit_out.parent.mkdir(parents=True, exist_ok=True)
     with audit_out.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=output_fields)

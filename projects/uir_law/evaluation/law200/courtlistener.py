@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any
 
 from .common import PACKAGE_ROOT, SOURCE_RESPONSE_DIR, canonical_json, sha256_bytes, sha256_text, utc_now, write_json
+from .common import TASK_ROOT
 
 ENDPOINT = "https://www.courtlistener.com/api/rest/v4/citation-lookup/"
 
@@ -157,7 +158,7 @@ def entry_record(entry: dict[str, Any], batch: LookupBatch, mutation: dict[str, 
         "source_uri": source_uri,
         "retrieved_at": batch.retrieved_at,
         "response_sha256": raw_entry_sha,
-        "raw_response_file": str(batch.raw_path.relative_to(PACKAGE_ROOT)),
+        "raw_response_file": str(batch.raw_path.relative_to(TASK_ROOT)),
         "raw_batch_sha256": batch.raw_sha256,
         "error_message": str(entry.get("error_message") or ""),
         "source_id": f"courtlistener:cluster:{cluster_id}" if cluster_id is not None else f"courtlistener:citation:{sha256_text(citation)[:16]}",

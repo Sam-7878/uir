@@ -8,12 +8,22 @@ on `main`:
 - [uir_security](projects/uir_security): security and zero-trust experiments.
 - [uir_law](projects/uir_law): legal-domain evaluation.
 
+`uir_base` is the base project; `uir_law` and `uir_security` derive from shared
+core/interfaces without copying the core. Root folders contain cross-project
+infrastructure. Project-wide docs/resources belong to `projects/<project>/`;
+each task keeps its data, reports, pictures, resources and logs together in
+`projects/<project>/results/<task_id>/`. Create a fresh local-only task with
+`python scripts/create_project_task.py <project> <task_id>`.
+Private work orders/reviews/work reports are the exception: keep them at
+`docs/work_reports/<project>/<task_id>/`, LOCAL ONLY. Other root docs folders
+are not blanket-private.
+
 ## Canonical source layout
 
 Shared Python sources have one physical location: `src/llm_trust` and
 `src/uir_common`. Rust sources remain in the self-contained `crates` workspace.
 Project evaluation, scripts and current results live under `projects/<project>`;
-historical base results are under `archive/uir_base/results`.
+historical base results are under `projects/uir_base/results`.
 Do not create root package copies or symbolic-link compatibility directories.
 See [current layout](docs/architecture/PROJECT_LAYOUT.md) and
 [Rust provenance](docs/architecture/RUST_PROVENANCE.md).
@@ -42,7 +52,7 @@ annotation or automatic submission approval.
 
 The next-stage audit, AI-only scope amendment, and explicitly local RTX3090 runs
 are recorded in
-[the N00–N13 implementation record](docs/work_reports/uir_base/110_mdpi_rev/implementation/README.md).
+[the N00–N13 implementation record](projects/uir_base/results/110_mdpi_rev/implementation/README.md).
 Its results are separately versioned as `mdpi_next_2026_10_11_v2`; historical
 evidence is not replaced. Qwen3-1.7B is a newly selected generator comparison,
 not a relabeling of Qwen2.5-7B or an independent human evaluator.
@@ -71,9 +81,9 @@ the old location with a link.
 `tables` command regenerates revision rescoring/replay tables; it is not a
 fresh model-inference campaign.
 
-For the isolated RTX 3090 Ollama server, model installation and cross-family AI
-review, see [local reviewer protocol](docs/work_reports/uir_base/107_Astra_review/LOCAL_AI_REVIEW_PROTOCOL.md)
-and [execution status](docs/work_reports/uir_base/107_Astra_review/LOCAL_AI_REVIEW_STATUS.md).
+For the isolated RTX 3090 Ollama server see the repository launcher
+[serve_local_models.sh](scripts/serve_local_models.sh). Private historical review
+documents, when available, remain in `docs/work_reports/` and are not public links.
 
 ## Release boundary
 

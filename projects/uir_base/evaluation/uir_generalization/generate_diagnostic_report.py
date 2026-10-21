@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--input", type=Path, default=Path("results/uir_phase3/v1_failure_taxonomy.csv")); parser.add_argument("--out", type=Path, default=Path("docs/work_reports/uir_phase3/V1_DIAGNOSTIC.md")); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("--input", type=Path, default=Path("projects/uir_base/results/uir_phase3/v1_failure_taxonomy.csv")); parser.add_argument("--out", type=Path, default=Path("projects/uir_base/results/uir_phase3/reports/V1_DIAGNOSTIC.md")); args = parser.parse_args()
     with args.input.open(encoding="utf-8") as handle: rows = list(csv.DictReader(handle))
     totals = Counter(); split_totals = Counter()
     for row in rows:

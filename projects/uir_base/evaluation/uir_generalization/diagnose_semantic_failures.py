@@ -15,7 +15,7 @@ def read_jsonl(path: Path) -> list[dict]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--dataset", type=Path, default=Path("evaluation/uir_external/frozen_test_v1.jsonl")); parser.add_argument("--records", type=Path, default=Path("results/uir_slm/frozen_uir_core.jsonl")); parser.add_argument("--out", type=Path, default=Path("results/uir_phase3/v1_failure_taxonomy.csv")); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("--dataset", type=Path, default=Path("projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl")); parser.add_argument("--records", type=Path, default=Path("projects/uir_base/results/uir_slm/frozen_uir_core.jsonl")); parser.add_argument("--out", type=Path, default=Path("projects/uir_base/results/uir_phase3/v1_failure_taxonomy.csv")); args = parser.parse_args()
     cases = {row["case_id"]: row for row in read_jsonl(args.dataset)}; records = {row["case_id"]: row for row in read_jsonl(args.records)}; counts = Counter()
     details = []
     for case_id, case in cases.items():

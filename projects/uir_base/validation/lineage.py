@@ -4,8 +4,8 @@ from .common import FIELDS, FROZEN, OUT, ROOT, check_frozen, csvfile, jsonl, obj
 
 SOURCES = {
     "frozen_v1": ROOT / "projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl",
-    "frozen_v2": ROOT / "archive/uir_base/results/uir_phase3b/frozen_test_v2.jsonl",
-    "real_fact": ROOT / "archive/uir_base/results/uir_phase3b/real_fact_subset.jsonl",
+    "frozen_v2": ROOT / "projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl",
+    "real_fact": ROOT / "projects/uir_base/results/uir_phase3b/real_fact_subset.jsonl",
 }
 GENERATORS = {
     "frozen_v1": ("projects/uir_base/evaluation/uir_external/generate_frozen_sets.py", "base_case assigns expected_claims=fact.claims; context_claims not provided"),

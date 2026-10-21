@@ -11,9 +11,9 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-PACKETS = ROOT / "evaluation/uir_phase3d/audit_packets"
-WORK = ROOT / "results/uir_phase3d/actual_ai_work"
-OUT = ROOT / "results/uir_phase3d/role_separated_validation.json"
+PACKETS = ROOT / "projects/uir_base/evaluation/uir_phase3d/audit_packets"
+WORK = ROOT / "projects/uir_base/results/uir_phase3d/actual_ai_work"
+OUT = ROOT / "projects/uir_base/results/uir_phase3d/role_separated_validation.json"
 EXPECTED_PROMPT_HASH = "1660e3f70d9c11b0b415a7adb3c4bcc01dd1b8c9576af19c8881335336198310"
 EXPECTED_FROZEN_HASH = "9bb8a5d423b53bae14b2c699cba6b1338f0115345f94c6b4a9f93af2400d4a3c"
 EXPECTED_PARSER_HASH = "bee778f3e3767fdcd64d0926f27c680143d217ea1d6febcabd08aac96de321d7"
@@ -87,9 +87,9 @@ def main() -> int:
     if not manifest.get("contexts_isolated"):
         fail("packet_manifest", "contexts_isolated is not true")
 
-    frozen_path = ROOT / "results/uir_phase3b/frozen_test_v2.jsonl"
+    frozen_path = ROOT / "projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl"
     frozen_manifest = json.loads(
-        (ROOT / "results/uir_phase3b/FROZEN_TEST_V2_MANIFEST.json").read_text(encoding="utf-8")
+        (ROOT / "projects/uir_base/results/uir_phase3b/FROZEN_TEST_V2_MANIFEST.json").read_text(encoding="utf-8")
     )
     actual_frozen_hash = digest_file(frozen_path)
     if actual_frozen_hash != EXPECTED_FROZEN_HASH:

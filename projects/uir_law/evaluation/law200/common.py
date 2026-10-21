@@ -14,10 +14,11 @@ from typing import Any, Iterable
 
 PACKAGE_ROOT = Path(__file__).resolve().parent
 REPO_ROOT = next(p for p in PACKAGE_ROOT.parents if (p / 'Cargo.toml').is_file())
-DATA_DIR = PACKAGE_ROOT / "data"
+TASK_ROOT = REPO_ROOT / "projects/uir_law/results/law200"
+DATA_DIR = TASK_ROOT / "data"
 CORPUS_DIR = DATA_DIR / "corpus"
 SOURCE_RESPONSE_DIR = DATA_DIR / "source_responses"
-RESULTS_DIR = PACKAGE_ROOT / "results"
+RESULTS_DIR = TASK_ROOT / "execution"
 RAW_DIR = RESULTS_DIR / "raw"
 AGGREGATE_DIR = RESULTS_DIR / "aggregate"
 TABLES_DIR = RESULTS_DIR / "tables"

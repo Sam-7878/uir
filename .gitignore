@@ -93,3 +93,15 @@ projects/*/results/*/adjudication_private*
 # T-stage is LOCAL ONLY by owner decision (2026-10-20).
 # Publication requires an explicit, separately approved byte allowlist/export.
 /projects/uir_base/results/uir_electronics_T_2026_10_13_v1/
+
+# Private relocated reports must not become public simply because their path changed.
+# Fresh tasks created by create_project_task.py carry their own local-only ignore rule.
+# Previously public numerical evidence remains visible as a reviewable move, not hidden.
+/projects/*/results/**/work_reports/
+/projects/*/results/**/manuscript_private/
+/projects/*/results/**/private_*/
+/projects/*/results/**/reports/
+/projects/uir_base/results/114_project_layout_2026_10_21/
+/projects/uir_law/results/law200/
+/projects/*/reports/
+/projects/*/paper/

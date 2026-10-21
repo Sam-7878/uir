@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Freeze disjoint dev/test gold, sanitized runtime inputs, registry, and shared corpus."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import argparse
 import random
@@ -198,7 +199,7 @@ def freeze(valid_path: Path, invalid_path: Path, force: bool = False, bug_note: 
         "freeze_rule": "No test-informed parser/verifier tuning. Bug fixes require full rerun and preserved prior results.",
         "rebuild_bug_note": bug_note,
     }
-    write_json(PACKAGE_ROOT / "benchmark_manifest.json", manifest)
+    write_json(TASK_ROOT / "benchmark_manifest.json", manifest)
     return manifest
 
 

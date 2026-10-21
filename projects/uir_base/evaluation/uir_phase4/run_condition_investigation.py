@@ -11,7 +11,7 @@ import random
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-RESULTS_DIR = ROOT / "results/uir_phase4"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4"
 
 
 def generate_condition_diagnostic_cases() -> list[dict]:

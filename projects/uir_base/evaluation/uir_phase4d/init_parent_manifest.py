@@ -44,7 +44,7 @@ def record_manifest() -> None:
         "git_status": status,
         "parent_evidence_directory": str(P4C_RESULTS_DIR.resolve()),
         "parent_files": records,
-        "inviolability_assertion": "results/uir_phase4c/ remains strictly read-only and immutable for comparison.",
+        "inviolability_assertion": "projects/uir_base/results/uir_phase4c/ remains strictly read-only and immutable for comparison.",
     }
 
     out_path = RESULTS_DIR / "PHASE4C_PARENT_MANIFEST.json"

@@ -1,5 +1,58 @@
 # UIR shared repository and project layout
 
+## Current ownership policy — 2026-10-21
+
+`uir_base` is the base research project; `uir_security` and `uir_law` are derived
+projects. Shared core remains in root `src/`, `crates/`, `protocol/`, `spec/`;
+root `docs/` and `scripts/` contain cross-project material only.
+
+```text
+projects/<uir_base|uir_security|uir_law>/
+  docs/                    project-wide architecture/specifications
+  resources/               reusable inputs/assets across milestones
+  evaluation/, scripts/    reusable project implementation and runners
+  paper/                   local/private manuscript workspace
+  results/<task_id>/
+    data/                  task-specific data/results
+    reports/               task reports
+    figures/               plots and pictures
+    resources/             task-specific inputs/work orders/assets
+    logs/                  execution logs
+    manifests/             provenance, hashes and rights
+uir/docs/work_reports/<project>/<task_id>/  LOCAL ONLY internal work reports
+```
+
+The same pattern applies to all three projects. Root `tests/<project>` may retain
+test source; its generated data, technical reports and figures belong to the task.
+Owner exception: private work orders, research reviews and internal work reports
+remain at root `docs/work_reports/<project>/<task_id>/` in their original location.
+
+Create a fresh task with `python scripts/create_project_task.py uir_base 115_example`
+(or `uir_security`, `uir_law`). It refuses overwrite, invalid IDs and symlink paths.
+Existing frozen layouts, including T-stage `run_<UTC>`, keep their internal structure.
+
+`docs/work_reports` bundles were restored in place following the owner's clarification;
+their bytes are preserved, with a separate reversal receipt. Project papers are under `paper/`;
+N-stage drafts are task-local `manuscript_private`. Archived base results now reside
+in base `results/<task>`. Project-specific docs moved to project `docs/`.
+The private task `114_project_layout_2026_10_21` holds old/new paths and SHA-256s.
+Frozen content, embedded paths and archive members are unchanged. Historical readers
+can explicitly use `uir_common.paths.recorded_path` and must still check original
+hashes. No filesystem aliases, fallback copies, source duplication or symlinks exist.
+Old evaluator-hash releases may require their pinned source snapshot; moving evidence
+does not scientifically recertify it or make changed code match an old source hash.
+
+Only `docs/work_reports/` is blanket-private within root `docs/`; other docs folders
+remain public candidates subject to file rights and existing per-file exclusions.
+Private work reports remain LOCAL ONLY. New tasks created by the task helper receive
+a task-local ignore file; reports, private folders and manuscripts are excluded.
+Previously public numerical results remain reviewable as moves, not hidden by a
+blanket result-tree ignore. Existing tracked files are not untracked by ignore rules; rights,
+staged paths and owner approval must be reviewed before public release. No remote
+mutation/history rewrite is implied. This also does not remove previously public history.
+
+## Historical 2026-10-11 description (superseded where paths differ)
+
 The repository owns three projects: `uir_base`, `uir_security`, and `uir_law`.
 The organization follows the shared-source/project-boundary principle used by
 `dlg_gnn`; it does not move UIR into `dlg_gnn` or introduce a GNN dependency.

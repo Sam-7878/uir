@@ -10,7 +10,7 @@ from ..schema.oracle_case import OracleCase
 from ..harness.execution_evidence import digest
 
 def freeze(base, output):
-    source = base / 'evaluation/llm_security_v3_1/datasets'
+    source = base / 'projects/uir_security/evaluation/llm_security_v3_1/datasets'
     output.mkdir(parents=True, exist_ok=True)
     runtimes = [json.loads(x) for x in (source/'custom_heldout_v3_1.jsonl').read_text().splitlines()]
     oracles = [json.loads(x) for x in (source/'oracle_heldout_v3_1.jsonl').read_text().splitlines()]

@@ -9,7 +9,7 @@ from pathlib import Path
 import sys
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-EXTERNAL_DIR = ROOT / "evaluation/uir_external"
+EXTERNAL_DIR = ROOT / "projects/uir_base/evaluation/uir_external"
 sys.path.insert(0, str(EXTERNAL_DIR))
 from registry_adapter import FrozenRegistry, RegistryFact
 

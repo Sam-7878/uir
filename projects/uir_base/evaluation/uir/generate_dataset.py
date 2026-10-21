@@ -67,7 +67,7 @@ def generate(seed: int) -> list[dict]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--seed", type=int, default=20260807); parser.add_argument("--out", type=Path, default=Path("evaluation/uir/fixtures/generated")); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("--seed", type=int, default=20260807); parser.add_argument("--out", type=Path, default=Path("projects/uir_base/evaluation/uir/fixtures/generated")); args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True); rows = generate(args.seed); dataset = args.out / "dataset.jsonl"
     payload = "".join(json.dumps(item, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n" for item in rows).encode()
     dataset.write_bytes(payload)

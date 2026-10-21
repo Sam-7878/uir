@@ -9,7 +9,7 @@ from pathlib import Path
 
 from evaluation.uir_phase4c.common import RESULTS_DIR, ROOT
 
-REPORT_DIR = ROOT / "docs/work_reports/uir_phase4c"
+REPORT_DIR = ROOT / "projects/uir_base/results/uir_phase4c/reports"
 
 
 def rows(name: str) -> list[dict[str, str]]:

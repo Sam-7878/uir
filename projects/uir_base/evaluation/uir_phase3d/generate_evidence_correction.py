@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 from pathlib import Path
-ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file());OUT=ROOT/"results/uir_phase3d"
+ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file());OUT=ROOT/"projects/uir_base/results/uir_phase3d"
 def main():
     data={"phase3c_artifact_label":"Phase3C-script-audit","preserved":True,"actual_model_audit":False,
           "admissible_claim":"agreement among three independently implemented validation scripts",

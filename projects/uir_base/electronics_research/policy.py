@@ -34,7 +34,7 @@ def safe_relative(value):
 def protected_path(value):
     path = str(safe_relative(value)).lower()
     parts = PurePosixPath(path).parts
-    if path.startswith(str(RESULTS_PREFIX).lower() + "/"):
+    if len(parts) >= 3 and parts[0] == "projects" and parts[2] in {"results", "paper", "reports"}:
         return True  # Entire new evidence tree defaults PRIVATE, even candidates.
     if "work_reports" in parts or "manuscript_private" in parts or path.startswith("docs/papers/"):
         return True

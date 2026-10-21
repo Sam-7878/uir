@@ -3,8 +3,8 @@
 Creates:
   - results/uir_phase4f/PHASE4F_FINAL_MANIFEST.json
   - results/uir_phase4f/FINAL_PUBLICATION_CONSISTENCY_V2.md
-  - docs/work_reports/uir_phase4f/REPORT_PHASE4F_FINAL_METRIC_CLOSURE.md
-  - uir/docs/work_reports/106_uir_pahse_4f/REPORT_PHASE4F_FINAL_METRIC_CLOSURE.md
+  - projects/uir_base/results/uir_phase4f/reports/REPORT_PHASE4F_FINAL_METRIC_CLOSURE.md
+  - uir/projects/uir_base/results/106_uir_pahse_4f/reports/REPORT_PHASE4F_FINAL_METRIC_CLOSURE.md
 """
 from __future__ import annotations
 
@@ -192,7 +192,7 @@ The frozen evidence package is complete and ready for the final SCI manuscript p
 """
 
     report_path1 = DOCS_DIR / "REPORT_PHASE4F_FINAL_METRIC_CLOSURE.md"
-    report_path2 = ROOT / "docs/work_reports/106_uir_pahse_4f/REPORT_PHASE4F_FINAL_METRIC_CLOSURE.md"
+    report_path2 = ROOT / "projects/uir_base/results/106_uir_pahse_4f/reports/REPORT_PHASE4F_FINAL_METRIC_CLOSURE.md"
 
     report_path1.parent.mkdir(parents=True, exist_ok=True)
     report_path1.write_text(report_content, encoding="utf-8")

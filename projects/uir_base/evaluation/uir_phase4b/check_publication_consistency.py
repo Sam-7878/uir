@@ -20,9 +20,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-RESULTS_DIR = ROOT / "results/uir_phase4b"
-MANUSCRIPT_TEX = ROOT / "docs/papers/_47_UIR/_47_UIR_8p.tex"
-WORK_REPORT = ROOT / "docs/work_reports/uir_phase4b/REPORT_PHASE4B_FINAL_EVIDENCE_INTEGRITY.md"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4b"
+MANUSCRIPT_TEX = ROOT / "projects/uir_base/paper/_47_UIR/_47_UIR_8p.tex"
+WORK_REPORT = ROOT / "projects/uir_base/results/uir_phase4b/reports/REPORT_PHASE4B_FINAL_EVIDENCE_INTEGRITY.md"
 
 
 def check_consistency() -> dict:

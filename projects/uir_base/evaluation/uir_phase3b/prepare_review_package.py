@@ -21,8 +21,8 @@ def read_jsonl(path: Path) -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--candidate", type=Path, default=ROOT / "evaluation/uir_phase3b/candidate_v2_0.jsonl")
-    parser.add_argument("--out", type=Path, default=ROOT / "evaluation/uir_phase3b/review")
+    parser.add_argument("--candidate", type=Path, default=ROOT / "projects/uir_base/evaluation/uir_phase3b/candidate_v2_0.jsonl")
+    parser.add_argument("--out", type=Path, default=ROOT / "projects/uir_base/evaluation/uir_phase3b/review")
     args = parser.parse_args()
     rows = read_jsonl(args.candidate)
     args.out.mkdir(parents=True, exist_ok=True)

@@ -4,8 +4,8 @@ from __future__ import annotations
 import hashlib, json
 from pathlib import Path
 
-ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); OUT=ROOT/"evaluation/uir_phase3d/audit_packets"
-CANDIDATE=ROOT/"results/uir_phase3b/frozen_test_v2.jsonl"
+ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); OUT=ROOT/"projects/uir_base/evaluation/uir_phase3d/audit_packets"
+CANDIDATE=ROOT/"projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl"
 REVIEWERS={"AI-R1":"AntiGravity Sonnet 4.6","AI-R2":"AntiGravity Gemini 3.6 Flash","AI-R3":"AntiGravity Opus 4.6"}
 GUIDELINE="""Reconstruct intent, target, conditions, policy decision, expected outcome, and required claims from the source. Then compare with candidate_annotation. Judge each *_valid field as 1, 0, or NA. Do not expose chain-of-thought; provide only reconstructed fields and a concise reasoning_summary. Do not infer from parser or campaign outputs."""
 PROMPT_TEMPLATE="""CASE_INPUT:\n{case_json}\n\nANNOTATION_GUIDELINE:\n{guideline}\n\nReturn one JSON object matching the supplied response schema."""

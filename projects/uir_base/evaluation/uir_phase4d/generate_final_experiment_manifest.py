@@ -60,10 +60,10 @@ def generate_final_manifest() -> dict:
             "gpu_vram": gpu_mem,
         },
         "authoritative_subsystem_hashes": {
-            "entity_registry_json": sha256_file(ROOT / "evaluation/uir_phase4d/runtime/entity_registry.json"),
-            "policy_rules_yaml": sha256_file(ROOT / "evaluation/uir_phase4d/runtime/policy_rules.yaml"),
-            "uir_compiler_py": sha256_file(ROOT / "evaluation/uir_phase4d/runtime/uir_compiler.py"),
-            "attack_oracle_py": sha256_file(ROOT / "evaluation/uir_phase4d/attack_oracle.py"),
+            "entity_registry_json": sha256_file(ROOT / "projects/uir_base/evaluation/uir_phase4d/runtime/entity_registry.json"),
+            "policy_rules_yaml": sha256_file(ROOT / "projects/uir_base/evaluation/uir_phase4d/runtime/policy_rules.yaml"),
+            "uir_compiler_py": sha256_file(ROOT / "projects/uir_base/evaluation/uir_phase4d/runtime/uir_compiler.py"),
+            "attack_oracle_py": sha256_file(ROOT / "projects/uir_base/evaluation/uir_phase4d/attack_oracle.py"),
         },
         "dataset_hashes": dataset_hashes,
         "results_summary": {

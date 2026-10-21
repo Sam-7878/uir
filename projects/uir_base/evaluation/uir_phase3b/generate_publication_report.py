@@ -3,7 +3,7 @@
 from __future__ import annotations
 import csv,json,sys
 from pathlib import Path
-ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); OUT=ROOT/"results/uir_phase3b"; REPORT=ROOT/"docs/work_reports/uir_phase3b/REPORT_PUBLICATION_READY.md"
+ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); OUT=ROOT/"projects/uir_base/results/uir_phase3b"; REPORT=ROOT/"projects/uir_base/results/uir_phase3b/reports/REPORT_PUBLICATION_READY.md"
 def table(name):
     with (OUT/name).open(encoding="utf-8",newline="") as f:return list(csv.DictReader(f))
 def main():

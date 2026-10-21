@@ -17,7 +17,7 @@ def read_jsonl(path: Path) -> list[dict]: return [json.loads(line) for line in p
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--dataset", type=Path, default=Path("evaluation/uir/fixtures/generated")); parser.add_argument("--out", type=Path, default=Path("results/uir")); parser.add_argument("--seed", type=int, default=20260807); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("--dataset", type=Path, default=Path("projects/uir_base/evaluation/uir/fixtures/generated")); parser.add_argument("--out", type=Path, default=Path("projects/uir_base/results/uir")); parser.add_argument("--seed", type=int, default=20260807); args = parser.parse_args()
     dataset_path = args.dataset / "dataset.jsonl" if args.dataset.is_dir() else args.dataset; source = {item["case_id"]: item for item in read_jsonl(dataset_path)}
     full = {item["case_id"]: item for item in read_jsonl(args.out / "cases_raw.jsonl")}; rows = []
     for case_id, case in source.items():

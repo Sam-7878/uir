@@ -15,7 +15,7 @@ from run_slm_campaign import filter_and_render,initial_output_state,parse_fact_r
 
 def read(p):return [json.loads(x) for x in p.read_text(encoding="utf-8").splitlines() if x]
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument("--dataset",type=Path,required=True);ap.add_argument("--suite",required=True);ap.add_argument("--registry",type=Path,default=Path("evaluation/uir_external/registry_v1.jsonl"));ap.add_argument("--uir-records",type=Path,required=True);ap.add_argument("--config",type=Path,required=True);ap.add_argument("--out",type=Path,required=True);ap.add_argument("--run-id",required=True);ap.add_argument("--workers",type=int,default=4);ap.add_argument("--limit",type=int);ap.add_argument("--pipelines",nargs="+",choices=PIPELINES,default=PIPELINES);a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument("--dataset",type=Path,required=True);ap.add_argument("--suite",required=True);ap.add_argument("--registry",type=Path,default=Path("projects/uir_base/evaluation/uir_external/registry_v1.jsonl"));ap.add_argument("--uir-records",type=Path,required=True);ap.add_argument("--config",type=Path,required=True);ap.add_argument("--out",type=Path,required=True);ap.add_argument("--run-id",required=True);ap.add_argument("--workers",type=int,default=4);ap.add_argument("--limit",type=int);ap.add_argument("--pipelines",nargs="+",choices=PIPELINES,default=PIPELINES);a=ap.parse_args()
     cases=read(a.dataset);cases=cases[:a.limit] if a.limit else cases;registry=FrozenRegistry(a.registry);uir={x["case_id"]:x for x in read(a.uir_records)};client=OllamaClient(a.config);config=client.config["deterministic"].copy()
     def process(case):
         local={};records=[]

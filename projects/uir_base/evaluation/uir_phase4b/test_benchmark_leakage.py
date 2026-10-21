@@ -10,8 +10,8 @@ from pathlib import Path
 import pytest
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-FINQA_PATH = ROOT / "evaluation/uir_phase4/external_benchmarks/finqa_eval_v1.jsonl"
-HALUEVAL_PATH = ROOT / "evaluation/uir_phase4/external_benchmarks/halueval_eval_v1.jsonl"
+FINQA_PATH = ROOT / "projects/uir_base/evaluation/uir_phase4/external_benchmarks/finqa_eval_v1.jsonl"
+HALUEVAL_PATH = ROOT / "projects/uir_base/evaluation/uir_phase4/external_benchmarks/halueval_eval_v1.jsonl"
 
 
 def test_finqa_gold_answer_not_in_runtime_prompt():

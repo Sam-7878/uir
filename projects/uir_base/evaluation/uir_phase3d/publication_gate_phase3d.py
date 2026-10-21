@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import hashlib,json
 from pathlib import Path
-ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file());OUT=ROOT/"results/uir_phase3d";P3B=ROOT/"results/uir_phase3b"
+ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file());OUT=ROOT/"projects/uir_base/results/uir_phase3d";P3B=ROOT/"projects/uir_base/results/uir_phase3b"
 def load(p):return json.loads(p.read_text()) if p.exists() else {}
 def main():
     audit=load(OUT/"actual_ai_audit_summary.json");validation=load(OUT/"role_separated_validation.json");stats_validation=load(OUT/"agreement_statistics_validation.json");campaign=load(OUT/"campaign_summary.json");budget=load(OUT/"generation_budget_validation.json");b6=load(OUT/"b6_filtering_summary.json");tests=load(OUT/"b6_integration_tests.json");frozen=load(P3B/"FROZEN_TEST_V2_MANIFEST.json")

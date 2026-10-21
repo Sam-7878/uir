@@ -240,7 +240,7 @@ class Campaign:
         write(self.out/'ARTIFACT_MANIFEST.json',{'artifacts':entries,'source_hashes':source_hashes()})
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=REPO/'results/llm_security_v3_2_closure')
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=REPO/'projects/uir_security/results/llm_security_v3_2_closure')
     parser.add_argument('--endpoint',default='http://127.0.0.1:11434');parser.add_argument('--prepare-only',action='store_true')
     args=parser.parse_args(); out=args.output
     manifest_path=out/'dataset_manifest_v3_2.json'

@@ -8,8 +8,8 @@ import re
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-RESULTS_DIR = ROOT / "results/uir_phase4"
-ROBUSTNESS_FILE = ROOT / "evaluation/uir_phase4/robustness_v1_test.jsonl"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4"
+ROBUSTNESS_FILE = ROOT / "projects/uir_base/evaluation/uir_phase4/robustness_v1_test.jsonl"
 
 
 def parse_query_frontend(text: str, lang: str) -> dict:

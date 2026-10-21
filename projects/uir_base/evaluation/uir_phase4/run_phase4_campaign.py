@@ -17,10 +17,10 @@ from scipy import stats
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-RESULTS_DIR = ROOT / "results/uir_phase4"
-FROZEN_V2_DATASET = ROOT / "results/uir_phase3b/frozen_test_v2.jsonl"
-REAL_FACT_DATASET = ROOT / "results/uir_phase3b/real_fact_subset.jsonl"
-FROZEN_V1_DATASET = ROOT / "evaluation/uir_external/frozen_test_v1.jsonl"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4"
+FROZEN_V2_DATASET = ROOT / "projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl"
+REAL_FACT_DATASET = ROOT / "projects/uir_base/results/uir_phase3b/real_fact_subset.jsonl"
+FROZEN_V1_DATASET = ROOT / "projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl"
 
 from evaluation.uir_phase4.baselines_phase4 import (
     PIPELINES_PHASE4,
@@ -82,9 +82,9 @@ def run_campaign() -> None:
     total_n = len(all_cases)
     print(f"    Loaded {total_n} evaluation cases (Frozen-v2: {len(v2_cases)}, Real-Fact: {len(real_cases)}, Invalid-Entity: {len(invalid_cases)})")
 
-    registry_path = ROOT / "evaluation/uir_external/frozen_registry.jsonl"
+    registry_path = ROOT / "projects/uir_base/evaluation/uir_external/frozen_registry.jsonl"
     if not registry_path.exists():
-        registry_path = ROOT / "results/uir_phase3b/frozen_registry.jsonl"
+        registry_path = ROOT / "projects/uir_base/results/uir_phase3b/frozen_registry.jsonl"
     if not registry_path.exists():
         # Create minimal fallback registry if not found
         facts_list = []

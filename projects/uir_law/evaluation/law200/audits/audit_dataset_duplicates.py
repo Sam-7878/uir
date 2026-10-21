@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check case/query uniqueness and dev/test separation."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import json
 from collections import Counter
@@ -43,7 +44,7 @@ def audit() -> dict[str, Any]:
         "status": "PASS" if not findings else "FAIL",
         "findings": findings,
     }
-    write_json(PACKAGE_ROOT / "results" / "aggregate" / "dataset_duplicate_audit.json", report)
+    write_json(TASK_ROOT / "execution" / "aggregate" / "dataset_duplicate_audit.json", report)
     return report
 
 

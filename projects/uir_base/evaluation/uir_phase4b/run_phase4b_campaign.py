@@ -21,10 +21,10 @@ from scipy import stats
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
 sys.path.insert(0, str(ROOT))
 
-RESULTS_DIR = ROOT / "results/uir_phase4b"
-FROZEN_V2_DATASET = ROOT / "results/uir_phase3b/frozen_test_v2.jsonl"
-REAL_FACT_DATASET = ROOT / "results/uir_phase3b/real_fact_subset.jsonl"
-FROZEN_V1_DATASET = ROOT / "evaluation/uir_external/frozen_test_v1.jsonl"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4b"
+FROZEN_V2_DATASET = ROOT / "projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl"
+REAL_FACT_DATASET = ROOT / "projects/uir_base/results/uir_phase3b/real_fact_subset.jsonl"
+FROZEN_V1_DATASET = ROOT / "projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl"
 
 PIPELINES_PHASE4B = [
     "C0_DIRECT_SLM",

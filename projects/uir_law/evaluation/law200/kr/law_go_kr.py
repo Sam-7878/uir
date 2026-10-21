@@ -1,5 +1,6 @@
 """Credential-safe client for 국가법령정보 공동활용 판례 APIs."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import json
 import os
@@ -15,7 +16,7 @@ from evaluation.uir_law.law200.common import PACKAGE_ROOT, REPO_ROOT, canonical_
 
 SEARCH_ENDPOINT = "https://www.law.go.kr/DRF/lawSearch.do"
 SERVICE_ENDPOINT = "https://www.law.go.kr/DRF/lawService.do"
-KR_DATA_DIR = PACKAGE_ROOT / "data" / "kr"
+KR_DATA_DIR = TASK_ROOT / "data" / "kr"
 KR_RESPONSE_DIR = KR_DATA_DIR / "source_responses"
 DEFAULT_KEY_FILE = REPO_ROOT / "local_security" / "open.law.go.kr.txt"
 
@@ -129,7 +130,7 @@ def valid_record(row: dict[str, Any], snapshot: SearchSnapshot) -> dict[str, Any
         "retrieved_at": snapshot.retrieved_at,
         "response_sha256": entry_hash,
         "raw_batch_sha256": snapshot.raw_sha256,
-        "raw_response_file": str(snapshot.raw_path.relative_to(PACKAGE_ROOT)),
+        "raw_response_file": str(snapshot.raw_path.relative_to(TASK_ROOT)),
         "source_id": f"lawgo:prec:{serial}",
     }
 
@@ -157,7 +158,7 @@ def not_found_record(case_number: str, mutation: dict[str, Any], snapshot: Searc
         "retrieved_at": snapshot.retrieved_at,
         "response_sha256": sha256_text(canonical_json(evidence)),
         "raw_batch_sha256": snapshot.raw_sha256,
-        "raw_response_file": str(snapshot.raw_path.relative_to(PACKAGE_ROOT)),
+        "raw_response_file": str(snapshot.raw_path.relative_to(TASK_ROOT)),
         "source_id": f"lawgo:case-number:{sha256_text(case_number)[:16]}",
         "mutation": mutation,
     }

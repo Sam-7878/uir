@@ -1,8 +1,8 @@
 """Phase UIR-4E: Automated Publication Table Generator (Section 13 of Work Order).
 
 Reads ONLY final aggregate CSVs (never hand-entered numbers) and generates:
-  docs/work_reports/uir_phase4e/generated_tables.md
-  docs/work_reports/uir_phase4e/generated_tables.tex
+  projects/uir_base/results/uir_phase4e/reports/generated_tables.md
+  projects/uir_base/results/uir_phase4e/reports/generated_tables.tex
 
 No numerical table may be manually copied into the final report.
 """

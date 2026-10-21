@@ -12,9 +12,9 @@ from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
 sys.path.insert(0, str(ROOT))
-RESULTS_DIR = ROOT / "results/uir_phase4b"
-DATASET_PATH = ROOT / "results/uir_phase3b/frozen_test_v2.jsonl"
-REGISTRY_PATH = ROOT / "results/uir_phase3b/frozen_registry.jsonl"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4b"
+DATASET_PATH = ROOT / "projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl"
+REGISTRY_PATH = ROOT / "projects/uir_base/results/uir_phase3b/frozen_registry.jsonl"
 
 
 def run_phase4b_mutation_suite() -> list[dict]:

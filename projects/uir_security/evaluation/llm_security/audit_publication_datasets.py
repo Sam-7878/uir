@@ -68,7 +68,7 @@ def main() -> int:
     dev_prompts, heldout_prompts = {row["prompt"] for row in dev}, {row["prompt"] for row in heldout}
     dev_ids, heldout_ids = {row["case_id"] for row in dev}, {row["case_id"] for row in heldout}
     # Literal held-out prompt text must not appear in judge source.
-    judge_text = "\n".join(path.read_text(encoding="utf-8") for path in (ROOT / "evaluation/llm_security/judges").glob("*.py"))
+    judge_text = "\n".join(path.read_text(encoding="utf-8") for path in (ROOT / "projects/uir_security/evaluation/llm_security/judges").glob("*.py"))
     literal_templates = [row["case_id"] for row in heldout if row["prompt"] in judge_text]
     cross = {
         "status": "PASS", "shared_prompt_count": len(dev_prompts & heldout_prompts),

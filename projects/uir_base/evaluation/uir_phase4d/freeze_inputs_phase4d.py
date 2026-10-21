@@ -37,9 +37,9 @@ def _load_jsonl(path: Path) -> list[dict[str, Any]]:
 
 def _internal_sources() -> list[dict[str, Any]]:
     paths = (
-        ("frozen_v2", ROOT / "results/uir_phase3b/frozen_test_v2.jsonl"),
-        ("real_fact", ROOT / "results/uir_phase3b/real_fact_subset.jsonl"),
-        ("frozen_v1", ROOT / "evaluation/uir_external/frozen_test_v1.jsonl"),
+        ("frozen_v2", ROOT / "projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl"),
+        ("real_fact", ROOT / "projects/uir_base/results/uir_phase3b/real_fact_subset.jsonl"),
+        ("frozen_v1", ROOT / "projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl"),
     )
     rows: list[dict[str, Any]] = []
     for dataset, path in paths:

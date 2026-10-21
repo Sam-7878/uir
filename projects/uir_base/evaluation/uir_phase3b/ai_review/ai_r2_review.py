@@ -23,9 +23,9 @@ import re
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-CANDIDATE = ROOT / "evaluation/uir_phase3b/candidate_v2_0.jsonl"
-REVIEW_R2 = ROOT / "evaluation/uir_phase3b/review/review_R2.csv"
-GUIDELINE = ROOT / "evaluation/uir_phase3b/AI_REVIEW_GUIDELINE.md"
+CANDIDATE = ROOT / "projects/uir_base/evaluation/uir_phase3b/candidate_v2_0.jsonl"
+REVIEW_R2 = ROOT / "projects/uir_base/evaluation/uir_phase3b/review/review_R2.csv"
+GUIDELINE = ROOT / "projects/uir_base/evaluation/uir_phase3b/AI_REVIEW_GUIDELINE.md"
 
 FIELDS = (
     "source_text_valid",
@@ -314,7 +314,7 @@ def main() -> None:
     print(f"\nAI-R2 Review saved to: {REVIEW_R2}")
     print(f"Total rows (excluding header): {len(reviews)}")
 
-    stats_path = ROOT / "evaluation/uir_phase3b/ai_review/ai_r2_review_stats.json"
+    stats_path = ROOT / "projects/uir_base/evaluation/uir_phase3b/ai_review/ai_r2_review_stats.json"
     stats_path.parent.mkdir(parents=True, exist_ok=True)
     with stats_path.open("w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)

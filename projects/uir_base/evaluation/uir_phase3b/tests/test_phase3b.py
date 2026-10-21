@@ -23,7 +23,7 @@ def jsonl(path: Path):
 
 
 def test_candidate_has_200_real_ko_en_pairs_without_case_deletion():
-    rows = jsonl(ROOT / "evaluation/uir_phase3b/candidate_v2_0.jsonl")
+    rows = jsonl(ROOT / "projects/uir_base/evaluation/uir_phase3b/candidate_v2_0.jsonl")
     pairs = {}
     for row in rows:
         if row["category"] == "parallel_semantic": pairs.setdefault(row["pair_id"], []).append(row)
@@ -33,7 +33,7 @@ def test_candidate_has_200_real_ko_en_pairs_without_case_deletion():
 
 
 def test_real_fact_subset_is_balanced_and_hash_bound_to_frozen_sec():
-    path = ROOT / "results/uir_phase3b/real_fact_subset.jsonl"
+    path = ROOT / "projects/uir_base/results/uir_phase3b/real_fact_subset.jsonl"
     rows = jsonl(path); manifest = json.loads((path.parent / "real_fact_subset_manifest.json").read_text())
     assert len(rows) == 200 and Counter(x["language"] for x in rows) == {"ko": 100, "en": 100}
     assert hashlib.sha256(path.read_bytes()).hexdigest() == manifest["dataset_sha256"]
@@ -41,7 +41,7 @@ def test_real_fact_subset_is_balanced_and_hash_bound_to_frozen_sec():
 
 
 def test_b6_drops_unsupported_claim_and_discards_model_prose():
-    module = load(ROOT / "evaluation/uir_slm/run_slm_campaign.py", "phase3b_campaign")
+    module = load(ROOT / "projects/uir_base/evaluation/uir_slm/run_slm_campaign.py", "phase3b_campaign")
     verified = {"claim_type":"numeric_claim","entity_id":"AAPL","attribute":"assets","value":"10","unit":"USD","period":"2025","provenance":"sec"}
     unsupported = dict(verified, value="999")
     accepted, answer, status = module.filter_and_render([verified, unsupported], [verified], None)
@@ -52,7 +52,7 @@ def test_legacy_script_review_is_not_actual_model_provenance():
     fields = ("source_text_valid","language_valid","intent_valid","target_valid","conditions_valid","policy_valid","outcome_valid","claims_valid")
     import csv
     for reviewer in ("R1", "R2"):
-        with (ROOT / f"evaluation/uir_phase3b/review/review_{reviewer}.csv").open(encoding="utf-8", newline="") as handle:
+        with (ROOT / f"projects/uir_base/evaluation/uir_phase3b/review/review_{reviewer}.csv").open(encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle))
         assert len(rows) == 1200
         assert all(row[field] in {"1", "0", "NA"} for row in rows for field in fields)
@@ -71,7 +71,7 @@ def test_final_aggregator_emits_separated_statistics(tmp_path):
     def dump(path, rows): path.write_text("".join(json.dumps(x)+"\n" for x in rows),encoding="utf-8")
     data=tmp_path/"data.jsonl"; core_path=tmp_path/"core.jsonl"; raw_path=tmp_path/"raw.jsonl"; out=tmp_path/"out"
     dump(data,dataset);dump(core_path,core);dump(raw_path,raw)
-    subprocess.run([sys.executable,str(ROOT/"evaluation/uir_phase3b/aggregate_final.py"),"--raw",str(raw_path),"--core",str(core_path),"--dataset",str(data),"--out",str(out)],check=True)
+    subprocess.run([sys.executable,str(ROOT/"projects/uir_base/evaluation/uir_phase3b/aggregate_final.py"),"--raw",str(raw_path),"--core",str(core_path),"--dataset",str(data),"--out",str(out)],check=True)
     assert (out/"stat_safety_final.csv").exists()
     assert (out/"stat_utility_final.csv").exists()
     assert (out/"stat_latency_final.csv").exists()

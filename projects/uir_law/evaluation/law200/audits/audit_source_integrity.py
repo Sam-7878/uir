@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Recompute every frozen CourtListener response and registry binding hash."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import json
 from typing import Any
@@ -19,7 +20,7 @@ def audit() -> dict[str, Any]:
     raw_cache: dict[str, list[dict[str, Any]]] = {}
     for record in records:
         relative = str(record.get("raw_response_file", ""))
-        raw_path = PACKAGE_ROOT / relative
+        raw_path = TASK_ROOT / relative
         if not raw_path.exists():
             findings.append({"type": "raw_response_missing", "citation": record.get("citation_canonical"), "path": relative})
             continue
@@ -54,7 +55,7 @@ def audit() -> dict[str, Any]:
         "status": "PASS" if not findings else "FAIL",
         "findings": findings,
     }
-    write_json(PACKAGE_ROOT / "results" / "aggregate" / "source_integrity_audit.json", report)
+    write_json(TASK_ROOT / "execution" / "aggregate" / "source_integrity_audit.json", report)
     return report
 
 

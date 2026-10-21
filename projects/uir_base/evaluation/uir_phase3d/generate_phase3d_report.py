@@ -7,10 +7,10 @@ import json
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-OUT = ROOT / "results/uir_phase3d"
+OUT = ROOT / "projects/uir_base/results/uir_phase3d"
 REPORTS = (
-    ROOT / "docs/work_reports/307_uir_3d_evidence/REPORT_PHASE3D_PUBLICATION_FINAL.md",
-    ROOT / "docs/work_reports/311_uir_phase_3D_role_separated_validation/REPORT_PHASE3D_PUBLICATION_FINAL.md",
+    ROOT / "projects/uir_base/results/uir_phase3d/reports/REPORT_PHASE3D_PUBLICATION_FINAL.md",
+    ROOT / "projects/uir_base/results/uir_phase3d/reports/REPORT_PHASE3D_PUBLICATION_FINAL.md",
 )
 
 

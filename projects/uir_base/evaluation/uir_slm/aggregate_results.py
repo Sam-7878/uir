@@ -45,7 +45,7 @@ def classify(row: dict) -> str | None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--raw", type=Path, nargs="+", required=True); parser.add_argument("--uir-records", type=Path, required=True); parser.add_argument("--frozen", type=Path, default=Path("evaluation/uir_external/frozen_test_v1.jsonl")); parser.add_argument("--out", type=Path, default=Path("results/uir_slm")); args = parser.parse_args(); args.out.mkdir(parents=True, exist_ok=True)
+    parser = argparse.ArgumentParser(); parser.add_argument("--raw", type=Path, nargs="+", required=True); parser.add_argument("--uir-records", type=Path, required=True); parser.add_argument("--frozen", type=Path, default=Path("projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl")); parser.add_argument("--out", type=Path, default=Path("projects/uir_base/results/uir_slm")); args = parser.parse_args(); args.out.mkdir(parents=True, exist_ok=True)
     loaded = [row for path in args.raw for row in read_jsonl(path)]; selected = [row for row in loaded if not row["run_id"].startswith("stochastic") or row["run_id"].startswith("stochastic-final-")]
     keyed = {(row["run_id"], row["suite"], row["case_id"], row["pipeline"], row["seed"]): row for row in selected}; records = list(keyed.values()); primary = [row for row in records if row["suite"] == "frozen" and row["run_id"] == "deterministic-1"]
     repeated_selected = [row for row in records if row["run_id"].startswith("det-repeat") or row["run_id"].startswith("stochastic-final-")]

@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse,fcntl,hashlib,json,os,platform,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
-ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file());OUT=ROOT/"results/uir_phase3d";P3B=ROOT/"results/uir_phase3b";CONFIG=ROOT/"evaluation/uir_slm/model_config/phi35_ollama.json"
+ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file());OUT=ROOT/"projects/uir_base/results/uir_phase3d";P3B=ROOT/"projects/uir_base/results/uir_phase3b";CONFIG=ROOT/"projects/uir_base/evaluation/uir_slm/model_config/phi35_ollama.json"
 WORKERS=8
 def run(args,capture=False):return subprocess.run(args,cwd=ROOT,check=True,text=True,capture_output=capture)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -36,7 +36,7 @@ def main():
         raise SystemExit(f"another Phase3D campaign holds {lock_path}")
     lock_handle.write(f"pid={os.getpid()}\n")
     lock_handle.flush()
-    frozen=P3B/"frozen_test_v2.jsonl";real=P3B/"real_fact_subset.jsonl";manifest=json.loads((P3B/"FROZEN_TEST_V2_MANIFEST.json").read_text());parser_freeze=json.loads((ROOT/"evaluation/uir_phase3b/PARSER_FREEZE.json").read_text())
+    frozen=P3B/"frozen_test_v2.jsonl";real=P3B/"real_fact_subset.jsonl";manifest=json.loads((P3B/"FROZEN_TEST_V2_MANIFEST.json").read_text());parser_freeze=json.loads((ROOT/"projects/uir_base/evaluation/uir_phase3b/PARSER_FREEZE.json").read_text())
     if sha(frozen)!=manifest["dataset_sha256"] or manifest["parser_source_sha256"]!=parser_freeze["parser_source_sha256"]:raise SystemExit("frozen-v2/parser integrity failure")
     if not a.finalize_only and run(["git","status","--porcelain"],True).stdout.strip():raise SystemExit("Phase3D final campaign requires a clean worktree")
     config=json.loads(CONFIG.read_text());model=config["model"]
@@ -45,14 +45,14 @@ def main():
     execution_commit=a.execution_commit or run(["git","rev-parse","HEAD"],True).stdout.strip()
     if not a.finalize_only:
         run(["cargo","run","--release","-p","poa-uir","--bin","uir-eval","--",str(frozen),str(core)])
-        runner=str(ROOT/"evaluation/uir_phase3d/run_slm_campaign_parallel.py");common=[sys.executable,runner,"--uir-records",str(core),"--config",str(CONFIG),"--run-id","phase3d-publication-final","--workers",str(WORKERS)]
+        runner=str(ROOT/"projects/uir_base/evaluation/uir_phase3d/run_slm_campaign_parallel.py");common=[sys.executable,runner,"--uir-records",str(core),"--config",str(CONFIG),"--run-id","phase3d-publication-final","--workers",str(WORKERS)]
         run([*common,"--dataset",str(frozen),"--suite","frozen_v2","--out",str(raw_v2)])
         run([*common,"--dataset",str(real),"--suite","real_fact","--out",str(raw_sec)])
     validate_campaign(raw_v2,8400);validate_campaign(raw_sec,1400)
     combined=OUT/"campaign_raw.jsonl";atomic_concat([raw_v2,raw_sec],combined);validate_campaign(combined,9800)
-    run([sys.executable,str(ROOT/"evaluation/uir_phase3b/aggregate_final.py"),"--raw",str(combined),"--core",str(core),"--dataset",str(frozen),"--out",str(OUT)])
-    run([sys.executable,str(ROOT/"evaluation/uir_phase3d/analyze_phase3d.py"),"--raw",str(combined),"--out",str(OUT)])
-    run([sys.executable,str(ROOT/"evaluation/uir_phase3d/validate_b6_invariants.py")])
+    run([sys.executable,str(ROOT/"projects/uir_base/evaluation/uir_phase3b/aggregate_final.py"),"--raw",str(combined),"--core",str(core),"--dataset",str(frozen),"--out",str(OUT)])
+    run([sys.executable,str(ROOT/"projects/uir_base/evaluation/uir_phase3d/analyze_phase3d.py"),"--raw",str(combined),"--out",str(OUT)])
+    run([sys.executable,str(ROOT/"projects/uir_base/evaluation/uir_phase3d/validate_b6_invariants.py")])
     model_description=version(["ollama","show",model,"--modelfile"])
     postprocessing_commit=run(["git","rev-parse","HEAD"],True).stdout.strip()
     run_manifest={"campaign_id":"phase3d-publication-final","status":"complete","started_from_clean_commit":a.started_clean or not a.finalize_only,"worktree_dirty_at_start":False,"commit":execution_commit,"postprocessing_commit":postprocessing_commit,"workers":WORKERS,
@@ -61,6 +61,6 @@ def main():
         "os":platform.platform(),"cpu":platform.processor(),"ram_bytes":os.sysconf("SC_PAGE_SIZE")*os.sysconf("SC_PHYS_PAGES"),"gpu":version(["nvidia-smi","--query-gpu=name,memory.total","--format=csv,noheader"]),
         "rust":version(["rustc","--version"]),"python":sys.version,"ollama":version(["ollama","--version"]),"completed_at":datetime.now(timezone.utc).isoformat()}
     (OUT/"run_manifest_phase3d.json").write_text(json.dumps(run_manifest,indent=2)+"\n",encoding="utf-8")
-    subprocess.run([sys.executable,str(ROOT/"evaluation/uir_phase3d/publication_gate_phase3d.py")],cwd=ROOT)
-    run([sys.executable,str(ROOT/"evaluation/uir_phase3d/generate_phase3d_report.py")])
+    subprocess.run([sys.executable,str(ROOT/"projects/uir_base/evaluation/uir_phase3d/publication_gate_phase3d.py")],cwd=ROOT)
+    run([sys.executable,str(ROOT/"projects/uir_base/evaluation/uir_phase3d/generate_phase3d_report.py")])
 if __name__=="__main__":main()

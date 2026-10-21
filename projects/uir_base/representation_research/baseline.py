@@ -72,7 +72,7 @@ def run(out):
     revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     snapshot = {"created_at_utc": utc(), "baseline_code_revision": revision, "release": release, "delivery": delivery,
                 "current_report_sha256": sha(current_path), "originals_modified": False,
-                "S_work_order_sha256": sha(DOC / "UIR_Representation_Research_Next_Work_Order_2026-10-13.md")}
+                "S_work_order_sha256": sha(ROOT / "docs/work_reports/uir_base/112_representation_research/UIR_Representation_Research_Next_Work_Order_2026-10-13.md")}
     write(out / "S_BASELINE_MANIFEST.json", snapshot)
     write(out / "release_report_sidecars.json", [
         {"path": relative(current_path), "sha256": sha(current_path), "artifact_generation": "R_RELEASE_V3",

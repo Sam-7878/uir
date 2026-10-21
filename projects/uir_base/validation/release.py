@@ -80,8 +80,8 @@ def metadata():
               "abstract_wordcount": int((PAPER / "abstract_wordcount.txt").read_text()), "current_rules_verified": False,
               "author_institution_signoff": False, "technical_PDF_QA": True}
     write(PAPER / "paper_final_QA.json", report)
-    write(PAPER / "source_diff_final.json", {"original_source_sha256": sha(ROOT / "docs/papers/_47_UIR/_47_UIR.tex"),
-          "original_bib_sha256": sha(ROOT / "docs/papers/_47_UIR/references.bib"), "final_source_sha256": sha(PAPER / "main.tex"),
+    write(PAPER / "source_diff_final.json", {"original_source_sha256": sha(ROOT / "projects/uir_base/paper/_47_UIR/_47_UIR.tex"),
+          "original_bib_sha256": sha(ROOT / "projects/uir_base/paper/_47_UIR/references.bib"), "final_source_sha256": sha(PAPER / "main.tex"),
           "final_bib_sha256": sha(PAPER / "references.bib"), "original_replaced": False,
           "initial_source_diff_json": "generation-time pre-compile snapshot, not final source binding"})
     (PAPER / "source_diff.md").write_text("# Source changes\n\nOriginal IEEE source and bibliography preserved. Complete separate MDPI draft replaces framing with bounded IR/reuse evidence, oracle-like input disclosure, equal specialized control, all negative renderer/FinQA/AI findings and pending declarations. source_diff_final.json binds final bytes; source_diff.json is the initial generation snapshot before bibliography/layout repairs.\n")
@@ -107,7 +107,7 @@ def export(destination):
     for name in ("uir_next_source_evidence_v3.zip", "uir_next_offline_source_evidence_v2.zip", "110_mdpi_rev.zip"):
         relative = "docs/work_reports/uir_base/110_mdpi_rev/" + name; overlay[relative] = ROOT / relative
     for name in ("_47_UIR.tex", "references.bib"):
-        relative = "docs/papers/_47_UIR/" + name; overlay[relative] = ROOT / relative
+        relative = "projects/uir_base/paper/_47_UIR/" + name; overlay[relative] = ROOT / relative
     entries = []
     with zipfile.ZipFile(ARCHIVE) as base, zipfile.ZipFile(destination, "w", compression=zipfile.ZIP_DEFLATED) as result:
         for name in sorted(set(base.namelist()) | set(overlay)):

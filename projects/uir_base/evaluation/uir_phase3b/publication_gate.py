@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); OUT=ROOT/"results/uir_phase3b"
+ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); OUT=ROOT/"projects/uir_base/results/uir_phase3b"
 def main():
     frozen=json.loads((OUT/"FROZEN_TEST_V2_MANIFEST.json").read_text()) if (OUT/"FROZEN_TEST_V2_MANIFEST.json").exists() else {}
     real=json.loads((OUT/"real_fact_subset_manifest.json").read_text()) if (OUT/"real_fact_subset_manifest.json").exists() else {}

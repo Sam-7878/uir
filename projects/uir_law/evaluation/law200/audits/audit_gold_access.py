@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Verify sanitized runtime rows and recorded pre-generation file access."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import json
 from pathlib import Path
@@ -50,7 +51,7 @@ def audit() -> dict[str, Any]:
         "status": "PASS" if not findings else "FAIL",
         "findings": findings,
     }
-    write_json(PACKAGE_ROOT / "results" / "aggregate" / "gold_access_audit.json", report)
+    write_json(TASK_ROOT / "execution" / "aggregate" / "gold_access_audit.json", report)
     return report
 
 

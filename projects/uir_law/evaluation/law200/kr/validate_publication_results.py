@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Strict publication gate for the independent Korean LAW-KR-200 stratum."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import csv
 import json
@@ -25,7 +26,7 @@ from evaluation.uir_law.law200.kr.law_go_kr import KR_DATA_DIR, exact_case_numbe
 from evaluation.uir_law.law200.legal_ir import compile_legal_uir
 from evaluation.uir_law.law200.scoring.score_supported_claims import aggregate, score_record, statistics
 
-KR_RESULTS_DIR = PACKAGE_ROOT / "results" / "kr"
+KR_RESULTS_DIR = TASK_ROOT / "execution" / "kr"
 KR_RAW_DIR = KR_RESULTS_DIR / "raw"
 KR_AGGREGATE_DIR = KR_RESULTS_DIR / "aggregate"
 KR_TABLES_DIR = KR_RESULTS_DIR / "tables"
@@ -56,7 +57,7 @@ def source_integrity() -> dict[str, Any]:
     raw_cache: dict[str, list[dict[str, Any]]] = {}
     for record in records:
         relative = str(record.get("raw_response_file") or "")
-        raw_path = PACKAGE_ROOT / relative
+        raw_path = TASK_ROOT / relative
         if not raw_path.exists():
             findings.append({"type": "raw_response_missing", "citation": record.get("citation_canonical")})
             continue
@@ -109,7 +110,8 @@ def secret_leak_paths() -> list[str]:
     secret = key_path.read_text(encoding="utf-8-sig").strip().encode()
     if not secret:
         return []
-    return [str(path.relative_to(PACKAGE_ROOT)) for path in PACKAGE_ROOT.rglob("*") if path.is_file() and secret in path.read_bytes()]
+    return [str(path.relative_to(REPO_ROOT)) for directory in (PACKAGE_ROOT, TASK_ROOT)
+            for path in directory.rglob("*") if path.is_file() and secret in path.read_bytes()]
 
 
 def nested_keys(value: Any) -> set[str]:
@@ -256,7 +258,7 @@ def finish(validator: Validator) -> dict[str, Any]:
     for item in validator.checks:
         mark = "x" if item["status"] == "PASS" else " "
         lines.append(f"- [{mark}] {item['name']}: `{item['status']}` — {item['detail']}")
-    (PACKAGE_ROOT / "LAW200_KR_AUDIT_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (TASK_ROOT / "reports/LAW200_KR_AUDIT_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return report
 
 

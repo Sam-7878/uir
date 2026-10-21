@@ -81,6 +81,11 @@ Long runs can be resumed with `--resume`. A frozen dataset cannot be overwritten
 
 ## Outputs
 
+Current physical resource root is `projects/uir_law/results/law200/` relative to
+repository root, not this evaluation source directory. In the historical list below,
+`data/` stays `data/`, `results/` is now `execution/`, and generated reports are in
+`reports/`. Frozen artifact bytes and their embedded historical paths are unchanged.
+
 Korean artifacts are namespaced under `data/kr/` and `results/kr/`:
 
 - `data/kr/law200_test_runtime.jsonl` / `law200_test_gold.jsonl`
@@ -99,4 +104,5 @@ U.S. artifacts use the original un-namespaced paths once that stratum is built:
 - `results/aggregate/test_statistics.json` — exact McNemar, Holm, and risk differences
 - `LAW200_AUDIT_REPORT.md` and `LAW200_REPORT.md`
 
-See [LAW200_PROTOCOL.md](LAW200_PROTOCOL.md) and [DATASET_CARD.md](DATASET_CARD.md) for the frozen scientific contract and limitations.
+See [LAW200_PROTOCOL.md](../../docs/law200/LAW200_PROTOCOL.md) and
+[DATASET_CARD.md](../../docs/law200/DATASET_CARD.md) for the frozen scientific contract and limitations.

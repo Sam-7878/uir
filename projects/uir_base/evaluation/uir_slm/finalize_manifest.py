@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--results", type=Path, default=Path("results/uir_slm")); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("--results", type=Path, default=Path("projects/uir_base/results/uir_slm")); args = parser.parse_args()
     path = args.results / "run_manifest.json"; manifest = json.loads(path.read_text(encoding="utf-8")); evidence = {}
     for item in sorted(args.results.iterdir()):
         if item.is_file() and item.name != path.name:

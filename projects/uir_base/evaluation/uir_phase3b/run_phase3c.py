@@ -20,8 +20,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-OUT_3B = ROOT / "results/uir_phase3b"
-OUT_3C = ROOT / "results/uir_phase3c"
+OUT_3B = ROOT / "projects/uir_base/results/uir_phase3b"
+OUT_3C = ROOT / "projects/uir_base/results/uir_phase3c"
 SCRIPTS = Path(__file__).resolve().parent
 PYTHON = sys.executable
 

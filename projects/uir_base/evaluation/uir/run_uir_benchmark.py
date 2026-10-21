@@ -42,7 +42,7 @@ def ratio_row(metric: str, success: int, total: int, group: str = "overall") -> 
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--dataset", type=Path, default=Path("evaluation/uir/fixtures/generated")); parser.add_argument("--out", type=Path, default=Path("results/uir")); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("--dataset", type=Path, default=Path("projects/uir_base/evaluation/uir/fixtures/generated")); parser.add_argument("--out", type=Path, default=Path("projects/uir_base/results/uir")); args = parser.parse_args()
     dataset = args.dataset / "dataset.jsonl" if args.dataset.is_dir() else args.dataset
     args.out.mkdir(parents=True, exist_ok=True); raw_jsonl = args.out / "cases_raw.jsonl"
     subprocess.run(["cargo", "run", "--quiet", "-p", "poa-uir", "--bin", "uir-eval", "--", str(dataset), str(raw_jsonl)], check=True)
@@ -118,7 +118,7 @@ def command(args: list[str]) -> str:
 
 def configuration_hash() -> str:
     files = sorted(Path("crates/poa-uir/src").rglob("*.rs"))
-    files += sorted(Path("evaluation/uir").glob("*.py"))
+    files += sorted(Path("projects/uir_base/evaluation/uir").glob("*.py"))
     files += [Path("protocol/schemas/uir.schema.json")]
     digest = hashlib.sha256()
     for path in files:

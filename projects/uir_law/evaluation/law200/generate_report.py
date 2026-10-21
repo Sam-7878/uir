@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate the benchmark report and KAIC update notes from frozen scored evidence."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import json
 from pathlib import Path
@@ -22,7 +23,7 @@ def find_comparison(statistics: dict[str, Any], baseline: str) -> dict[str, Any]
 
 def generate() -> tuple[Path, Path]:
     required = [
-        PACKAGE_ROOT / "benchmark_manifest.json",
+        TASK_ROOT / "benchmark_manifest.json",
         AGGREGATE_DIR / "test_metrics.json",
         AGGREGATE_DIR / "test_statistics.json",
         TABLES_DIR / "law200_main_table.md",
@@ -97,7 +98,7 @@ def generate() -> tuple[Path, Path]:
         "16. **universal hallucination elimination을 의미하지 않는다고 명시했는가?** 예. 모든 해석은 observed controlled LAW-200 legal-identity setting으로 제한한다.",
         "17. **KAIC 논문에 publication-safe한 숫자는 무엇인가?** auto-generated main table의 네 primary metric, Wilson interval, exact McNemar/Holm 결과만 사용한다. 수동 전사 숫자나 이전 10-case/Phase-4F 수치는 사용하지 않는다.",
     ])
-    report_path = PACKAGE_ROOT / "LAW200_REPORT.md"
+    report_path = TASK_ROOT / "reports/LAW200_REPORT.md"
     report_path.write_text("\n".join(report_lines) + "\n", encoding="utf-8")
 
     update_lines = [
@@ -114,7 +115,7 @@ def generate() -> tuple[Path, Path]:
         "- Observed rates do not imply universal hallucination elimination.",
         "- Legacy RDB mapping and non-vector structured retrieval remain future work.",
     ]
-    update_path = PACKAGE_ROOT / "KAIC_MANUSCRIPT_UPDATE.md"
+    update_path = TASK_ROOT / "reports/KAIC_MANUSCRIPT_UPDATE.md"
     update_path.write_text("\n".join(update_lines) + "\n", encoding="utf-8")
     return report_path, update_path
 

@@ -6,13 +6,14 @@ from .common import ARCHIVE, OUT, ROOT, V3_SHA, load, sha, utc, write
 def run():
     if sha(ARCHIVE) != V3_SHA: raise ValueError("FROZEN_ARCHIVE_CHANGED")
     relative = "docs/work_reports/uir_base/107_Astra_review/layout_migration_manifest.json"
+    archived_relative = "docs/work_reports/uir_base/107_Astra_review/layout_migration_manifest.json"
     target = ROOT / relative
     if target.exists(): raise FileExistsError("Refuse to overwrite existing user metadata")
     with zipfile.ZipFile(ARCHIVE) as archive:
         import json
         manifest = json.loads(archive.read("archive_manifest.json"))
-        expected = next(r["sha256"] for r in manifest["files"] if r["path"] == relative)
-        content = archive.read(relative)
+        expected = next(r["sha256"] for r in manifest["files"] if r["path"] == archived_relative)
+        content = archive.read(archived_relative)
     import hashlib
     if hashlib.sha256(content).hexdigest() != expected: raise ValueError("ARCHIVED_METADATA_HASH_MISMATCH")
     target.parent.mkdir(parents=True, exist_ok=True)

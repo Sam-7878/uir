@@ -24,8 +24,8 @@ BASELINE_NAMES = [
 
 
 def check():
-    bench_file = "results/llm_security/raw_benchmark_results.jsonl"
-    ablation_file = "results/llm_security/raw_ablation_results.jsonl"
+    bench_file = "projects/uir_security/results/llm_security/raw_benchmark_results.jsonl"
+    ablation_file = "projects/uir_security/results/llm_security/raw_ablation_results.jsonl"
 
     print("=== [HETE-UIR Security Evaluation Progress Monitor] ===")
 

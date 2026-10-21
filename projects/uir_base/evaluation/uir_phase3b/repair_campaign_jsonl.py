@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-OUT = ROOT / "results/uir_phase3b"
+OUT = ROOT / "projects/uir_base/results/uir_phase3b"
 
 def repair_file(path: Path) -> list[dict]:
     if not path.exists():

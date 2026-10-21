@@ -52,8 +52,8 @@ def main() -> int:
     judge = data["judge_validation.json"]
     lines += [f"14. Development vs held-out HETE E2E-ASR: **{pct(dev_e2e)} / {pct(e2e)}**.", "15. Residual out-of-scope risks include training-time compromise, model supply-chain compromise, hardware attacks, and threats outside the frozen taxonomy.", "", "## Prompt-only Guardrail appendix", "", "The exact invariant system prompt is defined by `PromptGuardBaseline.HARDENED_SYSTEM_PROMPT`; it is identical across every case and is preserved in the committed source.", "", "## Evidence limitations", "", "- Non-zero residual attack rates are retained and must not be hidden.", "- Infrastructure failures are excluded from security verdicts and independently gate publication.", f"- Judge validation was `{judge['review_type']}` over {judge['reviewed_count']} cases with {pct(judge['agreement_rate'])} agreement. It was Codex AI-assisted evidence review; no human reviewer is claimed."]
     report = "\n".join(lines) + "\n"
-    evaluation_path = args.repo_root / "docs/evaluation/HETE_UIR_SECURITY_BENCHMARK_V2_FINAL.md"
-    work_path = args.repo_root / "docs/work_reports/HETE_UIR_PUBLICATION_BENCHMARK_FINAL_REPORT.md"
+    evaluation_path = args.results / "reports/HETE_UIR_SECURITY_BENCHMARK_V2_FINAL.md"
+    work_path = args.results / "reports/HETE_UIR_PUBLICATION_BENCHMARK_FINAL_REPORT.md"
     evaluation_path.parent.mkdir(parents=True, exist_ok=True); work_path.parent.mkdir(parents=True, exist_ok=True)
     evaluation_path.write_text(report, encoding="utf-8"); work_path.write_text(report, encoding="utf-8")
     provenance = {"sources": {name: digest(args.results / name) for name in source_names}, "reports": {str(evaluation_path): digest(evaluation_path), str(work_path): digest(work_path)}}

@@ -9,8 +9,8 @@ import sys
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-RESULTS_DIR = ROOT / "results/uir_phase4"
-FROZEN_DATASET = ROOT / "results/uir_phase3b/frozen_test_v2.jsonl"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4"
+FROZEN_DATASET = ROOT / "projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl"
 
 
 def run_formal_invariants() -> list[dict]:
@@ -182,7 +182,7 @@ def run_mutation_fault_injection() -> list[dict]:
 
     # Mutation 2: Skip Entity Validation
     # Simulates skipping entity existence check for spoofed entity IDs.
-    frozen_v1_path = ROOT / "evaluation/uir_external/frozen_test_v1.jsonl"
+    frozen_v1_path = ROOT / "projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl"
     if frozen_v1_path.exists():
         v1_cases = [json.loads(line) for line in frozen_v1_path.open(encoding="utf-8")]
         invalid_ent_cases = [c for c in v1_cases if not c.get("entity_valid", True) or c.get("category") == "invalid_entity"]

@@ -6,9 +6,9 @@ import json
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / "Cargo.toml").is_file())
-DOC = ROOT / "docs/work_reports/uir_base/112_representation_research"
+DOC = ROOT / "projects/uir_base/results/112_representation_research"
 RESULTS = ROOT / "projects/uir_base/results/uir_repr_semantics_2026_10_13_v1"
-PRIOR = ROOT / "docs/work_reports/uir_base/111_validation"
+PRIOR = ROOT / "projects/uir_base/results/111_validation"
 RELEASE_SHA = "c9adb265258cf0b44367bfe76cc11ad116467d24498fe6947dcdb0dc6f0bc9ab"
 DELIVERY_SHA = "839e1230cd02af2ba25ee84b6d5caa54bbc9f8882ef4921e1897d6468f8a0267"
 

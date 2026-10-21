@@ -52,7 +52,7 @@ def evaluate_gate() -> tuple[dict[str, Any], list[str]]:
     if not aggregate_ok: blockers.append("aggregate metrics do not derive from actual raw evidence")
     statistics_ok = all((RESULTS_DIR / name).exists() and len(_csv(RESULTS_DIR / name)) == 8 for name in ("stat_safety_actual.csv", "stat_utility_actual.csv", "stat_latency_actual.csv"))
     if not statistics_ok: blockers.append("matched actual statistics incomplete")
-    mutation_path = ROOT / "results/uir_phase4b/mutation_test_report_phase4b.csv"
+    mutation_path = ROOT / "projects/uir_base/results/uir_phase4b/mutation_test_report_phase4b.csv"
     mutation_unsafe = sum(int(row.get("unsafe_accept", "0")) for row in _csv(mutation_path)) if mutation_path.exists() else 1
     if mutation_unsafe: blockers.append(f"mutation unsafe accepts: {mutation_unsafe}")
     flags = {

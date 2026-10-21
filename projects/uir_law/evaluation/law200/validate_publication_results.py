@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Strict publication gate for the frozen LAW-200 benchmark."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import csv
 import json
@@ -58,7 +59,7 @@ def validate() -> dict[str, Any]:
     gold_path = DATA_DIR / "law200_test_gold.jsonl"
     registry_path = DATA_DIR / "source_registry.jsonl"
     corpus_path = CORPUS_DIR / "legal_cases.jsonl"
-    manifest_path = PACKAGE_ROOT / "benchmark_manifest.json"
+    manifest_path = TASK_ROOT / "benchmark_manifest.json"
     required_inputs = (runtime_path, gold_path, registry_path, corpus_path, manifest_path)
     validator.check(all(path.exists() for path in required_inputs), "required_frozen_inputs", [str(path) for path in required_inputs if not path.exists()])
     if not all(path.exists() for path in required_inputs):
@@ -187,7 +188,7 @@ def finish(validator: Validator) -> dict[str, Any]:
     ]
     for item in validator.checks:
         lines.append(f"- [{ 'x' if item['status'] == 'PASS' else ' ' }] {item['name']}: `{item['status']}` — {item['detail']}")
-    (PACKAGE_ROOT / "LAW200_AUDIT_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (TASK_ROOT / "reports/LAW200_AUDIT_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return report
 
 

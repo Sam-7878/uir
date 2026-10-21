@@ -1,8 +1,8 @@
 """Phase UIR-4F: Automated Publication Table Generator (Final).
 
 Reads ONLY Phase 4F final aggregate CSVs (never manual numbers) and generates:
-  docs/work_reports/uir_phase4f/generated_tables_final.md
-  docs/work_reports/uir_phase4f/generated_tables_final.tex
+  projects/uir_base/results/uir_phase4f/reports/generated_tables_final.md
+  projects/uir_base/results/uir_phase4f/reports/generated_tables_final.tex
 
 Tables:
   Table 1: Internal Safety & Security (Accepted Unsupported, Adversarial ASR N=50, FAR, Policy Bypass)

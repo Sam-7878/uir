@@ -11,7 +11,7 @@ REQUIRED = {"case_id", "category", "language", "input", "expected_claims", "temp
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--dataset", type=Path, default=Path("evaluation/uir_external/frozen_test_v1.jsonl")); parser.add_argument("--manifest", type=Path, default=Path("evaluation/uir_external/FROZEN_TEST_MANIFEST.json")); args = parser.parse_args(); raw = args.dataset.read_bytes(); rows = [json.loads(line) for line in raw.decode().splitlines() if line.strip()]; manifest = json.loads(args.manifest.read_text())
+    parser = argparse.ArgumentParser(); parser.add_argument("--dataset", type=Path, default=Path("projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl")); parser.add_argument("--manifest", type=Path, default=Path("projects/uir_base/evaluation/uir_external/FROZEN_TEST_MANIFEST.json")); args = parser.parse_args(); raw = args.dataset.read_bytes(); rows = [json.loads(line) for line in raw.decode().splitlines() if line.strip()]; manifest = json.loads(args.manifest.read_text())
     errors = []
     if hashlib.sha256(raw).hexdigest() != manifest["dataset_sha256"]: errors.append("dataset hash mismatch")
     if len(rows) != 1000 or manifest["case_count"] != 1000: errors.append("frozen set must contain 1000 cases")

@@ -8,16 +8,16 @@ from pathlib import Path
 from typing import Any, Iterable
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-EVAL_DIR = ROOT / "evaluation/uir_phase4f"
-RESULTS_DIR = ROOT / "results/uir_phase4f"
-DOCS_DIR = ROOT / "docs/work_reports/uir_phase4f"
+EVAL_DIR = ROOT / "projects/uir_base/evaluation/uir_phase4f"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4f"
+DOCS_DIR = ROOT / "projects/uir_base/results/uir_phase4f/reports"
 
 # Prior phases (immutable sources)
-P4D_RESULTS_DIR = ROOT / "results/uir_phase4d"
+P4D_RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4d"
 P4D_FROZEN_DIR = P4D_RESULTS_DIR / "frozen_inputs"
 P4D_PER_CASE = P4D_RESULTS_DIR / "per_case_evidence_actual.jsonl"
 
-P4E_RESULTS_DIR = ROOT / "results/uir_phase4e"
+P4E_RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4e"
 
 # Models
 MODEL_ID = "microsoft/Phi-3.5-mini-instruct"

@@ -31,8 +31,8 @@ except ImportError:
     LMF_VERSION = "0.11.3"
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-P4D_FROZEN_DIR = ROOT / "results/uir_phase4d/frozen_inputs"
-RESULTS_DIR = ROOT / "results/uir_phase4f"
+P4D_FROZEN_DIR = ROOT / "projects/uir_base/results/uir_phase4d/frozen_inputs"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4f"
 
 SEED = 42
 MODEL_ID = "microsoft/Phi-3.5-mini-instruct"
@@ -203,8 +203,8 @@ def main() -> None:
 
     if not runtime_path.exists():
         # Fallback to parent dir if needed
-        runtime_path = ROOT / "results/uir_phase4d/strong_runtime_actual.jsonl"
-        scoring_path = ROOT / "results/uir_phase4d/strong_scoring_actual.jsonl"
+        runtime_path = ROOT / "projects/uir_base/results/uir_phase4d/strong_runtime_actual.jsonl"
+        scoring_path = ROOT / "projects/uir_base/results/uir_phase4d/strong_scoring_actual.jsonl"
 
     runtime_cases = read_jsonl(runtime_path)[:n_cases]
     scoring_cases = read_jsonl(scoring_path)[:n_cases]

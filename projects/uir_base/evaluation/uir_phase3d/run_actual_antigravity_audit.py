@@ -12,9 +12,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-PACKETS = ROOT / "evaluation/uir_phase3d/audit_packets"
-SCHEMA = ROOT / "evaluation/uir_phase3d/actual_ai_batch_response.schema.json"
-WORK = ROOT / "results/uir_phase3d/actual_ai_work"
+PACKETS = ROOT / "projects/uir_base/evaluation/uir_phase3d/audit_packets"
+SCHEMA = ROOT / "projects/uir_base/evaluation/uir_phase3d/actual_ai_batch_response.schema.json"
+WORK = ROOT / "projects/uir_base/results/uir_phase3d/actual_ai_work"
 
 REVIEWERS = {
     "AI-R1": ("gemini-3.5-flash", "AntiGravity Gemini 3.5 Flash", "high"),

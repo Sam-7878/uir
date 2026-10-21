@@ -22,7 +22,7 @@ def table(headers: list[str], rows: list[list[object]]) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("--input", type=Path, default=Path("results/uir")); parser.add_argument("--dataset", type=Path, default=Path("evaluation/uir/fixtures/generated/dataset.jsonl")); parser.add_argument("--output", type=Path, default=Path("docs/work_reports/300_uir/REPORT.md")); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("--input", type=Path, default=Path("projects/uir_base/results/uir")); parser.add_argument("--dataset", type=Path, default=Path("projects/uir_base/evaluation/uir/fixtures/generated/dataset.jsonl")); parser.add_argument("--output", type=Path, default=Path("projects/uir_base/results/uir/reports/REPORT.md")); args = parser.parse_args()
     manifest = json.loads((args.input / "run_manifest.json").read_text()); metrics = {item["metric"]: item for item in csv_rows(args.input / "metric_summary.csv")}; languages = csv_rows(args.input / "language_summary.csv"); categories = csv_rows(args.input / "category_summary.csv"); policy = csv_rows(args.input / "policy_summary.csv"); latency = csv_rows(args.input / "latency_summary.csv"); ablation = csv_rows(args.input / "ablation_summary.csv"); failures = (args.input / "failures.jsonl").read_text().splitlines()
     dataset = [json.loads(line) for line in args.dataset.read_text(encoding="utf-8").splitlines() if line.strip()]; composition = Counter((item["category"], item["language"]) for item in dataset)
     dataset_rows = [[category, composition[(category, "ko")], composition[(category, "en")], composition[(category, "ko")] + composition[(category, "en")]] for category in sorted({item["category"] for item in dataset})]

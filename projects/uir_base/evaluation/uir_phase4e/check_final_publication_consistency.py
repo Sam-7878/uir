@@ -19,7 +19,7 @@ from evaluation.uir_phase4e.common import (
     DOCS_DIR, P4D_PER_CASE, RESULTS_DIR, ROOT, read_jsonl,
 )
 
-PAPER_TEX = ROOT / "docs/papers/_47_UIR/_47_UIR_8p.tex"
+PAPER_TEX = ROOT / "projects/uir_base/paper/_47_UIR/_47_UIR_8p.tex"
 BLOCKERS: list[str] = []
 WARNINGS: list[str] = []
 
@@ -47,7 +47,7 @@ def read_csv_dict(path: Path) -> list[dict[str, Any]]:
 
 def check_phase4d_preserved() -> None:
     print("[CHECK] Phase 4D immutability...")
-    p4d_dir = ROOT / "results/uir_phase4d"
+    p4d_dir = ROOT / "projects/uir_base/results/uir_phase4d"
     required = [
         "per_case_evidence_actual.jsonl",
         "strong_baseline_summary_actual.csv",

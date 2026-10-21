@@ -17,7 +17,7 @@ from pathlib import Path
 
 from evaluation.uir_phase4e.common import DOCS_DIR, RESULTS_DIR, ROOT
 
-PAPER_TEX = ROOT / "docs/papers/_47_UIR/_47_UIR_8p.tex"
+PAPER_TEX = ROOT / "projects/uir_base/paper/_47_UIR/_47_UIR_8p.tex"
 
 # Phrases that require formal scoping or should be removed
 OVERCLAIM_RULES = [

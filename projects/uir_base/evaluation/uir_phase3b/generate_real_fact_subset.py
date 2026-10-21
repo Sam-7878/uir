@@ -27,9 +27,9 @@ def claims(fact: dict, provenance: str) -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--registry", type=Path, default=ROOT / "evaluation/uir_external/registry_v1.jsonl")
-    parser.add_argument("--registry-manifest", type=Path, default=ROOT / "evaluation/uir_external/REGISTRY_MANIFEST.json")
-    parser.add_argument("--out", type=Path, default=ROOT / "results/uir_phase3b")
+    parser.add_argument("--registry", type=Path, default=ROOT / "projects/uir_base/evaluation/uir_external/registry_v1.jsonl")
+    parser.add_argument("--registry-manifest", type=Path, default=ROOT / "projects/uir_base/evaluation/uir_external/REGISTRY_MANIFEST.json")
+    parser.add_argument("--out", type=Path, default=ROOT / "projects/uir_base/results/uir_phase3b")
     args = parser.parse_args(); args.out.mkdir(parents=True, exist_ok=True)
     facts = [json.loads(x) for x in args.registry.read_text(encoding="utf-8").splitlines() if x][:100]
     if len(facts) < 100: raise SystemExit("at least 100 frozen SEC facts are required")

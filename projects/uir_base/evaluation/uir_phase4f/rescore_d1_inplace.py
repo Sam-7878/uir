@@ -9,8 +9,8 @@ from typing import Any
 import numpy as np
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-P4D_FROZEN_DIR = ROOT / "results/uir_phase4d/frozen_inputs"
-RESULTS_DIR = ROOT / "results/uir_phase4f"
+P4D_FROZEN_DIR = ROOT / "projects/uir_base/results/uir_phase4d/frozen_inputs"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4f"
 
 LMF_VERSION = "0.11.3"
 MODEL_ID = "microsoft/Phi-3.5-mini-instruct"

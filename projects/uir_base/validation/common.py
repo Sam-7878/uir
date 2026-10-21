@@ -4,13 +4,14 @@ from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
+from uir_common.paths import recorded_path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / "Cargo.toml").is_file())
 OUT = ROOT / "projects/uir_base/results/uir_repr_validation_2026_10_12_v1"
-DOC = ROOT / "docs/work_reports/uir_base/111_validation/implementation"
+DOC = ROOT / "projects/uir_base/results/111_validation/implementation"
 OLD = ROOT / "projects/uir_base/results/mdpi_next_2026_10_11_v2"
 FROZEN = ROOT / "projects/uir_base/results/uir_phase4d/frozen_inputs"
-ARCHIVE = ROOT / "docs/work_reports/uir_base/110_mdpi_rev/uir_next_source_evidence_v3.zip"
+ARCHIVE = ROOT / "projects/uir_base/results/110_mdpi_rev/uir_next_source_evidence_v3.zip"
 V3_SHA = "aea0551d1b7e14cc98f5e8cfd32694cb9c1fcac25a700dee284c6d3c6814da76"
 FIELDS = ("claim_type", "entity_id", "attribute", "value", "unit", "period", "provenance")
 
@@ -59,7 +60,7 @@ def check_frozen():
         raise ValueError("FROZEN_V3_HASH_MISMATCH")
     manifest = load(OLD / "final_release_index.json")
     for rel, expected in manifest["files"].items():
-        path = ROOT / rel
+        path = recorded_path(ROOT, rel)
         if not path.is_file() or path.is_symlink() or not path.resolve().is_relative_to(ROOT):
             raise ValueError(f"MISSING_OR_UNSAFE_FROZEN_INPUT: {rel}")
         if sha(path) != expected:

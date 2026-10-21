@@ -24,15 +24,15 @@ def table(rows: list[dict], fields: list[str]) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--results", type=Path, default=Path("results/uir_slm"))
-    parser.add_argument("--uir-records", type=Path, default=Path("results/uir_slm/frozen_uir_core.jsonl"))
-    parser.add_argument("--out", type=Path, default=Path("docs/work_reports/301_uir_phase_2/REPORT_SLM.md"))
+    parser.add_argument("--results", type=Path, default=Path("projects/uir_base/results/uir_slm"))
+    parser.add_argument("--uir-records", type=Path, default=Path("projects/uir_base/results/uir_slm/frozen_uir_core.jsonl"))
+    parser.add_argument("--out", type=Path, default=Path("projects/uir_base/results/uir_slm/reports/REPORT_SLM.md"))
     args = parser.parse_args()
     manifest = json.loads((args.results / "run_manifest.json").read_text(encoding="utf-8"))
     frozen = json.loads((args.results / "frozen_test_manifest.json").read_text(encoding="utf-8"))
     model = json.loads((args.results / "model_manifest.json").read_text(encoding="utf-8"))
     core = [json.loads(line) for line in args.uir_records.read_text(encoding="utf-8").splitlines() if line]
-    frozen_rows = [json.loads(line) for line in Path("evaluation/uir_external/frozen_test_v1.jsonl").read_text(encoding="utf-8").splitlines() if line]
+    frozen_rows = [json.loads(line) for line in Path("projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl").read_text(encoding="utf-8").splitlines() if line]
     failures = [json.loads(line) for line in (args.results / "failures.jsonl").read_text(encoding="utf-8").splitlines() if line]
     baseline = csv_rows(args.results / "baseline_comparison.csv")
     generalization = csv_rows(args.results / "generalization_split_summary.csv")

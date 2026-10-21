@@ -31,7 +31,7 @@ def rate(group: list[dict], key: str) -> float:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--raw", nargs="+", type=Path, required=True)
-    parser.add_argument("--out", type=Path, default=Path("results/uir_slm"))
+    parser.add_argument("--out", type=Path, default=Path("projects/uir_base/results/uir_slm"))
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
     rows = read_jsonl(args.raw)

@@ -12,7 +12,7 @@ from sklearn.metrics import cohen_kappa_score
 from statsmodels.stats.inter_rater import fleiss_kappa
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-OUT = ROOT / "results/uir_phase3d"
+OUT = ROOT / "projects/uir_base/results/uir_phase3d"
 FIELDS = (
     "source_text_valid", "language_valid", "intent_valid", "target_valid",
     "conditions_valid", "policy_valid", "outcome_valid", "claims_valid",

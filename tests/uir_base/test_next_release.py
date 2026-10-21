@@ -33,7 +33,7 @@ def test_release_dependencies_fail_closed(tmp_path):
 
 def test_actual_frontend_matches_published_recursive_schema():
     root = next(p for p in Path(__file__).resolve().parents if (p / "Cargo.toml").is_file())
-    schema = json.loads((root / "docs/work_reports/uir_base/110_mdpi_rev/implementation/uir.schema.json").read_text())
+    schema = json.loads((root / "projects/uir_base/results/110_mdpi_rev/implementation/uir.schema.json").read_text())
     validator = Draft202012Validator(schema)
     result = compile_raw("verify TSLA revenue 2025 in USD unless approval AND (value > 10 OR NOT entity_verified)",
                          policy_snapshot="p1", evidence_snapshot="e1")

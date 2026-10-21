@@ -84,8 +84,8 @@ def latest_facts(payload: dict, ticker: str, source_url: str, source_hash: str) 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--out", type=Path, default=Path("evaluation/uir_external/registry_v1.jsonl"))
-    parser.add_argument("--manifest", type=Path, default=Path("evaluation/uir_external/REGISTRY_MANIFEST.json"))
+    parser.add_argument("--out", type=Path, default=Path("projects/uir_base/evaluation/uir_external/registry_v1.jsonl"))
+    parser.add_argument("--manifest", type=Path, default=Path("projects/uir_base/evaluation/uir_external/REGISTRY_MANIFEST.json"))
     parser.add_argument("--user-agent", default="HETE UIR Research contact@example.com")
     args = parser.parse_args()
     args.out.parent.mkdir(parents=True, exist_ok=True)

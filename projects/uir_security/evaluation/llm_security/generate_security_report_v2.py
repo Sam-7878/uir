@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-RESULTS = ROOT / "results/llm_security_v2"
+RESULTS = ROOT / "projects/uir_security/results/llm_security_v2"
 
 
 def load(name: str) -> dict:
@@ -35,9 +35,9 @@ def main() -> None:
         lines.append(f"| {name} | {pct(delta['delta_e2e_asr'])} | {pct(delta['delta_mcr'])} | {pct(delta['delta_frr'])} | {pct(delta['delta_utility'])} | {delta['targeted_degradation_observed']} |")
     lines += ["", "## Final repair verification questions", "", "1. **Benign utility:** the harness measures actual structured task success, citations, completeness, and FRR; a publication answer awaits the full live Phi-3.5 run.", "2. **MCR vs E2E-ASR:** both are computed by the same independent case-goal oracle, with raw counts and Wilson intervals.", "3. **Remaining non-zero classes:** derived only from the full run's per-class results, never inferred from an attack label.", "4. **Component reduction:** targeted and paired multi-knockout results record deltas; an unchanged component is reported as masked/redundant, not credited.", "5. **Defense-in-depth:** four required multi-knockout pairs are included.", "6. **Security-utility trade-off:** FRR and benign task success are emitted with every configuration.", "7. **KO/EN stability:** language-specific MCR, E2E-ASR, and utility are emitted.", "8. **Repeated-run stability:** the publication gate requires at least three runs with fixed seed/configuration metadata.", "9. **Out-of-scope threats:** training-time, supply-chain, and hardware attacks remain out of scope.", "10. **SCI-safe claims:** only measured live-model results with `publication_eligible: true` may be described as observed benchmark behavior.", "", "## Limitations", "", "- All claims are limited to observed benchmark behavior and the frozen evaluated threat set.", "- Training-time, model-supply-chain, and hardware attacks are out of scope.", "- `not publication eligible` means the run is a smoke test or lacks the required live-model repetitions; it must not be used in an SCI Results section."]
     report = "\n".join(lines) + "\n"
-    (ROOT / "docs/evaluation").mkdir(parents=True, exist_ok=True)
-    (ROOT / "docs/evaluation/HETE_UIR_SECURITY_BENCHMARK_V2.md").write_text(report, encoding="utf-8")
-    (ROOT / "docs/work_reports/001_security_benchmark_repair/HETE_UIR_SECURITY_BENCHMARK_REPAIR_REPORT.md").write_text(report, encoding="utf-8")
+    report_dir = ROOT / "projects/uir_security/results/llm_security_v2/reports"
+    report_dir.mkdir(parents=True, exist_ok=True)
+    (report_dir / "HETE_UIR_SECURITY_BENCHMARK_REPAIR_REPORT.md").write_text(report, encoding="utf-8")
     (tables / "baseline_summary.md").write_text(report, encoding="utf-8")
 
 

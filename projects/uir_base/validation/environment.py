@@ -26,7 +26,7 @@ def prepare():
             "cargo_lock_sha256": sha(ROOT / "Cargo.lock"), "python_shared_environment_modified": False,
             "platform_scope": "Linux x86_64 CPython 3.14; not arbitrary platforms", "frozen": proof}
     write(OUT / "environment.lock", lock)
-    v2 = ROOT / "docs/work_reports/uir_base/110_mdpi_rev/uir_next_offline_source_evidence_v2.zip"
+    v2 = ROOT / "projects/uir_base/results/110_mdpi_rev/uir_next_offline_source_evidence_v2.zip"
     with zipfile.ZipFile(v2) as before, zipfile.ZipFile(ARCHIVE) as after:
         old = {n: before.read(n) for n in before.namelist()}
         new = {n: after.read(n) for n in after.namelist()}
@@ -34,12 +34,12 @@ def prepare():
              "v2_sha256": __import__("hashlib").sha256(old[n]).hexdigest() if n in old else None,
              "v3_sha256": __import__("hashlib").sha256(new[n]).hexdigest()} for n in sorted(new)]
     csvfile(OUT / "snapshot_changelog.csv", rows)
-    delivery = ROOT / "docs/work_reports/uir_base/110_mdpi_rev/110_mdpi_rev.zip"
+    delivery = ROOT / "projects/uir_base/results/110_mdpi_rev/110_mdpi_rev.zip"
     write(OUT / "input_provenance.json", {"created_at_utc": utc(), "v3": proof,
           "previous_work_order_sha256": sha(ROOT / "docs/work_reports/uir_base/110_mdpi_rev/UIR_Next_Development_Work_Order_2026-10-11.md"),
           "report_delivery_zip_status": "MISSING" if not delivery.is_file() else "PRESENT_UNCHECKED",
           "expected_delivery_zip_sha256": "007ae2715abb8a996d6376d5786d529d19608c7857769a5f2d7214ffe2e5b3e8",
-          "detached_receipt_sha256": sha(ROOT / "docs/work_reports/uir_base/110_mdpi_rev/FINAL_RELEASE_RECEIPT.json"),
+          "detached_receipt_sha256": sha(ROOT / "projects/uir_base/results/110_mdpi_rev/FINAL_RELEASE_RECEIPT.json"),
           "modified_shared": [r["path"] for r in rows if r["change"] == "MODIFIED"],
           "N_v3_added": sum(r["change"] == "ADDED" for r in rows),
           "human_signoff": False, "physical_independent_machine": False})

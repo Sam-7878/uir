@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
 sys.path.insert(0, str(ROOT))
-RESULTS_DIR = ROOT / "results/uir_phase4"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4"
 EXT_DIR = Path(__file__).resolve().parent
 
 from evaluation.uir_phase4.external_benchmarks.financial_adapter import (

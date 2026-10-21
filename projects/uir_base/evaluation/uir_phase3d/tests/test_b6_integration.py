@@ -2,10 +2,10 @@ import importlib.util,sys
 from pathlib import Path
 
 ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-sys.path.insert(0,str(ROOT/"evaluation/uir_slm"))
-spec=importlib.util.spec_from_file_location("campaign",ROOT/"evaluation/uir_slm/run_slm_campaign.py")
+sys.path.insert(0,str(ROOT/"projects/uir_base/evaluation/uir_slm"))
+spec=importlib.util.spec_from_file_location("campaign",ROOT/"projects/uir_base/evaluation/uir_slm/run_slm_campaign.py")
 campaign=importlib.util.module_from_spec(spec);spec.loader.exec_module(campaign)
-spec2=importlib.util.spec_from_file_location("baselines",ROOT/"evaluation/uir_slm/baselines.py")
+spec2=importlib.util.spec_from_file_location("baselines",ROOT/"projects/uir_base/evaluation/uir_slm/baselines.py")
 baselines=importlib.util.module_from_spec(spec2);spec2.loader.exec_module(baselines)
 
 def claim(value,attribute="revenue"):
@@ -46,7 +46,7 @@ def test_compact_fact_ids_resolve_authoritative_numeric_unit_and_provenance():
     assert rejected==[] and supported==expected
 
 def test_actual_audit_ingestion_rejects_script_only_judgment(tmp_path):
-    spec3=importlib.util.spec_from_file_location("ingest",ROOT/"evaluation/uir_phase3d/ingest_actual_ai_reviews.py")
+    spec3=importlib.util.spec_from_file_location("ingest",ROOT/"projects/uir_base/evaluation/uir_phase3d/ingest_actual_ai_reviews.py")
     ingest=importlib.util.module_from_spec(spec3);spec3.loader.exec_module(ingest)
     record={"reviewer_id":"AI-R1","engine":"AntiGravity Gemini 3.5 Flash","case_id":"C1","prompt_template_sha256":"p","judgment":{f:"1" for f in ingest.FIELDS}}
     path=tmp_path/"review.jsonl";path.write_text(__import__("json").dumps(record)+"\n")

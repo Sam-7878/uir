@@ -143,7 +143,7 @@ class Auditor:
                 'scientific_integrity_failures':self.failures,'observed_results':self.observed}
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--results-dir',type=Path,default=REPO/'results/llm_security_v3_2_closure');p.add_argument('--strict',action='store_true');p.add_argument('--output-json',type=Path)
+    p=argparse.ArgumentParser();p.add_argument('--results-dir',type=Path,default=REPO/'projects/uir_security/results/llm_security_v3_2_closure');p.add_argument('--strict',action='store_true');p.add_argument('--output-json',type=Path)
     args=p.parse_args();audit=Auditor(args.results_dir)
     try:report=audit.run()
     except Exception as exc:

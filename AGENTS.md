@@ -13,3 +13,17 @@
   frozen results, historical manifests, or paper sources just to update old paths.
 - Missing frozen inputs must be reported as missing. Do not weaken tests,
   fabricate replacement evidence, or allow empty source scans to pass silently.
+- Root directories contain only cross-project infrastructure and documentation.
+  `uir_base` is the base research project; `uir_law` and `uir_security` are derived
+  projects. Shared core must not import project evaluation or gold.
+- Project-wide sources, specifications, reusable resources and manuscript workspaces
+  belong to `projects/<project>/`. Put task-specific data, reports, figures, logs,
+  resources under `projects/<project>/results/<task_id>/`.
+- Owner exception: private work orders, internal reviews and work reports remain
+  at `docs/work_reports/<project>/<task_id>/` in their original location, LOCAL ONLY.
+  Other root `docs/` folders are not blanket-private; evaluate file rights normally.
+  Do not move work_reports into project results. Do not create root manuscript copies.
+- New task outputs default to local-only. Preserve frozen file contents during
+  relocation and record old/new paths and hashes externally; never edit old
+  manifests merely to make a historical path current. Use explicit recorded-path
+  translation in readers, not filesystem aliases or silent missing-input fallback.

@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 from projects.uir_base.scripts import revision_audit as a
 from projects.uir_base.scripts.next_release import DEFAULT, checked_path, csv_rows
 
-DOCS = a.ROOT / "docs/work_reports/uir_base/110_mdpi_rev"
+DOCS = a.ROOT / "projects/uir_base/results/110_mdpi_rev"
 IMPL = DOCS / "implementation"
 TASKS = [
     ("N00", "PASS_SCOPED", "W00,W04,W12", "Preserved historical inputs/evaluator; archive-only replay, not model rerun.", "release_manifest.json"),
@@ -178,7 +178,7 @@ def seal(archive, clean_report):
               "", "## Reproducibility and files", "",
               f"Archive: {archive.relative_to(a.ROOT)}", f"SHA-256: {a.digest(archive)}",
               "Detached FINAL_RELEASE_RECEIPT.json binds the ZIP, result index and clean-room proof; release_gate.json separates integrity/replay/semantic/manuscript/submission gates. The archive contains scope docs, code, raw data, tests and captured result hashes; it excludes private paper bytes, model weights, secrets, Git internals and symlinks.",
-              "New source-linked research draft: docs/papers/_47_UIR_revision_next/draft_v4/. It is a provisional separate article, not full MDPI revision. Four result tables are generated; complete narrative numeric synchronization and actual PDF/source review remain pending. Original _47_UIR source is preserved.",
+              "New source-linked research draft: projects/uir_base/results/110_mdpi_rev/manuscript_private/revision_next/draft_v4/. It is a provisional separate article, not full MDPI revision. Four result tables are generated; complete narrative numeric synchronization and actual PDF/source review remain pending. Original _47_UIR source is preserved.",
               "Scope: implementation/matched_baseline_protocol.md, rubric_change_log.md, fresh_failure_analysis.md, claim_evidence_matrix.csv, journal_target_verification.md and backmatter_verification.md.", "",
               "Archive-only replay with already installed CPU evaluation dependencies (no inference/network):", "",
               "~~~bash", "source /mnt/d/_Work/goat_bank/.venv_cuda/bin/activate",

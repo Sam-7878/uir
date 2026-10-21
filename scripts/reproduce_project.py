@@ -6,6 +6,7 @@ import json
 import subprocess
 import sys
 from pathlib import Path
+from uir_common.paths import recorded_path
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -17,7 +18,7 @@ def verify(project):
         release=portal/"results/mdpi_revision_2026_10_11"
         manifest=json.loads((release/"evidence_manifest.json").read_text())
         for row in manifest["sources"]:
-            actual=hashlib.sha256((ROOT/row["path"]).read_bytes()).hexdigest()
+            actual=hashlib.sha256(recorded_path(ROOT, row["path"]).read_bytes()).hexdigest()
             if actual!=row["sha256"]:
                 raise ValueError(f"Evidence mismatch: {row['path']}")
         actual=hashlib.sha256((ROOT/manifest["evaluator"]).read_bytes()).hexdigest()

@@ -22,10 +22,10 @@ def sha256(path: Path) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--out", type=Path, default=Path("results/uir_slm"))
-    parser.add_argument("--config", type=Path, default=Path("evaluation/uir_slm/model_config/phi35_ollama.json"))
-    parser.add_argument("--frozen-manifest", type=Path, default=Path("evaluation/uir_external/FROZEN_TEST_MANIFEST.json"))
-    parser.add_argument("--registry-manifest", type=Path, default=Path("evaluation/uir_external/REGISTRY_MANIFEST.json"))
+    parser.add_argument("--out", type=Path, default=Path("projects/uir_base/results/uir_slm"))
+    parser.add_argument("--config", type=Path, default=Path("projects/uir_base/evaluation/uir_slm/model_config/phi35_ollama.json"))
+    parser.add_argument("--frozen-manifest", type=Path, default=Path("projects/uir_base/evaluation/uir_external/FROZEN_TEST_MANIFEST.json"))
+    parser.add_argument("--registry-manifest", type=Path, default=Path("projects/uir_base/evaluation/uir_external/REGISTRY_MANIFEST.json"))
     args = parser.parse_args(); args.out.mkdir(parents=True, exist_ok=True)
     frozen = json.loads(args.frozen_manifest.read_text(encoding="utf-8")); registry = json.loads(args.registry_manifest.read_text(encoding="utf-8"))
     client = OllamaClient(args.config); model = client.show()

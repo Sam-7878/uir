@@ -7,8 +7,8 @@ from pathlib import Path
 from typing import Any, Iterable
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-EVAL_DIR = ROOT / "evaluation/uir_phase4c"
-RESULTS_DIR = ROOT / "results/uir_phase4c"
+EVAL_DIR = ROOT / "projects/uir_base/evaluation/uir_phase4c"
+RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4c"
 SOURCE_DIR = EVAL_DIR / "official_sources"
 FROZEN_DIR = EVAL_DIR / "frozen_inputs"
 RAW_DIR = RESULTS_DIR / "raw_captures"

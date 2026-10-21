@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate publication-facing LAW-KR-200 reports from validated artifacts."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import json
 from pathlib import Path
@@ -145,7 +146,7 @@ def generate() -> tuple[Path, Path]:
         "- 로컬 3.8B Q4 모델과 통제된 lexical corpus의 결과를 다른 모델·법역·배포 환경에 일반화할 수 없다.",
         "- UIR의 0 observed failures는 0 risk의 증명이 아니다. AULCR Wilson 95% CI 상한을 함께 보고한다.",
     ])
-    report_path = PACKAGE_ROOT / "LAW200_KR_REPORT.md"
+    report_path = TASK_ROOT / "reports/LAW200_KR_REPORT.md"
     report_path.write_text("\n".join(report) + "\n", encoding="utf-8")
 
     note = [
@@ -162,7 +163,7 @@ def generate() -> tuple[Path, Path]:
         "- 실체적 법률 추론 또는 보편적 환각 제거를 입증하지 않는다.",
         "- 미국 LAW-US-200 replication은 별도 CourtListener credential로 수행하며 한국 결과와 합산하지 않는다.",
     ]
-    note_path = PACKAGE_ROOT / "KAIC_MANUSCRIPT_UPDATE_KR.md"
+    note_path = TASK_ROOT / "reports/KAIC_MANUSCRIPT_UPDATE_KR.md"
     note_path.write_text("\n".join(note) + "\n", encoding="utf-8")
     return report_path, note_path
 

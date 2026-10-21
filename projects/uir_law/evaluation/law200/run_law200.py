@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Execute matched LAW-200 pipelines without loading evaluation labels."""
 from __future__ import annotations
+from projects.uir_law.evaluation.law200.common import TASK_ROOT
 
 import argparse
 import json
@@ -50,9 +51,9 @@ def execute(
     access_log = {
         "started_at": utc_now(),
         "pre_generation_files_read": [
-            {"path": str(runtime_path.relative_to(PACKAGE_ROOT)), "sha256": sha256_file(runtime_path)},
-            {"path": str(registry_path.relative_to(PACKAGE_ROOT)), "sha256": sha256_file(registry_path)},
-            {"path": str(corpus_path.relative_to(PACKAGE_ROOT)), "sha256": sha256_file(corpus_path)},
+            {"path": str(runtime_path.relative_to(TASK_ROOT)), "sha256": sha256_file(runtime_path)},
+            {"path": str(registry_path.relative_to(TASK_ROOT)), "sha256": sha256_file(registry_path)},
+            {"path": str(corpus_path.relative_to(TASK_ROOT)), "sha256": sha256_file(corpus_path)},
         ],
     }
     write_json(raw_dir / f"{split}_pre_generation_access_log.json", access_log | {"jurisdiction": jurisdiction})

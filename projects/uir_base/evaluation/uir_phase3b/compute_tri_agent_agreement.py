@@ -11,8 +11,8 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file())
-REVIEW_DIR = ROOT / "evaluation/uir_phase3b/review"
-OUT_DIR = ROOT / "results/uir_phase3c"
+REVIEW_DIR = ROOT / "projects/uir_base/evaluation/uir_phase3b/review"
+OUT_DIR = ROOT / "projects/uir_base/results/uir_phase3c"
 
 FIELDS = ("source_text_valid", "language_valid", "intent_valid", "target_valid",
           "conditions_valid", "policy_valid", "outcome_valid", "claims_valid")

@@ -13,6 +13,7 @@ import hashlib
 import importlib.metadata
 import json
 from pathlib import Path
+from uir_common.paths import recorded_path
 import re
 import sys
 import zipfile
@@ -26,8 +27,8 @@ OLD = BASE / "mdpi_revision_2026_10_11"
 DEFAULT = BASE / "mdpi_next_2026_10_11_v2"
 LINEAGE = {
     "frozen_v1": ROOT / "projects/uir_base/evaluation/uir_external/frozen_test_v1.jsonl",
-    "frozen_v2": ROOT / "archive/uir_base/results/uir_phase3b/frozen_test_v2.jsonl",
-    "real_fact": ROOT / "archive/uir_base/results/uir_phase3b/real_fact_subset.jsonl",
+    "frozen_v2": ROOT / "projects/uir_base/results/uir_phase3b/frozen_test_v2.jsonl",
+    "real_fact": ROOT / "projects/uir_base/results/uir_phase3b/real_fact_subset.jsonl",
 }
 COMPARE = ("metrics_case_level.csv", "internal_utility_recomputed.csv", "d1_schema_case_audit.csv",
            "halueval_case_audit.csv", "halueval_recomputed.csv", "halueval_transition_tables.csv",
@@ -48,7 +49,7 @@ def checked_path(root, relative, expected):
     relative = Path(relative)
     if relative.is_absolute() or ".." in relative.parts:
         raise ValueError("Non-root-relative dependency")
-    path = root / relative
+    path = recorded_path(root, str(relative)) if root.resolve() == ROOT.resolve() else root / relative
     if path.is_symlink() or not path.resolve().is_relative_to(root.resolve()):
         raise ValueError("Dependency escapes root or is a symbolic link")
     if not path.is_file():
@@ -315,7 +316,7 @@ def run(out):
     checked_path(ROOT, old_manifest["evaluator"], old_manifest["evaluator_sha256"])
     protected = {str(p.relative_to(ROOT)): a.digest(p) for p in OLD.rglob("*") if p.is_file()}
     protected.update({str(p.relative_to(ROOT)): a.digest(p) for p in inputs})
-    protected.update({str(p.relative_to(ROOT)): a.digest(p) for p in (ROOT / "docs/papers/_47_UIR").glob("*") if p.is_file()})
+    protected.update({str(p.relative_to(ROOT)): a.digest(p) for p in (ROOT / "projects/uir_base/paper/_47_UIR").glob("*") if p.is_file()})
     a.run(out / "historical_reanalysis")
     comparisons = [{"file": name, "historical_sha256": a.digest(OLD / name),
                     "reproduced_sha256": a.digest(out / "historical_reanalysis" / name)} for name in COMPARE]
@@ -371,7 +372,7 @@ def package(out, destination):
             files.add(BASE / f"uir_phase4e/qwen_{task}_{condition}_raw.jsonl")
             files.add(BASE / f"uir_phase4d/{task}_predictions_actual_{condition}.jsonl")
     # Scope documents are release inputs too; they cannot be substituted later.
-    docs = ROOT / "docs/work_reports/uir_base/110_mdpi_rev/implementation"
+    docs = ROOT / "projects/uir_base/results/110_mdpi_rev/implementation"
     files.update(p for p in docs.rglob("*") if p.is_file())
     dependencies = []
     with zipfile.ZipFile(destination, "w", compression=zipfile.ZIP_DEFLATED) as archive:

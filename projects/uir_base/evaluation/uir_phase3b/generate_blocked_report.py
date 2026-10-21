@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 from pathlib import Path
-ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); OUT=ROOT/"results/uir_phase3b"; REPORT=ROOT/"docs/work_reports/uir_phase3b/REPORT_PHASE3B_BLOCKED.md"
+ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); OUT=ROOT/"projects/uir_base/results/uir_phase3b"; REPORT=ROOT/"projects/uir_base/results/uir_phase3b/reports/REPORT_PHASE3B_BLOCKED.md"
 def main():
     gate=json.loads((OUT/"PUBLICATION_GATE.json").read_text()); real=json.loads((OUT/"real_fact_subset_manifest.json").read_text())
     text=f"""# UIR Phase 3B Status Report

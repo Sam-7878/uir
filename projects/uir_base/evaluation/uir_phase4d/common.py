@@ -16,8 +16,8 @@ def _find_repo_root(p: Path) -> Path:
 ROOT = _find_repo_root(Path(__file__).resolve())
 EVAL_DIR = Path(__file__).resolve().parent
 RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4d"
-P4C_RESULTS_DIR = ROOT / "archive/uir_base/results/uir_phase4c"
-DOCS_DIR = ROOT / "docs/work_reports/uir_base/104_uir_pahse_4d"
+P4C_RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4c"
+DOCS_DIR = ROOT / "projects/uir_base/results/104_uir_pahse_4d/reports"
 FROZEN_DIR = RESULTS_DIR / "frozen_inputs"
 SOURCE_DIR = ROOT / "projects/uir_base/evaluation/uir_phase4c/official_sources"
 RAW_DIR = RESULTS_DIR / "raw_captures"

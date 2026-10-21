@@ -7,7 +7,7 @@ from .common import DOC, OLD, OUT, ROOT, csvfile, load, read, sha, write
 
 
 def run():
-    delivery = ROOT / "docs/work_reports/uir_base/110_mdpi_rev/110_mdpi_rev.zip"
+    delivery = ROOT / "projects/uir_base/results/110_mdpi_rev/110_mdpi_rev.zip"
     expected = "007ae2715abb8a996d6376d5786d529d19608c7857769a5f2d7214ffe2e5b3e8"
     if sha(delivery) != expected: raise ValueError("DELIVERY_ZIP_HASH_MISMATCH")
     with zipfile.ZipFile(delivery) as archive:

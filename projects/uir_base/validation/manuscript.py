@@ -105,7 +105,7 @@ def generate():
     text = text.replace("ABSTRACT_TEXT", abstract).replace("RELEASE_HASH", release_hash)
     (PAPER / "main.tex").write_text(text)
     shutil.copyfile(DOC / "references_vNext.bib", PAPER / "references.bib")
-    original = ROOT / "docs/papers/_47_UIR"
+    original = ROOT / "projects/uir_base/paper/_47_UIR"
     write(PAPER / "source_diff.json", {"original_source_sha256": sha(original / "_47_UIR.tex"), "original_bib_sha256": sha(original / "references.bib"),
           "new_source_sha256": sha(PAPER / "main.tex"), "source_replaced_in_place": False, "author_metadata": "PENDING_CONFIRMATION",
           "changes": ["IEEE original preserved; complete separate MDPI research manuscript", "oracle/trusted-slot scope moved into Methods",

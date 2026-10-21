@@ -140,9 +140,9 @@ def campaign_record(row: dict) -> dict:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(); parser.add_argument("--candidate", type=Path, default=ROOT / "evaluation/uir_phase3b/candidate_v2_0.jsonl")
-    parser.add_argument("--review-dir", type=Path, default=ROOT / "evaluation/uir_phase3b/review")
-    parser.add_argument("--out", type=Path, default=ROOT / "results/uir_phase3b"); parser.add_argument("--freeze", action="store_true")
+    parser = argparse.ArgumentParser(); parser.add_argument("--candidate", type=Path, default=ROOT / "projects/uir_base/evaluation/uir_phase3b/candidate_v2_0.jsonl")
+    parser.add_argument("--review-dir", type=Path, default=ROOT / "projects/uir_base/evaluation/uir_phase3b/review")
+    parser.add_argument("--out", type=Path, default=ROOT / "projects/uir_base/results/uir_phase3b"); parser.add_argument("--freeze", action="store_true")
     args = parser.parse_args(); candidate = read_jsonl(args.candidate); automated_validate(candidate)
     try: common, adjudication = review_evidence(candidate, args.review_dir, args.out)
     except ValueError as error:

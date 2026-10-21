@@ -54,14 +54,14 @@ def run(directory, *, network_metadata=False):
     rust_test = subprocess.run([cargo, "test", "--offline", "-p", "poa-uir", "--bin", "uir_contract_eval"],
                                cwd=ROOT, text=True, capture_output=True, timeout=120)
     write_once(directory / "private_runtime_logs/rust_test.txt", rust_test.stdout + rust_test.stderr)
-    write_once(directory / "evaluation/rust_test_receipt.json", {"returncode": rust_test.returncode,
+    write_once(directory / "projects/uir_base/evaluation/rust_test_receipt.json", {"returncode": rust_test.returncode,
                "scope": "UIR_CONTRACT_EVAL_BINARY_UNIT_TESTS_ONLY", "host_scope": "SAME_HOST_ONLY"})
     tests = subprocess.run([sys.executable, "-m", "pytest", "tests/uir_base/test_t_local_privacy.py",
                             "tests/uir_base/test_s_representation_research.py", "-q",
-                            "--junitxml=" + str(directory / "evaluation/protected_paths_test.xml")],
+                            "--junitxml=" + str(directory / "projects/uir_base/evaluation/protected_paths_test.xml")],
                            cwd=ROOT, text=True, capture_output=True, timeout=120)
     write_once(directory / "private_runtime_logs/pytest.txt", tests.stdout + tests.stderr)
-    write_once(directory / "evaluation/test_receipt.json", {"returncode": tests.returncode,
+    write_once(directory / "projects/uir_base/evaluation/test_receipt.json", {"returncode": tests.returncode,
                "command_scope": "T_LOCAL_GUARDS_AND_S_REGRESSION", "independent_review": False})
     write_once(directory / "privacy_architecture_decision.md", "# Owner decision\n\nPrivate reports and raw evidence are LOCAL ONLY. No private GitHub repository will be created.\n\n"
                "This supersedes the earlier proposed private-remote split. No upload, history rewrite, deletion, visibility change or push was performed. "

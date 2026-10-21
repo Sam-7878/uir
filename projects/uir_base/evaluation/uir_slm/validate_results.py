@@ -5,7 +5,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
-RESULTS = Path("results/uir_slm")
+RESULTS = Path("projects/uir_base/results/uir_slm")
 REQUIRED = {
     "run_manifest.json", "model_manifest.json", "frozen_test_manifest.json",
     "outputs_raw.jsonl", "claims_raw.jsonl", "metric_summary.csv", "model_summary.csv",

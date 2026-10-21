@@ -5,7 +5,7 @@ import argparse,csv,hashlib,json,math
 from collections import Counter,defaultdict
 from pathlib import Path
 
-ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); PACKETS=ROOT/"evaluation/uir_phase3d/audit_packets"; OUT=ROOT/"results/uir_phase3d"
+ROOT=next(p for p in Path(__file__).resolve().parents if (p / 'Cargo.toml').is_file()); PACKETS=ROOT/"projects/uir_base/evaluation/uir_phase3d/audit_packets"; OUT=ROOT/"projects/uir_base/results/uir_phase3d"
 REVIEWERS={"AI-R1":"AntiGravity Gemini 3.5 Flash","AI-R2":"AntiGravity Gemini 3.6 Flash","AI-R3":"AntiGravity Gemini 3.1 Pro"}
 MODEL_SELECTORS={"AI-R1":"gemini-3.5-flash","AI-R2":"gemini-3.6-flash-high","AI-R3":"gemini-3.1-pro"}
 FIELDS=["source_text_valid","language_valid","intent_valid","target_valid","conditions_valid","policy_valid","outcome_valid","claims_valid"]
