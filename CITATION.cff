@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Cite the relevant project publication or this shared software repository."
+title: "UIR Research Repository"
+authors:
+  - family-names: Park
+    given-names: SeongSu
+    orcid: "https://orcid.org/0009-0008-4056-3875"
+  - family-names: Kim
+    given-names: Ki-Hyung
+    orcid: "https://orcid.org/0000-0002-2321-4475"
+url: "https://github.com/Sam-7878/UIR"
+license: MIT

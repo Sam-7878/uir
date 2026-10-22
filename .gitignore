@@ -69,9 +69,24 @@ local_storage/
 *.bin
 *.whl
 *.zip
+test_len.py
+/docs/resources/reference_literature/
+
+# Manuscript generator scripts remain local
+/projects/uir_base/validation/manuscript.py
+/projects/uir_base/validation/finalize_paper.py
+/projects/uir_base/scripts/next_manuscript.py
+/projects/uir_base/representation_research/manuscript.py
+/projects/uir_security/evaluation/scie_v4/manuscript.py
+/projects/uir_security/evaluation/scie_v4/build_manuscripts.py
+/projects/uir_security/evaluation/scie_v4_2/paper.py
+/projects/uir_security/evaluation/scie_v4_2/build_manuscripts.py
+
 # Manuscripts remain local; code and numerical evidence are public candidates.
-projects/*/paper/
-archive/*/paper/
+projects/*/paper/*
+!projects/*/paper/README.md
+archive/*/paper/*
+!archive/*/paper/README.md
 *.tex
 *.bib
 *.pdf
@@ -101,7 +116,12 @@ projects/*/results/*/adjudication_private*
 /projects/*/results/**/manuscript_private/
 /projects/*/results/**/private_*/
 /projects/*/results/**/reports/
+/archive/*/results/**/work_reports/
+/archive/*/results/**/manuscript_private/
+/archive/*/results/**/private_*/
+/archive/*/results/**/reports/
 /projects/uir_base/results/114_project_layout_2026_10_21/
 /projects/uir_law/results/law200/
 /projects/*/reports/
-/projects/*/paper/
+/archive/*/reports/
+

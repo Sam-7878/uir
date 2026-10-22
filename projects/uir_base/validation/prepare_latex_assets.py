@@ -2,10 +2,15 @@
 import shutil
 from pathlib import Path
 from .common import sha, write
-from .manuscript import PAPER
+try:
+    from .manuscript import PAPER
+except ImportError:
+    PAPER = None
 
 
 def run():
+    if PAPER is None:
+        raise RuntimeError("Validation manuscript module is private/local-only and not present in this environment.")
     neighbor = Path("/mnt/d/_Work/goat_bank/dlg_gnn/projects/benchmark/paper/current/mdpi/Definitions")
     records = []
     for name in ("logo-mdpi", "logo-updates"):

@@ -4,6 +4,21 @@ import re
 
 PROJECTS = {"uir_base", "uir_security", "uir_law"}
 
+HISTORICAL_RESULTS = {
+    "uir_base": {
+        "uir", "uir_generalization", "uir_phase3", "uir_phase3b", "uir_phase3c",
+        "uir_phase3d", "uir_phase4", "uir_phase4b", "uir_phase4c", "uir_phase4d",
+        "uir_phase4e", "uir_phase4f", "uir_slm",
+    },
+    "uir_security": {
+        "llm_security", "llm_security_v2", "llm_security_v3", "llm_security_v3_1",
+        "llm_security_v3_1_preclosure", "llm_security_v3_prevalidation",
+        "llm_security_v3_2_antigravity_incomplete_20260908",
+        "llm_security_v3_2_interrupted_20260908",
+    },
+    "uir_law": set(),
+}
+
 
 def repo_root(start: str | Path = __file__) -> Path:
     path = Path(start).resolve()
@@ -53,9 +68,14 @@ def relocated_relative(relative: str) -> Path:
     if len(parts) > 4 and parts[:4] == law_prefix and parts[4] in {"data", "results"}:
         kind = "data" if parts[4] == "data" else "execution"
         return Path("projects/uir_law/results/law200", kind, *parts[5:])
-    # Owner exception: docs/work_reports is canonical and stays LOCAL ONLY.
-    if len(parts) >= 4 and parts[0] == "archive" and parts[1] in PROJECTS and parts[2] == "results":
-        return Path("projects", parts[1], "results", *parts[3:])
+    # Historical results reside in archive/<project>/results/, active results in projects/<project>/results/
+    if len(parts) >= 4 and parts[0] in {"archive", "projects"} and parts[1] in PROJECTS and parts[2] == "results":
+        project = parts[1]
+        task = parts[3]
+        if task in HISTORICAL_RESULTS.get(project, set()):
+            return Path("archive", project, "results", *parts[3:])
+        else:
+            return Path("projects", project, "results", *parts[3:])
     paper_map = {"_47_UIR": ("uir_base", "paper/_47_UIR"),
                  "_47_UIR_revision_next": ("uir_base", "results/110_mdpi_rev/manuscript_private/revision_next"),
                  "_47_1_UIR_ZTA": ("uir_security", "paper/_47_1_UIR_ZTA"),

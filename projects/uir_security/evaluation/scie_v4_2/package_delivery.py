@@ -1,7 +1,10 @@
 """Local review bundles, CRC checked and built again after safe extraction."""
 from .common import *
 from .closure_reports import FREEZE_ID
-from .build_manuscripts import build
+try:
+    from .build_manuscripts import build
+except ImportError:
+    build = None
 import shutil
 import subprocess
 import tempfile
@@ -106,6 +109,8 @@ Shared included body and back matter, clean bibliography, vector figures, 600dpi
                 if r.returncode:raise RuntimeError('Extracted source tests failed')
                 results.append({'package':package['path'],'fresh_directory_tests':30,'passed':True,'scope':'same OS/root venv; actual extracted typed/effect source, not full legacy inference'})
             else:
+                if build is None:
+                    raise RuntimeError("build_manuscripts is private/local-only and not present in this environment.")
                 main='HETE_PREPRINT_V2.tex' if package['path'].startswith('HETE_PREPRINT') else 'HETE_JOURNAL_V4_2.mdpi.tex'
                 pdf=build(dest,main,TASK/'logs'/('FRESH_'+package['path']+'.txt'))
                 text=(dest/Path(main).with_suffix('.log')).read_text(errors='replace')

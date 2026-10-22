@@ -10,7 +10,10 @@ import sys
 import tempfile
 import zipfile
 from .common import ARCHIVE, DOC, OLD, OUT, ROOT, check_frozen, csvfile, load, read, sha, utc, write
-from .manuscript import PAPER
+try:
+    from .manuscript import PAPER
+except ImportError:
+    PAPER = None
 from .qa import checked_reference, unique_cases, required_finish
 
 REPORT_ROOT = DOC.parent
@@ -35,6 +38,8 @@ STATUS = [
 
 def metadata():
     check_frozen()
+    if PAPER is None:
+        raise RuntimeError("Validation manuscript module is private/local-only and not present in this environment.")
     extras = sorted((OUT / "official_evaluator_wheels").glob("*.whl"))
     requirements = []; manifest = []
     for p in extras:
@@ -93,6 +98,8 @@ def metadata():
 
 def export(destination):
     check_frozen()
+    if PAPER is None:
+        raise RuntimeError("Validation manuscript module is private/local-only and not present in this environment.")
     if destination.exists(): raise FileExistsError("Refuse release replacement")
     overlay = {}
     for directory in (ROOT / "projects/uir_base/validation", OUT, DOC, PAPER):

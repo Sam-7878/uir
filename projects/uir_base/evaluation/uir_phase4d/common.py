@@ -13,11 +13,13 @@ def _find_repo_root(p: Path) -> Path:
     return p.parents[3]
 
 
+from uir_common.paths import recorded_path
+
 ROOT = _find_repo_root(Path(__file__).resolve())
 EVAL_DIR = Path(__file__).resolve().parent
-RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4d"
-P4C_RESULTS_DIR = ROOT / "projects/uir_base/results/uir_phase4c"
-DOCS_DIR = ROOT / "projects/uir_base/results/104_uir_pahse_4d/reports"
+RESULTS_DIR = recorded_path(ROOT, "projects/uir_base/results/uir_phase4d")
+P4C_RESULTS_DIR = recorded_path(ROOT, "projects/uir_base/results/uir_phase4c")
+DOCS_DIR = ROOT / "projects/uir_base/results/104_uir_pahse_4d/reports" if (ROOT / "projects/uir_base/results/104_uir_pahse_4d/reports").exists() else RESULTS_DIR / "reports"
 FROZEN_DIR = RESULTS_DIR / "frozen_inputs"
 SOURCE_DIR = ROOT / "projects/uir_base/evaluation/uir_phase4c/official_sources"
 RAW_DIR = RESULTS_DIR / "raw_captures"

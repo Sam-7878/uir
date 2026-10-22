@@ -8,6 +8,16 @@ on `main`:
 - [uir_security](projects/uir_security): security and zero-trust experiments.
 - [uir_law](projects/uir_law): legal-domain evaluation.
 
+Project landing pages, curated evidence and reports are indexed by project in
+[the artifact layout](projects/ARTIFACT_LAYOUT.md). Large raw runs, unsubmitted manuscripts,
+and private work orders stay in Git-ignored local storage.
+
+| Project | Purpose | Status | Fast verification |
+|---|---|---|---|
+| [`uir_base`](projects/uir_base/README.md) | Grounded financial answers and utility | Active revision candidate | `python scripts/reproduce_project.py uir_base verify` |
+| [`uir_security`](projects/uir_security/README.md) | Security and zero-trust experiments | Canonical v3.2 package | `python scripts/reproduce_project.py uir_security verify` |
+| [`uir_law`](projects/uir_law/README.md) | Legal-domain evaluation | LAW200 benchmark | `python scripts/reproduce_project.py uir_law verify` |
+
 `uir_base` is the base project; `uir_law` and `uir_security` derive from shared
 core/interfaces without copying the core. Root folders contain cross-project
 infrastructure. Project-wide docs/resources belong to `projects/<project>/`;
@@ -22,11 +32,11 @@ are not blanket-private.
 
 Shared Python sources have one physical location: `src/llm_trust` and
 `src/uir_common`. Rust sources remain in the self-contained `crates` workspace.
-Project evaluation, scripts and current results live under `projects/<project>`;
-historical base results are under `projects/uir_base/results`.
+Active project evaluation, scripts and current results live under `projects/<project>`;
+historical developmental results are preserved under `archive/<project>/results`.
 Do not create root package copies or symbolic-link compatibility directories.
-See [current layout](docs/architecture/PROJECT_LAYOUT.md) and
-[Rust provenance](docs/architecture/RUST_PROVENANCE.md).
+See [current layout](docs/architecture/PROJECT_LAYOUT.md), [artifact layout](projects/ARTIFACT_LAYOUT.md),
+and [Rust provenance](docs/architecture/RUST_PROVENANCE.md).
 
 The shared import names remain `llm_trust` and `uir_common`. New project code
 should import `projects.<project>.evaluation.<module>`. The small

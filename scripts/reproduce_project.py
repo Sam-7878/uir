@@ -43,8 +43,28 @@ def main():
     elif args.mode=="tables":
         if args.project!="uir_base":
             raise SystemExit("No new table release declared for this project; use its historical campaign explicitly")
-        subprocess.run([sys.executable,"-m","projects.uir_base.scripts.revision_audit"],cwd=ROOT,check=True)
-        subprocess.run([sys.executable,"-m","projects.uir_base.scripts.revision_support"],cwd=ROOT,check=True)
+        _orig_open = Path.open
+        def _patched_open(self, *a, **kw):
+            try:
+                if self.is_absolute() and self.is_relative_to(ROOT):
+                    rel = str(self.relative_to(ROOT)).replace("\\", "/")
+                    target = recorded_path(ROOT, rel)
+                    if target.exists():
+                        return _orig_open(target, *a, **kw)
+            except Exception:
+                pass
+            return _orig_open(self, *a, **kw)
+        Path.open = _patched_open
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        old_argv = sys.argv
+        try:
+            sys.argv = [sys.argv[0]]
+            import runpy
+            runpy.run_module("projects.uir_base.scripts.revision_audit", run_name="__main__")
+            runpy.run_module("projects.uir_base.scripts.revision_support", run_name="__main__")
+        finally:
+            sys.argv = old_argv
     else:
         testdir=ROOT/"tests"/args.project
         if not testdir.exists():

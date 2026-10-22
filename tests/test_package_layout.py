@@ -71,7 +71,7 @@ def test_legacy_import_namespace_uses_only_canonical_project_sources():
     }
     assert Path(common.__file__).resolve() == ROOT / "projects/uir_base/evaluation/uir_phase4d/common.py"
     assert common.EVAL_DIR == Path(common.__file__).resolve().parent
-    assert common.FROZEN_DIR == ROOT / "projects/uir_base/results/uir_phase4d/frozen_inputs"
+    assert common.FROZEN_DIR == ROOT / "archive/uir_base/results/uir_phase4d/frozen_inputs"
     assert Path(runtime_case.__file__).resolve() == ROOT / "projects/uir_security/evaluation/llm_security_v3_2/schema/runtime_case.py"
 
 

@@ -32,9 +32,10 @@ Create a fresh task with `python scripts/create_project_task.py uir_base 115_exa
 Existing frozen layouts, including T-stage `run_<UTC>`, keep their internal structure.
 
 `docs/work_reports` bundles were restored in place following the owner's clarification;
-their bytes are preserved, with a separate reversal receipt. Project papers are under `paper/`;
-N-stage drafts are task-local `manuscript_private`. Archived base results now reside
-in base `results/<task>`. Project-specific docs moved to project `docs/`.
+their bytes are preserved, with a separate reversal receipt. Project papers feature a public
+landing page at `paper/README.md`, while drafts are under `paper/current/` or task-local
+`manuscript_private`. Historical developmental results reside in `archive/<project>/results/`.
+Project-specific docs moved to project `docs/`.
 The private task `114_project_layout_2026_10_21` holds old/new paths and SHA-256s.
 Frozen content, embedded paths and archive members are unchanged. Historical readers
 can explicitly use `uir_common.paths.recorded_path` and must still check original
@@ -73,15 +74,18 @@ uir/
       scripts/             project orchestration and experiment entry points
       results/             current evidence and project result entry points
       reports/             project reporting entry points
-      paper/current/       private manuscript workspace; excluded from public Git
+      paper/
+        README.md          public paper landing page
+        current/           private manuscript workspace; excluded from public Git
       reproduce.sh         project verification/table/test entry point
-  archive/uir_base/results/ historical base evidence, not overwritten by revision
+  archive/
+    uir_base/results/      historical base evidence (phases 1-4f, slm)
+    uir_security/results/  historical security evaluation rounds
   docs/architecture/       common architectural contracts and provenance
-  docs/work_reports/       project reports and work orders
-  docs/papers/             unchanged legacy private manuscripts
-  tests/                  project-scoped regression tests
-  scripts/                repository-wide maintenance/runtime entry points
-  local_storage/          local model weights and caches; excluded from Git
+  docs/work_reports/       project reports and work orders (local only)
+  tests/                   project-scoped regression tests
+  scripts/                 repository-wide maintenance/runtime entry points
+  local_storage/           local model weights and caches; excluded from Git
 ```
 
 The tree shows the repeating project pattern; each project is a separate portal.

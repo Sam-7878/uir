@@ -4,8 +4,10 @@ import json
 from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
-from .common import DOC, OUT, ROOT, check_frozen, csvfile, load, read, sha, utc, write
-from .manuscript import PAPER
+try:
+    from .manuscript import PAPER
+except ImportError:
+    PAPER = ROOT / "docs/work_reports/uir_base/111_validation/manuscript/revision_vNext"
 from .release import REPORT_ROOT, STATUS
 
 COMMANDS = {
