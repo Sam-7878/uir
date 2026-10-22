@@ -84,9 +84,7 @@ test_len.py
 
 # Manuscripts remain local; code and numerical evidence are public candidates.
 projects/*/paper/*
-!projects/*/paper/README.md
 archive/*/paper/*
-!archive/*/paper/README.md
 *.tex
 *.bib
 *.pdf
