@@ -1,0 +1,43 @@
+{
+  "audit_timestamp": "2026-10-23T23:38:00Z",
+  "stage_audited": 118,
+  "manifest_path": "/mnt/d/_Work/goat_bank/uir/projects/uir_base/results/118_electronics_submission_remediation_2026_10_23/EVIDENCE_MANIFEST_118.json",
+  "total_sealed_entries": 28,
+  "verified_hash_count": 28,
+  "mismatches_count": 0,
+  "mismatches": [],
+  "exact_hypergeometric": {
+    "M": 82,
+    "n": 60,
+    "null_K": 5,
+    "exact_p": 0.0009651337993418882,
+    "comb_77_60": 49053802362729780,
+    "comb_82_60": 50825908693881519120,
+    "P_X0_given_K1": 0.2682926829268293,
+    "P_X0_given_K2": 0.06955736224028906,
+    "P_X0_given_K3": 0.017389340560072266,
+    "upper_bound_K": 2,
+    "upper_bound_fraction": 0.024390243902439025,
+    "upper_bound_percentage": 2.4390243902439024
+  },
+  "stage118_defect_identification": {
+    "abstract_word_count_defect": {
+      "reported_in_s118_checklist": 305,
+      "s118_status": "PASSED (Incorrectly passed)",
+      "actual_mdpi_requirement": "About 200 words maximum, single paragraph",
+      "actual_word_count": 343,
+      "disposition": "REVISION_REQUIRED"
+    },
+    "reference_falsification_defect": {
+      "key": "yang2024multiagent",
+      "claimed_slot": "Electronics 2024, 13(18), 3612",
+      "actual_slot_content": "Gon\u00e7alves, Bragan\u00e7a, and Souto, 'Efficient Human Activity Recognition on Wearable Devices Using Knowledge Distillation Techniques'",
+      "disposition": "FALSE_METADATA_DETECTED_REPLACEMENT_REQUIRED"
+    },
+    "author_placeholders_defect": {
+      "manuscript_state": "[AUTHOR NAMES PENDING AUTHOR SIGN-OFF]",
+      "disposition": "REQUIRES_A10_IMPORT_AND_HUMAN_CONFIRMATION"
+    }
+  },
+  "verdict": "STAGE_118_PHYSICAL_HASHES_VERIFIED_BUT_DOWNGRADED_TO_REVISION_REQUIRED"
+}

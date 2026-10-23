@@ -1,0 +1,25 @@
+claim_symbol,manuscript_section,reported_value,raw_source_file,raw_key_or_filter,verified_raw_value,lineage_status,statistical_interpretation
+M,Abstract / Sec 5.1,82,primary_manifest_116.json,clusters_count,82,VERIFIED_EXACT,Total eligible manifest owner clusters in convenience frame
+n,Abstract / Sec 5.1,60,primary_manifest_116.json,sample_clusters_count,60,VERIFIED_EXACT,Number of clusters sampled without replacement (SRSWOR)
+N_cases,Abstract / Sec 5.1,240,primary_raw.jsonl,unique_case_ids,240,VERIFIED_EXACT,Total test cases across 60 sampled clusters (4 cases/cluster)
+N_records,Abstract / Sec 5.1,480,primary_raw.jsonl,total_records,480,VERIFIED_EXACT,240 Python records + 240 Rust records
+primary_state_match,Abstract / Sec 5.1,480 / 480 (100.0%),primary_raw.jsonl,state_match_count,480 / 480 (100.0%),VERIFIED_EXACT,Zero cluster execution discrepancies between Python 3.14 and Rust 1.99
+primary_fact_match,Abstract / Sec 5.1,480 / 480 (100.0%),primary_raw.jsonl,fact_id_match_count,480 / 480 (100.0%),VERIFIED_EXACT,Bit-exact fact ID matching across all evaluated pairs
+cluster_failures,Abstract / Sec 5.1,0 / 60 (0.0%),primary_raw.jsonl,failed_clusters,0 / 60 (0.0%),VERIFIED_EXACT,Observed failure count x=0
+p_hypergeometric,Abstract / Sec 5.1,0.000965134,independent_recompute_118.json,exact_hypergeometric_p,0.0009651337993418882,VERIFIED_EXACT,comb(77, 60) / comb(82, 60), rejects null K >= 5
+K_upper_bound,Abstract / Sec 5.1,2 (2.439%),independent_recompute_118.json,one_sided_95_upper_bound_K,2 (2.439%),VERIFIED_EXACT,Exact conservative one-sided 95% confidence upper bound on frame
+N_secondary_rows,Abstract / Sec 5.2,1920,secondary_raw.jsonl,total_rows,1920,VERIFIED_EXACT,240 cases x 2 representations x 2 selectors x 2 renderers
+unique_model_captures,Sec 5.2 / Threats,480,model_capture_reuse_118.csv,unique_prompt_hashes,480,VERIFIED_EXACT,240 ALLOW + 240 DENY calls to Phi-3.5-mini reused across representations
+ALLOW_cases,Sec 5.2 / Table 2,120,secondary_raw.jsonl,decision_ALLOW_count,120,VERIFIED_EXACT,Authorized test queries
+DENY_cases,Sec 5.2 / Table 2,120,secondary_raw.jsonl,decision_DENY_count,120,VERIFIED_EXACT,Unauthorized test queries (counterfactual stress tests)
+SLM_ALLOW_exact_match,Abstract / Sec 5.3,0 / 120 (0.0%),secondary_raw.jsonl,ALLOW_exact_matches,0 / 120 (0.0%),VERIFIED_EXACT,Model over-selected distractors in all authorized cases
+SLM_all_exact_match,Sec 5.3,0 / 240 (0.0%),secondary_raw.jsonl,all_exact_matches,0 / 240 (0.0%),VERIFIED_EXACT,Pooled diagnostic exact match rate
+SLM_selector_recall,Sec 5.3,1.0000,secondary_raw.jsonl,recall,1.0000,VERIFIED_EXACT,Model captured all requested facts (crucial prerequisite for guard filter)
+SLM_selector_precision,Sec 5.3,0.3529,secondary_raw.jsonl,precision,0.3529,VERIFIED_EXACT,Model included 232 distractor facts across evaluated ALLOW cases
+SLM_selector_macro_F1,Abstract / Sec 5.3,0.5159,secondary_raw.jsonl,macro_f1,0.5159,VERIFIED_EXACT,Component-level selection Macro F1
+template_guard_recovery,Abstract / Sec 5.3,120 / 120 (100.0%),secondary_raw.jsonl,template_complete,120 / 120 (100.0%),VERIFIED_EXACT,Set intersection filtered distractors and restored 100% complete displays
+generative_renderer_complete,Sec 5.3 / Table 2,76 / 120 (63.33%),secondary_raw.jsonl,generative_complete,76 / 120 (63.33%),VERIFIED_EXACT,Cases where generative renderer preserved requested facts
+generative_renderer_omission,Abstract / Sec 5.3,44 / 120 (36.67%),secondary_raw.jsonl,generative_omission,44 / 120 (36.67%),VERIFIED_EXACT,Cases where generative renderer omitted facts (utility penalty)
+unsupported_display_claims,Abstract / Sec 5.3,0 / 120 (0.0%),secondary_raw.jsonl,unsupported_claims,0 / 120 (0.0%),VERIFIED_EXACT,Zero hallucinations displayed under deterministic guard
+DENY_blocked_displays,Table 2,120 / 120 (100.0%),secondary_raw.jsonl,DENY_blocked,120 / 120 (100.0%),VERIFIED_EXACT,Zero unauthorized displays admitted to user interface
+UIR_vs_specialized_delta,Abstract / Sec 5.4,0 (0.0%),secondary_raw.jsonl,representation_delta,0 (0.0%),VERIFIED_EXACT,Identical outcomes across all 1920 cells; zero representation superiority

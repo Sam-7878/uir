@@ -1,0 +1,7 @@
+citation_key,in_text_usage,supports_claim,claim_boundary
+nam2026baseline,Controlled regression evaluation and output length constraints under fixed task budgets in generative software engineering,YES,Demonstrates test regression dynamics in LLM code generation under bounded compute
+beurer2023lmql,Constrained decoding and typed queries for language model interaction,YES,"Constrained grammar parsing enforces syntactical validity, complementary to runtime contract monitoring"
+xia2024sbom,Software Bill of Materials (SBOM) and manifest structures for dependency supply chain governance,YES,Defines software manifest metadata contracts and dependency tree governance
+kopetz2011realtime,Architectural principles for safety-critical distributed and electronic systems,YES,Establishes fault-containment boundaries and temporal determinism requirements
+dong2025safeguarding,Survey of guardrail architectures and neurosymbolic defense mechanisms for foundation models,YES,Surveys existing guardrails and highlights the necessity of deterministic pre/post verification
+xi2023rise,Multi-agent autonomous collaborative systems powered by large language models,YES,Reviews agent architectures and tool interaction patterns

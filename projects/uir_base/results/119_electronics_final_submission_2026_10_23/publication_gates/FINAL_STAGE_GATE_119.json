@@ -1,0 +1,53 @@
+{
+  "stage": 119,
+  "stage_name": "FINAL_SUBMISSION_VERIFICATION",
+  "project": "UIR Electronics Special Issue Submission",
+  "timestamp": "2026-10-24T00:05:40Z",
+  "title": "Policy-and-Evidence Intermediate Contracts for Generative-AI Software: Independent Interpreter Conformance and Query-Aware Grounding",
+  "authors": [
+    {
+      "name": "Seong-Su Park",
+      "affiliation": "Department of Computer Engineering, Ajou University, Suwon 16499, Republic of Korea",
+      "email": "parky@ajou.ac.kr",
+      "orcid": "0009-0008-4056-3875",
+      "role": "First Author"
+    },
+    {
+      "name": "Ki-Hyung Kim",
+      "affiliation": "Department of Cyber Security, Ajou University, Suwon 16499, Republic of Korea",
+      "email": "kkim86@ajou.ac.kr",
+      "phone": "+82-31-219-2433",
+      "orcid": "0000-0002-2321-4475",
+      "role": "Corresponding Author"
+    }
+  ],
+  "funding": "National Program for Excellence in Software, Institute of Information & Communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) (No. 2023-0-00042)",
+  "target_journal": {
+    "name": "Electronics (MDPI)",
+    "special_issue": "Generative and Multi-Agent AI for Next-Generation Electronic and Software Systems",
+    "special_issue_url": "https://www.mdpi.com/journal/electronics/special_issues/WFBEQFE47X"
+  },
+  "gate_dispositions": {
+    "MANUSCRIPT_TECHNICAL_READY": {
+      "status": "PASS",
+      "justification": "All scientific claims bounded to M=82 convenience frame; mathematical proofs separated from empirical trials; exact hypergeometric upper bound K<=2 (2.439%) verified; dual Python 3.14 and Rust 1.99 cross-execution confirmed at 480/480 (100.0%) with 0 discrepancies."
+    },
+    "EDITORIAL_POLICY_COMPLIANT": {
+      "status": "PASS",
+      "justification": "Compiled using official Definitions/mdpi.cls template (15 pages); abstract condensed to 181 words single paragraph in plain visible text; all 34 references verified authentic with Guest Editor citation (Nam & Yang 2026 Electronics 15(18), 4334)."
+    },
+    "REPRODUCIBILITY_VERIFIED": {
+      "status": "PASS",
+      "justification": "Multi-tier reproduction manual established across Level 1 (statistical recompute < 2 min), Level 2 (cross-interpreter CPU run < 10 min), and Level 3 (generative SLM GPU inference); data availability clearly partitions public safe aggregates from restricted manifests."
+    },
+    "PUBLIC_RELEASE_READY": {
+      "status": "BLOCKED",
+      "justification": "Public release of raw third-party GitHub manifests and proprietary source code remains blocked pending human PI licensing sign-off and post-acceptance release protocol."
+    },
+    "SUBMISSION_READY": {
+      "status": "BLOCKED",
+      "justification": "Automated pipeline halts prior to third-party transmission. Upload to MDPI SuSy submission portal must be manually executed by the Principal Investigator / Corresponding Author."
+    }
+  },
+  "final_verdict": "VERIFICATION_COMPLETE_AWAITING_PI_HANDOFF"
+}

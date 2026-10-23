@@ -1,0 +1,143 @@
+{
+  "manuscript_title": "Policy-and-Evidence Intermediate Contracts for Generative-AI Software: Independent Interpreter Conformance and Query-Aware Grounding",
+  "audit_stage": 119,
+  "timestamp": "2026-10-24T00:04:00Z",
+  "overall_verdict": "CONSISTENT_PASS",
+  "checked_parameters": [
+    {
+      "parameter": "convenience_frame_clusters",
+      "symbol": "M",
+      "raw_log_value": 82,
+      "latex_value": 82,
+      "pdf_rendered_value": 82,
+      "abstract_value": 82,
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "sampled_clusters_confirmatory",
+      "symbol": "n",
+      "raw_log_value": 60,
+      "latex_value": 60,
+      "pdf_rendered_value": 60,
+      "abstract_value": 60,
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "total_primary_evaluation_records",
+      "symbol": "N_primary",
+      "raw_log_value": 240,
+      "latex_value": 240,
+      "pdf_rendered_value": 240,
+      "abstract_value": 240,
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "dual_cross_execution_records",
+      "symbol": "2 * N_primary",
+      "raw_log_value": 480,
+      "latex_value": "480 / 480",
+      "pdf_rendered_value": "480 / 480 (100.0%)",
+      "abstract_value": "480/480 (100.0%)",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "observed_cluster_failures",
+      "symbol": "x",
+      "raw_log_value": 0,
+      "latex_value": 0,
+      "pdf_rendered_value": "0 / 60",
+      "abstract_value": "0",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "exact_hypergeometric_p_value",
+      "symbol": "P(X=0 | K=3)",
+      "raw_log_value": 0.000965134,
+      "latex_value": "p = 0.000965134",
+      "pdf_rendered_value": "0.000965134",
+      "abstract_value": "0.000965",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "upper_bound_failed_clusters_95pct",
+      "symbol": "K_bound",
+      "raw_log_value": 2,
+      "latex_value": "K <= 2/82 (2.439%)",
+      "pdf_rendered_value": "K <= 2 (2.439%)",
+      "abstract_value": "at most 2/82 (2.439%)",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "factorial_cells",
+      "symbol": "C_cells",
+      "raw_log_value": 8,
+      "latex_value": "2 x 2 x 2",
+      "pdf_rendered_value": "2 x 2 x 2 (8 conditions)",
+      "abstract_value": "eight-condition",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "total_factorial_outcome_rows",
+      "symbol": "N_factorial",
+      "raw_log_value": 1920,
+      "latex_value": 1920,
+      "pdf_rendered_value": "1,920",
+      "abstract_value": "1,920",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "slm_fact_selector_allow_exact_match",
+      "symbol": "Selector_ALLOW_exact",
+      "raw_log_value": "0 / 120",
+      "latex_value": "0 / 120 (0.0%)",
+      "pdf_rendered_value": "0 / 120 (0.0%)",
+      "abstract_value": "0/120",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "evidence_guard_template_recovery_rate",
+      "symbol": "Guard_Recovery",
+      "raw_log_value": "120 / 120",
+      "latex_value": "120 / 120 (100.0%)",
+      "pdf_rendered_value": "120 / 120 (100.0%)",
+      "abstract_value": "100.0% (120/120)",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "generative_renderer_omission_rate",
+      "symbol": "Renderer_Omission",
+      "raw_log_value": "44 / 120 (36.67%)",
+      "latex_value": "44 / 120 (36.67%)",
+      "pdf_rendered_value": "36.67% (44/120)",
+      "abstract_value": "36.67% (44/120)",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "representation_neutrality_delta",
+      "symbol": "Delta_repr",
+      "raw_log_value": "0.0%",
+      "latex_value": "0.0%",
+      "pdf_rendered_value": "0.0%",
+      "abstract_value": "identical outcomes",
+      "status": "EXACT_MATCH"
+    },
+    {
+      "parameter": "abstract_word_count",
+      "symbol": "W_abstract",
+      "raw_log_value": 181,
+      "latex_value": 181,
+      "pdf_rendered_value": 181,
+      "abstract_value": 181,
+      "status": "EXACT_MATCH (<= 200 words)"
+    },
+    {
+      "parameter": "total_bibliography_citations",
+      "symbol": "N_bib",
+      "raw_log_value": 34,
+      "latex_value": 34,
+      "pdf_rendered_value": 34,
+      "abstract_value": "N/A",
+      "status": "EXACT_MATCH"
+    }
+  ]
+}

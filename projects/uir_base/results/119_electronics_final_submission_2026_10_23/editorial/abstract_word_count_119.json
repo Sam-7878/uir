@@ -1,0 +1,17 @@
+{
+  "journal_target": "MDPI Electronics",
+  "requirement": "About 200 words maximum, single paragraph",
+  "stage118_abstract": {
+    "paragraphs": 3,
+    "word_count": 374,
+    "status": "FAIL_EXCEEDS_MAXIMUM"
+  },
+  "stage119_revised_abstract": {
+    "paragraphs": 1,
+    "word_count": 181,
+    "status": "PASS_COMPLIANT",
+    "content": "Integrating Small Language Model (SLM) components into software systems introduces dependability challenges, including non-deterministic semantic hallucination and unauthorized action proposals. In this paper, we evaluate an externally enforced Policy-and-Evidence Intermediate Contract architecture that wraps generative components with typed semantic contracts and deterministic verification boundaries without altering model weights. In a design-based confirmatory trial over a frozen frame of $M=82$ open-source software manifest clusters ($N=240$ cases, $n=60$ sampled clusters), independently implemented Python~3.14 and Rust~1.99 interpreters achieved $100.0\\%$ ($480/480$) mutual state and fact-level conformance ($p = 0.000965$, bounding frame failures to $\\le 2/82$ at $95\\%$ confidence). In an eight-condition factorial evaluation ($N=1,920$ matched outcomes using Phi-3.5-mini), the SLM selector achieved $0/120$ exact match on authorized queries due to distractor over-selection, yet full proposal recall enabled a deterministic evidence guard to recover $100.0\\%$ ($120/120$) complete displays under template rendering. Generative rendering incurred a $36.67\\%$ ($44/120$) utility omission penalty without safety gain. Equivalent specialized contracts produced identical outcomes, confirming that safety guarantees stem from the deterministic policy boundary rather than representation syntax."
+  },
+  "reduction_percentage": 51.6,
+  "verdict": "ABSTRACT_COMPLIANT_WITH_MDPI_ELECTRONICS_INSTRUCTIONS"
+}
