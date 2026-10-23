@@ -1,0 +1,39 @@
+{
+  "architecture": "8-cell matched factorial design",
+  "underlying_unique_model_invocations": 480,
+  "cells": {
+    "C1_Spec_Det_Tmpl": {
+      "reused_calls": 0,
+      "model_invoked": false
+    },
+    "C2_Spec_Det_SLM": {
+      "reused_calls": 120,
+      "model_invoked": "Renderer only"
+    },
+    "C3_Spec_SLM_Tmpl": {
+      "reused_calls": 120,
+      "model_invoked": "Selector only"
+    },
+    "C4_Spec_SLM_SLM": {
+      "reused_calls": 240,
+      "model_invoked": "Selector + Renderer"
+    },
+    "C5_UIR_Det_Tmpl": {
+      "reused_calls": 0,
+      "model_invoked": false
+    },
+    "C6_UIR_Det_SLM": {
+      "reused_calls": 120,
+      "model_invoked": "Reused from C2"
+    },
+    "C7_UIR_SLM_Tmpl": {
+      "reused_calls": 120,
+      "model_invoked": "Reused from C3"
+    },
+    "C8_UIR_SLM_SLM": {
+      "reused_calls": 240,
+      "model_invoked": "Reused from C4"
+    }
+  },
+  "dependency_statement": "Comparisons between UIR and Specialized cells evaluate identical prompt-response pairs. Observed outcome equality reflects contract compilation invariance, not independent statistical replication."
+}

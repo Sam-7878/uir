@@ -1,0 +1,41 @@
+{
+  "audit_timestamp": "2026-10-23T21:05:00Z",
+  "auditor": "Stage 118 Independent Cross-Stage Recomputation Engine",
+  "frame_definition": "Frozen 82 eligible GitHub software manifest owner clusters",
+  "frame_M": 82,
+  "sample_n": 60,
+  "null_hypothesis_K": 5,
+  "observed_failures": 0,
+  "combinatorial_numerator": 49053802362729780,
+  "combinatorial_denominator": 50825908693881519120,
+  "exact_hypergeometric_p": 0.0009651337993418882,
+  "exact_hypergeometric_formula": "comb(77, 60) / comb(82, 60)",
+  "one_sided_95_upper_bound_K": 2,
+  "one_sided_95_upper_bound_fraction": 0.024390243902439025,
+  "probability_tail_values": {
+    "P_X0_given_K1": 0.2682926829268293,
+    "P_X0_given_K2": 0.06955736224028906,
+    "P_X0_given_K3": 0.017389340560072266
+  },
+  "secondary_metrics_check": {
+    "ALLOW_cases": 120,
+    "DENY_cases": 120,
+    "SLM_ALLOW_selector_exact": 0,
+    "SLM_ALLOW_selector_exact_rate": "0 / 120 (0.0%)",
+    "SLM_all_case_selector_exact": 0,
+    "SLM_all_case_selector_exact_rate": "0 / 240 (0.0%)",
+    "SLM_ALLOW_renderer_complete": 76,
+    "SLM_ALLOW_renderer_complete_rate": "76 / 120 (63.33%)",
+    "SLM_ALLOW_renderer_omission": 44,
+    "SLM_ALLOW_renderer_omission_rate": "44 / 120 (36.67%)",
+    "TEMPLATE_ALLOW_complete": 120,
+    "TEMPLATE_ALLOW_complete_rate": "120 / 120 (100.0%)",
+    "DENY_blocked_all_cells": "120 / 120 (100.0%)",
+    "unsupported_display_claims": 0
+  },
+  "cross_interpreter_implementation_provenance": {
+    "independent_implementation_teams": false,
+    "description": "Python and Rust interpreters were implemented from a shared formal specification and evaluated on identical frozen inputs by the same research agent."
+  },
+  "verdict": "MATHEMATICAL_AND_RECORD_RECOMPUTATION_100_PERCENT_RECONCILED"
+}

@@ -1,0 +1,4 @@
+subset,description,N_cases,raw_exact_matches,raw_exact_rate,macro_precision,macro_recall,macro_F1,avg_proposed_facts,guard_removed_distractors,guard_rescued_complete
+ALLOW_Task_Relevant,Authorized queries requiring factual data retrieval,120,0,0 / 120 (0.0%),0.35,1.0,0.51587,2.93,232,120 / 120 (100.0%)
+DENY_Stress_Diagnostic,Unauthorized queries evaluated under model proposal stress,120,0,0 / 120 (0.0%),0.0,0.0,0.0,1.84,221,0 / 120 (Blocked 100%)
+Pooled_All_Cases,All 240 diagnostic queries across the test corpus,240,0,0 / 240 (0.0%),0.175,0.5,0.25794,2.39,453,"120 ALLOW complete, 120 DENY blocked"

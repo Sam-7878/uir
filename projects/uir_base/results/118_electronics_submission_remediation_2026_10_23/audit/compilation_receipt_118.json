@@ -1,0 +1,21 @@
+{
+  "compilation_timestamp": "2026-10-23T21:16:34Z",
+  "manuscript_title": "Policy-and-Evidence Intermediate Contracts for Generative-AI Software: Independent Interpreter Conformance and Query-Aware Grounding",
+  "compiler": "pdfTeX 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian)",
+  "bibtex_version": "BibTeX 0.99d (TeX Live 2025/Debian)",
+  "exit_code": 0,
+  "pages": 17,
+  "pdf_size_bytes": 376453,
+  "critical_overfull_count": 0,
+  "total_overfull_count": 0,
+  "undefined_references_count": 0,
+  "duplicate_anchors_count": 0,
+  "source_hashes_sha256": {
+    "main.tex": "9822a1f823ff01501e523ca5ddcae6e03e9fd46058e27d9c581d10ec12c17467",
+    "references.bib": "f420bbf971456ebef1c2051dee5768e819b93349e5b0cd50e166113463b52528",
+    "figures/architecture.tex": "6b4a70fd4e74fbc67cacc95c22b6d62c566f63ca30614c34c943e753a4a85dae",
+    "figures/attribution_flow.tex": "077eb16870c10dde075ef37db883209b7c90e942fda76d39d8926e3d75c5eaf7",
+    "main.pdf": "4e303702b812eeb6f6ea110ee5b7cd7df84188cc41febc61ea80a0867661e9d8"
+  },
+  "verdict": "VERIFIED_CLEAN_COMPILATION"
+}

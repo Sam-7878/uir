@@ -1,0 +1,119 @@
+{
+  "manifest_name": "EVIDENCE_MANIFEST_118",
+  "seal_timestamp": "2026-10-23T21:19:30Z",
+  "total_sealed_artifacts": 28,
+  "sealed_artifacts": {
+    "results/audit/compilation_receipt_118.json": {
+      "size_bytes": 1067,
+      "sha256": "58d84ea5f63dea105fec019228e589797608f2ba9ae67fb719132418e7dcff5d"
+    },
+    "results/audit/hash_and_counts_118.json": {
+      "size_bytes": 544,
+      "sha256": "04c9784526842a41b2e17b22d9022733af88f27f49c9c9c93857282a93e82859"
+    },
+    "results/audit/independent_recompute_118.json": {
+      "size_bytes": 1765,
+      "sha256": "2d56c64c19fe81ce84396127c0677efefeede48e443b162bcebae6ab920146c8"
+    },
+    "results/audit/model_capture_reuse_118.csv": {
+      "size_bytes": 46625,
+      "sha256": "8f3dd4d50d976d75f356eefe928dc3035a5b2130d8aa4f50f871a7fec368e888"
+    },
+    "results/audit/raw_to_derived_lineage_118.csv": {
+      "size_bytes": 47062,
+      "sha256": "16f07642d36b7bdb68a6a9110ab48a940ff1542c9e2f027efe5004911ffdc9c7"
+    },
+    "results/audit/visual_layout_audit_118.md": {
+      "size_bytes": 4067,
+      "sha256": "c64abc76e7ed35378bfe774bda760e083a3c3d361fd51097baaff0cb414fd916"
+    },
+    "results/claim_audit/claim_lineage_findings_118.csv": {
+      "size_bytes": 3801,
+      "sha256": "515816d36cb5edf7bcf1eb3fed87e31714bba2f2f047203fbda30f36b022d888"
+    },
+    "results/claim_audit/claim_semantics_audit_118.csv": {
+      "size_bytes": 3542,
+      "sha256": "8d2f354e8064220bc66e5a7b7f338f8f362c3fe63076596ff7fa77cba971886d"
+    },
+    "results/claim_audit/counterfactual_claim_limits_118.md": {
+      "size_bytes": 2266,
+      "sha256": "2fbf425519dec56a62c1c006d80e7cd9889622cb8198e3d75c96e3fc3f7f5e39"
+    },
+    "results/claim_audit/independent_referee_checklist_118.md": {
+      "size_bytes": 5618,
+      "sha256": "60e7bcd4c6cf869f2dc00d039b8539fa60059f9a3619a62264f4392811abe07d"
+    },
+    "results/claim_audit/metric_eligibility_contract_118.yaml": {
+      "size_bytes": 1733,
+      "sha256": "aafb98339fcdf5dc30d04c595c5fd0a1fa0218ceff44684f478afe8e8ba44ea6"
+    },
+    "results/claim_audit/selector_eligible_reanalysis_118.csv": {
+      "size_bytes": 609,
+      "sha256": "66b47dd55972b017ade41d9b88b035bdb83fced4c2aa1113f8d8d46764638b06"
+    },
+    "results/publication_gates/FINAL_STAGE_GATE_118.json": {
+      "size_bytes": 1629,
+      "sha256": "ece11fc99c1327b0d754d9904a1715a45d89ee947c67d64695b69387c3b9d51d"
+    },
+    "results/publication_gates/MANUSCRIPT_VISUAL_GATE_118.json": {
+      "size_bytes": 491,
+      "sha256": "4811f5543c0a25087ecda7d7d757504b4e1740aa696f070ce72bbc0f8d35ba05"
+    },
+    "results/publication_gates/author_declarations_118_PENDING.md": {
+      "size_bytes": 4698,
+      "sha256": "d7098dea29e1d15bdfb619bb59954c7601bbe76b6b5bffeff15bd3ece9c4443c"
+    },
+    "results/publication_gates/submission_checklist_118.md": {
+      "size_bytes": 4503,
+      "sha256": "cd6f8ca9602048917537f76630fe7902f0f45aca5844a086f65b489c8ab39d36"
+    },
+    "results/release/data_availability_proposal_118.md": {
+      "size_bytes": 1248,
+      "sha256": "47ca54a8525c4f4a4ea3079530dc03489436e96d99ab1e5175c77c295f172294"
+    },
+    "results/release/lineage_index_118.json": {
+      "size_bytes": 1657,
+      "sha256": "673d01f721b5ab9f38ec744e0275b3ffbc4e94f9551b11be081a95a73c2ba1d7"
+    },
+    "results/release/local_submission_sources_118.zip": {
+      "size_bytes": 333583,
+      "sha256": "f1bc37b2fa3ee7305593d14460c1c41e73ca08e8c7bef38bbae324536f6a944b"
+    },
+    "results/release/private_reproduction_manifest_118.json": {
+      "size_bytes": 2196,
+      "sha256": "c77315df767355d1cc086115fd17e378b90722a48dc12012eca8aa11c915194a"
+    },
+    "results/release/public_safe_candidate_manifest_118.json": {
+      "size_bytes": 1498,
+      "sha256": "823a498a53ec222c18a3ea54e45d8160cd793713cac53cb9fd2cc542e2cdfcae"
+    },
+    "results/release/rights_clearance_matrix_118.csv": {
+      "size_bytes": 930,
+      "sha256": "3c541695b30546d8013d2e896a63629e926599143d85839b3ad5409299f1355a"
+    },
+    "results/statistics/factorial_dependency_graph_118.json": {
+      "size_bytes": 1113,
+      "sha256": "600b704877fe86c2f77747d15bc5fea80ee3725fafb732cd19fbe31fdaaf28c8"
+    },
+    "paper/main.pdf": {
+      "size_bytes": 376453,
+      "sha256": "4e303702b812eeb6f6ea110ee5b7cd7df84188cc41febc61ea80a0867661e9d8"
+    },
+    "paper/main.tex": {
+      "size_bytes": 52986,
+      "sha256": "9822a1f823ff01501e523ca5ddcae6e03e9fd46058e27d9c581d10ec12c17467"
+    },
+    "paper/references.bib": {
+      "size_bytes": 11896,
+      "sha256": "f420bbf971456ebef1c2051dee5768e819b93349e5b0cd50e166113463b52528"
+    },
+    "paper/figures/architecture.tex": {
+      "size_bytes": 3715,
+      "sha256": "6b4a70fd4e74fbc67cacc95c22b6d62c566f63ca30614c34c943e753a4a85dae"
+    },
+    "paper/figures/attribution_flow.tex": {
+      "size_bytes": 3190,
+      "sha256": "077eb16870c10dde075ef37db883209b7c90e942fda76d39d8926e3d75c5eaf7"
+    }
+  }
+}

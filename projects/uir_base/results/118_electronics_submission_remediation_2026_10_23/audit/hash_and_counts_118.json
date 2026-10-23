@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-23T21:05:00Z",
+  "stage117_manifest_verified_files": 38,
+  "stage117_manifest_total_files": 38,
+  "stage116_v4_raw_outcomes": 480,
+  "stage116_v4_distinct_cases": 240,
+  "stage116_v4_distinct_owners": 60,
+  "stage116_python_rust_state_matches": 480,
+  "stage116_python_rust_fact_matches": 480,
+  "stage116_secondary_outcomes": 1920,
+  "stage116_unique_model_captures": 480,
+  "stage117_secondary_rescored_rows": 1920,
+  "exact_hypergeom_p": 0.0009651337993418882,
+  "one_sided_95_upper_K": 2,
+  "pass_status": "PASS"
+}

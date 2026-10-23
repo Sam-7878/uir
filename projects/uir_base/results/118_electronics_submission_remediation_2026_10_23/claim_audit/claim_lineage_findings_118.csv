@@ -1,0 +1,26 @@
+manuscript_metric,manuscript_value,lineage_source_file,lineage_row_or_key,recomputed_value,lineage_status,audit_notes
+primary_frame_M,82,primary_manifest_116.json,clusters_count,82,EXACT_MATCH,Frozen population of eligible GitHub manifest owner clusters
+primary_sample_n,60,primary_manifest_116.json,sample_clusters_count,60,EXACT_MATCH,Confirmed 60 distinct owners in sample
+primary_test_cases,240,primary_raw.jsonl,unique_case_ids,240,EXACT_MATCH,4 cases per cluster across 60 sampled clusters
+primary_records,480,primary_raw.jsonl,total_records,480,EXACT_MATCH,240 Python records + 240 Rust records
+primary_state_conformance,480 / 480 (100.0%),primary_raw.jsonl,state_match_count,480 / 480 (100.0%),EXACT_MATCH,Bit-exact state match between Python 3.14 and Rust 1.99
+primary_fact_conformance,480 / 480 (100.0%),primary_raw.jsonl,fact_id_match_count,480 / 480 (100.0%),EXACT_MATCH,Bit-exact fact ID match between Python 3.14 and Rust 1.99
+primary_cluster_failures,0 / 60 (0.0%),primary_raw.jsonl,cluster_failures,0 / 60 (0.0%),EXACT_MATCH,Zero clusters exhibited any state or fact deviation
+hypergeometric_null_K,5,independent_recompute_118.json,null_hypothesis_K,5,EXACT_MATCH,Null hypothesis K >= 5 (6.098% failure rate)
+hypergeometric_p_value,0.000965134,independent_recompute_118.json,exact_hypergeometric_p,0.0009651337993418882,EXACT_MATCH,comb(77, 60) / comb(82, 60)
+one_sided_95_upper_bound_K,2 (2.439%),independent_recompute_118.json,one_sided_95_upper_bound_K,2 (2.439%),EXACT_MATCH,Exact conservative finite-population upper bound
+secondary_factorial_rows,1920,secondary_raw.jsonl,total_rows,1920,EXACT_MATCH,240 cases x 2 representations x 2 selectors x 2 renderers
+model_unique_inferences,480,model_capture_reuse_118.csv,unique_prompt_hashes,480,EXACT_MATCH,240 ALLOW prompts + 240 DENY prompts evaluated on Phi-3.5-mini
+ALLOW_case_count,120,secondary_raw.jsonl,decision_ALLOW_count,120,EXACT_MATCH,Authorized query cases with non-empty target facts
+DENY_case_count,120,secondary_raw.jsonl,decision_DENY_count,120,EXACT_MATCH,Unauthorized query cases where display must be suppressed
+SLM_ALLOW_selector_exact,0 / 120 (0.0%),secondary_raw.jsonl,ALLOW_exact_matches,0 / 120 (0.0%),EXACT_MATCH,Phi-3.5-mini over-selected distractors in all authorized cases
+SLM_all_case_selector_exact,0 / 240 (0.0%),secondary_raw.jsonl,all_exact_matches,0 / 240 (0.0%),EXACT_MATCH,Overall raw exact selection diagnostic rate
+SLM_selector_macro_F1,0.5159,secondary_raw.jsonl,macro_f1,0.5159,EXACT_MATCH,Macro F1 reflecting high recall but low precision
+SLM_selector_recall,1.0000,secondary_raw.jsonl,recall,1.0000,EXACT_MATCH,Model never omitted a requested authorized fact
+SLM_selector_precision,0.3529,secondary_raw.jsonl,precision,0.3529,EXACT_MATCH,Model included 232 extraneous distractor facts
+guard_recovery_template,120 / 120 (100.0%),secondary_raw.jsonl,template_complete,120 / 120 (100.0%),EXACT_MATCH,Set intersection filtered distractors and restored 100% utility
+SLM_generative_omission,44 / 120 (36.67%),secondary_raw.jsonl,generative_omission,44 / 120 (36.67%),EXACT_MATCH,Phi-3.5-mini renderer omitted facts in 44 of 120 authorized cases
+SLM_generative_complete,76 / 120 (63.33%),secondary_raw.jsonl,generative_complete,76 / 120 (63.33%),EXACT_MATCH,Cases where generative renderer preserved requested facts
+unsupported_display_claims,0 / 120 (0.0%),secondary_raw.jsonl,unsupported_claims,0 / 120 (0.0%),EXACT_MATCH,Zero hallucinations appeared in final display under guard
+DENY_blocked_displays,120 / 120 (100.0%),secondary_raw.jsonl,DENY_blocked,120 / 120 (100.0%),EXACT_MATCH,All unauthorized displays completely suppressed
+UIR_vs_specialized_delta,0 (0.0%),secondary_raw.jsonl,representation_delta,0 (0.0%),EXACT_MATCH,Identical behavior across all 1920 cells; zero representation bias

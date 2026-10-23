@@ -1,0 +1,50 @@
+version: 1.18.0
+date: '2026-10-23'
+evaluation_units:
+  primary_conformance:
+    target_frame_size_M: 82
+    sampled_clusters_n: 60
+    cases_per_cluster: 4
+    total_unique_cases: 240
+    representations_evaluated:
+    - UIR
+    - SPECIALIZED
+    total_representation_rows: 480
+    languages_evaluated:
+    - Python 3.14
+    - Rust 1.99
+    sampling_design: SRSWOR
+    failure_definition: Any cluster where Python != Rust, state divergence, or unsupported
+      display occurs
+    observed_failures: 0
+    exact_test: Hypergeometric(M=82, K=5, n=60)
+    p_value: 0.0009651337993418882
+    one_sided_95_upper_bound_clusters: 2
+    one_sided_95_upper_bound_fraction: 0.024390243902439025
+  secondary_factorial:
+    total_unique_cases: 240
+    ALLOW_cases: 120
+    DENY_cases: 120
+    factorial_cells: 8
+    total_matched_outcome_rows: 1920
+    unique_model_invocations: 480
+    model_call_allocation:
+      ALLOW_selector_calls: 120
+      DENY_stress_selector_calls: 120
+      ALLOW_renderer_calls: 120
+      DENY_renderer_calls: 120
+    independence_note: 1,920 rows represent paired matched comparisons across factorial
+      cells, not 1,920 independent degrees of freedom.
+denominators:
+  selector_exact_ALLOW_task_utility: 0 / 120 (0.0%)
+  selector_exact_all_cases_diagnostic: 0 / 240 (0.0%)
+  template_ALLOW_complete: 120 / 120 (100.0%)
+  slm_renderer_ALLOW_complete: 76 / 120 (63.33%)
+  slm_renderer_ALLOW_omission: 44 / 120 (36.67%)
+  policy_DENY_blocked: 120 / 120 (100.0%) per cell (960 / 960 total)
+  unsupported_display_cases: 0 / 1920 (0.0%) in CLOSED_FACT_LINES_S1
+unmeasured_endpoints:
+- NATIVE_PROSE_SAFETY
+- FinQA_OFFICIAL_TASK_ACCURACY
+- PORTABILITY_INTEGRATION_PERSON_HOURS
+- HARDWARE_POWER_ENERGY_LATENCY_REDUCTION

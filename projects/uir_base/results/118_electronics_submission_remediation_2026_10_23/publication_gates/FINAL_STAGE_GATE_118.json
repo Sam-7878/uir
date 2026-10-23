@@ -1,0 +1,32 @@
+{
+  "gate_name": "FINAL_STAGE_GATE_118",
+  "timestamp": "2026-10-23T21:19:30Z",
+  "evaluation_title": "Policy-and-Evidence Intermediate Contracts for Generative-AI Software: Independent Interpreter Conformance and Query-Aware Grounding",
+  "target_journal": "MDPI Electronics",
+  "special_issue": "Generative and Multi-Agent AI for Next-Generation Electronic and Software Systems",
+  "gate_states": {
+    "ENGINEERING_CONFORMANCE_READY": "PASS",
+    "SCOPED_SCIENCE_EVIDENCE_READY": "PASS",
+    "MANUSCRIPT_TECHNICAL_READY": "PASS",
+    "PUBLIC_RELEASE_READY": "BLOCKED",
+    "SUBMISSION_READY": "BLOCKED"
+  },
+  "blockers": {
+    "PUBLIC_RELEASE_READY": "BLOCKED pending institutional repository rights review and open-source licensing clearance.",
+    "SUBMISSION_READY": "BLOCKED pending human Principal Investigator author metadata completion, institutional funding disclosures, and manual upload to MDPI SuSy submission system."
+  },
+  "scientific_conformance_summary": {
+    "primary_sample_frame": "M=82 eligible GitHub software manifest owner clusters",
+    "primary_cases_evaluated": 240,
+    "primary_records_evaluated": 480,
+    "primary_conformance_rate": "480 / 480 (100.0%)",
+    "hypergeometric_exact_p": 0.0009651337993418882,
+    "conservative_95_upper_bound": "2 / 82 (2.439%)",
+    "secondary_factorial_rows": 1920,
+    "slm_selector_exact_match_allow": "0 / 120 (0.0%)",
+    "deterministic_guard_template_recovery": "120 / 120 (100.0%)",
+    "slm_generative_omission_rate": "44 / 120 (36.67%)",
+    "uir_vs_specialized_delta": "0 (0.0%)"
+  },
+  "verdict": "STAGE_118_TECHNICAL_AND_EVIDENCE_CLOSURE_COMPLETE"
+}
