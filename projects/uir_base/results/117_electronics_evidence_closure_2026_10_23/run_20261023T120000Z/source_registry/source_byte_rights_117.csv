@@ -1,0 +1,3 @@
+source_id,source_uri,license_declared,distribution_scope,local_research_permitted,public_release_permitted
+github_software_manifests_82,https://github.com/*,Permissive (MIT/Apache-2.0/BSD),Public open-source software repositories,True,False
+treasury_debt_2024_first5.json,https://api.fiscaldata.treasury.gov/...,US Government Work (17 U.S.C. 105),US Department of the Treasury Fiscal Data,True,False

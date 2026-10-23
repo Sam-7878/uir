@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-23T12:00:00Z",
+  "manuscript_title": "Policy-and-Evidence Intermediate Contracts for Generative-AI Software: Independent Interpreter Conformance and Query-Aware Grounding",
+  "target_journal": "MDPI Electronics",
+  "special_issue": "Generative and Multi-Agent AI for Next-Generation Electronic and Software Systems",
+  "pdf_artifact": "projects/uir_base/paper/main.pdf",
+  "pdf_page_count": 16,
+  "compilation_status": "CLEAN_COMPILATION_ZERO_ERRORS",
+  "numerical_reconciliation": "100_PERCENT_MATCH_TO_EVIDENCE",
+  "prohibited_claims_detected": 0,
+  "gates": {
+    "ENGINEERING_CONFORMANCE_READY": "PASS",
+    "SCOPED_SCIENCE_EVIDENCE_READY": "PASS",
+    "MANUSCRIPT_TECHNICAL_READY": "PASS",
+    "PUBLIC_RELEASE_READY": "BLOCKED_PENDING_AUTHOR_RIGHTS_CLEARANCE",
+    "SUBMISSION_READY": "BLOCKED_PENDING_HUMAN_AUTHOR_APPROVAL"
+  },
+  "verdict": "MANUSCRIPT_TECHNICAL_COMPLETE_AWAITING_AUTHOR_SIGNOFF"
+}

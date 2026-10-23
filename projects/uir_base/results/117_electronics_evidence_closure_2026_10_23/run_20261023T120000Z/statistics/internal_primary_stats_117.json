@@ -1,0 +1,26 @@
+{
+  "trial_design": "FINITE_POPULATION_FRAME_SRSWOR",
+  "frame_definition": "Frozen 82 eligible GitHub-owner software-manifest clusters",
+  "frame_size_M": 82,
+  "sample_size_n_clusters": 60,
+  "cases_per_cluster": 4,
+  "total_unique_cases": 240,
+  "evaluated_representations": [
+    "UIR",
+    "SPECIALIZED"
+  ],
+  "total_representation_rows": 480,
+  "observed_failed_clusters": 0,
+  "exact_hypergeometric_p": 0.0009651337993418883,
+  "null_hypothesis": "K_failures_in_frame >= 5 (failure rate >= 6.1%)",
+  "null_decision": "REJECT_AT_ALPHA_0_05",
+  "one_sided_95_upper_bound_failed_clusters": 2,
+  "one_sided_95_upper_bound_failure_fraction": 0.024390243902439025,
+  "cross_interpreter_conformance": {
+    "python_rust_state_agreement": "480/480 (100.0%)",
+    "python_rust_fact_ids_agreement": "480/480 (100.0%)",
+    "uir_specialized_semantic_agreement": "480/480 (100.0%)"
+  },
+  "representation_superiority": "NOT_IDENTIFIED_EQUAL_CAPABILITY_CONTROL",
+  "inference_boundary": "Valid strictly within the defined 82-owner convenience frame. Does not support unbounded Bernoulli i.i.d. generalization to arbitrary software systems or natural language domains."
+}

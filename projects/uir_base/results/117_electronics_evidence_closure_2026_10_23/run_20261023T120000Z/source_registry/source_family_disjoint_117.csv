@@ -1,0 +1,4 @@
+family_id,domain,role,split,N_cases,disjoint_from_pilot,confirmatory_eligible
+github-owner:* (82 owners),Software Manifest,Primary Benchmark Frame,V4_FROZEN_FRAME,240,True,True
+US-Treasury:DebtToPenny,Financial/Fiscal,Feasibility Prototype,STAGE116_PILOT_ONLY,5,False,False
+WorldBank:Finances,Financial/Development,Candidate (Network Timed Out),DROPPED,0,False,False

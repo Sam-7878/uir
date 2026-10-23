@@ -1,0 +1,7 @@
+claim_id,claim_statement,evidence_source,scope_boundary,exact_metric
+AC-01,Deterministic semantic equivalence between UIR and capability-equivalent specialized contract,V4_FINITE_FRAME_PRIMARY,"Fixed 82-owner frame, 60 sampled clusters, 240 cases",480/480 exact state and fact IDs match
+AC-02,Cross-runtime interpreter conformance between independent Python and Rust implementations,V4_FINITE_FRAME_PRIMARY,"Fixed 82-owner frame, 60 sampled clusters, 240 cases",480/480 Python vs Rust state and facts match
+AC-03,Exact finite-frame hypergeometric rejection of failure rate >= 5% in eligible frame,V4_FINITE_FRAME_PRIMARY,Frozen 82 GitHub-owner frame only,"p=0.000965, 0 failed clusters, one-sided 95% upper 2/82 (2.439%)"
+AC-04,Shared deterministic guard recovers final accepted complete output despite raw SLM fact selection failure,V3_SECONDARY_SCORED,"V3 corpus, 240 cases, 8 conditions",Raw selector exact 0/240 -> Guard-rescued template ALLOW complete 120/120
+AC-05,SLM renderer causes utility omission compared to deterministic template rendering,V3_SECONDARY_SCORED,"V3 corpus, 120 ALLOW cases",Template 120/120 complete vs SLM renderer 76/120 complete (44 unverified/omitted)
+AC-06,Deterministic policy enforcement perfectly blocks unauthorized access under both representations,V3_SECONDARY_SCORED,"V3 corpus, 120 DENY cases","120/120 safe denials, 0 accepted unauthorized leaks"

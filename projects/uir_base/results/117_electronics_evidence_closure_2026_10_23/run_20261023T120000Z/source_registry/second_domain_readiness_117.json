@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-23T12:00:00Z",
+  "evaluator": "Stage 117 Domain Governance & Science Gate",
+  "second_domain_candidate": "US-Treasury:DebtToPenny",
+  "candidate_source_bytes": 3168,
+  "candidate_row_count": 5,
+  "metadata_api_status": "HTTP_404_CATALOG_DATA_GOV",
+  "fiscal_api_status": "HTTP_200_PHYSICAL_BYTES_VERIFIED",
+  "has_independent_human_gold": false,
+  "has_query_aware_temporal_holdout": false,
+  "has_unseen_confirmatory_families": false,
+  "rights_status": "US_GOVERNMENT_PUBLIC_DOMAIN_CANDIDATE_AUTHOR_SIGNOFF_PENDING",
+  "gold_isolation_guarantee": "NOT_OS_ISOLATED_IN_STAGE116_PILOT",
+  "readiness_verdict": "UNAVAILABLE_FOR_CONFIRMATORY_INFERENCE",
+  "recommendation": "SINGLE_DOMAIN_SOFTWARE_CONTRACT_PRIMARY_WITH_PILOT_PROTOTYPE_REPORTING"
+}

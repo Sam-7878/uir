@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-10-23T12:00:00Z",
+  "stage": "STAGE_117",
+  "run_id": "run_20261023T120000Z",
+  "total_sealed_files": 38,
+  "files": {
+    "FINAL_STAGE_117_REPORT.md": {
+      "sha256": "846fef6f4ec2389e571c4317365a8a4a0b27bddc6621fcfec1600cbee82e59e2",
+      "byte_size": 4998
+    },
+    "README.md": {
+      "sha256": "b10a39fb6f212dcbf4220925f69e85dcbbd971f57b47f0737a39e22c6e9fcf70",
+      "byte_size": 975
+    },
+    "claim_audit/116_lineage_crosswalk_117.csv": {
+      "sha256": "35fe96030238024861831969f19b5c947f684b7784a48dc7379fe8f6c7245a92",
+      "byte_size": 1415
+    },
+    "claim_audit/V3_V4_claim_boundary_117.md": {
+      "sha256": "eb1a51864370279724b4433733be1ad711731870e8df5cb8ccc6233c3ae64d51",
+      "byte_size": 3719
+    },
+    "claim_audit/approved_claims_117.csv": {
+      "sha256": "beb047f0c986b1783d133a98fc9669ff110d2097f7e88a218771b7c31bb2d207",
+      "byte_size": 1396
+    },
+    "claim_audit/claim_audit_findings_117.csv": {
+      "sha256": "61c8e115a95ba603ac30795d6a5e44ccef8225a17c794e6552e9a238bc01d709",
+      "byte_size": 1479
+    },
+    "claim_audit/claim_to_evidence_map_117.csv": {
+      "sha256": "9af34a5c890d5ae48ff8bad5d60ec86cf76ec13ce9969795295d0b1a8428365e",
+      "byte_size": 1592
+    },
+    "claim_audit/forbidden_claims_117.csv": {
+      "sha256": "8a52508df02fe87e784e22fca4ce9a4d330ee49b39541d20da8247fd1a8722b3",
+      "byte_size": 1858
+    },
+    "claim_audit/publication_consistency_117.md": {
+      "sha256": "c7bc5d328d50e0ef65b3ecef54feffc58d11aa9cf7233dc5b812320e2733cd32",
+      "byte_size": 1739
+    },
+    "claim_audit/reviewer_counterargument_responses_117.md": {
+      "sha256": "24e21d8e92a169349e4ee6254e7aa504df3933491ce12b95f17b72aaffc54df3",
+      "byte_size": 3237
+    },
+    "experiments/MEASUREMENT_SCOPE_117.md": {
+      "sha256": "75f40e2f3bd4a31d7b6e9b1893f5d8c7f4b5930a64b655d45e62495b8e899f1b",
+      "byte_size": 1816
+    },
+    "experiments/optional_endpoints_decision_117.md": {
+      "sha256": "7d285a0baf7c01bc900bddfdad08c469ca4d1231d6bf8a933b9299a11666a913",
+      "byte_size": 1902
+    },
+    "experiments/output_scope_matrix_117.csv": {
+      "sha256": "64fee58ab9c69126628919ce3bfbc23c23e8f4d7cc56db85b2a84484625bc568",
+      "byte_size": 631
+    },
+    "experiments/safety_coverage_tradeoff_117.csv": {
+      "sha256": "78d9e2d0626e4eaafcbc55c4025d60966be4920c69f140115de760f23d8ca68d",
+      "byte_size": 365
+    },
+    "publication_gates/MANUSCRIPT_TECHNICAL_GATE_117.json": {
+      "sha256": "e3ab86e452f4d90e24cfdfeea7efaf2829ccf442721aeb0e21d8f26c6220d761",
+      "byte_size": 931
+    },
+    "publication_gates/OWNER_AUTHOR_SIGNOFF_PENDING.md": {
+      "sha256": "87ad189a2fee2d7a2a35e62fc647fba2def37fcacbd3dbe14c15d02bdeba04bb",
+      "byte_size": 2661
+    },
+    "publication_gates/final_stage_gate_117.json": {
+      "sha256": "03a97178778cb5621e22c9f5ae9c414840bd5895f8d200bf1f69264e57c6adb8",
+      "byte_size": 1584
+    },
+    "release/private_review_manifest_117.json": {
+      "sha256": "b3ca98235d1ebf51ed44a04448ac10ac4d95fa7ec20aa1ca69b18d44de73d61f",
+      "byte_size": 1902
+    },
+    "release/public_candidate_manifest_117.json": {
+      "sha256": "63174ba1a5b9afe156bbd2ba5f47564dc0e82c6265bcf018fc8c80d530002ca8",
+      "byte_size": 1002
+    },
+    "release/submission_manifest_117.json": {
+      "sha256": "1e464cba215e493e144d297e4fe737398dc0223b9764c9ac71a5716da3412b33",
+      "byte_size": 1449
+    },
+    "scoring/final_per_case_scored_117.jsonl": {
+      "sha256": "d35107c0e8990fc0a4405dc0a258e1e2ad26cd8874f864e92f5c9f83ba79db28",
+      "byte_size": 63832
+    },
+    "scoring/secondary_rescore_117.jsonl": {
+      "sha256": "0c9d4338646271694f5498bdcb91ee12f7061bf76d8d2e5f8084a44e702273f2",
+      "byte_size": 888784
+    },
+    "source_registry/SCOPE_DECISION_117.md": {
+      "sha256": "4e831a00a00257d1139dcfb13165b9a2e5546f0950299b86a420f7d50cdad9ec",
+      "byte_size": 3220
+    },
+    "source_registry/dataset_card_117.md": {
+      "sha256": "2bb114f6cfe4dd95727b2991687464ada3b31bcc1510315191c4ff3c42780f83",
+      "byte_size": 1367
+    },
+    "source_registry/gold_authority_matrix_117.csv": {
+      "sha256": "87b2bb4b3106d276ab27971813ab2acecd3267ac3d74a2fa3baae6791f16581c",
+      "byte_size": 671
+    },
+    "source_registry/second_domain_readiness_117.json": {
+      "sha256": "1d9a1b155c7e3ec087cf87787e775e52f8ce4ca4e87befb613f28260e9339f3c",
+      "byte_size": 771
+    },
+    "source_registry/source_byte_rights_117.csv": {
+      "sha256": "a7243151622ef8e2600b9ab4196284f2d516b89afd19756fa539d0ef1cd43341",
+      "byte_size": 403
+    },
+    "source_registry/source_family_disjoint_117.csv": {
+      "sha256": "13a4a46c1647e7325d0a15dee3bf3580a4a2001a9b5cc1b53601e390fe261f6d",
+      "byte_size": 371
+    },
+    "statistics/V4_independent_numeric_audit_117.json": {
+      "sha256": "102a25da86346d7db0ad5539a4212a8ea24b3fe2d108341998465cc1cc0a550a",
+      "byte_size": 849
+    },
+    "statistics/final_tables_117.md": {
+      "sha256": "2f471e382480e2ace396ac091ac98cce44f7caa42b78fffdec99865cd63c5168",
+      "byte_size": 1978
+    },
+    "statistics/final_tables_117.tex": {
+      "sha256": "334730823079e70276076aa8ef0f8a366203e88881ebd60f36a10219a2291eab",
+      "byte_size": 2647
+    },
+    "statistics/internal_primary_stats_117.json": {
+      "sha256": "77e29c5160e82e7796a42ecba94ff948ccd80de988a69366ba2d8b84f6dd514e",
+      "byte_size": 1165
+    },
+    "statistics/model_call_reuse_graph_117.json": {
+      "sha256": "8f63f97f7bc02b40485ed75b05ecb38d143adfe6e3094758d87b0dec74d98bfb",
+      "byte_size": 4918
+    },
+    "statistics/representation_identifiability_117.md": {
+      "sha256": "bd5016d466faa3b3707359becb7726d21240fe47cc47abc3d2481b0f548e127c",
+      "byte_size": 2103
+    },
+    "statistics/secondary_factorial_stats_117.csv": {
+      "sha256": "4487a11bb3ef78c81c245ff1505fedf14268f02008a7755aa911cfb33cdd20a3",
+      "byte_size": 1149
+    },
+    "statistics/secondary_failure_taxonomy_117.md": {
+      "sha256": "0dd2da9d9383cbc46403fbc5e5c088266ba9050f618682a77720f6af48ae56dd",
+      "byte_size": 3566
+    },
+    "statistics/selector_guard_renderer_attribution_117.csv": {
+      "sha256": "92f43d62b2d1d396372372b0a3743667f7a00f1e71b2d55494c4dced355c54d8",
+      "byte_size": 1049
+    },
+    "statistics/stats_methods_117.md": {
+      "sha256": "ec7f021120a11fc32860b0e4bbf83be4f0ab0ad4cd3a5dde1846f98169f57cbb",
+      "byte_size": 3029
+    }
+  }
+}

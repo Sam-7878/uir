@@ -1,0 +1,152 @@
+{
+  "total_model_capture_hashes": 480,
+  "total_outcome_records": 1920,
+  "explanation": "Phi-3.5 was invoked 480 times (240 unique selector prompts + 240 unique renderer prompts for ALLOW cases). Because UIR and Specialized share identical semantics and payloads, the 480 responses were reused across representations, yielding 1,920 factorial outcome rows without duplicate GPU calls.",
+  "call_frequency_distribution": {
+    "reused_across_2_representations": 0,
+    "reused_across_4_conditions": 480,
+    "other": 0
+  },
+  "unique_captures_detail": {
+    "e826714dad9b91f2ec7095260f0eccfd98571d6bae1ab2a96d861209a2bf863a": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "b36c37ead91c104bc911c4ca8f73667bce76722b74fb6f0b4d114cbe47cc12dc": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "69369528a9b17b9b2ce1f41a8200df7b98c6aa79eb8d0e7f7448e68f600af4c5": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "56c58b4cbc4a3eb364cdb2ea68ec1f7ce0b56cff4b981d94143be4c1db759029": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "75b9793153f64f4dc34ea8f3f73a5154b440ab076fb803a5d1af0a0bcddf65b6": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "9b6353f63751f0e7cae47db06c29c9c6f760f2104075a6fa79bb2105457c56c4": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "fe97edf2a4cda2e65b9c19d959e1718b3096a8c954e62448d900735beb2ae1ea": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "b61b7e6d5835491b5baf613b7f8c2348a669ff268b569fa3ff30fa632d56df29": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "d0b8b2c82719018c1718dc099aa06c420f6e7effc65a311a83fb20399e3564fb": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "ccbd4db157fce52bcc6a348c0c285405b7131732fec1e33a608eb616a3828f13": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "905110d40b5570ef4414e099cac70e0f1ae7027e20eae278ec9cadcfc84ec3e8": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "6e692f25bb5fb1d91104bd07977fa84aec490d118eac88e24ddd018ea57a4bb8": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "6fba6412b58ba6c01a5d482e90e3832c4cca28fc77c5ca1824c4445786489271": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "bb4d62ef9e79ff2a041a375e618fdbda2f8cc67d797b2b333e61337ffb523f63": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "ca9e124909620c74dd0be5dc1f8d2c6fed900bc8f0eff93e936a13d3b48d96f6": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "5fdde4b62f1035f1acf1e00c309461fd45e462c0758530e8bf9c27559a13841e": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "85f230bef4d9ed4f796e7f784892a29519f7bdc0fe39e82c8b1227f15a580459": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "102f51b2f13febc69013f23a17435d6d75eb7d299e84d35a3d6380f6846c1229": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "9910daf717885ccbdd81b965cb24d2bf28645789a9ce6820340dd3a6789d5e85": {
+      "role": "renderer",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    },
+    "b0093589b630a9ada6b77eb3b7d5e9a8cdef7a1d3dabb0980b1e2fc983a96f67": {
+      "role": "selector",
+      "reused_in_outcomes_count": 4,
+      "model": "phi3.5:latest",
+      "temperature": 0,
+      "seed": 116
+    }
+  }
+}

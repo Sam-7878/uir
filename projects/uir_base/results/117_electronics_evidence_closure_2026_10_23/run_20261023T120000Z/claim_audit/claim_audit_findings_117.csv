@@ -1,0 +1,8 @@
+item_id,audit_topic,adversarial_concern,verified_status,manuscript_disposition
+AF-01,Representation Superiority,Does UIR outperform equivalent specialized formats?,NO_SUPERIORITY_IDENTIFIED,Framed strictly as representation equivalence under shared authority (Section 7)
+AF-02,SLM Fact Selection,Did SLM selector independently identify facts accurately?,RAW_EXACT_ZERO_CONFIRMED,Transparently reported 0/240 exact match; credited guard intersection with 120/120 recovery (Section 6)
+AF-03,Statistical Generalization,Does finite-frame p-value prove general software safety?,FINITE_FRAME_BOUND_ONLY,Strictly bounded to 82-owner convenience frame; no unbounded Bernoulli claim (Section 4 & 8)
+AF-04,Prose Output Scope,Is natural language prose guaranteed to be hallucination-free?,PROSE_NOT_MEASURED,Safety bound explicitly restricted to CLOSED_FACT_LINES_S1 format; prose marked NOT_MEASURED (Section 8)
+AF-05,Second-Domain Validity,Is multi-domain transfer confirmatory?,PILOT_ONLY_NOT_CONFIRMATORY,Confirmatory scope restricted to software manifests; Treasury reported as pilot only (Section 4 & 8)
+AF-06,Historical V3 Stats,Are withdrawn V3 p-values erroneously cited?,V3_STATS_FULLY_EXCISED,Zero occurrences of p=0.0106256 in manuscript; V4 p=0.000965 used exclusively
+AF-07,Excised Endpoints,Are FinQA task accuracy or developer effort claimed without fresh evidence?,EXCISED_FROM_CLAIMS,Both endpoints formally declared NOT_MEASURED and removed from abstract/results

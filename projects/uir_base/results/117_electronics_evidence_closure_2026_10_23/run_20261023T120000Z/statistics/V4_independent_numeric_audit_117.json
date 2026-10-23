@@ -1,0 +1,23 @@
+{
+  "audit_timestamp": "2026-10-23T12:00:00Z",
+  "auditor": "same_agent_independent_rescorer",
+  "raw_record_count": 481,
+  "outcome_records": 480,
+  "boundary_records": 1,
+  "N_distinct_cases": 240,
+  "N_distinct_parents": 60,
+  "frame_N": 82,
+  "sample_n": 60,
+  "observed_failed_clusters": 0,
+  "exact_hypergeometric_p": 0.0009651337993418883,
+  "null_hypothesis": "K_failures_in_frame >= 5",
+  "null_decision": "REJECT",
+  "one_sided_95_upper_bound_failed_clusters": 2,
+  "one_sided_95_upper_bound_fraction": 0.024390243902439025,
+  "python_rust_state_conformance": "480/480",
+  "python_rust_fact_conformance": "480/480",
+  "uir_specialized_representation_agreement": "480/480",
+  "scoring_pass_rate": "480/480",
+  "sampling_design": "EXACT_FINITE_FRAME_SRSWOR_NO_BERNOULLI_ASSUMPTION",
+  "audit_verdict": "VERIFIED_EXACT_MATCH_TO_116_SUMMARY"
+}

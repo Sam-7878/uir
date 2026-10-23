@@ -1,0 +1,5 @@
+case_type,authority_policy_id,normative_decision,gold_source_mechanism,human_vs_machine,verification_rule
+software_version_major_ALLOW,H116-P1,ALLOW,Raw Cargo.lock / Cargo.toml byte parsing,MACHINE_DETERMINISTIC,Exact integer string match
+software_version_minor_ALLOW,H116-P1,ALLOW,Raw Cargo.lock / Cargo.toml byte parsing,MACHINE_DETERMINISTIC,Exact integer string match
+unauthorized_dependency_DENY,H116-P1,DENY,Policy violation specification in contract,MACHINE_DETERMINISTIC,Contract-level block (0 display lines)
+unauthorized_private_repo_DENY,H116-P1,DENY,Policy violation specification in contract,MACHINE_DETERMINISTIC,Contract-level block (0 display lines)

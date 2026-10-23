@@ -1,0 +1,11 @@
+section,claim_statement,exact_numeric_value,evidence_source_file,evidence_field,audit_verdict
+Abstract,Cross-runtime semantic conformance,480/480 (100.0%),statistics/V4_independent_numeric_audit_117.json,python_rust_state_conformance,VERIFIED
+Abstract,Exact hypergeometric p-value,p = 0.000965,statistics/V4_independent_numeric_audit_117.json,exact_hypergeometric_p,VERIFIED
+Abstract,One-sided 95% upper bound on failed clusters,2 / 82 (2.44%),statistics/V4_independent_numeric_audit_117.json,one_sided_95_upper_bound_failed_clusters,VERIFIED
+Abstract,Raw SLM selector exact fact match rate,0 / 240 (0.0%),statistics/selector_guard_renderer_attribution_117.csv,ALLOW_raw_exact,VERIFIED
+Abstract,Shared guard-rescued template completion rate,120 / 120 (100.0%),statistics/selector_guard_renderer_attribution_117.csv,ALLOW_complete,VERIFIED
+Abstract,SLM renderer completion rate,76 / 120 (63.33%),statistics/selector_guard_renderer_attribution_117.csv,ALLOW_complete,VERIFIED
+Abstract,SLM renderer unverified omission count,44 / 120 (36.67%),statistics/selector_guard_renderer_attribution_117.csv,ALLOW_empty_omission,VERIFIED
+Results,Unauthorized request blocking rate,120 / 120 (100.0%),statistics/selector_guard_renderer_attribution_117.csv,DENY_correct_blocks,VERIFIED
+Results,Unsupported fact displays in closed-line display,0 (0.0%),statistics/selector_guard_renderer_attribution_117.csv,unsupported_display_cases,VERIFIED
+Discussion,Empirical superiority of UIR over Specialized,NOT_IDENTIFIED (Equivalence),statistics/representation_identifiability_117.md,Section 1,VERIFIED
