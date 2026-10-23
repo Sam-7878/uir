@@ -1,0 +1,81 @@
+{
+  "validator_id": "SEMANTIC_CONSISTENCY_VALIDATOR_120",
+  "evaluated_at_iso": "2026-10-24T00:56:00+09:00",
+  "manuscript_version": "Stage 120 (mdpi_electronics_120)",
+  "joint_parameters": {
+    "sampling_frame_M": 82,
+    "sample_size_n": 60,
+    "primary_test_cases_N": 240,
+    "interpreter_evaluations_total": 480,
+    "interpreter_conformance_count": 480,
+    "interpreter_conformance_rate_pct": 100.0,
+    "interpreter_divergences": 0
+  },
+  "exact_hypergeometric_semantics": {
+    "null_hypothesis": "H_0: K >= 5",
+    "null_hypothesis_p_value_exact": 0.0009651338075880759,
+    "null_hypothesis_verdict": "REJECT_AT_ALPHA_0_001",
+    "confidence_inversion_K3_exact": 0.017389340560072268,
+    "confidence_inversion_K3_threshold_0_05": "REJECT (< 0.05)",
+    "confidence_inversion_K2_exact": 0.06955736224028907,
+    "confidence_inversion_K2_threshold_0_05": "DO_NOT_REJECT (>= 0.05)",
+    "exact_95pct_upper_confidence_bound_K": 2,
+    "exact_95pct_upper_bound_rate_pct": 2.4390243902439024
+  },
+  "matched_factorial_semantics": {
+    "total_outcome_rows": 1920,
+    "unique_model_invocations": 480,
+    "selector_invocations_authorized": 120,
+    "renderer_invocations_authorized": 120,
+    "slm_fact_selector_exact_match": "0/120 (0.0%)",
+    "slm_distractor_overselection_rate": "120/120 (100.0%)",
+    "deterministic_guard_recovery_rate": "120/120 (100.0%)",
+    "generative_renderer_omission_rate": "44/120 (36.67%)",
+    "generative_renderer_complete_displays": "76/120 (63.33%)",
+    "template_renderer_complete_displays": "120/120 (100.0%)",
+    "policy_suppression_under_deny": "120/120 (100.0%)",
+    "unauthorized_leakage_under_deny": "0/120 (0.0%)",
+    "representation_contrast_delta_pct": 0.0
+  },
+  "stage119_failure_mode_analysis": {
+    "stage119_validator": "publication_consistency_119.json",
+    "stage119_defect": "Isolated string search validated the existence of '0.000965' and 'K=3' independently without validating that '0.000965' belonged strictly to K=5 and '0.017389' belonged strictly to K=3",
+    "stage120_remedy": "Joint semantic binding test: text strings are parsed in conjunction with their associated equations, hypotheses, and bounds, preventing cross-parameter semantic contamination"
+  },
+  "artifact_consistency_matrix": [
+    {
+      "artifact": "paper/mdpi_electronics_120/main.tex",
+      "p_value_semantic_binding": "BOUND_TO_K5_PASS",
+      "k3_inversion_binding": "BOUND_TO_0_017389_PASS",
+      "k2_inversion_binding": "BOUND_TO_0_069557_PASS",
+      "confidence_bound_binding": "BOUND_TO_K_LE_2_PASS",
+      "factorial_reuse_binding": "BOUND_TO_480_INVOCATIONS_PASS",
+      "representation_neutrality_binding": "BOUND_TO_DELTA_0_PASS"
+    },
+    {
+      "artifact": "editorial/COVER_LETTER_DRAFT_NOT_SENT.md",
+      "p_value_semantic_binding": "BOUND_TO_K5_PASS",
+      "k3_inversion_binding": "NOT_MENTIONED_OMITTED_CLEAN",
+      "confidence_bound_binding": "BOUND_TO_K_LE_2_PASS",
+      "factorial_reuse_binding": "BOUND_TO_480_INVOCATIONS_PASS",
+      "representation_neutrality_binding": "BOUND_TO_DELTA_0_PASS"
+    },
+    {
+      "artifact": "release/REPRODUCTION_LEVELS_120.md",
+      "p_value_semantic_binding": "BOUND_TO_K5_PASS",
+      "k3_inversion_binding": "BOUND_TO_0_017389_PASS",
+      "k2_inversion_binding": "BOUND_TO_0_069557_PASS",
+      "confidence_bound_binding": "BOUND_TO_K_LE_2_PASS",
+      "factorial_reuse_binding": "BOUND_TO_480_INVOCATIONS_PASS",
+      "representation_neutrality_binding": "BOUND_TO_DELTA_0_PASS"
+    },
+    {
+      "artifact": "scripts/check_hypergeom_semantics_120.py",
+      "p_value_semantic_binding": "ASSERTION_PASSED",
+      "k3_inversion_binding": "ASSERTION_PASSED",
+      "k2_inversion_binding": "ASSERTION_PASSED",
+      "confidence_bound_binding": "ASSERTION_PASSED"
+    }
+  ],
+  "overall_semantic_verdict": "SEMANTIC_CONSISTENCY_PASS"
+}

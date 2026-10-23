@@ -1,0 +1,581 @@
+{
+  "manifest_version": "120.0.0",
+  "stage": "STAGE_120_EVIDENCE_EDITORIAL_RELEASE_CLOSURE",
+  "created_at_iso": "2026-10-24T01:00:51.613085+09:00",
+  "manuscript_title": "Policy-and-Evidence Intermediate Contracts for Generative-AI Software: Independent Interpreter Conformance and Query-Aware Grounding",
+  "target_venue": "MDPI Electronics (Special Issue: Generative and Multi-Agent AI for Next-Generation Electronic and Software Systems)",
+  "summary_counts": {
+    "total_manifested_items": 71,
+    "total_manifested_bytes": 9992563
+  },
+  "records": [
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/journalnames.tex",
+      "bytes": 108413,
+      "sha256": "f4944f272ae0bfaccedb926f4da5ce40c0dabead50482afae191989430fb66dc",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: journalnames.tex"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/logo-mdpi-eps-converted-to.pdf",
+      "bytes": 13206,
+      "sha256": "a484622feb8c88b75adfd00d73145417b77d1a8dcade3d3474e69601493a3a10",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: logo-mdpi-eps-converted-to.pdf"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/logo-mdpi.eps",
+      "bytes": 563678,
+      "sha256": "f02d31469c6b2666c9de2da8d8731773bce3751d2fa99a27ff4bcf61a106cdcf",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: logo-mdpi.eps"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/logo-orcid.pdf",
+      "bytes": 12671,
+      "sha256": "0558a0097dc4d1ffe3f4a1b3c9b4b98c6e568eac7d7439d447ca56ed1a8ec759",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: logo-orcid.pdf"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/logo-updates-eps-converted-to.pdf",
+      "bytes": 15505,
+      "sha256": "671d5fb53bb5c930440bad6959ab00a6d73d0435d1d928bdeea4e36eb53d12fb",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: logo-updates-eps-converted-to.pdf"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/logo-updates.eps",
+      "bytes": 851415,
+      "sha256": "b84b986524ff2e47afb07ecd5ef6d33cd85bc4b88d2053fdfb3e83210d695831",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: logo-updates.eps"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/mdpi.bst",
+      "bytes": 23683,
+      "sha256": "3b747eee144173c46a43562ead905c26322c7cb394e350a925d36dcf63884680",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: mdpi.bst"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/mdpi.cls",
+      "bytes": 63307,
+      "sha256": "62979fe0fe0f72a57adc1ad683add9b0138f1dae635d1da4ae48a4d811159e40",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: mdpi.cls"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/mdpi_apacite.bst",
+      "bytes": 138426,
+      "sha256": "c7fffe0231922e5521dc360889fafe941ee26d154c1ce4e167e4ec9f2d13498f",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: mdpi_apacite.bst"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/mdpi_apacite.sty",
+      "bytes": 71315,
+      "sha256": "9e9bb23ded45f7f76236ad304d4bda2c066fb48041b272cebc20f940c17865a7",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: mdpi_apacite.sty"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/Definitions/mdpi_chicago.bst",
+      "bytes": 37920,
+      "sha256": "4a73faf6e0cf1a225d1b9a41a6955d3cc29a55c5fdce662177d00eee3946ce36",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: mdpi_chicago.bst"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/figures/architecture.tex",
+      "bytes": 3715,
+      "sha256": "6b4a70fd4e74fbc67cacc95c22b6d62c566f63ca30614c34c943e753a4a85dae",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: architecture.tex"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/figures/attribution_flow.tex",
+      "bytes": 3190,
+      "sha256": "077eb16870c10dde075ef37db883209b7c90e942fda76d39d8926e3d75c5eaf7",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: attribution_flow.tex"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/figures/execution_trace_120.tex",
+      "bytes": 2825,
+      "sha256": "a73d82df9a12a227a3013a8a14935f2d6129daf297558c4449a53fa44203b5cf",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: execution_trace_120.tex"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/main.pdf",
+      "bytes": 282139,
+      "sha256": "d3470e0076c92d450ef1f9d107055688d950b41f516150c0db29105b1704eb37",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: main.pdf"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/main.tex",
+      "bytes": 55391,
+      "sha256": "74f019bbfcfdb2409a00bd25136619b888f563fac929a402eebc6f61c0766fe5",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: main.tex"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/references.bib",
+      "bytes": 13817,
+      "sha256": "01378a396d4a0d1b46a514d88a6cb1d139e26eef27da27667c1c4942624785bf",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: references.bib"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/soul-ori.sty",
+      "bytes": 25493,
+      "sha256": "842e46b91b146591ebde3348a684b04fae92d46d4508482bc5036e1805e57f9c",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: soul-ori.sty"
+    },
+    {
+      "path": "paper/mdpi_electronics_120/soul.sty",
+      "bytes": 16881,
+      "sha256": "0bc2aecc16e0a261db88863dfc5e26b0745abf3fc02caa97fcd076f2e56bf940",
+      "category": "MANUSCRIPT_SOURCE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 manuscript asset: soul.sty"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/clean_room_build_120.json",
+      "bytes": 2416,
+      "sha256": "dda520bb312cc31c29decd9c4f155f6ab40b019d9b075d8c687ffc76ff5a7247",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: clean_room_build_120.json"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/final_archive_diff_120.csv",
+      "bytes": 5009,
+      "sha256": "cf6687884257bd18f8be9ae894bef7114833decf7534a5bef4a7ce57bbd2febe",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: final_archive_diff_120.csv"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/independent_science_review_120.md",
+      "bytes": 5769,
+      "sha256": "53e6bc009621c2842af6a9082eb96fc300c1a0ee4b5c0bf77212c3cdaf14bac1",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: independent_science_review_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/lineage_crosswalk_120.csv",
+      "bytes": 2308,
+      "sha256": "6d838a20d4eda45eca3ea2ecbe3f4735db0ca143e7e83b4aee3c90fbca57e3bf",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: lineage_crosswalk_120.csv"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-01.png",
+      "bytes": 460529,
+      "sha256": "17d1c4f4dd25166bd57a10aaa919aeb2245e0c28c2e1cd58ac98aea36c07892e",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-01.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-02.png",
+      "bytes": 440075,
+      "sha256": "63df9aea8429149b1bfef6002666117fa9561b93bb5ff8b8dcb13a69be3fa5d2",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-02.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-03.png",
+      "bytes": 452273,
+      "sha256": "5bae0ceed8dab5a1e213b3721feaad5c49ef278b6ad69c1074d31c621b38bc8c",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-03.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-04.png",
+      "bytes": 438640,
+      "sha256": "7bd1b46455cb84aba29a38069dd16abae96622f00cf08f80dd36b0f5cf4a9d51",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-04.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-05.png",
+      "bytes": 335080,
+      "sha256": "6ca051725350d7a500efa12c2153a7d438e25f6fdb84e8a172b010dc03e10b56",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-05.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-06.png",
+      "bytes": 283188,
+      "sha256": "47d06aca7ebbfcb36d7f97941f00adfe73767595919021730c909443f9238623",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-06.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-07.png",
+      "bytes": 316290,
+      "sha256": "1bbf3476e69678a0d24b0e8e98760e9a04cc4fccb9c9bdecc034e58178008c89",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-07.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-08.png",
+      "bytes": 442170,
+      "sha256": "ce01dea5e286d67dcc389b6fc92ed471afcc429100a39a6b521f7e2980669d34",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-08.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-09.png",
+      "bytes": 294921,
+      "sha256": "3e39ea8977f804ab90e3d8957e4c004b7aa6878f18a886f3c62f6bd17edc7413",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-09.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-10.png",
+      "bytes": 376673,
+      "sha256": "4df53268771e0c4ac7df4e83d46b68385b839ebc539dba0207beab02e6a1e728",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-10.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-11.png",
+      "bytes": 401215,
+      "sha256": "6f567a2903c0dbd3aca262a15b3c5e61f3ac3acc97c3d5bb0056946c0092d401",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-11.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-12.png",
+      "bytes": 320984,
+      "sha256": "260081a7c9a3b1e80f23ffcbcd7154c4b08a942cee51dd682c6fe1886b69a5a8",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-12.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-13.png",
+      "bytes": 336632,
+      "sha256": "e44b86588c9a3886ff161c3ec4815f5c3c393ec1b6d1d574d1cd57d73a9c65f4",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-13.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-14.png",
+      "bytes": 407987,
+      "sha256": "57f195f5a2b7259dc67bbd7599361ab653aa3cf88e98d29d2fa148f70d0279d6",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-14.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-15.png",
+      "bytes": 558599,
+      "sha256": "8d692bb703a23a344df7f1e1783ae3ec1d1e93918037056fa4be9ae820d39e1d",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-15.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/pages_150dpi/page-16.png",
+      "bytes": 345791,
+      "sha256": "2e8f351c1263458647e8ca9d62a85ce617c27db820b824c7749667fcb857d945",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: page-16.png"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/reproduction_commands_120.csv",
+      "bytes": 2384,
+      "sha256": "42d7fc8ca8a0e363c839aa2a6cd3f9f966438612d87daee5d86a03ad592e44f2",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: reproduction_commands_120.csv"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/semantic_consistency_120.json",
+      "bytes": 3853,
+      "sha256": "268a9654644d9e9c384f1fe310ef781b859e4e1ec0cd84dc26fe2212fbdd8d29",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: semantic_consistency_120.json"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/stage119_baseline_review_120.md",
+      "bytes": 4029,
+      "sha256": "093884aaf6a9677531f6e136caf05f8dbb6e19c8e7fba806c83d5072e974dff2",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: stage119_baseline_review_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/stage119_errata_120.md",
+      "bytes": 3886,
+      "sha256": "943a4f2d6e6800649acbc87db33d5923f7b712a626d10398d9c99089e4599673",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: stage119_errata_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/stage119_manifest_crosscheck_120.csv",
+      "bytes": 20845,
+      "sha256": "4c17d2e46a70a37d46da18a050e34558f4c9541e02013599ff6615474c3ad051",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: stage119_manifest_crosscheck_120.csv"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/audit/visual_page_index_120.md",
+      "bytes": 5651,
+      "sha256": "1549b0866c76e3bfe440943aef41cbca07592cb725e079ddf7ce173441556bf4",
+      "category": "AUDIT",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: visual_page_index_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/claim_audit/case_study_evidence_120.csv",
+      "bytes": 1303,
+      "sha256": "58f63feef9933c597653bd3fc9f9fd4d0ea0270a04e7801e30d61c713e08ff0e",
+      "category": "SCIENTIFIC",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: case_study_evidence_120.csv"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/editorial/COVER_LETTER_DRAFT_NOT_SENT.md",
+      "bytes": 4985,
+      "sha256": "8d590e183101cf17d259f18c7a77e64617dd0169af62ce935b037cf9ac35ade0",
+      "category": "EDITORIAL",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: COVER_LETTER_DRAFT_NOT_SENT.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/editorial/mdpi_required_statements_120.md",
+      "bytes": 3028,
+      "sha256": "a5cd844e8d315e8fe79ca4b61a12efc284f7f764521cd161e0b30f6ecd74a2c2",
+      "category": "EDITORIAL",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: mdpi_required_statements_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/editorial/mdpi_submitted_metadata_audit_120.md",
+      "bytes": 2224,
+      "sha256": "a535dfbc1f958c3332b56c616436f57027d663d00fe6f734e36c1a3a7b808920",
+      "category": "EDITORIAL",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: mdpi_submitted_metadata_audit_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/editorial/section_expansion_matrix_120.csv",
+      "bytes": 2777,
+      "sha256": "f6d8e26bcf39ed8d59404237f0139e340a9686c13799965a2314ddcc12cdc493",
+      "category": "EDITORIAL",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: section_expansion_matrix_120.csv"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/publication_gates/FINAL_STAGE_GATE_120.json",
+      "bytes": 2596,
+      "sha256": "4338ea45cebf82546fa7aa98f60c2a4ad541c306bf9c8afd798085012f74b13b",
+      "category": "GATES",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: FINAL_STAGE_GATE_120.json"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/publication_gates/HUMAN_APPROVAL_EVIDENCE_120_PRIVATE.md",
+      "bytes": 4394,
+      "sha256": "d30f99c785b1b8184f59e3e785577ea21050ad17a7019e5ba825284812f0fc48",
+      "category": "GATES",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: HUMAN_APPROVAL_EVIDENCE_120_PRIVATE.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/publication_gates/PI_HANDOFF_CHECKLIST_120.md",
+      "bytes": 3645,
+      "sha256": "cb5943285780c26cadea7d630e411d54cf14f2588e686b2c50bfe787b77ae386",
+      "category": "GATES",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: PI_HANDOFF_CHECKLIST_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/publication_gates/author_declarations_120.md",
+      "bytes": 3558,
+      "sha256": "f64f8a3cc47396513d8c78055da947d8939d2786c927bb6d2d906d486c0b17c2",
+      "category": "GATES",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: author_declarations_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/release/PI_rights_decision_120_PRIVATE.md",
+      "bytes": 4604,
+      "sha256": "af76cdd86e5375f24ec3c6b5b953b6b13ac7e2c447b08ccffcae7d4cb5daf958",
+      "category": "RELEASE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: PI_rights_decision_120_PRIVATE.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/release/REPRODUCTION_LEVELS_120.md",
+      "bytes": 4993,
+      "sha256": "f664a0147031d1af23cb268cb1354e655b57b23f380602484c9d812533749085",
+      "category": "RELEASE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: REPRODUCTION_LEVELS_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/release/contents_inventory_120.json",
+      "bytes": 3736,
+      "sha256": "67caba8d157ff915af3e2f5645ecb4f1136a4b38c0081f7024418de45d8f983b",
+      "category": "RELEASE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: contents_inventory_120.json"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/release/data_access_commitment_matrix_120.csv",
+      "bytes": 1663,
+      "sha256": "4379dd3b3ce021205cc6d568cf5d546684b0ca5c88470edd65de251ed295061f",
+      "category": "RELEASE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: data_access_commitment_matrix_120.csv"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/release/local_submission_sources_120.zip",
+      "bytes": 1313485,
+      "sha256": "4f863829589fb7a43f52e94851feda4cee0cb66ca28435b8a4f50c2d389be81a",
+      "category": "RELEASE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: local_submission_sources_120.zip"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/release/owner_level_rights_120.csv",
+      "bytes": 22134,
+      "sha256": "77f751d93235f5478db2fed1960cf7a5a238e579ea2a15845f08050b915db247",
+      "category": "RELEASE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: owner_level_rights_120.csv"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/release/reviewer_safe_replication_120.zip",
+      "bytes": 8109,
+      "sha256": "f91b95c7b652a24a59be2905ad494e8eba5ce17907169f9651120503831d0ff1",
+      "category": "RELEASE",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: reviewer_safe_replication_120.zip"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scientific/identifiability_narrative_120.md",
+      "bytes": 4465,
+      "sha256": "fd0eb50213cb853ebb732bffc05e62fa014321f2f463adbefe3c7af609ade55c",
+      "category": "SCIENTIFIC",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: identifiability_narrative_120.md"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scripts/check_hypergeom_semantics_120.py",
+      "bytes": 4111,
+      "sha256": "e49669422c49cff58f355ed188f2444df63fc34a1ac1ad3f4e36606cdce22fcb",
+      "category": "SCRIPTS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: check_hypergeom_semantics_120.py"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scripts/check_markdown_leaks.py",
+      "bytes": 254,
+      "sha256": "a01a2aca1a7a4104eeddd08e120663d1a4aae8c26ca1fbd8d2f0009db470c017",
+      "category": "SCRIPTS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: check_markdown_leaks.py"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scripts/generate_archive_diff.py",
+      "bytes": 9575,
+      "sha256": "2c4d1be0c91c547f4c4dd9585fc6da429d6e60cfbe63342e6ae78b9f929be13f",
+      "category": "SCRIPTS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: generate_archive_diff.py"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scripts/generate_lineage_crosswalk.py",
+      "bytes": 2734,
+      "sha256": "32d400421084ea9fe943a588177614f864e9f1445a44f42a0d72711e05951ef3",
+      "category": "SCRIPTS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: generate_lineage_crosswalk.py"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scripts/generate_manifest_120.py",
+      "bytes": 3245,
+      "sha256": "e2f0bfafd9938d2580938cfd8560f450747e4c58667a5838c62d87ecfe70c3d1",
+      "category": "SCRIPTS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: generate_manifest_120.py"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scripts/generate_owner_rights.py",
+      "bytes": 2529,
+      "sha256": "c87901073a94b79b97b78c131029bc72431d86be402a681ccdcc273a479b450e",
+      "category": "SCRIPTS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: generate_owner_rights.py"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scripts/pack_and_test_zip.py",
+      "bytes": 2165,
+      "sha256": "e36d2a47c0e4f07edc3524e4a2b3df8677562993b7c8ac27db13d7da4b772f91",
+      "category": "SCRIPTS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: pack_and_test_zip.py"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/scripts/reproduce_level1_tables.py",
+      "bytes": 4400,
+      "sha256": "6895b0004c57df2a4479f70532745368d8f6f4bde4c7c7343d19953b0ad65dfd",
+      "category": "SCRIPTS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: reproduce_level1_tables.py"
+    },
+    {
+      "path": "results/120_electronics_release_closure_2026_10_24/statistics/hypergeom_source_of_truth_120.json",
+      "bytes": 1664,
+      "sha256": "516a898a865d06c5fd2997e3f6ea508d268894608b2daffaee8273726ea56a5c",
+      "category": "STATISTICS",
+      "verification_status": "VERIFIED_STAGE_120",
+      "description": "Stage 120 deliverable: hypergeom_source_of_truth_120.json"
+    }
+  ]
+}

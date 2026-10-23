@@ -1,0 +1,58 @@
+{
+  "build_id": "BUILD_120_2026_10_24",
+  "timestamp_iso": "2026-10-24T00:50:35+09:00",
+  "manuscript_title": "Policy-and-Evidence Intermediate Contracts for Generative-AI Software: Independent Interpreter Conformance and Query-Aware Grounding",
+  "toolchain": {
+    "engine": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/Debian)",
+    "bibtex": "BibTeX 0.99d (TeX Live 2025/Debian)",
+    "os_environment": "Ubuntu 26.04 LTS via WSL2 on Windows 11",
+    "invocation_sequence": [
+      "pdflatex -interaction=nonstopmode main.tex",
+      "bibtex main",
+      "pdflatex -interaction=nonstopmode main.tex",
+      "pdflatex -interaction=nonstopmode main.tex"
+    ]
+  },
+  "source_artifacts": {
+    "main_tex": {
+      "path": "projects/uir_base/paper/mdpi_electronics_120/main.tex",
+      "bytes": 55391,
+      "sha256": "74f019bbfcfdb2409a00bd25136619b888f563fac929a402eebc6f61c0766fe5"
+    },
+    "references_bib": {
+      "path": "projects/uir_base/paper/mdpi_electronics_120/references.bib",
+      "bytes": 10565,
+      "sha256": "4c87cb7562f0269f889c2ce3855a0faec3da5ff4f944ae1425fc2f99581fa15c"
+    },
+    "figures": [
+      {
+        "path": "projects/uir_base/paper/mdpi_electronics_120/figures/architecture.tex",
+        "description": "System architecture and Sandwiched Agent Pattern TikZ"
+      },
+      {
+        "path": "projects/uir_base/paper/mdpi_electronics_120/figures/execution_trace_120.tex",
+        "description": "Factorial design response reuse and invocation topology TikZ"
+      }
+    ]
+  },
+  "build_metrics": {
+    "exit_code": 0,
+    "fatal_errors": 0,
+    "undefined_references": 0,
+    "undefined_citations": 0,
+    "overfull_hboxes": 0,
+    "underfull_hboxes": 0,
+    "page_count": 16,
+    "pdf_bytes": 282139,
+    "pdf_sha256": "d3470e0076c92d450ef1f9d107055688d950b41f516150c0db29105b1704eb37",
+    "log_bytes": 60552,
+    "log_sha256": "d73b8ce5a3ec40ee3a839c5f3865bcdd411f039c3e49e5b6d47f5981985dc7f3"
+  },
+  "stage119_discrepancy_audit": {
+    "stage119_reported_log_bytes": 44220,
+    "stage119_actual_uploaded_log_bytes": 17006,
+    "cause": "Stage 119 build script truncated log or uploaded an intermediate pass log instead of the final complete 4-pass transcript",
+    "stage120_resolution": "Stage 120 maintains the full 60,552-byte final pass log with exact byte count and SHA-256 anchoring directly in the build receipt"
+  },
+  "verification_verdict": "CLEAN_BUILD_PASS"
+}

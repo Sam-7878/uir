@@ -1,0 +1,38 @@
+{
+  "frame_size_M": 82,
+  "sample_size_n": 60,
+  "observed_failures_x": 0,
+  "primary_hypothesis_test": {
+    "null_hypothesis": "H0: K >= 5 (at least 5 failed clusters in M=82)",
+    "alternative_hypothesis": "H1: K <= 4",
+    "test_statistic": "X = observed failures in SRSWOR of size n=60",
+    "exact_p_value_at_K_5": 0.0009651337993418882,
+    "p_value_formatted": "0.000965",
+    "decision": "REJECT_H0 (p < 0.001 << 0.05)"
+  },
+  "confidence_upper_bound_inversion": {
+    "significance_level_alpha": 0.05,
+    "confidence_level": 0.95,
+    "tested_values": {
+      "K_3": {
+        "probability_P_X_0": 0.017389340560072266,
+        "rejection_decision": "REJECT (0.017389 < 0.05)"
+      },
+      "K_2": {
+        "probability_P_X_0": 0.06955736224028906,
+        "rejection_decision": "ACCEPT (0.069557 >= 0.05)"
+      }
+    },
+    "exact_upper_bound_K": 2,
+    "exact_upper_bound_proportion": 0.024390243902439025,
+    "exact_upper_bound_percentage": "2.439%",
+    "interpretation": "Over the finite convenience frame of M=82 clusters, at most 2 clusters (2.439%) can fail at the 95% confidence level."
+  },
+  "stage119_semantic_conflation_erratum": {
+    "error_description": "In Stage 119 execution report and consistency JSON, the symbol P(X=0 | K=3) was mistakenly associated with the value 0.000965134, which is the value for K=5.",
+    "corrected_symbol_for_0_000965134": "P(X=0 | K=5)",
+    "corrected_value_for_P_X_0_K_3": 0.017389340560072266,
+    "corrected_value_for_P_X_0_K_2": 0.06955736224028906,
+    "retained_manuscript_validity": "TRUE: The main text of the manuscript already distinguished K=5 from K=2/3 in its mathematical body."
+  }
+}
